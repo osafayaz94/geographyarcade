@@ -4,9 +4,10 @@
 //
 // For every name (country, capital, province and province capital, in every language):
 //   - a value that became empty keeps last month's value;
-//   - a changed value is held back for a month: it is used only if the next monthly run
-//     fetches the same new value again (bad edits are usually reverted within days).
-// Held-back changes are kept in data/pending-names.json, committed with the data.
+//   - a changed value is held back: it is used only once the same new value has been fetched
+//     for at least HOLD_DAYS (bad edits are usually reverted within days). Extra runs in
+//     between (a code push also runs the update) do not shorten the wait.
+// Held-back changes are kept in data/pending-names.json ({ value, since }), committed with the data.
 // Numbers (population, area) are taken as fetched; the guard checks them.
 const fs = require('fs');
 const path = require('path');
@@ -16,6 +17,9 @@ if (!baseDir) throw new Error('usage: node scripts/stabilize.js <baseline folder
 const DATA = path.join(__dirname, '..', 'data');
 const read = (dir, f) => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'));
 const PENDING_FILE = path.join(DATA, 'pending-names.json');
+const HOLD_DAYS = 25;
+const TODAY = new Date().toISOString().slice(0, 10);
+const days = (from) => (Date.parse(TODAY) - Date.parse(from)) / 86400000;
 const pending = fs.existsSync(PENDING_FILE) ? JSON.parse(fs.readFileSync(PENDING_FILE, 'utf8')) : {};
 const stillPending = {};
 const log = { healed: [], held: [], accepted: [] };
@@ -32,10 +36,12 @@ function settle(key, oldNames, newNames) {
     if (!was) continue; // a name newly added in this language: take it
     if (!now) { out[lang] = was; log.healed.push(`${k}: kept "${was}" (fetched empty)`); continue; }
     if (now === was) continue;
-    if (pending[k] === now) { log.accepted.push(`${k}: "${was}" -> "${now}"`); continue; }
+    // An entry in the old format (a plain string) restarts the clock today.
+    const p = pending[k] && typeof pending[k] === 'object' && pending[k].value === now ? pending[k] : { value: now, since: TODAY };
+    if (days(p.since) >= HOLD_DAYS) { log.accepted.push(`${k}: "${was}" -> "${now}" (seen since ${p.since})`); continue; }
     out[lang] = was;
-    stillPending[k] = now;
-    log.held.push(`${k}: "${was}" -> "${now}" (held until next month)`);
+    stillPending[k] = p;
+    log.held.push(`${k}: "${was}" -> "${now}" (held since ${p.since})`);
   }
   return out;
 }

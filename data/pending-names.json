@@ -1,1 +1,46 @@
-{}
+{
+ "country CF capital Q3832|hi": {
+  "value": "बांगी",
+  "since": "2026-09-30"
+ },
+ "US 66186276B43575054209436 name|fr": {
+  "value": "New York",
+  "since": "2026-09-30"
+ },
+ "PE 1875124B3772980127380 name|es": {
+  "value": "departamento de Puno",
+  "since": "2026-09-30"
+ },
+ "PE 1875124B80189625477090 name|es": {
+  "value": "departamento de Ucayali",
+  "since": "2026-09-30"
+ },
+ "PE 1875124B61678101818850 name|es": {
+  "value": "departamento de Junín",
+  "since": "2026-09-30"
+ },
+ "PE 1875124B2667580847298 name|es": {
+  "value": "departamento de Madre de Dios",
+  "since": "2026-09-30"
+ },
+ "PE 1875124B5984096006894 name|es": {
+  "value": "departamento de Cusco",
+  "since": "2026-09-30"
+ },
+ "PE 1875124B63771233756824 name|es": {
+  "value": "departamento de Apurímac",
+  "since": "2026-09-30"
+ },
+ "PE 1875124B76579830071892 name|es": {
+  "value": "departamento de Ayacucho",
+  "since": "2026-09-30"
+ },
+ "PE 1875124B34173194899706 name|es": {
+  "value": "departamento de Arequipa",
+  "since": "2026-09-30"
+ },
+ "DO 93820187B75937606305335 capital|en": {
+  "value": "Luperon pto pta",
+  "since": "2026-09-30"
+ }
+}

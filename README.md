@@ -39,7 +39,7 @@ npm run serve
 `.github/workflows/monthly-update.yml` runs on GitHub at 02:00 UTC on the 1st of every month, whenever a change to the site's code or settings is pushed to `main`, and on demand from the repository's Actions tab ("Run workflow"):
 
 1. `npm run fetch`: fresh data from Wikidata, geoBoundaries, OpenStreetMap and Natural Earth.
-2. `node scripts/stabilize.js <last month's data>`: Wikidata is edited by the public, so a name that comes back empty keeps last month's value, and a changed name (country, capital, province) is published only when the next month's run fetches the same new value again; bad edits are usually reverted by then. Held-back changes are listed in the run log and stored in `data/pending-names.json`.
+2. `node scripts/stabilize.js <last month's data>`: Wikidata is edited by the public, so a name that comes back empty keeps last month's value, and a changed name (country, capital, province) is published only after the same new value has been fetched for at least 25 days (extra runs in between, such as after a code push, do not shorten the wait); bad edits are usually reverted by then. Held-back changes, with the date first seen, are listed in the run log and stored in `data/pending-names.json`.
 3. `node scripts/guard.js <last month's data>`: stops the run, and nothing is published, if a country or a province list disappears, division counts jump, capitals or populations vanish, or a world-game list shrinks. GitHub emails the owner when a run fails; the log lists the problems.
 4. `npm run build`, `npm run check`, `npm run zip`.
 5. `node scripts/deploy.js`: publishes through the Hostinger API with the repository secret `HOSTINGER_API_TOKEN_GEOGRAPHY` (hPanel: Account > API).
