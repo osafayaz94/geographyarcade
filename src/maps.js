@@ -191,7 +191,8 @@ async function continentSvg(viewKey, countries) {
 // How far (km) from the country's largest landmass a piece of land may lie and still be
 // drawn on the main map. Farther pieces: a whole division becomes an inset box; a remote
 // island belonging to a mainland division (Easter Island, for Chile) is left off.
-const NEAR_KM = { RUS: 4200, IDN: 4000, USA: Infinity };
+// Parts further than this from the main landmass are drawn as insets (Spain: the Canary Islands).
+const NEAR_KM = { RUS: 4200, IDN: 4000, USA: Infinity, ESP: 1200, 'x-spain-provinces': 1200 };
 const MAX_BYTES = 70 * 1024;
 
 // Returns { svg, ids } where ids are the divisions actually drawn (and so playable).
@@ -566,6 +567,40 @@ async function countryGameArt(key, { landlocked = new Set(), neighbours = [] } =
   return svg(s + `<path d="${sphere}" fill="none" stroke="#14202E" stroke-width="2"/>`);
 }
 
+// ---------- Country outlines ("Guess the country") ----------
+// One picture per country: its outline alone, Mercator centred on the country, as people know it
+// from maps. Far-off pieces are left out so the shape stays recognisable (Alaska and Hawaii for the
+// US, French Guiana for France): a piece stays if it has at least a quarter of the largest piece's
+// area, or lies within 5 degrees of the box around those big pieces.
+async function countryShapes() {
+  const parts = {};
+  for (const f of await worldFeatures(40)) {
+    if (!f.iso2 || !f.geometry) continue;
+    const g = f.geometry;
+    (parts[f.iso2] = parts[f.iso2] || []).push(...(g.type === 'Polygon' ? [g.coordinates] : g.coordinates));
+  }
+  const out = {};
+  const W3 = 400, H3 = 300;
+  for (const [iso2, list] of Object.entries(parts)) {
+    const area = (p) => d3.geoArea({ type: 'Polygon', coordinates: p });
+    const max = Math.max(...list.map(area));
+    const big = list.filter((p) => area(p) >= max / 4);
+    const [[x0, y0], [x1, y1]] = d3.geoBounds({ type: 'MultiPolygon', coordinates: big });
+    const wrap = (lon) => (x0 > x1 && lon < x0 - 5 ? lon + 360 : lon);
+    const keep = list.filter((p) => {
+      if (big.includes(p)) return true;
+      const [lon, lat] = d3.geoCentroid({ type: 'Polygon', coordinates: p });
+      return lat >= y0 - 5 && lat <= y1 + 5 && wrap(lon) >= x0 - 5 && wrap(lon) <= (x0 > x1 ? x1 + 360 : x1) + 5;
+    });
+    const shape = { type: 'MultiPolygon', coordinates: keep };
+    const [lon] = d3.geoCentroid({ type: 'MultiPolygon', coordinates: big });
+    const proj = d3.geoMercator().rotate([-lon, 0]).fitExtent([[16, 16], [W3 - 16, H3 - 16]], shape);
+    const d = d3.geoPath(proj).digits(0)(shape);
+    if (d) out[iso2] = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W3} ${H3}"><path d="${d}" fill="#E07A3F" stroke="#7A3A12" stroke-width="2" stroke-linejoin="round"/></svg>`;
+  }
+  return out;
+}
+
 // Which hemispheres each country's main landmass lies in: { iso2: { ns: 'N'|'S'|'B', ew: 'E'|'W'|'B' } }.
 // "Main landmass" = the country's largest polygon, so overseas islands don't decide it.
 async function hemispheres() {
@@ -592,4 +627,4 @@ async function hemispheres() {
   return out;
 }
 
-module.exports = { continentSvg, adm1Svg, adm1Thumb, continentThumb, addStar, regionArt, physSvg, latLongSvg, hemispheres, countryGameArt, LAT_LINES, VIEWS };
+module.exports = { countryShapes, continentSvg, adm1Svg, adm1Thumb, continentThumb, addStar, regionArt, physSvg, latLongSvg, hemispheres, countryGameArt, LAT_LINES, VIEWS };

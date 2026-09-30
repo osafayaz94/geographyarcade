@@ -1674,6 +1674,10 @@ L.ko = {
 
 const LANGS = ['en', 'zh', 'hi', 'es', 'ar', 'fr', 'de', 'bn', 'pt', 'ru', 'ur', 'id', 'it', 'ja', 'ko'];
 
+// Strings from the keyword pass live in their own file (src/i18n-seo.js).
+const SEO_STRINGS = require('./i18n-seo');
+for (const l of LANGS) { Object.assign(L[l].s, SEO_STRINGS.S[l]); L[l].in = SEO_STRINGS.IN[l]; }
+
 function t(lang, key, vars = {}) {
   let s = L[lang].s[key];
   if (s == null) throw new Error(`Missing string ${lang}.${key}`);

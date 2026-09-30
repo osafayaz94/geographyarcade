@@ -5,12 +5,14 @@
 // Islands: the shapes are the island polygons of the country outline in world-atlas 1:10m
 // (Natural Earth); each is named by the Wikidata island whose coordinates fall inside it.
 // Counties: the Wikidata items and the OpenStreetMap boundaries they link to (P402).
+// Provinces of Spain: geoBoundaries ADM2 shapes (no codes in the file, so matched by name to
+// ISO 3166-2), then the Wikidata province item with that code (P300) for names and capitals.
 const fs = require('fs');
 const path = require('path');
 const d3 = require('d3-geo');
 const { feature } = require('topojson-client');
 const mapshaper = require('mapshaper');
-const { sparql, entities, labels, latestQuantity } = require('./wikidata');
+const { cachedFetch, sparql, entities, labels, latestQuantity } = require('./wikidata');
 
 const DATA = path.join(__dirname, '..', 'data');
 const GEO = path.join(DATA, 'geo');
@@ -27,6 +29,21 @@ const SETS = [
     islandOf: 'Q35', addItems: ['Q26503', 'Q735905'] }, // Funen, Falster: missing from the island-class search
   { key: 'england-counties', country: 'GB', parent: 'GB-ENG', term: 'counties', kind: 'osm', clipAtlasId: 826,
     query: '?item wdt:P31 wd:Q180673.' },
+  // Ceuta and Melilla are autonomous cities, not provinces.
+  { key: 'spain-provinces', country: 'ES', term: 'provinces', kind: 'gb', iso3: 'ESP', level: 'ADM2', itemClass: 'Q162620', capitals: true,
+    // La Rioja's province item has no ISO code; the Balearic province is the same item as the islands.
+    qidByIso: { 'ES-LO': 'Q31844097', 'ES-PM': 'Q5765' },
+    // Missing on Wikidata (La Rioja, Murcia, Navarra), or pointing at a "city" item instead of the municipality.
+    capitalByIso: { 'ES-LO': 'Q14325', 'ES-MU': 'Q12225', 'ES-NA': 'Q10282', 'ES-O': 'Q14317', 'ES-PO': 'Q12411', 'ES-S': 'Q12233', 'ES-CR': 'Q15093',
+      'ES-TE': 'Q14336', 'ES-HU': 'Q11967', 'ES-Z': 'Q10305', 'ES-TF': 'Q14328' },
+    drop: ['Ceuta', 'Melilla'],
+    isoByName: { Alava: 'ES-VI', Albacete: 'ES-AB', Alicante: 'ES-A', Almeria: 'ES-AL', Asturias: 'ES-O', Avila: 'ES-AV', Badajoz: 'ES-BA',
+      'Balears, Illes': 'ES-PM', Barcelona: 'ES-B', Bizkaia: 'ES-BI', Burgos: 'ES-BU', Caceres: 'ES-CC', Cadiz: 'ES-CA', Cantabria: 'ES-S',
+      Castellon: 'ES-CS', 'Ciudad Real': 'ES-CR', Cordoba: 'ES-CO', Coruna: 'ES-C', Cuenca: 'ES-CU', Gipuzkoa: 'ES-SS', Girona: 'ES-GI',
+      Granada: 'ES-GR', Guadalajara: 'ES-GU', Huelva: 'ES-H', Huesca: 'ES-HU', Jaen: 'ES-J', Leon: 'ES-LE', Lleida: 'ES-L', Lugo: 'ES-LU',
+      Madrid: 'ES-M', Malaga: 'ES-MA', Murcia: 'ES-MU', Navarra: 'ES-NA', Ourense: 'ES-OR', Palencia: 'ES-P', 'Palmas, Las': 'ES-GC',
+      Pontevedra: 'ES-PO', 'Rioja, La': 'ES-LO', Salamanca: 'ES-SA', 'Santa Cruz de Tenerife': 'ES-TF', Segovia: 'ES-SG', Sevilla: 'ES-SE',
+      Soria: 'ES-SO', Tarragona: 'ES-T', Teruel: 'ES-TE', Toledo: 'ES-TO', Valencia: 'ES-V', Valladolid: 'ES-VA', Zamora: 'ES-ZA', Zaragoza: 'ES-Z' } },
 ];
 
 const partsOf = (g) => (g.type === 'Polygon' ? [g.coordinates] : g.coordinates);
@@ -102,6 +119,46 @@ async function islandSet(set) {
   return { features, divisions, source: { license: 'Public domain', sourceName: 'Natural Earth (world-atlas 1:10m) and Wikidata' } };
 }
 
+async function gbSet(set) {
+  const meta = await cachedFetch(`https://www.geoboundaries.org/api/current/gbOpen/${set.iso3}/${set.level}/`);
+  const m = Array.isArray(meta) ? meta[0] : meta;
+  const gj = await cachedFetch(m.simplifiedGeometryGeoJSON);
+  const feats = gj.features.filter((f) => !set.drop.includes(f.properties.shapeName));
+  const unknown = feats.filter((f) => !set.isoByName[f.properties.shapeName]).map((f) => f.properties.shapeName);
+  if (unknown.length) throw new Error(`${set.key}: no ISO code for ${unknown.join(', ')}`);
+  const codes = feats.map((f) => set.isoByName[f.properties.shapeName]);
+  const rows = await sparql(`SELECT ?code ?item WHERE { VALUES ?code { ${codes.map((c) => '"' + c + '"').join(' ')} } ?item wdt:P300 ?code; wdt:P31 wd:${set.itemClass}. FILTER NOT EXISTS { ?item wdt:P576 ?d } }`);
+  const qidOf = {};
+  for (const r of rows) qidOf[r.code] = qidOf[r.code] || r.item;
+  // Items not typed as a province on Wikidata: any item with the code, then hand-picked ones.
+  const loose = codes.filter((c) => !qidOf[c]);
+  if (loose.length) {
+    const any = await sparql(`SELECT ?code ?item WHERE { VALUES ?code { ${loose.map((c) => `"${c}"`).join(' ')} } ?item wdt:P300 ?code. FILTER NOT EXISTS { ?item wdt:P576 ?d } }`);
+    for (const r of any) qidOf[r.code] = qidOf[r.code] || r.item;
+  }
+  Object.assign(qidOf, Object.fromEntries(Object.entries(set.qidByIso || {}).filter(([c]) => !qidOf[c])));
+  const missing = codes.filter((c) => !qidOf[c]);
+  if (missing.length) throw new Error(`${set.key}: no Wikidata item for ${missing.join(', ')}`);
+  const ent = await entities(Object.values(qidOf));
+  const capId = (e) => { const c = (e.claims.P36 || []).find((x) => x.rank !== 'deprecated'); return c && c.mainsnak.datavalue && c.mainsnak.datavalue.value.id; };
+  // capitalByIso: capitals Wikidata does not list on the province item (checked by hand).
+  const capOf = (code) => (set.capitalByIso && set.capitalByIso[code]) || capId(ent[qidOf[code]]);
+  const capEnt = set.capitals ? await entities(codes.map(capOf).filter(Boolean)) : {};
+  const features = [];
+  const divisions = [];
+  for (const f of feats) {
+    const code = set.isoByName[f.properties.shapeName];
+    const qid = qidOf[code];
+    const e = ent[qid];
+    const id = `${set.key}-${qid}`;
+    features.push({ type: 'Feature', properties: { shapeID: id, qid }, geometry: f.geometry });
+    const cq = set.capitals ? capOf(code) : null;
+    const pop = latestQuantity(e, 'P1082');
+    divisions.push({ id, iso: code, qid, name: labels(e), capital: cq && capEnt[cq] ? labels(capEnt[cq]) : null, capitalQid: cq || null, population: pop ? { value: pop.value, year: pop.year } : null, area: null });
+  }
+  return { features, divisions, source: { license: m.boundaryLicense, sourceName: `geoBoundaries (${m.boundarySource || 'INE'}) and Wikidata` } };
+}
+
 async function osmSet(set) {
   const rows = await sparql(`SELECT ?item ?osm WHERE { ${set.query} FILTER NOT EXISTS { ?item wdt:P576 ?d } OPTIONAL { ?item wdt:P402 ?osm } }`);
   const byItem = {};
@@ -142,7 +199,7 @@ function rewound(g) {
 (async () => {
   const out = {};
   for (const set of SETS) {
-    const r = set.kind === 'islands' ? await islandSet(set) : await osmSet(set);
+    const r = set.kind === 'islands' ? await islandSet(set) : set.kind === 'gb' ? await gbSet(set) : await osmSet(set);
     fs.writeFileSync(path.join(GEO, `extra-${set.key}.json`), JSON.stringify({ type: 'FeatureCollection', features: r.features }));
     out[set.key] = { country: set.country, parent: set.parent || null, term: set.term, source: r.source, divisions: r.divisions };
     console.log(`${set.key}: ${r.divisions.length} (${r.divisions.map((d) => d.name.en).join(', ')})`);

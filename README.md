@@ -80,10 +80,13 @@ The CSV has empty `monthly_searches_google` and `monthly_searches_bing` columns:
 
 ### Competitor keyword import
 
-`npm run keyword-import` reads a keyword export (Semrush/Ahrefs style CSV, UTF-16 or UTF-8) from `data/keywords/` and assigns every keyword to one page on this site, by language, country, continent, US state and topic (flags, capitals, maps, provinces, games). It writes:
+`npm run keyword-import` reads every keyword export (Semrush/Ahrefs style CSV, UTF-16 or UTF-8) in `data/keywords/` (a keyword in more than one file keeps its largest volume) and assigns every keyword to one page on this site, by language, country, continent, US state and topic (flags, capitals, maps, provinces, games). It writes:
 
 - `docs/keyword-map.csv`: keyword, volume, language, status, cluster, target URL.
 - `docs/keyword-gaps.csv`: keywords with no matching page yet, sorted by volume.
+- `docs/keyword-ideas-map.csv`: the keyword ideas spreadsheet (`data/keywords/*.xlsx`, second sheet: keyword, cluster, intent, language; no volumes), mapped by the same rules.
+
+Pages built from the October 2026 keyword pass: "guess the country by shape" quizzes (`/guess-the-country/`, world and each continent, outlines from `countryShapes()` in `src/maps.js`), the 50 provinces of Spain with a capitals quiz (`countries/spain/provinces/`), quick facts on each continent page (count, largest and smallest, most and least populous, landlocked), and currency and language quizzes per continent (`games/currencies/europe/`). Their strings are in `src/i18n-seo.js`.
 
 Statuses: `mapped` (a page exists), `gap` (no page yet), `other-language` (a language the site does not have, e.g. Polish or Dutch), `not-relevant`. Keywords go into titles, headings and page text only where they read naturally. The list is never pasted into pages: keyword stuffing gets pages demoted.
 
