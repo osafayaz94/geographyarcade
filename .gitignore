@@ -1,0 +1,9 @@
+# Rebuilt or re-downloaded on every run
+node_modules/
+dist/
+data/cache/
+data/geo/
+geographyarcade-site.zip
+
+# Local tools
+.claude/

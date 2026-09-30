@@ -1,0 +1,7343 @@
+{
+ "continents": {
+  "kind": "poly",
+  "items": [
+   {
+    "name": {
+     "en": "Asia",
+     "zh": "亚洲",
+     "hi": "एशिया",
+     "es": "Asia",
+     "ar": "آسيا",
+     "fr": "Asie",
+     "bn": "এশিয়া",
+     "pt": "Ásia",
+     "ru": "Азия",
+     "ur": "ایشیا",
+     "de": "Asien"
+    },
+    "id": "asia"
+   },
+   {
+    "name": {
+     "en": "Africa",
+     "zh": "非洲",
+     "hi": "अफ़्रीका",
+     "es": "África",
+     "ar": "إفريقيا",
+     "fr": "Afrique",
+     "bn": "আফ্রিকা",
+     "pt": "África",
+     "ru": "Африка",
+     "ur": "افریقا",
+     "de": "Afrika"
+    },
+    "id": "africa"
+   },
+   {
+    "name": {
+     "en": "North America",
+     "zh": "北美洲",
+     "hi": "उत्तर अमेरिका",
+     "es": "América del Norte",
+     "ar": "أمريكا الشمالية",
+     "fr": "Amérique du Nord",
+     "bn": "উত্তর আমেরিকা",
+     "pt": "América do Norte",
+     "ru": "Северная Америка",
+     "ur": "شمالی امریکا",
+     "de": "Nordamerika"
+    },
+    "id": "north-america"
+   },
+   {
+    "name": {
+     "en": "South America",
+     "zh": "南美洲",
+     "hi": "दक्षिण अमेरिका",
+     "es": "América del Sur",
+     "ar": "أمريكا الجنوبية",
+     "fr": "Amérique du Sud",
+     "bn": "দক্ষিণ আমেরিকা",
+     "pt": "América do Sul",
+     "ru": "Южная Америка",
+     "ur": "جنوبی امریکا",
+     "de": "Südamerika"
+    },
+    "id": "south-america"
+   },
+   {
+    "name": {
+     "en": "Antarctica",
+     "zh": "南极洲",
+     "hi": "अंटार्कटिका",
+     "es": "Antártida",
+     "ar": "القارة القطبية الجنوبية",
+     "fr": "Antarctique",
+     "bn": "অ্যান্টার্কটিকা",
+     "pt": "Antártida",
+     "ru": "Антарктида",
+     "ur": "انٹارکٹکا",
+     "de": "Antarktika"
+    },
+    "id": "antarctica"
+   },
+   {
+    "name": {
+     "en": "Europe",
+     "zh": "欧洲",
+     "hi": "यूरोप",
+     "es": "Europa",
+     "ar": "أوروبا",
+     "fr": "Europe",
+     "bn": "ইউরোপ",
+     "pt": "Europa",
+     "ru": "Европа",
+     "ur": "یورپ",
+     "de": "Europa"
+    },
+    "id": "europe"
+   },
+   {
+    "name": {
+     "en": "Australian continent",
+     "zh": "澳洲大陆",
+     "hi": "ऑस्ट्रेलिया",
+     "es": "Australia",
+     "ar": "أستراليا",
+     "fr": "continent australien",
+     "bn": "অস্ট্রেলিয়া",
+     "pt": "Austrália",
+     "ru": "Австралия",
+     "ur": "براعظم آسٹریلیا",
+     "de": "Australien"
+    },
+    "id": "australian-continent"
+   }
+  ]
+ },
+ "seas": {
+  "kind": "poly",
+  "items": [
+   {
+    "name": {
+     "en": "Philippine Sea",
+     "zh": "菲律宾海",
+     "hi": "फ़िलिपीन सागर",
+     "es": "mar de Filipinas",
+     "ar": "بحر الفلبين",
+     "fr": "mer des Philippines",
+     "bn": "ফিলিপাইন সাগর",
+     "pt": "Mar das Filipinas",
+     "ru": "Филиппинское море",
+     "ur": "بحیرہ فلپائن",
+     "de": "Philippinensee"
+    },
+    "id": "philippine-sea"
+   },
+   {
+    "name": {
+     "en": "Arabian Sea",
+     "zh": "阿拉伯海",
+     "hi": "अरब सागर",
+     "es": "mar Arábigo",
+     "ar": "بحر العرب",
+     "fr": "mer d'Arabie",
+     "bn": "আরব সাগর",
+     "pt": "Mar Arábico",
+     "ru": "Аравийское море",
+     "ur": "بحیرہ عرب",
+     "de": "Arabisches Meer"
+    },
+    "id": "arabian-sea"
+   },
+   {
+    "name": {
+     "en": "Coral Sea",
+     "zh": "珊瑚海",
+     "hi": "कोरल सागर",
+     "es": "mar del Coral",
+     "ar": "بحر المرجان",
+     "fr": "mer de Corail",
+     "bn": "কোরাল সাগর",
+     "pt": "Mar de Coral",
+     "ru": "Коралловое море",
+     "ur": "بحیرہ کورل",
+     "de": "Korallenmeer"
+    },
+    "id": "coral-sea"
+   },
+   {
+    "name": {
+     "en": "Tasman Sea",
+     "zh": "塔斯曼海",
+     "hi": "तस्मान सागर",
+     "es": "mar de Tasmania",
+     "ar": "بحر تسمان",
+     "fr": "mer de Tasman",
+     "bn": "তাসমান সাগর",
+     "pt": "Mar da Tasmânia",
+     "ru": "Тасманово море",
+     "ur": "بحیرہ تسمان",
+     "de": "Tasmansee"
+    },
+    "id": "tasman-sea"
+   },
+   {
+    "name": {
+     "en": "South China Sea",
+     "zh": "南海",
+     "hi": "दक्षिणी चीन सागर",
+     "es": "mar de China Meridional",
+     "ar": "بحر الصين الجنوبي",
+     "fr": "mer de Chine méridionale",
+     "bn": "দক্ষিণ চীন সাগর",
+     "pt": "Mar da China Meridional",
+     "ru": "Южно-Китайское море",
+     "ur": "بحیرۂ جنوبی چین",
+     "de": "Südchinesisches Meer"
+    },
+    "id": "south-china-sea"
+   },
+   {
+    "name": {
+     "en": "Caribbean Sea",
+     "zh": "加勒比海",
+     "hi": "कैरिबियाई सागर",
+     "es": "Mar Caribe",
+     "ar": "البحر الكاريبي",
+     "fr": "mer des Caraïbes",
+     "bn": "ক্যারিবীয় সাগর",
+     "pt": "Mar do Caribe",
+     "ru": "Карибское море",
+     "ur": "بحیرہ کیریبین",
+     "de": "Karibisches Meer"
+    },
+    "id": "caribbean-sea"
+   },
+   {
+    "name": {
+     "en": "Mediterranean Sea",
+     "zh": "地中海",
+     "hi": "भूमध्य सागर",
+     "es": "Mediterráneo",
+     "ar": "البحر الأبيض المتوسط",
+     "fr": "mer Méditerranée",
+     "bn": "ভূমধ্যসাগর",
+     "pt": "Mar Mediterrâneo",
+     "ru": "Средиземное море",
+     "ur": "بحیرہ روم",
+     "de": "Mittelmeer"
+    },
+    "id": "mediterranean-sea"
+   },
+   {
+    "name": {
+     "en": "Sea of Okhotsk",
+     "zh": "鄂霍次克海",
+     "hi": "ओख़ोत्स्क सागर",
+     "es": "mar de Ojotsk",
+     "ar": "بحر أوخوتسك",
+     "fr": "mer d'Okhotsk",
+     "bn": "ওখোৎস্ক সাগর",
+     "pt": "Mar de Okhotsk",
+     "ru": "Охотское море",
+     "ur": "بحیرہ اخوتسک",
+     "de": "Ochotskisches Meer"
+    },
+    "id": "sea-of-okhotsk"
+   },
+   {
+    "name": {
+     "en": "Weddell Sea",
+     "zh": "威德尔海",
+     "hi": "वेडेल सागर",
+     "es": "mar de Weddell",
+     "ar": "بحر ودل",
+     "fr": "mer de Weddell",
+     "bn": "ওয়েডেল সাগর",
+     "pt": "Mar de Weddell",
+     "ru": "Море Уэдделла",
+     "ur": "بحیرہ ودل",
+     "de": "Weddell-Meer"
+    },
+    "id": "weddell-sea"
+   },
+   {
+    "name": {
+     "en": "Ross Sea",
+     "zh": "罗斯海",
+     "hi": "रॉस सागर",
+     "es": "mar de Ross",
+     "ar": "بحر روس",
+     "fr": "mer de Ross",
+     "bn": "রস সাগর",
+     "pt": "Mar de Ross",
+     "ru": "Море Росса",
+     "ur": "بحیرہ راس",
+     "de": "Rossmeer"
+    },
+    "id": "ross-sea"
+   },
+   {
+    "name": {
+     "en": "Sea of Japan",
+     "zh": "日本海",
+     "hi": "जापान सागर",
+     "es": "mar del Japón",
+     "ar": "بحر اليابان",
+     "fr": "mer du Japon",
+     "bn": "জাপান সাগর",
+     "pt": "Mar do Japão",
+     "ru": "Японское море",
+     "ur": "بحیرہ جاپان",
+     "de": "Japanisches Meer"
+    },
+    "id": "sea-of-japan"
+   },
+   {
+    "name": {
+     "en": "Labrador Sea",
+     "zh": "拉布拉多海",
+     "hi": "लैब्राडोर सागर",
+     "es": "mar de Labrador",
+     "ar": "بحر لبرادور",
+     "fr": "mer du Labrador",
+     "bn": "ল্যাব্রাডর সাগর",
+     "pt": "Mar do Labrador",
+     "ru": "Море Лабрадор",
+     "ur": "بحیرہ لیبراڈار",
+     "de": "Labradorsee"
+    },
+    "id": "labrador-sea"
+   },
+   {
+    "name": {
+     "en": "Beaufort Sea",
+     "zh": "波弗特海",
+     "hi": "ब्यूफोर्ट सागर",
+     "es": "mar de Beaufort",
+     "ar": "بحر بيوفورت",
+     "fr": "mer de Beaufort",
+     "bn": "বোফর্ট সাগর",
+     "pt": "Mar de Beaufort",
+     "ru": "Море Бофорта",
+     "ur": "بحیرہ بیوفورت",
+     "de": "Beaufortsee"
+    },
+    "id": "beaufort-sea"
+   },
+   {
+    "name": {
+     "en": "Red Sea",
+     "zh": "红海",
+     "hi": "लाल सागर",
+     "es": "mar Rojo",
+     "ar": "البحر الأحمر",
+     "fr": "mer Rouge",
+     "bn": "লোহিত সাগর",
+     "pt": "Mar Vermelho",
+     "ru": "Красное море",
+     "ur": "بحیرہ احمر",
+     "de": "Rotes Meer"
+    },
+    "id": "red-sea"
+   },
+   {
+    "name": {
+     "en": "Black Sea",
+     "zh": "黑海",
+     "hi": "काला सागर",
+     "es": "mar Negro",
+     "ar": "البحر الأسود",
+     "fr": "mer Noire",
+     "bn": "কৃষ্ণ সাগর",
+     "pt": "mar Negro",
+     "ru": "Чёрное море",
+     "ur": "بحیرہ اسود",
+     "de": "Schwarzes Meer"
+    },
+    "id": "black-sea"
+   },
+   {
+    "name": {
+     "en": "Caspian Sea",
+     "zh": "里海",
+     "hi": "कैस्पियन सागर",
+     "es": "mar Caspio",
+     "ar": "بحر قزوين",
+     "fr": "mer Caspienne",
+     "bn": "কাস্পিয়ান সাগর",
+     "pt": "Mar Cáspio",
+     "ru": "Каспийское море",
+     "ur": "بحیرہ قزوین",
+     "de": "Kaspisches Meer"
+    },
+    "id": "caspian-sea"
+   },
+   {
+    "name": {
+     "en": "Sargasso Sea",
+     "zh": "马尾藻海",
+     "hi": "सारगैसो सागर",
+     "es": "Mar de los Sargazos",
+     "ar": "بحر سرقوسة",
+     "fr": "mer des Sargasses",
+     "bn": "শৈবাল সাগর",
+     "pt": "Mar dos Sargaços",
+     "ru": "Саргассово море",
+     "ur": "بحیرہ سارگاسو",
+     "de": "Sargassosee"
+    },
+    "id": "sargasso-sea"
+   },
+   {
+    "name": {
+     "en": "Bering Sea",
+     "zh": "白令海",
+     "hi": "बेरी",
+     "es": "mar de Bering",
+     "ar": "بحر بيرنغ",
+     "fr": "mer de Béring",
+     "bn": "বেরিং সাগর",
+     "pt": "Mar de Bering",
+     "ru": "Берингово море",
+     "ur": "بحیرہ بیرنگ",
+     "de": "Beringmeer"
+    },
+    "id": "bering-sea"
+   },
+   {
+    "name": {
+     "en": "Norwegian Sea",
+     "zh": "挪威海",
+     "hi": "नॉर्वेजियन सागर",
+     "es": "mar de Noruega",
+     "ar": "بحر النرويج",
+     "fr": "mer de Norvège",
+     "bn": "নরওয়েজীয় সাগর",
+     "pt": "Mar da Noruega",
+     "ru": "Норвежское море",
+     "ur": "بحیرہ ناروے",
+     "de": "Europäisches Nordmeer"
+    },
+    "id": "norwegian-sea"
+   },
+   {
+    "name": {
+     "en": "Barents Sea",
+     "zh": "巴伦支海",
+     "hi": "बेरिंट सागर",
+     "es": "mar de Barents",
+     "ar": "بحر بارنتس",
+     "fr": "mer de Barents",
+     "bn": "বারেন্টস সাগর",
+     "pt": "mar de Barents",
+     "ru": "Баренцево море",
+     "ur": "بحیرۂ بیرنٹس",
+     "de": "Barentssee"
+    },
+    "id": "barents-sea"
+   },
+   {
+    "name": {
+     "en": "Greenland Sea",
+     "zh": "格陵兰海",
+     "hi": "ग्रीनलैंड सागर",
+     "es": "mar de Groenlandia",
+     "ar": "بحر جرينلاند",
+     "fr": "mer du Groenland",
+     "bn": "গ্রিনল্যান্ড সাগর",
+     "pt": "mar da Groenlândia",
+     "ru": "Гренландское море",
+     "ur": "بحیرہ گرین لینڈ",
+     "de": "Grönlandsee"
+    },
+    "id": "greenland-sea"
+   },
+   {
+    "name": {
+     "en": "Laccadive Sea",
+     "zh": "拉克代夫海",
+     "hi": "लक्षद्वीप सागर",
+     "es": "mar de Laquedivas",
+     "ar": "بحر لكديف",
+     "fr": "mer des Laquedives",
+     "bn": "লাক্ষাদ্বীপ সাগর",
+     "pt": "Mar das Laquedivas",
+     "ru": "Лаккадивское море",
+     "ur": "بحیرہ لاکادیو",
+     "de": "Lakkadivensee"
+    },
+    "id": "laccadive-sea"
+   },
+   {
+    "name": {
+     "en": "Kara Sea",
+     "zh": "喀拉海",
+     "hi": "कारा सागर",
+     "es": "mar de Kara",
+     "ar": "بحر كارا",
+     "fr": "mer de Kara",
+     "bn": "কারা সাগর",
+     "pt": "Mar de Kara",
+     "ru": "Карское море",
+     "ur": "بحیرہ کارا",
+     "de": "Karasee"
+    },
+    "id": "kara-sea"
+   },
+   {
+    "name": {
+     "en": "Banda Sea",
+     "zh": "班达海",
+     "hi": "बांदा सागर",
+     "es": "mar de Banda",
+     "ar": "بحر باندا",
+     "fr": "mer de Banda",
+     "bn": "বাণ্ডা সাগর",
+     "pt": "Mar de Banda",
+     "ru": "Море Банда",
+     "ur": "بحیرہ باندا",
+     "de": "Bandasee"
+    },
+    "id": "banda-sea"
+   },
+   {
+    "name": {
+     "en": "Arafura Sea",
+     "zh": "阿拉弗拉海",
+     "hi": "अराफुरा सागर",
+     "es": "mar de Arafura",
+     "ar": "بحر آرافورا",
+     "fr": "mer d'Arafura",
+     "bn": "আরাফুরা সাগর",
+     "pt": "Mar de Arafura",
+     "ru": "Арафурское море",
+     "ur": "بحیرہ آرافرا",
+     "de": "Arafurasee"
+    },
+    "id": "arafura-sea"
+   },
+   {
+    "name": {
+     "en": "East China Sea",
+     "zh": "东海",
+     "hi": "पूर्वी चीन सागर",
+     "es": "mar de China Oriental",
+     "ar": "بحر الصين الشرقي",
+     "fr": "mer de Chine orientale",
+     "bn": "পূর্ব চীন সাগর",
+     "pt": "Mar da China Oriental",
+     "ru": "Восточно-Китайское море",
+     "ur": "بحیرہ شرقی چین",
+     "de": "Ostchinesisches Meer"
+    },
+    "id": "east-china-sea"
+   },
+   {
+    "name": {
+     "en": "Andaman Sea",
+     "zh": "安达曼海",
+     "hi": "अंडमान सागर",
+     "es": "mar de Andamán",
+     "ar": "بحر أندامان",
+     "fr": "mer d'Andaman",
+     "bn": "আন্দামান সাগর",
+     "pt": "Mar de Andamão",
+     "ru": "Андаманское море",
+     "ur": "بحیرہ انڈمان",
+     "de": "Andamanensee"
+    },
+    "id": "andaman-sea"
+   },
+   {
+    "name": {
+     "en": "Java Sea",
+     "zh": "爪哇海",
+     "hi": "जावा सागर",
+     "es": "mar de Java",
+     "ar": "بحر جاوة",
+     "fr": "mer de Java",
+     "bn": "জাভা সাগর",
+     "pt": "Mar de Java",
+     "ru": "Яванское море",
+     "ur": "بحیرہ جاوا",
+     "de": "Javasee"
+    },
+    "id": "java-sea"
+   },
+   {
+    "name": {
+     "en": "Laptev Sea",
+     "zh": "拉普捷夫海",
+     "hi": "लापतेव सागर",
+     "es": "mar de Láptev",
+     "ar": "بحر لابتيف",
+     "fr": "mer des Laptev",
+     "bn": "লাপ্তেভ সাগর",
+     "pt": "Mar de Laptev",
+     "ru": "море Лаптевых",
+     "ur": "بحیرہ لیپٹف",
+     "de": "Laptewsee"
+    },
+    "id": "laptev-sea"
+   },
+   {
+    "name": {
+     "en": "North Sea",
+     "zh": "北海",
+     "hi": "उत्तरी सागर",
+     "es": "mar del Norte",
+     "ar": "بحر الشمال",
+     "fr": "mer du Nord",
+     "bn": "উত্তর সাগর",
+     "pt": "Mar do Norte",
+     "ru": "Северное море",
+     "ur": "بحیرہ شمال",
+     "de": "Nordsee"
+    },
+    "id": "north-sea"
+   },
+   {
+    "name": {
+     "en": "Celebes Sea",
+     "zh": "西里伯斯海",
+     "hi": "सुलावेसी सागर",
+     "es": "mar de Célebes",
+     "ar": "بحر سيليبس",
+     "fr": "mer de Célèbes",
+     "bn": "সেলেবস সী",
+     "pt": "Mar de Celebes",
+     "ru": "Сулавеси",
+     "ur": "بحیرہ سلیبس",
+     "de": "Celebessee"
+    },
+    "id": "celebes-sea"
+   },
+   {
+    "name": {
+     "en": "Timor Sea",
+     "zh": "帝汶海",
+     "hi": "तिमोर सागर",
+     "es": "mar de Timor",
+     "ar": "بحر تيمور",
+     "fr": "mer de Timor",
+     "bn": "তিমুর সাগর",
+     "pt": "Mar de Timor",
+     "ru": "Тиморское море",
+     "ur": "بحیرہ تیمور",
+     "de": "Timorsee"
+    },
+    "id": "timor-sea"
+   },
+   {
+    "name": {
+     "en": "Yellow Sea",
+     "zh": "黄海",
+     "hi": "पीला सागर",
+     "es": "mar Amarillo",
+     "ar": "البحر الأصفر",
+     "fr": "mer Jaune",
+     "bn": "পীতসাগর",
+     "pt": "Mar Amarelo",
+     "ru": "Жёлтое море",
+     "ur": "بحیرہ اصفر",
+     "de": "Gelbes Meer"
+    },
+    "id": "yellow-sea"
+   },
+   {
+    "name": {
+     "en": "Chukchi Sea",
+     "zh": "楚科奇海",
+     "hi": "चुकची सागर",
+     "es": "mar de Chukotka.",
+     "ar": "بحر تشوكشي",
+     "fr": "mer des Tchouktches",
+     "bn": "চুকচি সাগর",
+     "pt": "Mar de Chukchi",
+     "ru": "Чукотское море",
+     "ur": "بحیرہ چکچی",
+     "de": "Tschuktschensee"
+    },
+    "id": "chukchi-sea"
+   },
+   {
+    "name": {
+     "en": "Sulu Sea",
+     "zh": "苏禄海",
+     "hi": "सुलु सागर",
+     "es": "mar de Joló",
+     "ar": "بحر سولو",
+     "fr": "mer de Soulou",
+     "bn": "সুলু সাগর",
+     "pt": "Mar de Sulu",
+     "ru": "Море Сулу",
+     "ur": "بحیرہ سولو",
+     "de": "Sulusee"
+    },
+    "id": "sulu-sea"
+   },
+   {
+    "name": {
+     "en": "Baltic Sea",
+     "zh": "波罗的海",
+     "hi": "बाल्टिक सागर",
+     "es": "Mar Báltico",
+     "ar": "بحر البلطيق",
+     "fr": "mer Baltique",
+     "bn": "বাল্টিক সাগর",
+     "pt": "Mar Báltico",
+     "ru": "Балтийское море",
+     "ur": "بحیرہ بالٹک",
+     "de": "Ostsee"
+    },
+    "id": "baltic-sea"
+   },
+   {
+    "name": {
+     "en": "Bellingshausen Sea",
+     "zh": "别林斯高晋海",
+     "hi": "बेलिंग्सहाउज़ेन सागर",
+     "es": "mar de Bellingshausen",
+     "ar": "بحر بلنغهاوزن",
+     "fr": "mer de Bellingshausen",
+     "bn": "বেলিংশাউসেন সী",
+     "pt": "Mar de Bellingshausen",
+     "ru": "Море Беллинсгаузена",
+     "ur": "بحیرہ بلینگشهاوزن",
+     "de": "Bellingshausen-See"
+    },
+    "id": "bellingshausen-sea"
+   },
+   {
+    "name": {
+     "en": "Amundsen Sea",
+     "zh": "阿蒙森海",
+     "hi": "आमुण्डसेन सागर",
+     "es": "mar de Amundsen",
+     "ar": "بحر أموندسن",
+     "fr": "mer d'Amundsen",
+     "bn": "আমুন্ডসেন সী",
+     "pt": "Mar de Amundsen",
+     "ru": "Море Амундсена",
+     "ur": "بحیرہ اموندسن",
+     "de": "Amundsensee"
+    },
+    "id": "amundsen-sea"
+   },
+   {
+    "name": {
+     "en": "Irish Sea",
+     "zh": "愛爾蘭海",
+     "hi": "आयरिश सागर",
+     "es": "mar de Irlanda",
+     "ar": "البحر الأيرلندي",
+     "fr": "mer d'Irlande",
+     "bn": "আইরিশ সাগর",
+     "pt": "Mar da Irlanda",
+     "ru": "Ирландское море",
+     "ur": "بحیرہ آئرش",
+     "de": "Irische See"
+    },
+    "id": "irish-sea"
+   },
+   {
+    "name": {
+     "en": "Scotia Sea",
+     "zh": "斯科舍海",
+     "hi": "स्कोशिया सागर",
+     "es": "mar de las Antillas Australes",
+     "ar": "بحر سكوتيا",
+     "fr": "mer de la Scotia",
+     "bn": "স্কশিয়া সাগর",
+     "pt": "Mar de Scotia",
+     "ru": "Море Скоша",
+     "ur": "بحیرہ سکوٹیا",
+     "de": "Scotiasee"
+    },
+    "id": "scotia-sea"
+   }
+  ]
+ },
+ "straits": {
+  "kind": "poly",
+  "items": [
+   {
+    "name": {
+     "en": "Mozambique Channel",
+     "zh": "莫桑比克海峡",
+     "hi": "मोजाम्बिक जलसन्धि",
+     "es": "Canal de Mozambique",
+     "ar": "قناة موزنبيق",
+     "fr": "canal du Mozambique",
+     "bn": "মোজাম্বিক প্রণালী",
+     "pt": "Canal de Moçambique",
+     "ru": "Мозамбикский пролив",
+     "ur": "رودبار موزمبیق",
+     "de": "Straße von Mosambik"
+    },
+    "id": "mozambique-channel"
+   },
+   {
+    "name": {
+     "en": "Davis Strait",
+     "zh": "戴维斯海峡",
+     "hi": "डेविस जलसन्धि",
+     "es": "Estrecho de Davis",
+     "ar": "مضيق دافيس",
+     "fr": "détroit de Davis",
+     "bn": "ডেভিস প্রণালী",
+     "pt": "Estreito de Davis",
+     "ru": "Пролив Дейвиса",
+     "ur": "آبنائے ڈیوس",
+     "de": "Davisstraße"
+    },
+    "id": "davis-strait"
+   },
+   {
+    "name": {
+     "en": "Drake Passage",
+     "zh": "德雷克海峡",
+     "hi": "ड्रेक जलमार्ग",
+     "es": "Mar de Hoces",
+     "ar": "ممر دريك",
+     "fr": "passage de Drake",
+     "bn": "ড্রেক জলপথ",
+     "pt": "Passagem de Drake",
+     "ru": "Пролив Дрейка",
+     "ur": "گزرگاہ ڈریک",
+     "de": "Drakestraße"
+    },
+    "id": "drake-passage"
+   },
+   {
+    "name": {
+     "en": "Luzon Strait",
+     "zh": "吕宋海峡",
+     "hi": "लूज़ोन जलसन्धि",
+     "es": "Estrecho de Luzón",
+     "ar": "مضيق لوزون",
+     "fr": "détroit de Luçon",
+     "bn": "লুজন স্ট্রেট",
+     "pt": "Estreito de Luzon",
+     "ru": "Лусонский пролив",
+     "ur": "لوزن اسٹریٹ",
+     "de": "Luzonstraße"
+    },
+    "id": "luzon-strait"
+   },
+   {
+    "name": {
+     "en": "Hudson Strait",
+     "zh": "哈得逊海峡",
+     "hi": "हडसन जलसन्धि",
+     "es": "Estrecho de Hudson",
+     "ar": "مضيق هدسون",
+     "fr": "détroit d'Hudson",
+     "bn": "হাডসন প্রণালী",
+     "pt": "Estreito de Hudson",
+     "ru": "Гудзонов пролив",
+     "ur": "ہڈسن اسٹریٹ",
+     "de": "Hudsonstraße"
+    },
+    "id": "hudson-strait"
+   },
+   {
+    "name": {
+     "en": "English Channel",
+     "zh": "英吉利海峡",
+     "hi": "इंग्लिश चैनल",
+     "es": "canal de la Mancha",
+     "ar": "بحر المانش",
+     "fr": "Manche",
+     "bn": "ইংলিশ চ্যানেল",
+     "pt": "Canal da Mancha",
+     "ru": "Ла-Манш",
+     "ur": "رودبار انگلستان",
+     "de": "Ärmelkanal"
+    },
+    "id": "english-channel"
+   },
+   {
+    "name": {
+     "en": "Northwest Passage",
+     "zh": "西北航道",
+     "hi": "उत्तरी पश्चिमी समुद्री मार्ग",
+     "es": "paso del Noroeste",
+     "ar": "الممر الشمالي الغربي",
+     "fr": "passage du Nord-Ouest",
+     "bn": "উত্তর পশ্চিম প্যাসেজ",
+     "pt": "Passagem do Noroeste",
+     "ru": "Северо-Западный проход",
+     "ur": "دی نارتھ ویسٹرن پیسیجز",
+     "de": "Nordwestpassage"
+    },
+    "id": "northwest-passage"
+   },
+   {
+    "name": {
+     "en": "Strait of Malacca",
+     "zh": "马六甲海峡",
+     "hi": "मलक्का जलडमरूमध्य",
+     "es": "Estrecho de Malaca",
+     "ar": "مضيق ملقا",
+     "fr": "détroit de Malacca",
+     "bn": "মালাক্কা প্রণালী",
+     "pt": "Estreito de Malaca",
+     "ru": "Малаккский пролив",
+     "ur": "آبنائے ملاکا",
+     "de": "Straße von Malakka"
+    },
+    "id": "strait-of-malacca"
+   },
+   {
+    "name": {
+     "en": "Makassar Strait",
+     "zh": "望加锡海峡",
+     "hi": "मकासर स्ट्रेट",
+     "es": "Estrecho de Macasar",
+     "ar": "مضيق ماكاسار",
+     "fr": "détroit de Macassar",
+     "bn": "মাকাসসার স্ট্রট",
+     "pt": "Estreito de Macáçar",
+     "ru": "Макасарский пролив",
+     "ur": "ماکاسر اسٹریٹ",
+     "de": "Straße von Makassar"
+    },
+    "id": "makassar-strait"
+   },
+   {
+    "name": {
+     "en": "Korea Strait",
+     "zh": "朝鲜海峡",
+     "hi": "कोरिया जलसन्धि",
+     "es": "Estrecho de Corea",
+     "ar": "كوريا",
+     "fr": "détroit de Corée",
+     "bn": "কোরিয়া প্রণালী",
+     "pt": "Estreito da Coreia",
+     "ru": "Корейский пролив",
+     "ur": "آبنائے کوریا",
+     "de": "Koreastraße"
+    },
+    "id": "korea-strait"
+   },
+   {
+    "name": {
+     "en": "Florida Strait",
+     "zh": "佛罗里达海峡",
+     "hi": "फ्लोरिडा जलसन्धि",
+     "es": "Estrecho de Florida",
+     "ar": "فلوريدا",
+     "fr": "détroit de Floride",
+     "bn": "ফ্লোরিডা প্রণালী",
+     "pt": "Estreito da Flórida",
+     "ru": "Флоридский пролив",
+     "ur": "اسٹریٹس آف فلوریڈا",
+     "de": "Floridastraße"
+    },
+    "id": "florida-strait"
+   },
+   {
+    "name": {
+     "en": "Taiwan Strait",
+     "zh": "台湾海峡",
+     "hi": "ताइवान स्ट्रेट",
+     "es": "Estrecho de Taiwán",
+     "ar": "مضيق تايوان",
+     "fr": "détroit de Taïwan",
+     "bn": "তাইওয়ান প্রণালী",
+     "pt": "Estreito de Taiwan",
+     "ru": "Тайваньский пролив",
+     "ur": "آبنائے تائیوان",
+     "de": "Formosastraße"
+    },
+    "id": "taiwan-strait"
+   },
+   {
+    "name": {
+     "en": "Bristol Channel",
+     "zh": "布里斯托湾",
+     "hi": "ब्रिस्टल चैनल",
+     "es": "Canal de Bristol",
+     "ar": "قناة برستل",
+     "fr": "canal de Bristol",
+     "bn": "ব্রিস্টল প্রণালী",
+     "pt": "Canal de Bristol",
+     "ru": "Бристольский залив",
+     "ur": "برسٹل چینل",
+     "de": "Bristolkanal"
+    },
+    "id": "bristol-channel"
+   },
+   {
+    "name": {
+     "en": "Singapore Strait",
+     "zh": "新加坡海峡",
+     "hi": "सिंगापुर की जलडमरूमध्य",
+     "es": "Estrecho de Singapur",
+     "ar": "مضيق سنغافورة",
+     "fr": "détroit de Singapour",
+     "bn": "সিঙ্গাপুর প্রণালী",
+     "pt": "Estreito de Singapura",
+     "ru": "Сингапурский пролив",
+     "ur": "آبنائے سنگاپور",
+     "de": "Straße von Singapur"
+    },
+    "id": "singapore-strait"
+   },
+   {
+    "name": {
+     "en": "Strait of Gibraltar",
+     "zh": "直布羅陀海峽",
+     "hi": "जिब्राल्टर जलसन्धि",
+     "es": "Estrecho de Gibraltar",
+     "ar": "مضيق جبل طارق",
+     "fr": "détroit de Gibraltar",
+     "bn": "জিব্রাল্টার প্রণালী",
+     "pt": "Estreito de Gibraltar",
+     "ru": "Гибралтарский пролив",
+     "ur": "آبنائے جبل الطارق",
+     "de": "Straße von Gibraltar"
+    },
+    "id": "strait-of-gibraltar"
+   }
+  ]
+ },
+ "lakes": {
+  "kind": "poly",
+  "items": [
+   {
+    "name": {
+     "en": "Lake Superior",
+     "zh": "苏必利尔湖",
+     "hi": "सुपीरियर झील",
+     "es": "Lago Superior",
+     "ar": "بحيرة سوبيريور",
+     "fr": "lac Supérieur",
+     "bn": "সুপিরিয়র হ্রদ",
+     "pt": "Lago Superior",
+     "ru": "Верхнее озеро",
+     "ur": "جھیل سپیریئر",
+     "de": "Oberer See"
+    },
+    "id": "lake-superior"
+   },
+   {
+    "name": {
+     "en": "Lake Victoria",
+     "zh": "維多利亞湖",
+     "hi": "विक्टोरिया झील",
+     "es": "Victoria",
+     "ar": "بحيرة فيكتوريا",
+     "fr": "lac Victoria",
+     "bn": "ভিক্টোরিয়া হ্রদ",
+     "pt": "Lago Vitória",
+     "ru": "Виктория",
+     "ur": "جھیل وکٹوریہ",
+     "de": "Victoriasee"
+    },
+    "id": "lake-victoria"
+   },
+   {
+    "name": {
+     "en": "Lake Huron",
+     "zh": "休伦湖",
+     "hi": "ह्यूरॉन झील",
+     "es": "lago Hurón",
+     "ar": "بحيرة هرون",
+     "fr": "lac Huron",
+     "bn": "লেক হুরন",
+     "pt": "Lago Huron",
+     "ru": "Гурон",
+     "ur": "جھیل ہیورون",
+     "de": "Huronsee"
+    },
+    "id": "lake-huron"
+   },
+   {
+    "name": {
+     "en": "Lake Michigan",
+     "zh": "密歇根湖",
+     "hi": "मिशिगन झील",
+     "es": "Lago Míchigan",
+     "ar": "بحيرة ميشيغين",
+     "fr": "lac Michigan",
+     "bn": "মিশিগান হ্রদ",
+     "pt": "Lago Michigan",
+     "ru": "Мичиган",
+     "ur": "جھیل مشی گن",
+     "de": "Michigansee"
+    },
+    "id": "lake-michigan"
+   },
+   {
+    "name": {
+     "en": "Lake Tanganyika",
+     "zh": "坦噶尼喀湖",
+     "hi": "तांगान्यीका झील",
+     "es": "lago Tanganica",
+     "ar": "بحيرة تنجانيقا",
+     "fr": "lac Tanganyika",
+     "bn": "তাংগানিকা হ্রদ",
+     "pt": "Lago Tanganica",
+     "ru": "Танганьика",
+     "ur": "جھیل ٹانگانیکا",
+     "de": "Tanganjikasee"
+    },
+    "id": "lake-tanganyika"
+   },
+   {
+    "name": {
+     "en": "Lake Baikal",
+     "zh": "贝加尔湖",
+     "hi": "बयकाल झील",
+     "es": "Baikal",
+     "ar": "بحيرة بيقال",
+     "fr": "lac Baïkal",
+     "bn": "বৈকাল হ্রদ",
+     "pt": "Lago Baikal",
+     "ru": "Байкал",
+     "ur": "جھیل بیکال",
+     "de": "Baikalsee"
+    },
+    "id": "lake-baikal"
+   },
+   {
+    "name": {
+     "en": "Great Bear Lake",
+     "zh": "大熊湖",
+     "hi": "ग्रेट बियर झील",
+     "es": "Gran Lago del Oso",
+     "ar": "بحيرة الدب العظيم",
+     "fr": "Grand Lac de l'Ours",
+     "bn": "গ্রেট বেয়ার লেক",
+     "pt": "Grande Lago do Urso",
+     "ru": "Большое Медвежье озеро",
+     "ur": "گریٹ بیئر لیک",
+     "de": "Großer Bärensee"
+    },
+    "id": "great-bear-lake"
+   },
+   {
+    "name": {
+     "en": "Lake Malawi",
+     "zh": "马拉维湖",
+     "hi": "मलावी झील",
+     "es": "Lago Malaui",
+     "ar": "بحيرة ملاوي",
+     "fr": "lac Malawi",
+     "bn": "মালাউই হ্রদ",
+     "pt": "Lago Niassa",
+     "ru": "Ньяса",
+     "ur": "جھیل ملاوی",
+     "de": "Malawisee"
+    },
+    "id": "lake-malawi"
+   },
+   {
+    "name": {
+     "en": "Great Slave Lake",
+     "zh": "大奴湖",
+     "hi": "ग्रेट स्लाव झील",
+     "es": "Gran Lago del Esclavo",
+     "ar": "بحيرة جريت سليف",
+     "fr": "Grand Lac des Esclaves",
+     "bn": "গ্রেট স্লেভ লেক",
+     "pt": "Grande Lago do Escravo",
+     "ru": "Большое Невольничье озеро",
+     "ur": "گریٹ سلیو جھیل",
+     "de": "Großer Sklavensee"
+    },
+    "id": "great-slave-lake"
+   },
+   {
+    "name": {
+     "en": "Lake Erie",
+     "zh": "伊利湖",
+     "hi": "ईरी झील",
+     "es": "Erie",
+     "ar": "بحيرة إري",
+     "fr": "lac Érié",
+     "bn": "ইরি হ্রদ",
+     "pt": "Lago Erie",
+     "ru": "Эри",
+     "ur": "جھیل ایری",
+     "de": "Eriesee"
+    },
+    "id": "lake-erie"
+   },
+   {
+    "name": {
+     "en": "Lake Winnipeg",
+     "zh": "溫尼伯湖",
+     "hi": "विनिपेग झील",
+     "es": "Lago Winnipeg",
+     "ar": "بحيرة وينيبيغ",
+     "fr": "Lac Winnipeg",
+     "bn": "লেক উইন্নিপেগ",
+     "pt": "Lago Winnipeg",
+     "ru": "Виннипег",
+     "ur": "جھیل ونیپیگ",
+     "de": "Winnipegsee"
+    },
+    "id": "lake-winnipeg"
+   },
+   {
+    "name": {
+     "en": "Lake Ontario",
+     "zh": "安大略湖",
+     "hi": "ओण्टारियो झील",
+     "es": "lago Ontario",
+     "ar": "بحيرة أونتاريو",
+     "fr": "lac Ontario",
+     "bn": "লেক অন্টারিও",
+     "pt": "Lago Ontário",
+     "ru": "Онтарио",
+     "ur": "جھیل انٹاریو",
+     "de": "Ontariosee"
+    },
+    "id": "lake-ontario"
+   },
+   {
+    "name": {
+     "en": "Lake Ladoga",
+     "zh": "拉多加湖",
+     "hi": "लादोगा झील",
+     "es": "Ládoga",
+     "ar": "بحيرة لادوغا",
+     "fr": "lac Ladoga",
+     "bn": "লাডোগা হ্রদ",
+     "pt": "Lago Ladoga",
+     "ru": "Ладожское озеро",
+     "ur": "جھیل لاڈوگا",
+     "de": "Ladogasee"
+    },
+    "id": "lake-ladoga"
+   },
+   {
+    "name": {
+     "en": "Lake Balkhash",
+     "zh": "巴尔喀什湖",
+     "hi": "बलख़श झील",
+     "es": "Lago Baljash",
+     "ar": "بحيرة بلقاش",
+     "fr": "lac Balkhach",
+     "bn": "বলখাশ হ্রদ",
+     "pt": "Lago Balkhash",
+     "ru": "Балхаш",
+     "ur": "جھیل بالخش",
+     "de": "Balchaschsee"
+    },
+    "id": "lake-balkhash"
+   },
+   {
+    "name": {
+     "en": "Lake Onega",
+     "zh": "奥涅加湖",
+     "hi": "ओनेगा झील",
+     "es": "Onega",
+     "ar": "بحيرة أونيغا",
+     "fr": "lac Onega",
+     "bn": "লেক ওনেগা",
+     "pt": "Lago Onega",
+     "ru": "Онежское озеро",
+     "ur": "اونیگا جھیل",
+     "de": "Onegasee"
+    },
+    "id": "lake-onega"
+   },
+   {
+    "name": {
+     "en": "Lake Athabasca",
+     "zh": "阿萨巴斯卡湖",
+     "hi": "अथाबास्का झील",
+     "es": "Lago Athabasca",
+     "ar": "بحيرة أثاباسكا",
+     "fr": "Lac Athabasca",
+     "bn": "আথাবাস্কা হ্রদ",
+     "pt": "Lago Athabasca",
+     "ru": "Атабаска",
+     "ur": "جھیل اتھابسکا",
+     "de": "Athabascasee"
+    },
+    "id": "lake-athabasca"
+   },
+   {
+    "name": {
+     "en": "Titicaca",
+     "zh": "的的喀喀湖",
+     "hi": "टीटीकाका झील",
+     "es": "Titicaca",
+     "ar": "بحيرة تيتيكاكا",
+     "fr": "lac Titicaca",
+     "bn": "তিতিকাকা হ্রদ",
+     "pt": "Lago Titicaca",
+     "ru": "Титикака",
+     "ur": "جھیل ٹیٹیکاکا",
+     "de": "Titicacasee"
+    },
+    "id": "titicaca"
+   },
+   {
+    "name": {
+     "en": "Lake Nicaragua",
+     "zh": "尼加拉瓜湖",
+     "hi": "निकारागुआ झील",
+     "es": "Lago de Nicaragua",
+     "ar": "بحيرة نيكاراغوا",
+     "fr": "lac Nicaragua",
+     "bn": "নিকরাগুয়া হ্রদ",
+     "pt": "Lago Nicarágua",
+     "ru": "Озеро Никарагуа",
+     "ur": "جھیل نکاراگوا",
+     "de": "Nicaraguasee"
+    },
+    "id": "lake-nicaragua"
+   },
+   {
+    "name": {
+     "en": "Lake Turkana",
+     "zh": "图尔卡纳湖",
+     "hi": "तुर्काना झील",
+     "es": "Lago Turkana",
+     "ar": "بحيرة توركانا",
+     "fr": "lac Turkana",
+     "bn": "লেক তুরকানা",
+     "pt": "Lago Turkana",
+     "ru": "Рудольф",
+     "ur": "جھیل ٹرکانا",
+     "de": "Turkana-See"
+    },
+    "id": "lake-turkana"
+   },
+   {
+    "name": {
+     "en": "Reindeer Lake",
+     "zh": "驯鹿湖",
+     "hi": null,
+     "es": "Lago Reindeer",
+     "ar": null,
+     "fr": "lac Reindeer",
+     "bn": null,
+     "pt": "Lago Reindeer",
+     "ru": "Оленье озеро",
+     "ur": null,
+     "de": "Reindeer Lake"
+    },
+    "id": "reindeer-lake"
+   },
+   {
+    "name": {
+     "en": "Issyk-Kul",
+     "zh": "伊塞克湖",
+     "hi": "इसिक कुल",
+     "es": "Lago Issyk-Kul",
+     "ar": "بحيرة إيسيق كول",
+     "fr": "Yssyk Koul",
+     "bn": "ইসিক-কুল",
+     "pt": "Issyk-Kul",
+     "ru": "Иссык-Куль",
+     "ur": "اسیک کول",
+     "de": "Yssykköl"
+    },
+    "id": "issyk-kul"
+   },
+   {
+    "name": {
+     "en": "Vänern",
+     "zh": "维纳恩湖",
+     "hi": "वेनर्न",
+     "es": "lago Vänern",
+     "ar": "بحيرة فنرن",
+     "fr": "Vänern",
+     "bn": "ভেনার্ন",
+     "pt": "Lago Vänern",
+     "ru": "Венерн",
+     "ur": "وینرن",
+     "de": "Vänern"
+    },
+    "id": "vanern"
+   },
+   {
+    "name": {
+     "en": "Lake Albert",
+     "zh": "艾伯特湖",
+     "hi": "ऐल्बर्ट झील",
+     "es": "Lago Alberto",
+     "ar": "بحيرة ألبرت",
+     "fr": "lac Albert",
+     "bn": "লেক আলবার্ট",
+     "pt": "Lago Alberto",
+     "ru": "Альберт",
+     "ur": "جھیل البرٹ",
+     "de": "Albertsee"
+    },
+    "id": "lake-albert"
+   },
+   {
+    "name": {
+     "en": "Nettilling Lake",
+     "zh": "纳蒂灵湖",
+     "hi": "नेचिलिंग झील",
+     "es": "Lago Nettilling",
+     "ar": "بحيرة نيتيلينق",
+     "fr": "lac Nettilling",
+     "bn": "নেট্টিলিং হ্রদ",
+     "pt": "Lago Nettilling",
+     "ru": "Неттиллинг",
+     "ur": "نیٹیلنگ جھیل",
+     "de": "Nettilling Lake"
+    },
+    "id": "nettilling-lake"
+   },
+   {
+    "name": {
+     "en": "Taymyr",
+     "zh": "泰梅尔湖",
+     "hi": "तैमिर झील",
+     "es": "Lago Taimir",
+     "ar": "بحيرة تايمير",
+     "fr": "lac Taïmyr",
+     "bn": "তাইমির হ্রদ",
+     "pt": "Lago Taimir",
+     "ru": "Таймыр",
+     "ur": "جھیل ٹانیمیر",
+     "de": "Taimyrsee"
+    },
+    "id": "taymyr"
+   },
+   {
+    "name": {
+     "en": "Lake Mweru",
+     "zh": "姆韦鲁湖",
+     "hi": "मवेरू झील",
+     "es": "Lago Moero",
+     "ar": "بحيرة مويرو",
+     "fr": "lac Moero",
+     "bn": "মুয়েরু হ্রদ",
+     "pt": "Lago Mweru",
+     "ru": "Мверу",
+     "ur": "لاک موئیرو",
+     "de": "Mwerusee"
+    },
+    "id": "lake-mweru"
+   },
+   {
+    "name": {
+     "en": "Lake Zaysan",
+     "zh": "斋桑泊",
+     "hi": "ज़ायसान झील",
+     "es": "Lago Zaysan",
+     "ar": "بحيرة زيسان",
+     "fr": "lac Zaïssan",
+     "bn": "লেক জেসান",
+     "pt": "Lago Zaysan",
+     "ru": "Зайсан",
+     "ur": "جھیل زیسان",
+     "de": "Saissansee"
+    },
+    "id": "lake-zaysan"
+   },
+   {
+    "name": {
+     "en": "Lake Nipigon",
+     "zh": "尼皮贡湖",
+     "hi": "निपिगन झील",
+     "es": "Lago Nipigon",
+     "ar": "بحيرة نيبيغون",
+     "fr": "lac Nipigon",
+     "bn": "লেক নিপিগন",
+     "pt": "Lago Nipigon",
+     "ru": "Нипигон",
+     "ur": "جھیل نیپیگون",
+     "de": "Nipigonsee"
+    },
+    "id": "lake-nipigon"
+   },
+   {
+    "name": {
+     "en": "Cedar Lake",
+     "zh": "錫達湖 (曼尼托巴省)",
+     "hi": "सिडर लेक",
+     "es": "Lago Cedar",
+     "ar": "سيدار ليك",
+     "fr": "lac des Cèdres",
+     "bn": "সেডার লেক",
+     "pt": "Lago Cedar",
+     "ru": "Сидар",
+     "ur": "کیدار جھیل",
+     "de": "Cedar Lake"
+    },
+    "id": "cedar-lake"
+   },
+   {
+    "name": {
+     "en": "Lake of the Woods",
+     "zh": "伍兹湖",
+     "hi": "लेक ऑफ द वुड्स",
+     "es": "Lago de los Bosques",
+     "ar": "بحيرة الغابات",
+     "fr": "lac des Bois",
+     "bn": "লেক অফ দ্য উডস",
+     "pt": "Lago dos Bosques",
+     "ru": "Лесное",
+     "ur": "لیک آف دا ووڈز",
+     "de": "Lake of the Woods"
+    },
+    "id": "lake-of-the-woods"
+   },
+   {
+    "name": {
+     "en": "Urmia Lake",
+     "zh": "乌鲁米耶湖",
+     "hi": "उर्मिया झील",
+     "es": "Lago Urmía",
+     "ar": "بحيرة أرومية",
+     "fr": "lac d'Ourmia",
+     "bn": "উর্মিয়া হ্রদ",
+     "pt": "Lago Urmia",
+     "ru": "Урмия",
+     "ur": "بحیرہ ارومیہ",
+     "de": "Urmiasee"
+    },
+    "id": "urmia-lake"
+   },
+   {
+    "name": {
+     "en": "Qinghai Lake",
+     "zh": "青海湖",
+     "hi": "चिंगहई झील",
+     "es": "Lago Qinghai",
+     "ar": "بحيرة تشينغهاي",
+     "fr": "lac Qinghai",
+     "bn": "চিংহাই হ্রদ",
+     "pt": "Lago Chingai",
+     "ru": "Кукунор",
+     "ur": "جھیل چنگھائی",
+     "de": "Qinghai-See"
+    },
+    "id": "qinghai-lake"
+   },
+   {
+    "name": {
+     "en": "Great Salt Lake",
+     "zh": "大盐湖",
+     "hi": "महान नमक झील",
+     "es": "Gran Lago Salado",
+     "ar": "البحيرة المالحة الكبرى",
+     "fr": "Grand Lac Salé",
+     "bn": "গ্রেট সল্ট লেক",
+     "pt": "Grande Lago Salgado",
+     "ru": "Большое Солёное озеро",
+     "ur": "گریٹ سالٹ لیک",
+     "de": "Großer Salzsee"
+    },
+    "id": "great-salt-lake"
+   },
+   {
+    "name": {
+     "en": "Khanka",
+     "zh": "兴凯湖",
+     "hi": "खानका झील",
+     "es": "Lago Janka",
+     "ar": "بحيرة خانكا",
+     "fr": "lac Khanka",
+     "bn": "লেক খাংকা",
+     "pt": "Lago Khanka",
+     "ru": "Ханка",
+     "ur": "جھیل کھانکا",
+     "de": "Chankasee"
+    },
+    "id": "khanka"
+   },
+   {
+    "name": {
+     "en": "Dubawnt Lake",
+     "zh": "杜邦特湖",
+     "hi": "डुबॉंवन्त झील",
+     "es": "Lago Dubawnt",
+     "ar": "بحيرة دوباونت",
+     "fr": "lac Dubawnt",
+     "bn": "দুবোয়ান্ত লেক",
+     "pt": "Lago Dubawnt",
+     "ru": "Дубонт",
+     "ur": "ڈبوانٹ جھیل",
+     "de": "Dubawnt Lake"
+    },
+    "id": "dubawnt-lake"
+   }
+  ]
+ },
+ "islands": {
+  "kind": "poly",
+  "items": [
+   {
+    "name": {
+     "en": "Iceland",
+     "zh": "冰岛",
+     "hi": "आइसलैंड",
+     "es": "Islandia",
+     "ar": "أيسلندا",
+     "fr": "Islande",
+     "bn": "আইসল্যান্ড",
+     "pt": "Islândia",
+     "ru": "Исландия",
+     "ur": "آئسلینڈ",
+     "de": "Island"
+    },
+    "id": "iceland"
+   },
+   {
+    "name": {
+     "en": "Ireland",
+     "zh": "爱尔兰岛",
+     "hi": "आयरलैण्ड",
+     "es": "isla de Irlanda",
+     "ar": "أيرلندا",
+     "fr": "Irlande",
+     "bn": "আয়ারল্যান্ড",
+     "pt": "Irlanda",
+     "ru": "Ирландия",
+     "ur": "جزیرہ آئرلینڈ",
+     "de": "Irland"
+    },
+    "id": "ireland"
+   },
+   {
+    "name": {
+     "en": "Madagascar",
+     "zh": "马达加斯加岛",
+     "hi": "मेडागास्कर",
+     "es": "Madagascar",
+     "ar": "مدغشقر",
+     "fr": "Madagascar",
+     "bn": "মাদাগাস্কার",
+     "pt": "ilha de Madagascar",
+     "ru": "Мадагаскар",
+     "ur": "مڈغاسکر",
+     "de": "Madagaskar"
+    },
+    "id": "madagascar"
+   },
+   {
+    "name": {
+     "en": "Cuba",
+     "zh": "古巴岛",
+     "hi": "क्यूबा",
+     "es": "Cuba",
+     "ar": "كوبا",
+     "fr": "Cuba",
+     "bn": "কিউবা",
+     "pt": "Cuba",
+     "ru": "Куба",
+     "ur": "کیوبا",
+     "de": "Kuba"
+    },
+    "id": "cuba"
+   },
+   {
+    "name": {
+     "en": "Sri Lanka",
+     "zh": "斯里兰卡岛",
+     "hi": "श्रीलंका",
+     "es": "SRI LANKA",
+     "ar": "سيريلانكا",
+     "fr": "Sri Lanka",
+     "bn": "শ্রীলংকা",
+     "pt": "Seri Lanca",
+     "ru": "Шри-Ланка",
+     "ur": "سری لنکا",
+     "de": "SRI LANKA"
+    },
+    "id": "sri-lanka"
+   },
+   {
+    "name": {
+     "en": "Jamaica",
+     "zh": "牙买加岛",
+     "hi": "जमाइका",
+     "es": "Jamaica",
+     "ar": "جامايكا",
+     "fr": "Jamaïque",
+     "bn": "জামাইকা",
+     "pt": "Jamaica",
+     "ru": "Ямайка",
+     "ur": "جمیکا",
+     "de": "Jamaika"
+    },
+    "id": "jamaica"
+   },
+   {
+    "name": {
+     "en": "Greenland",
+     "zh": "格陵兰",
+     "hi": "ग्रीनलैण्ड",
+     "es": "Groenlandia",
+     "ar": "غرينلاند",
+     "fr": "Groenland",
+     "bn": "গ্রিনল্যান্ড",
+     "pt": "Groelândia",
+     "ru": "Гренландия",
+     "ur": "گرین لینڈ",
+     "de": "Grönland"
+    },
+    "id": "greenland"
+   },
+   {
+    "name": {
+     "en": "Sardinia",
+     "zh": "撒丁",
+     "hi": "सारडीनिया",
+     "es": "Cerdeña",
+     "ar": "سردينيا",
+     "fr": "Sardaigne",
+     "bn": "সার্দিনিয়া",
+     "pt": "Sardenha",
+     "ru": "Сардиния",
+     "ur": "ساردینیا",
+     "de": "Sardinien"
+    },
+    "id": "sardinia"
+   },
+   {
+    "name": {
+     "en": "Corsica",
+     "zh": "科西嘉",
+     "hi": "कोर्सिका",
+     "es": "Córcega",
+     "ar": "كورسيكا",
+     "fr": "Corse",
+     "bn": "কর্স",
+     "pt": "Córsega",
+     "ru": "Корсика",
+     "ur": "کورسیکا",
+     "de": "Korsika"
+    },
+    "id": "corsica"
+   },
+   {
+    "name": {
+     "en": "Great Britain",
+     "zh": "大不列顛島",
+     "hi": "ग्रेट ब्रिटेन",
+     "es": "Gran Bretaña",
+     "ar": "بريطانيا",
+     "fr": "Grande-Bretagne",
+     "bn": "গ্রেট ব্রিটেন",
+     "pt": "Grã-Bretanha",
+     "ru": "Великобритания",
+     "ur": "برطانیہ عظمی",
+     "de": "Großbritannien"
+    },
+    "id": "great-britain"
+   },
+   {
+    "name": {
+     "en": "Java",
+     "zh": "爪哇岛",
+     "hi": "जावा",
+     "es": "Java",
+     "ar": "جاوة",
+     "fr": "Java",
+     "bn": "জাভা দ্বীপ",
+     "pt": "Java",
+     "ru": "Ява",
+     "ur": "جاوا",
+     "de": "Java"
+    },
+    "id": "java"
+   },
+   {
+    "name": {
+     "en": "Hokkaidō",
+     "zh": "北海道",
+     "hi": "होक्काइदो",
+     "es": "Hokkaidō",
+     "ar": "هوكايدو",
+     "fr": "Hokkaidō",
+     "bn": "হোক্কাইদো",
+     "pt": "Hokkaido",
+     "ru": "Хоккайдо",
+     "ur": "ہوکائیدو",
+     "de": "Hokkaidō"
+    },
+    "id": "hokkaido"
+   },
+   {
+    "name": {
+     "en": "Sumatra",
+     "zh": "苏门答腊",
+     "hi": "सुमात्रा",
+     "es": "Sumatra",
+     "ar": "سومطرة",
+     "fr": "Sumatra",
+     "bn": "সুমাত্রা",
+     "pt": "Sumatra",
+     "ru": "Суматра",
+     "ur": "سماٹرا",
+     "de": "Sumatra"
+    },
+    "id": "sumatra"
+   },
+   {
+    "name": {
+     "en": "Nova Scotia",
+     "zh": "新斯科舍省",
+     "hi": "नोवा स्कॉटिया",
+     "es": "Nueva Escocia",
+     "ar": "نوفا سكوشا",
+     "fr": "Nouvelle-Écosse",
+     "bn": "নোভা স্কোশিয়া",
+     "pt": "Nova Escócia",
+     "ru": "Новая Шотландия",
+     "ur": "نووا سکوشیا",
+     "de": "Nova Scotia"
+    },
+    "id": "nova-scotia"
+   },
+   {
+    "name": {
+     "en": "New Guinea",
+     "zh": "新几内亚岛",
+     "hi": "नया गिनी",
+     "es": "Nueva Guinea",
+     "ar": "غينيا الجديدة",
+     "fr": "Nouvelle-Guinée",
+     "bn": "নিউ গিনি",
+     "pt": "Nova Guiné",
+     "ru": "Новая Гвинея",
+     "ur": "نیو گنی",
+     "de": "Neuguinea"
+    },
+    "id": "new-guinea"
+   },
+   {
+    "name": {
+     "en": "Borneo",
+     "zh": "加里曼丹岛",
+     "hi": "बोर्नियो",
+     "es": "Isla de Borneo",
+     "ar": "بورنيو",
+     "fr": "Bornéo",
+     "bn": "বোর্নিও",
+     "pt": "Bornéu",
+     "ru": "Борнео",
+     "ur": "بورنیو",
+     "de": "Borneo"
+    },
+    "id": "borneo"
+   },
+   {
+    "name": {
+     "en": "Honshu",
+     "zh": "本州岛",
+     "hi": "होन्शू",
+     "es": "Honshū",
+     "ar": "هونشو",
+     "fr": "Honshū",
+     "bn": "হোনশু",
+     "pt": "Honshu",
+     "ru": "Хонсю",
+     "ur": "ہونشو",
+     "de": "Honshū"
+    },
+    "id": "honshu"
+   },
+   {
+    "name": {
+     "en": "Kyushu",
+     "zh": "九州",
+     "hi": "क्यूशू",
+     "es": "Kyūshū",
+     "ar": "كيوشو",
+     "fr": "Kyūshū",
+     "bn": "কিউশু",
+     "pt": "Kyushu",
+     "ru": "Кюсю",
+     "ur": "کیوشو",
+     "de": "Kyūshū"
+    },
+    "id": "kyushu"
+   },
+   {
+    "name": {
+     "en": "Shikoku",
+     "zh": "四国岛",
+     "hi": "शिकोकू",
+     "es": "Shikoku",
+     "ar": "شيكوكو",
+     "fr": "Shikoku",
+     "bn": "শিকোকু",
+     "pt": "Shikoku",
+     "ru": "Сикоку",
+     "ur": "شیکوکو",
+     "de": "Shikoku"
+    },
+    "id": "shikoku"
+   },
+   {
+    "name": {
+     "en": "Sulawesi",
+     "zh": "苏拉威西岛",
+     "hi": "सुलावेसी",
+     "es": "Célebes",
+     "ar": "سولاوسي",
+     "fr": "Célèbes",
+     "bn": "সুলাওয়েসি",
+     "pt": "Celebes",
+     "ru": "Сулавеси",
+     "ur": "سولاویسی",
+     "de": "Sulawesi"
+    },
+    "id": "sulawesi"
+   },
+   {
+    "name": {
+     "en": "Hispaniola",
+     "zh": "伊斯帕尼奥拉岛",
+     "hi": "हिस्पानिओला",
+     "es": "La Española",
+     "ar": "هسبنيولا",
+     "fr": "Hispaniola",
+     "bn": "হিস্পানিওলা",
+     "pt": "Ilha de São Domingos",
+     "ru": "Гаити",
+     "ur": "ہسپانیولا",
+     "de": "Hispaniola"
+    },
+    "id": "hispaniola"
+   },
+   {
+    "name": {
+     "en": "Luzon",
+     "zh": "吕宋",
+     "hi": "लूज़ोन",
+     "es": "Luzón",
+     "ar": "لوزون",
+     "fr": "Luçon",
+     "bn": "লুসোন দ্বীপ",
+     "pt": "Lução",
+     "ru": "Лусон",
+     "ur": "لوزون",
+     "de": "Luzon"
+    },
+    "id": "luzon"
+   },
+   {
+    "name": {
+     "en": "Sakhalin",
+     "zh": "库页岛",
+     "hi": "साख़ालिन",
+     "es": "Sajalín",
+     "ar": "سخالين",
+     "fr": "Sakhaline",
+     "bn": "সাখালিন দ্বীপ",
+     "pt": "Sacalina",
+     "ru": "Сахалин",
+     "ur": "سخالن جزیرہ",
+     "de": "Sachalin"
+    },
+    "id": "sakhalin"
+   },
+   {
+    "name": {
+     "en": "Mindanao",
+     "zh": "棉兰老",
+     "hi": "मिन्दनाओ",
+     "es": "Mindanao",
+     "ar": "مندناو",
+     "fr": "Mindanao",
+     "bn": "মিন্দানাও",
+     "pt": "Mindanau",
+     "ru": "Минданао",
+     "ur": "مینداناؤ",
+     "de": "Mindanao"
+    },
+    "id": "mindanao"
+   },
+   {
+    "name": {
+     "en": "Tierra del Fuego",
+     "zh": "火地群岛",
+     "hi": "तिएर्रा देल फ़ुएगो",
+     "es": "Archipiélago de Tierra del Fuego",
+     "ar": "أرض النار",
+     "fr": "Terre de Feu",
+     "bn": "তিয়ের্‌রা দেল ফুয়েগো",
+     "pt": "Terra do Fogo",
+     "ru": "Огненная Земля",
+     "ur": "ٹیئرا ڈیل فیوگو",
+     "de": "Feuerland"
+    },
+    "id": "tierra-del-fuego"
+   },
+   {
+    "name": {
+     "en": "Newfoundland",
+     "zh": "纽芬兰岛",
+     "hi": "न्यूफ़ाउण्डलैण्ड",
+     "es": "Isla de Terranova",
+     "ar": "نيوفاوندلاند",
+     "fr": "Terre-Neuve",
+     "bn": "নিউফাউন্ডল্যান্ড",
+     "pt": "Terra Nova",
+     "ru": "Ньюфаундленд",
+     "ur": "نیو فاؤنڈ لینڈ",
+     "de": "Neufundland"
+    },
+    "id": "newfoundland"
+   },
+   {
+    "name": {
+     "en": "Timor",
+     "zh": "帝汶",
+     "hi": "तिमोर द्वीप",
+     "es": "Timor",
+     "ar": "تيمور",
+     "fr": "Timor",
+     "bn": "তিমুর",
+     "pt": "Timor",
+     "ru": "Тимор",
+     "ur": "جزیرہ تیمور",
+     "de": "Timor"
+    },
+    "id": "timor"
+   },
+   {
+    "name": {
+     "en": "North Island",
+     "zh": "北岛",
+     "hi": "उत्तर द्वीप",
+     "es": "Isla Norte",
+     "ar": "الجزيرة الشمالية",
+     "fr": "île du Nord",
+     "bn": "উত্তর দ্বীপ",
+     "pt": "Ilha Norte",
+     "ru": "Северный остров",
+     "ur": "شمالی جزیرہ",
+     "de": "Nordinsel"
+    },
+    "id": "north-island"
+   },
+   {
+    "name": {
+     "en": "South Island",
+     "zh": "南岛",
+     "hi": "दक्षिण द्वीप",
+     "es": "Isla Sur",
+     "ar": "الجزيرة الجنوبية",
+     "fr": "île du Sud",
+     "bn": "দক্ষিণ দ্বীপ",
+     "pt": "Ilha Sul",
+     "ru": "Южный остров",
+     "ur": "جنوبی جزیرہ",
+     "de": "Südinsel"
+    },
+    "id": "south-island"
+   },
+   {
+    "name": {
+     "en": "Taiwan Island",
+     "zh": "台湾",
+     "hi": "ताइवान",
+     "es": "Taiwán",
+     "ar": "تايوان",
+     "fr": "île de Taïwan",
+     "bn": "তাইওয়ান",
+     "pt": "Taiwan",
+     "ru": "Тайвань",
+     "ur": "تائیوان",
+     "de": "Taiwan"
+    },
+    "id": "taiwan-island"
+   },
+   {
+    "name": {
+     "en": "Baffin Island",
+     "zh": "巴芬島",
+     "hi": "बैफ़िन द्वीप",
+     "es": "isla de Baffin",
+     "ar": "بافين",
+     "fr": "île de Baffin",
+     "bn": "ব্যাফিন দ্বীপ",
+     "pt": "Ilha de Baffin",
+     "ru": "Баффинова Земля",
+     "ur": "جزیرہ بفین",
+     "de": "Baffininsel"
+    },
+    "id": "baffin-island"
+   },
+   {
+    "name": {
+     "en": "Ellesmere Island",
+     "zh": "埃尔斯米尔岛",
+     "hi": "एल्ज़्मेयर द्वीप",
+     "es": "Isla de Ellesmere",
+     "ar": "جزيرة إليسمير",
+     "fr": "île d'Ellesmere",
+     "bn": "এলসেমেয়ার আইল্যান্ড",
+     "pt": "Ilha Ellesmere",
+     "ru": "Элсмир",
+     "ur": "جزیرہ ایلیسمیرے",
+     "de": "Ellesmere-Insel"
+    },
+    "id": "ellesmere-island"
+   },
+   {
+    "name": {
+     "en": "Vancouver Island",
+     "zh": "温哥华岛",
+     "hi": "वैंकूवर द्वीप",
+     "es": "Isla de Vancouver",
+     "ar": "جزيرة فانكوفر",
+     "fr": "île de Vancouver",
+     "bn": "ভ্যাঙ্কুভার দ্বীপ",
+     "pt": "Ilha Vancouver",
+     "ru": "Ванкувер",
+     "ur": "وینکور جزیرہ",
+     "de": "Vancouver Island"
+    },
+    "id": "vancouver-island"
+   },
+   {
+    "name": {
+     "en": "Trinidad",
+     "zh": "特立尼达岛",
+     "hi": "त्रिनिदाद",
+     "es": "Isla Trinidad",
+     "ar": "ترينيداد",
+     "fr": "Trinité",
+     "bn": "ত্রিনিদাদ",
+     "pt": "Trindade",
+     "ru": "Тринидад",
+     "ur": "ٹرینیڈاڈ",
+     "de": "Trinidad"
+    },
+    "id": "trinidad"
+   },
+   {
+    "name": {
+     "en": "Victoria Island",
+     "zh": "维多利亚岛",
+     "hi": "विक्टोरिया द्वीप",
+     "es": "Isla Victoria",
+     "ar": "جزيرة فكتوريا",
+     "fr": "île Victoria",
+     "bn": "ভিক্টোরিয়া দ্বীপ",
+     "pt": "Ilha Victoria",
+     "ru": "Виктория",
+     "ur": "جزیرہ وکٹوریا",
+     "de": "Victoria-Insel"
+    },
+    "id": "victoria-island"
+   },
+   {
+    "name": {
+     "en": "Cape Breton Island",
+     "zh": "布雷顿角岛",
+     "hi": "केप ब्रेटन द्वीप",
+     "es": "Isla del Cabo Bretón",
+     "ar": "جزيرة كيب بريتون",
+     "fr": "île du Cap-Breton",
+     "bn": "কেপ ব্রেটন আইল্যান্ড",
+     "pt": "Ilha Cape Breton",
+     "ru": "Кейп-Бретон",
+     "ur": "کیپ بریٹن جیرہ",
+     "de": "Kap-Breton-Insel"
+    },
+    "id": "cape-breton-island"
+   },
+   {
+    "name": {
+     "en": "Banks Island",
+     "zh": "班克斯岛",
+     "hi": "बैंक्स द्वीप",
+     "es": "Isla de Banks",
+     "ar": "جزيرة بانكس",
+     "fr": "île Banks",
+     "bn": "ব্যাঙ্কস আইল্যান্ড",
+     "pt": "Ilha Banks",
+     "ru": "Банкс",
+     "ur": "جزیرہ بینکس",
+     "de": "Banksinsel"
+    },
+    "id": "banks-island"
+   },
+   {
+    "name": {
+     "en": "Alexander Island",
+     "zh": "亚历山大一世岛",
+     "hi": "ऐलेक्ज़ैन्डर द्वीप",
+     "es": "Isla Alejandro I",
+     "ar": "جزيرة ألكسندر",
+     "fr": "île Alexandre-Ier",
+     "bn": "আলেকজান্দার আইল্যান্ড",
+     "pt": "Ilha Alexandre I",
+     "ru": "Земля Александра I",
+     "ur": "الیگزینڈر جزیرہ",
+     "de": "Alexander-I.-Insel"
+    },
+    "id": "alexander-island"
+   },
+   {
+    "name": {
+     "en": "Halmahera Island",
+     "zh": "哈马黑拉岛",
+     "hi": "हालमाहेरा",
+     "es": "Halmahera",
+     "ar": "هالماهيرا",
+     "fr": "Halmahera",
+     "bn": "হালমাহেরা",
+     "pt": "Halmaera",
+     "ru": "Хальмахера",
+     "ur": "ہالماہيرا",
+     "de": "Halmahera"
+    },
+    "id": "halmahera-island"
+   },
+   {
+    "name": {
+     "en": "Mindoro",
+     "zh": "民都洛",
+     "hi": "मिन्दोरो",
+     "es": "Mindoro",
+     "ar": "ميندورو",
+     "fr": "Mindoro",
+     "bn": "মিন্দোরো",
+     "pt": "Mindoro",
+     "ru": "Миндоро",
+     "ur": "مندورو",
+     "de": "Mindoro"
+    },
+    "id": "mindoro"
+   }
+  ]
+ },
+ "archipelagos": {
+  "kind": "poly",
+  "items": [
+   {
+    "name": {
+     "en": "Japan",
+     "zh": "日本",
+     "hi": "जापान",
+     "es": "Japón",
+     "ar": "اليابان",
+     "fr": "Japon",
+     "bn": "জাপান",
+     "pt": "Japão",
+     "ru": "Япония",
+     "ur": "جاپان",
+     "de": "Japan"
+    },
+    "id": "japan"
+   },
+   {
+    "name": {
+     "en": "New Zealand",
+     "zh": "新西兰",
+     "hi": "न्यूज़ीलैण्ड",
+     "es": "Nueva Zelanda",
+     "ar": "نيوزيلندا",
+     "fr": "Nouvelle-Zélande",
+     "bn": "নিউজিল্যান্ড",
+     "pt": "Nova Zelândia",
+     "ru": "Новая Зеландия",
+     "ur": "نیوزی لینڈ",
+     "de": "Neuseeland"
+    },
+    "id": "new-zealand"
+   },
+   {
+    "name": {
+     "en": "Philippines",
+     "zh": "菲律宾",
+     "hi": "फ़िलीपीन्स",
+     "es": "Filipinas",
+     "ar": "الفلبين",
+     "fr": "Philippines",
+     "bn": "ফিলিপাইন",
+     "pt": "Filipinas",
+     "ru": "Филиппины",
+     "ur": "فلپائن",
+     "de": "Philippinen"
+    },
+    "id": "philippines"
+   },
+   {
+    "name": {
+     "en": "Cape Verde",
+     "zh": "佛得角",
+     "hi": "केप वर्दे",
+     "es": "Cabo Verde",
+     "ar": "الرأس الأخضر",
+     "fr": "Cap-Vert",
+     "bn": "কেপ ভার্দে",
+     "pt": "Cabo Verde",
+     "ru": "Кабо-Верде",
+     "ur": "کیپ ورڈی",
+     "de": "Kap Verde"
+    },
+    "id": "cape-verde"
+   },
+   {
+    "name": {
+     "en": "Fiji",
+     "zh": "斐济",
+     "hi": "फ़िजी",
+     "es": "Fiyi",
+     "ar": "فيجي",
+     "fr": "Fidji",
+     "bn": "ফিজি",
+     "pt": "Fiji",
+     "ru": "Фиджи",
+     "ur": "فجی",
+     "de": "Fidschi"
+    },
+    "id": "fiji"
+   },
+   {
+    "name": {
+     "en": "Seychelles",
+     "zh": "塞舌尔",
+     "hi": "सेशेल्स",
+     "es": "Seychelles",
+     "ar": "سيشل",
+     "fr": "Seychelles",
+     "bn": "সেশেলস",
+     "pt": "Seicheles",
+     "ru": "Сейшельские Острова",
+     "ur": "سیشیلز",
+     "de": "Seychellen"
+    },
+    "id": "seychelles"
+   },
+   {
+    "name": {
+     "en": "Tonga",
+     "zh": "汤加群岛",
+     "hi": "टोंगा द्वीप",
+     "es": "ISLAS TONGA",
+     "ar": "جزر تونجا",
+     "fr": "Îles Tonga",
+     "bn": "টঙ্গা দ্বীপপুঞ্জ",
+     "pt": "Ilhas Tonga",
+     "ru": "острова Тонга",
+     "ur": "ٹونگا جزائر",
+     "de": "TONGA"
+    },
+    "id": "tonga"
+   },
+   {
+    "name": {
+     "en": "Kiribati",
+     "zh": "基里巴斯",
+     "hi": "किरिबाती",
+     "es": "Kiribati",
+     "ar": "كيريباتي",
+     "fr": "Kiribati",
+     "bn": "কিরিবাস",
+     "pt": "Quiribáti",
+     "ru": "Кирибати",
+     "ur": "کیریباتی",
+     "de": "Kiribati"
+    },
+    "id": "kiribati"
+   },
+   {
+    "name": {
+     "en": "Solomon Islands",
+     "zh": "所罗门群岛",
+     "hi": "सोलोमन द्वीप समूह",
+     "es": "Archipiélago de las islas Salomón",
+     "ar": "جزر سليمان",
+     "fr": "îles Salomon",
+     "bn": "সলোমন দীপপুঞ্জ",
+     "pt": "Arquipélago das Ilhas Salomão",
+     "ru": "Соломоновы острова",
+     "ur": "جزائر سلیمان",
+     "de": "Salomon-Inseln"
+    },
+    "id": "solomon-islands"
+   },
+   {
+    "name": {
+     "en": "Marshall Islands",
+     "zh": "马绍尔群岛",
+     "hi": "मार्शल द्वीपसमूह",
+     "es": "Islas Marshall",
+     "ar": "جزر مارشال",
+     "fr": "Îles Marshall",
+     "bn": "মার্শাল দ্বীপপুঞ্জ",
+     "pt": "Ilhas Marshall",
+     "ru": "Маршалловы Острова",
+     "ur": "جزائر مارشل",
+     "de": "Marshallinseln"
+    },
+    "id": "marshall-islands"
+   },
+   {
+    "name": {
+     "en": "Micronesia",
+     "zh": "密克羅尼西亞群島",
+     "hi": "माइक्रोनीशिया",
+     "es": "Micronesia",
+     "ar": "ميكرونيسيا",
+     "fr": "Micronésie",
+     "bn": "মাইক্রোনেশিয়া",
+     "pt": "Micronésia",
+     "ru": "Микронезия",
+     "ur": "مائیکرونیشیا",
+     "de": "Mikronesien"
+    },
+    "id": "micronesia"
+   },
+   {
+    "name": {
+     "en": "Canary Islands",
+     "zh": "加那利群岛",
+     "hi": "कैनरी द्वीपसमूह",
+     "es": "Canarias",
+     "ar": "جزر الكناري",
+     "fr": "îles Canaries",
+     "bn": "কানারি দ্বীপপুঞ্জ",
+     "pt": "Canárias",
+     "ru": "Канарские острова",
+     "ur": "جزائر کناری",
+     "de": "Kanarische Inseln"
+    },
+    "id": "canary-islands"
+   },
+   {
+    "name": {
+     "en": "Balearic Islands",
+     "zh": "巴利阿里群岛",
+     "hi": "बैलेरिक द्वीपसमूह",
+     "es": "Islas Baleares",
+     "ar": "جزر البليار",
+     "fr": "îles Baléares",
+     "bn": "বালেয়ার দ্বীপপুঞ্জ",
+     "pt": "Ilhas Baleares",
+     "ru": "Балеарские острова",
+     "ur": "جزائر بلیبار",
+     "de": "Balearische Inseln"
+    },
+    "id": "balearic-islands"
+   },
+   {
+    "name": {
+     "en": "Svalbard",
+     "zh": "斯瓦尔巴",
+     "hi": "स्वालबार्ड",
+     "es": "Svalbard",
+     "ar": "سفالبارد",
+     "fr": "Svalbard",
+     "bn": "স্ভালবার্দ",
+     "pt": "Svalbard",
+     "ru": "Шпицберген",
+     "ur": "سوالبارد",
+     "de": "Spitzbergen"
+    },
+    "id": "svalbard"
+   },
+   {
+    "name": {
+     "en": "Polynesia",
+     "zh": "玻里尼西亞",
+     "hi": "पोलीनेशिया",
+     "es": "Polinesia",
+     "ar": "بولنيزيا",
+     "fr": "Polynésie",
+     "bn": "পলিনেশিয়া",
+     "pt": "Polinésia",
+     "ru": "Полинезия",
+     "ur": "پولینیشیا",
+     "de": "Polynesien"
+    },
+    "id": "polynesia"
+   },
+   {
+    "name": {
+     "en": "Melanesia",
+     "zh": "美拉尼西亞",
+     "hi": "मॅलानिशिया",
+     "es": "Melanesia",
+     "ar": "ميلانيزيا",
+     "fr": "Mélanésie",
+     "bn": "মেলানেশিয়া",
+     "pt": "Melanésia",
+     "ru": "Меланезия",
+     "ur": "میلانیشیا",
+     "de": "Melanesien"
+    },
+    "id": "melanesia"
+   },
+   {
+    "name": {
+     "en": "Azores",
+     "zh": "亚速尔群岛",
+     "hi": "एज़ोरेस",
+     "es": "Azores",
+     "ar": "الأزور",
+     "fr": "Açores",
+     "bn": "আজোরেস",
+     "pt": "Açores",
+     "ru": "Асориш",
+     "ur": "آزورس",
+     "de": "Azoren"
+    },
+    "id": "azores"
+   },
+   {
+    "name": {
+     "en": "British Isles",
+     "zh": "不列顛群島",
+     "hi": "ब्रिटेन और आयरलैण्ड",
+     "es": "Islas británicas",
+     "ar": "الجزر البريطانية",
+     "fr": "îles Britanniques",
+     "bn": "ব্রিটিশ দ্বীপপুঞ্জ",
+     "pt": "Ilhas Britânicas",
+     "ru": "Британские острова",
+     "ur": "جزائر برطانیہ",
+     "de": "Britische Inseln"
+    },
+    "id": "british-isles"
+   },
+   {
+    "name": {
+     "en": "Maluku Islands",
+     "zh": "马鲁古群岛",
+     "hi": "मालुकू द्वीपसमूह",
+     "es": "Islas Molucas",
+     "ar": "جزر الملوك",
+     "fr": "Moluques",
+     "bn": "মালুকু দ্বীপপুঞ্জ",
+     "pt": "Ilhas Molucas",
+     "ru": "Молуккские острова",
+     "ur": "جزائر ملوک",
+     "de": "Molukken"
+    },
+    "id": "maluku-islands"
+   },
+   {
+    "name": {
+     "en": "Kuril Islands",
+     "zh": "千島群島",
+     "hi": "कुरील द्वीप समूह",
+     "es": "Islas Kuriles",
+     "ar": "جزر الكوريل",
+     "fr": "îles Kouriles",
+     "bn": "কুরিল দ্বীপপুঞ্জ",
+     "pt": "Ilhas Curilas",
+     "ru": "Курильские острова",
+     "ur": "کوریل جزائر",
+     "de": "Kurilen"
+    },
+    "id": "kuril-islands"
+   },
+   {
+    "name": {
+     "en": "Lesser Sunda Islands",
+     "zh": "小巽他群岛",
+     "hi": "छोटा सुन्दा द्वीप समूह",
+     "es": "Islas menores de la Sonda",
+     "ar": "جزر صوندا الصغرى",
+     "fr": "Petites îles de la Sonde",
+     "bn": "নুসা তেঙ্গারা",
+     "pt": "Pequenas Ilhas da Sonda",
+     "ru": "Малые Зондские острова",
+     "ur": "سونڈای جزائر کوچک",
+     "de": "Kleine Sundainseln"
+    },
+    "id": "lesser-sunda-islands"
+   },
+   {
+    "name": {
+     "en": "Lesser Antilles",
+     "zh": "小安的列斯群岛",
+     "hi": "लेसर एंटीलेस",
+     "es": "Antillas Menores",
+     "ar": "جزر الأنتيل الصغرى",
+     "fr": "Petites Antilles",
+     "bn": "লেসাএ অ্যান্টিলিস",
+     "pt": "Pequenas Antilhas",
+     "ru": "Малые Антильские острова",
+     "ur": "انٹیلیز اصغر",
+     "de": "Kleine Antillen"
+    },
+    "id": "lesser-antilles"
+   },
+   {
+    "name": {
+     "en": "Novaya Zemlya",
+     "zh": "新地岛",
+     "hi": "नोवाया ज़ेमल्या",
+     "es": "Nueva Zembla",
+     "ar": "نوفايا زيمليا",
+     "fr": "Nouvelle-Zemble",
+     "bn": "নোভায়া জেমল্যা",
+     "pt": "Nova Zembla",
+     "ru": "Новая Земля",
+     "ur": "نووایا زیملیا",
+     "de": "Nowaja Semlja"
+    },
+    "id": "novaya-zemlya"
+   },
+   {
+    "name": {
+     "en": "Greater Antilles",
+     "zh": "大安的列斯群岛",
+     "hi": "वृहत्तर ऐंटिलीस",
+     "es": "Antillas Mayores",
+     "ar": "جزر الأنتيل الكبرى",
+     "fr": "Grandes Antilles",
+     "bn": "বৃহত্তর আন্তিলীয় দ্বীপপুঞ্জ",
+     "pt": "Grandes Antilhas",
+     "ru": "Большие Антильские острова",
+     "ur": "انٹیلیز اکبر",
+     "de": "Große Antillen"
+    },
+    "id": "greater-antilles"
+   },
+   {
+    "name": {
+     "en": "Okinawa",
+     "zh": "沖繩島",
+     "hi": "ओकिनावा",
+     "es": "Isla de Okinawa",
+     "ar": "جزيرة أوكيناوا",
+     "fr": "Okinawa",
+     "bn": "ওকিনাওয়া",
+     "pt": "Okinawa",
+     "ru": "Окинава",
+     "ur": "جزیرہ اوکیناوا",
+     "de": "Okinawa Hontō"
+    },
+    "id": "okinawa"
+   },
+   {
+    "name": {
+     "en": "Malay Archipelago",
+     "zh": "马来群岛",
+     "hi": "मलय द्वीपसमूह",
+     "es": "Archipiélago malayo",
+     "ar": "أرخبيل الملايو",
+     "fr": "Insulinde",
+     "bn": "মালয় দ্বীপপুঞ্জ",
+     "pt": "Arquipélago malaio",
+     "ru": "Малайский архипелаг",
+     "ur": "مالے مجموعہ الجزائر",
+     "de": "Malaiischer Archipel"
+    },
+    "id": "malay-archipelago"
+   },
+   {
+    "name": {
+     "en": "Aleutian Islands",
+     "zh": "阿留申群岛",
+     "hi": "अल्यूत द्वीपसमूह",
+     "es": "Islas Aleutianas",
+     "ar": "الجزر الأليوطية",
+     "fr": "îles Aléoutiennes",
+     "bn": "অ্যালিউশিয়ান দ্বীপপুঞ্জ",
+     "pt": "Ilhas Aleutas",
+     "ru": "Алеутские острова",
+     "ur": "ایلیوٹین جزائر",
+     "de": "Aleuten"
+    },
+    "id": "aleutian-islands"
+   },
+   {
+    "name": {
+     "en": "West Indies",
+     "zh": "西印度群岛",
+     "hi": "पश्चिमी द्वीपसमूह",
+     "es": "Indias Occidentales",
+     "ar": "الهند الغربية",
+     "fr": "grande région Caraïbe",
+     "bn": "ওয়েস্ট ইন্ডিজ",
+     "pt": "Índias Ocidentais",
+     "ru": "Вест-Индия",
+     "ur": "ویسٹ انڈیز",
+     "de": "Westindische Inseln"
+    },
+    "id": "west-indies"
+   },
+   {
+    "name": {
+     "en": "Hawaiian Islands",
+     "zh": "夏威夷群岛",
+     "hi": "हवाई द्वीपसमूह",
+     "es": "Archipiélago de Hawái",
+     "ar": "الجزر الهاوايية",
+     "fr": "archipel d'Hawaï",
+     "bn": "হাওয়াই দ্বীপপুঞ্জ",
+     "pt": "Arquipélago do Havaí",
+     "ru": "Гавайские острова",
+     "ur": "جزائر ہوائی",
+     "de": "Hawaii-Inseln"
+    },
+    "id": "hawaiian-islands"
+   },
+   {
+    "name": {
+     "en": "Franz Josef Land",
+     "zh": "法兰士约瑟夫地群岛",
+     "hi": "फ़्रांज़ योसेफ़ द्वीपसमूह",
+     "es": "Tierra de Francisco José",
+     "ar": "أرخبيل فرنسوا جوزيف",
+     "fr": "Terre François-Joseph",
+     "bn": "ফ্রাঞ্জ জোসেফ ল্যান্ড",
+     "pt": "Terra de Francisco José",
+     "ru": "Земля Франца-Иосифа",
+     "ur": "فرانز جوزف لینڈ",
+     "de": "Franz-Josef-Land"
+    },
+    "id": "franz-josef-land"
+   },
+   {
+    "name": {
+     "en": "Andaman Islands",
+     "zh": "安达曼群岛",
+     "hi": "अण्डमान",
+     "es": "islas Andamán",
+     "ar": "جزر أندمان",
+     "fr": "îles Andaman",
+     "bn": "আন্দামান দ্বীপপুঞ্জ",
+     "pt": "Ilhas Andamão",
+     "ru": "Андаманские острова",
+     "ur": "جزائر انڈمان",
+     "de": "Andamanen"
+    },
+    "id": "andaman-islands"
+   }
+  ]
+ },
+ "regions": {
+  "kind": "poly",
+  "items": [
+   {
+    "name": {
+     "en": "Alaska",
+     "zh": "阿拉斯加州",
+     "hi": "अलास्का",
+     "es": "Alaska",
+     "ar": "ألاسكا",
+     "fr": "Alaska",
+     "bn": "আলাস্কা",
+     "pt": "Alasca",
+     "ru": "Аляска",
+     "ur": "الاسکا",
+     "de": "Alaska"
+    },
+    "id": "alaska"
+   },
+   {
+    "name": {
+     "en": "Florida",
+     "zh": "佛罗里达州",
+     "hi": "फ़्लोरिडा",
+     "es": "Florida",
+     "ar": "فلوريدا",
+     "fr": "Floride",
+     "bn": "ফ্লোরিডা",
+     "pt": "Flórida",
+     "ru": "Флорида",
+     "ur": "فلوریڈا",
+     "de": "Florida"
+    },
+    "id": "florida"
+   },
+   {
+    "name": {
+     "en": "Crimea",
+     "zh": "克里米亚",
+     "hi": "क्रीमिया",
+     "es": "península de Crimea",
+     "ar": "القرم",
+     "fr": "Crimée",
+     "bn": "ক্রিমিয়া",
+     "pt": "Crimeia",
+     "ru": "Крымский полуостров",
+     "ur": "جزیرہ نما کریمیا",
+     "de": "Krim"
+    },
+    "id": "crimea"
+   },
+   {
+    "name": {
+     "en": "Balkans",
+     "zh": "巴尔干半岛",
+     "hi": "बाल्कन",
+     "es": "península balcánica",
+     "ar": "البلقان",
+     "fr": "Balkans",
+     "bn": "বলকান অঞ্চল",
+     "pt": "Bálcãs",
+     "ru": "Балканский полуостров",
+     "ur": "بلقان",
+     "de": "Balkanhalbinsel"
+    },
+    "id": "balkans"
+   },
+   {
+    "name": {
+     "en": "Siberia",
+     "zh": "西伯利亚",
+     "hi": "साइबेरिया",
+     "es": "Siberia",
+     "ar": "سيبيريا",
+     "fr": "Sibérie",
+     "bn": "সাইবেরিয়া",
+     "pt": "Sibéria",
+     "ru": "Сибирь",
+     "ur": "سائبیریا",
+     "de": "Sibirien"
+    },
+    "id": "siberia"
+   },
+   {
+    "name": {
+     "en": "Mesopotamia",
+     "zh": "美索不达米亚",
+     "hi": "मेसोपोटामिया",
+     "es": "Mesopotamia",
+     "ar": "بلاد الرافدين",
+     "fr": "Mésopotamie",
+     "bn": "মেসোপটেমিয়া",
+     "pt": "Mesopotâmia",
+     "ru": "Месопотамия",
+     "ur": "بین النہرین",
+     "de": "Mesopotamien"
+    },
+    "id": "mesopotamia"
+   },
+   {
+    "name": {
+     "en": "Scandinavia",
+     "zh": "斯堪的纳维亚",
+     "hi": "स्कैण्डिनेविया",
+     "es": "Escandinavia",
+     "ar": "إسكندنافيا",
+     "fr": "Scandinavie",
+     "bn": "স্ক্যান্ডিনেভিয়া",
+     "pt": "Escandinávia",
+     "ru": "Скандинавия",
+     "ur": "اسکینڈینیویا",
+     "de": "Skandinavien"
+    },
+    "id": "scandinavia"
+   },
+   {
+    "name": {
+     "en": "Iberian Peninsula",
+     "zh": "伊比利亚半岛",
+     "hi": "इबेरिया प्रायद्वीप",
+     "es": "península ibérica",
+     "ar": "شبه الجزيرة الإيبيرية",
+     "fr": "péninsule Ibérique",
+     "bn": "ইবেরীয় উপদ্বীপ",
+     "pt": "Península Ibérica",
+     "ru": "Пиренейский полуостров",
+     "ur": "جزیرہ نما آئبیریا",
+     "de": "Iberische Halbinsel"
+    },
+    "id": "iberian-peninsula"
+   },
+   {
+    "name": {
+     "en": "Arabian Peninsula",
+     "zh": "阿拉伯半岛",
+     "hi": "अरबी प्रायद्वीप",
+     "es": "Arabia",
+     "ar": "شبه الجزيرة العربية",
+     "fr": "Arabie",
+     "bn": "আরব উপদ্বীপ",
+     "pt": "Península Arábica",
+     "ru": "Аравийский полуостров",
+     "ur": "جزیرہ نما عرب",
+     "de": "Arabische Halbinsel"
+    },
+    "id": "arabian-peninsula"
+   },
+   {
+    "name": {
+     "en": "Anatolia",
+     "zh": "安纳托利亚",
+     "hi": "आनातोलिया",
+     "es": "Anatolia",
+     "ar": "الأناضول",
+     "fr": "Anatolie",
+     "bn": "আনাতোলিয়া",
+     "pt": "Anatólia",
+     "ru": "Анатолия",
+     "ur": "اناطولیہ",
+     "de": "Anatolien"
+    },
+    "id": "anatolia"
+   },
+   {
+    "name": {
+     "en": "Horn of Africa",
+     "zh": "非洲之角",
+     "hi": "अफ़्रीका का सींग",
+     "es": "Cuerno de África",
+     "ar": "القرن الإفريقي",
+     "fr": "Corne de l'Afrique",
+     "bn": "আফ্রিকার শৃঙ্গ",
+     "pt": "Chifre da África",
+     "ru": "Сомали",
+     "ur": "قرن افریقہ",
+     "de": "Horn von Afrika"
+    },
+    "id": "horn-of-africa"
+   },
+   {
+    "name": {
+     "en": "Indian subcontinent",
+     "zh": "印度次大陸",
+     "hi": "भारतीय उपमहाद्वीप",
+     "es": "subcontinente indio",
+     "ar": "شبه القارة الهندية",
+     "fr": "sous-continent indien",
+     "bn": "ভারতীয় উপমহাদেশ",
+     "pt": "Subcontinente indiano",
+     "ru": "Индийский субконтинент",
+     "ur": "برصغیر پاک و ہند",
+     "de": "indischer Subkontinent"
+    },
+    "id": "indian-subcontinent"
+   },
+   {
+    "name": {
+     "en": "Kamchatka Peninsula",
+     "zh": "堪察加半岛",
+     "hi": "कमचातका प्रायद्वीप",
+     "es": "península de Kamchatka",
+     "ar": "شبه جزيرة كمشتكا",
+     "fr": "Kamtchatka",
+     "bn": "কামচাতকা উপদ্বীপ",
+     "pt": "Península de Kamchatka",
+     "ru": "Камчатка",
+     "ur": "جزیرہ نما کامچاٹکا",
+     "de": "Kamtschatka"
+    },
+    "id": "kamchatka-peninsula"
+   },
+   {
+    "name": {
+     "en": "Patagonia",
+     "zh": "巴塔哥尼亞",
+     "hi": "पैटागोनिया",
+     "es": "Patagonia",
+     "ar": "باتاغونيا",
+     "fr": "Patagonie",
+     "bn": "পাতাগোনিয়া",
+     "pt": "Patagónia",
+     "ru": "Патагония",
+     "ur": "پیٹاگونیا",
+     "de": "Patagonien"
+    },
+    "id": "patagonia"
+   },
+   {
+    "name": {
+     "en": "Yucatan Peninsula",
+     "zh": "尤卡坦半岛",
+     "hi": "युकातान प्रायद्वीप",
+     "es": "península de Yucatán",
+     "ar": "شبه جزيرة يوكاتان",
+     "fr": "péninsule du Yucatán",
+     "bn": "পেন. দে ইউকাতান",
+     "pt": "Península de Iucatã",
+     "ru": "Юкатан",
+     "ur": "جزیرہ نما یوکاتان",
+     "de": "Yucatán"
+    },
+    "id": "yucatan-peninsula"
+   },
+   {
+    "name": {
+     "en": "Jutland",
+     "zh": "日德兰半岛",
+     "hi": "जूटलैंड",
+     "es": "Península de Jutlandia",
+     "ar": "يوتلاند",
+     "fr": "Jutland",
+     "bn": "জুতল্যান্ড",
+     "pt": "Jutlândia",
+     "ru": "Ютландия",
+     "ur": "جٹ لینڈ",
+     "de": "Jütland"
+    },
+    "id": "jutland"
+   },
+   {
+    "name": {
+     "en": "Korean Peninsula",
+     "zh": "朝鲜半岛",
+     "hi": "कोरियाई प्रायद्वीप",
+     "es": "península de Corea",
+     "ar": "شبه جزيرة كوريا",
+     "fr": "péninsule de Corée",
+     "bn": "কোরীয় উপদ্বীপ",
+     "pt": "Península da Coreia",
+     "ru": "Корейский полуостров",
+     "ur": "کوریائی جزیرہ نما",
+     "de": "Koreanische Halbinsel"
+    },
+    "id": "korean-peninsula"
+   },
+   {
+    "name": {
+     "en": "Malay Peninsula",
+     "zh": "马来半岛",
+     "hi": "मलय प्रायद्वीप",
+     "es": "península de Malaca",
+     "ar": "شبه جزيرة ملايو",
+     "fr": "péninsule Malaise",
+     "bn": "মালয় উপদ্বীপ",
+     "pt": "Península da Malásia",
+     "ru": "Малакка",
+     "ur": "مالے جزیرہ نما",
+     "de": "Malaiische Halbinsel"
+    },
+    "id": "malay-peninsula"
+   },
+   {
+    "name": {
+     "en": "Great Plains",
+     "zh": "大平原",
+     "hi": "कनाडा तथा संयुक्त राज्य अमेरिका का ग्रेट प्लेन",
+     "es": "Grandes Llanuras",
+     "ar": "السهول الكبرى",
+     "fr": "Grandes Plaines",
+     "bn": "গ্রেট প্লেইনস",
+     "pt": "Grandes Planícies",
+     "ru": "Великие Равнины",
+     "ur": "عظیم میدان",
+     "de": "Great Plains"
+    },
+    "id": "great-plains"
+   },
+   {
+    "name": {
+     "en": "Tibetan Plateau",
+     "zh": "青藏高原",
+     "hi": "तिब्बत का पठार",
+     "es": "Meseta Tibetana",
+     "ar": "هضبة التبت",
+     "fr": "plateau tibétain",
+     "bn": "তিব্বতীয় মালভূমি",
+     "pt": "Planalto do Tibete",
+     "ru": "Тибетское нагорье",
+     "ur": "سطح مرتفع تبت",
+     "de": "Hochland von Tibet"
+    },
+    "id": "tibetan-plateau"
+   },
+   {
+    "name": {
+     "en": "Baja California peninsula",
+     "zh": "下加利福尼亚半岛",
+     "hi": "बाजा कैलिफ़ोर्निया प्रायद्वीप",
+     "es": "península de California",
+     "ar": "شبه جزيرة باخا كاليفورنيا",
+     "fr": "péninsule de Basse-Californie",
+     "bn": "বাজা ক্যালিফোর্নিয়া",
+     "pt": "Península da Baixa Califórnia",
+     "ru": "Калифорния",
+     "ur": "باجا کیلیفورنیا",
+     "de": "Niederkalifornien"
+    },
+    "id": "baja-california-peninsula"
+   },
+   {
+    "name": {
+     "en": "Lapland",
+     "zh": "拉普蘭區",
+     "hi": "लैपलैंड",
+     "es": "Laponia finlandesa",
+     "ar": "إقليم لابي",
+     "fr": "Laponie",
+     "bn": "ল্যাপল্যান্ড",
+     "pt": "Lapônia",
+     "ru": "Лапландия",
+     "ur": "لاپلند",
+     "de": "Lappland"
+    },
+    "id": "lapland"
+   },
+   {
+    "name": {
+     "en": "Kola Peninsula",
+     "zh": "科拉半岛",
+     "hi": "कोला प्रायद्वीप",
+     "es": "Península de Kola",
+     "ar": "شبه جزيرة كولا",
+     "fr": "péninsule de Kola",
+     "bn": "কোলা পেনিনসুলা",
+     "pt": "Península de Kola",
+     "ru": "Кольский полуостров",
+     "ur": "کولا پیننزولا",
+     "de": "Halbinsel Kola"
+    },
+    "id": "kola-peninsula"
+   },
+   {
+    "name": {
+     "en": "Balochistan",
+     "zh": "俾路支斯坦",
+     "hi": "अवरान जिला",
+     "es": "Beluchistán",
+     "ar": "بلوشستان",
+     "fr": "Baloutchistan",
+     "bn": "বেলুচিস্তান",
+     "pt": "Baluchistão",
+     "ru": "Белуджистан",
+     "ur": "بلوچستان",
+     "de": "Belutschistan"
+    },
+    "id": "balochistan"
+   },
+   {
+    "name": {
+     "en": "Deccan Plateau",
+     "zh": "德干高原",
+     "hi": "दक्कन का पठार",
+     "es": "Decán",
+     "ar": "هضبة الدكن",
+     "fr": "Deccan",
+     "bn": "দাক্ষিণাত্য মালভূমি",
+     "pt": "Decão",
+     "ru": "Декан",
+     "ur": "سطح مرتفع دکن",
+     "de": "Dekkan"
+    },
+    "id": "deccan-plateau"
+   },
+   {
+    "name": {
+     "en": "pampa",
+     "zh": "潘帕",
+     "hi": "पम्पास",
+     "es": "pampa",
+     "ar": "بمبة",
+     "fr": "Pampa",
+     "bn": "পাম্পাস",
+     "pt": "Pampas",
+     "ru": "Пампа",
+     "ur": "پمپاز",
+     "de": "Pampa"
+    },
+    "id": "pampa"
+   },
+   {
+    "name": {
+     "en": "Taymyr Peninsula",
+     "zh": "泰梅爾半島",
+     "hi": "तैमिर प्रायद्वीप",
+     "es": "Península de Taimyr",
+     "ar": "تايميار",
+     "fr": "péninsule de Taïmyr",
+     "bn": "তৈমির পেনিনসুলা",
+     "pt": "Península de Taimir",
+     "ru": "Таймыр",
+     "ur": "تیمیر پیننزولا",
+     "de": "Taimyrhalbinsel"
+    },
+    "id": "taymyr-peninsula"
+   },
+   {
+    "name": {
+     "en": "Chukchi Peninsula",
+     "zh": "楚科奇半岛",
+     "hi": "चुकची प्रायद्वीप",
+     "es": "Chukchi",
+     "ar": "شبه جزيرة تشوكشي",
+     "fr": "péninsule Tchouktche",
+     "bn": "চুকচি পেনিন্সুলা",
+     "pt": "Península de Chukotka",
+     "ru": "Чукотский полуостров",
+     "ur": "چوکچی جزیرہ نما",
+     "de": "Tschuktschen-Halbinsel"
+    },
+    "id": "chukchi-peninsula"
+   },
+   {
+    "name": {
+     "en": "Indo-Gangetic Plain",
+     "zh": "中央平原",
+     "hi": "सिन्धु-गंगा के मैदान",
+     "es": "Llanura Indo-Gangética",
+     "ar": "سهل الغانج الهندي",
+     "fr": "Plaine indo-gangétique",
+     "bn": "সিন্ধু-গাঙ্গেয় সমভূমি",
+     "pt": "Planície Indo-Gangética",
+     "ru": "Индо-Гангская равнина",
+     "ur": "سندھ و گنگ کا میدان",
+     "de": "Zentralindien"
+    },
+    "id": "indo-gangetic-plain"
+   },
+   {
+    "name": {
+     "en": "Altiplano",
+     "zh": "阿尔蒂普拉诺高原",
+     "hi": "आल्टिप्लानो",
+     "es": "Altiplano",
+     "ar": "الألتيبلانو",
+     "fr": "altiplano",
+     "bn": "আলতিপ্লানো",
+     "pt": "Altiplano",
+     "ru": "Альтиплано",
+     "ur": "الٹیپلانو",
+     "de": "Altiplano"
+    },
+    "id": "altiplano"
+   },
+   {
+    "name": {
+     "en": "Cape York Peninsula",
+     "zh": "约克角半岛",
+     "hi": "यॉर्क अंतरीप प्रायद्वीप",
+     "es": "Península del Cabo York",
+     "ar": "شبه جزيرة كيب يورك",
+     "fr": "péninsule du cap York",
+     "bn": "কেপ ইয়র্ক উপদ্বীপ",
+     "pt": "Península do Cabo York",
+     "ru": "Кейп-Йорк",
+     "ur": "کیپ یارک پین۔",
+     "de": "Cape York Peninsula"
+    },
+    "id": "cape-york-peninsula"
+   },
+   {
+    "name": {
+     "en": "Tarim Basin",
+     "zh": "塔里木盆地",
+     "hi": "तारिम द्रोणी",
+     "es": "cuenca del Tarim",
+     "ar": "حوض تاريم",
+     "fr": "bassin du Tarim",
+     "bn": "তারিম অববাহিকা",
+     "pt": "Bacia do Tarim",
+     "ru": "Таримская впадина",
+     "ur": "تاریم طاس",
+     "de": "Tarimbecken"
+    },
+    "id": "tarim-basin"
+   },
+   {
+    "name": {
+     "en": "Alaska Peninsula",
+     "zh": "阿拉斯加半島",
+     "hi": "अलास्का प्रायद्वीप",
+     "es": "Península de Alaska",
+     "ar": "شبه جزيرة ألاسكا",
+     "fr": "péninsule d'Alaska",
+     "bn": "আলাস্কা উপদ্বীপ",
+     "pt": "Península do Alasca",
+     "ru": "Аляска",
+     "ur": "الاسکا ہینینزولہ",
+     "de": "Alaska-Halbinsel"
+    },
+    "id": "alaska-peninsula"
+   },
+   {
+    "name": {
+     "en": "Central Siberian Plateau",
+     "zh": "中西伯利亚高原",
+     "hi": "मध्य साइबेरियाई पठार",
+     "es": "Meseta Central Siberiana",
+     "ar": "هضبة سيبيريا الوسطى",
+     "fr": "plateau de Sibérie centrale",
+     "bn": "সেন্ট্রাল সাইবেরিয়ান প্লেটো",
+     "pt": "Planalto Central Siberiano",
+     "ru": "Среднесибирское плоскогорье",
+     "ur": "سینٹرل سائیبیرین پلیٹیو",
+     "de": "Mittelsibirisches Bergland"
+    },
+    "id": "central-siberian-plateau"
+   },
+   {
+    "name": {
+     "en": "Valdes Peninsula",
+     "zh": "瓦尔德斯半岛",
+     "hi": "वालदेस प्रायद्वीप",
+     "es": "Península Valdés",
+     "ar": "شبه جزيرة فالديه",
+     "fr": "péninsule Valdés",
+     "bn": "পেনিনসুলা ভ্যালদেস",
+     "pt": "Península Valdés",
+     "ru": "Вальдес",
+     "ur": "پیننزولا والدیز",
+     "de": "Halbinsel Valdés"
+    },
+    "id": "valdes-peninsula"
+   }
+  ]
+ },
+ "ranges": {
+  "kind": "poly",
+  "items": [
+   {
+    "name": {
+     "en": "Alps",
+     "zh": "阿尔卑斯山",
+     "hi": "ऐल्प्स",
+     "es": "Alpes",
+     "ar": "الألب",
+     "fr": "Alpes",
+     "bn": "আল্পস পর্বতমালা",
+     "pt": "Alpes",
+     "ru": "Альпы",
+     "ur": "الپس",
+     "de": "Alpen"
+    },
+    "id": "alps"
+   },
+   {
+    "name": {
+     "en": "Himalayas",
+     "zh": "喜马拉雅山脉",
+     "hi": "हिमालय",
+     "es": "Himalaya",
+     "ar": "هملايا",
+     "fr": "Himalaya",
+     "bn": "হিমালয় পর্বতমালা",
+     "pt": "Himalaia",
+     "ru": "Гималаи",
+     "ur": "ہمالیہ",
+     "de": "Himalaya"
+    },
+    "id": "himalayas"
+   },
+   {
+    "name": {
+     "en": "Andes",
+     "zh": "安第斯山脉",
+     "hi": "एन्डीज़ पर्वत शृंखला",
+     "es": "Cordillera de Los Andes",
+     "ar": "أنديز",
+     "fr": "cordillère des Andes",
+     "bn": "আন্দিজ পর্বতমালা",
+     "pt": "Cordilheira dos Andes",
+     "ru": "Анды",
+     "ur": "سلسلہ کوہ انڈیز",
+     "de": "Anden"
+    },
+    "id": "andes"
+   },
+   {
+    "name": {
+     "en": "Rocky Mountains",
+     "zh": "落基山脉",
+     "hi": "रॉकी पर्वत शृंखला",
+     "es": "Montañas Rocosas",
+     "ar": "جبال روكي",
+     "fr": "montagnes Rocheuses",
+     "bn": "রকি পর্বতমালা",
+     "pt": "Montanhas Rochosas",
+     "ru": "Скалистые горы",
+     "ur": "سلسلہ کوہ راکی",
+     "de": "Rocky Mountains"
+    },
+    "id": "rocky-mountains"
+   },
+   {
+    "name": {
+     "en": "Ural Mountains",
+     "zh": "乌拉尔山脉",
+     "hi": "यूराल पर्वत",
+     "es": "Montes Urales",
+     "ar": "جبال الأورال",
+     "fr": "Oural",
+     "bn": "ইউরাল পর্বতমালা",
+     "pt": "Montes Urais",
+     "ru": "Уральские горы",
+     "ur": "کوہ اورال",
+     "de": "Ural"
+    },
+    "id": "ural-mountains"
+   },
+   {
+    "name": {
+     "en": "Pyrenees",
+     "zh": "比利牛斯山脉",
+     "hi": "पिरेने पर्वतमाला",
+     "es": "Pirineos",
+     "ar": "البرانس",
+     "fr": "Pyrénées",
+     "bn": "পিরিনীয় পর্বতমালা",
+     "pt": "Pireneus",
+     "ru": "Пиренеи",
+     "ur": "کوہ پائرینیس",
+     "de": "Pyrenäen"
+    },
+    "id": "pyrenees"
+   },
+   {
+    "name": {
+     "en": "Carpathians",
+     "zh": "喀尔巴阡山脉",
+     "hi": "कारपैथी पर्वत",
+     "es": "montes Cárpatos",
+     "ar": "الكربات",
+     "fr": "Carpates",
+     "bn": "কার্পেথীয় পর্বতমালা",
+     "pt": "Cárpatos",
+     "ru": "Карпаты",
+     "ur": "کارپیتھین سلسلہ کوہ",
+     "de": "Karpaten"
+    },
+    "id": "carpathians"
+   },
+   {
+    "name": {
+     "en": "Caucasus Mountains",
+     "zh": "高加索山脉",
+     "hi": "कॉकस पर्वत शृंखला",
+     "es": "cordillera del Cáucaso",
+     "ar": "جبال القوقاز",
+     "fr": "Caucase",
+     "bn": "ককেশাস পর্বতমালা",
+     "pt": "Cordilheira do Cáucaso",
+     "ru": "Кавказские горы",
+     "ur": "قفقاز پہاڑیاں",
+     "de": "Kaukasus"
+    },
+    "id": "caucasus-mountains"
+   },
+   {
+    "name": {
+     "en": "Hindu Kush",
+     "zh": "興都庫什山脈",
+     "hi": "हिन्दु कुश",
+     "es": "Hindú Kush",
+     "ar": "هندوكوش",
+     "fr": "Hindou Kouch",
+     "bn": "হিন্দুকুশ পর্বতমালা",
+     "pt": "Hindu Kush",
+     "ru": "Гиндукуш",
+     "ur": "سلسلہ کوہ ہندوکش",
+     "de": "Hindukusch"
+    },
+    "id": "hindu-kush"
+   },
+   {
+    "name": {
+     "en": "Karakoram",
+     "zh": "喀喇昆仑山脉",
+     "hi": "काराकोरम",
+     "es": "Cordillera del Karakórum",
+     "ar": "قراقرم",
+     "fr": "Karakoram",
+     "bn": "কারাকোরাম",
+     "pt": "Caracórum",
+     "ru": "Каракорум",
+     "ur": "سلسلہ کوہ قراقرم",
+     "de": "Karakorum"
+    },
+    "id": "karakoram"
+   },
+   {
+    "name": {
+     "en": "Appalachian Mountains",
+     "zh": "阿巴拉契亚山脉",
+     "hi": "एपलाशियन पर्वतमाला",
+     "es": "Apalaches",
+     "ar": "جبال الأبالاش",
+     "fr": "Appalaches",
+     "bn": "অ্যাপালেচিয়ান পর্বতমালা",
+     "pt": "Apalaches",
+     "ru": "Аппалачи",
+     "ur": "اپالاچئین پہاڑ",
+     "de": "Appalachen"
+    },
+    "id": "appalachian-mountains"
+   },
+   {
+    "name": {
+     "en": "Atlas Mountains",
+     "zh": "阿特拉斯山脉",
+     "hi": "अतलास पर्वत",
+     "es": "Atlas",
+     "ar": "جبال الأطلس",
+     "fr": "Atlas",
+     "bn": "এটলাস পর্বতমালা",
+     "pt": "Cordilheira do Atlas",
+     "ru": "Атлас",
+     "ur": "کوہ اطلس",
+     "de": "Atlas"
+    },
+    "id": "atlas-mountains"
+   },
+   {
+    "name": {
+     "en": "Tianshan Mountains",
+     "zh": "天山山脉",
+     "hi": "तियाँ शान",
+     "es": "Tian Shan",
+     "ar": "جبال تيان شان",
+     "fr": "Tian Shan",
+     "bn": "থিয়েন শান পর্বতমালা",
+     "pt": "Tian Shan",
+     "ru": "Тянь-Шань",
+     "ur": "تیان شان",
+     "de": "Tienshan"
+    },
+    "id": "tianshan-mountains"
+   },
+   {
+    "name": {
+     "en": "Pamir Mountains",
+     "zh": "帕米尔高原",
+     "hi": "पामीर पर्वतमाला",
+     "es": "Cordillera del Pamir",
+     "ar": "جبال بامير",
+     "fr": "Pamir",
+     "bn": "পামির পর্বতমালা",
+     "pt": "Pamir",
+     "ru": "Памир",
+     "ur": "سلسلہ کوہ پامیر",
+     "de": "Pamir"
+    },
+    "id": "pamir-mountains"
+   },
+   {
+    "name": {
+     "en": "Altai Mountains",
+     "zh": "阿尔泰山脉",
+     "hi": "अल्ताई पर्वत शृंखला",
+     "es": "macizo de Altái",
+     "ar": "جبال ألتاي",
+     "fr": "Altaï",
+     "bn": "আলতাই পর্বতমালা",
+     "pt": "Altai",
+     "ru": "Алтайские горы",
+     "ur": "التائی پہاڑ",
+     "de": "Altai"
+    },
+    "id": "altai-mountains"
+   },
+   {
+    "name": {
+     "en": "Zagros Mountains",
+     "zh": "扎格罗斯山脉",
+     "hi": "ज़ाग्रोस पर्वत",
+     "es": "Zagros",
+     "ar": "زاغروس",
+     "fr": "Zagros",
+     "bn": "জগ্রোস পর্বতমালা",
+     "pt": "Cordilheira de Zagros",
+     "ru": "Загрос",
+     "ur": "سلسلہ کوہ زاگرس",
+     "de": "Zāgros-Gebirge"
+    },
+    "id": "zagros-mountains"
+   },
+   {
+    "name": {
+     "en": "Western Ghats",
+     "zh": "西高止山脉",
+     "hi": "पश्चिमी घाट",
+     "es": "Ghats occidentales",
+     "ar": "غاتس الغربية",
+     "fr": "Ghâts occidentaux",
+     "bn": "পশ্চিমঘাট পর্বতমালা",
+     "pt": "Gates Ocidentais",
+     "ru": "Западные Гхаты",
+     "ur": "مغربی گھاٹ",
+     "de": "Westghats"
+    },
+    "id": "western-ghats"
+   },
+   {
+    "name": {
+     "en": "Balkan Mountains",
+     "zh": "巴尔干山脉",
+     "hi": "बाल्कन पर्वत शृंखला",
+     "es": "Montes Balcanes",
+     "ar": "جبال البلقان",
+     "fr": "Grand Balkan",
+     "bn": "বল্কান মাউন্টেন",
+     "pt": "Cordilheira dos Bálcãs",
+     "ru": "Стара-Планина",
+     "ur": "سلسلہ کوہ بلقان",
+     "de": "Balkangebirge"
+    },
+    "id": "balkan-mountains"
+   },
+   {
+    "name": {
+     "en": "Sierra Nevada",
+     "zh": "內華達山脈",
+     "hi": "सिएरा नेवाडा",
+     "es": "Sierra Nevada",
+     "ar": "سييرا نيفادا",
+     "fr": "sierra Nevada",
+     "bn": "সিয়েরা নেভাদা",
+     "pt": "Serra Nevada",
+     "ru": "Сьерра-Невада",
+     "ur": "سیرا نیوادا",
+     "de": "Sierra Nevada"
+    },
+    "id": "sierra-nevada"
+   },
+   {
+    "name": {
+     "en": "Alborz",
+     "zh": "厄尔布尔士山脉",
+     "hi": "एल्बुर्ज पर्वत",
+     "es": "Montes Elburz",
+     "ar": "جبال ألبرز",
+     "fr": "Elbourz",
+     "bn": "আলবুর্‌জ",
+     "pt": "Cordilheira Elbruz",
+     "ru": "Эльбурс",
+     "ur": "البرز",
+     "de": "Elburs-Gebirge"
+    },
+    "id": "alborz"
+   },
+   {
+    "name": {
+     "en": "Kunlun Mountains",
+     "zh": "昆仑山脉",
+     "hi": "कुनलुन पर्वत",
+     "es": "Kunlun",
+     "ar": "جبال كونلون",
+     "fr": "Cordillère du Kunlun",
+     "bn": "কুয়েনলুন পর্বতমালা",
+     "pt": "Kunlun",
+     "ru": "Куньлунь",
+     "ur": "سلسلہ کوہ کونلون",
+     "de": "Kunlun"
+    },
+    "id": "kunlun-mountains"
+   },
+   {
+    "name": {
+     "en": "Drakensberg",
+     "zh": "德拉肯斯堡山脉",
+     "hi": "द्रेकंस्बर्ग उद्यान",
+     "es": "Drakensberg",
+     "ar": "دراكنزبرغ",
+     "fr": "Drakensberg",
+     "bn": "ড্রেকেন্সবার্গ",
+     "pt": "Drakensberg",
+     "ru": "Драконовы горы",
+     "ur": "ڈراکنزبرگ",
+     "de": "Drakensberge"
+    },
+    "id": "drakensberg"
+   },
+   {
+    "name": {
+     "en": "Southern Alps / Kā Tiritiri o te Moana",
+     "zh": "南阿尔卑斯山脉",
+     "hi": "दक्षिणी ऐल्प्स",
+     "es": "Alpes del Sur",
+     "ar": "جبال الألب الجنوبية",
+     "fr": "Alpes du Sud",
+     "bn": "নিউজিল্যান্ড আল্পস",
+     "pt": "Alpes do Sul",
+     "ru": "Южные Альпы",
+     "ur": "ساؤدرن ایلپس",
+     "de": "Neuseeländische Alpen"
+    },
+    "id": "southern-alps-ka-tiritiri-o-te-moana"
+   },
+   {
+    "name": {
+     "en": "Scandinavian Mountains",
+     "zh": "斯堪的纳维亚山脉",
+     "hi": "स्कैंडिनेवियाई पहाड़",
+     "es": "Alpes escandinavos",
+     "ar": "سلسلة الجبال الإسكندنافية",
+     "fr": "Alpes scandinaves",
+     "bn": "কোজলান মাউন্টেনস",
+     "pt": "Alpes Escandinavos",
+     "ru": "Скандинавские горы",
+     "ur": "سلسلہ کوہ اسکینڈے نیویا",
+     "de": "Skandinavisches Gebirge"
+    },
+    "id": "scandinavian-mountains"
+   },
+   {
+    "name": {
+     "en": "Cascade Range",
+     "zh": "喀斯喀特山脉",
+     "hi": "कैस्केड रेंज",
+     "es": "Cordillera de las Cascadas",
+     "ar": "جبال كاسكيد",
+     "fr": "chaîne des Cascades",
+     "bn": "ক্যাসকেড পর্বতমালা",
+     "pt": "Cordilheira das Cascatas",
+     "ru": "Каскадные горы",
+     "ur": "کاسکایڈ رینج",
+     "de": "Kaskadenkette"
+    },
+    "id": "cascade-range"
+   },
+   {
+    "name": {
+     "en": "Great Dividing Range",
+     "zh": "大分水岭",
+     "hi": "महान विभाजक पर्वतमाला",
+     "es": "Gran Cordillera Divisoria",
+     "ar": "غريت ديفايدينغ",
+     "fr": "Cordillère australienne",
+     "bn": "গ্রেট ডিভাইডিং রেঞ্জ",
+     "pt": "Cordilheira australiana",
+     "ru": "Большой Водораздельный хребет",
+     "ur": "گریٹ ڈیوائڈنگ رینج",
+     "de": "Great Dividing Range"
+    },
+    "id": "great-dividing-range"
+   },
+   {
+    "name": {
+     "en": "Ethiopian Highlands",
+     "zh": "埃塞俄比亚高地",
+     "hi": "अबीसीनिया का पठार",
+     "es": "Macizo abisino",
+     "ar": "مرتفعات إثيوبيا",
+     "fr": "Plateaux d'Éthiopie",
+     "bn": "ইথিওপিয়ান হাইল্যান্ডস",
+     "pt": "Planalto da Etiópia",
+     "ru": "Эфиопское нагорье",
+     "ur": "ایتھوپیائی کوہستانی خطہ",
+     "de": "Hochland von Abessinien"
+    },
+    "id": "ethiopian-highlands"
+   },
+   {
+    "name": {
+     "en": "Dinaric Alps",
+     "zh": "迪纳拉山脉",
+     "hi": "डाईनैरिक एल्प्स",
+     "es": "Alpes Dináricos",
+     "ar": "جبال الألب الدينارية",
+     "fr": "Alpes dinariques",
+     "bn": "দিনারিক আল্পস",
+     "pt": "Alpes Dináricos",
+     "ru": "Динарское нагорье",
+     "ur": "ڈائےنارک ایلپس",
+     "de": "Dinarisches Gebirge"
+    },
+    "id": "dinaric-alps"
+   },
+   {
+    "name": {
+     "en": "Lesser Caucasus",
+     "zh": "小高加索山脉",
+     "hi": "लैसर कौकासु",
+     "es": "Cáucaso Menor",
+     "ar": "القوقاز الصغرى",
+     "fr": "Petit Caucase",
+     "bn": "লেসার কাউকাসুস",
+     "pt": "Cáucaso Menor",
+     "ru": "Малый Кавказ",
+     "ur": "لیسر کاؤکاسوس",
+     "de": "Kleiner Kaukasus"
+    },
+    "id": "lesser-caucasus"
+   },
+   {
+    "name": {
+     "en": "Pontic Mountains",
+     "zh": "本廷山脈",
+     "hi": "पोंटिक पर्वत",
+     "es": "Montes Pónticos",
+     "ar": "جبال بونتيك",
+     "fr": "chaîne pontique",
+     "bn": "পন্টিক পর্বতমালা",
+     "pt": "Montes Pônticos",
+     "ru": "Понтийские горы",
+     "ur": "سلسلہ کوہ پونٹک",
+     "de": "Pontisches Gebirge"
+    },
+    "id": "pontic-mountains"
+   },
+   {
+    "name": {
+     "en": "Aïr Mountains",
+     "zh": "埃尔山脉",
+     "hi": "आयर पर्वतमाला",
+     "es": "Montañas de Air",
+     "ar": "جبال آير",
+     "fr": "massif de l'Aïr",
+     "bn": "আইয়ার মাউন্টেন",
+     "pt": "Montanhas de Aïr",
+     "ru": "Аир",
+     "ur": "جبال عیر",
+     "de": "Aïr"
+    },
+    "id": "air-mountains"
+   },
+   {
+    "name": {
+     "en": "Eastern Ghats",
+     "zh": "東高止山脈",
+     "hi": "पूर्वी घाट",
+     "es": "Ghats orientales",
+     "ar": "جبال الغات الشرقية",
+     "fr": "Ghâts orientaux",
+     "bn": "পূর্ব ঘাট",
+     "pt": "Gates Orientais",
+     "ru": "Восточные Гхаты",
+     "ur": "مشرقی گھاٹ",
+     "de": "Ostghats"
+    },
+    "id": "eastern-ghats"
+   },
+   {
+    "name": {
+     "en": "Sikhote-Alin",
+     "zh": "锡霍特山脉",
+     "hi": "सिखोते-एलिन",
+     "es": "Sijoté-Alín",
+     "ar": "سيخوت ألين",
+     "fr": "Sikhote-Aline",
+     "bn": "শিখোট-অ্যালিন রেঞ্জ",
+     "pt": "Sijote-Alín",
+     "ru": "Сихотэ-Алинь",
+     "ur": "سیکھوتے آلن رینج",
+     "de": "Sichote-Alin"
+    },
+    "id": "sikhote-alin"
+   },
+   {
+    "name": {
+     "en": "Verkhoyansk Range",
+     "zh": "上扬斯克山脉",
+     "hi": "वेरखोयांस्क रेंज",
+     "es": "Cordillera Verjoyansk",
+     "ar": "جبال فرخويانسك",
+     "fr": "Monts de Verkhoïansk",
+     "bn": "ভেরখোয়ান্‌স্ক্‌",
+     "pt": "Cordilheira Verkhoyansk",
+     "ru": "Верхоянский хребет",
+     "ur": "ورکھویانسک رینج",
+     "de": "Werchojansker Gebirge"
+    },
+    "id": "verkhoyansk-range"
+   },
+   {
+    "name": {
+     "en": "Wuyi Mountains",
+     "zh": "武夷山",
+     "hi": "वूई पर्वत",
+     "es": "Monte Wuyi",
+     "ar": "جبال وويي",
+     "fr": "Monts Wuyi",
+     "bn": "উয়ি পর্বতমালা",
+     "pt": "Monte Wuyi",
+     "ru": "Уишань",
+     "ur": "ووئی پہاڑ",
+     "de": "Wuyi-Gebirge"
+    },
+    "id": "wuyi-mountains"
+   },
+   {
+    "name": {
+     "en": "Cantabrian Mountains",
+     "zh": "坎塔布里亚山脉",
+     "hi": "कार्ड. कैंटब्रिका",
+     "es": "Cordillera Cantábrica",
+     "ar": "جبال قنطبرية",
+     "fr": "cordillère Cantabrique",
+     "bn": "কর্ড ক্যান্টাব্রিকা",
+     "pt": "Cordilheira Cantábrica",
+     "ru": "Кантабрийские горы",
+     "ur": "کورڈ کینٹا بریکا",
+     "de": "Kantabrisches Gebirge"
+    },
+    "id": "cantabrian-mountains"
+   },
+   {
+    "name": {
+     "en": "Vindhya Range",
+     "zh": "温迪亚山脉",
+     "hi": "विन्ध्याचल पर्वत शृंखला",
+     "es": "Cordillera de Vindhya",
+     "ar": "سلسلة جبال فينديا",
+     "fr": "Vindhya",
+     "bn": "বিন্ধ্য পর্বতমালা",
+     "pt": "Montes Víndias",
+     "ru": "Виндхья",
+     "ur": "وندھیہ پہاڑ",
+     "de": "Vindhyagebirge"
+    },
+    "id": "vindhya-range"
+   },
+   {
+    "name": {
+     "en": "Serra do Mar",
+     "zh": "馬爾山脈",
+     "hi": "सेरा डो मार",
+     "es": "Serra do Mar",
+     "ar": "سيرا دو مار",
+     "fr": "Serra do Mar",
+     "bn": "সেরার ডো মার",
+     "pt": "Serra do Mar",
+     "ru": "Серра-ду-Мар",
+     "ur": "سیرا ڈو مار",
+     "de": "Serra do Mar"
+    },
+    "id": "serra-do-mar"
+   },
+   {
+    "name": {
+     "en": "Tibesti Mountains",
+     "zh": "提贝斯提高原",
+     "hi": "तीबेस्ती पहाड़ियाँ",
+     "es": "Tibesti",
+     "ar": "جبال تيبستي",
+     "fr": "massif du Tibesti",
+     "bn": "তিব্বেসি পর্বতমালা",
+     "pt": "Tibesti",
+     "ru": "Тибести",
+     "ur": "ٹائیبیسٹی پہاڑ",
+     "de": "Tibesti"
+    },
+    "id": "tibesti-mountains"
+   },
+   {
+    "name": {
+     "en": "Stanovoy Range",
+     "zh": "外兴安岭",
+     "hi": "स्टैनोवॉय रेंज",
+     "es": "Montes Stanovoi",
+     "ar": "سلسلة جبال ستانوفوي",
+     "fr": "Monts Stanovoï",
+     "bn": "স্ট্যানোভয় রেঞ্জ",
+     "pt": "Cordilheira Stanovoy",
+     "ru": "Становой хребет",
+     "ur": "اسٹینووائے رینج",
+     "de": "Stanowoigebirge"
+    },
+    "id": "stanovoy-range"
+   }
+  ]
+ },
+ "deserts": {
+  "kind": "poly",
+  "items": [
+   {
+    "name": {
+     "en": "Sahara",
+     "zh": "撒哈拉沙漠",
+     "hi": "सहारा मरुस्थल",
+     "es": "Sahara",
+     "ar": "الصحراء الكبرى",
+     "fr": "Sahara",
+     "bn": "সাহারা মরুভূমি",
+     "pt": "deserto do Saara",
+     "ru": "Сахара",
+     "ur": "صحرائے اعظم",
+     "de": "Sahara"
+    },
+    "id": "sahara"
+   },
+   {
+    "name": {
+     "en": "Gobi Desert",
+     "zh": "戈壁",
+     "hi": "गोबी मरुस्थल",
+     "es": "Desierto de Gobi",
+     "ar": "صحراء جوبي",
+     "fr": "désert de Gobi",
+     "bn": "গোবি মরুভূমি",
+     "pt": "Deserto de Gobi",
+     "ru": "Гоби",
+     "ur": "صحرائے گوبی",
+     "de": "Gobi"
+    },
+    "id": "gobi-desert"
+   },
+   {
+    "name": {
+     "en": "Kalahari Desert",
+     "zh": "喀拉哈里沙漠",
+     "hi": "कालाहारी मरुस्थल",
+     "es": "Kalahari",
+     "ar": "صحراء كلهاري",
+     "fr": "désert du Kalahari",
+     "bn": "কালাহারি মরুভূমি",
+     "pt": "Kalahari",
+     "ru": "Калахари",
+     "ur": "صحرائے کالاہاری",
+     "de": "Kalahari"
+    },
+    "id": "kalahari-desert"
+   },
+   {
+    "name": {
+     "en": "Atacama Desert",
+     "zh": "阿塔卡马沙漠",
+     "hi": "अटाकामा मरुस्थल",
+     "es": "Desierto de Atacama",
+     "ar": "أتكاما",
+     "fr": "désert d'Atacama",
+     "bn": "আতাকামা মরুভূমি",
+     "pt": "Deserto de Atacama",
+     "ru": "Атакама",
+     "ur": "صحرائے ایٹاکاما",
+     "de": "Atacamawüste"
+    },
+    "id": "atacama-desert"
+   },
+   {
+    "name": {
+     "en": "Taklamakan",
+     "zh": "塔克拉玛干沙漠",
+     "hi": "टकलामकान",
+     "es": "Taklamakán",
+     "ar": "تكلامكان",
+     "fr": "désert du Taklamakan",
+     "bn": "তাকলা মাকান মরুভূমি",
+     "pt": "Taklamakan",
+     "ru": "Такла-Макан",
+     "ur": "صحرائے تکلامکان",
+     "de": "Taklamakan"
+    },
+    "id": "taklamakan"
+   },
+   {
+    "name": {
+     "en": "Karakum Desert",
+     "zh": "卡拉库姆沙漠",
+     "hi": "काराकुम रेगिस्तान",
+     "es": "Desierto de Karakum",
+     "ar": "صحراء قره قوم",
+     "fr": "désert du Karakoum",
+     "bn": "কারাকুম মরুভূমি",
+     "pt": "Deserto de Karakum",
+     "ru": "Каракумы",
+     "ur": "کاراکم",
+     "de": "Karakum"
+    },
+    "id": "karakum-desert"
+   },
+   {
+    "name": {
+     "en": "Namib",
+     "zh": "纳米布沙漠",
+     "hi": "नामीब मरुस्थल",
+     "es": "Namib",
+     "ar": "صحراء ناميب",
+     "fr": "Désert du Namib",
+     "bn": "নামিব ডেজার্ট",
+     "pt": "Deserto do Namibe",
+     "ru": "Намиб",
+     "ur": "صحرائے نمیب",
+     "de": "Namib"
+    },
+    "id": "namib"
+   },
+   {
+    "name": {
+     "en": "Thar Desert",
+     "zh": "塔尔沙漠",
+     "hi": "थार मरुस्थल",
+     "es": "Desierto de Thar",
+     "ar": "صحراء طهار",
+     "fr": "désert du Thar",
+     "bn": "থর মরুভূমি",
+     "pt": "Deserto do Thar",
+     "ru": "Тар",
+     "ur": "صحرائے تھر",
+     "de": "Thar-Wüste"
+    },
+    "id": "thar-desert"
+   },
+   {
+    "name": {
+     "en": "Great Victoria Desert",
+     "zh": "大维多利亚沙漠",
+     "hi": "ग्रेट विक्‍टोरिया",
+     "es": "Gran Desierto de Victoria",
+     "ar": "صحراء فكتوريا الكبرى",
+     "fr": "Grand désert de Victoria",
+     "bn": "গ্রেট ভিক্টোরিয়া মরুভূমি",
+     "pt": "Grande Deserto de Vitória",
+     "ru": "Большая пустыня Виктория",
+     "ur": "گریٹ وکٹوریا ڈیزرٹ",
+     "de": "Große Victoria-Wüste"
+    },
+    "id": "great-victoria-desert"
+   },
+   {
+    "name": {
+     "en": "Kyzyl Kum",
+     "zh": "克孜勒库姆沙漠",
+     "hi": "किज़िल कुम रेगिस्तान",
+     "es": "Kyzyl Kum",
+     "ar": "قيزيل قوم",
+     "fr": "désert du Kyzylkoum",
+     "bn": "কিজিলকুম মরুভূমি",
+     "pt": "Quizilcum",
+     "ru": "Кызылкум",
+     "ur": "کزل کم کا صحرا",
+     "de": "Kysylkum"
+    },
+    "id": "kyzyl-kum"
+   },
+   {
+    "name": {
+     "en": "Syrian Desert",
+     "zh": "叙利亚沙漠",
+     "hi": "सीरियन",
+     "es": "Desierto Sirio",
+     "ar": "بادية الشام",
+     "fr": "désert de Syrie",
+     "bn": "সিরিয়া মরুভূমি",
+     "pt": "Deserto Sírio",
+     "ru": "Сирийская пустыня",
+     "ur": "صحرائے شام",
+     "de": "Syrische Wüste"
+    },
+    "id": "syrian-desert"
+   },
+   {
+    "name": {
+     "en": "Rub' al Khali",
+     "zh": "鲁卜哈利沙漠",
+     "hi": "रुब अल-ख़ाली",
+     "es": "Desierto de Rub al-Jali",
+     "ar": "الربع الخالي",
+     "fr": "Rub al-Khali",
+     "bn": "আর-রুব' আল-খালি",
+     "pt": "Rub' al-Khali",
+     "ru": "Руб-эль-Хали",
+     "ur": "الربع الخالی",
+     "de": "Rub al-Chali"
+    },
+    "id": "rub-al-khali"
+   },
+   {
+    "name": {
+     "en": "Tassili n'Ajjer",
+     "zh": "阿杰尔的塔西利",
+     "hi": "तस्सिली न'अज्जेर",
+     "es": "Tassili n'Ajjer",
+     "ar": "طاسيلي ناجر",
+     "fr": "Tassili n'Ajjer",
+     "bn": "তস্সিলি এন আজের",
+     "pt": "Tassili n'Ajjer",
+     "ru": "Тассилин-Адджер",
+     "ur": "طاسیلی ناجر قومی پارک",
+     "de": "Tassili n’Ajjer"
+    },
+    "id": "tassili-n-ajjer"
+   },
+   {
+    "name": {
+     "en": "Sonoran Desert",
+     "zh": "索诺拉沙漠",
+     "hi": "सोनोरन",
+     "es": "Desierto de Sonora",
+     "ar": "صحراء سونورا",
+     "fr": "désert de Sonora",
+     "bn": "সোনোরান মরুভূমি",
+     "pt": "Deserto de Sonora",
+     "ru": "Сонора",
+     "ur": "سونوران ڈیزرٹ",
+     "de": "Sonora-Wüste"
+    },
+    "id": "sonoran-desert"
+   },
+   {
+    "name": {
+     "en": "Libyan Desert",
+     "zh": "利比亚沙漠",
+     "hi": "लीबियाई मरुस्थल",
+     "es": "Desierto Líbico",
+     "ar": "الصحراء الليبية",
+     "fr": "désert Libyque",
+     "bn": "লিবিয়ান ডেজার্ট",
+     "pt": "Deserto da Líbia",
+     "ru": "Ливийская пустыня",
+     "ur": "صحرا لیبیا",
+     "de": "Libysche Wüste"
+    },
+    "id": "libyan-desert"
+   },
+   {
+    "name": {
+     "en": "Dasht-e Lut",
+     "zh": "盧特沙漠",
+     "hi": "दाश्त ए लूट",
+     "es": "Desierto de Lut",
+     "ar": "صحراء لوط",
+     "fr": "Dasht-e Lut",
+     "bn": "দাশ্‌তে লুত",
+     "pt": "Dasht-e Lut",
+     "ru": "Деште-Лут",
+     "ur": "دشت لوت",
+     "de": "Dascht-e Lut"
+    },
+    "id": "dasht-e-lut"
+   },
+   {
+    "name": {
+     "en": "Great Sandy Desert",
+     "zh": "大沙沙漠",
+     "hi": "ग्रेट सैंडी",
+     "es": "Gran Desierto Arenoso",
+     "ar": "صحراء الرمل الكبرى",
+     "fr": "Grand désert de sable",
+     "bn": "গ্রেট স্যান্ডি ডেজার্ট",
+     "pt": "Grande Deserto Arenoso",
+     "ru": "Большая Песчаная пустыня",
+     "ur": "گریٹ سینڈی ڈیزرٹ",
+     "de": "Große Sandwüste"
+    },
+    "id": "great-sandy-desert"
+   },
+   {
+    "name": {
+     "en": "Nubian Desert",
+     "zh": "努比亞沙漠",
+     "hi": "नूबियन",
+     "es": "Desierto de Nubia",
+     "ar": "صحراء النوبة",
+     "fr": "désert de Nubie",
+     "bn": "নুবিয়ান মরুভূমি",
+     "pt": "Deserto da Núbia",
+     "ru": "Нубийская пустыня",
+     "ur": "نیوبین ڈیزرٹ",
+     "de": "Nubische Wüste"
+    },
+    "id": "nubian-desert"
+   },
+   {
+    "name": {
+     "en": "Gibson Desert",
+     "zh": "吉布森沙漠",
+     "hi": "गिब्सन रेगिस्तान",
+     "es": "Desierto de Gibson",
+     "ar": "صحراء قبسون",
+     "fr": "désert de Gibson",
+     "bn": "গিবসন মরুভূমি",
+     "pt": "Deserto de Gibson",
+     "ru": "Пустыня Гибсона",
+     "ur": "گبسن ڈیزرٹ",
+     "de": "Gibsonwüste"
+    },
+    "id": "gibson-desert"
+   },
+   {
+    "name": {
+     "en": "Chihuahuan Desert",
+     "zh": "奇瓦瓦沙漠",
+     "hi": "चिहुआहुआ रेगिस्तान",
+     "es": "Desierto de monterrey",
+     "ar": "صحراء شيواوية",
+     "fr": "désert de Chihuahua",
+     "bn": "চিহুয়াহুয়ান ডেজার্ট",
+     "pt": "Deserto de Chihuahua",
+     "ru": "Чиуауа",
+     "ur": "چیہوہایان ڈیزرٹ",
+     "de": "Chihuahua-Wüste"
+    },
+    "id": "chihuahuan-desert"
+   },
+   {
+    "name": {
+     "en": "Ténéré desert",
+     "zh": "泰內雷沙漠",
+     "hi": "तेनेरे",
+     "es": "Teneré",
+     "ar": "صحراء تينيري",
+     "fr": "Ténéré",
+     "bn": "তানোর",
+     "pt": "Ténéré",
+     "ru": "Тенере",
+     "ur": "تینیرے",
+     "de": "Ténéré"
+    },
+    "id": "tenere-desert"
+   },
+   {
+    "name": {
+     "en": "Betpak-Dala",
+     "zh": "饥饿草原",
+     "hi": "बेतपाक़दला रेगिस्तान",
+     "es": "Betpak-Dala",
+     "ar": "دالا بيتباك",
+     "fr": "Steppe de la Faim",
+     "bn": "বেতপাকিউদালা ডেজার্ট",
+     "pt": "Betpak-Dala",
+     "ru": "Бетпак-Дала",
+     "ur": "بیٹپاقڈالا ڈیزرٹ",
+     "de": "Hungersteppe"
+    },
+    "id": "betpak-dala"
+   },
+   {
+    "name": {
+     "en": "Ordos Desert",
+     "zh": "鄂爾多斯沙漠",
+     "hi": "म्यू अस रेगिस्तान",
+     "es": "Meandro de Ordos",
+     "ar": "صحراء أوردوس",
+     "fr": "désert d'Ordos",
+     "bn": "মু আস ডেজার্ট",
+     "pt": "Deserto de Mu Us",
+     "ru": "Ордос",
+     "ur": "مو اس ڈیزرٹ",
+     "de": "Ordos-Plateau"
+    },
+    "id": "ordos-desert"
+   },
+   {
+    "name": {
+     "en": "Grand Erg Oriental",
+     "zh": "大東方沙海",
+     "hi": "ग्रैंड एर्ग ओरिएंटल",
+     "es": "Gran Erg Oriental",
+     "ar": "العرق الشرقي الكبير",
+     "fr": "Grand Erg oriental",
+     "bn": "গ্র্যান্ড এর্গ ওরিয়েন্টাল",
+     "pt": "Grande Erg Oriental",
+     "ru": "Большой Восточный Эрг",
+     "ur": "گرینڈ ایرگ اورینٹل",
+     "de": "Östlicher Großer Erg"
+    },
+    "id": "grand-erg-oriental"
+   },
+   {
+    "name": {
+     "en": "Great Salt Lake Desert",
+     "zh": "大盐湖沙漠",
+     "hi": "ग्रेट साल्ट लेक डेजर्ट",
+     "es": "Gran desierto del Lago Salado",
+     "ar": "صحراء سولت لايك",
+     "fr": "Great Salt Lake Desert",
+     "bn": "গ্রেট সল্ট লেক ডেজার্ট",
+     "pt": "Deserto do Grande Lago Salgado",
+     "ru": "Пустыня Большого Солёного Озера",
+     "ur": "گریٹ سالٹ لیک صحرا",
+     "de": "Große Salzwüste"
+    },
+    "id": "great-salt-lake-desert"
+   },
+   {
+    "name": {
+     "en": "Grand Erg Occidental",
+     "zh": "西大厄尔格",
+     "hi": "ग्रैंड एर्ग ऑक्सिडेंटल",
+     "es": "Gran Erg Occidental",
+     "ar": "العرق الغربي الكبير",
+     "fr": "Grand Erg occidental",
+     "bn": "গ্র্যান্ড এর্গ ওক্সিডেন্টাল",
+     "pt": "Grand Erg Ocidental",
+     "ru": "Большой Западный Эрг",
+     "ur": "گرینڈ ایرگ آکسیڈینٹل",
+     "de": "Westlicher Großer Erg"
+    },
+    "id": "grand-erg-occidental"
+   },
+   {
+    "name": {
+     "en": "Western Desert",
+     "zh": "西部沙漠",
+     "hi": "पश्चिमी रेगिस्तान",
+     "es": "Desierto occidental",
+     "ar": "الصحراء الغربية (مصر)",
+     "fr": "Désert occidental",
+     "bn": "পশ্চিম মরুভূমি",
+     "pt": "Deserto Ocidental",
+     "ru": "Западная пустыня",
+     "ur": "مغربی صحرا (مصر)",
+     "de": "Westliche Wüste"
+    },
+    "id": "western-desert"
+   },
+   {
+    "name": {
+     "en": "El Djouf",
+     "zh": "迪乌夫沙漠",
+     "hi": "एल जोफ",
+     "es": "El Djouf",
+     "ar": "الجوف (موريتانيا-مالي)",
+     "fr": "El Djouf",
+     "bn": "এল দজোউফ",
+     "pt": "El Djouf",
+     "ru": "Эль-Джуф",
+     "ur": "ایل جود",
+     "de": "El Djouf"
+    },
+    "id": "el-djouf"
+   },
+   {
+    "name": {
+     "en": "Murzuq Desert",
+     "zh": "邁爾祖格沙漠",
+     "hi": "इधन मुर्ज़ुक",
+     "es": "Idhan Murzuq",
+     "ar": "صحراء مرزق",
+     "fr": "Erg Mourzouq",
+     "bn": "ইধান মুরজুক",
+     "pt": "Deserto de Murzuq",
+     "ru": "Эдейен-Мурзук",
+     "ur": "ادہان مرزق",
+     "de": "Erg Murzuk"
+    },
+    "id": "murzuq-desert"
+   },
+   {
+    "name": {
+     "en": "Erg Chech",
+     "zh": "舍什沙漠",
+     "hi": "एर्ग चेच",
+     "es": "‘Erg Chech",
+     "ar": "عرق شاش",
+     "fr": "Erg Chech",
+     "bn": "এর্গ চেচ",
+     "pt": "‘Erg Chech",
+     "ru": "Эрг-Шеш",
+     "ur": "ایرگ چیچ",
+     "de": "Erg Chech"
+    },
+    "id": "erg-chech"
+   }
+  ]
+ },
+ "oceans": {
+  "kind": "poly",
+  "items": [
+   {
+    "name": {
+     "en": "Pacific Ocean",
+     "zh": "太平洋",
+     "hi": "प्रशान्त महासागर",
+     "es": "Océano Pacífico",
+     "ar": "المحيط الهادئ",
+     "fr": "océan Pacifique",
+     "bn": "প্রশান্ত মহাসাগর",
+     "ur": "بحر الکاہل",
+     "ru": "Тихий океан",
+     "pt": "Oceano Pacífico",
+     "de": "Pazifischer Ozean"
+    },
+    "id": "pacific-ocean"
+   },
+   {
+    "name": {
+     "en": "Atlantic Ocean",
+     "zh": "大西洋",
+     "hi": "अन्ध महासागर",
+     "es": "Océano Atlántico",
+     "ar": "المحيط الأطلسي",
+     "fr": "océan Atlantique",
+     "bn": "আটলান্টিক মহাসাগর",
+     "ur": "بحر اوقیانوس",
+     "ru": "Атлантический океан",
+     "pt": "Oceano Atlântico",
+     "de": "Atlantischer Ozean"
+    },
+    "id": "atlantic-ocean"
+   },
+   {
+    "name": {
+     "en": "Indian Ocean",
+     "zh": "印度洋",
+     "hi": "हिन्द महासागर",
+     "es": "océano Índico",
+     "ar": "المحيط الهندي",
+     "fr": "océan Indien",
+     "bn": "ভারত মহাসাগর",
+     "ur": "بحر ہند",
+     "ru": "Индийский океан",
+     "pt": "Oceano Índico",
+     "de": "Indischer Ozean"
+    },
+    "id": "indian-ocean"
+   },
+   {
+    "name": {
+     "en": "Arctic Ocean",
+     "zh": "北冰洋",
+     "hi": "उत्तरध्रुवीय महासागर",
+     "es": "océano Ártico",
+     "ar": "المحيط المتجمد الشمالي",
+     "fr": "océan Arctique",
+     "bn": "উত্তর মহাসাগর",
+     "ur": "بحر منجمد شمالی",
+     "ru": "Северный Ледовитый океан",
+     "pt": "Oceano Ártico",
+     "de": "Arktischer Ozean"
+    },
+    "id": "arctic-ocean"
+   },
+   {
+    "name": {
+     "en": "Southern Ocean",
+     "zh": "南冰洋",
+     "hi": "दक्षिणध्रुवीय महासागर",
+     "es": "Océano Austral",
+     "ar": "المحيط الجنوبي",
+     "fr": "océan Austral",
+     "bn": "দক্ষিণ মহাসাগর",
+     "ur": "بحر منجمد جنوبی",
+     "ru": "Южный океан",
+     "pt": "Oceano Antártico",
+     "de": "Südlicher Ozean"
+    },
+    "id": "southern-ocean"
+   }
+  ]
+ },
+ "cities": {
+  "kind": "point",
+  "items": [
+   {
+    "name": {
+     "en": "Tokyo",
+     "zh": "东京都",
+     "hi": "टोक्यो",
+     "es": "Tokio",
+     "ar": "طوكيو",
+     "fr": "Tokyo",
+     "bn": "টোকিও",
+     "pt": "Tóquio",
+     "ru": "Токио",
+     "ur": "توکیو",
+     "de": "Tokio"
+    },
+    "at": [
+     139.749462,
+     35.686963
+    ],
+    "id": "tokyo"
+   },
+   {
+    "name": {
+     "en": "New York City",
+     "zh": "纽约",
+     "hi": "न्यूयॉर्क नगर",
+     "es": "Nueva York",
+     "ar": "نيويورك",
+     "fr": "New York",
+     "bn": "নিউ ইয়র্ক সিটি",
+     "pt": "Nova Iorque",
+     "ru": "Нью-Йорк",
+     "ur": "نیویارک شہر",
+     "de": "New York City"
+    },
+    "at": [
+     -73.995718,
+     40.721562
+    ],
+    "id": "new-york-city"
+   },
+   {
+    "name": {
+     "en": "Mexico City",
+     "zh": "墨西哥城",
+     "hi": "मेक्सिको नगर",
+     "es": "Ciudad de México",
+     "ar": "مدينة مكسيكو",
+     "fr": "Mexico",
+     "bn": "মেক্সিকো সিটি",
+     "pt": "Cidade do México",
+     "ru": "Мехико",
+     "ur": "میکسیکو شہر",
+     "de": "Mexiko-Stadt"
+    },
+    "at": [
+     -99.132934,
+     19.444388
+    ],
+    "id": "mexico-city"
+   },
+   {
+    "name": {
+     "en": "Mumbai",
+     "zh": "孟买",
+     "hi": "मुम्बई",
+     "es": "Bombay",
+     "ar": "مومباي",
+     "fr": "Bombay",
+     "bn": "মুম্বই",
+     "pt": "Bombaim",
+     "ru": "Мумбаи",
+     "ur": "ممبئی",
+     "de": "Mumbai"
+    },
+    "at": [
+     72.875839,
+     19.068408
+    ],
+    "id": "mumbai"
+   },
+   {
+    "name": {
+     "en": "São Paulo",
+     "zh": "圣保罗",
+     "hi": "साओ पाउलो",
+     "es": "São Paulo",
+     "ar": "ساو باولو",
+     "fr": "São Paulo",
+     "bn": "সাও পাওলো",
+     "pt": "São Paulo",
+     "ru": "Сан-Паулу",
+     "ur": "ساؤ پالو",
+     "de": "São Paulo"
+    },
+    "at": [
+     -46.626966,
+     -23.556734
+    ],
+    "id": "sao-paulo"
+   },
+   {
+    "name": {
+     "en": "Delhi",
+     "zh": "德里",
+     "hi": "दिल्ली",
+     "es": "Delhi",
+     "ar": "دلهي",
+     "fr": "Delhi",
+     "bn": "দিল্লি",
+     "pt": "Deli",
+     "ru": "Дели",
+     "ur": "دہلی",
+     "de": "Delhi"
+    },
+    "at": [
+     77.228058,
+     28.671939
+    ],
+    "id": "delhi"
+   },
+   {
+    "name": {
+     "en": "Shanghai",
+     "zh": "上海市",
+     "hi": "शंघाई",
+     "es": "Shanghái",
+     "ar": "شانغهاي",
+     "fr": "Shanghaï",
+     "bn": "সাংহাই",
+     "pt": "Xangai",
+     "ru": "Шанхай",
+     "ur": "شنگھائی",
+     "de": "Shanghai"
+    },
+    "at": [
+     121.434559,
+     31.218398
+    ],
+    "id": "shanghai"
+   },
+   {
+    "name": {
+     "en": "Kolkata",
+     "zh": "加尔各答",
+     "hi": "कोलकाता",
+     "es": "Calcuta",
+     "ar": "كلكتا",
+     "fr": "Calcutta",
+     "bn": "কলকাতা",
+     "pt": "Calcutá",
+     "ru": "Калькутта",
+     "ur": "کولکاتا",
+     "de": "Kolkata"
+    },
+    "at": [
+     88.369126,
+     22.569579
+    ],
+    "id": "kolkata"
+   },
+   {
+    "name": {
+     "en": "Dhaka",
+     "zh": "达卡市",
+     "hi": "ढाका",
+     "es": "Daca",
+     "ar": "دكا",
+     "fr": "Dacca",
+     "bn": "ঢাকা",
+     "pt": "Daca",
+     "ru": "Дакка",
+     "ur": "ڈھاکہ",
+     "de": "Dhaka"
+    },
+    "at": [
+     90.406634,
+     23.725006
+    ],
+    "id": "dhaka"
+   },
+   {
+    "name": {
+     "en": "Buenos Aires",
+     "zh": "布宜诺斯艾利斯",
+     "hi": "ब्यूनस आयर्स",
+     "es": "Buenos Aires",
+     "ar": "بوينس آيرس",
+     "fr": "Buenos Aires",
+     "bn": "বুয়েনোস আইরেস",
+     "pt": "Buenos Aires",
+     "ru": "Буэнос-Айрес",
+     "ur": "بیونس آئرس",
+     "de": "Buenos Aires"
+    },
+    "at": [
+     -58.432513,
+     -34.610715
+    ],
+    "id": "buenos-aires"
+   },
+   {
+    "name": {
+     "en": "Los Angeles",
+     "zh": "洛杉矶",
+     "hi": "लॉस एंजेलिस",
+     "es": "Los Ángeles",
+     "ar": "لوس أنجلوس",
+     "fr": "Los Angeles",
+     "bn": "লস অ্যাঞ্জেলেস",
+     "pt": "Los Angeles",
+     "ru": "Лос-Анджелес",
+     "ur": "لاس اینجلس",
+     "de": "Los Angeles"
+    },
+    "at": [
+     -118.231986,
+     34.049219
+    ],
+    "id": "los-angeles"
+   },
+   {
+    "name": {
+     "en": "Karachi",
+     "zh": "卡拉奇",
+     "hi": "कराची",
+     "es": "Karachi",
+     "ar": "كراجي",
+     "fr": "Karachi",
+     "bn": "করাচি",
+     "pt": "Carachi",
+     "ru": "Карачи",
+     "ur": "کراچی",
+     "de": "Karatschi"
+    },
+    "at": [
+     66.988063,
+     24.871938
+    ],
+    "id": "karachi"
+   },
+   {
+    "name": {
+     "en": "Cairo",
+     "zh": "开罗",
+     "hi": "क़ाहिरा",
+     "es": "El Cairo",
+     "ar": "القاهرة",
+     "fr": "Le Caire",
+     "bn": "কায়রো",
+     "pt": "Cairo",
+     "ru": "Каир",
+     "ur": "قاہرہ",
+     "de": "Kairo"
+    },
+    "at": [
+     31.248022,
+     30.051906
+    ],
+    "id": "cairo"
+   },
+   {
+    "name": {
+     "en": "Rio de Janeiro",
+     "zh": "里约热内卢",
+     "hi": "रियो डि जेनेरो",
+     "es": "Río de Janeiro",
+     "ar": "ريو دي جانيرو",
+     "fr": "Rio de Janeiro",
+     "bn": "রিউ দি জানেইরু",
+     "pt": "Rio de Janeiro",
+     "ru": "Рио-де-Жанейро",
+     "ur": "ریو دے جینیرو",
+     "de": "Rio de Janeiro"
+    },
+    "at": [
+     -43.212117,
+     -22.907308
+    ],
+    "id": "rio-de-janeiro"
+   },
+   {
+    "name": {
+     "en": "Osaka",
+     "zh": "大阪市",
+     "hi": "ओसाका",
+     "es": "Osaka",
+     "ar": "أوساكا",
+     "fr": "Osaka",
+     "bn": "ওসাকা",
+     "pt": "Osaka",
+     "ru": "Осака",
+     "ur": "اوساکا",
+     "de": "Osaka"
+    },
+    "at": [
+     135.503754,
+     34.691095
+    ],
+    "id": "osaka"
+   },
+   {
+    "name": {
+     "en": "Beijing",
+     "zh": "北京市",
+     "hi": "बीजिंग",
+     "es": "Pekín",
+     "ar": "بكين",
+     "fr": "Pékin",
+     "bn": "বেইজিং",
+     "pt": "Pequim",
+     "ru": "Пекин",
+     "ur": "بیجنگ",
+     "de": "Peking"
+    },
+    "at": [
+     116.394201,
+     39.90172
+    ],
+    "id": "beijing"
+   },
+   {
+    "name": {
+     "en": "Manila",
+     "zh": "马尼拉",
+     "hi": "मनीला",
+     "es": "Manila",
+     "ar": "مانيلا",
+     "fr": "Manille",
+     "bn": "ম্যানিলা",
+     "pt": "Manila",
+     "ru": "Манила",
+     "ur": "منیلا",
+     "de": "Manila"
+    },
+    "at": [
+     120.980271,
+     14.606105
+    ],
+    "id": "manila"
+   },
+   {
+    "name": {
+     "en": "Moscow",
+     "zh": "莫斯科",
+     "hi": "मास्को",
+     "es": "Moscú",
+     "ar": "موسكو",
+     "fr": "Moscou",
+     "bn": "মস্কো",
+     "pt": "Moscou",
+     "ru": "Москва",
+     "ur": "ماسکو",
+     "de": "Moskau"
+    },
+    "at": [
+     37.613577,
+     55.75411
+    ],
+    "id": "moscow"
+   },
+   {
+    "name": {
+     "en": "Istanbul",
+     "zh": "伊斯坦布尔",
+     "hi": "इस्तांबुल",
+     "es": "Estambul",
+     "ar": "إسطنبول",
+     "fr": "Istanbul",
+     "bn": "ইস্তাম্বুল",
+     "pt": "Istambul",
+     "ru": "Стамбул",
+     "ur": "استنبول",
+     "de": "Istanbul"
+    },
+    "at": [
+     28.974277,
+     41.017602
+    ],
+    "id": "istanbul"
+   },
+   {
+    "name": {
+     "en": "Paris",
+     "zh": "巴黎",
+     "hi": "पेरिस",
+     "es": "París",
+     "ar": "باريس",
+     "fr": "Paris",
+     "bn": "প্যারিস",
+     "pt": "Paris",
+     "ru": "Париж",
+     "ur": "پیرس",
+     "de": "Paris"
+    },
+    "at": [
+     2.352992,
+     48.858092
+    ],
+    "id": "paris"
+   },
+   {
+    "name": {
+     "en": "Seoul",
+     "zh": "首尔",
+     "hi": "सियोल",
+     "es": "Seúl",
+     "ar": "سول",
+     "fr": "Séoul",
+     "bn": "সিউল",
+     "pt": "Seul",
+     "ru": "Сеул",
+     "ur": "سؤل",
+     "de": "Seoul"
+    },
+    "at": [
+     126.997785,
+     37.568295
+    ],
+    "id": "seoul"
+   },
+   {
+    "name": {
+     "en": "Lagos",
+     "zh": "拉各斯",
+     "hi": "लागोस",
+     "es": "Lagos",
+     "ar": "لاغوس",
+     "fr": "Lagos",
+     "bn": "লেগোস",
+     "pt": "Lagos",
+     "ru": "Лагос",
+     "ur": "لاگوس",
+     "de": "Lagos"
+    },
+    "at": [
+     3.389585,
+     6.445208
+    ],
+    "id": "lagos"
+   },
+   {
+    "name": {
+     "en": "Jakarta",
+     "zh": "雅加达",
+     "hi": "जकार्ता",
+     "es": "Yakarta",
+     "ar": "جاكرتا",
+     "fr": "Jakarta",
+     "bn": "জাকার্তা",
+     "pt": "Jacarta",
+     "ru": "Джакарта",
+     "ur": "جکارتا",
+     "de": "Jakarta"
+    },
+    "at": [
+     106.827492,
+     -6.172472
+    ],
+    "id": "jakarta"
+   },
+   {
+    "name": {
+     "en": "Chicago",
+     "zh": "芝加哥",
+     "hi": "शिकागो",
+     "es": "Chicago",
+     "ar": "شيكاغو",
+     "fr": "Chicago",
+     "bn": "শিকাগো",
+     "pt": "Chicago",
+     "ru": "Чикаго",
+     "ur": "شکاگو",
+     "de": "Chicago"
+    },
+    "at": [
+     -87.635237,
+     41.847961
+    ],
+    "id": "chicago"
+   },
+   {
+    "name": {
+     "en": "Guangzhou",
+     "zh": "广州市",
+     "hi": "ग्वांगझोउ",
+     "es": "Cantón",
+     "ar": "غوانزو",
+     "fr": "Canton",
+     "bn": "কুয়াংচৌ",
+     "pt": "Cantão",
+     "ru": "Гуанчжоу",
+     "ur": "گوانگژو",
+     "de": "Guangzhou"
+    },
+    "at": [
+     113.261785,
+     23.124723
+    ],
+    "id": "guangzhou"
+   },
+   {
+    "name": {
+     "en": "London",
+     "zh": "伦敦",
+     "hi": "लंदन",
+     "es": "Londres",
+     "ar": "لندن",
+     "fr": "Londres",
+     "bn": "লন্ডন",
+     "pt": "Londres",
+     "ru": "Лондон",
+     "ur": "لندن",
+     "de": "London"
+    },
+    "at": [
+     -0.118668,
+     51.501941
+    ],
+    "id": "london"
+   },
+   {
+    "name": {
+     "en": "Lima",
+     "zh": "利马",
+     "hi": "लीमा",
+     "es": "Lima",
+     "ar": "ليما",
+     "fr": "Lima",
+     "bn": "লিমা",
+     "pt": "Lima",
+     "ru": "Лима",
+     "ur": "لیما",
+     "de": "Lima"
+    },
+    "at": [
+     -77.052008,
+     -12.046067
+    ],
+    "id": "lima"
+   },
+   {
+    "name": {
+     "en": "Tehran",
+     "zh": "德黑兰",
+     "hi": "तेहरान",
+     "es": "Teherán",
+     "ar": "طهران",
+     "fr": "Téhéran",
+     "bn": "তেহরান",
+     "pt": "Teerã",
+     "ru": "Тегеран",
+     "ur": "تہران، ایران",
+     "de": "Teheran"
+    },
+    "at": [
+     51.422398,
+     35.673889
+    ],
+    "id": "tehran"
+   },
+   {
+    "name": {
+     "en": "Kinshasa",
+     "zh": "金沙萨",
+     "hi": "किन्शासा",
+     "es": "Kinsasa",
+     "ar": "كينشاسا",
+     "fr": "Kinshasa",
+     "bn": "কিনশাসা",
+     "pt": "Quinxassa",
+     "ru": "Киншаса",
+     "ur": "کنشاسا",
+     "de": "Kinshasa"
+    },
+    "at": [
+     15.313026,
+     -4.327778
+    ],
+    "id": "kinshasa"
+   },
+   {
+    "name": {
+     "en": "Bogotá",
+     "zh": "波哥大",
+     "hi": "बोगोटा",
+     "es": "Bogotá",
+     "ar": "بوغوتا",
+     "fr": "Bogota",
+     "bn": "বোগোতা",
+     "pt": "Bogotá",
+     "ru": "Богота",
+     "ur": "بوگوتا",
+     "de": "Bogotá"
+    },
+    "at": [
+     -74.08529,
+     4.598369
+    ],
+    "id": "bogota"
+   },
+   {
+    "name": {
+     "en": "Shenzhen",
+     "zh": "深圳市",
+     "hi": "शेन्झेन",
+     "es": "Shenzhen",
+     "ar": "شينزين",
+     "fr": "Shenzhen",
+     "bn": "শেনচেন",
+     "pt": "Shenzhen",
+     "ru": "Шэньчжэнь",
+     "ur": "شینزین",
+     "de": "Shenzhen"
+    },
+    "at": [
+     114.061154,
+     22.548097
+    ],
+    "id": "shenzhen"
+   },
+   {
+    "name": {
+     "en": "Wuhan",
+     "zh": "武汉市",
+     "hi": "वूहान",
+     "es": "Wuhan",
+     "ar": "ووهان",
+     "fr": "Wuhan",
+     "bn": "উহান",
+     "pt": "Wuhan",
+     "ru": "Ухань",
+     "ur": "ووہان",
+     "de": "Wuhan"
+    },
+    "at": [
+     114.268071,
+     30.581977
+    ],
+    "id": "wuhan"
+   },
+   {
+    "name": {
+     "en": "Hong Kong",
+     "zh": "香港",
+     "hi": "हांगकांग",
+     "es": "Hong Kong",
+     "ar": "هونغ كونغ",
+     "fr": "Hong Kong",
+     "bn": "হংকং",
+     "pt": "Hong Kong",
+     "ru": "Гонконг",
+     "ur": "ہانگ کانگ",
+     "de": "Hongkong"
+    },
+    "at": [
+     114.183064,
+     22.306927
+    ],
+    "id": "hong-kong"
+   },
+   {
+    "name": {
+     "en": "Tianjin",
+     "zh": "天津市",
+     "hi": "तिआंजिन",
+     "es": "Tianjin",
+     "ar": "تيانجين",
+     "fr": "Tianjin",
+     "bn": "থিয়েনচিন",
+     "pt": "Tianjin",
+     "ru": "Тяньцзинь",
+     "ur": "تیانجین",
+     "de": "Tianjin"
+    },
+    "at": [
+     117.196607,
+     39.082772
+    ],
+    "id": "tianjin"
+   },
+   {
+    "name": {
+     "en": "Chennai",
+     "zh": "金奈",
+     "hi": "चेन्नई",
+     "es": "Chennai",
+     "ar": "تشيناي",
+     "fr": "Madras",
+     "bn": "চেন্নাই",
+     "pt": "Chennai",
+     "ru": "Ченнаи",
+     "ur": "چنئی",
+     "de": "Chennai"
+    },
+    "at": [
+     80.278053,
+     13.091934
+    ],
+    "id": "chennai"
+   },
+   {
+    "name": {
+     "en": "Taipei",
+     "zh": "台北市",
+     "hi": "ताइपे",
+     "es": "Taipéi",
+     "ar": "تايبيه",
+     "fr": "Taipei",
+     "bn": "তাইপে",
+     "pt": "Taipé",
+     "ru": "Тайбэй",
+     "ur": "تائی پے",
+     "de": "Taipeh"
+    },
+    "at": [
+     121.568333,
+     25.035833
+    ],
+    "id": "taipei"
+   },
+   {
+    "name": {
+     "en": "Bengaluru",
+     "zh": "班加罗尔",
+     "hi": "बेंगलुरु",
+     "es": "Bangalore",
+     "ar": "بنغالور",
+     "fr": "Bangalore",
+     "bn": "বেঙ্গালুরু",
+     "pt": "Bengalúru",
+     "ru": "Бангалор",
+     "ur": "بنگلور",
+     "de": "Bengaluru"
+    },
+    "at": [
+     77.558064,
+     12.971941
+    ],
+    "id": "bengaluru"
+   },
+   {
+    "name": {
+     "en": "Bangkok",
+     "zh": "曼谷",
+     "hi": "बैंकॉक",
+     "es": "Bangkok",
+     "ar": "بانكوك",
+     "fr": "Bangkok",
+     "bn": "ব্যাংকক",
+     "pt": "Bancoque",
+     "ru": "Бангкок",
+     "ur": "بینکاک",
+     "de": "Bangkok"
+    },
+    "at": [
+     100.514699,
+     13.751945
+    ],
+    "id": "bangkok"
+   },
+   {
+    "name": {
+     "en": "Lahore",
+     "zh": "拉合尔",
+     "hi": "लाहौर",
+     "es": "Lahore",
+     "ar": "لاهور",
+     "fr": "Lahore",
+     "bn": "লাহোর",
+     "pt": "Laore",
+     "ru": "Лахор",
+     "ur": "لاہور",
+     "de": "Lahore"
+    },
+    "at": [
+     74.348079,
+     31.561917
+    ],
+    "id": "lahore"
+   },
+   {
+    "name": {
+     "en": "Chongqing",
+     "zh": "重庆市",
+     "hi": "चूंगचींग",
+     "es": "Chongqing",
+     "ar": "تشونغتشينغ",
+     "fr": "Chongqing",
+     "bn": "ছুংছিং",
+     "pt": "Chongqing",
+     "ru": "Чунцин",
+     "ur": "چھونگ چھنگ",
+     "de": "Chongqing"
+    },
+    "at": [
+     106.593036,
+     29.566923
+    ],
+    "id": "chongqing"
+   },
+   {
+    "name": {
+     "en": "Hyderabad",
+     "zh": "海得拉巴",
+     "hi": "हैदराबाद",
+     "es": "Haidrābād",
+     "ar": "حيدر آباد",
+     "fr": "Hyderabad",
+     "bn": "হায়দরাবাদ",
+     "pt": "Hyderabad",
+     "ru": "Хайдарабад",
+     "ur": "حیدر آباد",
+     "de": "Hyderabad"
+    },
+    "at": [
+     78.478008,
+     17.401929
+    ],
+    "id": "hyderabad"
+   },
+   {
+    "name": {
+     "en": "Santiago",
+     "zh": "圣地亚哥",
+     "hi": "सेण्टियागो",
+     "es": "Santiago de Chile",
+     "ar": "سانتياغو",
+     "fr": "Santiago",
+     "bn": "সান্তিয়াগো",
+     "pt": "Santiago",
+     "ru": "Сантьяго",
+     "ur": "سینٹیاگو",
+     "de": "Santiago de Chile"
+    },
+    "at": [
+     -70.650504,
+     -33.440205
+    ],
+    "id": "santiago"
+   },
+   {
+    "name": {
+     "en": "Miami",
+     "zh": "迈阿密",
+     "hi": "मियामी",
+     "es": "Miami",
+     "ar": "ميامي",
+     "fr": "Miami",
+     "bn": "মায়ামি",
+     "pt": "Miami",
+     "ru": "Майами",
+     "ur": "میامی",
+     "de": "Miami"
+    },
+    "at": [
+     -80.226052,
+     25.789557
+    ],
+    "id": "miami"
+   },
+   {
+    "name": {
+     "en": "Belo Horizonte",
+     "zh": "贝洛奥里藏特",
+     "hi": "बेलो होरिज़ोंटे",
+     "es": "Belo Horizonte",
+     "ar": "بيلو هوريزونتي",
+     "fr": "Belo Horizonte",
+     "bn": "বেলু ওরিজোঁতি",
+     "pt": "Belo Horizonte",
+     "ru": "Белу-Оризонти",
+     "ur": "بیلو ہوریزونٹے",
+     "de": "Belo Horizonte"
+    },
+    "at": [
+     -43.91695,
+     -19.91308
+    ],
+    "id": "belo-horizonte"
+   },
+   {
+    "name": {
+     "en": "Madrid",
+     "zh": "马德里",
+     "hi": "मद्रिद",
+     "es": "Madrid",
+     "ar": "مدريد",
+     "fr": "Madrid",
+     "bn": "মাদ্রিদ",
+     "pt": "Madri",
+     "ru": "Мадрид",
+     "ur": "میدرد",
+     "de": "Madrid"
+    },
+    "at": [
+     -3.685297,
+     40.401972
+    ],
+    "id": "madrid"
+   },
+   {
+    "name": {
+     "en": "Philadelphia",
+     "zh": "费城",
+     "hi": "फिलाडेल्फिया",
+     "es": "Filadelfia",
+     "ar": "فيلادلفيا",
+     "fr": "Philadelphie",
+     "bn": "ফিলাডেলফিয়া",
+     "pt": "Filadélfia",
+     "ru": "Филадельфия",
+     "ur": "فلاڈلفیا",
+     "de": "Philadelphia"
+    },
+    "at": [
+     -75.179841,
+     39.945942
+    ],
+    "id": "philadelphia"
+   },
+   {
+    "name": {
+     "en": "Ahmedabad",
+     "zh": "艾哈迈达巴德",
+     "hi": "अहमदाबाद",
+     "es": "Ahmedabad",
+     "ar": "أحمد آباد",
+     "fr": "Ahmedabad",
+     "bn": "আহমেদাবাদ",
+     "pt": "Ahmedabad",
+     "ru": "Ахмадабад",
+     "ur": "احمد آباد",
+     "de": "Ahmedabad"
+    },
+    "at": [
+     72.578058,
+     23.031999
+    ],
+    "id": "ahmedabad"
+   },
+   {
+    "name": {
+     "en": "Ho Chi Minh City",
+     "zh": "胡志明市",
+     "hi": "हो ची मिन नगर",
+     "es": "Ciudad Ho Chi Minh",
+     "ar": "مدينة هو تشي منه",
+     "fr": "Hô Chi Minh-Ville",
+     "bn": "হো চি মিন সিটি",
+     "pt": "Cidade de Ho Chi Minh",
+     "ru": "Хошимин",
+     "ur": "ہو چی من",
+     "de": "Ho-Chi-Minh-Stadt"
+    },
+    "at": [
+     106.702985,
+     10.762125
+    ],
+    "id": "ho-chi-minh-city"
+   },
+   {
+    "name": {
+     "en": "Toronto",
+     "zh": "多伦多",
+     "hi": "टोरण्टो",
+     "es": "Toronto",
+     "ar": "تورونتو",
+     "fr": "Toronto",
+     "bn": "টরন্টো",
+     "pt": "Toronto",
+     "ru": "Торонто",
+     "ur": "ٹورانٹو",
+     "de": "Toronto"
+    },
+    "at": [
+     -79.389459,
+     43.664645
+    ],
+    "id": "toronto"
+   },
+   {
+    "name": {
+     "en": "Singapore",
+     "zh": "新加坡",
+     "hi": "सिंगापुर",
+     "es": "Singapur",
+     "ar": "سنغافورة",
+     "fr": "Singapour",
+     "bn": "সিঙ্গাপুর",
+     "pt": "Singapura",
+     "ru": "Сингапур",
+     "ur": "سنگاپور",
+     "de": "Singapur"
+    },
+    "at": [
+     103.853875,
+     1.294979
+    ],
+    "id": "singapore"
+   },
+   {
+    "name": {
+     "en": "Luanda",
+     "zh": "罗安达",
+     "hi": "लुआण्डा",
+     "es": "Luanda",
+     "ar": "لواندا",
+     "fr": "Luanda",
+     "bn": "লুয়ান্ডা",
+     "pt": "Luanda",
+     "ru": "Луанда",
+     "ur": "لواندا",
+     "de": "Luanda"
+    },
+    "at": [
+     13.232481,
+     -8.83634
+    ],
+    "id": "luanda"
+   },
+   {
+    "name": {
+     "en": "Baghdad",
+     "zh": "巴格达",
+     "hi": "बग़दाद",
+     "es": "Bagdad",
+     "ar": "بغداد",
+     "fr": "Bagdad",
+     "bn": "বাগদাদ",
+     "pt": "Bagdá",
+     "ru": "Багдад",
+     "ur": "بغداد",
+     "de": "Bagdad"
+    },
+    "at": [
+     44.391923,
+     33.340594
+    ],
+    "id": "baghdad"
+   },
+   {
+    "name": {
+     "en": "Barcelona",
+     "zh": "巴塞罗那",
+     "hi": "बार्सिलोना",
+     "es": "Barcelona",
+     "ar": "برشلونة",
+     "fr": "Barcelone",
+     "bn": "বার্সেলোনা",
+     "pt": "Barcelona",
+     "ru": "Барселона",
+     "ur": "برشلونہ",
+     "de": "Barcelona"
+    },
+    "at": [
+     2.181424,
+     41.385245
+    ],
+    "id": "barcelona"
+   },
+   {
+    "name": {
+     "en": "Dallas",
+     "zh": "达拉斯",
+     "hi": "डैलस",
+     "es": "Dallas",
+     "ar": "دالاس",
+     "fr": "Dallas",
+     "bn": "ডালাস",
+     "pt": "Dallas",
+     "ru": "Даллас",
+     "ur": "ڈیلاس",
+     "de": "Dallas"
+    },
+    "at": [
+     -96.794687,
+     32.771958
+    ],
+    "id": "dallas"
+   },
+   {
+    "name": {
+     "en": "Shenyang",
+     "zh": "沈阳市",
+     "hi": "शेनयांग",
+     "es": "Shenyang",
+     "ar": "شنيانغ",
+     "fr": "Shenyang",
+     "bn": "শেন-ইয়াং",
+     "pt": "Shenyang",
+     "ru": "Шэньян",
+     "ur": "شینیانگ",
+     "de": "Shenyang"
+    },
+    "at": [
+     123.448028,
+     41.806925
+    ],
+    "id": "shenyang"
+   },
+   {
+    "name": {
+     "en": "Khartoum",
+     "zh": "喀土穆",
+     "hi": "ख़ार्तूम",
+     "es": "Jartum",
+     "ar": "الخرطوم",
+     "fr": "Khartoum",
+     "bn": "খার্তুম",
+     "pt": "Cartum",
+     "ru": "Хартум",
+     "ur": "خرطوم",
+     "de": "Chartum"
+    },
+    "at": [
+     32.532233,
+     15.590024
+    ],
+    "id": "khartoum"
+   },
+   {
+    "name": {
+     "en": "Pune",
+     "zh": "浦那",
+     "hi": "पुणे",
+     "es": "Pune",
+     "ar": "بونه",
+     "fr": "Pune",
+     "bn": "পুণে",
+     "pt": "Pune",
+     "ru": "Пуна",
+     "ur": "پونے",
+     "de": "Pune"
+    },
+    "at": [
+     73.851892,
+     18.516394
+    ],
+    "id": "pune"
+   },
+   {
+    "name": {
+     "en": "Sydney",
+     "zh": "悉尼",
+     "hi": "सिडनी",
+     "es": "Sídney",
+     "ar": "سيدني",
+     "fr": "Sydney",
+     "bn": "সিডনি",
+     "pt": "Sydney",
+     "ru": "Сидней",
+     "ur": "سڈنی",
+     "de": "Sydney"
+    },
+    "at": [
+     151.212548,
+     -33.871373
+    ],
+    "id": "sydney"
+   },
+   {
+    "name": {
+     "en": "Saint Petersburg",
+     "zh": "圣彼得堡",
+     "hi": "सेंट पीटर्सबर्ग",
+     "es": "San Petersburgo",
+     "ar": "سانت بطرسبرغ",
+     "fr": "Saint-Pétersbourg",
+     "bn": "সেন্ট পিটার্সবার্গ",
+     "pt": "São Petersburgo",
+     "ru": "Санкт-Петербург",
+     "ur": "سینٹ پیٹرز برگ",
+     "de": "Sankt Petersburg"
+    },
+    "at": [
+     30.314074,
+     59.94096
+    ],
+    "id": "saint-petersburg"
+   },
+   {
+    "name": {
+     "en": "Chittagong",
+     "zh": "吉大港",
+     "hi": "चट्टग्राम",
+     "es": "Chitagón",
+     "ar": "جاتجام",
+     "fr": "Chittagong",
+     "bn": "চট্টগ্রাম",
+     "pt": "Chatigão",
+     "ru": "Читтагонг",
+     "ur": "چٹاگانگ",
+     "de": "Chittagong"
+    },
+    "at": [
+     91.798022,
+     22.331938
+    ],
+    "id": "chittagong"
+   }
+  ]
+ },
+ "mountains": {
+  "kind": "point",
+  "items": [
+   {
+    "name": {
+     "en": "Mount Everest",
+     "zh": "珠穆朗玛峰",
+     "hi": "एवरेस्ट पर्वत",
+     "es": "Everest",
+     "ar": "جبل إفرست",
+     "fr": "Everest",
+     "bn": "এভারেস্ট পর্বত",
+     "pt": "Everest",
+     "ru": "Джомолунгма",
+     "ur": "ماؤنٹ ایورسٹ",
+     "de": "Mount Everest"
+    },
+    "at": [
+     86.880596,
+     27.980481
+    ],
+    "id": "mount-everest"
+   },
+   {
+    "name": {
+     "en": "Mount Kilimanjaro",
+     "zh": "乞力马扎罗山",
+     "hi": "किलिमंजार hiahwjamaja",
+     "es": "Kilimanjaro",
+     "ar": "جبل كليمنجارو",
+     "fr": "Kilimanjaro",
+     "bn": "কিলিমাঞ্জারো",
+     "pt": "Kilimanjaro",
+     "ru": "Килиманджаро",
+     "ur": "کلیمنجارو",
+     "de": "Kilimandscharo"
+    },
+    "at": [
+     37.353252,
+     -3.075715
+    ],
+    "id": "mount-kilimanjaro"
+   },
+   {
+    "name": {
+     "en": "Mont Blanc",
+     "zh": "勃朗峰",
+     "hi": "मोंट ब्लांक",
+     "es": "Mont Blanc",
+     "ar": "مون بلون",
+     "fr": "mont Blanc",
+     "bn": "মোঁ ব্লঁ",
+     "pt": "Monte Branco",
+     "ru": "Монблан",
+     "ur": "مونٹ بلانک",
+     "de": "Mont Blanc"
+    },
+    "at": [
+     6.865043,
+     45.833679
+    ],
+    "id": "mont-blanc"
+   },
+   {
+    "name": {
+     "en": "Mount Elbrus",
+     "zh": "厄尔布鲁士山",
+     "hi": "एल्ब्रुस पर्वत",
+     "es": "Monte Elbrús",
+     "ar": "إلبروس",
+     "fr": "Elbrouz",
+     "bn": "এলব্রুস পর্বত",
+     "pt": "Monte Elbrus",
+     "ru": "Эльбрус",
+     "ur": "البروس",
+     "de": "Elbrus"
+    },
+    "at": [
+     42.439198,
+     43.355171
+    ],
+    "id": "mount-elbrus"
+   },
+   {
+    "name": {
+     "en": "Aconcagua",
+     "zh": "阿空加瓜山",
+     "hi": "अकोंकागुआ",
+     "es": "Aconcagua",
+     "ar": "أكونكاغوا",
+     "fr": "Aconcagua",
+     "bn": "আকোংকাগুয়া পর্বত",
+     "pt": "Aconcágua",
+     "ru": "Аконкагуа",
+     "ur": "اکنکاگوا",
+     "de": "Aconcagua"
+    },
+    "at": [
+     -70.015801,
+     -32.655679
+    ],
+    "id": "aconcagua"
+   },
+   {
+    "name": {
+     "en": "K2",
+     "zh": "乔戈里峰",
+     "hi": "के२",
+     "es": "K2",
+     "ar": "جبل كي 2",
+     "fr": "K2",
+     "bn": "কে২",
+     "pt": "K2",
+     "ru": "Чогори",
+     "ur": "کے ٹو",
+     "de": "K2"
+    },
+    "at": [
+     76.513209,
+     35.882406
+    ],
+    "id": "k2"
+   },
+   {
+    "name": {
+     "en": "Denali",
+     "zh": "丹奈利峰",
+     "hi": "देनाली",
+     "es": "Denali",
+     "ar": "دينالي",
+     "fr": "Denali",
+     "bn": "দেনালি",
+     "pt": "Denali",
+     "ru": "Мак-Кинли",
+     "ur": "کوہ مک کینلی",
+     "de": "Denali"
+    },
+    "at": [
+     -151.007296,
+     63.069411
+    ],
+    "id": "denali"
+   },
+   {
+    "name": {
+     "en": "Mount Kailash",
+     "zh": "冈仁波齐峰",
+     "hi": "कैलास पर्वत",
+     "es": "Kailash",
+     "ar": "جبل كايلاش",
+     "fr": "mont Kailash",
+     "bn": "কৈলাস পর্বত",
+     "pt": "Monte Kailash",
+     "ru": "Кайлас",
+     "ur": "کیلاش",
+     "de": "Kailash"
+    },
+    "at": [
+     81.312536,
+     31.066599
+    ],
+    "id": "mount-kailash"
+   },
+   {
+    "name": {
+     "en": "Dhaulagiri",
+     "zh": "道拉吉里峰",
+     "hi": "धौलागिरी",
+     "es": "Dhaulagiri",
+     "ar": "دهاولاغيري",
+     "fr": "Dhaulagiri",
+     "bn": "ধবলগিরি",
+     "pt": "Dhaulagiri",
+     "ru": "Дхаулагири",
+     "ur": "دہولاگری",
+     "de": "Dhaulagiri"
+    },
+    "at": [
+     83.495136,
+     28.696462
+    ],
+    "id": "dhaulagiri"
+   },
+   {
+    "name": {
+     "en": "Mount Kenya",
+     "zh": "肯尼亚山",
+     "hi": "माउंट केन्या",
+     "es": "Monte Kenia",
+     "ar": "جبل كينيا",
+     "fr": "mont Kenya",
+     "bn": "কেনিয়া পর্বত",
+     "pt": "Monte Quénia",
+     "ru": "Кения",
+     "ur": "کوہ کینیا",
+     "de": "Mount-Kenya-Massiv"
+    },
+    "at": [
+     37.299935,
+     -0.150072
+    ],
+    "id": "mount-kenya"
+   },
+   {
+    "name": {
+     "en": "Mount Kosciuszko",
+     "zh": "科修斯科山",
+     "hi": "कोज़िअस्को पर्वत",
+     "es": "Monte Kosciuszko",
+     "ar": "جبل كزيسك",
+     "fr": "mont Kosciuszko",
+     "bn": "কস্চিয়স্কো পর্বত",
+     "pt": "Monte Kosciuszko",
+     "ru": "Косцюшко",
+     "ur": "کوہ کازیسکو",
+     "de": "Mount Kosciuszko"
+    },
+    "at": [
+     148.263192,
+     -36.45588
+    ],
+    "id": "mount-kosciuszko"
+   },
+   {
+    "name": {
+     "en": "Chimborazo",
+     "zh": "钦博拉索山",
+     "hi": "चिम्बोरासो",
+     "es": "Volcán Chimborazo",
+     "ar": "تشيمبورازو",
+     "fr": "Chimborazo",
+     "bn": "চিম্বোরাজো",
+     "pt": "Chimborazo",
+     "ru": "Чимборасо",
+     "ur": "چمبورازو",
+     "de": "Chimborazo"
+    },
+    "at": [
+     -78.817489,
+     -1.469261
+    ],
+    "id": "chimborazo"
+   },
+   {
+    "name": {
+     "en": "Puncak Jaya",
+     "zh": "查亞峰",
+     "hi": "पुंकाक जय",
+     "es": "Jaya",
+     "ar": "بونتشاك جايا",
+     "fr": "Puncak Jaya",
+     "bn": "পুঞ্চাক জায়া",
+     "pt": "Pirâmide Carstensz",
+     "ru": "Пунчак-Джая",
+     "ur": "پنچاک جایا",
+     "de": "Carstensz-Pyramide"
+    },
+    "at": [
+     137.166252,
+     -4.077668
+    ],
+    "id": "puncak-jaya"
+   },
+   {
+    "name": {
+     "en": "Vinson Massif",
+     "zh": "文森山",
+     "hi": "विन्सन मैसिफ़",
+     "es": "Macizo Vinson",
+     "ar": "فينسون ماسيف",
+     "fr": "massif Vinson",
+     "bn": "ভিনসন স্তূপপর্বত",
+     "pt": "Maciço Vinson",
+     "ru": "Винсон",
+     "ur": "وینسن ماسیف",
+     "de": "Vinson-Massiv"
+    },
+    "at": [
+     -85.633729,
+     -78.529362
+    ],
+    "id": "vinson-massif"
+   },
+   {
+    "name": {
+     "en": "Mount Kinabalu",
+     "zh": "基纳巴卢山",
+     "hi": "गुनुंग किनाबालु",
+     "es": "Monte Kinabalu",
+     "ar": "جبل كينابالو",
+     "fr": "mont Kinabalu",
+     "bn": "কিনাবালু পর্বত",
+     "pt": "Monte Kinabalu",
+     "ru": "Кинабалу",
+     "ur": "گننگ کینابالو",
+     "de": "Kinabalu"
+    },
+    "at": [
+     116.549987,
+     6.083399
+    ],
+    "id": "mount-kinabalu"
+   },
+   {
+    "name": {
+     "en": "Klyuchevskaya Sopka",
+     "zh": "克柳切夫火山",
+     "hi": "क्ल्यूचेव्सकाया",
+     "es": "Kliuchevskoi",
+     "ar": "كلويشيفسكايا سوبكا",
+     "fr": "Klioutchevskoï",
+     "bn": "ক্ল্যুচেভস্কায়া সোপকা",
+     "pt": "Kliutchevskaia Sopka",
+     "ru": "Ключевская Сопка",
+     "ur": "کلائیوچیوسکایا سوپکا",
+     "de": "Kljutschewskaja Sopka"
+    },
+    "at": [
+     160.643937,
+     56.055979
+    ],
+    "id": "klyuchevskaya-sopka"
+   },
+   {
+    "name": {
+     "en": "Mount Whitney",
+     "zh": "惠特尼峰",
+     "hi": "व्हिटनी पर्वत",
+     "es": "Monte Whitney",
+     "ar": "جبل ويتني",
+     "fr": "mont Whitney",
+     "bn": "মাউন্ট হুইটনি",
+     "pt": "Monte Whitney",
+     "ru": "Уитни",
+     "ur": "ماؤنٹ وہائٹنی",
+     "de": "Mount Whitney"
+    },
+    "at": [
+     -118.292218,
+     36.582715
+    ],
+    "id": "mount-whitney"
+   },
+   {
+    "name": {
+     "en": "Ismoil Somoni Peak",
+     "zh": "伊斯梅尔·索莫尼峰",
+     "hi": "इस्माइल सामानी पर्वत",
+     "es": "Pico Ismail Samani",
+     "ar": "قمة إسماعيل ساماني",
+     "fr": "pic Ismail Samani",
+     "bn": "পিক ইমেনি ইসমাইল সামানি",
+     "pt": "Pico Ismail Samani",
+     "ru": "Пик Исмоила Сомони",
+     "ur": "کوہ اسماعیل سامانی",
+     "de": "Pik Kommunisma"
+    },
+    "at": [
+     72.021746,
+     38.932374
+    ],
+    "id": "ismoil-somoni-peak"
+   },
+   {
+    "name": {
+     "en": "Jbel Toubkal",
+     "zh": "图卜卡勒峰",
+     "hi": "तूबक़ाल पर्वत",
+     "es": "Monte Tubqal",
+     "ar": "توبقال",
+     "fr": "djebel Toubkal",
+     "bn": "জেবেল তোউবকাল",
+     "pt": "Jbel Toubkal",
+     "ru": "Джебель-Тубкаль",
+     "ur": "توبقال",
+     "de": "Tubqal"
+    },
+    "at": [
+     -7.916134,
+     31.062075
+    ],
+    "id": "jbel-toubkal"
+   },
+   {
+    "name": {
+     "en": "Belukha Mountain",
+     "zh": "别卢哈山",
+     "hi": "बेलुखा पर्वत",
+     "es": "Beluja",
+     "ar": "جبل بيلوكا",
+     "fr": "mont Béloukha",
+     "bn": "বেলুখা",
+     "pt": "Monte Belukha",
+     "ru": "Белуха",
+     "ur": "بیلوکھا",
+     "de": "Belucha"
+    },
+    "at": [
+     86.606337,
+     49.807079
+    ],
+    "id": "belukha-mountain"
+   },
+   {
+    "name": {
+     "en": "Mount Wutai",
+     "zh": "五台山",
+     "hi": "वुताई शान",
+     "es": "Monte Wutai",
+     "ar": "جبل ووتاى",
+     "fr": "mont Wutai",
+     "bn": "উতাই শান",
+     "pt": "Monte Wutai",
+     "ru": "Утайшань",
+     "ur": "ووتائی شان",
+     "de": "Wutai Shan"
+    },
+    "at": [
+     113.570219,
+     39.087599
+    ],
+    "id": "mount-wutai"
+   },
+   {
+    "name": {
+     "en": "Ras Dashen",
+     "zh": "达尚峰",
+     "hi": "रास देजेन",
+     "es": "Monte Ras Dejen",
+     "ar": "رأس داشن",
+     "fr": "Ras Dashan",
+     "bn": "রাস দেজেন",
+     "pt": "Ras Dashan",
+     "ru": "Рас-Дашэн",
+     "ur": "راس ڈیجین",
+     "de": "Ras Daschän"
+    },
+    "at": [
+     38.372331,
+     13.236747
+    ],
+    "id": "ras-dashen"
+   },
+   {
+    "name": {
+     "en": "Pico Bolívar",
+     "zh": "玻利瓦尔峰",
+     "hi": "पिको बोलिवार",
+     "es": "Pico Bolívar",
+     "ar": "بيكو بوليفار",
+     "fr": "Pico Bolívar",
+     "bn": "পিকো বলিভার",
+     "pt": "Pico Bolívar",
+     "ru": "Пик Боливар",
+     "ur": "پیکو بولیوار",
+     "de": "Pico Bolívar"
+    },
+    "at": [
+     -71.052734,
+     8.552859
+    ],
+    "id": "pico-bolivar"
+   },
+   {
+    "name": {
+     "en": "Mount Stanley",
+     "zh": "斯坦利山",
+     "hi": "स्टेनली पर्वत",
+     "es": "Monte Stanley",
+     "ar": "جبل ستانلي",
+     "fr": "mont Stanley",
+     "bn": "মাউন্ট স্ট্যানলি",
+     "pt": "Monte Stanley",
+     "ru": "Стэнли",
+     "ur": "ماؤنٹ اسٹینلے",
+     "de": "Mount Stanley"
+    },
+    "at": [
+     29.872085,
+     0.380108
+    ],
+    "id": "mount-stanley"
+   },
+   {
+    "name": {
+     "en": "Mount Elgon",
+     "zh": "埃尔贡山",
+     "hi": "एल्गोन पर्वत",
+     "es": "Monte Elgon",
+     "ar": "جبل إلغون",
+     "fr": "mont Elgon",
+     "bn": "মাউন্ট এলগন",
+     "pt": "Monte Elgon",
+     "ru": "Элгон",
+     "ur": "ماؤنٹ ایلگون",
+     "de": "Mount Elgon"
+    },
+    "at": [
+     34.534162,
+     1.123151
+    ],
+    "id": "mount-elgon"
+   }
+  ]
+ },
+ "volcanoes": {
+  "kind": "point",
+  "items": [
+   {
+    "name": {
+     "en": "Mount Kilimanjaro",
+     "zh": "乞力马扎罗山",
+     "hi": "किलिमंजार hiahwjamaja",
+     "es": "Kilimanjaro",
+     "ar": "جبل كليمنجارو",
+     "fr": "Kilimanjaro",
+     "bn": "কিলিমাঞ্জারো",
+     "ur": "کلیمنجارو",
+     "ru": "Килиманджаро",
+     "pt": "Kilimanjaro",
+     "de": "Kilimandscharo"
+    },
+    "at": [
+     37.359166666,
+     -3.066666666
+    ],
+    "id": "mount-kilimanjaro"
+   },
+   {
+    "name": {
+     "en": "Mount Fuji",
+     "zh": "富士山",
+     "hi": "फ़ूजियामा",
+     "es": "Monte Fuji",
+     "ar": "جبل فوجي",
+     "fr": "mont Fuji",
+     "bn": "ফুজি পর্বত",
+     "ur": "فیوجی",
+     "ru": "Фудзияма",
+     "pt": "Monte Fuji",
+     "de": "Fuji"
+    },
+    "at": [
+     138.7275,
+     35.360555555
+    ],
+    "id": "mount-fuji"
+   },
+   {
+    "name": {
+     "en": "Mount Vesuvius",
+     "zh": "維蘇威火山",
+     "hi": "वेसुवियस पर्वत",
+     "es": "Vesubio",
+     "ar": "جبل فيزوف",
+     "fr": "Vésuve",
+     "bn": "ভিসুভিয়াস পর্বত",
+     "ur": "کوہ ویسوویوس",
+     "ru": "Везувий",
+     "pt": "Vesúvio",
+     "de": "Vesuv"
+    },
+    "at": [
+     14.42919,
+     40.82261
+    ],
+    "id": "mount-vesuvius"
+   },
+   {
+    "name": {
+     "en": "Mount Etna",
+     "zh": "埃特纳火山",
+     "hi": "माउण्ट एटना",
+     "es": "Monte Etna",
+     "ar": "جبل إتنا",
+     "fr": "Etna",
+     "bn": "এটনা পর্বত",
+     "ur": "کوہ ایٹنا",
+     "ru": "Этна",
+     "pt": "Etna",
+     "de": "Ätna"
+    },
+    "at": [
+     14.993220288,
+     37.750834514
+    ],
+    "id": "mount-etna"
+   },
+   {
+    "name": {
+     "en": "Mount Ararat",
+     "zh": "阿勒山",
+     "hi": "अरारात पर्वत",
+     "es": "Monte Ararat",
+     "ar": "جبل أرارات",
+     "fr": "mont Ararat",
+     "bn": "আরারাত পর্বত",
+     "ur": "ارارات",
+     "ru": "Арарат",
+     "pt": "Monte Ararat",
+     "de": "Ararat"
+    },
+    "at": [
+     44.298333333,
+     39.701944444
+    ],
+    "id": "mount-ararat"
+   },
+   {
+    "name": {
+     "en": "Teide",
+     "zh": "泰德峰",
+     "hi": "पिको देल तेइदे",
+     "es": "Teide",
+     "ar": "تيد",
+     "fr": "Teide",
+     "bn": null,
+     "ur": "ٹیڈ",
+     "ru": "Тейде",
+     "pt": "Teide",
+     "de": "Teide"
+    },
+    "at": [
+     -16.643611111,
+     28.272638888
+    ],
+    "id": "teide"
+   },
+   {
+    "name": {
+     "en": "Mauna Kea",
+     "zh": "冒纳凯阿火山",
+     "hi": null,
+     "es": "Mauna Kea",
+     "ar": "مونا كيا",
+     "fr": "Mauna Kea",
+     "bn": "মাউনা কেয়া",
+     "ur": "ماونا کیا",
+     "ru": "Мауна-Кеа",
+     "pt": "Mauna Kea",
+     "de": "Mauna Kea"
+    },
+    "at": [
+     -155.468055555,
+     19.820555555
+    ],
+    "id": "mauna-kea"
+   },
+   {
+    "name": {
+     "en": "Chimborazo",
+     "zh": "钦博拉索山",
+     "hi": "चिम्बोरासो",
+     "es": "Volcán Chimborazo",
+     "ar": "تشيمبورازو",
+     "fr": "Chimborazo",
+     "bn": "চিম্বোরাজো",
+     "ru": "Чимборасо",
+     "pt": "Chimborazo",
+     "de": "Chimborazo"
+    },
+    "at": [
+     -78.8175,
+     -1.469166666
+    ],
+    "id": "chimborazo"
+   },
+   {
+    "name": {
+     "en": "Merapi",
+     "zh": "默拉皮火山",
+     "hi": "मेरापी पर्वत",
+     "es": "Monte Merapi",
+     "ar": "جبل ميرابي",
+     "fr": "Merapi",
+     "bn": null,
+     "ru": "Мерапи",
+     "pt": "Merapi",
+     "de": "Merapi"
+    },
+    "at": [
+     110.446111111,
+     -7.541388888
+    ],
+    "id": "merapi"
+   },
+   {
+    "name": {
+     "en": "Damavand",
+     "zh": "达马万德山",
+     "hi": "दमावंद पर्वत",
+     "es": "Damavand",
+     "ar": "جبل دماوند",
+     "fr": "mont Damavand",
+     "bn": "দামভান্দ পর্বত",
+     "ur": "کوہ دماوند",
+     "ru": "Демавенд",
+     "pt": "Monte Damavand",
+     "de": "Damavand"
+    },
+    "at": [
+     52.109166666,
+     35.955277777
+    ],
+    "id": "damavand"
+   },
+   {
+    "name": {
+     "en": "Mauna Loa",
+     "zh": "冒纳罗亚火山",
+     "hi": "मौनालोआ",
+     "es": "Mauna Loa",
+     "ar": "مونا لوا",
+     "fr": "Mauna Loa",
+     "bn": "মাউনা লোয়া",
+     "ru": "Мауна-Лоа",
+     "pt": "Mauna Loa",
+     "de": "Mauna Loa"
+    },
+    "at": [
+     -155.6,
+     19.483333333
+    ],
+    "id": "mauna-loa"
+   },
+   {
+    "name": {
+     "en": "Baekdu Mountain",
+     "zh": "长白山",
+     "hi": "बएकदू पर्वत",
+     "es": "Monte Paektu",
+     "ar": "جبل بايكتو",
+     "fr": "mont Paektu",
+     "bn": "পাইকতু পর্বত",
+     "ur": "کوہ پائکتو",
+     "ru": "Пэктусан",
+     "pt": "Montanha Baekdu",
+     "de": "Paektusan"
+    },
+    "at": [
+     126.83,
+     40.94
+    ],
+    "id": "baekdu-mountain"
+   },
+   {
+    "name": {
+     "en": "Tambora",
+     "zh": "坦博拉火山",
+     "hi": "टैम्बोरा",
+     "es": "Tambora",
+     "ar": "جبل تامبورا",
+     "fr": "Tambora",
+     "bn": "তামবোরা পর্বত",
+     "ru": "Тамбора",
+     "pt": "Monte Tambora",
+     "de": "Tambora"
+    },
+    "at": [
+     117.992777777,
+     -8.245277777
+    ],
+    "id": "tambora"
+   },
+   {
+    "name": {
+     "en": "Popocatépetl",
+     "zh": "波波卡特佩特火山",
+     "hi": "पोपोकातेपेत्ल",
+     "es": "Popocatépetl",
+     "ar": "بوبوكاتبتبيل",
+     "fr": "Popocatepetl",
+     "bn": null,
+     "ru": "Попокатепетль",
+     "pt": "Popocatépetl",
+     "de": "Popocatépetl"
+    },
+    "at": [
+     -98.623434,
+     19.023386
+    ],
+    "id": "popocatepetl"
+   },
+   {
+    "name": {
+     "en": "Pinatubo",
+     "zh": "皮纳图博火山",
+     "hi": "माउण्टपिनाटुबो",
+     "es": "Pinatubo",
+     "ar": "جبل بيناتوبو",
+     "fr": "Pinatubo",
+     "bn": "পিনাটুবো পর্বত",
+     "ru": "Пинатубо",
+     "pt": "Pinatubo",
+     "de": "Pinatubo"
+    },
+    "at": [
+     120.35,
+     15.13
+    ],
+    "id": "pinatubo"
+   },
+   {
+    "name": {
+     "en": "Mount Erebus",
+     "zh": "埃里伯斯火山",
+     "hi": "माउण्ट एरेबुस",
+     "es": "Monte Erebus",
+     "ar": "جبل إريباص",
+     "fr": "mont Erebus",
+     "bn": null,
+     "ru": "Эребус",
+     "pt": "Monte Erebus",
+     "de": "Mount Erebus"
+    },
+    "at": [
+     167.283333333,
+     -77.533333333
+    ],
+    "id": "mount-erebus"
+   },
+   {
+    "name": {
+     "en": "Mount Rainier",
+     "zh": "雷尼尔山",
+     "hi": "माउण्टरेनियर",
+     "es": "Monte Rainier",
+     "ar": "جبل رينييه",
+     "fr": "mont Rainier",
+     "bn": "রাইনিয়ার পর্বত",
+     "ur": "ماؤنٹ رائنیر",
+     "ru": "Рейнир",
+     "pt": "Monte Rainier",
+     "de": "Mount Rainier"
+    },
+    "at": [
+     -121.760277777,
+     46.851666666
+    ],
+    "id": "mount-rainier"
+   },
+   {
+    "name": {
+     "en": "Mayon Volcano",
+     "zh": "馬榮火山",
+     "hi": "मायोन ज्वालामुखी",
+     "es": "monte Mayón",
+     "ar": "بركان مايون",
+     "fr": "Mayon",
+     "bn": null,
+     "ru": "Майон",
+     "pt": "Vulcão Mayon",
+     "de": "Mayon"
+    },
+    "at": [
+     123.685,
+     13.256666666
+    ],
+    "id": "mayon-volcano"
+   },
+   {
+    "name": {
+     "en": "Cotopaxi volcano",
+     "zh": "科托帕希峰",
+     "hi": "कोटोपैक्सी",
+     "es": "Volcán Cotopaxi",
+     "ar": "كوتوباكسي",
+     "fr": "Cotopaxi",
+     "bn": null,
+     "ru": "Котопахи",
+     "pt": "Vulcão Cotopaxi",
+     "de": "Cotopaxi"
+    },
+    "at": [
+     -78.437777777,
+     -0.680555555
+    ],
+    "id": "cotopaxi-volcano"
+   },
+   {
+    "name": {
+     "en": "Kīlauea",
+     "zh": "基拉韦厄峰",
+     "hi": null,
+     "es": "Kīlauea",
+     "ar": "كيلاويا",
+     "fr": "Kīlauea",
+     "bn": null,
+     "ru": "Килауэа",
+     "pt": "Kilauea",
+     "de": "Kīlauea"
+    },
+    "at": [
+     -155.286762,
+     19.421097
+    ],
+    "id": "kilauea"
+   },
+   {
+    "name": {
+     "en": "Mount Kazbek",
+     "zh": "卡兹别克山",
+     "hi": null,
+     "es": "Monte Kazbek",
+     "ar": "جبل كازبجي",
+     "fr": "mont Kazbek",
+     "bn": null,
+     "ru": "Казбек",
+     "pt": "Monte Kazbek",
+     "de": "Kasbek"
+    },
+    "at": [
+     44.518888888,
+     42.696944444
+    ],
+    "id": "mount-kazbek"
+   },
+   {
+    "name": {
+     "en": "Mount Pelée",
+     "zh": "培雷火山",
+     "hi": "माउण्ट पीली",
+     "es": "Monte Pelée",
+     "ar": "مونت بيليه",
+     "fr": "montagne Pelée",
+     "bn": null,
+     "ru": "Монтань-Пеле",
+     "pt": "Monte Pelée",
+     "de": "Montagne Pelée"
+    },
+    "at": [
+     -61.165555555,
+     14.813055555
+    ],
+    "id": "mount-pelee"
+   },
+   {
+    "name": {
+     "en": "Hekla",
+     "zh": "海克拉火山",
+     "hi": null,
+     "es": "Hekla",
+     "ar": "هيكلا",
+     "fr": "Hekla",
+     "bn": null,
+     "ru": "Гекла",
+     "pt": "Hekla",
+     "de": "Hekla"
+    },
+    "at": [
+     -19.665833333,
+     63.992222222
+    ],
+    "id": "hekla"
+   },
+   {
+    "name": {
+     "en": "Klyuchevskaya Sopka",
+     "zh": "克柳切夫火山",
+     "hi": "क्ल्यूचेव्सकाया",
+     "es": "Kliuchevskoi",
+     "ar": "كلويشيفسكايا سوبكا",
+     "fr": "Klioutchevskoï",
+     "bn": null,
+     "ru": "Ключевская Сопка",
+     "pt": "Kliutchevskaia Sopka",
+     "de": "Kljutschewskaja Sopka"
+    },
+    "at": [
+     160.633333333,
+     56.066666666
+    ],
+    "id": "klyuchevskaya-sopka"
+   },
+   {
+    "name": {
+     "en": "Mount Cameroon",
+     "zh": "喀麦隆火山",
+     "hi": "माउण्ट कैमरून",
+     "es": "Monte Camerún",
+     "ar": "جبل كمرون",
+     "fr": "mont Cameroun",
+     "bn": null,
+     "ru": "Камерун",
+     "pt": "Monte Camarões",
+     "de": "Kamerunberg"
+    },
+    "at": [
+     9.1725,
+     4.216666666
+    ],
+    "id": "mount-cameroon"
+   },
+   {
+    "name": {
+     "en": "Vulcano",
+     "zh": "武尔卡诺岛",
+     "hi": null,
+     "es": "Isla Vulcano",
+     "ar": "فولكانو",
+     "fr": "Vulcano",
+     "bn": null,
+     "ru": "Вулькано",
+     "pt": "Vulcano (vulcão da Sicília)",
+     "de": "Vulcano"
+    },
+    "at": [
+     14.9658,
+     38.4042
+    ],
+    "id": "vulcano"
+   },
+   {
+    "name": {
+     "en": "Mount Agung",
+     "zh": "阿贡火山",
+     "hi": "अगुंग पर्वत",
+     "es": "Monte Agung",
+     "ar": "جبل آغونغ",
+     "fr": "Agung",
+     "bn": "অগুং পর্বত",
+     "ru": "Агунг",
+     "pt": "Monte Agung",
+     "de": "Agung"
+    },
+    "at": [
+     115.507777777,
+     -8.341944444
+    ],
+    "id": "mount-agung"
+   },
+   {
+    "name": {
+     "en": "Semeru",
+     "zh": "塞梅鲁火山",
+     "hi": "सेमेरू",
+     "es": "Semeru",
+     "ar": "بركان سيمرو",
+     "fr": "Semeru",
+     "bn": "মেরু পর্বত (ইন্দোনেশিয়া)",
+     "ru": "Семеру",
+     "pt": "Monte Semeru",
+     "de": "Semeru"
+    },
+    "at": [
+     112.916666666,
+     -8.1
+    ],
+    "id": "semeru"
+   },
+   {
+    "name": {
+     "en": "Mount Nyiragongo",
+     "zh": "尼拉贡戈火山",
+     "hi": "नीरागोंगा",
+     "es": "Monte Nyiragongo",
+     "ar": "بركان نيراجونجو",
+     "fr": "Nyiragongo",
+     "bn": null,
+     "ru": "Ньирагонго",
+     "pt": "Monte Nyiragongo",
+     "de": "Nyiragongo"
+    },
+    "at": [
+     29.25,
+     -1.516666666
+    ],
+    "id": "mount-nyiragongo"
+   }
+  ]
+ },
+ "rivers": {
+  "kind": "line",
+  "items": [
+   {
+    "name": {
+     "en": "Yangtze River",
+     "zh": "长江",
+     "hi": "यांगत्से नदी",
+     "es": "Yangtsé",
+     "ar": "يانغتسي",
+     "fr": "Yangzi Jiang",
+     "bn": "ছাং চিয়াং নদী",
+     "ur": "دریائے یانگزے",
+     "ru": "Янцзы",
+     "pt": "Rio Yangtzé",
+     "de": "Jangtsekiang"
+    },
+    "id": "yangtze-river"
+   },
+   {
+    "name": {
+     "en": "Yellow River",
+     "zh": "黄河",
+     "hi": "पीली नदी",
+     "es": "Río Amarillo",
+     "ar": "النهر الأصفر",
+     "fr": "fleuve Jaune",
+     "bn": "হুয়াংহো নদী",
+     "ur": "دریائے زرد",
+     "ru": "Хуанхэ",
+     "pt": "Rio Amarelo",
+     "de": "Gelber Fluss"
+    },
+    "id": "yellow-river"
+   },
+   {
+    "name": {
+     "en": "Paraná River",
+     "zh": "巴拉那河",
+     "hi": "पराना नदी",
+     "es": "Paraná",
+     "ar": "نهر بارانا",
+     "fr": "Paraná",
+     "bn": null,
+     "ur": "دریائے پارانا",
+     "ru": "Парана",
+     "pt": "Rio Paraná",
+     "de": "Rio Paraná"
+    },
+    "id": "parana-river"
+   },
+   {
+    "name": {
+     "en": "Niger River",
+     "zh": "尼日尔河",
+     "hi": "नाइजर नदी",
+     "es": "Níger",
+     "ar": "نهر النيجر",
+     "fr": "Niger",
+     "bn": "নাইজার নদী",
+     "ur": "دریائے نائجر",
+     "ru": "Нигер",
+     "pt": "Rio Níger",
+     "de": "Niger"
+    },
+    "id": "niger-river"
+   },
+   {
+    "name": {
+     "en": "Mekong River",
+     "zh": "湄公河",
+     "hi": "मीकांग नदी",
+     "es": "Mekong",
+     "ar": "نهر ميكونغ",
+     "fr": "Mékong",
+     "bn": "মেকং নদী",
+     "ur": "دریائے میکانگ",
+     "ru": "Меконг",
+     "pt": "Rio Mekong",
+     "de": "Mekong"
+    },
+    "id": "mekong-river"
+   },
+   {
+    "name": {
+     "en": "Lena River",
+     "zh": "勒拿河",
+     "hi": "लेना नदी",
+     "es": "Lena",
+     "ar": "نهر لينا",
+     "fr": "Léna",
+     "bn": "লেনা নদী",
+     "ur": "دریائے لینا",
+     "ru": "Лена",
+     "pt": "Rio Lena",
+     "de": "Lena"
+    },
+    "id": "lena-river"
+   },
+   {
+    "name": {
+     "en": "River Congo",
+     "zh": "刚果河",
+     "hi": "कांगो नदी",
+     "es": "Congo",
+     "ar": "نهر الكونغو",
+     "fr": "Congo",
+     "bn": "কঙ্গো নদী",
+     "ur": "دریائے کانگو",
+     "ru": "Конго",
+     "pt": "Rio Congo",
+     "de": "Kongo"
+    },
+    "id": "river-congo"
+   },
+   {
+    "name": {
+     "en": "Ganges",
+     "zh": "恒河",
+     "hi": "गंगा नदी",
+     "es": "río Ganges",
+     "ar": "نهر الغانج",
+     "fr": "Gange",
+     "bn": "গঙ্গা নদী",
+     "ur": "دریائے گنگا",
+     "ru": "Ганг",
+     "pt": "Rio Ganges",
+     "de": "Ganges"
+    },
+    "id": "ganges"
+   },
+   {
+    "name": {
+     "en": "Ob",
+     "zh": "鄂毕河",
+     "hi": "ओब नदी",
+     "es": "Obi",
+     "ar": "أوبي",
+     "fr": "Ob",
+     "bn": "ওব নদী",
+     "ur": "اوب (دریا)",
+     "ru": "Обь",
+     "pt": "Rio Ob",
+     "de": "Ob"
+    },
+    "id": "ob"
+   },
+   {
+    "name": {
+     "en": "Amazon River",
+     "zh": "亚马逊河",
+     "hi": "अमेज़न नदी",
+     "es": "Amazonas",
+     "ar": "نهر الأمازون",
+     "fr": "Amazone",
+     "bn": "আমাজন নদী",
+     "ur": "دریائے ایمیزون",
+     "ru": "Амазонка",
+     "pt": "rio Amazonas",
+     "de": "Amazonas"
+    },
+    "id": "amazon-river"
+   },
+   {
+    "name": {
+     "en": "Columbia River",
+     "zh": "哥倫比亞河",
+     "hi": "कोलम्बिया नदी",
+     "es": "Río Columbia",
+     "ar": "نهر كولومبيا",
+     "fr": "fleuve Columbia",
+     "bn": "কলাম্বিয়া নদী",
+     "ur": "کولمبیا دریا",
+     "ru": "Колумбия",
+     "pt": "Rio Columbia",
+     "de": "Columbia River"
+    },
+    "id": "columbia-river"
+   },
+   {
+    "name": {
+     "en": "Irtysh",
+     "zh": "额尔齐斯河",
+     "hi": "इरतिश नदी",
+     "es": "Río Irtich",
+     "ar": "إيرتيش",
+     "fr": "Irtych",
+     "bn": "ইর্তিশ নদী",
+     "ur": "دریائے ارتش",
+     "ru": "Иртыш",
+     "pt": "Rio Irtich",
+     "de": "Irtysch"
+    },
+    "id": "irtysh"
+   },
+   {
+    "name": {
+     "en": "Yukon River",
+     "zh": "育空河",
+     "hi": "युकोन नदी",
+     "es": "Yukón",
+     "ar": "نهر يوكون",
+     "fr": "Fleuve Yukon",
+     "bn": "ইউকন নদী",
+     "ur": "دریائے یوکون",
+     "ru": "Юкон",
+     "pt": "Rio Yukon",
+     "de": "Yukon River"
+    },
+    "id": "yukon-river"
+   },
+   {
+    "name": {
+     "en": "Indus River",
+     "zh": "印度河",
+     "hi": "सिन्धु नदी",
+     "es": "Indo",
+     "ar": "نهر السند",
+     "fr": "Indus",
+     "bn": "সিন্ধু নদ",
+     "ur": "دریائے سندھ",
+     "ru": "Инд",
+     "pt": "Rio Indo",
+     "de": "Indus"
+    },
+    "id": "indus-river"
+   },
+   {
+    "name": {
+     "en": "Salween River",
+     "zh": "萨尔温江",
+     "hi": "सालवीन नदी",
+     "es": "río Salween",
+     "ar": "نهر سالوين",
+     "fr": "Salouen",
+     "bn": "সালউইন নদী",
+     "ru": "Салуин",
+     "pt": "Rio Salween",
+     "de": "Saluen"
+    },
+    "id": "salween-river"
+   },
+   {
+    "name": {
+     "en": "Nile",
+     "zh": "尼罗河",
+     "hi": "नील नदी",
+     "es": "Nilo",
+     "ar": "نهر النيل",
+     "fr": "Nil",
+     "bn": "নীলনদ",
+     "ur": "دریائے نیل",
+     "ru": "Нил",
+     "pt": "Rio Nilo",
+     "de": "Nil"
+    },
+    "id": "nile"
+   },
+   {
+    "name": {
+     "en": "Rio Negro",
+     "zh": "内格罗河",
+     "hi": "रियो नीग्रो (अमेज़न)",
+     "es": "Río Negro",
+     "ar": "نهر نجرو",
+     "fr": "rio Negro",
+     "bn": "রিউ নেগ্রু",
+     "ru": "Риу-Негру",
+     "pt": "Rio Negro",
+     "de": "Rio Negro"
+    },
+    "id": "rio-negro"
+   },
+   {
+    "name": {
+     "en": "Zambezi River",
+     "zh": "赞比西河",
+     "hi": "जेम्बेजी नदी",
+     "es": "río Zambeze",
+     "ar": "نهر زمبيزي",
+     "fr": "Zambèze",
+     "bn": "জাম্বেজি নদী",
+     "ur": "زیمبیزی دریا",
+     "ru": "Замбези",
+     "pt": "Rio Zambeze",
+     "de": "Sambesi"
+    },
+    "id": "zambezi-river"
+   },
+   {
+    "name": {
+     "en": "Rio Grande",
+     "zh": "格兰德河",
+     "hi": "रियो ग्रांडे",
+     "es": "Río Bravo",
+     "ar": "ريو غراندي",
+     "fr": "río Grande",
+     "bn": "রিও গ্রান্দে",
+     "ur": "ریو گرانڈے",
+     "ru": "Рио-Гранде",
+     "pt": "Rio Grande",
+     "de": "Rio Grande"
+    },
+    "id": "rio-grande"
+   },
+   {
+    "name": {
+     "en": "Missouri River",
+     "zh": "密蘇里河",
+     "hi": "मिसोरी नदी",
+     "es": "Río Misuri",
+     "ar": "نهر ميزوري",
+     "fr": "rivière Missouri",
+     "bn": "মিসৌরি নদী",
+     "ur": "دریائے مسوری",
+     "ru": "Миссури",
+     "pt": "Rio Missouri",
+     "de": "Missouri"
+    },
+    "id": "missouri-river"
+   },
+   {
+    "name": {
+     "en": "Ucayali River",
+     "zh": "乌卡亚利河",
+     "hi": "उकायाली नदी",
+     "es": "Ucayali",
+     "ar": "نهر أوكايالي",
+     "fr": "rivière Ucayali",
+     "bn": "উকায়ালি নদী",
+     "ru": "Укаяли",
+     "pt": "Ucayali",
+     "de": "Ucayali"
+    },
+    "id": "ucayali-river"
+   },
+   {
+    "name": {
+     "en": "Euphrates",
+     "zh": "幼发拉底河",
+     "hi": "फ़रात नदी",
+     "es": "Éufrates",
+     "ar": "الفرات",
+     "fr": "Euphrate",
+     "bn": "ফোরাত",
+     "ur": "دریائے فرات",
+     "ru": "Евфрат",
+     "pt": "rio Eufrates",
+     "de": "Euphrat"
+    },
+    "id": "euphrates"
+   },
+   {
+    "name": {
+     "en": "Volga",
+     "zh": "伏尔加河",
+     "hi": "वोल्गा नदी",
+     "es": "Volga",
+     "ar": "فولغا",
+     "fr": "Volga",
+     "bn": "ভোলগা নদী",
+     "ur": "دریائے وولگا",
+     "ru": "Волга",
+     "pt": "Rio Volga",
+     "de": "Wolga"
+    },
+    "id": "volga"
+   },
+   {
+    "name": {
+     "en": "Kolyma",
+     "zh": "科雷马河",
+     "hi": null,
+     "es": "Kolymá",
+     "ar": "نهر كوليما",
+     "fr": "Kolyma",
+     "bn": "কোলিমা নদী",
+     "ru": "Колыма",
+     "pt": "Rio Kolyma",
+     "de": "Kolyma"
+    },
+    "id": "kolyma"
+   },
+   {
+    "name": {
+     "en": "Orinoco River",
+     "zh": "奥里诺科河",
+     "hi": "ओरिनोको नदी",
+     "es": "Río Orinoco",
+     "ar": "نهر أورينوكو",
+     "fr": "Orénoque",
+     "bn": "অরিনোকো নদী",
+     "ru": "Ориноко",
+     "pt": "Rio Orinoco",
+     "de": "Orinoco"
+    },
+    "id": "orinoco-river"
+   },
+   {
+    "name": {
+     "en": "Aldan",
+     "zh": "阿尔丹河",
+     "hi": null,
+     "es": "Río Aldán",
+     "ar": "نهر ألدان",
+     "fr": "Aldan",
+     "bn": null,
+     "ru": "Алдан",
+     "pt": "Rio Aldan",
+     "de": "Aldan"
+    },
+    "id": "aldan"
+   },
+   {
+    "name": {
+     "en": "Arkansas River",
+     "zh": "阿肯色河",
+     "hi": "अरकंसास नदी",
+     "es": "río Arkansas",
+     "ar": "نهر أركنساس",
+     "fr": "rivière Arkansas",
+     "bn": "আরকানস’ নদী",
+     "ur": "دریائے آرکنساس",
+     "ru": "Арканзас",
+     "pt": "Rio Arkansas",
+     "de": "Arkansas River"
+    },
+    "id": "arkansas-river"
+   },
+   {
+    "name": {
+     "en": "Araguaia River",
+     "zh": "阿拉瓜亚河",
+     "hi": null,
+     "es": "Río Araguaia",
+     "ar": "نهر اراغوايا",
+     "fr": "rio Araguaia",
+     "bn": "আরাগুয়াইয়া নদী",
+     "ru": "Арагуая",
+     "pt": "Rio Araguaia",
+     "de": "Rio Araguaia"
+    },
+    "id": "araguaia-river"
+   },
+   {
+    "name": {
+     "en": "Yenisei",
+     "zh": "叶尼塞河",
+     "hi": "येनिसेय नदी",
+     "es": "río Yeniséi",
+     "ar": "نهر ينسي",
+     "fr": "Ienisseï",
+     "bn": "ইয়েনিসেই নদী",
+     "ur": "ینیسی دریا",
+     "ru": "Енисей",
+     "pt": "Rio Ienissei",
+     "de": "Jenissei"
+    },
+    "id": "yenisei"
+   },
+   {
+    "name": {
+     "en": "Mississippi River",
+     "zh": "密西西比河",
+     "hi": "मिसिसिप्पी नदी",
+     "es": "río Misisipi",
+     "ar": "نهر المسيسيبي",
+     "fr": "Mississippi",
+     "bn": "মিসিসিপি নদী",
+     "ur": "دریائے مسیسپی",
+     "ru": "Миссисипи",
+     "pt": "Rio Mississippi",
+     "de": "Mississippi"
+    },
+    "id": "mississippi-river"
+   }
+  ]
+ },
+ "biomes": {
+  "kind": "poly",
+  "items": [
+   {
+    "id": "b11",
+    "name": {
+     "en": "Tundra"
+    }
+   },
+   {
+    "id": "b1",
+    "name": {
+     "en": "Tropical & Subtropical Moist Broadleaf Forests"
+    }
+   },
+   {
+    "id": "b12",
+    "name": {
+     "en": "Mediterranean Forests, Woodlands & Scrub"
+    }
+   },
+   {
+    "id": "b13",
+    "name": {
+     "en": "Deserts & Xeric Shrublands"
+    }
+   },
+   {
+    "id": "b8",
+    "name": {
+     "en": "Temperate Grasslands, Savannas & Shrublands"
+    }
+   },
+   {
+    "id": "b6",
+    "name": {
+     "en": "Boreal Forests/Taiga"
+    }
+   },
+   {
+    "id": "b5",
+    "name": {
+     "en": "Temperate Conifer Forests"
+    }
+   },
+   {
+    "id": "b4",
+    "name": {
+     "en": "Temperate Broadleaf & Mixed Forests"
+    }
+   },
+   {
+    "id": "b10",
+    "name": {
+     "en": "Montane Grasslands & Shrublands"
+    }
+   },
+   {
+    "id": "b14",
+    "name": {
+     "en": "Mangroves"
+    }
+   },
+   {
+    "id": "b9",
+    "name": {
+     "en": "Flooded Grasslands & Savannas"
+    }
+   },
+   {
+    "id": "b7",
+    "name": {
+     "en": "Tropical & Subtropical Grasslands, Savannas & Shrublands"
+    }
+   },
+   {
+    "id": "b2",
+    "name": {
+     "en": "Tropical & Subtropical Dry Broadleaf Forests"
+    }
+   },
+   {
+    "id": "b3",
+    "name": {
+     "en": "Tropical & Subtropical Coniferous Forests"
+    }
+   }
+  ]
+ }
+}

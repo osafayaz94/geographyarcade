@@ -1,0 +1,31 @@
+{
+  "name": "geography-quiz",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static, multilingual geography quiz website: flags, capitals, maps, provinces.",
+  "type": "commonjs",
+  "scripts": {
+    "fetch": "node scripts/fetch-countries.js && node scripts/fetch-subdivisions.js && node scripts/fetch-labels.js && node scripts/fetch-physical.js && node scripts/fetch-planets.js && node scripts/fetch-extra-maps.js && node scripts/fetch-division-flags.js",
+    "build": "node build.js",
+    "check": "node scripts/check.js",
+    "keywords": "node scripts/keywords.js",
+    "keyword-import": "node scripts/keyword-import.js",
+    "serve": "python -m http.server 5520 --directory dist",
+    "indexnow": "node scripts/indexnow.js",
+    "zip": "node scripts/make-zip.js",
+    "guard": "node scripts/guard.js",
+    "deploy": "node scripts/deploy.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "adm-zip": "^0.5.18",
+    "d3-geo": "^3.1.1",
+    "flag-icons": "^7.5.0",
+    "mapshaper": "^0.7.68",
+    "topojson-client": "^3.1.0",
+    "world-atlas": "^2.0.2",
+    "world-countries": "^5.1.0"
+  }
+}

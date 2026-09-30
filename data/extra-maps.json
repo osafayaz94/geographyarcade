@@ -1,0 +1,1813 @@
+{
+ "hawaii-islands": {
+  "country": "US",
+  "parent": "US-HI",
+  "term": "islands",
+  "source": {
+   "license": "Public domain",
+   "sourceName": "Natural Earth (world-atlas 1:10m) and Wikidata"
+  },
+  "divisions": [
+   {
+    "id": "hawaii-islands-Q68740",
+    "iso": null,
+    "qid": "Q68740",
+    "name": {
+     "en": "Hawaii",
+     "zh": "夏威夷島",
+     "hi": "हवाई (द्वीप)",
+     "es": "Isla de Hawái",
+     "ar": "هاواي",
+     "fr": "Hawaï",
+     "bn": null
+    },
+    "capital": null,
+    "capitalQid": null,
+    "population": {
+     "value": 198449,
+     "year": 2016
+    },
+    "area": 10558
+   },
+   {
+    "id": "hawaii-islands-Q188705",
+    "iso": null,
+    "qid": "Q188705",
+    "name": {
+     "en": "Maui",
+     "zh": "毛伊岛",
+     "hi": "मावी",
+     "es": "Maui",
+     "ar": "ماوي",
+     "fr": "Maui",
+     "bn": null
+    },
+    "capital": null,
+    "capitalQid": null,
+    "population": {
+     "value": 144444,
+     "year": 2010
+    },
+    "area": 1930
+   },
+   {
+    "id": "hawaii-islands-Q131347",
+    "iso": null,
+    "qid": "Q131347",
+    "name": {
+     "en": "Oahu",
+     "zh": "瓦胡岛",
+     "hi": "ओहाऊ",
+     "es": "Oahu",
+     "ar": "أواهو، هاواي",
+     "fr": "Oahu",
+     "bn": null
+    },
+    "capital": null,
+    "capitalQid": null,
+    "population": {
+     "value": 976372,
+     "year": 2012
+    },
+    "area": 1571
+   },
+   {
+    "id": "hawaii-islands-Q201026",
+    "iso": null,
+    "qid": "Q201026",
+    "name": {
+     "en": "Kauaʻi",
+     "zh": "考爱岛",
+     "hi": "कवाई",
+     "es": "Kauai",
+     "ar": "كاواي",
+     "fr": "Kauai",
+     "bn": "কাউয়াই"
+    },
+    "capital": null,
+    "capitalQid": null,
+    "population": {
+     "value": 66921,
+     "year": 2010
+    },
+    "area": 1466
+   },
+   {
+    "id": "hawaii-islands-Q193253",
+    "iso": null,
+    "qid": "Q193253",
+    "name": {
+     "en": "Molokaʻi",
+     "zh": "摩洛凯岛",
+     "hi": null,
+     "es": "Molokaʻi",
+     "ar": "مولوكاي",
+     "fr": "Molokai",
+     "bn": null
+    },
+    "capital": null,
+    "capitalQid": null,
+    "population": {
+     "value": 7345,
+     "year": 2010
+    },
+    "area": 693
+   },
+   {
+    "id": "hawaii-islands-Q187063",
+    "iso": null,
+    "qid": "Q187063",
+    "name": {
+     "en": "Lanai",
+     "zh": "拉奈岛",
+     "hi": null,
+     "es": "Lanai",
+     "ar": null,
+     "fr": "Lanai",
+     "bn": null
+    },
+    "capital": null,
+    "capitalQid": null,
+    "population": {
+     "value": 3102,
+     "year": 2010
+    },
+    "area": 366
+   },
+   {
+    "id": "hawaii-islands-Q239743",
+    "iso": null,
+    "qid": "Q239743",
+    "name": {
+     "en": "Niʻihau",
+     "zh": "你好岛",
+     "hi": null,
+     "es": "Niʻihau",
+     "ar": "نيهاو_(جزيرة)",
+     "fr": "Niihau",
+     "bn": null
+    },
+    "capital": null,
+    "capitalQid": null,
+    "population": {
+     "value": 130,
+     "year": 2009
+    },
+    "area": 194
+   },
+   {
+    "id": "hawaii-islands-Q224086",
+    "iso": null,
+    "qid": "Q224086",
+    "name": {
+     "en": "Kahoolawe",
+     "zh": "卡霍奥拉韦岛",
+     "hi": null,
+     "es": "Kahoolawe",
+     "ar": null,
+     "fr": "Kahoolawe",
+     "bn": null
+    },
+    "capital": null,
+    "capitalQid": null,
+    "population": {
+     "value": 0,
+     "year": 2010
+    },
+    "area": 119
+   }
+  ]
+ },
+ "denmark-islands": {
+  "country": "DK",
+  "parent": null,
+  "term": "islands",
+  "source": {
+   "license": "Public domain",
+   "sourceName": "Natural Earth (world-atlas 1:10m) and Wikidata"
+  },
+  "divisions": [
+   {
+    "id": "denmark-islands-Q25535",
+    "iso": null,
+    "qid": "Q25535",
+    "name": {
+     "en": "Zealand",
+     "zh": "西兰岛",
+     "hi": "ज़ीलैंड",
+     "es": "Selandia",
+     "ar": "زيلند",
+     "fr": "Seeland",
+     "bn": "জিল্যান্ড"
+    },
+    "capital": null,
+    "capitalQid": null,
+    "population": {
+     "value": 2302074,
+     "year": null
+    },
+    "area": 7543
+   },
+   {
+    "id": "denmark-islands-Q26503",
+    "iso": null,
+    "qid": "Q26503",
+    "name": {
+     "en": "Funen",
+     "zh": "菲英岛",
+     "hi": "फ़नेन",
+     "es": "Fionia",
+     "ar": "فين",
+     "fr": "Fionie",
+     "bn": null
+    },
+    "capital": null,
+    "capitalQid": null,
+    "population": {
+     "value": 469724,
+     "year": 2019
+    },
+    "area": 2981
+   },
+   {
+    "id": "denmark-islands-Q605839",
+    "iso": null,
+    "qid": "Q605839",
+    "name": {
+     "en": "Lolland",
+     "zh": "洛兰岛",
+     "hi": null,
+     "es": "Lolland",
+     "ar": "لولاند",
+     "fr": "Lolland",
+     "bn": null
+    },
+    "capital": null,
+    "capitalQid": null,
+    "population": {
+     "value": 59456,
+     "year": 2019
+    },
+    "area": 1195
+   },
+   {
+    "id": "denmark-islands-Q769680",
+    "iso": null,
+    "qid": "Q769680",
+    "name": {
+     "en": "Bornholm",
+     "zh": "博恩霍尔姆岛",
+     "hi": null,
+     "es": "Bornholm",
+     "ar": "بورنهولم",
+     "fr": "Bornholm",
+     "bn": null
+    },
+    "capital": null,
+    "capitalQid": null,
+    "population": {
+     "value": 39632,
+     "year": 2018
+    },
+    "area": 596
+   },
+   {
+    "id": "denmark-islands-Q920763",
+    "iso": null,
+    "qid": "Q920763",
+    "name": {
+     "en": "Mors",
+     "zh": "莫斯島",
+     "hi": null,
+     "es": "Mors",
+     "ar": null,
+     "fr": "Mors",
+     "bn": null
+    },
+    "capital": null,
+    "capitalQid": null,
+    "population": null,
+    "area": 368
+   },
+   {
+    "id": "denmark-islands-Q165383",
+    "iso": null,
+    "qid": "Q165383",
+    "name": {
+     "en": "Als",
+     "zh": "阿尔斯岛",
+     "hi": null,
+     "es": "Isla Als",
+     "ar": null,
+     "fr": "Als",
+     "bn": null
+    },
+    "capital": null,
+    "capitalQid": null,
+    "population": {
+     "value": 49976,
+     "year": 2016
+    },
+    "area": 298
+   },
+   {
+    "id": "denmark-islands-Q27524",
+    "iso": null,
+    "qid": "Q27524",
+    "name": {
+     "en": "Langeland",
+     "zh": "朗厄兰岛",
+     "hi": null,
+     "es": "Langeland",
+     "ar": null,
+     "fr": "Langeland",
+     "bn": null
+    },
+    "capital": null,
+    "capitalQid": null,
+    "population": null,
+    "area": 278
+   },
+   {
+    "id": "denmark-islands-Q666502",
+    "iso": null,
+    "qid": "Q666502",
+    "name": {
+     "en": "Møn",
+     "zh": "默恩島",
+     "hi": null,
+     "es": "Møn",
+     "ar": "مون",
+     "fr": "Møn",
+     "bn": null
+    },
+    "capital": null,
+    "capitalQid": null,
+    "population": null,
+    "area": 227
+   },
+   {
+    "id": "denmark-islands-Q683719",
+    "iso": null,
+    "qid": "Q683719",
+    "name": {
+     "en": "Læsø",
+     "zh": "莱斯岛",
+     "hi": null,
+     "es": "Læsø",
+     "ar": null,
+     "fr": "Læsø",
+     "bn": null
+    },
+    "capital": null,
+    "capitalQid": null,
+    "population": {
+     "value": 1807,
+     "year": 2018
+    },
+    "area": 138
+   },
+   {
+    "id": "denmark-islands-Q216422",
+    "iso": null,
+    "qid": "Q216422",
+    "name": {
+     "en": "Samsø",
+     "zh": "萨姆索岛",
+     "hi": null,
+     "es": "Samsø",
+     "ar": "شامسو",
+     "fr": "Samsø",
+     "bn": null
+    },
+    "capital": null,
+    "capitalQid": null,
+    "population": null,
+    "area": 111
+   },
+   {
+    "id": "denmark-islands-Q27150",
+    "iso": null,
+    "qid": "Q27150",
+    "name": {
+     "en": "Ærø",
+     "zh": "艾尔岛",
+     "hi": null,
+     "es": "Ærø",
+     "ar": null,
+     "fr": "Ærø",
+     "bn": null
+    },
+    "capital": null,
+    "capitalQid": null,
+    "population": {
+     "value": 6170,
+     "year": 2018
+    },
+    "area": 96
+   },
+   {
+    "id": "denmark-islands-Q210396",
+    "iso": null,
+    "qid": "Q210396",
+    "name": {
+     "en": "Amager",
+     "zh": "阿迈厄岛",
+     "hi": null,
+     "es": "Amager",
+     "ar": null,
+     "fr": "Amager",
+     "bn": null
+    },
+    "capital": null,
+    "capitalQid": null,
+    "population": {
+     "value": 196047,
+     "year": 2018
+    },
+    "area": 91
+   },
+   {
+    "id": "denmark-islands-Q20837",
+    "iso": null,
+    "qid": "Q20837",
+    "name": {
+     "en": "Fanø",
+     "zh": "凡岛",
+     "hi": null,
+     "es": "Fanø",
+     "ar": null,
+     "fr": "Fanø",
+     "bn": null
+    },
+    "capital": null,
+    "capitalQid": null,
+    "population": {
+     "value": 3270,
+     "year": 2025
+    },
+    "area": 49
+   },
+   {
+    "id": "denmark-islands-Q216845",
+    "iso": null,
+    "qid": "Q216845",
+    "name": {
+     "en": "Anholt",
+     "zh": "安霍尔特岛",
+     "hi": null,
+     "es": "Anholt",
+     "ar": null,
+     "fr": "Anholt",
+     "bn": null
+    },
+    "capital": null,
+    "capitalQid": null,
+    "population": {
+     "value": 167,
+     "year": 2009
+    },
+    "area": 24
+   }
+  ]
+ },
+ "england-counties": {
+  "country": "GB",
+  "parent": "GB-ENG",
+  "term": "counties",
+  "source": {
+   "license": "Open Database License (ODbL) 1.0",
+   "sourceName": "© OpenStreetMap contributors"
+  },
+  "divisions": [
+   {
+    "id": "england-counties-Q3410",
+    "iso": null,
+    "qid": "Q3410",
+    "name": {
+     "en": "Hertfordshire",
+     "zh": "赫特福德郡",
+     "hi": "हर्टफ़र्डशायर",
+     "es": "Hertfordshire",
+     "ar": "هارتفوردشير",
+     "fr": "Hertfordshire",
+     "bn": "হার্টফোর্ডশায়ার"
+    },
+    "capital": {
+     "en": "Hertford",
+     "zh": "贺特福特",
+     "hi": null,
+     "es": "Hertford",
+     "ar": null,
+     "fr": "Hertford",
+     "bn": "হার্টফোড"
+    },
+    "capitalQid": "Q9681",
+    "population": {
+     "value": 1204588,
+     "year": 2022
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q9679",
+    "iso": null,
+    "qid": "Q9679",
+    "name": {
+     "en": "Isle of Wight",
+     "zh": "怀特岛郡",
+     "hi": "आइल ऑफ़ वाइट",
+     "es": "Isla de Wight",
+     "ar": "وايت",
+     "fr": "île de Wight",
+     "bn": "আইল অফ ওয়াইট"
+    },
+    "capital": {
+     "en": "Newport",
+     "zh": "纽波特",
+     "hi": null,
+     "es": "Newport",
+     "ar": "نيوبورت",
+     "fr": "Newport",
+     "bn": "নিউপোর্ট"
+    },
+    "capitalQid": "Q985594",
+    "population": {
+     "value": 140794,
+     "year": 2022
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23064",
+    "iso": null,
+    "qid": "Q23064",
+    "name": {
+     "en": "Cheshire",
+     "zh": "柴郡",
+     "hi": "चेशायर",
+     "es": "Cheshire",
+     "ar": "تشيشير",
+     "fr": "Cheshire",
+     "bn": "চেশায়ার"
+    },
+    "capital": {
+     "en": "Chester",
+     "zh": "切斯特",
+     "hi": "चेस्टर",
+     "es": "Chester",
+     "ar": "تشستر",
+     "fr": "Chester",
+     "bn": "চেস্টার"
+    },
+    "capitalQid": "Q170263",
+    "population": {
+     "value": 1069646,
+     "year": 2020
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23066",
+    "iso": null,
+    "qid": "Q23066",
+    "name": {
+     "en": "Cumbria",
+     "zh": "坎布里亚郡",
+     "hi": "कम्ब्रिया",
+     "es": "Cumbria",
+     "ar": "كمبريا",
+     "fr": "Cumbria",
+     "bn": "কাম্ব্রিয়া"
+    },
+    "capital": {
+     "en": "Carlisle",
+     "zh": "卡莱尔",
+     "hi": "कार्लाइल",
+     "es": "Carlisle",
+     "ar": "كارلايل، كمبريا",
+     "fr": "Carlisle",
+     "bn": "চার্লিসলে"
+    },
+    "capitalQid": "Q192896",
+    "population": {
+     "value": 499781,
+     "year": 2020
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23077",
+    "iso": null,
+    "qid": "Q23077",
+    "name": {
+     "en": "Lancashire",
+     "zh": "兰开夏郡",
+     "hi": "लैंकाशिर",
+     "es": "Lancashire",
+     "ar": "لانكشر",
+     "fr": "Lancashire",
+     "bn": "ল্যাঙ্কাশায়ার"
+    },
+    "capital": {
+     "en": "Preston",
+     "zh": "普雷斯顿",
+     "hi": "प्रेस्टन",
+     "es": "Preston",
+     "ar": "برسطن",
+     "fr": "Preston",
+     "bn": "প্রেসটন"
+    },
+    "capitalQid": "Q184090",
+    "population": {
+     "value": 1515487,
+     "year": 2020
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23079",
+    "iso": null,
+    "qid": "Q23079",
+    "name": {
+     "en": "Northumberland",
+     "zh": "诺森伯兰郡",
+     "hi": "नॉर्थम्बरलैंड",
+     "es": "Northumberland",
+     "ar": "نورثمبرلاند",
+     "fr": "Northumberland",
+     "bn": "নর্থাম্বারল্যান্ড"
+    },
+    "capital": null,
+    "capitalQid": null,
+    "population": {
+     "value": 324362,
+     "year": 2022
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23080",
+    "iso": null,
+    "qid": "Q23080",
+    "name": {
+     "en": "Tyne and Wear",
+     "zh": "泰恩-威尔郡",
+     "hi": "टाइन ऐंड वेयर",
+     "es": "Tyne y Wear",
+     "ar": "تاين ووير",
+     "fr": "Tyne and Wear",
+     "bn": "টাইন ও ওয়্যার"
+    },
+    "capital": null,
+    "capitalQid": null,
+    "population": {
+     "value": 1141795,
+     "year": 2022
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23082",
+    "iso": null,
+    "qid": "Q23082",
+    "name": {
+     "en": "County Durham",
+     "zh": "達勒姆郡",
+     "hi": "काउंटी डरहम",
+     "es": "Durham",
+     "ar": "درم",
+     "fr": "Durham",
+     "bn": "কাউন্টি ডারহাম"
+    },
+    "capital": {
+     "en": "Durham",
+     "zh": "达勒姆",
+     "hi": "डरहम",
+     "es": "Durham",
+     "ar": "درم",
+     "fr": "Durham",
+     "bn": "ডারহাম"
+    },
+    "capitalQid": "Q179815",
+    "population": {
+     "value": 871531,
+     "year": 2020
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23083",
+    "iso": null,
+    "qid": "Q23083",
+    "name": {
+     "en": "West Yorkshire",
+     "zh": "西约克郡",
+     "hi": "वेस्ट यॉर्कशायर",
+     "es": "Yorkshire del Oeste",
+     "ar": "غرب يوركشير",
+     "fr": "Yorkshire de l'Ouest",
+     "bn": "পশ্চিম ইয়র্কশায়ার"
+    },
+    "capital": null,
+    "capitalQid": null,
+    "population": {
+     "value": 2378148,
+     "year": 2022
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23086",
+    "iso": null,
+    "qid": "Q23086",
+    "name": {
+     "en": "North Yorkshire",
+     "zh": "北约克郡",
+     "hi": "नॉर्थ यॉर्कशायर",
+     "es": "Yorkshire del Norte",
+     "ar": "شمال يوركشاير",
+     "fr": "Yorkshire du Nord",
+     "bn": "উত্তর ইয়র্কশায়ার"
+    },
+    "capital": {
+     "en": "Northallerton",
+     "zh": "诺思阿勒尔顿",
+     "hi": null,
+     "es": "Northallerton",
+     "ar": "نورثالرتون",
+     "fr": "Northallerton",
+     "bn": "নর্থঅ্যালার্টন"
+    },
+    "capitalQid": "Q920381",
+    "population": {
+     "value": 1170146,
+     "year": 2020
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23088",
+    "iso": null,
+    "qid": "Q23088",
+    "name": {
+     "en": "East Riding of Yorkshire",
+     "zh": "东约克郡",
+     "hi": "ईस्ट राइडिंग ऑफ़ यॉर्कशायर",
+     "es": "Yorkshire del Este",
+     "ar": "إيست رايدينج أوف يوركشير",
+     "fr": "Yorkshire de l'Est",
+     "bn": "ইস্ট রাইডিং অব ইয়র্কশায়ার"
+    },
+    "capital": {
+     "en": "Beverley",
+     "zh": "比法利",
+     "hi": null,
+     "es": "Beverley",
+     "ar": null,
+     "fr": "Beverley",
+     "bn": "বেভারলি"
+    },
+    "capitalQid": "Q851718",
+    "population": {
+     "value": 602327,
+     "year": 2020
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23090",
+    "iso": null,
+    "qid": "Q23090",
+    "name": {
+     "en": "Lincolnshire",
+     "zh": "林肯郡",
+     "hi": "लिंकनशायर",
+     "es": "Lincolnshire",
+     "ar": "لنكولنشاير",
+     "fr": "Lincolnshire",
+     "bn": "লিংকনশায়ার"
+    },
+    "capital": {
+     "en": "Lincoln",
+     "zh": "林肯",
+     "hi": "लिंकन",
+     "es": "Lincoln",
+     "ar": "لينكن",
+     "fr": "Lincoln",
+     "bn": "লিঙ্কোন, যুক্তরাজ্য"
+    },
+    "capitalQid": "Q180057",
+    "population": {
+     "value": 1098445,
+     "year": 2020
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23092",
+    "iso": null,
+    "qid": "Q23092",
+    "name": {
+     "en": "Nottinghamshire",
+     "zh": "诺丁汉郡",
+     "hi": "नॉटिंघमशायर",
+     "es": "Nottinghamshire",
+     "ar": "نوتنغهامشير",
+     "fr": "Nottinghamshire",
+     "bn": "নটিংহ্যামশায়ারে"
+    },
+    "capital": {
+     "en": "West Bridgford",
+     "zh": "西布里吉福德",
+     "hi": null,
+     "es": "West Bridgford",
+     "ar": null,
+     "fr": "West Bridgford",
+     "bn": null
+    },
+    "capitalQid": "Q2079944",
+    "population": {
+     "value": 1170475,
+     "year": 2020
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23095",
+    "iso": null,
+    "qid": "Q23095",
+    "name": {
+     "en": "South Yorkshire",
+     "zh": "南约克郡",
+     "hi": "साउथ यॉर्कशायर",
+     "es": "Yorkshire del Sur",
+     "ar": "جنوب يوركشير",
+     "fr": "Yorkshire du Sud",
+     "bn": "দক্ষিণ ইয়র্কশায়ার"
+    },
+    "capital": {
+     "en": "Barnsley",
+     "zh": "巴斯里区",
+     "hi": null,
+     "es": "Barnsley",
+     "ar": "بارنسلي",
+     "fr": "Barnsley",
+     "bn": "বান্সলে"
+    },
+    "capitalQid": "Q54212",
+    "population": {
+     "value": 1392105,
+     "year": 2022
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23098",
+    "iso": null,
+    "qid": "Q23098",
+    "name": {
+     "en": "Derbyshire",
+     "zh": "德比郡",
+     "hi": "डर्बीशायर",
+     "es": "Derbyshire",
+     "ar": "ديربيشاير",
+     "fr": "Derbyshire",
+     "bn": "ডার্বিশায়ার"
+    },
+    "capital": {
+     "en": "Matlock",
+     "zh": "马特洛克",
+     "hi": "मैटलॉक",
+     "es": "Matlock",
+     "ar": null,
+     "fr": "Matlock",
+     "bn": "ম্যাটলক টাউন"
+    },
+    "capitalQid": "Q1337703",
+    "population": {
+     "value": 1056000,
+     "year": 2021
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23099",
+    "iso": null,
+    "qid": "Q23099",
+    "name": {
+     "en": "Greater Manchester",
+     "zh": "大曼徹斯特郡",
+     "hi": "ग्रेटर मैनचेस्टर",
+     "es": "Gran Mánchester",
+     "ar": "مانشستر الكبرى",
+     "fr": "Grand Manchester",
+     "bn": "বৃহত্তর ম্যানচেস্টার"
+    },
+    "capital": null,
+    "capitalQid": null,
+    "population": {
+     "value": 3017590,
+     "year": 2025
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23100",
+    "iso": null,
+    "qid": "Q23100",
+    "name": {
+     "en": "Merseyside",
+     "zh": "默西賽德郡",
+     "hi": "मर्सीसाइड",
+     "es": null,
+     "ar": "مرزيسايد",
+     "fr": null,
+     "bn": "মার্সেসাইড"
+    },
+    "capital": {
+     "en": "Liverpool",
+     "zh": "利物浦",
+     "hi": "लिवरपूल",
+     "es": "Liverpool",
+     "ar": "ليفربول",
+     "fr": "Liverpool",
+     "bn": "লিভারপুল"
+    },
+    "capitalQid": "Q24826",
+    "population": {
+     "value": 1442081,
+     "year": 2022
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23103",
+    "iso": null,
+    "qid": "Q23103",
+    "name": {
+     "en": "Shropshire",
+     "zh": "什罗普郡",
+     "hi": "श्रॉपशायर",
+     "es": "Shropshire",
+     "ar": "شروبشاير",
+     "fr": "Shropshire",
+     "bn": "শ্রপশার"
+    },
+    "capital": {
+     "en": "Shrewsbury",
+     "zh": "什鲁斯伯里",
+     "hi": "श्रूस्बरी",
+     "es": "Shrewsbury",
+     "ar": "شرزبرة",
+     "fr": "Shrewsbury",
+     "bn": "শ্রিউবুরি"
+    },
+    "capitalQid": "Q201970",
+    "population": {
+     "value": 506737,
+     "year": 2020
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23105",
+    "iso": null,
+    "qid": "Q23105",
+    "name": {
+     "en": "Staffordshire",
+     "zh": "斯塔福德郡",
+     "hi": "स्टैफ़र्डशायर",
+     "es": "Staffordshire",
+     "ar": "ستافوردشاير",
+     "fr": "Staffordshire",
+     "bn": "স্ট্যাফোর্ডশায়ার"
+    },
+    "capital": {
+     "en": "Stafford",
+     "zh": "斯塔福德",
+     "hi": "स्टैफ़र्ड",
+     "es": "Stafford",
+     "ar": null,
+     "fr": "Stafford",
+     "bn": "স্ট্যাফোর্ড"
+    },
+    "capitalQid": "Q826782",
+    "population": {
+     "value": 1139794,
+     "year": 2020
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23106",
+    "iso": null,
+    "qid": "Q23106",
+    "name": {
+     "en": "Leicestershire",
+     "zh": "莱斯特郡",
+     "hi": "लेस्टरशायर",
+     "es": "Leicestershire",
+     "ar": "ليسترشير",
+     "fr": "Leicestershire",
+     "bn": "লিচেস্টারশায়ার"
+    },
+    "capital": {
+     "en": "Leicester",
+     "zh": "莱斯特",
+     "hi": "लीसेस्टर",
+     "es": "Leicester",
+     "ar": "ليستر",
+     "fr": "Leicester",
+     "bn": "লেস্টার"
+    },
+    "capitalQid": "Q83065",
+    "population": {
+     "value": 1067121,
+     "year": 2020
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23107",
+    "iso": null,
+    "qid": "Q23107",
+    "name": {
+     "en": "Rutland",
+     "zh": "拉特兰",
+     "hi": "रटलैंड",
+     "es": "Rutland",
+     "ar": "روتلاند",
+     "fr": "Rutland",
+     "bn": "রাটল্যান্ড"
+    },
+    "capital": {
+     "en": "Oakham",
+     "zh": "奥克姆",
+     "hi": null,
+     "es": "Oakham",
+     "ar": null,
+     "fr": "Oakham",
+     "bn": "ওকহ্যাম"
+    },
+    "capitalQid": "Q1001942",
+    "population": {
+     "value": 41151,
+     "year": 2022
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23109",
+    "iso": null,
+    "qid": "Q23109",
+    "name": {
+     "en": "Norfolk",
+     "zh": "诺福克郡",
+     "hi": "नॉर्फ़क",
+     "es": "Norfolk",
+     "ar": "نورفك",
+     "fr": "Norfolk",
+     "bn": "নরফোক"
+    },
+    "capital": {
+     "en": "Norwich",
+     "zh": "诺里奇",
+     "hi": "नॉर्विच",
+     "es": "Norwich",
+     "ar": "نورتش",
+     "fr": "Norwich",
+     "bn": "নরউইচ"
+    },
+    "capitalQid": "Q130191",
+    "population": {
+     "value": 925299,
+     "year": 2022
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23111",
+    "iso": null,
+    "qid": "Q23111",
+    "name": {
+     "en": "Suffolk",
+     "zh": "萨福克郡",
+     "hi": "सफ़क",
+     "es": "Suffolk",
+     "ar": "سوفولك",
+     "fr": "Suffolk",
+     "bn": "সাফোক"
+    },
+    "capital": {
+     "en": "Ipswich",
+     "zh": "伊普斯威奇",
+     "hi": "इप्सविच",
+     "es": "Ipswich",
+     "ar": "إبسوتش",
+     "fr": "Ipswich",
+     "bn": "ইপ্সউইচ"
+    },
+    "capitalQid": "Q184775",
+    "population": {
+     "value": 768555,
+     "year": 2022
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23112",
+    "iso": null,
+    "qid": "Q23112",
+    "name": {
+     "en": "Cambridgeshire",
+     "zh": "剑桥郡",
+     "hi": "केमब्रिजशायर",
+     "es": "Cambridgeshire",
+     "ar": "كامبريدجشير",
+     "fr": "Cambridgeshire",
+     "bn": "কেমব্রিজশায়ার"
+    },
+    "capital": {
+     "en": "Cambridge",
+     "zh": "剑桥",
+     "hi": "कैम्ब्रिज",
+     "es": "Cambridge",
+     "ar": "كامبريدج",
+     "fr": "Cambridge",
+     "bn": "ক্যামব্রিজ"
+    },
+    "capitalQid": "Q350",
+    "population": {
+     "value": 859830,
+     "year": 2020
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23115",
+    "iso": null,
+    "qid": "Q23115",
+    "name": {
+     "en": "Northamptonshire",
+     "zh": "北安普敦郡",
+     "hi": "नॉर्थहैम्पटनशायर",
+     "es": "Northamptonshire",
+     "ar": "نورثامبتونشير",
+     "fr": "Northamptonshire",
+     "bn": "নর্থাম্পটনশায়ার"
+    },
+    "capital": {
+     "en": "Northampton",
+     "zh": "北安普敦",
+     "hi": "नॉर्थम्प्टन",
+     "es": "Northampton",
+     "ar": "نورثامبتون",
+     "fr": "Northampton",
+     "bn": "নর্থাম্পটন"
+    },
+    "capitalQid": "Q192240",
+    "population": {
+     "value": 757181,
+     "year": 2020
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23124",
+    "iso": null,
+    "qid": "Q23124",
+    "name": {
+     "en": "West Midlands",
+     "zh": "西米德兰兹郡",
+     "hi": "वेस्ट मिडलैंड्स",
+     "es": "Midlands Occidentales",
+     "ar": "ويست مدلاندز",
+     "fr": "Midlands de l'Ouest",
+     "bn": "ওয়েস্ট মিডল্যান্ড"
+    },
+    "capital": {
+     "en": "Birmingham",
+     "zh": "伯明翰",
+     "hi": "बर्मिंघम",
+     "es": "Birmingham",
+     "ar": "برمنغهام",
+     "fr": "Birmingham",
+     "bn": "বার্মিংহাম"
+    },
+    "capitalQid": "Q2256",
+    "population": {
+     "value": 2953816,
+     "year": 2022
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23129",
+    "iso": null,
+    "qid": "Q23129",
+    "name": {
+     "en": "Herefordshire",
+     "zh": "赫里福德郡",
+     "hi": "हरफ़र्डशायर",
+     "es": null,
+     "ar": "هيرفوردشير",
+     "fr": null,
+     "bn": "হেয়ারফোর্ডশায়ার"
+    },
+    "capital": {
+     "en": "Hereford",
+     "zh": "赫里福德",
+     "hi": "हेफ़ेर्ड",
+     "es": "Hereford",
+     "ar": "هيرفورد",
+     "fr": "Hereford",
+     "bn": "হেরফোর্ড"
+    },
+    "capitalQid": "Q204720",
+    "population": {
+     "value": 188719,
+     "year": 2022
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23135",
+    "iso": null,
+    "qid": "Q23135",
+    "name": {
+     "en": "Worcestershire",
+     "zh": "伍斯特郡",
+     "hi": "वॉस्टरशायर",
+     "es": "Worcestershire",
+     "ar": "ورشستر",
+     "fr": "Worcestershire",
+     "bn": "ওরচেস্টারশায়ার"
+    },
+    "capital": {
+     "en": "Worcester",
+     "zh": "伍斯特",
+     "hi": "वर्सेस्टर",
+     "es": "Worcester",
+     "ar": "ورسستر",
+     "fr": "Worcester",
+     "bn": "ওরচেস্টার"
+    },
+    "capitalQid": "Q1646181",
+    "population": {
+     "value": 609216,
+     "year": 2022
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23140",
+    "iso": null,
+    "qid": "Q23140",
+    "name": {
+     "en": "Warwickshire",
+     "zh": "沃里克郡",
+     "hi": "वरिकशायर",
+     "es": "Warwickshire",
+     "ar": "وركشير",
+     "fr": "Warwickshire",
+     "bn": "ওয়ারউইকশায়ার"
+    },
+    "capital": {
+     "en": "Warwick",
+     "zh": "沃里克",
+     "hi": "वारविक",
+     "es": "Warwick",
+     "ar": "ووريك",
+     "fr": "Warwick",
+     "bn": "ওয়ারিক"
+    },
+    "capitalQid": "Q549761",
+    "population": {
+     "value": 607604,
+     "year": 2022
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23143",
+    "iso": null,
+    "qid": "Q23143",
+    "name": {
+     "en": "Bedfordshire",
+     "zh": "贝德福德郡",
+     "hi": "बेडफ़र्डशायर",
+     "es": "Bedfordshire",
+     "ar": "بيدفوردشير",
+     "fr": "Bedfordshire",
+     "bn": "বেডফোর্ডশার"
+    },
+    "capital": {
+     "en": "Bedford",
+     "zh": "贝德福德",
+     "hi": "बेडफोर्ड",
+     "es": "Bedford",
+     "ar": "بيدفورد",
+     "fr": "Bedford",
+     "bn": "বেডফোর্ড"
+    },
+    "capitalQid": "Q208257",
+    "population": {
+     "value": 682311,
+     "year": 2020
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23156",
+    "iso": null,
+    "qid": "Q23156",
+    "name": {
+     "en": "Devon",
+     "zh": "德文郡",
+     "hi": "डेवन",
+     "es": "Devon",
+     "ar": "ديفون",
+     "fr": "Devon",
+     "bn": "ডেভন"
+    },
+    "capital": {
+     "en": "Exeter",
+     "zh": "埃克塞特",
+     "hi": "एक्सेर",
+     "es": "Exeter",
+     "ar": "إكستر",
+     "fr": "Exeter",
+     "bn": "এক্সেটার"
+    },
+    "capitalQid": "Q134672",
+    "population": {
+     "value": 1209773,
+     "year": 2020
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23157",
+    "iso": null,
+    "qid": "Q23157",
+    "name": {
+     "en": "Somerset",
+     "zh": "萨默塞特郡",
+     "hi": "समरसेट",
+     "es": "Somerset",
+     "ar": "سومرست",
+     "fr": "Somerset",
+     "bn": "সমারসেট"
+    },
+    "capital": {
+     "en": "Taunton",
+     "zh": "汤顿",
+     "hi": "टाउंटन",
+     "es": "Taunton",
+     "ar": "تونتون",
+     "fr": "Taunton",
+     "bn": "টন্টন"
+    },
+    "capitalQid": "Q845619",
+    "population": {
+     "value": 975782,
+     "year": 2020
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23159",
+    "iso": null,
+    "qid": "Q23159",
+    "name": {
+     "en": "Dorset",
+     "zh": "多塞特郡",
+     "hi": "डॉर्सेट",
+     "es": "Dorset",
+     "ar": "دورست",
+     "fr": "Dorset",
+     "bn": "ডরসেট"
+    },
+    "capital": {
+     "en": "Dorchester",
+     "zh": "多切斯特",
+     "hi": null,
+     "es": "Dorchester",
+     "ar": "دورشيستر (دورست)",
+     "fr": "Dorchester",
+     "bn": "ডরচেস্টার"
+    },
+    "capitalQid": "Q503331",
+    "population": {
+     "value": 776780,
+     "year": 2020
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23165",
+    "iso": null,
+    "qid": "Q23165",
+    "name": {
+     "en": "Gloucestershire",
+     "zh": "格洛斯特郡",
+     "hi": "ग्लॉस्टरशायर",
+     "es": "Gloucestershire",
+     "ar": "غلوسترشير",
+     "fr": "Gloucestershire",
+     "bn": "গ্লোচেস্টারশায়ার"
+    },
+    "capital": {
+     "en": "Gloucester",
+     "zh": "格洛斯特",
+     "hi": "ग्लॉसेस्टर",
+     "es": "Gloucester",
+     "ar": "غلوستر",
+     "fr": "Gloucester",
+     "bn": "গ্লঊচেস্টার"
+    },
+    "capitalQid": "Q170497",
+    "population": {
+     "value": 928466,
+     "year": 2020
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23169",
+    "iso": null,
+    "qid": "Q23169",
+    "name": {
+     "en": "Oxfordshire",
+     "zh": "牛津郡",
+     "hi": "ऑक्सफ़र्डशायर",
+     "es": "Oxfordshire",
+     "ar": "أكسفوردشير",
+     "fr": "Oxfordshire",
+     "bn": "অক্সফোর্ডশায়ার"
+    },
+    "capital": {
+     "en": "Oxford",
+     "zh": "牛津",
+     "hi": "ऑक्सफोर्ड",
+     "es": "Oxford",
+     "ar": "أكسفورد",
+     "fr": "Oxford",
+     "bn": "অক্সফোর্ড"
+    },
+    "capitalQid": "Q34217",
+    "population": {
+     "value": 738276,
+     "year": 2022
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23183",
+    "iso": null,
+    "qid": "Q23183",
+    "name": {
+     "en": "Wiltshire",
+     "zh": "威尔特郡",
+     "hi": "विल्टशायर",
+     "es": "Wiltshire",
+     "ar": "ويلتشاير",
+     "fr": "Wiltshire",
+     "bn": "উইল্টশায়ার"
+    },
+    "capital": {
+     "en": "Trowbridge",
+     "zh": "特罗布里奇",
+     "hi": null,
+     "es": "Trowbridge",
+     "ar": "تروبريدج",
+     "fr": "Trowbridge",
+     "bn": "ট্রোব্রিজ"
+    },
+    "capitalQid": "Q265647",
+    "population": {
+     "value": 726951,
+     "year": 2020
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23204",
+    "iso": null,
+    "qid": "Q23204",
+    "name": {
+     "en": "Hampshire",
+     "zh": "汉普郡",
+     "hi": "हैम्पशायर",
+     "es": "Hampshire",
+     "ar": "هامبشاير",
+     "fr": "Hampshire",
+     "bn": "হ্যাম্পশায়ার"
+    },
+    "capital": {
+     "en": "Winchester",
+     "zh": "温切斯特",
+     "hi": "विनचेस्टर",
+     "es": "Winchester",
+     "ar": "ونشستر",
+     "fr": "Winchester",
+     "bn": "উইনচেস্টার"
+    },
+    "capitalQid": "Q172157",
+    "population": {
+     "value": 1857824,
+     "year": 2021
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23220",
+    "iso": null,
+    "qid": "Q23220",
+    "name": {
+     "en": "Berkshire",
+     "zh": "伯克郡",
+     "hi": "बर्कशायर",
+     "es": "Berkshire",
+     "ar": "باركشير",
+     "fr": "Berkshire",
+     "bn": null
+    },
+    "capital": {
+     "en": "Reading",
+     "zh": "雷丁",
+     "hi": "रेडिंग",
+     "es": "Reading",
+     "ar": "ريدنغ",
+     "fr": "Reading",
+     "bn": "রেডিং"
+    },
+    "capitalQid": "Q161491",
+    "population": {
+     "value": 917762,
+     "year": 2020
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23229",
+    "iso": null,
+    "qid": "Q23229",
+    "name": {
+     "en": "Buckinghamshire",
+     "zh": "白金汉郡",
+     "hi": "बकिंघमशायर",
+     "es": "Buckinghamshire",
+     "ar": "باكينغهامشير",
+     "fr": "Buckinghamshire",
+     "bn": "বাকিংহামশায়ার"
+    },
+    "capital": {
+     "en": "Aylesbury",
+     "zh": "艾尔斯伯里",
+     "hi": "आयल्सबरी",
+     "es": "Aylesbury",
+     "ar": "أيلزبري",
+     "fr": "Aylesbury",
+     "bn": "অ্যালেসবুরি"
+    },
+    "capitalQid": "Q213474",
+    "population": {
+     "value": 817263,
+     "year": 2020
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23240",
+    "iso": null,
+    "qid": "Q23240",
+    "name": {
+     "en": "Essex",
+     "zh": "埃塞克斯郡",
+     "hi": "एसेक्स",
+     "es": "Essex",
+     "ar": "إسكس",
+     "fr": "Essex",
+     "bn": "এসেক্স"
+    },
+    "capital": {
+     "en": "Chelmsford",
+     "zh": "切尔姆斯福德",
+     "hi": "चेम्सफोर्ड",
+     "es": "Chelmsford",
+     "ar": "تشيلمسفورد",
+     "fr": "Chelmsford",
+     "bn": "চেমসফোর্ড"
+    },
+    "capitalQid": "Q210985",
+    "population": {
+     "value": 1859800,
+     "year": 2021
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23276",
+    "iso": null,
+    "qid": "Q23276",
+    "name": {
+     "en": "Surrey",
+     "zh": "萨里郡",
+     "hi": "सरी",
+     "es": "Surrey",
+     "ar": "سري",
+     "fr": "Surrey",
+     "bn": "সারে"
+    },
+    "capital": null,
+    "capitalQid": null,
+    "population": {
+     "value": 1214540,
+     "year": 2022
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23287",
+    "iso": null,
+    "qid": "Q23287",
+    "name": {
+     "en": "West Sussex",
+     "zh": "西萨塞克斯郡",
+     "hi": "वेस्ट ससेक्स",
+     "es": "Sussex Occidental",
+     "ar": "غرب ساسكس",
+     "fr": "Sussex de l'Ouest",
+     "bn": "ওয়েস্ট সাসেক্স"
+    },
+    "capital": {
+     "en": "Chichester",
+     "zh": "奇切斯特",
+     "hi": "चिचेस्टर",
+     "es": "Chichester",
+     "ar": "تشيتشستر",
+     "fr": "Chichester",
+     "bn": "চিকেস্টার"
+    },
+    "capitalQid": "Q207639",
+    "population": {
+     "value": 892336,
+     "year": 2022
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23293",
+    "iso": null,
+    "qid": "Q23293",
+    "name": {
+     "en": "East Sussex",
+     "zh": "东萨塞克斯郡",
+     "hi": "ईस्ट ससेक्स",
+     "es": "Sussex Oriental",
+     "ar": "شرق ساسكس",
+     "fr": "Sussex de l'Est",
+     "bn": "ইস্ট সাসেক্স"
+    },
+    "capital": {
+     "en": "Lewes",
+     "zh": "刘易斯",
+     "hi": null,
+     "es": "Lewes",
+     "ar": "لويس",
+     "fr": "Lewes",
+     "bn": "লুইজ"
+    },
+    "capitalQid": "Q246884",
+    "population": {
+     "value": 822950,
+     "year": 2021
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23298",
+    "iso": null,
+    "qid": "Q23298",
+    "name": {
+     "en": "Kent",
+     "zh": "肯特郡",
+     "hi": "केंट",
+     "es": "Kent",
+     "ar": "كنت",
+     "fr": "Kent",
+     "bn": "কেন্ট"
+    },
+    "capital": {
+     "en": "Maidstone",
+     "zh": "梅德斯通区",
+     "hi": "मैडस्टोन",
+     "es": "Maidstone",
+     "ar": "ميدستون",
+     "fr": "Maidstone",
+     "bn": "মেইডস্টোন"
+    },
+    "capitalQid": "Q213180",
+    "population": {
+     "value": 1855842,
+     "year": 2021
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23306",
+    "iso": null,
+    "qid": "Q23306",
+    "name": {
+     "en": "Greater London",
+     "zh": "大伦敦",
+     "hi": "ग्रेटर लंदन",
+     "es": "Gran Londres",
+     "ar": "لندن الكبرى",
+     "fr": "Grand Londres",
+     "bn": "বৃহত্তর লন্ডন"
+    },
+    "capital": null,
+    "capitalQid": null,
+    "population": {
+     "value": 8866180,
+     "year": 2022
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q23311",
+    "iso": null,
+    "qid": "Q23311",
+    "name": {
+     "en": "City of London",
+     "zh": "伦敦城",
+     "hi": "सिटी ऑफ़ लंदन",
+     "es": "City de Londres",
+     "ar": "مدينة لندن",
+     "fr": "cité de Londres",
+     "bn": "সিটি অব লন্ডন"
+    },
+    "capital": null,
+    "capitalQid": null,
+    "population": {
+     "value": 10847,
+     "year": 2022
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q21693433",
+    "iso": null,
+    "qid": "Q21693433",
+    "name": {
+     "en": "City of Bristol",
+     "zh": null,
+     "hi": null,
+     "es": "Ciudad de Bristol",
+     "ar": "بريستول",
+     "fr": "City de Bristol",
+     "bn": null
+    },
+    "capital": {
+     "en": "Bristol",
+     "zh": "布里斯托尔",
+     "hi": "ब्रिस्टल",
+     "es": "Bristol",
+     "ar": "برستل",
+     "fr": "Bristol",
+     "bn": "ব্রিস্টল"
+    },
+    "capitalQid": "Q23154",
+    "population": {
+     "value": 479024,
+     "year": 2022
+    },
+    "area": null
+   },
+   {
+    "id": "england-counties-Q48790202",
+    "iso": null,
+    "qid": "Q48790202",
+    "name": {
+     "en": "Cornwall",
+     "zh": null,
+     "hi": null,
+     "es": null,
+     "ar": null,
+     "fr": "Cornouailles",
+     "bn": null
+    },
+    "capital": null,
+    "capitalQid": null,
+    "population": {
+     "value": 568210,
+     "year": null
+    },
+    "area": null
+   }
+  ]
+ }
+}

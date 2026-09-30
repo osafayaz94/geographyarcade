@@ -1,0 +1,151 @@
+RUS Russia: 83 divisions (ADM1, 2017), unmatched 0, no capital 2, license Open Data Commons Open Database License 1.0
+CAN Canada: 13 divisions (ADM1, 2023), unmatched 0, no capital 0, license Open Government Canada 2.0
+CHN China: 33 divisions (ADM1, 2019), unmatched 0, no capital 2, license Public Domain
+USA United States: 51 divisions (ADM1, 2018), unmatched 0, no capital 0, license Public Domain
+BRA Brazil: 27 divisions (ADM1, 2006), unmatched 0, no capital 0, license Creative Commons Attribution 2.5 Generic
+AUS Australia: 8 divisions (ADM1, 2021), unmatched 0, no capital 0, license Creative Commons Attribution 4.0 International (CC BY 4.0)
+IND India: 34 divisions (ADM1, 2011), unmatched 0, no capital 0, license Creative Commons Attribution 2.5 India (CC BY 2.5 IN)
+ARG Argentina: 24 divisions (ADM1, 2020), unmatched 0, no capital 1, license Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)
+  DZA: 58 divisions from Wikidata P150 + OpenStreetMap
+DZA Algeria: 58 divisions (OpenStreetMap, 2026), unmatched 0, no capital 0, license Open Database License (ODbL) 1.0
+COD DR Congo: 26 divisions (ADM1, 2017), unmatched 0, no capital 1, license Open Data Commons Open Database License 1.0
+SAU Saudi Arabia: 13 divisions (ADM1, 2017), unmatched 0, no capital 0, license Open Data Commons Open Database License 1.0
+MEX Mexico: 32 divisions (ADM1, 2020), unmatched 0, no capital 1, license Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)
+  IDN: 38 divisions from Wikidata P150 + OpenStreetMap
+IDN Indonesia: 38 divisions (OpenStreetMap, 2026), unmatched 0, no capital 1, license Open Database License (ODbL) 1.0
+SDN Sudan: 18 divisions (ADM1, 2020), unmatched 0, no capital 0, license Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)
+LBY Libya: 22 divisions (ADM1, 2021), unmatched 0, no capital 1, license Public Domain
+IRN Iran: 31 divisions (ADM1, 2019), unmatched 0, no capital 0, license Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)
+MNG Mongolia: 22 divisions (ADM1, 2017), unmatched 0, no capital 1, license Open Data Commons Open Database License 1.0
+PER Peru: 26 divisions (ADM1, 2008), unmatched 0, no capital 0, license Public Domain
+TCD Chad: 23 divisions (ADM1, 2017), unmatched 0, no capital 1, license Open Data Commons Open Database License 1.0
+NER Niger: 8 divisions (ADM1, 2006), unmatched 0, no capital 1, license Other - Humanitarian
+ZAF South Africa: 9 divisions (ADM1, 2020), unmatched 0, no capital 0, license Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)
+COL Colombia: 33 divisions (ADM1, 2017), unmatched 0, no capital 2, license Open Data Commons Open Database License 1.0
+  ETH: 14 divisions from Wikidata P150 + OpenStreetMap
+ETH Ethiopia: 14 divisions (OpenStreetMap, 2026), unmatched 0, no capital 2, license Open Database License (ODbL) 1.0
+BOL Bolivia: 9 divisions (ADM1, 2015), unmatched 0, no capital 0, license Public Domain
+MRT Mauritania: 13 divisions (ADM1, 2015), unmatched 0, no capital 1, license Creative Commons Attribution-ShareAlike 3.0 Unported
+EGY Egypt: 27 divisions (ADM1, 2017), unmatched 0, no capital 0, license Open Data Commons Open Database License 1.0
+TZA Tanzania: 31 divisions (ADM1, 2018), unmatched 0, no capital 0, license Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)
+NGA Nigeria: 37 divisions (ADM1, 2022), unmatched 0, no capital 0, license Creative Commons Attribution 4.0 International (CC BY 4.0)
+VEN Venezuela: 25 divisions (ADM1, 2020), unmatched 0, no capital 1, license Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)
+PAK Pakistan: 8 divisions (ADM1, 2019), unmatched 0, no capital 0, license Public Domain
+NAM Namibia: 14 divisions (ADM1, 2022), unmatched 0, no capital 0, license Public Domain
+MOZ Mozambique: 11 divisions (ADM1, 2019), unmatched 0, no capital 1, license Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)
+TUR Türkiye: 81 divisions (ADM1, 2021), unmatched 0, no capital 1, license Creative Commons Attribution-ShareAlike 2.0
+CHL Chile: 16 divisions (ADM1, 2020), unmatched 0, no capital 0, license Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)
+ZMB Zambia: 10 divisions (ADM1, 2020), unmatched 0, no capital 0, license Creative Commons Attribution 4.0 International (CC BY 4.0)
+MMR Myanmar: 14 divisions (ADM1, 2019), unmatched 0, no capital 0, license Creative Commons Attribution 4.0 (CC BY 4.0)
+AFG Afghanistan: 34 divisions (ADM1, 2007), unmatched 0, no capital 0, license Public Domain
+SOM Somalia: 18 divisions (ADM1, 2015), unmatched 1, no capital 1, license Open Data Commons Open Database License 1.0
+SSD South Sudan: 10 divisions (ADM1, 2020), unmatched 0, no capital 0, license Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)
+UKR Ukraine: 27 divisions (ADM1, 2017), unmatched 0, no capital 2, license Open Data Commons Open Database License 1.0
+BWA Botswana: 10 divisions (ADM1, 2017), unmatched 0, no capital 0, license Creative Commons Attribution-ShareAlike 2.0
+KEN Kenya: 47 divisions (ADM1, 2020), unmatched 0, no capital 11, license Public Domain
+FRA France: 13 divisions (ADM1, 2022), unmatched 0, no capital 0, license Etalab Open License 2.0
+YEM Yemen: 22 divisions (ADM1, 2017), unmatched 0, no capital 0, license Open Data Commons Open Database License 1.0
+THA Thailand: 77 divisions (ADM1, 2017), unmatched 0, no capital 1, license Open Data Commons Open Database License 1.0
+ESP Spain: 19 divisions (ADM1, 2017), unmatched 0, no capital 1, license Creative Commons Attribution 4.0 International (CC BY 4.0)
+TKM Turkmenistan: 5 divisions (ADM1, 2007), unmatched 0, no capital 0, license Public Domain
+CMR Cameroon: 10 divisions (ADM1, 2016), unmatched 0, no capital 0, license Creative Commons Attribution 3.0 License
+PNG Papua New Guinea: 22 divisions (ADM1, 2019), unmatched 0, no capital 3, license Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)
+SWE Sweden: 21 divisions (ADM1, 2009), unmatched 0, no capital 0, license Creative Commons Attribution 3.0 License
+UZB Uzbekistan: 14 divisions (ADM1, 2017), unmatched 0, no capital 1, license Open Data Commons Open Database License 1.0
+MAR Morocco: 12 divisions (ADM1, 2017), unmatched 0, no capital 0, license Open Data Commons Open Database License 1.0
+IRQ Iraq: 18 divisions (ADM1, 2022), unmatched 0, no capital 0, license CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+PRY Paraguay: 18 divisions (ADM1, 2012), unmatched 0, no capital 1, license Creative Commons Attribution 4.0 International (CC BY 4.0)
+ZWE Zimbabwe: 10 divisions (ADM1, 2020), unmatched 0, no capital 2, license Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)
+JPN Japan: 47 divisions (ADM1, 2017), unmatched 0, no capital 0, license Open Data Commons Open Database License 1.0
+DEU Germany: 16 divisions (ADM1, 2021), unmatched 0, no capital 2, license Data license Germany - Attribution - Version 2.0
+  PHL: 18 divisions from Wikidata P150 + OpenStreetMap
+PHL Philippines: 18 divisions (OpenStreetMap, 2026), unmatched 0, no capital 0, license Open Database License (ODbL) 1.0
+COG Republic of the Congo: 12 divisions (ADM1, 2017), unmatched 0, no capital 2, license Open Data Commons Open Database License 1.0
+FIN Finland: 19 divisions (ADM1, 2017), unmatched 0, no capital 0, license Open Data Commons Open Database License 1.0
+  VNM: 34 divisions from Wikidata P150 + OpenStreetMap
+VNM Vietnam: 34 divisions (OpenStreetMap, 2026), unmatched 0, no capital 34, license Open Database License (ODbL) 1.0
+MYS Malaysia: 16 divisions (ADM1, 2017), unmatched 0, no capital 2, license Open Data Commons Open Database License 1.0
+  NOR: 15 divisions from Wikidata P150 + OpenStreetMap
+NOR Norway: 15 divisions (OpenStreetMap, 2026), unmatched 0, no capital 1, license Open Database License (ODbL) 1.0
+CIV Ivory Coast: 14 divisions (ADM1, 2016), unmatched 0, no capital 2, license Creative Commons Attribution 4.0 International (CC BY 4.0)
+POL Poland: 16 divisions (ADM1, 2017), unmatched 0, no capital 0, license Open Data Commons Open Database License 1.0
+  OMN: 11 divisions from Wikidata P150 + OpenStreetMap
+OMN Oman: 11 divisions (OpenStreetMap, 2026), unmatched 0, no capital 1, license Open Database License (ODbL) 1.0
+ITA Italy: 20 divisions (ADM2, 2023), unmatched 0, no capital 0, license Creative Commons Attribution 3.0 License
+ECU Ecuador: 24 divisions (ADM1, 2011), unmatched 0, no capital 0, license CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+NZL New Zealand: 17 divisions (ADM1, 2017), unmatched 0, no capital 1, license Creative Commons Attribution 4.0 International (CC BY 4.0)
+GAB Gabon: 9 divisions (ADM1, 2005), unmatched 0, no capital 0, license Creative Commons Attribution-ShareAlike 3.0 Unported
+GIN Guinea: 8 divisions (ADM1, 2017), unmatched 0, no capital 1, license Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)
+GBR United Kingdom: 4 divisions (ADM1, 2021), unmatched 0, no capital 0, license Creative Commons Attribution 4.0 International (CC BY 4.0)
+  UGA: 135 divisions from Wikidata P150 + OpenStreetMap
+UGA Uganda: 135 divisions (OpenStreetMap, 2026), unmatched 0, no capital 25, license Open Database License (ODbL) 1.0
+GHA Ghana: 16 divisions (ADM1, 2021), unmatched 0, no capital 0, license Creative Commons Attribution-ShareAlike 2.0
+ROU Romania: 42 divisions (ADM1, 2017), unmatched 0, no capital 1, license Creative Commons Attribution 4.0 International (CC BY 4.0)
+LAO Laos: 18 divisions (ADM1, 2017), unmatched 0, no capital 2, license Open Data Commons Open Database License 1.0
+GUY Guyana: 10 divisions (ADM1, 2017), unmatched 0, no capital 1, license Open Data Commons Open Database License 1.0
+BLR Belarus: 7 divisions (ADM1, 2005), unmatched 0, no capital 1, license Creative Commons Attribution 3.0 License
+KGZ Kyrgyzstan: 9 divisions (ADM1, 2018), unmatched 0, no capital 2, license Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)
+SEN Senegal: 14 divisions (ADM1, 2019), unmatched 0, no capital 0, license Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)
+SYR Syria: 14 divisions (ADM1, 2017), unmatched 0, no capital 0, license Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)
+KHM Cambodia: 25 divisions (ADM1, 2017), unmatched 0, no capital 1, license Open Data Commons Open Database License 1.0
+URY Uruguay: 19 divisions (ADM1, 2017), unmatched 0, no capital 0, license Open Data Commons Open Database License 1.0
+SUR Suriname: 10 divisions (ADM1, 2017), unmatched 0, no capital 1, license Open Data Commons Open Database License 1.0
+TUN Tunisia: 24 divisions (ADM1, 2017), unmatched 0, no capital 0, license Open Data Commons Open Database License 1.0
+BGD Bangladesh: 8 divisions (ADM1, 2015), unmatched 0, no capital 0, license CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+NPL Nepal: 7 divisions (ADM1, 2020), unmatched 0, no capital 1, license Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)
+TJK Tajikistan: 5 divisions (ADM1, 2017), unmatched 0, no capital 1, license Open Data Commons Open Database License 1.0
+GRC Greece: 14 divisions (ADM2, 2016), unmatched 0, no capital 1, license Creative Commons Attribution 4.0 International (CC BY 4.0)
+NIC Nicaragua: 17 divisions (ADM1, 2017), unmatched 0, no capital 0, license Open Data Commons Open Database License 1.0
+PRK North Korea: 11 divisions (ADM1, 2018), unmatched 0, no capital 2, license Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)
+  MWI: 28 divisions from Wikidata P150 + OpenStreetMap
+MWI Malawi: 28 divisions (OpenStreetMap, 2026), unmatched 0, no capital 0, license Open Database License (ODbL) 1.0
+ERI Eritrea: 6 divisions (ADM1, 2017), unmatched 0, no capital 0, license Open Data Commons Open Database License 1.0
+BEN Benin: 12 divisions (ADM1, 2012), unmatched 0, no capital 0, license Public Domain
+HND Honduras: 18 divisions (ADM1, 2017), unmatched 0, no capital 0, license Open Data Commons Open Database License 1.0
+LBR Liberia: 15 divisions (ADM1, 2021), unmatched 0, no capital 0, license Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)
+BGR Bulgaria: 28 divisions (ADM1, 2019), unmatched 0, no capital 0, license Public Domain
+CUB Cuba: 16 divisions (ADM1, 2017), unmatched 0, no capital 0, license Open Data Commons Open Database License 1.0
+GTM Guatemala: 22 divisions (ADM1, 2017), unmatched 0, no capital 0, license Open Data Commons Open Database License 1.0
+ISL Iceland: 8 divisions (ADM1, 2017), unmatched 0, no capital 0, license Open Data Commons Open Database License 1.0
+KOR South Korea: 17 divisions (ADM1, 2021), unmatched 0, no capital 6, license Public Domain
+HUN Hungary: 19 divisions (ADM1, 2011), unmatched 0, no capital 0, license CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+PRT Portugal: 20 divisions (ADM1, 2016), unmatched 0, no capital 0, license Open Data Commons Open Database License 1.0
+JOR Jordan: 12 divisions (ADM1, 2006), unmatched 0, no capital 0, license Creative Commons Attribution 2.5 Generic
+SRB Serbia: 25 divisions (ADM1, 2017), unmatched 0, no capital 0, license Open Data Commons Open Database License 1.0
+AUT Austria: 9 divisions (ADM1, 2017), unmatched 0, no capital 1, license Creative Commons Attribution-ShareAlike 2.0
+ARE United Arab Emirates: 7 divisions (ADM1, 2017), unmatched 0, no capital 0, license Open Data Commons Open Database License 1.0
+CZE Czechia: 14 divisions (ADM1, 2021), unmatched 0, no capital 1, license Creative Commons Attribution 4.0 International (CC BY 4.0)
+  IRL: 26 divisions from Wikidata P150 + OpenStreetMap
+IRL Ireland: 26 divisions (OpenStreetMap, 2026), unmatched 0, no capital 0, license Open Database License (ODbL) 1.0
+LKA Sri Lanka: 9 divisions (ADM1, 2017), unmatched 0, no capital 0, license Open Data Commons Open Database License 1.0
+LTU Lithuania: 10 divisions (ADM1, 2017), unmatched 0, no capital 0, license Open Data Commons Open Database License 1.0
+HRV Croatia: 21 divisions (ADM1, 2017), unmatched 0, no capital 1, license Open Data Commons Open Database License 1.0
+BIH Bosnia and Herzegovina: 12 divisions (ADM2, 2013), unmatched 0, no capital 0, license Public Domain
+CRI Costa Rica: 7 divisions (ADM1, 2017), unmatched 0, no capital 0, license Open Data Commons Open Database License 1.0
+SVK Slovakia: 8 divisions (ADM1, 2017), unmatched 0, no capital 0, license Open Data Commons Open Database License 1.0
+DOM Dominican Republic: 32 divisions (ADM1, 2022), unmatched 0, no capital 0, license Public Domain
+EST Estonia: 15 divisions (ADM1, 2016), unmatched 0, no capital 0, license Open Data Commons Open Database License 1.0
+DNK Denmark: 5 divisions (ADM1, 2021), unmatched 0, no capital 0, license Creative Commons Attribution 4.0 International (CC BY 4.0)
+NLD Netherlands: 12 divisions (ADM1, 2022), unmatched 0, no capital 0, license CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+CHE Switzerland: 26 divisions (ADM1, 2022), unmatched 0, no capital 0, license Federal Office of Topography swisstopo License
+BEL Belgium: 11 divisions (ADM2, 2015), unmatched 0, no capital 0, license Open Data Commons Open Database License 1.0
+ALB Albania: 12 divisions (ADM1, 2021), unmatched 0, no capital 0, license Public Domain
+RWA Rwanda: 5 divisions (ADM1, 2020), unmatched 0, no capital 1, license Creative Commons Attribution 4.0 (CC BY 4.0)
+  MKD: 71 divisions from Wikidata P150 + OpenStreetMap
+MKD North Macedonia: 71 divisions (OpenStreetMap, 2026), unmatched 0, no capital 10, license Open Database License (ODbL) 1.0
+SLV El Salvador: 14 divisions (ADM1, 2021), unmatched 0, no capital 0, license Creative Commons Attribution-ShareAlike 2.0
+ISR Israel: 6 divisions (ADM1, 2006), unmatched 0, no capital 0, license Public Domain
+KWT Kuwait: 6 divisions (ADM1, 2017), unmatched 0, no capital 1, license Open Data Commons Open Database License 1.0
+QAT Qatar: 8 divisions (ADM1, 2015), unmatched 0, no capital 4, license Creative Commons Attribution 4.0 International (CC BY 4.0)
+LBN Lebanon: 9 divisions (ADM1, 2017), unmatched 0, no capital 1, license Public Domain
+CYP Cyprus: 6 divisions (ADM1, 2017), unmatched 0, no capital 0, license Open Data Commons Open Database License 1.0
+LUX Luxembourg: 12 divisions (ADM1, 2017), unmatched 0, no capital 0, license Open Data Commons Open Database License 1.0
+
+Skipped:
+KAZ Kazakhstan: 2022 reform added Abai, Jetisu and Ulytau; boundary data predates it
+AGO Angola: 2024 reform to 21 provinces; boundary data shows 18
+MLI Mali: 2023 reform to 19 regions; boundary data predates it
+CAF Central African Republic: 2020 reform to 20 prefectures; boundary data shows 17
+MDG Madagascar: 2021 split to 23 regions; boundary data shows 22
+BFA Burkina Faso: 2025 reform to 17 regions; boundary data shows 13
+AZE Azerbaijan: ADM1 holds only the mainland and Nakhchivan; ADM2 is 60+ districts
