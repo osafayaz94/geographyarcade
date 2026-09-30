@@ -193,12 +193,22 @@ function quizLd(lang, p, name, desc, about) {
   return { '@context': 'https://schema.org', '@type': 'Quiz', name, description: desc, url: abs(lang, p), inLanguage: L[lang].hreflang, isAccessibleForFree: true, learningResourceType: 'Quiz', educationalUse: 'practice', about: { '@type': 'Thing', name: about }, dateModified: TODAY, publisher: { '@type': 'Organization', name: SITE, url: DOMAIN + '/' } };
 }
 
-function gameShell(lang, data) {
+// cover: the picture behind the Start button on quizzes without a map, the same art as the
+// quiz's card: { img, tile } for one picture, or { flags: [src...], tile } for a grid of flags.
+const coverImg = (img, tile) => ({ img, tile });
+const coverFlags = (flags, tile = '#6B5CA5') => ({ flags: flags.slice(0, 6), tile });
+function gameShell(lang, data, cover) {
   // Map quizzes: the frame is sized from the map's aspect ratio; app.js loads the map into it.
   const [w, h] = data.ar ? data.ar.split('/').map(Number) : [];
+  const startBox = `<button class="btn start" type="button">${esc(t(lang, 'start'))}</button><span class="note">${esc(t(lang, 'progress', { i: 1, n: data.items.length }))}</span>`;
+  const art = cover && (cover.flags
+    ? `<div class="cflags">${cover.flags.map((src) => `<img src="${src}" alt="" width="64" height="48">`).join('')}</div>`
+    : `<img src="${cover.img}" alt="" width="320" height="190">`);
   const inner = data.ar
     ? `<div class="map" style="--ar:${data.ar};--arn:${(w / h).toFixed(3)}"><div class="maploading">${esc(t(lang, 'loading'))}</div></div><noscript><p>${esc(t(lang, 'noJs'))}</p></noscript>`
-    : `<div class="intro"><button class="btn start" type="button">${esc(t(lang, 'start'))}</button><span class="note">${esc(t(lang, 'progress', { i: 1, n: data.items.length }))}</span></div><noscript><p>${esc(t(lang, 'noJs'))}</p></noscript>`;
+    : cover
+      ? `<div class="cover" style="--tile:${cover.tile}">${art}<div class="cstart">${startBox}</div></div><noscript><p>${esc(t(lang, 'noJs'))}</p></noscript>`
+      : `<div class="intro">${startBox}</div><noscript><p>${esc(t(lang, 'noJs'))}</p></noscript>`;
   return `<section class="game" id="game" aria-label="${esc(data.title)}"><div class="stage">${inner}</div></section>${jsonScript('quiz-data', data)}`;
 }
 
@@ -246,7 +256,10 @@ function continentQuiz(lang, q, scope) {
   if (q.type === 'capitals') for (const c of list.slice(0, 2)) qa.push([t(lang, 'qCapitalFaq', { c: cName(c, lang) }), t(lang, 'capitalIs', { c: cName(c, lang), cap: capOf(c, lang) })]);
   qa.push([t(lang, 'qScoreFaq'), t(lang, 'aScore')]);
   const faq = faqBlock(lang, qa);
-  const body = `<h1>${esc(title)}</h1><p class="lede">${esc(desc)}</p>${gameShell(lang, data)}${answerTable(lang, list, q.type)}${faq.body}${relatedQuizzes(lang, p)}`;
+  const pop = (c) => (c.population && c.population.value) || 0;
+  const cover = q.type === 'flags' ? coverFlags([...list].sort((a, b) => pop(b) - pop(a)).map((c) => flagSrc(c.iso2)))
+    : q.type === 'capitals' ? coverImg(scope === 'world' ? '/img/games/capitals.svg' : `/img/c/${scope}-capitals.svg`, '#3F4A5A') : null;
+  const body = `<h1>${esc(title)}</h1><p class="lede">${esc(desc)}</p>${gameShell(lang, data, cover)}${answerTable(lang, list, q.type)}${faq.body}${relatedQuizzes(lang, p)}`;
   page(lang, p, {
     title, desc, body, script: true, nav: `${q.type}/`,
     crumbs: [{ name: t(lang, { flags: 'hubFlags', capitals: 'hubCapitals', maps: 'hubMaps' }[q.type]), p: `${q.type}/` }, { name: title, p }],
@@ -366,7 +379,7 @@ function planetNamesPage(lang, base, crumbs) {
   const table = `<h2 id="answers">${esc(t(lang, 'answersTitle'))}</h2><div class="tbl"><table><tbody>${planets.map((x) => `<tr><td><img src="/img/planets/${x.id}.svg" alt="" width="40" height="40" loading="lazy" style="box-shadow:none;width:40px;height:40px"></td><td>${esc(nm(x.name, lang))}</td></tr>`).join('')}</tbody></table></div>`;
   const faq = faqBlock(lang, [[tt(lang, 'qPlanetsCount'), tt(lang, 'aPlanetsCount', { list: listJoin(lang, planets.map((x) => nm(x.name, lang))) })], [t(lang, 'qScoreFaq'), t(lang, 'aScore')]]);
   page(lang, p, { title, desc, script: true, crumbs: [...crumbs, { name: title, p }], jsonld: [quizLd(lang, p, title, desc, tt(lang, 'g.solar')), faq.ld],
-    body: `<h1>${esc(title)}</h1><p class="lede">${esc(desc)}</p>${gameShell(lang, data)}${table}${faq.body}<p><a href="${url(lang, base)}">${esc(tt(lang, 'g.solar'))}</a></p>` });
+    body: `<h1>${esc(title)}</h1><p class="lede">${esc(desc)}</p>${gameShell(lang, data, coverImg('/img/games/solar.svg', WORLD_GAMES.find((x) => x.key === 'solar').tile))}${table}${faq.body}<p><a href="${url(lang, base)}">${esc(tt(lang, 'g.solar'))}</a></p>` });
 }
 
 function worldGameCards(lang) {
@@ -534,7 +547,7 @@ function countryGame(lang, g) {
   const faq = faqBlock(lang, qa);
   const note = g.key === 'hemispheres' ? `<p class="note">${esc(tt(lang, 'hemiNote'))}</p>` : '';
   const others = COUNTRY_GAMES.filter((x) => x !== g);
-  const body = `<h1>${esc(title)}</h1><p class="lede">${esc(desc)}</p>${gameShell(lang, data)}${note}${table}${faq.body}`
+  const body = `<h1>${esc(title)}</h1><p class="lede">${esc(desc)}</p>${gameShell(lang, data, coverImg(`/img/games/${g.key}.svg`, g.tile))}${note}${table}${faq.body}`
     + `<h2>${esc(tt(lang, 'moreGames'))}</h2><ul class="links">${others.map((x) => `<li><a href="${url(lang, `games/${x.key}/`)}">${esc(tt(lang, 'g.' + x.key))}</a></li>`).join('')}<li><a href="${url(lang, 'world/')}">${esc(tt(lang, 'worldGames'))}</a></li></ul>`
     + listLinks(lang, LISTS.filter((l) => l.game === p));
   page(lang, p, { title, desc, body, script: true, crumbs: [{ name: label, p }], jsonld: [quizLd(lang, p, title, desc, label), faq.ld] });
@@ -768,11 +781,14 @@ function provinceQuizzes(lang, c) {
     const data = { type: 'pcap', key: `pcap-${c.iso2}-${lang}`, title, items: withCap.map((d) => ({ id: d.id, n: nm(d.name, lang), a: nm(d.capital, lang) })), s: quizStrings(lang) };
     const faq = faqBlock(lang, [...withCap.slice(0, 3).map((d) => [t(lang, 'qCapitalFaq', { c: nm(d.name, lang) }), t(lang, 'capitalIs', { c: nm(d.name, lang), cap: nm(d.capital, lang) })]), [t(lang, 'qScoreFaq'), t(lang, 'aScore')]]);
     page(lang, p, { title, desc, script: true, nav: 'provinces/', crumbs: [...crumbsBase, { name: title, p }], jsonld: [quizLd(lang, p, title, desc, name), faq.ld],
-      body: `<h1>${esc(title)}</h1><p class="lede">${esc(desc)}</p>${gameShell(lang, data)}${table}${faq.body}${other(base + 'map-quiz/', 'provMapQuiz')}` });
+      body: `<h1>${esc(title)}</h1><p class="lede">${esc(desc)}</p>${gameShell(lang, data, coverImg(`/img/p/${c.iso2.toLowerCase()}-capitals.svg`, '#3F4A5A'))}${table}${faq.body}${other(base + 'map-quiz/', 'provMapQuiz')}` });
   }
 }
 
 // ---------- Division flag quizzes (US state flags...) ----------
+// The six smallest flag files (SVG before PNG), so the cover picture loads fast.
+const flagBytes = (c, d) => fs.statSync(path.join(__dirname, 'data', 'division-flags', c.iso2.toLowerCase(), divisionFlags[c.iso2][d.id].file)).size;
+const lightestFlags = (c) => [...subdivisions[c.iso2].divisions].sort((x, y) => flagBytes(c, x) - flagBytes(c, y)).slice(0, 6);
 const flagQuizPath = (c) => `countries/${c.slug}/flags-quiz/`;
 function flagQuizTitle(lang, c) {
   if (c.iso2 === 'US' && seo(lang, 'usFlags')) return seo(lang, 'usFlags');
@@ -793,7 +809,7 @@ function divisionFlagQuiz(lang, c) {
   const faq = faqBlock(lang, [[t(lang, 'qScoreFaq'), t(lang, 'aScore')]]);
   const related = `<h2>${esc(t(lang, 'related'))}</h2><ul class="links"><li><a href="${url(lang, `countries/${c.slug}/map-quiz/`)}">${esc(provQuizTitle(lang, c, 'map'))}</a></li>${hasCapQuiz(c) ? `<li><a href="${url(lang, `countries/${c.slug}/capitals-quiz/`)}">${esc(provQuizTitle(lang, c, 'cap'))}</a></li>` : ''}<li><a href="${url(lang, `countries/${c.slug}/`)}">${esc(name)}</a></li></ul>`;
   page(lang, p, { title, desc, script: true, nav: 'provinces/', crumbs: [{ name: t(lang, 'countriesTitle'), p: 'countries/' }, { name, p: `countries/${c.slug}/` }, { name: title, p }],
-    jsonld: [quizLd(lang, p, title, desc, name), faq.ld], body: `<h1>${esc(title)}</h1><p class="lede">${esc(desc)}</p>${gameShell(lang, data)}${answers}${credits}${faq.body}${related}` });
+    jsonld: [quizLd(lang, p, title, desc, name), faq.ld], body: `<h1>${esc(title)}</h1><p class="lede">${esc(desc)}</p>${gameShell(lang, data, coverFlags(lightestFlags(c).map((d) => `/${base}${meta[d.id].file}`)))}${answers}${credits}${faq.body}${related}` });
 }
 
 // ---------- Extra map quizzes (islands of Hawaii, counties of England...) ----------
@@ -966,7 +982,7 @@ function notFound() {
     write(`img/p/${c.iso2.toLowerCase()}.svg`, await adm1Thumb(c.iso3, subdivisions[c.iso2].divisions));
   }
   // Card pictures for the continent pages.
-  if (hasProv.has('US')) write('img/p/us-capitals.svg', addStar(fs.readFileSync(path.join(DIST, 'img', 'p', 'us.svg'), 'utf8')));
+  for (const c of provCountries) write(`img/p/${c.iso2.toLowerCase()}-capitals.svg`, addStar(fs.readFileSync(path.join(DIST, 'img', 'p', `${c.iso2.toLowerCase()}.svg`), 'utf8')));
   for (const x of EXTRA_SETS) {
     const file = path.join(__dirname, 'data', 'geo', `extra-${x.key}.json`);
     const { svg, ids } = await adm1Svg('x-' + x.key, x.divisions, { file });
