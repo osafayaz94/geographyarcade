@@ -34,6 +34,19 @@ Preview at http://localhost:5520:
 npm run serve
 ```
 
+## Automatic monthly update
+
+`.github/workflows/monthly-update.yml` runs on GitHub at 02:00 UTC on the 1st of every month, and on demand from the repository's Actions tab ("Run workflow"):
+
+1. `npm run fetch`: fresh data from Wikidata, geoBoundaries, OpenStreetMap and Natural Earth.
+2. `node scripts/guard.js <last month's data>`: stops the run, and nothing is published, if a country or a province list disappears, division counts jump, capitals or populations vanish, or a world-game list shrinks. GitHub emails the owner when a run fails; the log lists the problems.
+3. `npm run build`, `npm run check`, `npm run zip`.
+4. `node scripts/deploy.js`: publishes through the Hostinger API with the repository secret `HOSTINGER_API_TOKEN` (hPanel: Account > API).
+5. `node scripts/indexnow.js`: tells Bing about the pages.
+6. Commits the new `data/*.json` so next month compares against it.
+
+Not in the repository (rebuilt each run): `dist/`, `data/geo/`, `data/cache/`, `node_modules/`. GitHub pauses scheduled workflows in repositories with no activity for 60 days; the monthly data commit counts as activity, but if the Actions tab ever shows the workflow as disabled, enable it again there.
+
 ## Deploy (Hostinger)
 
 The site runs on Hostinger (account `u320645487`, website `geographyarcade.com`, files in `public_html`). A deploy is five steps, all automatic when Claude has the Hostinger connector:
