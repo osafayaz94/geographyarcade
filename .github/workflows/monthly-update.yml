@@ -9,6 +9,9 @@ on:
   schedule:
     - cron: '0 2 1 * *' # 02:00 UTC on the 1st of every month (07:00 in Pakistan)
   workflow_dispatch:
+  push: # a change to the site's code or settings: rebuild and publish
+    branches: [main]
+    paths-ignore: ['data/**', 'docs/**', '**.md']
 
 permissions:
   contents: write # to save this month's data back to the repository
@@ -34,6 +37,9 @@ jobs:
 
       - name: Download fresh data
         run: npm run fetch
+
+      - name: Hold back suspicious name changes (vandalism, glitches)
+        run: node scripts/stabilize.js /tmp/baseline
 
       - name: Check the new data (stops here if something looks broken)
         run: node scripts/guard.js /tmp/baseline
@@ -62,4 +68,6 @@ jobs:
           git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
           git add data/*.json data/division-flags
           git diff --cached --quiet || git commit -m "Monthly data update $(date -u +%Y-%m-%d)"
+          # Code may have been pushed while this ran: put the data commit on top of it.
+          git pull --rebase -q
           git push
