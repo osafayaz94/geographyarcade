@@ -78,7 +78,7 @@ Object.values(pages).forEach((p) => {
   if (p.noindex) return;
 
   // Latin-script length guidance (non-Latin scripts are measured differently by Google).
-  if (/^(en|es|fr|de|pt|ru)/.test(p.lang)) {
+  if (/^(en|es|fr|de|pt|ru|id|it)/.test(p.lang)) {
     if (p.title.length > 65) warnings.push(`${where}: title ${p.title.length} chars`);
     if (decode(p.desc).length > 165) warnings.push(`${where}: description ${decode(p.desc).length} chars`);
   }

@@ -1,21 +1,24 @@
-// Adds names in extra site languages (Urdu, Russian, Portuguese, German) to data/countries.json and
-// data/subdivisions.json. Runs after the other fetch scripts and asks Wikidata for labels
+// Adds names in extra site languages (Urdu, Russian, Portuguese, German, Indonesian, Italian,
+// Japanese, Korean) to data/countries.json, data/subdivisions.json and data/extra-maps.json. Runs after the other fetch scripts and asks Wikidata for labels
 // only, which is far quicker than re-downloading every entity.
 const fs = require('fs');
 const path = require('path');
 const { cachedFetch } = require('./wikidata');
 
-const EXTRA = { ur: ['ur'], ru: ['ru'], pt: ['pt-br', 'pt'], de: ['de'] };
+const EXTRA = { ur: ['ur'], ru: ['ru'], pt: ['pt-br', 'pt'], de: ['de'], id: ['id'], it: ['it'], ja: ['ja'], ko: ['ko'] };
 const DATA = path.join(__dirname, '..', 'data');
 const cFile = path.join(DATA, 'countries.json');
 const sFile = path.join(DATA, 'subdivisions.json');
 const countries = JSON.parse(fs.readFileSync(cFile, 'utf8'));
 const subs = JSON.parse(fs.readFileSync(sFile, 'utf8'));
+const xFile = path.join(DATA, 'extra-maps.json');
+const extra = fs.existsSync(xFile) ? JSON.parse(fs.readFileSync(xFile, 'utf8')) : {};
 
 (async () => {
   const ids = new Set();
   for (const c of countries) { ids.add(c.qid); for (const k of c.capitals) ids.add(k.qid); }
   for (const s of Object.values(subs)) for (const d of s.divisions) { ids.add(d.qid); ids.add(d.capitalQid); }
+  for (const x of Object.values(extra)) for (const d of x.divisions) { ids.add(d.qid); ids.add(d.capitalQid); }
   const list = [...ids].filter(Boolean);
   const langs = Object.values(EXTRA).flat().join('|');
   const lab = {};
@@ -39,6 +42,8 @@ const subs = JSON.parse(fs.readFileSync(sFile, 'utf8'));
     fill(d.capital, d.capitalQid);
     for (const l of Object.keys(EXTRA)) if (!d.name[l]) divMissing++;
   }
+  for (const x of Object.values(extra)) for (const d of x.divisions) { fill(d.name, d.qid); fill(d.capital, d.capitalQid); }
+  if (fs.existsSync(xFile)) fs.writeFileSync(xFile, JSON.stringify(extra, null, 1));
   fs.writeFileSync(cFile, JSON.stringify(countries, null, 1));
   fs.writeFileSync(sFile, JSON.stringify(subs, null, 1));
   console.log(`Labels for ${list.length} items. Countries missing a name: ${missing.join(', ') || 'none'}. Division names falling back to English: ${divMissing}.`);

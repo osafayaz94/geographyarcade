@@ -23,6 +23,9 @@ img{max-width:100%;height:auto}
 h1,h2,h3{font-family:var(--head);line-height:1.15;letter-spacing:-.01em;margin:0 0 .5em}
 /* The heading font covers Latin only; other scripts use the body font. Urdu uses Nastaliq, which needs tall lines. */
 html:not(.lat) :is(h1,h2,h3){font-family:var(--body);letter-spacing:0}
+html[lang=ja]{--body:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic","Meiryo","Noto Sans JP",system-ui,sans-serif}
+html[lang=ko]{--body:"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",system-ui,sans-serif}
+:lang(ja) body,:lang(ko) body{line-height:1.75}
 html[lang=ur]{--body:"Noto Nastaliq Urdu","Jameel Noori Nastaleeq","Urdu Typesetting",system-ui,sans-serif}
 html[lang=ur] body{line-height:2.1}
 html[lang=ur] :is(h1,h2,h3,.prompt,.opt,.answer,.lede){line-height:2}

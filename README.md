@@ -1,10 +1,10 @@
 # Geography Arcade
 
-Free geography quizzes: flags, capital cities, click-the-country maps, and provinces/states. Static HTML, 10 languages, no server code.
+Free geography quizzes: flags, capital cities, click-the-country maps, and provinces/states. Static HTML, 15 languages, no server code.
 
 - **195 countries:** the 193 UN member states plus the two observer states (Vatican City, Palestine).
-- **Provinces and states** (names, capitals, population, area, map) for the 100 largest countries by area, plus the smaller countries listed in `extraProvinceCountries` (site.config.js), such as Switzerland, the Netherlands and Belgium. Each continent page shows a stamp for every one of them.
-- **Languages:** English (root), Chinese (`/zh/`), Hindi (`/hi/`), Spanish (`/es/`), Arabic (`/ar/`, right to left), French (`/fr/`), Bengali (`/bn/`), Portuguese (`/pt/`, Brazilian), Russian (`/ru/`), Urdu (`/ur/`, right to left; uses the Nastaliq font built into Android and iOS, no download). Every page exists in every language.
+- **Provinces and states** (names, capitals, population, area, map) for 131 countries: 107 of the largest by area, plus the smaller countries listed in `extraProvinceCountries` (site.config.js), such as Switzerland, the Netherlands and Belgium. Each continent page shows a stamp for every one of them.
+- **Languages:** English (root), Chinese (`/zh/`), Hindi (`/hi/`), Spanish (`/es/`), Arabic (`/ar/`, right to left), French (`/fr/`), Bengali (`/bn/`), Portuguese (`/pt/`, Brazilian), Russian (`/ru/`), Urdu (`/ur/`, right to left; uses the Nastaliq font built into Android and iOS, no download), German (`/de/`), Indonesian (`/id/`), Italian (`/it/`), Japanese (`/ja/`) and Korean (`/ko/`). Every page exists in every language. Indonesian, Italian, Japanese and Korean were added on 2026-10-01 and still need a native speaker's review.
 
 The site is **Geography Arcade** at https://geographyarcade.com (`siteName` and `domain` in `site.config.js`; `aliasDomains` lists hostnames such as www that 301-redirect to it).
 
@@ -74,7 +74,7 @@ Nothing on the site changes daily, so rebuild when the data changes (every few m
 
 ## Keyword map
 
-`npm run keywords` writes `docs/keywords.csv`: about 970 English keywords, each mapped to the one page built to rank for it, grouped into clusters (site, regions, countries, provinces and states, world games, country games, lists and rankings). The script also checks that every target page exists and mentions its keyword. The same pages exist in 10 more languages, which target the translated searches.
+`npm run keywords` writes `docs/keywords.csv`: about 970 English keywords, each mapped to the one page built to rank for it, grouped into clusters (site, regions, countries, provinces and states, world games, country games, lists and rankings). The script also checks that every target page exists and mentions its keyword. The same pages exist in 14 more languages, which target the translated searches.
 
 The CSV has empty `monthly_searches_google` and `monthly_searches_bing` columns: no search-volume data is built in, so fill them from Google Keyword Planner, Search Console or Bing Webmaster Tools.
 
@@ -149,7 +149,7 @@ Data: `npm run fetch` also runs `scripts/fetch-physical.js` and `scripts/fetch-p
 
 | What | Source | Licence |
 |---|---|---|
-| Country and province names in 11 languages, capitals, population, province area | Wikidata | CC0 |
+| Country and province names in 15 languages, capitals, population, province area | Wikidata | CC0 |
 | ISO codes, country area, borders, languages, currencies | world-countries | ODbL |
 | Country boundaries | Natural Earth 1:50m via world-atlas | Public domain |
 | Province boundaries | geoBoundaries gbOpen ADM1 | Per country, listed on `/about/` |
