@@ -30,8 +30,18 @@ async function api(method, path, body) {
   const name = await upload(up.url, up.auth_key, up.rest_auth_key);
   await api('POST', `/accounts/${USER}/websites/${DOMAIN}/deploy`, { archive_path: name });
   console.log(`Deploy of ${name} to ${DOMAIN} accepted.`);
-  // Unpacking runs on Hostinger's side; give it time before clearing the cache.
-  await new Promise((r) => setTimeout(r, 90 * 1000));
-  await api('DELETE', `/accounts/${USER}/websites/${DOMAIN}/cache/clear`);
-  console.log('Cache cleared.');
+  // Unpacking runs on Hostinger's side and the cache clear can fail while it does (HTTP 500 seen),
+  // so wait, retry, and only warn if it keeps failing: the site is already published, and
+  // cached pages expire within an hour anyway (.htaccess sets max-age 3600).
+  for (let attempt = 1; attempt <= 5; attempt++) {
+    await new Promise((r) => setTimeout(r, 90 * 1000));
+    try {
+      await api('DELETE', `/accounts/${USER}/websites/${DOMAIN}/cache/clear`);
+      console.log('Cache cleared.');
+      return;
+    } catch (e) {
+      console.log(`Cache clear attempt ${attempt} failed: ${e.message.split('\n')[0]}`);
+    }
+  }
+  console.log('::warning::Published, but Hostinger did not clear the cache; pages refresh within an hour.');
 })().catch((e) => { console.error(e.message); process.exit(1); });
