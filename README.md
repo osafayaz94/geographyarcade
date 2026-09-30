@@ -41,7 +41,7 @@ npm run serve
 1. `npm run fetch`: fresh data from Wikidata, geoBoundaries, OpenStreetMap and Natural Earth.
 2. `node scripts/guard.js <last month's data>`: stops the run, and nothing is published, if a country or a province list disappears, division counts jump, capitals or populations vanish, or a world-game list shrinks. GitHub emails the owner when a run fails; the log lists the problems.
 3. `npm run build`, `npm run check`, `npm run zip`.
-4. `node scripts/deploy.js`: publishes through the Hostinger API with the repository secret `HOSTINGER_API_TOKEN` (hPanel: Account > API).
+4. `node scripts/deploy.js`: publishes through the Hostinger API with the repository secret `HOSTINGER_API_TOKEN_GEOGRAPHY` (hPanel: Account > API).
 5. `node scripts/indexnow.js`: tells Bing about the pages.
 6. Commits the new `data/*.json` so next month compares against it.
 
