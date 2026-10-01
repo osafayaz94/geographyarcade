@@ -51,6 +51,8 @@ const GRAM = {
 
 const S = {
   en: {
+    cfaTitle: "Countries that use the CFA franc",
+    cfaAnswer: "{n} countries use a CFA franc: {w} use the West African CFA franc and {m} the Central African CFA franc. They include {next}.",
     qSetFaq: "Which {term} of {c} are in this quiz?",
     aSetFaq: "The quiz asks about {n} {term} of {c}, including {list}.",
     contactTitle: "Contact",
@@ -81,6 +83,8 @@ const S = {
     contDescLanguages: 'Pick an official language of each country of {of}. {n} countries, with every answer listed on the page.',
   },
   zh: {
+    cfaTitle: "使用非洲法郎（CFA法郎）的国家",
+    cfaAnswer: "共有 {n} 个国家使用非洲法郎：{w} 个使用西非法郎，{m} 个使用中非法郎，包括{next}。",
     qSetFaq: "这个测验包括{c}的哪些{term}？",
     aSetFaq: "测验涉及{c}的 {n} 个{term}，包括{list}。",
     contactTitle: "联系我们",
@@ -111,6 +115,8 @@ const S = {
     contDescLanguages: '为{of}的每个国家选出一种官方语言。共 {n} 个国家，页面列出全部答案。',
   },
   hi: {
+    cfaTitle: "सीएफ़ए फ़्रैंक इस्तेमाल करने वाले देश",
+    cfaAnswer: "{n} देश सीएफ़ए फ़्रैंक इस्तेमाल करते हैं: {w} पश्चिम अफ़्रीकी सीएफ़ए फ़्रैंक और {m} मध्य अफ़्रीकी सीएफ़ए फ़्रैंक। इनमें {next} शामिल हैं।",
     qSetFaq: "इस क्विज़ में {c} {ke} {kaun} {term} हैं?",
     aSetFaq: "क्विज़ में {c} {ke} {n} {term} शामिल हैं, जैसे {list}।",
     contactTitle: "संपर्क",
@@ -141,6 +147,8 @@ const S = {
     contDescLanguages: '{of} के हर देश की एक आधिकारिक भाषा चुनिए। {n} देश, और सारे उत्तर इसी पेज पर।',
   },
   es: {
+    cfaTitle: "Países que usan el franco CFA",
+    cfaAnswer: "{n} países usan un franco CFA: {w} el franco CFA de África Occidental y {m} el de África Central. Entre ellos: {next}.",
     qSetFaq: "¿Qué {term} de {c} incluye este quiz?",
     aSetFaq: "El quiz pregunta por {n} {term} de {c}, entre ellas {list}.",
     contactTitle: "Contacto",
@@ -171,6 +179,8 @@ const S = {
     contDescLanguages: 'Elige un idioma oficial de cada país {of}. {n} países, con todas las respuestas en la página.',
   },
   ar: {
+    cfaTitle: "الدول التي تستخدم فرنك CFA",
+    cfaAnswer: "تستخدم {n} دولة فرنك CFA: {w} تستخدم فرنك غرب أفريقيا و{m} تستخدم فرنك وسط أفريقيا، منها {next}.",
     qSetFaq: "ما {term} {c} التي يشملها هذا الاختبار؟",
     aSetFaq: "يسأل الاختبار عن {n} من {term} {c}، منها {list}.",
     contactTitle: "تواصل معنا",
@@ -201,6 +211,8 @@ const S = {
     contDescLanguages: 'اختر لغة رسمية لكل دولة في {of}. {n} دولة، مع جميع الإجابات في الصفحة.',
   },
   fr: {
+    cfaTitle: "Pays qui utilisent le franc CFA",
+    cfaAnswer: "{n} pays utilisent un franc CFA : {w} le franc CFA d'Afrique de l'Ouest et {m} le franc CFA d'Afrique centrale. Parmi eux : {next}.",
     qSetFaq: "Quelles {term} de {c} sont dans ce quiz ?",
     aSetFaq: "Le quiz porte sur {n} {term} de {c}, dont {list}.",
     contactTitle: "Contact",
@@ -231,6 +243,8 @@ const S = {
     contDescLanguages: 'Choisissez une langue officielle de chaque pays {of}. {n} pays, avec toutes les réponses sur la page.',
   },
   de: {
+    cfaTitle: "Länder mit dem CFA-Franc",
+    cfaAnswer: "{n} Länder nutzen einen CFA-Franc: {w} den westafrikanischen und {m} den zentralafrikanischen CFA-Franc. Darunter: {next}.",
     qSetFaq: "Welche {term} von {c} kommen in diesem Quiz vor?",
     aSetFaq: "Das Quiz fragt nach {n} {term} von {c}, darunter {list}.",
     contactTitle: "Kontakt",
@@ -261,6 +275,8 @@ const S = {
     contDescLanguages: 'Wähle eine Amtssprache jedes Landes {of}. {n} Länder, mit allen Antworten auf der Seite.',
   },
   bn: {
+    cfaTitle: "সিএফএ ফ্রাঁ ব্যবহারকারী দেশ",
+    cfaAnswer: "{n}টি দেশ সিএফএ ফ্রাঁ ব্যবহার করে: {w}টি পশ্চিম আফ্রিকান এবং {m}টি মধ্য আফ্রিকান সিএফএ ফ্রাঁ। এর মধ্যে আছে {next}।",
     qSetFaq: "এই কুইজে {c}-এর কোন কোন {term} আছে?",
     aSetFaq: "কুইজে {c}-এর {n}টি {term} নিয়ে প্রশ্ন আছে, যেমন {list}।",
     contactTitle: "যোগাযোগ",
@@ -291,6 +307,8 @@ const S = {
     contDescLanguages: '{of} প্রতিটি দেশের একটি সরকারি ভাষা বেছে নিন। {n}টি দেশ, সব উত্তর এই পাতায়।',
   },
   pt: {
+    cfaTitle: "Países que usam o franco CFA",
+    cfaAnswer: "{n} países usam um franco CFA: {w} o franco CFA da África Ocidental e {m} o da África Central. Entre eles: {next}.",
     qSetFaq: "Quais {term} de {c} estão neste quiz?",
     aSetFaq: "O quiz pergunta sobre {n} {term} de {c}, entre elas {list}.",
     contactTitle: "Contato",
@@ -321,6 +339,8 @@ const S = {
     contDescLanguages: 'Escolha um idioma oficial de cada país {of}. {n} países, com todas as respostas na página.',
   },
   ru: {
+    cfaTitle: "Страны, где используется франк КФА",
+    cfaAnswer: "Франк КФА используется в странах (всего {n}): западноафриканский в {w}, центральноафриканский в {m}. Среди них {next}.",
     qSetFaq: "Какие {term} ({c}) есть в этой викторине?",
     aSetFaq: "В викторине {n} вопросов о местах ({c}: {term}), среди них {list}.",
     contactTitle: "Контакты",
@@ -351,6 +371,8 @@ const S = {
     contDescLanguages: 'Выберите официальный язык каждой страны {of} (всего {n}). Все ответы на странице.',
   },
   ur: {
+    cfaTitle: "سی ایف اے فرانک استعمال کرنے والے ممالک",
+    cfaAnswer: "{n} ممالک سی ایف اے فرانک استعمال کرتے ہیں: {w} مغربی افریقی اور {m} وسطی افریقی سی ایف اے فرانک۔ ان میں {next} شامل ہیں۔",
     qSetFaq: "اس کوئز میں {c} {ke} {kaun} {term} شامل ہیں؟",
     aSetFaq: "کوئز میں {c} {ke} {n} {term} شامل ہیں، جیسے {list}۔",
     contactTitle: "رابطہ",
@@ -381,6 +403,8 @@ const S = {
     contDescLanguages: '{of} کے ہر ملک کی ایک سرکاری زبان چنیں۔ {n} ممالک، اور تمام جوابات اسی صفحے پر۔',
   },
   id: {
+    cfaTitle: "Negara yang memakai franc CFA",
+    cfaAnswer: "{n} negara memakai franc CFA: {w} memakai franc CFA Afrika Barat dan {m} franc CFA Afrika Tengah, di antaranya {next}.",
     qSetFaq: "{term} {c} mana saja yang ada di kuis ini?",
     aSetFaq: "Kuis ini menanyakan {n} {term} {c}, di antaranya {list}.",
     contactTitle: "Kontak",
@@ -411,6 +435,8 @@ const S = {
     contDescLanguages: 'Pilih satu bahasa resmi setiap negara di {of}. {n} negara, dan semua jawaban ada di halaman ini.',
   },
   it: {
+    cfaTitle: "Paesi che usano il franco CFA",
+    cfaAnswer: "{n} paesi usano un franco CFA: {w} il franco CFA dell'Africa occidentale e {m} quello dell'Africa centrale. Tra questi: {next}.",
     qSetFaq: "Quali {term} di {c} ci sono in questo quiz?",
     aSetFaq: "Il quiz chiede di {n} {term} di {c}, tra cui {list}.",
     contactTitle: "Contatti",
@@ -441,6 +467,8 @@ const S = {
     contDescLanguages: 'Scegli una lingua ufficiale di ogni paese {of}. {n} paesi, con tutte le risposte nella pagina.',
   },
   ja: {
+    cfaTitle: "CFAフランを使う国",
+    cfaAnswer: "CFAフランを使う国は{n}か国です（西アフリカCFAフラン{w}か国、中部アフリカCFAフラン{m}か国）。たとえば{next}。",
     qSetFaq: "このクイズに出てくる{c}の{term}は？",
     aSetFaq: "クイズでは{c}の{term}を{n}か所出題します。たとえば{list}です。",
     contactTitle: "お問い合わせ",
@@ -471,6 +499,8 @@ const S = {
     contDescLanguages: '{of}の各国の公用語を1つ選ぼう。{n}か国、答えはすべてこのページに掲載。',
   },
   ko: {
+    cfaTitle: "CFA 프랑을 쓰는 나라",
+    cfaAnswer: "CFA 프랑을 쓰는 나라는 {n}개국입니다(서아프리카 CFA 프랑 {w}개국, 중앙아프리카 CFA 프랑 {m}개국). 예: {next}.",
     qSetFaq: "이 퀴즈에는 {c}의 어떤 {term}이(가) 나오나요?",
     aSetFaq: "퀴즈에서는 {c}의 {term} {n}곳을 묻습니다. 예를 들어 {list} 등이 있습니다.",
     contactTitle: "문의",

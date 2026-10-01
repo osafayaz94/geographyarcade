@@ -5,7 +5,7 @@ const config = require('./site.config');
 const { L, LANGS, CONT_KEYS, t } = require('./src/i18n');
 const { countryShapes, continentSvg, adm1Svg, adm1Thumb, continentThumb, addStar, regionArt, physSvg, latLongSvg, hemispheres, countryGameArt, LAT_LINES } = require('./src/maps');
 const { T, tt } = require('./src/terms');
-for (const l of LANGS) if (T[l]) T[l]['g.shapes'] = t(l, 'hubShapes');
+for (const l of LANGS) if (T[l]) Object.assign(T[l], { 'g.shapes': t(l, 'hubShapes'), 'l.cfa.t': L[l].s.cfaTitle, 'l.cfa.a': L[l].s.cfaAnswer });
 const { DIAGRAMS } = require('./src/diagrams');
 const { planetSvg, solarSystemSvg } = require('./src/planets');
 const { SCENES } = require('./src/scenes');
@@ -732,6 +732,9 @@ const LISTS = [
   { key: 'neighbours', slug: 'countries-with-most-neighbours', kind: 'rank', rows: () => countries.filter((c) => c.borders.length).sort((a, b) => b.borders.length - a.borders.length || byArea(a, b)), value: (lang, c) => num(lang, c.borders.length), thT: 'thNeighbours', game: 'games/neighbours/' },
   { key: 'equator', slug: 'countries-on-the-equator', kind: 'set', rows: () => countries.filter((c) => HEMI[c.iso2] && HEMI[c.iso2].ns === 'B').sort(byArea), game: 'games/hemispheres/' },
   { key: 'south', slug: 'southern-hemisphere-countries', kind: 'set', rows: () => countries.filter((c) => HEMI[c.iso2] && HEMI[c.iso2].ns === 'S').sort(byArea), game: 'games/hemispheres/' },
+  // Both CFA francs together: people search for "the CFA franc" and how many countries use it.
+  { key: 'cfa', slug: 'countries-using-cfa-franc', kind: 'set', rows: () => countries.filter((c) => c.currencies.some((x) => x.code === 'XOF' || x.code === 'XAF')).sort(byArea), game: 'games/currencies/',
+    vars: () => ({ w: countries.filter((c) => c.currencies.some((x) => x.code === 'XOF')).length, m: countries.filter((c) => c.currencies.some((x) => x.code === 'XAF')).length }) },
   ...[['EUR', 'euro'], ['USD', 'us-dollar'], ['XOF', 'west-african-cfa-franc'], ['XAF', 'central-african-cfa-franc']].map(([code, s]) => ({
     key: 'cur', code, slug: `countries-using-${s}`, kind: 'set', rows: () => countries.filter((c) => c.currencies.some((x) => x.code === code)).sort(byArea), game: 'games/currencies/',
     // English runs names like "Euro" inside a sentence, so use normal lower-case forms there.
@@ -754,9 +757,9 @@ function listPage(lang, l) {
   const top = rows[0];
   const topName = l.key === 'neighbours' ? listJoin(lang, rows.filter((c) => c.borders.length === top.borders.length).map(nameOf)) : nameOf(top);
   const nextList = l.key === 'equator' ? rows : l.kind === 'rank' ? rows.slice(1, 3) : rows.slice(0, 4);
-  const answer = tt(lang, `l.${l.key}.a`, { top: topName, v: l.value ? l.value(lang, top) : '', next: listJoin(lang, nextList.map(nameOf)), n: rows.length, x: l.x ? l.x(lang) : '' });
+  const answer = tt(lang, `l.${l.key}.a`, { ...(l.vars ? l.vars() : {}), top: topName, v: l.value ? l.value(lang, top) : '', next: listJoin(lang, nextList.map(nameOf)), n: rows.length, x: l.x ? l.x(lang) : '' });
   // The meta description names at most three countries so it fits in a search result.
-  const short = tt(lang, `l.${l.key}.a`, { top: topName, v: l.value ? l.value(lang, top) : '', next: listJoin(lang, nextList.slice(0, 3).map(nameOf)), n: rows.length, x: l.x ? l.x(lang) : '' });
+  const short = tt(lang, `l.${l.key}.a`, { ...(l.vars ? l.vars() : {}), top: topName, v: l.value ? l.value(lang, top) : '', next: listJoin(lang, nextList.slice(0, 3).map(nameOf)), n: rows.length, x: l.x ? l.x(lang) : '' });
   const desc = `${short} ${tt(lang, 'l.more')}`;
   const valueHead = l.th ? t(lang, l.th) : l.thT ? tt(lang, l.thT) : '';
   const table = `<div class="tbl"><table><thead><tr><th class="num">${esc(tt(lang, 'l.rank'))}</th><th>${esc(t(lang, 'thFlag'))}</th><th>${esc(t(lang, 'thCountry'))}</th><th>${esc(t(lang, 'thCapital'))}</th>${valueHead ? `<th class="num">${esc(valueHead)}</th>` : ''}</tr></thead><tbody>${rows.map((c, i) => `<tr><td class="num">${i + 1}</td><td><img src="${flagSrc(c.iso2)}" alt="" width="32" height="24" loading="lazy"></td><td><a href="${url(lang, `countries/${c.slug}/`)}">${esc(nameOf(c))}</a></td><td>${esc(capsOf(c, lang).join(', '))}</td>${valueHead ? `<td class="num">${l.value(lang, c)}</td>` : ''}</tr>`).join('')}</tbody></table></div>`;
