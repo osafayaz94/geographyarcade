@@ -9,6 +9,7 @@ for (const l of LANGS) if (T[l]) T[l]['g.shapes'] = t(l, 'hubShapes');
 const { DIAGRAMS } = require('./src/diagrams');
 const { planetSvg, solarSystemSvg } = require('./src/planets');
 const { SCENES } = require('./src/scenes');
+const og = require('./src/og');
 const divisionTerm = require('./data/division-terms');
 const nameFixes = require('./data/name-fixes');
 
@@ -111,6 +112,54 @@ const LOGO = '<svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16
 
 const sitemap = Object.fromEntries(LANGS.map((l) => [l, []]));
 
+// Social preview card for a page, chosen from its path (cards are made in main(), see makeOgCards).
+const OG = new Set();
+function ogName(p) {
+  let m;
+  if (p === '') return 'home';
+  if ((m = p.match(/^(flags|capitals|maps|guess-the-country)\/(?:([a-z-]+)\/)?$/))) return `${m[1]}-${m[2] || 'world'}`;
+  if ((m = p.match(/^([a-z-]+)\/$/)) && REGIONS.some((r) => r.key === m[1])) return `region-${m[1]}`;
+  if ((m = p.match(/^countries\/([a-z0-9-]+)\/(?:([a-z0-9-]+)\/)?$/))) {
+    const c = countries.find((x) => x.slug === m[1]);
+    if (!c) return 'home';
+    if (!m[2]) return `country-${c.iso2.toLowerCase()}`;
+    const x = EXTRA_SETS.find((e) => e.c === c && (e.slug === m[2] || e.capSlug === m[2]));
+    return x ? `x-${x.key}` : `prov-${c.iso2.toLowerCase()}`;
+  }
+  if ((m = p.match(/^games\/([a-z]+)\//))) return `game-${m[1]}`;
+  if ((m = p.match(/^world\/([a-z-]+)\//))) { const g = WORLD_GAMES.find((x) => gamePath(x) === `world/${m[1]}/`); if (g) return `wg-${g.key}`; }
+  return 'home';
+}
+function ogFor(p) {
+  const n = ogName(p);
+  if (OG.has(n)) return n;
+  const country = n.startsWith('prov-') && `country-${n.slice(5)}`;
+  return country && OG.has(country) ? country : 'home';
+}
+// Builds every card from artwork already written to dist/ (run before the pages).
+function makeOgCards() {
+  const read = (rel) => fs.readFileSync(path.join(DIST, rel), 'utf8');
+  const flagDir = path.join(path.dirname(require.resolve('flag-icons/package.json')), 'flags', '4x3');
+  const flag = (iso2) => fs.readFileSync(path.join(flagDir, `${iso2.toLowerCase()}.svg`), 'utf8');
+  const logo = LOGO.replace('<svg', '<svg xmlns="http://www.w3.org/2000/svg"').replace(' aria-hidden="true"', '');
+  const pop = (c) => (c.population && c.population.value) || 0;
+  const cards = [['home', og.single(read('img/world.svg'), '#C97B2C', logo)]];
+  for (const r of REGIONS) cards.push([`region-${r.key}`, og.single(read(`img/${r.key}.svg`), r.tile, logo)]);
+  for (const sc of QUIZ_SCOPES) {
+    const list = inScope(sc);
+    cards.push([`maps-${sc}`, og.single(read(sc === 'world' ? 'img/games/countries.svg' : `img/c/${sc}.svg`), '#2B5F73', logo)]);
+    cards.push([`capitals-${sc}`, og.single(read(sc === 'world' ? 'img/games/capitals.svg' : `img/c/${sc}-capitals.svg`), '#3F4A5A', logo)]);
+    cards.push([`flags-${sc}`, og.grid([...list].sort((a, b) => pop(b) - pop(a)).slice(0, 6).map((c) => flag(c.iso2)), '#6B5CA5', logo)]);
+    cards.push([`guess-the-country-${sc}`, og.grid([...list].filter(hasShape).sort((a, b) => b.area - a.area).slice(0, 6).map((c) => SHAPES[c.iso2]), '#2B5F73', logo)]);
+  }
+  for (const c of countries) cards.push([`country-${c.iso2.toLowerCase()}`, og.pair(flag(c.iso2), SHAPES[c.iso2], '#2B5F73', logo)]);
+  for (const c of provCountries) cards.push([`prov-${c.iso2.toLowerCase()}`, og.single(read(`img/p/${c.iso2.toLowerCase()}.svg`), '#2B5F73', logo)]);
+  for (const x of EXTRA_SETS) cards.push([`x-${x.key}`, og.single(read(`img/x/${x.key}.svg`), '#2B5F73', logo)]);
+  for (const g of COUNTRY_GAMES) cards.push([`game-${g.key}`, og.single(read(`img/games/${g.key}.svg`), g.tile, logo)]);
+  for (const g of WORLD_GAMES.filter((x) => x.type !== 'link')) cards.push([`wg-${g.key}`, og.single(read(`img/games/${g.key}.svg`), g.tile, logo)]);
+  for (const [name, svg] of cards) { write(`img/og/${name}.png`, og.png(svg)); OG.add(name); }
+}
+
 // One page in one language. `p` is the language-free path, e.g. "flags/africa/".
 function page(lang, p, { title, desc, body, crumbs = [], jsonld = [], preload, script = false, nav, noindex = false }) {
   const Ls = L[lang];
@@ -141,7 +190,7 @@ function page(lang, p, { title, desc, body, crumbs = [], jsonld = [], preload, s
 ${noindex ? '' : `<link rel="canonical" href="${abs(lang, p)}">`}
 ${alts}
 <meta name="robots" content="${noindex ? 'noindex' : 'index,follow,max-snippet:-1,max-image-preview:large'}">
-<meta property="og:type" content="website"><meta property="og:site_name" content="${esc(SITE)}"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}"><meta property="og:url" content="${abs(lang, p)}"><meta property="og:locale" content="${Ls.locale.replace('-', '_')}">
+<meta property="og:type" content="website"><meta property="og:site_name" content="${esc(SITE)}"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}"><meta property="og:url" content="${abs(lang, p)}"><meta property="og:locale" content="${Ls.locale.replace('-', '_')}"><meta property="og:image" content="${DOMAIN}/img/og/${ogFor(p)}.png"><meta property="og:image:width" content="${og.OG_W}"><meta property="og:image:height" content="${og.OG_H}"><meta property="og:image:alt" content="${esc(title)}"><meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#EAF1EF" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0E1A24" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 ${config.googleVerification ? `<meta name="google-site-verification" content="${esc(config.googleVerification)}">` : ''}${config.bingVerification ? `<meta name="msvalidate.01" content="${esc(config.bingVerification)}">` : ''}
@@ -1183,6 +1232,8 @@ function notFound() {
     if (g.key === 'shapes') art = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 190">${['BR', 'IN', 'IT', 'AU', 'JP', 'GB'].map((iso2, i) => SHAPES[iso2].replace('<svg xmlns="http://www.w3.org/2000/svg"', `<svg x="${8 + (i % 3) * 102}" y="${6 + Math.floor(i / 3) * 90}" width="100" height="86"`)).join('')}</svg>`;
     if (art) write(`img/games/${g.key}.svg`, art);
   }
+
+  makeOgCards();
 
   for (const lang of LANGS) {
     home(lang);

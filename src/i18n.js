@@ -22,7 +22,7 @@ L.en = {
     setMapDesc: 'Find {n} {term} of {c} on the map. Scored, with every answer listed on the page.', provFlagQuiz: '{Term} of {c}: flags quiz', provFlagDesc: 'Name the {term} of {c} from their flags. {n} flags, multiple choice, with every answer listed on the page.', qDivFlag: 'Whose flag is this?', flagCredits: 'Flag images', moreMaps: 'More map quizzes',
     navHome: 'Home', navFlags: 'Flags', navCapitals: 'Capitals', navMaps: 'Maps', navCountries: 'Countries', navProvinces: 'Provinces', navAbout: 'Sources',
     language: 'Language',
-    homeTitle: 'Geography games and quizzes: flags, capitals, maps and provinces',
+    homeTitle: 'Geography games and quizzes: flags, capitals and maps',
     homeDesc: 'Free geography quizzes on the flags, capitals and map of all {n} countries, plus provinces and states of {m} countries. No sign-up.',
     homeH1: 'Geography games and quizzes: flags, capitals, maps and provinces',
     homeIntro: 'Quizzes on all {n} countries and on the provinces and states of {m} of them. Free, no sign-up, and your best scores stay on this device.',
