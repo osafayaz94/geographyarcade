@@ -26,9 +26,25 @@ async function api(method, path, body) {
 (async () => {
   if (!TOKEN) throw new Error('Set HOSTINGER_API_TOKEN (hPanel: Account > API) to deploy.');
   if (!USER) throw new Error('Set hostingerUsername in site.config.js.');
-  const up = await api('POST', '/files/upload-urls', { username: USER, domain: DOMAIN });
-  const name = await upload(up.url, up.auth_key, up.rest_auth_key);
-  await api('POST', `/accounts/${USER}/websites/${DOMAIN}/deploy`, { archive_path: name });
+  const send = async () => {
+    const up = await api('POST', '/files/upload-urls', { username: USER, domain: DOMAIN });
+    return upload(up.url, up.auth_key, up.rest_auth_key);
+  };
+  // The deploy call sometimes fails with HTTP 500 "[Hosting:9999] Request failed" on Hostinger's
+  // side (seen 2026-10-01). Wait and retry; from the third try, upload the zip again in case the
+  // failed attempt removed it.
+  let name = await send();
+  for (let attempt = 1; ; attempt++) {
+    try {
+      await api('POST', `/accounts/${USER}/websites/${DOMAIN}/deploy`, { archive_path: name });
+      break;
+    } catch (e) {
+      if (attempt >= 4) throw e;
+      console.log(`Deploy attempt ${attempt} failed: ${e.message.split('\n')[0]}. Retrying in ${attempt * 2} minutes.`);
+      await new Promise((r) => setTimeout(r, attempt * 120 * 1000));
+      if (attempt >= 2) name = await send();
+    }
+  }
   console.log(`Deploy of ${name} to ${DOMAIN} accepted.`);
   // Unpacking runs on Hostinger's side and the cache clear can fail while it does (HTTP 500 seen),
   // so wait, retry, and only warn if it keeps failing: the site is already published, and
