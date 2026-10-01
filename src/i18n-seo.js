@@ -30,8 +30,31 @@ const IN = {
   ko: from(['세계', '아프리카', '아시아', '유럽', '북아메리카', '남아메리카', '오세아니아', '카리브해']),
 };
 
+// Hindi and Urdu: a division word's oblique plural (before की/के, کی/کے) and its gender, so
+// templates can say "जर्मनी के राज्यों की राजधानियाँ" and "امریکا کی ریاستیں". Keyed by the word in
+// L[lang].term. t() turns them into {termO}, {ke}, {kitne} and {kaun}.
+const GRAM = {
+  hi: {
+    obl: { 'राज्य': 'राज्यों', 'प्रांत': 'प्रांतों', 'क्षेत्र': 'क्षेत्रों', 'विभाग': 'विभागों', 'गवर्नरेट': 'गवर्नरेटों', 'काउंटी': 'काउंटियों', 'ज़िले': 'ज़िलों',
+      'राज्य और क्षेत्र': 'राज्यों और क्षेत्रों', 'प्रांत और क्षेत्र': 'प्रांतों और क्षेत्रों', 'राज्य और केंद्र शासित प्रदेश': 'राज्यों और केंद्र शासित प्रदेशों',
+      'प्रीफ़ेक्चर': 'प्रीफ़ेक्चरों', 'घटक देश': 'घटक देशों', 'कैंटन': 'कैंटनों', 'प्रशासनिक प्रभाग': 'प्रशासनिक प्रभागों', 'नगरपालिकाएँ': 'नगरपालिकाओं', 'द्वीप': 'द्वीपों' },
+    fem: ['काउंटी', 'नगरपालिकाएँ'],
+    m: { ke: 'के', kitne: 'कितने', kaun: 'कौन-से' }, f: { ke: 'की', kitne: 'कितनी', kaun: 'कौन-सी' },
+  },
+  ur: {
+    obl: { 'ریاستیں': 'ریاستوں', 'صوبے': 'صوبوں', 'علاقے': 'علاقوں', 'کاؤنٹیاں': 'کاؤنٹیوں', 'ریاستیں اور علاقے': 'ریاستوں اور علاقوں',
+      'صوبے اور علاقے': 'صوبوں اور علاقوں', 'ریاستیں اور یونین علاقے': 'ریاستوں اور یونین علاقوں' },
+    fem: ['ریاستیں', 'کاؤنٹیاں', 'ریاستیں اور علاقے', 'ریاستیں اور یونین علاقے', 'بلدیات', 'انتظامی تقسیم'],
+    m: { ke: 'کے', kitne: 'کتنے', kaun: 'کون سے' }, f: { ke: 'کی', kitne: 'کتنی', kaun: 'کون سی' },
+  },
+};
+
 const S = {
   en: {
+    qSetFaq: "Which {term} of {c} are in this quiz?",
+    aSetFaq: "The quiz asks about {n} {term} of {c}, including {list}.",
+    contactTitle: "Contact",
+    contactText: "Found a mistake, or have an idea for a quiz? Email {e}.",
     shapesQuiz: 'Guess the country by shape: {cont}',
     qShape: 'Which country is this?',
     shapesDesc: 'Name each country of {of} from its outline. {n} countries, multiple choice, scored, with every answer listed on the page.',
@@ -58,6 +81,10 @@ const S = {
     contDescLanguages: 'Pick an official language of each country of {of}. {n} countries, with every answer listed on the page.',
   },
   zh: {
+    qSetFaq: "这个测验包括{c}的哪些{term}？",
+    aSetFaq: "测验涉及{c}的 {n} 个{term}，包括{list}。",
+    contactTitle: "联系我们",
+    contactText: "发现错误，或者有测验的新点子？请发邮件到 {e}。",
     shapesQuiz: '看轮廓猜国家：{cont}',
     qShape: '这是哪个国家？',
     shapesDesc: '根据轮廓说出{of}的每个国家。共 {n} 个国家，选择题，自动计分，页面列出全部答案。',
@@ -84,6 +111,10 @@ const S = {
     contDescLanguages: '为{of}的每个国家选出一种官方语言。共 {n} 个国家，页面列出全部答案。',
   },
   hi: {
+    qSetFaq: "इस क्विज़ में {c} {ke} {kaun} {term} हैं?",
+    aSetFaq: "क्विज़ में {c} {ke} {n} {term} शामिल हैं, जैसे {list}।",
+    contactTitle: "संपर्क",
+    contactText: "कोई ग़लती दिखी या किसी क्विज़ का सुझाव है? {e} पर ईमेल कीजिए।",
     shapesQuiz: 'आकार देखकर देश पहचानिए: {cont}',
     qShape: 'यह कौन-सा देश है?',
     shapesDesc: '{of} के हर देश को उसकी रूपरेखा से पहचानिए। {n} देश, बहुविकल्पीय, स्कोर के साथ, और सारे उत्तर इसी पेज पर।',
@@ -110,6 +141,10 @@ const S = {
     contDescLanguages: '{of} के हर देश की एक आधिकारिक भाषा चुनिए। {n} देश, और सारे उत्तर इसी पेज पर।',
   },
   es: {
+    qSetFaq: "¿Qué {term} de {c} incluye este quiz?",
+    aSetFaq: "El quiz pregunta por {n} {term} de {c}, entre ellas {list}.",
+    contactTitle: "Contacto",
+    contactText: "¿Has encontrado un error o tienes una idea para un quiz? Escribe a {e}.",
     shapesQuiz: 'Adivina el país por su forma: {cont}',
     qShape: '¿Qué país es este?',
     shapesDesc: 'Nombra cada país {of} por su silueta. {n} países, opción múltiple, con puntuación y todas las respuestas en la página.',
@@ -136,6 +171,10 @@ const S = {
     contDescLanguages: 'Elige un idioma oficial de cada país {of}. {n} países, con todas las respuestas en la página.',
   },
   ar: {
+    qSetFaq: "ما {term} {c} التي يشملها هذا الاختبار؟",
+    aSetFaq: "يسأل الاختبار عن {n} من {term} {c}، منها {list}.",
+    contactTitle: "تواصل معنا",
+    contactText: "وجدت خطأً أو لديك فكرة لاختبار؟ راسلنا على {e}.",
     shapesQuiz: 'خمّن الدولة من شكلها: {cont}',
     qShape: 'ما هذه الدولة؟',
     shapesDesc: 'سمِّ كل دولة في {of} من شكل حدودها. {n} دولة، اختيار من متعدد، مع النتيجة وجميع الإجابات في الصفحة.',
@@ -162,6 +201,10 @@ const S = {
     contDescLanguages: 'اختر لغة رسمية لكل دولة في {of}. {n} دولة، مع جميع الإجابات في الصفحة.',
   },
   fr: {
+    qSetFaq: "Quelles {term} de {c} sont dans ce quiz ?",
+    aSetFaq: "Le quiz porte sur {n} {term} de {c}, dont {list}.",
+    contactTitle: "Contact",
+    contactText: "Vous avez repéré une erreur ou vous avez une idée de quiz ? Écrivez à {e}.",
     shapesQuiz: 'Devinez le pays par sa forme : {cont}',
     qShape: 'Quel est ce pays ?',
     shapesDesc: 'Nommez chaque pays {of} à partir de sa silhouette. {n} pays, QCM noté, avec toutes les réponses sur la page.',
@@ -188,6 +231,10 @@ const S = {
     contDescLanguages: 'Choisissez une langue officielle de chaque pays {of}. {n} pays, avec toutes les réponses sur la page.',
   },
   de: {
+    qSetFaq: "Welche {term} von {c} kommen in diesem Quiz vor?",
+    aSetFaq: "Das Quiz fragt nach {n} {term} von {c}, darunter {list}.",
+    contactTitle: "Kontakt",
+    contactText: "Einen Fehler gefunden oder eine Idee für ein Quiz? Schreib an {e}.",
     shapesQuiz: 'Errate das Land an seiner Form: {cont}',
     qShape: 'Welches Land ist das?',
     shapesDesc: 'Nenne jedes Land {of} an seinem Umriss. {n} Länder, Multiple Choice, mit Punkten und allen Antworten auf der Seite.',
@@ -214,6 +261,10 @@ const S = {
     contDescLanguages: 'Wähle eine Amtssprache jedes Landes {of}. {n} Länder, mit allen Antworten auf der Seite.',
   },
   bn: {
+    qSetFaq: "এই কুইজে {c}-এর কোন কোন {term} আছে?",
+    aSetFaq: "কুইজে {c}-এর {n}টি {term} নিয়ে প্রশ্ন আছে, যেমন {list}।",
+    contactTitle: "যোগাযোগ",
+    contactText: "কোনো ভুল চোখে পড়েছে, বা কুইজের কোনো আইডিয়া আছে? {e} ঠিকানায় ইমেল করুন।",
     shapesQuiz: 'আকার দেখে দেশ চিনুন: {cont}',
     qShape: 'এটি কোন দেশ?',
     shapesDesc: '{of} প্রতিটি দেশের নাম তার সীমারেখা দেখে বলুন। {n}টি দেশ, বহুনির্বাচনী, স্কোরসহ, সব উত্তর এই পাতায়।',
@@ -240,6 +291,10 @@ const S = {
     contDescLanguages: '{of} প্রতিটি দেশের একটি সরকারি ভাষা বেছে নিন। {n}টি দেশ, সব উত্তর এই পাতায়।',
   },
   pt: {
+    qSetFaq: "Quais {term} de {c} estão neste quiz?",
+    aSetFaq: "O quiz pergunta sobre {n} {term} de {c}, entre elas {list}.",
+    contactTitle: "Contato",
+    contactText: "Encontrou um erro ou tem uma ideia de quiz? Escreva para {e}.",
     shapesQuiz: 'Adivinhe o país pela forma: {cont}',
     qShape: 'Que país é este?',
     shapesDesc: 'Diga o nome de cada país {of} pelo contorno. {n} países, múltipla escolha, com pontuação e todas as respostas na página.',
@@ -266,6 +321,10 @@ const S = {
     contDescLanguages: 'Escolha um idioma oficial de cada país {of}. {n} países, com todas as respostas na página.',
   },
   ru: {
+    qSetFaq: "Какие {term} ({c}) есть в этой викторине?",
+    aSetFaq: "В викторине {n} вопросов о местах ({c}: {term}), среди них {list}.",
+    contactTitle: "Контакты",
+    contactText: "Нашли ошибку или есть идея для викторины? Напишите на {e}.",
     shapesQuiz: 'Угадайте страну по очертаниям: {cont}',
     qShape: 'Что это за страна?',
     shapesDesc: 'Назовите каждую страну {of} по её контуру (всего {n}). Варианты ответа, счёт и все ответы на странице.',
@@ -292,6 +351,10 @@ const S = {
     contDescLanguages: 'Выберите официальный язык каждой страны {of} (всего {n}). Все ответы на странице.',
   },
   ur: {
+    qSetFaq: "اس کوئز میں {c} {ke} {kaun} {term} شامل ہیں؟",
+    aSetFaq: "کوئز میں {c} {ke} {n} {term} شامل ہیں، جیسے {list}۔",
+    contactTitle: "رابطہ",
+    contactText: "کوئی غلطی نظر آئی یا کسی کوئز کا خیال ہے؟ {e} پر ای میل کریں۔",
     shapesQuiz: 'شکل دیکھ کر ملک پہچانیں: {cont}',
     qShape: 'یہ کون سا ملک ہے؟',
     shapesDesc: '{of} کے ہر ملک کو اس کے خاکے سے پہچانیں۔ {n} ممالک، کثیر انتخابی، اسکور کے ساتھ، اور تمام جوابات اسی صفحے پر۔',
@@ -318,6 +381,10 @@ const S = {
     contDescLanguages: '{of} کے ہر ملک کی ایک سرکاری زبان چنیں۔ {n} ممالک، اور تمام جوابات اسی صفحے پر۔',
   },
   id: {
+    qSetFaq: "{term} {c} mana saja yang ada di kuis ini?",
+    aSetFaq: "Kuis ini menanyakan {n} {term} {c}, di antaranya {list}.",
+    contactTitle: "Kontak",
+    contactText: "Menemukan kesalahan atau punya ide kuis? Kirim email ke {e}.",
     shapesQuiz: 'Tebak negara dari bentuknya: {cont}',
     qShape: 'Negara apakah ini?',
     shapesDesc: 'Sebutkan setiap negara di {of} dari garis bentuknya. {n} negara, pilihan ganda, dengan skor, dan semua jawaban ada di halaman ini.',
@@ -344,6 +411,10 @@ const S = {
     contDescLanguages: 'Pilih satu bahasa resmi setiap negara di {of}. {n} negara, dan semua jawaban ada di halaman ini.',
   },
   it: {
+    qSetFaq: "Quali {term} di {c} ci sono in questo quiz?",
+    aSetFaq: "Il quiz chiede di {n} {term} di {c}, tra cui {list}.",
+    contactTitle: "Contatti",
+    contactText: "Hai trovato un errore o hai un'idea per un quiz? Scrivi a {e}.",
     shapesQuiz: 'Indovina il paese dalla forma: {cont}',
     qShape: 'Che paese è questo?',
     shapesDesc: 'Riconosci ogni paese {of} dal suo profilo. {n} paesi, risposta multipla, con punteggio e tutte le risposte nella pagina.',
@@ -370,6 +441,10 @@ const S = {
     contDescLanguages: 'Scegli una lingua ufficiale di ogni paese {of}. {n} paesi, con tutte le risposte nella pagina.',
   },
   ja: {
+    qSetFaq: "このクイズに出てくる{c}の{term}は？",
+    aSetFaq: "クイズでは{c}の{term}を{n}か所出題します。たとえば{list}です。",
+    contactTitle: "お問い合わせ",
+    contactText: "間違いを見つけた、またはクイズのアイデアがある場合は {e} までメールしてください。",
     shapesQuiz: '形で国当てクイズ：{cont}',
     qShape: 'この国はどこ？',
     shapesDesc: '{of}の国を輪郭から当てよう。{n}か国、選択式・スコア付き、答えはすべてこのページに掲載。',
@@ -396,6 +471,10 @@ const S = {
     contDescLanguages: '{of}の各国の公用語を1つ選ぼう。{n}か国、答えはすべてこのページに掲載。',
   },
   ko: {
+    qSetFaq: "이 퀴즈에는 {c}의 어떤 {term}이(가) 나오나요?",
+    aSetFaq: "퀴즈에서는 {c}의 {term} {n}곳을 묻습니다. 예를 들어 {list} 등이 있습니다.",
+    contactTitle: "문의",
+    contactText: "오류를 발견했거나 퀴즈 아이디어가 있나요? {e}(으)로 이메일을 보내 주세요.",
     shapesQuiz: '모양으로 나라 맞히기: {cont}',
     qShape: '이 나라는 어디일까요?',
     shapesDesc: '{of}의 각 나라를 윤곽선으로 맞혀 보세요. {n}개국, 객관식, 점수 기록, 모든 정답이 이 페이지에 있습니다.',
@@ -423,4 +502,4 @@ const S = {
   },
 };
 
-module.exports = { IN, S };
+module.exports = { IN, S, GRAM };

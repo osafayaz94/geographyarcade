@@ -4,6 +4,8 @@ module.exports = {
   // Other hostnames that should land on the main domain; the build writes 301 redirects for them.
   aliasDomains: ['www.geographyarcade.com'],
   siteName: 'Geography Arcade',
+  // Shown on the About page and in the Organization schema when set (e.g. 'hello@geographyarcade.com').
+  contactEmail: '',
   // Hostinger account that hosts the site (hPanel), used by scripts/deploy.js.
   hostingerUsername: 'u320645487',
   // How many of the largest countries get province/state data and quizzes.

@@ -16,6 +16,19 @@ const DIST = path.join(__dirname, 'dist');
 const DOMAIN = config.domain.replace(/\/$/, '');
 const SITE = config.siteName;
 const TODAY = new Date().toISOString().slice(0, 10);
+// Last-modified dates: each page keeps the date its content last changed (data/lastmod.json holds
+// a hash of every page's content and that date). Pages write LASTMOD where the date goes; page()
+// swaps in the real one. Rebuilding an unchanged page keeps its old date, so sitemap lastmod and
+// dateModified stay trustworthy.
+const crypto = require('crypto');
+const LASTMOD = '0000-LASTMOD';
+const LASTMOD_TEXT = '@@LASTMOD_TEXT@@';
+const lastmodFile = path.join(__dirname, 'data', 'lastmod.json');
+const lastmodPrev = fs.existsSync(lastmodFile) ? JSON.parse(fs.readFileSync(lastmodFile, 'utf8')) : {};
+const lastmodNext = {};
+const pageDate = {}; // lang -> path -> date, for the sitemaps
+// The publisher, on every page that names one.
+const ORG = { '@type': 'Organization', '@id': `${DOMAIN}/#organization`, name: SITE, url: DOMAIN + '/', logo: { '@type': 'ImageObject', url: DOMAIN + '/favicon.svg' }, ...(config.contactEmail ? { email: config.contactEmail } : {}) };
 const DATA_DATE = fs.statSync(path.join(__dirname, 'data', 'countries.json')).mtime.toISOString().slice(0, 10);
 
 // ---------- Data ----------
@@ -101,7 +114,8 @@ const sitemap = Object.fromEntries(LANGS.map((l) => [l, []]));
 // One page in one language. `p` is the language-free path, e.g. "flags/africa/".
 function page(lang, p, { title, desc, body, crumbs = [], jsonld = [], preload, script = false, nav, noindex = false }) {
   const Ls = L[lang];
-  const fullTitle = (title + ' | ' + SITE).length <= 62 ? title + ' | ' + SITE : title;
+  // The site name is added only where the whole title stays within 60 characters (search results cut longer ones).
+  const fullTitle = (title + ' | ' + SITE).length <= 60 ? title + ' | ' + SITE : title;
   const alts = noindex ? '' : LANGS.map((l) => `<link rel="alternate" hreflang="${L[l].hreflang}" href="${abs(l, p)}">`).join('')
     + `<link rel="alternate" hreflang="x-default" href="${abs('en', p)}">`;
   const langMenu = noindex ? '' : `<details class="lang"><summary aria-label="${esc(t(lang, 'language'))}">${esc(Ls.native)}</summary><ul>${LANGS.map((l) => `<li><a href="${url(l, p)}" hreflang="${L[l].hreflang}" lang="${L[l].hreflang}"${l === lang ? ' aria-current="true"' : ''}>${esc(L[l].native)}</a></li>`).join('')}</ul></details>`;
@@ -150,12 +164,21 @@ ${body}
 </main>
 <footer><div class="wrap">
 <a href="${url(lang)}">${esc(SITE)}</a>${navItems.map(([k, h]) => `<a href="${url(lang, h)}">${esc(t(lang, k))}</a>`).join('')}<a href="${url(lang, 'world/')}">${esc(tt(lang, 'worldGames'))}</a><a href="${url(lang, 'lists/')}">${esc(tt(lang, 'l.related'))}</a><a href="${url(lang, 'about/')}">${esc(t(lang, 'navAbout'))}</a>
-<span>${esc(t(lang, 'updated', { d: dateFmt(lang, TODAY) }))}</span>
+<span>${esc(t(lang, 'updated', { d: LASTMOD_TEXT }))}</span>
 </div></footer>
 ${script ? `<script src="/app.js?v=${APP_VERSION}" defer></script>` : ''}<script src="/search.js?v=${SEARCH_VERSION}" defer></script>
 </body>
 </html>`;
-  write(path.join(lang === 'en' ? '' : lang, p, 'index.html'), html);
+  let date = TODAY;
+  if (!noindex) {
+    const key = `${lang}:${p}`;
+    const hash = crypto.createHash('sha1').update([title, desc, body, JSON.stringify(jsonld)].join('\n')).digest('hex').slice(0, 16);
+    date = lastmodPrev[key] && lastmodPrev[key].h === hash ? lastmodPrev[key].d : TODAY;
+    lastmodNext[key] = { h: hash, d: date };
+    (pageDate[lang] = pageDate[lang] || {})[p] = date;
+  }
+  const out = html.split(LASTMOD).join(date).split(LASTMOD_TEXT).join(esc(dateFmt(lang, date)));
+  write(path.join(lang === 'en' ? '' : lang, p, 'index.html'), out);
   if (!noindex) { sitemap[lang].push(p); searchEntry(lang, p, title); }
 }
 
@@ -199,7 +222,7 @@ const QUIZ_STRINGS = ['progress', 'score', 'time', 'right', 'wrong', 'triesLeft'
 const quizStrings = (lang) => Object.fromEntries(QUIZ_STRINGS.map((k) => [k, t(lang, k)]));
 
 function quizLd(lang, p, name, desc, about) {
-  return { '@context': 'https://schema.org', '@type': 'Quiz', name, description: desc, url: abs(lang, p), inLanguage: L[lang].hreflang, isAccessibleForFree: true, learningResourceType: 'Quiz', educationalUse: 'practice', about: { '@type': 'Thing', name: about }, dateModified: TODAY, publisher: { '@type': 'Organization', name: SITE, url: DOMAIN + '/' } };
+  return { '@context': 'https://schema.org', '@type': 'Quiz', name, description: desc, url: abs(lang, p), inLanguage: L[lang].hreflang, isAccessibleForFree: true, learningResourceType: 'Quiz', educationalUse: 'practice', about: { '@type': 'Thing', name: about }, dateModified: LASTMOD, publisher: ORG };
 }
 
 // cover: the picture behind the Start button on quizzes without a map, the same art as the
@@ -339,7 +362,7 @@ function hubPage(lang, q) {
   let extra = '';
   if (q.type === 'flags') extra = `<h2>${esc(t(lang, 'allFlags', { n: countries.length }))}</h2><ul class="links">${sortBy(lang, countries, (c) => cName(c, lang)).map((c) => `<li><img src="${flagSrc(c.iso2)}" alt="" width="28" height="21" loading="lazy"><a href="${url(lang, `countries/${c.slug}/`)}">${esc(cName(c, lang))}</a></li>`).join('')}</ul>`;
   if (q.type === 'capitals') extra = `<h2>${esc(t(lang, 'allCapitals', { n: countries.length }))}</h2>` + answerTable(lang, countries, 'capitals').replace(/^<h2[^>]*>.*?<\/h2>/, '');
-  if (q.type === 'shapes') extra = `<h2>${esc(t(lang, 'faqTitle'))}</h2><p>${esc(t(lang, 'aShapes', { of: L[lang].of.world }))}</p>`;
+  if (q.type === 'shapes') extra = faqBlock(lang, [[t(lang, 'qShapesFaq'), t(lang, 'aShapes', { of: L[lang].of.world })], ...contFacts(lang, 'world', { landlocked: false, learn: false }).slice(0, 2)]).body;
   if (q.type === 'maps') extra = `<h2>${esc(t(lang, 'provTitle'))}</h2><ul class="links">${provCountries.map((c) => `<li><a href="${url(lang, `countries/${c.slug}/map-quiz/`)}">${esc(provQuizTitle(lang, c, 'map'))}</a></li>`).join('')}</ul>`;
   page(lang, p, { title, desc, nav: p, crumbs: [{ name: title, p }], body: `<h1>${esc(title)}</h1><p class="lede">${esc(desc)}</p>${scopes}${extra}` });
 }
@@ -442,7 +465,8 @@ function planetNamesPage(lang, base, crumbs) {
   const s = { ...quizStrings(lang), qFlag: tt(lang, 'qPlanet') };
   const data = { type: 'flags', key: `planets-${lang}`, title, imgBase: 'img/planets/', items: planets.map((x) => ({ id: x.id, n: nm(x.name, lang) })), s };
   const table = `<h2 id="answers">${esc(t(lang, 'answersTitle'))}</h2><div class="tbl"><table><tbody>${planets.map((x) => `<tr><td><img src="/img/planets/${x.id}.svg" alt="" width="40" height="40" loading="lazy" style="box-shadow:none;width:40px;height:40px"></td><td>${esc(nm(x.name, lang))}</td></tr>`).join('')}</tbody></table></div>`;
-  const faq = faqBlock(lang, [[tt(lang, 'qPlanetsCount'), tt(lang, 'aPlanetsCount', { list: listJoin(lang, planets.map((x) => nm(x.name, lang))) })], [t(lang, 'qScoreFaq'), t(lang, 'aScore')]]);
+  const big = planets.reduce((a, b) => (b.diameter > a.diameter ? b : a));
+  const faq = faqBlock(lang, [[tt(lang, 'qPlanetsCount'), tt(lang, 'aPlanetsCount', { list: listJoin(lang, planets.map((x) => nm(x.name, lang))) })], [tt(lang, 'qLargest'), tt(lang, 'aLargest', { p: nm(big.name, lang), d: num(lang, big.diameter) })], [t(lang, 'qScoreFaq'), t(lang, 'aScore')]]);
   page(lang, p, { title, desc, script: true, crumbs: [...crumbs, { name: title, p }], jsonld: [quizLd(lang, p, title, desc, tt(lang, 'g.solar')), faq.ld],
     body: `<h1>${esc(title)}</h1><p class="lede">${esc(desc)}</p>${gameShell(lang, data, coverImg('/img/games/solar.svg', WORLD_GAMES.find((x) => x.key === 'solar').tile))}${table}${faq.body}<p><a href="${url(lang, base)}">${esc(tt(lang, 'g.solar'))}</a></p>` });
 }
@@ -626,6 +650,7 @@ function countryGame(lang, g, scope = 'world') {
     const ll = countries.filter((c) => c.landlocked);
     qa.push([tt(lang, 'qLandlockedCount'), tt(lang, 'aLandlockedCount', { n: ll.length, total: countries.length, list: listJoin(lang, ll.slice(0, 4).map((c) => cName(c, lang))) })]);
   }
+  if (!world) qa.push(contFacts(lang, scope, { landlocked: false, learn: false })[0]);
   qa.push([t(lang, 'qScoreFaq'), t(lang, 'aScore')]);
   const faq = faqBlock(lang, qa);
   const note = g.key === 'hemispheres' ? `<p class="note">${esc(tt(lang, 'hemiNote'))}</p>` : '';
@@ -729,7 +754,7 @@ ${listLinks(lang, LISTS)}
 ${faq.body}`;
   page(lang, '', {
     title, desc, body, preload: '/img/world.svg',
-    jsonld: [{ '@context': 'https://schema.org', '@type': 'WebSite', name: SITE, url: abs(lang, ''), inLanguage: L[lang].hreflang, description: desc }, faq.ld],
+    jsonld: [{ '@context': 'https://schema.org', '@type': 'WebSite', name: SITE, url: abs(lang, ''), inLanguage: L[lang].hreflang, description: desc, publisher: ORG }, faq.ld],
   });
 }
 
@@ -778,7 +803,9 @@ function countryPage(lang, c) {
   const sub = hasProv.has(c.iso2) ? subdivisions[c.iso2] : null;
   const divs = sub ? sortBy(lang, sub.divisions, (d) => nm(d.name, lang)) : [];
   const tm = term(c, lang);
-  const title = sub ? t(lang, 'countryTitleMap', { c: name, term: tm }) : t(lang, 'countryTitle', { c: name });
+  // The short form where naming the divisions would push the title past 60 characters.
+  const longTitle = sub && t(lang, 'countryTitleMap', { c: name, term: tm });
+  const title = longTitle && longTitle.length <= 60 ? longTitle : t(lang, 'countryTitle', { c: name });
   const desc = sub ? t(lang, 'countryDescMap', { c: name, cap: caps.join(', '), n: divs.length, term: tm }) : t(lang, 'countryDesc', { c: name, cap: caps.join(', ') });
   const capSentence = caps.length > 1 ? t(lang, 'capitalsAre', { c: name, caps: listJoin(lang, caps) }) : t(lang, 'capitalIs', { c: name, cap: caps[0] });
   const cont = L[lang].cont[c.continent];
@@ -825,7 +852,7 @@ ${listLinks(lang, listsFor(c))}`;
   // the country, its capital(s) and its provinces or states.
   const wd = (q) => (q ? [`https://www.wikidata.org/wiki/${q}`] : undefined);
   const ld = {
-    '@context': 'https://schema.org', '@type': 'WebPage', name: title, url: abs(lang, p), inLanguage: L[lang].hreflang, dateModified: TODAY,
+    '@context': 'https://schema.org', '@type': 'WebPage', name: title, url: abs(lang, p), inLanguage: L[lang].hreflang, dateModified: LASTMOD,
     about: {
       '@type': 'Country', name, alternateName: c.name.en !== name ? c.name.en : undefined, sameAs: wd(c.qid), containedInPlace: { '@type': 'Continent', name: cont },
       containsPlace: sub ? divs.map((d) => ({ '@type': 'AdministrativeArea', name: nm(d.name, lang), sameAs: wd(d.qid) })) : undefined,
@@ -934,7 +961,8 @@ function extraMapQuiz(lang, x) {
   const desc = t(lang, 'setMapDesc', { c: place, n: onMap.length, term: L[lang].term[x.term] });
   const data = { type: 'pmap', key: `x-${x.key}-${lang}`, title, map: `/maps/x/${x.key}.svg`, ar: MAP_AR['x-' + x.key], items: onMap.map((d) => ({ id: d.id, n: nm(d.name, lang) })), s: quizStrings(lang) };
   const answers = `<h2 id="answers">${esc(t(lang, 'answersTitle'))}</h2><ul class="links">${onMap.map((d) => `<li>${esc(nm(d.name, lang))}</li>`).join('')}</ul>`;
-  const faq = faqBlock(lang, [[t(lang, 'qMapFaq'), t(lang, 'aMap')], [t(lang, 'qScoreFaq'), t(lang, 'aScore')]]);
+  const tmX = L[lang].term[x.term];
+  const faq = faqBlock(lang, [[t(lang, 'qSetFaq', { c: place, term: tmX }), t(lang, 'aSetFaq', { c: place, n: onMap.length, term: tmX, list: listJoin(lang, onMap.slice(0, 3).map((d) => nm(d.name, lang))) })], [t(lang, 'qMapFaq'), t(lang, 'aMap')], [t(lang, 'qScoreFaq'), t(lang, 'aScore')]]);
   const others = EXTRA_SETS.filter((e) => e !== x);
   const related = `<h2>${esc(t(lang, 'related'))}</h2><ul class="links">${hasProv.has(x.country) ? `<li><a href="${url(lang, `countries/${x.c.slug}/map-quiz/`)}">${esc(provQuizTitle(lang, x.c, 'map'))}</a></li>` : ''}<li><a href="${url(lang, `countries/${x.c.slug}/`)}">${esc(name)}</a></li>${extraLinks(lang, [x]).slice(1).concat(extraLinks(lang, others)).map(([h, n]) => `<li><a href="${url(lang, h)}">${esc(n)}</a></li>`).join('')}</ul>`;
   page(lang, p, { title, desc, script: true, nav: 'maps/', crumbs: [{ name: t(lang, 'countriesTitle'), p: 'countries/' }, { name, p: `countries/${x.c.slug}/` }, { name: title, p }],
@@ -959,8 +987,10 @@ function about(lang) {
   const secs = L[lang].about.map(([h, txt]) => `<h2>${esc(h)}</h2><p>${esc(txt.replace('{n}', countries.length).replace('{d}', dateFmt(lang, DATA_DATE)))}</p>`).join('');
   const lic = provCountries.map((c) => `<li>${esc(cName(c, lang))}: ${esc(subdivisions[c.iso2].source.license || '')}${subdivisions[c.iso2].source.sourceName ? ' · ' + esc(subdivisions[c.iso2].source.sourceName) : ''}</li>`).join('');
   const worldSrc = `<h2>${esc(tt(lang, 'worldGames'))}</h2><p>${esc(tt(lang, 'source', { s: 'Natural Earth (public domain); Wikidata (CC0); RESOLVE Ecoregions 2017 (CC BY 4.0); NASA Planetary Fact Sheet' }))}</p>`;
-  const body = `<h1>${esc(title)}</h1><p class="lede">${esc(desc)}</p>${secs}${worldSrc}<h2>geoBoundaries · OpenStreetMap</h2><ul class="note">${lic}${EXTRA_SETS.map((x) => `<li>${esc(extraTitle(lang, x))}: ${esc(x.source.license)} · ${esc(x.source.sourceName)}</li>`).join('')}</ul>${flagCountries.length ? `<h2>Wikimedia Commons</h2><ul class="note">${flagCountries.map((iso2) => `<li><a href="${url(lang, flagQuizPath(byIso[iso2]))}">${esc(flagQuizTitle(lang, byIso[iso2]))}</a></li>`).join('')}</ul>` : ''}`;
-  page(lang, p, { title, desc, body, crumbs: [{ name: title, p }], jsonld: [{ '@context': 'https://schema.org', '@type': 'AboutPage', name: title, url: abs(lang, p), inLanguage: L[lang].hreflang, dateModified: TODAY }] });
+  // Contact line, once an address is set in site.config.js (contactEmail).
+  const contact = config.contactEmail ? `<h2>${esc(t(lang, 'contactTitle'))}</h2><p>${esc(t(lang, 'contactText', { e: '@@EMAIL@@' })).replace('@@EMAIL@@', `<a href="mailto:${esc(config.contactEmail)}">${esc(config.contactEmail)}</a>`)}</p>` : '';
+  const body = `<h1>${esc(title)}</h1><p class="lede">${esc(desc)}</p>${secs}${contact}${worldSrc}<h2>geoBoundaries · OpenStreetMap</h2><ul class="note">${lic}${EXTRA_SETS.map((x) => `<li>${esc(extraTitle(lang, x))}: ${esc(x.source.license)} · ${esc(x.source.sourceName)}</li>`).join('')}</ul>${flagCountries.length ? `<h2>Wikimedia Commons</h2><ul class="note">${flagCountries.map((iso2) => `<li><a href="${url(lang, flagQuizPath(byIso[iso2]))}">${esc(flagQuizTitle(lang, byIso[iso2]))}</a></li>`).join('')}</ul>` : ''}`;
+  page(lang, p, { title, desc, body, crumbs: [{ name: title, p }], jsonld: [{ '@context': 'https://schema.org', '@type': 'AboutPage', name: title, url: abs(lang, p), inLanguage: L[lang].hreflang, dateModified: LASTMOD, publisher: ORG }] });
 }
 
 // ---------- Static files ----------
@@ -979,8 +1009,11 @@ function statics() {
 
   // Sitemaps: one per language, each URL with its alternates.
   const alt = (p) => LANGS.map((l) => `<xhtml:link rel="alternate" hreflang="${L[l].hreflang}" href="${abs(l, p)}"/>`).join('') + `<xhtml:link rel="alternate" hreflang="x-default" href="${abs('en', p)}"/>`;
-  for (const l of LANGS) write(`sitemap-${l}.xml`, `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${sitemap[l].map((p) => `<url><loc>${abs(l, p)}</loc><lastmod>${TODAY}</lastmod>${alt(p)}</url>`).join('\n')}\n</urlset>\n`);
-  write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${LANGS.map((l) => `<sitemap><loc>${DOMAIN}/sitemap-${l}.xml</loc><lastmod>${TODAY}</lastmod></sitemap>`).join('\n')}\n</sitemapindex>\n`);
+  for (const l of LANGS) write(`sitemap-${l}.xml`, `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${sitemap[l].map((p) => `<url><loc>${abs(l, p)}</loc><lastmod>${pageDate[l][p]}</lastmod>${alt(p)}</url>`).join('\n')}\n</urlset>\n`);
+  write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${LANGS.map((l) => `<sitemap><loc>${DOMAIN}/sitemap-${l}.xml</loc><lastmod>${Object.values(pageDate[l]).sort().pop()}</lastmod></sitemap>`).join('\n')}\n</sitemapindex>\n`);
+
+  // Dates for the next build (only pages that still exist).
+  fs.writeFileSync(lastmodFile, JSON.stringify(Object.fromEntries(Object.keys(lastmodNext).sort().map((k) => [k, lastmodNext[k]]))) + '\n');
 
   write('llms.txt', `# ${SITE}
 
@@ -1046,6 +1079,12 @@ RewriteRule ^(.*)$ https://${host}/$1 [R=301,L]
   write('.htaccess', `${redirects}ErrorDocument 404 /404.html
 Options -Indexes
 AddType image/svg+xml .svg
+<IfModule mod_headers.c>
+Header always set Strict-Transport-Security "max-age=31536000"
+Header always set X-Content-Type-Options "nosniff"
+Header always set Referrer-Policy "strict-origin-when-cross-origin"
+Header always set X-Frame-Options "SAMEORIGIN"
+</IfModule>
 <IfModule mod_deflate.c>
 AddOutputFilterByType DEFLATE text/html text/css application/javascript image/svg+xml application/xml text/plain application/json
 </IfModule>
