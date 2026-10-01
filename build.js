@@ -313,12 +313,28 @@ function continentQuiz(lang, q, scope) {
   });
 }
 
+// A stamp card for one continent quiz: map or capitals picture, or six flags or outlines.
+// eager: the first cards on a page load at once (they are above the fold).
+function quizStamp(lang, q, scope, eager) {
+  const list = quizList(q, scope);
+  const pop = (c) => (c.population && c.population.value) || 0;
+  const denom = `<span class="denom">${num(lang, list.length)}</span>`;
+  const lazy = eager ? '' : ' loading="lazy"';
+  const six = (srcs, tile) => `<span class="art flags" style="--tile:${tile}">${denom}${srcs.map((src) => `<img src="${src}" alt="" width="64" height="48"${lazy}>`).join('')}</span>`;
+  const pic = (src, tile) => `<span class="art" style="--tile:${tile}">${denom}<img src="${src}" alt="" width="320" height="190"${lazy}></span>`;
+  const art = q.type === 'flags' ? six([...list].sort((a, b) => pop(b) - pop(a)).slice(0, 6).map((c) => flagSrc(c.iso2)), '#6B5CA5')
+    : q.type === 'shapes' ? six(bigShapes(list), '#2B5F73')
+    : q.type === 'capitals' ? pic(scope === 'world' ? '/img/games/capitals.svg' : `/img/c/${scope}-capitals.svg`, '#3F4A5A')
+    : pic(scope === 'world' ? '/img/games/countries.svg' : `/img/c/${scope}.svg`, '#2B5F73');
+  return `<a class="stamp" href="${url(lang, `${q.dir}/${scope}/`)}"><span class="perf">${art}<span class="cap">${esc(quizTitle(lang, q.type, scope))}</span></span></a>`;
+}
+
 function hubPage(lang, q) {
   const p = `${q.dir}/`;
   const hubKey = q.hub;
   const title = t(lang, hubKey);
   const desc = t(lang, hubKey + 'Desc', { n: quizList(q, 'world').length });
-  const scopes = `<ul class="links">${QUIZ_SCOPES.map((s) => `<li><a href="${url(lang, `${q.dir}/${s}/`)}">${esc(quizTitle(lang, q.type, s))}</a> <small class="note">${quizList(q, s).length}</small></li>`).join('')}</ul>`;
+  const scopes = `<nav class="stamps" aria-label="${esc(title)}">${QUIZ_SCOPES.map((s, i) => quizStamp(lang, q, s, i < 2)).join('')}</nav>`;
   let extra = '';
   if (q.type === 'flags') extra = `<h2>${esc(t(lang, 'allFlags', { n: countries.length }))}</h2><ul class="links">${sortBy(lang, countries, (c) => cName(c, lang)).map((c) => `<li><img src="${flagSrc(c.iso2)}" alt="" width="28" height="21" loading="lazy"><a href="${url(lang, `countries/${c.slug}/`)}">${esc(cName(c, lang))}</a></li>`).join('')}</ul>`;
   if (q.type === 'capitals') extra = `<h2>${esc(t(lang, 'allCapitals', { n: countries.length }))}</h2>` + answerTable(lang, countries, 'capitals').replace(/^<h2[^>]*>.*?<\/h2>/, '');
