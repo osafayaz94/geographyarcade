@@ -573,11 +573,24 @@ async function countryGameArt(key, { landlocked = new Set(), neighbours = [] } =
 // US, French Guiana for France): a piece stays if it has at least a quarter of the largest piece's
 // area, or lies within 5 degrees of the box around those big pieces.
 async function countryShapes() {
+  // Large countries are simplified (smaller files); small ones keep full 1:50m detail so a
+  // small island does not collapse into a triangle.
+  const collect = (feats) => {
+    const by = {};
+    for (const f of feats) {
+      if (!f.iso2 || !f.geometry) continue;
+      const g = f.geometry;
+      (by[f.iso2] = by[f.iso2] || []).push(...(g.type === 'Polygon' ? [g.coordinates] : g.coordinates));
+    }
+    return by;
+  };
+  const coarse = collect(await worldFeatures(40));
+  const fine = collect(await worldFeatures(100));
+  const SMALL = 60000 / 6371 ** 2; // 60,000 km² in steradians
   const parts = {};
-  for (const f of await worldFeatures(40)) {
-    if (!f.iso2 || !f.geometry) continue;
-    const g = f.geometry;
-    (parts[f.iso2] = parts[f.iso2] || []).push(...(g.type === 'Polygon' ? [g.coordinates] : g.coordinates));
+  for (const iso2 of Object.keys(fine)) {
+    const area = fine[iso2].reduce((n, p) => n + d3.geoArea({ type: 'Polygon', coordinates: p }), 0);
+    parts[iso2] = area < SMALL || !coarse[iso2] ? fine[iso2] : coarse[iso2];
   }
   const out = {};
   const W3 = 400, H3 = 300;
@@ -596,7 +609,8 @@ async function countryShapes() {
     const [lon] = d3.geoCentroid({ type: 'MultiPolygon', coordinates: big });
     const proj = d3.geoMercator().rotate([-lon, 0]).fitExtent([[16, 16], [W3 - 16, H3 - 16]], shape);
     const d = d3.geoPath(proj).digits(0)(shape);
-    if (d) out[iso2] = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W3} ${H3}"><path d="${d}" fill="#E07A3F" stroke="#7A3A12" stroke-width="2" stroke-linejoin="round"/></svg>`;
+    // Outline first, fill on top: the fill hides lines between pieces of one country (Northern Cyprus).
+    if (d) out[iso2] = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W3} ${H3}"><defs><path id="s-${iso2}" d="${d}"/></defs><use href="#s-${iso2}" fill="none" stroke="#7A3A12" stroke-width="4" stroke-linejoin="round"/><use href="#s-${iso2}" fill="#E07A3F"/></svg>`;
   }
   return out;
 }

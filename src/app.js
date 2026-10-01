@@ -152,7 +152,15 @@
       mcBox.appendChild(im);
       // Warm the cache for the next flag.
       var nx = state.list[state.i + 1]; if (nx) (new Image()).src = imgOf(nx);
-    } else prompt.textContent = fmt(S.qCapital, { c: item.n });
+    } else {
+      prompt.textContent = fmt(S.qCapital, { c: item.n });
+      // Capitals quizzes: the country's outline above the choices (item.s: an outline exists).
+      if (Q.picBase && item.s) {
+        var pic = el('img', 'pic'); pic.src = root + Q.picBase + item.id.toLowerCase() + '.svg'; pic.alt = ''; pic.width = 260; pic.height = 195;
+        mcBox.appendChild(pic);
+        var nxt = state.list[state.i + 1]; if (nxt && nxt.s) (new Image()).src = root + Q.picBase + nxt.id.toLowerCase() + '.svg';
+      }
+    }
     var box = el('div', 'opts');
     (fixed || options(state.list, item, field, 3)).forEach(function (o) {
       var b = el('button', 'opt', o); b.type = 'button';

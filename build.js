@@ -288,10 +288,11 @@ function continentQuiz(lang, q, scope) {
   // The world map and world flags quizzes carry the site's biggest searches; some languages title them for those.
   const title = (scope === 'world' && seo(lang, { maps: 'mapsWorld', flags: 'flagsWorld' }[q.type])) || quizTitle(lang, q.type, scope);
   const desc = t(lang, q.desc, { n: list.length, of: L[lang].of[scope] });
-  const items = list.map((c) => ({ id: c.iso2, n: cName(c, lang), ...(q.type === 'capitals' ? { a: capOf(c, lang) } : {}) }));
+  const items = list.map((c) => ({ id: c.iso2, n: cName(c, lang), ...(q.type === 'capitals' ? { a: capOf(c, lang), ...(SHAPES[c.iso2] ? { s: 1 } : {}) } : {}) }));
   const data = { type: q.type === 'maps' ? 'map' : q.type === 'shapes' ? 'flags' : q.type, key: `${q.type}-${scope}-${lang}`, title, items, s: quizStrings(lang) };
   // Outlines use the picture quiz engine, with the outline in place of the flag.
   if (q.type === 'shapes') { data.imgBase = 'img/shapes/'; data.s.qFlag = t(lang, 'qShape'); }
+  if (q.type === 'capitals') data.picBase = 'img/shapes/';
   if (q.type === 'maps') { data.map = `/maps/${scope}.svg`; data.ar = MAP_AR[scope]; }
   const qa = [];
   if (q.type === 'flags') qa.push([t(lang, 'qFlagsFaq', { of: L[lang].of[scope] }), t(lang, 'aFlags', { n: list.length, of: L[lang].of[scope] })]);
@@ -1113,7 +1114,8 @@ function notFound() {
   // Country games: hemisphere data and stamp art.
   HEMI = await hemispheres();
   SHAPES = await countryShapes();
-  for (const c of countries.filter(hasShape)) write(`img/shapes/${c.iso2.toLowerCase()}.svg`, SHAPES[c.iso2]);
+  // Every outline is written (capitals quizzes show small countries too); the shapes quizzes use only hasShape ones.
+  for (const c of countries.filter((x) => SHAPES[x.iso2])) write(`img/shapes/${c.iso2.toLowerCase()}.svg`, SHAPES[c.iso2]);
   for (const g of COUNTRY_GAMES) write(`img/games/${g.key}.svg`, await countryGameArt(g.key, { landlocked: new Set(countries.filter((c) => c.landlocked).map((c) => c.iso2)), neighbours: byIso.FR.borders }));
 
   // World games: the quiz map for each, and a card image.
