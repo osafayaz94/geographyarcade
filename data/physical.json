@@ -8157,6 +8157,29 @@
    },
    {
     "name": {
+     "en": "Klyuchevskaya Sopka",
+     "zh": "克柳切夫火山",
+     "hi": "क्ल्यूचेव्सकाया",
+     "es": "Kliuchevskoi",
+     "ar": "كلويشيفسكايا سوبكا",
+     "fr": "Klioutchevskoï",
+     "bn": null,
+     "ru": "Ключевская Сопка",
+     "pt": "Kliutchevskaia Sopka",
+     "de": "Kljutschewskaja Sopka",
+     "id": "Klyuchevskaya Sopka",
+     "it": "Ključevskaja Sopka",
+     "ja": "クリュチェフスカヤ山",
+     "ko": "클류쳅스카야산"
+    },
+    "at": [
+     160.633333333,
+     56.066666666
+    ],
+    "id": "klyuchevskaya-sopka"
+   },
+   {
+    "name": {
      "en": "Mount Pelée",
      "zh": "培雷火山",
      "hi": "माउण्ट पीली",
@@ -8200,29 +8223,6 @@
      63.992222222
     ],
     "id": "hekla"
-   },
-   {
-    "name": {
-     "en": "Klyuchevskaya Sopka",
-     "zh": "克柳切夫火山",
-     "hi": "क्ल्यूचेव्सकाया",
-     "es": "Kliuchevskoi",
-     "ar": "كلويشيفسكايا سوبكا",
-     "fr": "Klioutchevskoï",
-     "bn": null,
-     "ru": "Ключевская Сопка",
-     "pt": "Kliutchevskaia Sopka",
-     "de": "Kljutschewskaja Sopka",
-     "id": "Klyuchevskaya Sopka",
-     "it": "Ključevskaja Sopka",
-     "ja": "クリュチェフスカヤ山",
-     "ko": "클류쳅스카야산"
-    },
-    "at": [
-     160.633333333,
-     56.066666666
-    ],
-    "id": "klyuchevskaya-sopka"
    },
    {
     "name": {
@@ -8272,29 +8272,6 @@
    },
    {
     "name": {
-     "en": "Mount Agung",
-     "zh": "阿贡火山",
-     "hi": "अगुंग पर्वत",
-     "es": "Monte Agung",
-     "ar": "جبل آغونغ",
-     "fr": "Agung",
-     "bn": "অগুং পর্বত",
-     "ru": "Агунг",
-     "pt": "Monte Agung",
-     "de": "Agung",
-     "id": "Gunung Agung",
-     "it": "Agung",
-     "ja": "アグン山",
-     "ko": "아궁산"
-    },
-    "at": [
-     115.507777777,
-     -8.341944444
-    ],
-    "id": "mount-agung"
-   },
-   {
-    "name": {
      "en": "Semeru",
      "zh": "塞梅鲁火山",
      "hi": "सेमेरू",
@@ -8315,6 +8292,29 @@
      -8.1
     ],
     "id": "semeru"
+   },
+   {
+    "name": {
+     "en": "Mount Agung",
+     "zh": "阿贡火山",
+     "hi": "अगुंग पर्वत",
+     "es": "Monte Agung",
+     "ar": "جبل آغونغ",
+     "fr": "Agung",
+     "bn": "অগুং পর্বত",
+     "ru": "Агунг",
+     "pt": "Monte Agung",
+     "de": "Agung",
+     "id": "Gunung Agung",
+     "it": "Agung",
+     "ja": "アグン山",
+     "ko": "아궁산"
+    },
+    "at": [
+     115.507777777,
+     -8.341944444
+    ],
+    "id": "mount-agung"
    },
    {
     "name": {
