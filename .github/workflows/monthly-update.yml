@@ -32,17 +32,44 @@ jobs:
 
       - run: npm ci
 
+      # A push (code or settings change) only rebuilds and publishes, in about 10 minutes: it reuses
+      # the map shapes (data/geo/, 183 MB, not in the repository) saved by the last full run.
+      # The monthly run, a manual run, or a push with no saved shapes downloads everything (about
+      # an hour) and saves the shapes for the next pushes.
+      - name: Restore the map shapes from the last full run
+        id: geo
+        uses: actions/cache/restore@v4
+        with:
+          path: data/geo
+          key: geo-${{ github.run_id }}
+          restore-keys: geo-
+
+      - name: Full data refresh or quick rebuild?
+        id: mode
+        run: echo "full=${{ github.event_name != 'push' || steps.geo.outputs.cache-matched-key == '' }}" >> "$GITHUB_OUTPUT"
+
       - name: Keep last month's data for comparison
+        if: steps.mode.outputs.full == 'true'
         run: mkdir -p /tmp/baseline && cp data/*.json /tmp/baseline/
 
       - name: Download fresh data
+        if: steps.mode.outputs.full == 'true'
         run: npm run fetch
 
       - name: Hold back suspicious name changes (vandalism, glitches)
+        if: steps.mode.outputs.full == 'true'
         run: node scripts/stabilize.js /tmp/baseline
 
       - name: Check the new data (stops here if something looks broken)
+        if: steps.mode.outputs.full == 'true'
         run: node scripts/guard.js /tmp/baseline
+
+      - name: Save the map shapes for quick rebuilds
+        if: steps.mode.outputs.full == 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: data/geo
+          key: geo-${{ github.run_id }}
 
       - name: Build the site
         run: npm run build
