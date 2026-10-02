@@ -1,4 +1,4 @@
-// Uploads geographyarcade-site.zip to the website's public_html with the TUS protocol.
+// Uploads geographyarcade-site.7z (npm run zip) to the website's public_html with the TUS protocol.
 // The upload URL and keys are one-time values from Hostinger's "Generate upload URL" API;
 // after the upload, Hostinger's "Deploy static site archive" API unpacks it over the site.
 // scripts/deploy.js does all of that with an API token. By hand:
@@ -6,7 +6,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const FILE = path.join(__dirname, '..', 'geographyarcade-site.zip');
+const FILE = path.join(__dirname, '..', 'geographyarcade-site.7z');
 const CHUNK = 8 * 1024 * 1024;
 
 async function upload(url, auth, rest, file = FILE) {
