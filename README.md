@@ -46,6 +46,8 @@ npm run serve
 6. `node scripts/indexnow.js`: tells Bing about the pages.
 7. Commits the new `data/*.json` so next month compares against it.
 
+A push only rebuilds and publishes (about 10 minutes): steps 1-3 are skipped and the map shapes in `data/geo/` come from the GitHub Actions cache saved by the last full run. If no saved shapes exist (GitHub drops caches unused for 7 days), the push runs the full refresh instead.
+
 Not in the repository (rebuilt each run): `dist/`, `data/geo/`, `data/cache/`, `node_modules/`. GitHub pauses scheduled workflows in repositories with no activity for 60 days; the monthly data commit counts as activity, but if the Actions tab ever shows the workflow as disabled, enable it again there.
 
 ## Deploy (Hostinger)
