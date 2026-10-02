@@ -41,8 +41,8 @@ npm run serve
 1. `npm run fetch`: fresh data from Wikidata, geoBoundaries, OpenStreetMap and Natural Earth.
 2. `node scripts/stabilize.js <last month's data>`: Wikidata is edited by the public, so a name that comes back empty keeps last month's value, and a changed name (country, capital, province) is published only after the same new value has been fetched for at least 25 days (extra runs in between, such as after a code push, do not shorten the wait); bad edits are usually reverted by then. Held-back changes, with the date first seen, are listed in the run log and stored in `data/pending-names.json`.
 3. `node scripts/guard.js <last month's data>`: stops the run, and nothing is published, if a country or a province list disappears, division counts jump, capitals or populations vanish, or a world-game list shrinks. GitHub emails the owner when a run fails; the log lists the problems.
-4. `npm run build`, `npm run check`, `npm run zip`.
-5. `node scripts/deploy.js`: publishes through the Hostinger API with the repository secret `HOSTINGER_API_TOKEN_GEOGRAPHY` (hPanel: Account > API).
+4. `npm run build`, `npm run check`.
+5. Publishes with rsync over SSH (like salaahdaily.com on the same Hostinger account): only changed files are sent to `domains/geographyarcade.com/public_html`, pages removed from the build are deleted there, and `.well-known/` is left alone. The private key is the repository secret `SSH_PRIVATE_KEY_GEOGRAPHY`; its public half is the hPanel SSH key `github-deploy-geographyarcade` (hPanel: Advanced > SSH Access), and the local copy is `~/.ssh/geographyarcade_deploy`. Then `node scripts/deploy.js --cache-only` clears the Hostinger cache with the secret `HOSTINGER_API_TOKEN_GEOGRAPHY` (hPanel: Account > API). The archive deploy described below failed once the site passed about 85 MB, which is why the workflow switched.
 6. `node scripts/indexnow.js`: tells Bing about the pages.
 7. Commits the new `data/*.json` so next month compares against it.
 

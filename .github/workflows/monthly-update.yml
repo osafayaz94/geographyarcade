@@ -50,13 +50,33 @@ jobs:
       - name: Check every page
         run: npm run check
 
-      - name: Pack the site
-        run: npm run zip
-
+      # rsync over SSH, like salaahdaily.com on the same Hostinger account: only changed files are
+      # sent, so there is no archive size limit (Hostinger's archive deploy failed above ~85 MB).
       - name: Publish to Hostinger
         env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY_GEOGRAPHY }}
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$SSH_PRIVATE_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          # The server's public host keys (ssh-keyscan, 2026-09-30): refuse to connect to anything else.
+          cat > ~/.ssh/known_hosts <<'EOF'
+          [145.79.31.12]:65002 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCgBMpI74eOXUNAfA+6rrrSXXyJ6IvgPZVCwyMm5GRXYY2VCa/8QIbObKN+/CdLLpN2TEf9URJRgDxsgvlRb9aGfDwAud9k2gM/TGPywCsblDDlybaywMvp/kZcN5WL+OQBRwCbX0/R9x3FkBjp8NqAfVZa7iBDZ1sxgEsUT+xN7TkvUQw39jGzmDyPw+8zM8ehOIUODnBLER4Ew8jbFawZDzY4XbnxD5RTtykj/uAGbqB7ZcFgo7hBbX8OPtW9zagFmKvIQ3dYRk43Twk5KZ4hyFjgQfUhA/EWui+M0nsmtRAo2DIlOIGYnw6Hqc2S3EhuZl3FF3xGYIRR+h9NXZrscUfSkaBhT049wLsxOykvbMd0cgGvwJdT025Mna25k4nINF/lRbZ0CXAjKGAiRVC6b/WQwajAWEHHXlXE3CD61lPMXFqUQULkdK7Ii+KATvO62bmR+fSKSOAhoC45Udq05fliissqOkOgJcADqygnodmWYFxi5vMX8Snf6a3fNgM=
+          [145.79.31.12]:65002 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBANlp6jvxckanGKdGruPFf15aZkstbuGRLp35mN5Pne51l6MK5wayO76VvuVfMeZsHEV3Du1F5zh4wXdVfTSyXU=
+          [145.79.31.12]:65002 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBV4VmAbo49lntkQd9tInPKGZhsVu4jVdfxxL07gWN/2
+          EOF
+          sed -i 's/^ *//' ~/.ssh/known_hosts
+          # Pages removed from the build are removed from the server; .well-known/ (SSL checks) is never touched.
+          rsync -rlz --checksum --delete-after --filter='P .well-known/' \
+            -e "ssh -p 65002 -i ~/.ssh/deploy_key -o StrictHostKeyChecking=yes" \
+            dist/ u320645487@145.79.31.12:domains/geographyarcade.com/public_html/
+          rm -f ~/.ssh/deploy_key
+
+      - name: Clear the Hostinger cache
+        env:
           HOSTINGER_API_TOKEN: ${{ secrets.HOSTINGER_API_TOKEN_GEOGRAPHY }}
-        run: node scripts/deploy.js
+        run: node scripts/deploy.js --cache-only
+        continue-on-error: true
 
       - name: Tell Bing about the pages
         run: node scripts/indexnow.js
