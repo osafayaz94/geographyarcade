@@ -53,10 +53,10 @@ Not in the repository (rebuilt each run): `dist/`, `data/geo/`, `data/cache/`, `
 The site runs on Hostinger (account `u320645487`, website `geographyarcade.com`, files in `public_html`). A deploy is five steps, all automatic when Claude has the Hostinger connector:
 
 1. `npm run build`: rebuild `dist/`.
-2. `npm run zip`: pack `dist/` into `geographyarcade-site.zip`. It writes folder paths with `/`; a zip made with Windows' built-in tools uses `\`, and Hostinger then unpacks every page as a flat file named like `about\index.html`.
+2. `npm run zip`: pack `dist/` into `geographyarcade-site.7z` (about 23 MB). 7z compresses across files, so the stylesheet inlined in every page costs almost nothing; the same site as a zip is about 100 MB, and Hostinger's deploy call returned HTTP 500 for zips above roughly 85 MB. `node scripts/make-zip.js --zip` makes `geographyarcade-site.zip` instead, for a manual upload. It writes folder paths with `/`; a zip made with Windows' built-in tools uses `\`, and Hostinger then unpacks every page as a flat file named like `about\index.html`.
 3. Hostinger API `hosting_files_generate-upload-url` (username, domain): returns a one-time upload URL and two keys.
-4. `node scripts/upload.js <url> <auth_key> <rest_auth_key>`: uploads the zip into `public_html` (TUS, 8 MB chunks, retries).
-5. Hostinger API `hosting_websites_deploy-static-site-archive` with `archive_path: geographyarcade-site.zip`: unpacks it over the site and removes the zip. Then `hosting_cache_clear-website` so visitors and the CDN get the new files.
+4. `node scripts/upload.js <url> <auth_key> <rest_auth_key>`: uploads the 7z into `public_html` (TUS, 8 MB chunks, retries).
+5. Hostinger API `hosting_websites_deploy-static-site-archive` with `archive_path: geographyarcade-site.7z`: unpacks it over the site and removes the archive. Then `hosting_cache_clear-website` so visitors and the CDN get the new files.
 
 By hand instead: in hPanel, open the File manager and go to public_html. Upload the zip, then Extract it. Because the folder name is required, double-click `..`, name the folder `public_html` and tick Overwrite.
 
