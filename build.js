@@ -160,6 +160,23 @@ function makeOgCards() {
   for (const [name, svg] of cards) { write(`img/og/${name}.png`, og.png(svg)); OG.add(name); }
 }
 
+// The one inline script on any page: the web-font link's onload handler. The Content Security
+// Policy in .htaccess allows exactly this code by its hash and no other inline script.
+const FONT_ONLOAD = "this.media='all'";
+const CSP = [
+  "default-src 'self'",
+  `script-src 'self' 'unsafe-hashes' 'sha256-${crypto.createHash('sha256').update(FONT_ONLOAD).digest('base64')}'`,
+  "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+  "font-src 'self' https://fonts.gstatic.com",
+  "img-src 'self' data:",
+  "connect-src 'self'",
+  "object-src 'none'",
+  "base-uri 'self'",
+  "form-action 'self'",
+  "frame-ancestors 'self'",
+  'upgrade-insecure-requests',
+].join('; ');
+
 // One page in one language. `p` is the language-free path, e.g. "flags/africa/".
 function page(lang, p, { title, desc, body, crumbs = [], jsonld = [], preload, script = false, nav, noindex = false }) {
   const Ls = L[lang];
@@ -178,7 +195,7 @@ function page(lang, p, { title, desc, body, crumbs = [], jsonld = [], preload, s
   const font = family
     // Nastaliq is much taller than any fallback, so a late swap would shift the page: use it only
     // if it arrives in time (it is cached for every later page view).
-    ? `<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=${family}&display=${Ls.gfont ? 'optional' : 'swap'}" media="print" onload="this.media='all'">`
+    ? `<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=${family}&display=${Ls.gfont ? 'optional' : 'swap'}" media="print" onload="${FONT_ONLOAD}">`
     : '';
   const html = `<!doctype html>
 <html lang="${Ls.hreflang}" dir="${Ls.dir}"${Ls.latin ? ' class="lat"' : ''} data-root="/">
@@ -1136,6 +1153,8 @@ Header always set Strict-Transport-Security "max-age=31536000"
 Header always set X-Content-Type-Options "nosniff"
 Header always set Referrer-Policy "strict-origin-when-cross-origin"
 Header always set X-Frame-Options "SAMEORIGIN"
+Header always set Content-Security-Policy "${CSP}"
+Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
 </IfModule>
 <IfModule mod_deflate.c>
 AddOutputFilterByType DEFLATE text/html text/css application/javascript image/svg+xml application/xml text/plain application/json
