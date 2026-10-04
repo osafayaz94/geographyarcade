@@ -9026,5 +9026,375 @@
     }
    }
   ]
+ },
+ "wonders": {
+  "kind": "point",
+  "items": [
+   {
+    "id": "q12501",
+    "name": {
+     "en": "Great Wall of China",
+     "zh": "长城",
+     "hi": "चीन की विशाल दीवार",
+     "es": "Gran Muralla china",
+     "ar": "سور الصين العظيم",
+     "fr": "Grande Muraille",
+     "bn": "চীনের মহাপ্রাচীর",
+     "ur": "دیوار چین",
+     "ru": "Великая китайская стена",
+     "pt": "Grande Muralha da China",
+     "de": "Chinesische Mauer",
+     "id": "Tembok Besar Tiongkok",
+     "it": "Grande muraglia cinese",
+     "ja": "万里の長城",
+     "ko": "만리장성"
+    },
+    "at": [
+     116.564444444,
+     40.431388888
+    ]
+   },
+   {
+    "id": "q5788",
+    "name": {
+     "en": "Petra",
+     "zh": "佩特拉",
+     "hi": "पेत्रा",
+     "es": "Petra",
+     "ar": "البتراء",
+     "fr": "Pétra",
+     "bn": "পেত্রা",
+     "ur": "بترا",
+     "ru": "Петра",
+     "pt": "Petra",
+     "de": "Petra",
+     "id": "Petra",
+     "it": "Petra",
+     "ja": "ペトラ",
+     "ko": "페트라"
+    },
+    "at": [
+     35.440277777,
+     30.328888888
+    ]
+   },
+   {
+    "id": "q79961",
+    "name": {
+     "en": "Christ the Redeemer",
+     "zh": "里約熱內盧基督像",
+     "hi": "क्राइस्ट द रिडीमर",
+     "es": "Cristo Redentor",
+     "ar": "تمثال المسيح الفادي",
+     "fr": "statue du Christ Rédempteur",
+     "bn": "ক্রাইস্ট দ্য রিডিমার",
+     "ur": "مسیح نجات دہندہ",
+     "ru": "статуя Христа-Искупителя",
+     "pt": "Cristo Redentor",
+     "de": "Cristo Redentor",
+     "id": "Patung Kristus Penebus",
+     "it": "Cristo Redentore",
+     "ja": "コルコバードのキリスト像",
+     "ko": "구세주 그리스도상"
+    },
+    "at": [
+     -43.210464122,
+     -22.951915648
+    ]
+   },
+   {
+    "id": "q676203",
+    "name": {
+     "en": "Machu Picchu",
+     "zh": "馬丘比丘",
+     "hi": "माचू पिच्चू",
+     "es": "Machu Picchu",
+     "ar": "ماتشو بيتشو",
+     "fr": "Machu Picchu",
+     "bn": "মাচু পিচু",
+     "ur": "ماچو پیچو",
+     "ru": "Мачу-Пикчу",
+     "pt": "Machu Picchu",
+     "de": "Machu Picchu",
+     "id": "Cagar Alam Machu Picchu",
+     "it": "Machu Picchu",
+     "ja": "マチュ・ピチュ",
+     "ko": "마추 픽추"
+    },
+    "at": [
+     -72.545555555,
+     -13.163333333
+    ]
+   },
+   {
+    "id": "q5859",
+    "name": {
+     "en": "Chichen Itza",
+     "zh": "奇琴伊察",
+     "hi": "चिचेन इत्सा",
+     "es": "Chichén Itzá",
+     "ar": "تشيتشن إيتزا",
+     "fr": "Chichén Itzá",
+     "bn": "চিচেন ইৎজা",
+     "ur": "چیچن ایتزا",
+     "ru": "Чичен-Ица",
+     "pt": "Chichén Itzá",
+     "de": "Chichén Itzá",
+     "id": "Chichén Itzá",
+     "it": "Chichén Itzá",
+     "ja": "チチェン・イッツァ",
+     "ko": "치첸이트사"
+    },
+    "at": [
+     -88.568611111,
+     20.683055555
+    ]
+   },
+   {
+    "id": "q10285",
+    "name": {
+     "en": "Colosseum",
+     "zh": "罗马斗兽场",
+     "hi": "कोलोसियम",
+     "es": "Coliseo",
+     "ar": "كولوسيوم",
+     "fr": "Colisée",
+     "bn": "কলোসিয়াম",
+     "ur": "کولوزیئم",
+     "ru": "Колизей",
+     "pt": "Coliseu de Roma",
+     "de": "Kolosseum",
+     "id": "Koloseum",
+     "it": "Colosseo",
+     "ja": "コロッセオ",
+     "ko": "콜로세움"
+    },
+    "at": [
+     12.492222222,
+     41.890277777
+    ]
+   },
+   {
+    "id": "q9141",
+    "name": {
+     "en": "Taj Mahal",
+     "zh": "泰姬陵",
+     "hi": "ताजमहल",
+     "es": "Taj Mahal",
+     "ar": "تاج محل",
+     "fr": "Taj Mahal",
+     "bn": "তাজমহল",
+     "ur": "تاج محل",
+     "ru": "Тадж-Махал",
+     "pt": "Taj Mahal",
+     "de": "Taj Mahal",
+     "id": "Taj Mahal",
+     "it": "Taj Mahal",
+     "ja": "タージ・マハル",
+     "ko": "타지마할"
+    },
+    "at": [
+     78.041944444,
+     27.175
+    ]
+   },
+   {
+    "id": "q37200",
+    "name": {
+     "en": "Great Pyramid of Giza",
+     "zh": "胡夫金字塔",
+     "hi": "गीजा का महान पिरामिड",
+     "es": "Gran pirámide de Giza",
+     "ar": "الهرم الأكبر",
+     "fr": "pyramide de Khéops",
+     "bn": "গিজার মহা পিরামিড",
+     "ur": "ہرم خوفو",
+     "ru": "Пирамида Хеопса",
+     "pt": "Pirâmide de Quéops",
+     "de": "Cheops-Pyramide",
+     "id": "Piramida Agung Giza",
+     "it": "piramide di Cheope",
+     "ja": "ギザの大ピラミッド",
+     "ko": "기자의 대피라미드"
+    },
+    "at": [
+     31.13422,
+     29.97915
+    ]
+   }
+  ]
+ },
+ "ancient-wonders": {
+  "kind": "point",
+  "items": [
+   {
+    "id": "q37200",
+    "name": {
+     "en": "Great Pyramid of Giza",
+     "zh": "胡夫金字塔",
+     "hi": "गीजा का महान पिरामिड",
+     "es": "Gran pirámide de Giza",
+     "ar": "الهرم الأكبر",
+     "fr": "pyramide de Khéops",
+     "bn": "গিজার মহা পিরামিড",
+     "ur": "ہرم خوفو",
+     "ru": "Пирамида Хеопса",
+     "pt": "Pirâmide de Quéops",
+     "de": "Cheops-Pyramide",
+     "id": "Piramida Agung Giza",
+     "it": "piramide di Cheope",
+     "ja": "ギザの大ピラミッド",
+     "ko": "기자의 대피라미드"
+    },
+    "at": [
+     31.13422,
+     29.97915
+    ]
+   },
+   {
+    "id": "q41931",
+    "name": {
+     "en": "Hanging Gardens of Babylon",
+     "zh": "空中花园",
+     "hi": "बेबीलोन के झूलते उपवन",
+     "es": "Jardines Colgantes de Babilonia",
+     "ar": "حدائق بابل المعلقة",
+     "fr": "jardins suspendus de Babylone",
+     "bn": "ব্যাবিলনের শূন্য উদ্যান",
+     "ur": "بابل کے معلق باغات",
+     "ru": "Висячие сады Семирамиды",
+     "pt": "Jardins Suspensos da Babilónia",
+     "de": "Hängende Gärten der Semiramis",
+     "id": "Taman Gantung Babilonia",
+     "it": "giardini pensili di Babilonia",
+     "ja": "バビロンの空中庭園",
+     "ko": "바빌론의 공중 정원"
+    },
+    "at": [
+     44.4275,
+     32.5355
+    ]
+   },
+   {
+    "id": "q43018",
+    "name": {
+     "en": "Temple of Ephesian Artemis",
+     "zh": "阿耳忒弥斯神庙",
+     "hi": "अर्टेमिस का मन्दिर",
+     "es": "Templo de Artemisa",
+     "ar": "هيكل آرتميس",
+     "fr": "temple d'Artémis à Éphèse",
+     "bn": "আর্টেমিসের মন্দির",
+     "ur": "معبد آرتمیس",
+     "ru": "Храм Артемиды Эфесской",
+     "pt": "Templo de Ártemis",
+     "de": "Tempel der Artemis in Ephesos",
+     "id": "Kuil Artemis",
+     "it": "Tempio di Artemide",
+     "ja": "アルテミス神殿",
+     "ko": "아르테미스 신전"
+    },
+    "at": [
+     27.363889,
+     37.949722
+    ]
+   },
+   {
+    "id": "q46239",
+    "name": {
+     "en": "Statue of Zeus at Olympia",
+     "zh": "奧林匹亞宙斯神像",
+     "hi": "ओलम्पिया में जियस की मूर्ति",
+     "es": "Estatua de Zeus en Olimpia",
+     "ar": "تمثال زوس",
+     "fr": "statue chryséléphantine de Zeus à Olympie",
+     "bn": "অলিম্পিয়ার জিউসের মূর্তি",
+     "ur": "اولمپیا میں زیوس کا مجسمہ",
+     "ru": "Статуя Зевса в Олимпии",
+     "pt": "Estátua de Zeus em Olímpia",
+     "de": "Zeus-Statue des Phidias",
+     "id": "Patung Zeus di Olympia",
+     "it": "Statua di Zeus a Olimpia",
+     "ja": "オリンピアのゼウス像",
+     "ko": "올림피아의 제우스상"
+    },
+    "at": [
+     21.63,
+     37.637861111
+    ]
+   },
+   {
+    "id": "q45368",
+    "name": {
+     "en": "Mausoleum at Halicarnassus",
+     "zh": "摩索拉斯王陵墓",
+     "hi": "माउसोलस का मकबरा",
+     "es": "Mausoleo de Halicarnaso",
+     "ar": "ضريح موسولوس",
+     "fr": "mausolée d'Halicarnasse",
+     "bn": "হ্যালিকারনেসাসের সমাধি মন্দির",
+     "ur": "موسولس کا مزار",
+     "ru": "Мавзолей в Галикарнасе",
+     "pt": "Mausoléu de Halicarnasso",
+     "de": "Mausoleum von Halikarnassos",
+     "id": "Mausoleum Mausolus",
+     "it": "Mausoleo di Alicarnasso",
+     "ja": "マウソロス霊廟",
+     "ko": "할리카르나소스의 마우솔레움"
+    },
+    "at": [
+     27.424097,
+     37.037942
+    ]
+   },
+   {
+    "id": "q41553",
+    "name": {
+     "en": "Colossus of Rhodes",
+     "zh": "罗得岛巨像",
+     "hi": "रोडेस कि विशालमूर्ति",
+     "es": "Coloso de Rodas",
+     "ar": "عملاق رودس",
+     "fr": "colosse de Rhodes",
+     "bn": "রোডস এর মূর্তি",
+     "ur": "روڈس کا مجسمہ",
+     "ru": "Колосс Родосский",
+     "pt": "Colosso de Rodes",
+     "de": "Koloss von Rhodos",
+     "id": "Kolosus di Rodos",
+     "it": "Colosso di Rodi",
+     "ja": "ロドス島の巨像",
+     "ko": "로도스의 거상"
+    },
+    "at": [
+     28.227778,
+     36.451111
+    ]
+   },
+   {
+    "id": "q43244",
+    "name": {
+     "en": "Lighthouse of Alexandria",
+     "zh": "亚历山大灯塔",
+     "hi": "सिकन्दरिया का प्रकाशस्तंभ",
+     "es": "Faro de Alejandría",
+     "ar": "فنار الإسكندرية",
+     "fr": "phare d'Alexandrie",
+     "bn": "আলেকজান্দ্রিয়ার বাতিঘর",
+     "ur": "اسکندریہ کا روشن مینار",
+     "ru": "Александрийский маяк",
+     "pt": "Farol de Alexandria",
+     "de": "Pharos von Alexandria",
+     "id": "Mercusuar Iskandariyah",
+     "it": "faro di Alessandria",
+     "ja": "アレクサンドリアの大灯台",
+     "ko": "알렉산드리아의 등대"
+    },
+    "at": [
+     29.885,
+     31.214167
+    ]
+   }
+  ]
  }
 }

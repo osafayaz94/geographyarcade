@@ -233,3 +233,37 @@ dl.kv dd{margin:0;font-weight:600}
 footer{border-top:1px solid var(--line);padding:1.5rem 0 2.5rem;color:var(--muted);font-size:.9rem}
 footer .wrap{display:flex;gap:.5rem 1.5rem;flex-wrap:wrap}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* Printable maps: the box on quiz pages, the controls, the black-and-white map and the key. */
+.paside{float:right;width:180px;margin:0 0 1rem 1.5rem;display:flex;flex-direction:column;gap:.4rem;padding:.6rem;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink);text-decoration:none;font-weight:600;font-size:.92rem;text-align:center}
+.paside:hover{border-color:var(--mag)}
+.paside img{width:100%;height:auto;border-radius:8px;background:var(--water)}
+@media (max-width:760px){.paside{float:none;flex-direction:row;align-items:center;width:auto;margin:0 0 1rem;text-align:start}.paside img{width:96px}}
+.pctl{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem;margin:1rem 0 .4rem}
+.seg{display:inline-flex;border:1.5px solid var(--line);border-radius:999px;overflow:hidden}
+.seg button{border:0;background:transparent;color:var(--ink);font:600 .95rem var(--body);padding:.6rem 1rem;cursor:pointer}
+.seg button[aria-pressed=true]{background:var(--ink);color:var(--paper)}
+.pmap{background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px;margin:1rem 0}
+.pmap img,.pmap svg{display:block;width:100%;height:auto}
+.pmap svg rect{fill:#fff}
+.pmap svg .ctx{fill:#EEE;stroke:#BBB}
+.pmap svg .c{fill:#fff!important;stroke:#222!important;stroke-width:.7}
+.pmap svg g{stroke:#222}
+.pmap svg .ring{display:none}
+.pnum{fill:#000;stroke:#fff;stroke-width:3px;paint-order:stroke;font-family:system-ui,sans-serif;font-weight:700;text-anchor:middle;dominant-baseline:central}
+.pm-blank .pnum{display:none}
+.pkey{columns:4 11rem;column-gap:1.6rem;padding-inline-start:2.4rem;margin:1rem 0 2rem}
+.pkey li{break-inside:avoid;padding:.2rem 0}
+.pm-worksheet .pkey li{border-bottom:1px solid #999}
+.pm-worksheet .pkey .nm{visibility:hidden}
+.pm-blank .pkey{display:none}
+@media print{
+  header.top,footer,.crumbs,.pctl,.ptip,.lede,.skip,.paside{display:none!important}
+  body{background:#fff!important;color:#000!important}
+  main.wrap{max-width:none;padding:0}
+  h1{font-size:18pt;margin:0 0 6pt;color:#000}
+  .pmap{border:0;padding:0;margin:0 0 8pt}
+  .pkey{font-size:9pt;margin:0;color:#000}
+  .pkey li{border-color:#999}
+}
+.pkey li.pskip{display:none}

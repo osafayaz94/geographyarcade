@@ -5,7 +5,7 @@ const config = require('./site.config');
 const { L, LANGS, CONT_KEYS, t } = require('./src/i18n');
 const { countryShapes, continentSvg, adm1Svg, adm1Thumb, continentThumb, addStar, regionArt, physSvg, latLongSvg, hemispheres, countryGameArt, LAT_LINES } = require('./src/maps');
 const { T, tt } = require('./src/terms');
-for (const l of LANGS) if (T[l]) Object.assign(T[l], { 'g.shapes': t(l, 'hubShapes'), 'l.cfa.t': L[l].s.cfaTitle, 'l.cfa.a': L[l].s.cfaAnswer });
+for (const l of LANGS) if (T[l]) Object.assign(T[l], { 'g.shapes': t(l, 'hubShapes'), 'l.cfa.t': L[l].s.cfaTitle, 'l.cfa.a': L[l].s.cfaAnswer, 'g.wonders': L[l].s.gWonders, 'g.ancient-wonders': L[l].s.gAncient });
 const { DIAGRAMS } = require('./src/diagrams');
 const { planetSvg, solarSystemSvg } = require('./src/planets');
 const { SCENES } = require('./src/scenes');
@@ -107,6 +107,7 @@ function write(rel, content) {
 // Minify: a space before ":" is kept, because in "html:not(.lat) :is(h1)" it is the descendant combinator.
 const CSS = fs.readFileSync(path.join(__dirname, 'src', 'style.css'), 'utf8').replace(/\/\*[\s\S]*?\*\//g, '').replace(/\s*\n\s*/g, '').replace(/\s*([{};,>])\s*/g, '$1').replace(/:\s+/g, ':').replace(/;}/g, '}');
 const APP_VERSION = require('crypto').createHash('md5').update(fs.readFileSync(path.join(__dirname, 'src', 'app.js'))).digest('hex').slice(0, 8);
+const PRINT_VERSION = require('crypto').createHash('md5').update(fs.readFileSync(path.join(__dirname, 'src', 'print.js'))).digest('hex').slice(0, 8);
 const SEARCH_VERSION = require('crypto').createHash('md5').update(fs.readFileSync(path.join(__dirname, 'src', 'search.js'))).digest('hex').slice(0, 8);
 const LOGO = '<svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="#1F5F8B"/><path d="M8 11c3-3 7-1 9 1s1 5-2 6-3 5 0 7M20 6c-1 3 1 5 4 5s4 3 3 6" fill="none" stroke="#B9CC8E" stroke-width="2.4" stroke-linecap="round"/><circle cx="22" cy="21" r="3" fill="#A3195B"/></svg>';
 
@@ -117,6 +118,13 @@ const OG = new Set();
 function ogName(p) {
   let m;
   if (p === '') return 'home';
+  if ((m = p.match(/^printables\/maps\/([a-z-]+)\/$/))) return `maps-${m[1]}`;
+  if ((m = p.match(/^printables\/countries\/([a-z0-9-]+)\/(?:([a-z0-9-]+)\/)?$/))) {
+    const c = countries.find((x) => x.slug === m[1]);
+    if (!c) return 'home';
+    const x = m[2] && EXTRA_SETS.find((e) => e.c === c && e.slug === m[2]);
+    return x ? `x-${x.key}` : `prov-${c.iso2.toLowerCase()}`;
+  }
   if ((m = p.match(/^(flags|capitals|maps|guess-the-country)\/(?:([a-z-]+)\/)?$/))) return `${m[1]}-${m[2] || 'world'}`;
   if ((m = p.match(/^([a-z-]+)\/$/)) && REGIONS.some((r) => r.key === m[1])) return `region-${m[1]}`;
   if ((m = p.match(/^countries\/([a-z0-9-]+)\/(?:([a-z0-9-]+)\/)?$/))) {
@@ -178,7 +186,7 @@ const CSP = [
 ].join('; ');
 
 // One page in one language. `p` is the language-free path, e.g. "flags/africa/".
-function page(lang, p, { title, desc, body, crumbs = [], jsonld = [], preload, script = false, nav, noindex = false }) {
+function page(lang, p, { title, desc, body, crumbs = [], jsonld = [], preload, script = false, printJs = false, nav, noindex = false }) {
   const Ls = L[lang];
   // The site name is added only where the whole title stays within 60 characters (search results cut longer ones).
   const fullTitle = (title + ' | ' + SITE).length <= 60 ? title + ' | ' + SITE : title;
@@ -188,7 +196,7 @@ function page(lang, p, { title, desc, body, crumbs = [], jsonld = [], preload, s
   const crumbList = [{ name: t(lang, 'breadcrumbHome'), p: '' }, ...crumbs];
   const ld = [...jsonld];
   if (crumbs.length) ld.push({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: crumbList.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, item: abs(lang, c.p) })) });
-  const navItems = [['navFlags', 'flags/'], ['navCapitals', 'capitals/'], ['navMaps', 'maps/'], ['navProvinces', 'provinces/'], ['navCountries', 'countries/']];
+  const navItems = [['navFlags', 'flags/'], ['navCapitals', 'capitals/'], ['navMaps', 'maps/'], ['navProvinces', 'provinces/'], ['navCountries', 'countries/'], ['navPrint', 'printables/']];
   // Web fonts load without blocking: Bricolage Grotesque for Latin-script headings, and the
   // language's own font where the system one is poor (Nastaliq for Urdu).
   const family = Ls.latin ? 'Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800' : Ls.gfont;
@@ -232,7 +240,7 @@ ${body}
 <a href="${url(lang)}">${esc(SITE)}</a>${navItems.map(([k, h]) => `<a href="${url(lang, h)}">${esc(t(lang, k))}</a>`).join('')}<a href="${url(lang, 'world/')}">${esc(tt(lang, 'worldGames'))}</a><a href="${url(lang, 'lists/')}">${esc(tt(lang, 'l.related'))}</a><a href="${url(lang, 'about/')}">${esc(t(lang, 'navAbout'))}</a>
 <span>${esc(t(lang, 'updated', { d: LASTMOD_TEXT }))}</span>
 </div></footer>
-${script ? `<script src="/app.js?v=${APP_VERSION}" defer></script>` : ''}<script src="/search.js?v=${SEARCH_VERSION}" defer></script>
+${script ? `<script src="/app.js?v=${APP_VERSION}" defer></script>` : ''}${printJs ? `<script src="/print.js?v=${PRINT_VERSION}" defer></script>` : ''}<script src="/search.js?v=${SEARCH_VERSION}" defer></script>
 </body>
 </html>`;
   let date = TODAY;
@@ -395,7 +403,7 @@ function continentQuiz(lang, q, scope) {
   const cover = q.type === 'flags' ? coverFlags([...list].sort((a, b) => pop(b) - pop(a)).map((c) => flagSrc(c.iso2)))
     : q.type === 'capitals' ? coverImg(scope === 'world' ? '/img/games/capitals.svg' : `/img/c/${scope}-capitals.svg`, '#3F4A5A')
     : q.type === 'shapes' ? coverFlags(bigShapes(list), '#2B5F73') : null;
-  const body = `<h1>${esc(title)}</h1><p class="lede">${esc(desc)}</p>${gameShell(lang, data, cover)}${answerTable(lang, list, q.type)}${faq.body}${relatedQuizzes(lang, p)}`;
+  const body = `${printAside(lang, printFor((pr) => pr.kind === 'scope' && pr.s === scope))}<h1>${esc(title)}</h1><p class="lede">${esc(desc)}</p>${gameShell(lang, data, cover)}${answerTable(lang, list, q.type)}${faq.body}${relatedQuizzes(lang, p)}`;
   page(lang, p, {
     title, desc, body, script: true, nav: `${q.dir}/`,
     crumbs: [{ name: t(lang, q.hub), p: `${q.dir}/` }, { name: title, p }],
@@ -456,6 +464,8 @@ const WORLD_GAMES = [
   { key: 'capitals', type: 'link', href: 'capitals/world/', tile: '#3F4A5A' },
   { key: 'flags', type: 'link', href: 'flags/world/', tile: '#6B5CA5' },
   { key: 'shapes', type: 'link', href: 'guess-the-country/world/', tile: '#2B5F73' },
+  { key: 'wonders', type: 'phys', slug: 'seven-wonders-of-the-world', tile: '#C9A13B' },
+  { key: 'ancient-wonders', type: 'phys', slug: 'seven-wonders-of-the-ancient-world', tile: '#9A5B3F' },
   { key: 'continents', type: 'phys', tile: '#2F8F83' },
   { key: 'oceans', type: 'phys', tile: '#2B5F73' },
   { key: 'latlong', type: 'latlong', slug: 'latitude-and-longitude', tile: '#3C7FB0' },
@@ -479,7 +489,7 @@ const WORLD_GAMES = [
   { key: 'volcanoes', type: 'phys', tile: '#8E3B46' },
 ].filter((g) => g.type !== 'phys' || physical[g.key]);
 const gamePath = (g) => (g.type === 'link' ? g.href : `world/${g.slug || g.key}/`);
-const PHYS_SOURCE = { biomes: 'RESOLVE Ecoregions 2017 (CC BY 4.0)', rivers: 'Natural Earth, Wikidata', mountains: 'Natural Earth, Wikidata', volcanoes: 'Wikidata', cities: 'Natural Earth' };
+const PHYS_SOURCE = { wonders: 'Wikidata', 'ancient-wonders': 'Wikidata', biomes: 'RESOLVE Ecoregions 2017 (CC BY 4.0)', rivers: 'Natural Earth, Wikidata', mountains: 'Natural Earth, Wikidata', volcanoes: 'Wikidata', cities: 'Natural Earth' };
 
 // The items a world game asks about, named in one language.
 function gameItems(g, lang) {
@@ -496,11 +506,15 @@ function worldGame(lang, g) {
   const items = gameItems(g, lang);
   const isMap = g.type === 'phys' || g.type === 'latlong';
   const title = tt(lang, 'physTitle', { g: label });
-  const desc = tt(lang, isMap ? 'physDescMap' : 'physDescDiagram', { g: label, n: items.length });
+  // The wonders have their own descriptions (the ancient ones are on a regional map, not the world map).
+  const desc = g.key === 'wonders' ? t(lang, 'descWonders') : g.key === 'ancient-wonders' ? t(lang, 'descAncient') : tt(lang, isMap ? 'physDescMap' : 'physDescDiagram', { g: label, n: items.length });
   const data = { type: 'map', key: `w-${g.key}-${lang}`, title, map: `/maps/w/${g.key}.svg`, ar: MAP_AR['w-' + g.key], items, s: quizStrings(lang) };
   const crumbs = [{ name: L[lang].cont.world, p: 'world/' }, { name: label, p }];
   let table;
   let qa = [[t(lang, 'qMapFaq'), t(lang, 'aMap')], [t(lang, 'qScoreFaq'), t(lang, 'aScore')]];
+  // The Great Pyramid (q37200) is on the New Seven Wonders map as the honorary eighth, not one of the seven.
+  if (g.key === 'wonders') qa.unshift([t(lang, 'qWonders'), t(lang, 'aWonders', { list: listJoin(lang, items.filter((x) => x.id !== 'q37200').map((x) => x.n)) })]);
+  if (g.key === 'ancient-wonders') qa.unshift([t(lang, 'qAncient'), t(lang, 'aAncient', { list: listJoin(lang, items.map((x) => x.n)) })]);
   let extra = '';
   if (g.type === 'solar') {
     // Facts table (NASA diameters) and the planet quick answers.
@@ -952,7 +966,7 @@ function provinceQuizzes(lang, c) {
     const data = { type: 'pmap', key: `pmap-${c.iso2}-${lang}`, title, map: `/maps/p/${c.iso2.toLowerCase()}.svg`, ar: MAP_AR['p-' + c.iso2], items: onMap.map((d) => ({ id: d.id, n: nm(d.name, lang) })), s: quizStrings(lang) };
     const faq = faqBlock(lang, [[t(lang, 'qDivFaq', { c: name, term: tm }), t(lang, 'aDiv', { c: name, n: divs.length, term: tm, list: listJoin(lang, divs.slice(0, 3).map((d) => nm(d.name, lang))) })], [t(lang, 'qMapFaq'), t(lang, 'aMap')], [t(lang, 'qScoreFaq'), t(lang, 'aScore')]]);
     page(lang, p, { title, desc, script: true, nav: 'provinces/', crumbs: [...crumbsBase, { name: title, p }], jsonld: [quizLd(lang, p, title, desc, name), faq.ld],
-      body: `<h1>${esc(title)}</h1><p class="lede">${esc(desc)}</p>${gameShell(lang, data)}${table}${faq.body}${other(base + 'capitals-quiz/', 'provCapQuiz')}` });
+      body: `${printAside(lang, printFor((pr) => pr.kind === 'prov' && pr.c === c))}<h1>${esc(title)}</h1><p class="lede">${esc(desc)}</p>${gameShell(lang, data)}${table}${faq.body}${other(base + 'capitals-quiz/', 'provCapQuiz')}` });
   }
   // Capitals quiz (only where enough divisions have a capital to make a quiz)
   if (hasCapQuiz(c)) {
@@ -963,7 +977,7 @@ function provinceQuizzes(lang, c) {
     const data = { type: 'pcap', key: `pcap-${c.iso2}-${lang}`, title, items: withCap.map((d) => ({ id: d.id, n: nm(d.name, lang), a: nm(d.capital, lang) })), s: quizStrings(lang) };
     const faq = faqBlock(lang, [...withCap.slice(0, 3).map((d) => [t(lang, 'qCapitalFaq', { c: nm(d.name, lang) }), t(lang, 'capitalIs', { c: nm(d.name, lang), cap: nm(d.capital, lang) })]), [t(lang, 'qScoreFaq'), t(lang, 'aScore')]]);
     page(lang, p, { title, desc, script: true, nav: 'provinces/', crumbs: [...crumbsBase, { name: title, p }], jsonld: [quizLd(lang, p, title, desc, name), faq.ld],
-      body: `<h1>${esc(title)}</h1><p class="lede">${esc(desc)}</p>${gameShell(lang, data, coverImg(`/img/p/${c.iso2.toLowerCase()}-capitals.svg`, '#3F4A5A'))}${table}${faq.body}${other(base + 'map-quiz/', 'provMapQuiz')}` });
+      body: `${printAside(lang, printFor((pr) => pr.kind === 'prov' && pr.c === c))}<h1>${esc(title)}</h1><p class="lede">${esc(desc)}</p>${gameShell(lang, data, coverImg(`/img/p/${c.iso2.toLowerCase()}-capitals.svg`, '#3F4A5A'))}${table}${faq.body}${other(base + 'map-quiz/', 'provMapQuiz')}` });
   }
 }
 
@@ -992,6 +1006,64 @@ function divisionFlagQuiz(lang, c) {
   const related = `<h2>${esc(t(lang, 'related'))}</h2><ul class="links"><li><a href="${url(lang, `countries/${c.slug}/map-quiz/`)}">${esc(provQuizTitle(lang, c, 'map'))}</a></li>${hasCapQuiz(c) ? `<li><a href="${url(lang, `countries/${c.slug}/capitals-quiz/`)}">${esc(provQuizTitle(lang, c, 'cap'))}</a></li>` : ''}<li><a href="${url(lang, `countries/${c.slug}/`)}">${esc(name)}</a></li></ul>`;
   page(lang, p, { title, desc, script: true, nav: 'provinces/', crumbs: [{ name: t(lang, 'countriesTitle'), p: 'countries/' }, { name, p: `countries/${c.slug}/` }, { name: title, p }],
     jsonld: [quizLd(lang, p, title, desc, name), faq.ld], body: `<h1>${esc(title)}</h1><p class="lede">${esc(desc)}</p>${gameShell(lang, data, coverFlags(lightestFlags(c).map((d) => `/${base}${meta[d.id].file}`)))}${answers}${credits}${faq.body}${related}` });
+}
+
+// ---------- Printable maps (/printables/) ----------
+// One page per quiz map: the map in black and white (src/print.js numbers each place) with the
+// list of names, as a blank map, a worksheet or an answer key, ready to print or save as PDF.
+function printList() {
+  const out = [];
+  for (const s of QUIZ_SCOPES) out.push({ kind: 'scope', s, p: `printables/maps/${s}/`, src: `/maps/${s}.svg`, ar: MAP_AR[s], thumb: s === 'world' ? '/img/games/countries.svg' : `/img/c/${s}.svg`, quiz: `maps/${s}/` });
+  for (const c of provCountries) out.push({ kind: 'prov', c, p: `printables/countries/${c.slug}/`, src: `/maps/p/${c.iso2.toLowerCase()}.svg`, ar: MAP_AR['p-' + c.iso2], thumb: `/img/p/${c.iso2.toLowerCase()}.svg`, quiz: `countries/${c.slug}/map-quiz/` });
+  for (const x of EXTRA_SETS) out.push({ kind: 'extra', x, p: `printables/countries/${x.c.slug}/${x.slug}/`, src: `/maps/x/${x.key}.svg`, ar: MAP_AR['x-' + x.key], thumb: `/img/x/${x.key}.svg`, quiz: extraPath(x) });
+  return out;
+}
+let PRINTS = null;
+const printsOf = () => (PRINTS = PRINTS || printList());
+const printFor = (match) => printsOf().find(match);
+function printInfo(lang, pr) {
+  if (pr.kind === 'scope') {
+    const items = inScope(pr.s).map((c) => ({ id: c.iso2, n: cName(c, lang) }));
+    return { items, title: t(lang, 'printTitle', { of: L[lang].of[pr.s] }), desc: pr.s === 'world' ? t(lang, 'printDescWorld') : t(lang, 'printDesc', { of: L[lang].of[pr.s], n: items.length }) };
+  }
+  const isX = pr.kind === 'extra';
+  const divs = isX ? pr.x.divisions.filter((d) => MAP_IDS['x-' + pr.x.key].has(d.id)) : subdivisions[pr.c.iso2].divisions.filter((d) => MAP_IDS[pr.c.iso2].has(d.id));
+  const items = divs.map((d) => ({ id: d.id, n: nm(d.name, lang) }));
+  const v = isX ? { c: extraPlace(lang, pr.x), term: L[lang].term[pr.x.term], Term: L[lang].Term[pr.x.term] } : { c: cName(pr.c, lang), term: term(pr.c, lang), Term: term(pr.c, lang, true) };
+  return { items, title: t(lang, 'printProvTitle', v), desc: t(lang, 'printProvDesc', { ...v, n: items.length }) };
+}
+// The small "Printable map" box at the top right of a quiz page.
+function printAside(lang, pr) {
+  if (!pr) return '';
+  return `<a class="paside" href="${url(lang, pr.p)}"><img src="${pr.thumb}" alt="" width="160" height="96" loading="lazy"><span>${esc(t(lang, 'printLink'))}</span></a>`;
+}
+function printPage(lang, pr) {
+  const { items, title, desc } = printInfo(lang, pr);
+  const list = sortBy(lang, items, (x) => x.n);
+  const [w, h] = (pr.ar || '1000/600').split('/').map(Number);
+  const modes = ['blank', 'worksheet', 'answers'].map((m) => `<button type="button" data-mode="${m}" aria-pressed="${m === 'worksheet'}">${esc(t(lang, { blank: 'modeBlank', worksheet: 'modeWorksheet', answers: 'modeAnswers' }[m]))}</button>`).join('');
+  const body = `<h1>${esc(title)}</h1><p class="lede">${esc(desc)}</p>`
+    + `<div class="pctl"><div class="seg" role="group" aria-label="${esc(title)}">${modes}</div><button class="btn" type="button" data-print>${esc(t(lang, 'printBtn'))}</button><a class="btn ghost" href="${url(lang, pr.quiz)}">${esc(t(lang, 'printQuizLink'))}</a></div>`
+    + `<p class="note ptip">${esc(t(lang, 'printTip'))}</p>`
+    + `<div class="pmap" data-src="${pr.src}"><img src="${pr.src}" alt="${esc(title)}" width="${w}" height="${h}" decoding="async" fetchpriority="low"></div>`
+    + `<ol class="pkey">${list.map((x) => `<li data-id="${esc(x.id)}"><span class="nm">${esc(x.n)}</span></li>`).join('')}</ol>`;
+  const crumbs = [{ name: t(lang, 'printHubTitle'), p: 'printables/' }, { name: title, p: pr.p }];
+  const ld = { '@context': 'https://schema.org', '@type': 'WebPage', name: title, description: desc, url: abs(lang, pr.p), inLanguage: L[lang].hreflang, dateModified: LASTMOD, publisher: ORG,
+    primaryImageOfPage: { '@type': 'ImageObject', url: DOMAIN + pr.src }, learningResourceType: 'Worksheet', isAccessibleForFree: true };
+  page(lang, pr.p, { title, desc, body, crumbs, jsonld: [ld], nav: 'printables/', printJs: true });
+}
+function printHub(lang) {
+  const p = 'printables/';
+  const title = t(lang, 'printHubTitle');
+  const desc = t(lang, 'printHubDesc', { m: provCountries.length });
+  const stamp = (pr, i) => `<a class="stamp" href="${url(lang, pr.p)}"><span class="perf"><span class="art" style="--tile:#2B5F73"><img src="${pr.thumb}" alt="" width="320" height="190"${i < 2 ? '' : ' loading="lazy"'}></span><span class="cap">${esc(printInfo(lang, pr).title)}</span></span></a>`;
+  const scopes = printsOf().filter((pr) => pr.kind === 'scope');
+  const rest = sortBy(lang, printsOf().filter((pr) => pr.kind !== 'scope'), (pr) => printInfo(lang, pr).title);
+  const flagOf = (pr) => (pr.kind === 'prov' ? pr.c : pr.x.c).iso2;
+  const body = `<h1>${esc(title)}</h1><p class="lede">${esc(desc)}</p>`
+    + `<h2>${esc(t(lang, 'printSecCont'))}</h2><nav class="stamps" aria-label="${esc(t(lang, 'printSecCont'))}">${scopes.map(stamp).join('')}</nav>`
+    + `<h2>${esc(t(lang, 'provTitle'))}</h2><ul class="links">${rest.map((pr) => `<li><img src="${flagSrc(flagOf(pr))}" alt="" width="28" height="21" loading="lazy"><a href="${url(lang, pr.p)}">${esc(printInfo(lang, pr).title)}</a></li>`).join('')}</ul>`;
+  page(lang, p, { title, desc, body, nav: p, crumbs: [{ name: title, p }] });
 }
 
 // ---------- Extra map quizzes (islands of Hawaii, counties of England...) ----------
@@ -1035,7 +1107,7 @@ function extraMapQuiz(lang, x) {
   const others = EXTRA_SETS.filter((e) => e !== x);
   const related = `<h2>${esc(t(lang, 'related'))}</h2><ul class="links">${hasProv.has(x.country) ? `<li><a href="${url(lang, `countries/${x.c.slug}/map-quiz/`)}">${esc(provQuizTitle(lang, x.c, 'map'))}</a></li>` : ''}<li><a href="${url(lang, `countries/${x.c.slug}/`)}">${esc(name)}</a></li>${extraLinks(lang, [x]).slice(1).concat(extraLinks(lang, others)).map(([h, n]) => `<li><a href="${url(lang, h)}">${esc(n)}</a></li>`).join('')}</ul>`;
   page(lang, p, { title, desc, script: true, nav: 'maps/', crumbs: [{ name: t(lang, 'countriesTitle'), p: 'countries/' }, { name, p: `countries/${x.c.slug}/` }, { name: title, p }],
-    jsonld: [quizLd(lang, p, title, desc, place), faq.ld], body: `<h1>${esc(title)}</h1><p class="lede">${esc(desc)}</p>${gameShell(lang, data)}${answers}${faq.body}${related}` });
+    jsonld: [quizLd(lang, p, title, desc, place), faq.ld], body: `${printAside(lang, printFor((pr) => pr.kind === 'extra' && pr.x === x))}<h1>${esc(title)}</h1><p class="lede">${esc(desc)}</p>${gameShell(lang, data)}${answers}${faq.body}${related}` });
 }
 
 function provincesHub(lang) {
@@ -1070,6 +1142,7 @@ function statics() {
   for (const c of countries) fs.copyFileSync(flagDir + c.iso2.toLowerCase() + '.svg', path.join(DIST, 'flags', c.iso2.toLowerCase() + '.svg'));
   write('app.js', fs.readFileSync(path.join(__dirname, 'src', 'app.js'), 'utf8'));
   write('search.js', fs.readFileSync(path.join(__dirname, 'src', 'search.js'), 'utf8'));
+  write('print.js', fs.readFileSync(path.join(__dirname, 'src', 'print.js'), 'utf8'));
   for (const lang of LANGS) write(`search/${lang}.json`, JSON.stringify(SEARCH[lang].sort((a, b) => a[2] - b[2])));
   write('favicon.svg', LOGO.replace('<svg', '<svg xmlns="http://www.w3.org/2000/svg"').replace(' aria-hidden="true"', ''));
 
@@ -1272,6 +1345,8 @@ function notFound() {
     for (const c of provCountries) provinceQuizzes(lang, c);
     for (const iso2 of flagCountries) divisionFlagQuiz(lang, byIso[iso2]);
     for (const x of EXTRA_SETS) { extraMapQuiz(lang, x); if (extraHasCap(x)) extraCapQuiz(lang, x); }
+    printHub(lang);
+    for (const pr of printsOf()) printPage(lang, pr);
     about(lang);
     searchPage(lang);
   }

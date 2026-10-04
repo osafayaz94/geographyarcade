@@ -106,7 +106,32 @@ function pick(features, cls, limit, extra = () => true) {
     .slice(0, limit);
 }
 
-(async () => {
+// The Seven Wonders: a fixed list, so each is named by its Wikidata item (checked 2026-10-05).
+// New Seven Wonders: chosen in 2007 in a poll run by the New7Wonders Foundation, with the Great
+// Pyramid of Giza (the only ancient wonder still standing) as an honorary eighth.
+const WONDERS = {
+  wonders: ['Q12501', 'Q5788', 'Q79961', 'Q676203', 'Q5859', 'Q10285', 'Q9141', 'Q37200'],
+  'ancient-wonders': ['Q37200', 'Q41931', 'Q43018', 'Q46239', 'Q45368', 'Q41553', 'Q43244'],
+};
+async function wonders() {
+  const all = [...new Set(Object.values(WONDERS).flat())];
+  const rows = await sparql(`SELECT ?i ?c WHERE { VALUES ?i { ${all.map((q) => 'wd:' + q).join(' ')} } ?i wdt:P625 ?c. }`);
+  const at = {};
+  for (const r of rows) { const m = /Point\(([-\d.]+) ([-\d.]+)\)/.exec(r.c); if (m && !at[r.i]) at[r.i] = [Number(m[1]), Number(m[2])]; }
+  const names = await wdNames(all);
+  for (const [key, qids] of Object.entries(WONDERS)) {
+    const missing = qids.filter((q) => !at[q]);
+    if (missing.length) throw new Error(`${key}: no coordinates for ${missing.join(', ')}`);
+    save(key, 'point', qids.map((q) => ({ id: q.toLowerCase(), name: names[q], at: at[q] })));
+  }
+}
+
+// `--only-wonders`: refresh just the wonders in an existing data/physical.json.
+if (process.argv.includes('--only-wonders')) {
+  Object.assign(games, JSON.parse(fs.readFileSync(path.join(DATA, 'physical.json'), 'utf8')));
+  wonders().then(() => fs.writeFileSync(path.join(DATA, 'physical.json'), JSON.stringify(games, null, 1)));
+} else (async () => {
+  await wonders();
   const marine = (await cachedFetch(NE + 'ne_50m_geography_marine_polys.geojson')).features;
   const regions = (await cachedFetch(NE + 'ne_50m_geography_regions_polys.geojson')).features;
   const lakes = (await cachedFetch(NE + 'ne_50m_lakes.geojson')).features;

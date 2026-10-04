@@ -422,13 +422,17 @@ const ART_BOX = {
   seas: [-15, 25, 60, 68], straits: [-20, 28, 40, 62], lakes: [-125, 32, -65, 66], islands: [90, -12, 150, 25],
   archipelagos: [100, -25, 180, 25], regions: [-15, 20, 110, 72], ranges: [55, 20, 110, 52], cities: [60, -5, 145, 45],
   mountains: [65, 18, 105, 48], deserts: [-20, 5, 80, 45], volcanoes: [115, -12, 150, 45], rivers: [-20, -35, 55, 35],
+  wonders: [-100, -30, 125, 50], 'ancient-wonders': [18, 25, 48, 41],
 };
+// Quiz maps that show one region instead of the world: the ancient wonders all lie between
+// Greece and Mesopotamia, too close together to pick out on a world map.
+const QUIZ_BOX = { 'ancient-wonders': [14, 23, 50, 43] };
 
 async function physRender(key, game, geo, { art = false, pct }) {
   const W2 = art ? 320 : 1000;
   const H2 = art ? 190 : 500;
   const polar = key === 'continents' || key === 'biomes';
-  const box = art && ART_BOX[key];
+  const box = art ? ART_BOX[key] : QUIZ_BOX[key];
   const proj = (box ? d3.geoMercator().rotate([-(box[0] + box[2]) / 2, 0]) : d3.geoNaturalEarth1())
     .fitExtent([[4, 4], [W2 - 4, H2 - 4]], boxPoints(box || [-179.9, polar ? -85 : -58, 179.9, 84])).clipExtent([[0, 0], [W2, H2]]);
   const pg = d3.geoPath(proj).digits(art ? 0 : 1);
