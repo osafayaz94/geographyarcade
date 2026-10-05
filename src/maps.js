@@ -645,4 +645,24 @@ async function hemispheres() {
   return out;
 }
 
-module.exports = { countryShapes, continentSvg, adm1Svg, adm1Thumb, continentThumb, addStar, regionArt, physSvg, latLongSvg, hemispheres, countryGameArt, LAT_LINES, VIEWS };
+// A world map for a country list page: the listed countries in orange, the rest pale, the Equator
+// as a red line, and (shade 'N' or 'S') that hemisphere lightly tinted.
+async function listMap(highlight, { shade = null } = {}) {
+  const W2 = 1000, H2 = 510;
+  const proj = d3.geoNaturalEarth1().fitExtent([[6, 6], [W2 - 6, H2 - 6]], { type: 'Sphere' });
+  const pg = d3.geoPath(proj).digits(0);
+  const sphere = pg({ type: 'Sphere' });
+  const feats = await worldFeatures(4);
+  let on = '', off = '';
+  for (const f of feats) { const d = pg(f); if (!d) continue; if (highlight.has(f.iso2)) on += d; else off += d; }
+  const eq = pg({ type: 'LineString', coordinates: [[-180, 0], [-90, 0], [0, 0], [90, 0], [180, 0]] });
+  const [, ey] = proj([0, 0]);
+  const band = shade === 'S' ? `<rect x="0" y="${round(ey)}" width="${W2}" height="${round(H2 - ey)}" fill="#1F5F8B" opacity=".14"/>`
+    : shade === 'N' ? `<rect x="0" y="0" width="${W2}" height="${round(ey)}" fill="#1F5F8B" opacity=".14"/>` : '';
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W2} ${H2}" role="img"><defs><clipPath id="sph"><path d="${sphere}"/></clipPath></defs>`
+    + `<path d="${sphere}" fill="#BFE3F2"/><g clip-path="url(#sph)">${band}</g>`
+    + `<path d="${off}" fill="#EFE9DC" stroke="#fff" stroke-width=".5"/><path d="${on}" fill="#E07A3F" stroke="#fff" stroke-width=".6"/>`
+    + `<path d="${eq}" fill="none" stroke="#C0262D" stroke-width="2.5" stroke-dasharray="8 5"/><path d="${sphere}" fill="none" stroke="#14202E" stroke-width="1.5"/></svg>`;
+}
+
+module.exports = { listMap, countryShapes, continentSvg, adm1Svg, adm1Thumb, continentThumb, addStar, regionArt, physSvg, latLongSvg, hemispheres, countryGameArt, LAT_LINES, VIEWS };

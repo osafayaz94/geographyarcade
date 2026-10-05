@@ -267,3 +267,8 @@ footer .wrap{display:flex;gap:.5rem 1.5rem;flex-wrap:wrap}
   .pkey li{border-color:#999}
 }
 .pkey li.pskip{display:none}
+.pname{display:none;fill:#000;stroke:#fff;stroke-width:2.5px;paint-order:stroke;font-family:system-ui,sans-serif;font-weight:600;text-anchor:middle;dominant-baseline:central}
+.pm-labeled .pname{display:inline}
+.pm-labeled .pnum,.pm-labeled .pkey{display:none}
+.pwm{fill:#8A97A3;font-family:system-ui,sans-serif;font-weight:700;text-anchor:end;letter-spacing:.02em}
+.lmap{margin:1rem 0}.lmap img{display:block;width:100%;height:auto;border-radius:10px}

@@ -3,9 +3,9 @@ const fs = require('fs');
 const path = require('path');
 const config = require('./site.config');
 const { L, LANGS, CONT_KEYS, t } = require('./src/i18n');
-const { countryShapes, continentSvg, adm1Svg, adm1Thumb, continentThumb, addStar, regionArt, physSvg, latLongSvg, hemispheres, countryGameArt, LAT_LINES } = require('./src/maps');
+const { listMap, countryShapes, continentSvg, adm1Svg, adm1Thumb, continentThumb, addStar, regionArt, physSvg, latLongSvg, hemispheres, countryGameArt, LAT_LINES } = require('./src/maps');
 const { T, tt } = require('./src/terms');
-for (const l of LANGS) if (T[l]) Object.assign(T[l], { 'g.shapes': t(l, 'hubShapes'), 'l.cfa.t': L[l].s.cfaTitle, 'l.cfa.a': L[l].s.cfaAnswer, 'g.wonders': L[l].s.gWonders, 'g.ancient-wonders': L[l].s.gAncient });
+for (const l of LANGS) if (T[l]) Object.assign(T[l], { 'g.shapes': t(l, 'hubShapes'), 'l.cfa.t': L[l].s.cfaTitle, 'l.cfa.a': L[l].s.cfaAnswer, 'g.wonders': L[l].s.gWonders, 'l.north.t': L[l].s.northT, 'l.north.a': L[l].s.northA, 'g.ancient-wonders': L[l].s.gAncient });
 const { DIAGRAMS } = require('./src/diagrams');
 const { planetSvg, solarSystemSvg } = require('./src/planets');
 const { SCENES } = require('./src/scenes');
@@ -754,6 +754,8 @@ function countryGameStamps(lang) {
 // ---------- Lists and rankings (topic pages that answer "which countries..." searches) ----------
 // kind "rank": ordered by a value; "set": countries that match, largest first.
 const byArea = (a, b) => b.area - a.area;
+// List pages that also explain their line or hemisphere and show a map (shade: hemisphere tinted).
+const HEMI_LISTS = { south: { x: 'hemiSouthX', shade: 'S' }, north: { x: 'hemiNorthX', shade: 'N' }, equator: { x: 'hemiEquatorX', shade: null } };
 const LISTS = [
   { key: 'largest', slug: 'largest-countries', kind: 'rank', rows: () => [...countries].sort(byArea), value: (lang, c) => num(lang, c.area), th: 'thArea', game: 'maps/world/' },
   { key: 'populous', slug: 'most-populous-countries', kind: 'rank', rows: () => countries.filter((c) => c.population).sort((a, b) => b.population.value - a.population.value), value: (lang, c) => num(lang, c.population.value), th: 'thPopulation', game: 'countries/' },
@@ -763,6 +765,7 @@ const LISTS = [
   { key: 'neighbours', slug: 'countries-with-most-neighbours', kind: 'rank', rows: () => countries.filter((c) => c.borders.length).sort((a, b) => b.borders.length - a.borders.length || byArea(a, b)), value: (lang, c) => num(lang, c.borders.length), thT: 'thNeighbours', game: 'games/neighbours/' },
   { key: 'equator', slug: 'countries-on-the-equator', kind: 'set', rows: () => countries.filter((c) => HEMI[c.iso2] && HEMI[c.iso2].ns === 'B').sort(byArea), game: 'games/hemispheres/' },
   { key: 'south', slug: 'southern-hemisphere-countries', kind: 'set', rows: () => countries.filter((c) => HEMI[c.iso2] && HEMI[c.iso2].ns === 'S').sort(byArea), game: 'games/hemispheres/' },
+  { key: 'north', slug: 'northern-hemisphere-countries', kind: 'set', rows: () => countries.filter((c) => HEMI[c.iso2] && HEMI[c.iso2].ns === 'N').sort(byArea), game: 'games/hemispheres/' },
   // Both CFA francs together: people search for "the CFA franc" and how many countries use it.
   { key: 'cfa', slug: 'countries-using-cfa-franc', kind: 'set', rows: () => countries.filter((c) => c.currencies.some((x) => x.code === 'XOF' || x.code === 'XAF')).sort(byArea), game: 'games/currencies/',
     vars: () => ({ w: countries.filter((c) => c.currencies.some((x) => x.code === 'XOF')).length, m: countries.filter((c) => c.currencies.some((x) => x.code === 'XAF')).length }) },
@@ -796,9 +799,21 @@ function listPage(lang, l) {
   const table = `<div class="tbl"><table><thead><tr><th class="num">${esc(tt(lang, 'l.rank'))}</th><th>${esc(t(lang, 'thFlag'))}</th><th>${esc(t(lang, 'thCountry'))}</th><th>${esc(t(lang, 'thCapital'))}</th>${valueHead ? `<th class="num">${esc(valueHead)}</th>` : ''}</tr></thead><tbody>${rows.map((c, i) => `<tr><td class="num">${i + 1}</td><td><img src="${flagSrc(c.iso2)}" alt="" width="32" height="24" loading="lazy"></td><td><a href="${url(lang, `countries/${c.slug}/`)}">${esc(nameOf(c))}</a></td><td>${esc(capsOf(c, lang).join(', '))}</td>${valueHead ? `<td class="num">${l.value(lang, c)}</td>` : ''}</tr>`).join('')}</tbody></table></div>`;
   const gameName = { 'maps/world/': quizTitle(lang, 'maps', 'world'), 'countries/': t(lang, 'countriesTitle') }[l.game] || tt(lang, 'g.' + l.game.split('/')[1]);
   const others = LISTS.filter((x) => x !== l).map((x) => `<li><a href="${url(lang, listPath(x))}">${esc(listTitle(lang, x))}</a></li>`).join('');
-  const body = `<h1>${esc(title)}</h1><p class="answer">${esc(answer)}</p><div class="cta"><a class="btn" href="${url(lang, l.game)}">${esc(gameName)}</a></div>${table}<h2>${esc(tt(lang, 'l.related'))}</h2><ul class="links">${others}</ul>`;
+  // Hemisphere and Equator lists: what the line or half is, a map of the countries, the
+  // countries continent by continent, and a map quiz to find them.
+  const hemi = HEMI_LISTS[l.key];
+  let extra = '';
+  if (hemi) {
+    const groups = CONT_KEYS.filter((k) => k !== 'world').map((k) => [k, sortBy(lang, rows.filter((c) => c.continent === k), nameOf)]).filter(([, g]) => g.length);
+    const byCont = `<h2>${esc(t(lang, 'byCont'))}</h2>` + groups.map(([k, g]) => `<h3>${esc(L[lang].cont[k])} (${num(lang, g.length)})</h3><p>${g.map((c) => `<a href="${url(lang, `countries/${c.slug}/`)}">${esc(nameOf(c))}</a>`).join(', ')}</p>`).join('');
+    const qTitle = t(lang, 'listQuiz', { n: rows.length });
+    const data = { type: 'map', key: `list-${l.key}-${lang}`, title: qTitle, map: '/maps/world.svg', ar: MAP_AR.world, items: rows.map((c) => ({ id: c.iso2, n: nameOf(c) })), s: quizStrings(lang) };
+    extra = `<p>${esc(t(lang, hemi.x))}</p><figure class="lmap"><img src="/img/lists/${l.key}.svg" alt="${esc(title)}" width="1000" height="510"><figcaption class="note">${esc(t(lang, 'mapLegend'))}</figcaption></figure>`
+      + byCont + `<h2 id="quiz">${esc(qTitle)}</h2>${gameShell(lang, data)}`;
+  }
+  const body = `<h1>${esc(title)}</h1><p class="answer">${esc(answer)}</p>${extra}<div class="cta"><a class="btn" href="${url(lang, l.game)}">${esc(gameName)}</a></div>${table}<h2>${esc(tt(lang, 'l.related'))}</h2><ul class="links">${others}</ul>`;
   const ld = { '@context': 'https://schema.org', '@type': 'ItemList', name: title, description: answer, numberOfItems: rows.length, itemListOrder: l.kind === 'rank' ? 'https://schema.org/ItemListOrderDescending' : 'https://schema.org/ItemListUnordered', itemListElement: rows.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: nameOf(c), url: abs(lang, `countries/${c.slug}/`) })) };
-  page(lang, p, { title, desc, body, crumbs: [{ name: tt(lang, 'l.hub.t'), p: 'lists/' }, { name: title, p }], jsonld: [ld] });
+  page(lang, p, { title, desc, body, script: !!hemi, crumbs: [{ name: tt(lang, 'l.hub.t'), p: 'lists/' }, { name: title, p }], jsonld: [ld] });
 }
 
 function listsHub(lang) {
@@ -1041,7 +1056,7 @@ function printPage(lang, pr) {
   const { items, title, desc } = printInfo(lang, pr);
   const list = sortBy(lang, items, (x) => x.n);
   const [w, h] = (pr.ar || '1000/600').split('/').map(Number);
-  const modes = ['blank', 'worksheet', 'answers'].map((m) => `<button type="button" data-mode="${m}" aria-pressed="${m === 'worksheet'}">${esc(t(lang, { blank: 'modeBlank', worksheet: 'modeWorksheet', answers: 'modeAnswers' }[m]))}</button>`).join('');
+  const modes = ['blank', 'worksheet', 'labeled', 'answers'].map((m) => `<button type="button" data-mode="${m}" aria-pressed="${m === 'worksheet'}">${esc(t(lang, { blank: 'modeBlank', worksheet: 'modeWorksheet', labeled: 'modeLabeled', answers: 'modeAnswers' }[m]))}</button>`).join('');
   const body = `<h1>${esc(title)}</h1><p class="lede">${esc(desc)}</p>`
     + `<div class="pctl"><div class="seg" role="group" aria-label="${esc(title)}">${modes}</div><button class="btn" type="button" data-print>${esc(t(lang, 'printBtn'))}</button><a class="btn ghost" href="${url(lang, pr.quiz)}">${esc(t(lang, 'printQuizLink'))}</a></div>`
     + `<p class="note ptip">${esc(t(lang, 'printTip'))}</p>`
@@ -1296,6 +1311,7 @@ function notFound() {
 
   // Country games: hemisphere data and stamp art.
   HEMI = await hemispheres();
+  for (const l of LISTS.filter((x) => HEMI_LISTS[x.key])) write(`img/lists/${l.key}.svg`, await listMap(new Set(l.rows().map((c) => c.iso2)), { shade: HEMI_LISTS[l.key].shade }));
   SHAPES = await countryShapes();
   // Every outline is written (capitals quizzes show small countries too); the shapes quizzes use only hasShape ones.
   for (const c of countries.filter((x) => SHAPES[x.iso2])) write(`img/shapes/${c.iso2.toLowerCase()}.svg`, SHAPES[c.iso2]);

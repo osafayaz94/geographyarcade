@@ -1,6 +1,7 @@
 // Printable maps (/printables/...): loads the quiz map as inline SVG, numbers every place in the
 // list (in list order) and switches between three versions: a blank outline map, a worksheet
-// (numbers on the map, empty lines in the list) and an answer key (numbers and names).
+// (numbers on the map, empty lines in the list), a labelled map (names on the map) and an answer
+// key (numbers and names). Every version carries a small geographyarcade.com mark.
 // Without this script the page still shows the coloured map image and the full list of names.
 (function () {
   'use strict';
@@ -12,7 +13,7 @@
   // Version buttons, and the Print button (window.print opens the browser's print dialog,
   // where "Save as PDF" makes a PDF).
   function setMode(mode) {
-    body.classList.remove('pm-blank', 'pm-worksheet', 'pm-answers');
+    body.classList.remove('pm-blank', 'pm-worksheet', 'pm-labeled', 'pm-answers');
     body.classList.add('pm-' + mode);
     Array.prototype.forEach.call(document.querySelectorAll('[data-mode]'), function (b) {
       b.setAttribute('aria-pressed', b.getAttribute('data-mode') === mode ? 'true' : 'false');
@@ -83,6 +84,22 @@
       t.setAttribute('font-size', size);
       t.textContent = String(n);
       pick.el.parentNode.appendChild(t);
+      // The name, for the labelled version.
+      var nm = document.createElementNS(NS, 'text');
+      nm.setAttribute('x', pick.c.x);
+      nm.setAttribute('y', pick.c.y);
+      nm.setAttribute('class', 'pname');
+      nm.setAttribute('font-size', Math.max(6, Math.round(size * 0.8)));
+      nm.textContent = (li.querySelector('.nm') || li).textContent;
+      pick.el.parentNode.appendChild(nm);
     });
+    // The site's mark in the bottom corner of every version.
+    var wm = document.createElementNS(NS, 'text');
+    wm.setAttribute('x', vb[0] + vb[2] - 10);
+    wm.setAttribute('y', vb[1] + vb[3] - 10);
+    wm.setAttribute('class', 'pwm');
+    wm.setAttribute('font-size', Math.max(10, Math.round(vb[2] / 60)));
+    wm.textContent = 'geographyarcade.com';
+    svg.appendChild(wm);
   });
 })();
