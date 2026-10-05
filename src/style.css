@@ -278,3 +278,9 @@ footer .wrap{display:flex;gap:.5rem 1.5rem;flex-wrap:wrap}
 .pver-l{display:flex;flex-wrap:wrap;gap:.4rem}
 .pver-l a{padding:.4rem .8rem;border:1.5px solid var(--line);border-radius:999px;color:var(--ink);text-decoration:none;font-size:.92rem}
 .pver-l a:hover{border-color:var(--mag)}
+.pmini{width:min(100%,320px);margin:0 auto 12px;background:var(--water);border-radius:10px;padding:6px}
+.pmini svg{display:block;width:100%;height:auto}
+.pmini svg .c{fill:var(--ctx)!important}
+.pmini svg .c.hl{fill:#E07A3F!important}
+.pmini svg .ring{display:none}
+.pmap svg .land{fill:#fff;stroke:#222}

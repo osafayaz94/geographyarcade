@@ -576,7 +576,9 @@ async function countryGameArt(key, { landlocked = new Set(), neighbours = [] } =
 // from maps. Far-off pieces are left out so the shape stays recognisable (Alaska and Hawaii for the
 // US, French Guiana for France): a piece stays if it has at least a quarter of the largest piece's
 // area, or lies within 5 degrees of the box around those big pieces.
-async function countryShapes() {
+// prints (optional): { iso2: [{ id, at: [lon, lat] }] }. For each listed country it is filled in
+// with a large printable outline (1000x700) with the capital(s) as dots, keyed by iso2.
+async function countryShapes({ prints } = {}) {
   // Large countries are simplified (smaller files); small ones keep full 1:50m detail so a
   // small island does not collapse into a triangle.
   const collect = (feats) => {
@@ -615,6 +617,13 @@ async function countryShapes() {
     const d = d3.geoPath(proj).digits(0)(shape);
     // Outline first, fill on top: the fill hides lines between pieces of one country (Northern Cyprus).
     if (d) out[iso2] = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W3} ${H3}"><defs><path id="s-${iso2}" d="${d}"/></defs><use href="#s-${iso2}" fill="none" stroke="#7A3A12" stroke-width="4" stroke-linejoin="round"/><use href="#s-${iso2}" fill="#E07A3F"/></svg>`;
+    if (prints && prints[iso2]) {
+      const PW = 1000, PH = 700;
+      const pp = d3.geoMercator().rotate([-lon, 0]).fitExtent([[40, 40], [PW - 40, PH - 40]], shape);
+      const pd = d3.geoPath(pp).digits(1)(shape);
+      const dots = prints[iso2].map((k) => { const xy = pp(k.at); return xy ? `<circle class="c dot" data-id="${k.id}" cx="${round(xy[0])}" cy="${round(xy[1])}" r="9" fill="#E07A3F" stroke="#14202E" stroke-width="2"/>` : ''; }).join('');
+      prints[iso2] = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${PW} ${PH}" role="img"><rect width="${PW}" height="${PH}" fill="#D4E4EC"/><path class="land" d="${pd}" fill="#EFE9DC" stroke="#4A5A70" stroke-width="1.5" stroke-linejoin="round"/>${dots}</svg>`;
+    }
   }
   return out;
 }

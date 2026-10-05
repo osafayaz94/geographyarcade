@@ -72,7 +72,8 @@
     // enough to hold one; the others are left out of the worksheet list too, so the numbers on
     // the map and in the list always match.
     var crowded = items.length > 80;
-    var size = crowded ? Math.max(7, Math.round(vb[2] / 120)) : Math.max(8, Math.round(vb[2] / 85));
+    // Country outlines carry only their capital: big, readable labels there.
+    var size = crowded ? Math.max(7, Math.round(vb[2] / 120)) : items.length <= 3 ? Math.round(vb[2] / 38) : Math.max(8, Math.round(vb[2] / 85));
     var minArea = crowded ? size * size * 2.2 : 0;
     var n = 0;
     items.forEach(function (li) {

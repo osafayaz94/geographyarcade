@@ -49,6 +49,10 @@ const areaRank = Object.fromEntries([...countries].sort((a, b) => b.area - a.are
 const provCountries = [...countries].sort((a, b) => b.area - a.area)
   .filter((c) => subdivisions[c.iso2] && subdivisions[c.iso2].divisions.length > 1);
 const hasProv = new Set(provCountries.map((c) => c.iso2));
+// Capital coordinates (scripts/fetch-capital-coords.js), for the outline printables of countries
+// without a province map; COUNTRY_PRINTS lists the countries that got one (filled in main()).
+const capCoords = fs.existsSync(path.join(__dirname, 'data', 'capital-coords.json')) ? require('./data/capital-coords.json') : {};
+const COUNTRY_PRINTS = new Set();
 // Sentences say "the N largest countries": count only those, not the smaller extras.
 const EXTRA_PROV = new Set(config.extraProvinceCountries || []);
 const provLargest = provCountries.filter((c) => !EXTRA_PROV.has(c.iso3));
@@ -186,7 +190,15 @@ const CSP = [
 ].join('; ');
 
 // One page in one language. `p` is the language-free path, e.g. "flags/africa/".
+// Search results cut descriptions near 160 characters: a longer one loses its closing sentence
+// (the facts come first in every description), as long as a useful sentence remains.
+function fitDescription(d) {
+  if (!d || d.length <= 160) return d;
+  const cut = d.replace(/([.。।۔])\s*[^.。।۔]+[.。।۔]\s*$/u, '$1');
+  return cut.length >= 70 ? cut : d;
+}
 function page(lang, p, { title, desc, body, crumbs = [], jsonld = [], preload, script = false, printJs = false, nav, noindex = false }) {
+  desc = fitDescription(desc);
   const Ls = L[lang];
   // The site name is added only where the whole title stays within 60 characters (search results cut longer ones).
   const fullTitle = (title + ' | ' + SITE).length <= 60 ? title + ' | ' + SITE : title;
@@ -458,6 +470,16 @@ const CARD_FLAGS = ['br', 'jp', 'za', 'ca', 'pk', 'fr'];
 // type: link (an existing quiz), phys (map of Natural Earth/Wikidata features), diagram,
 // latlong, solar. slug: the page path under /world/.
 const physical = fs.existsSync(path.join(__dirname, 'data', 'physical.json')) ? require('./data/physical.json') : {};
+// Wikidata labels are public edits. A name in a non-Latin script with stray Latin words mixed in
+// (the Hindi label for Kilimanjaro read "किलिमंजार hiahwjamaja" in Oct 2026) is dropped, so the
+// page shows the English name, unless a checked replacement is listed here.
+const PHYS_NAME_FIXES = { 'mount-kilimanjaro': { hi: 'किलिमंजारो पर्वत' } };
+const NON_LATIN = ['hi', 'bn', 'ur', 'ar', 'ru', 'zh', 'ja', 'ko'];
+const mixedScript = (v) => /[a-z]{3,}/.test(v) && /[^\x00-\x7F]/.test(v);
+for (const g of Object.values(physical)) for (const it of g.items) {
+  Object.assign(it.name, PHYS_NAME_FIXES[it.id] || {});
+  for (const l of NON_LATIN) if (it.name[l] && mixedScript(it.name[l]) && !(PHYS_NAME_FIXES[it.id] || {})[l]) delete it.name[l];
+}
 const planets = require('./data/planets.json');
 const WORLD_GAMES = [
   { key: 'countries', type: 'link', href: 'maps/world/', tile: '#C97B2C' },
@@ -901,10 +923,13 @@ function countryPage(lang, c) {
   const sub = hasProv.has(c.iso2) ? subdivisions[c.iso2] : null;
   const divs = sub ? sortBy(lang, sub.divisions, (d) => nm(d.name, lang)) : [];
   const tm = term(c, lang);
-  // The short form where naming the divisions would push the title past 60 characters.
-  const longTitle = sub && t(lang, 'countryTitleMap', { c: name, term: tm });
-  const title = longTitle && longTitle.length <= 60 ? longTitle : t(lang, 'countryTitle', { c: name });
-  const desc = sub ? t(lang, 'countryDescMap', { c: name, cap: caps.join(', '), n: divs.length, term: tm }) : t(lang, 'countryDesc', { c: name, cap: caps.join(', ') });
+  const title = t(lang, 'countryTitleFacts', { c: name });
+  // Search Console (Oct 2026): people search a country's area, capital, population and continent,
+  // so the title names them and the description gives the answers.
+  const factsDesc = c.area && c.population ? t(lang, 'countryDescFacts', { c: name, cap: caps.join(', '), a: areaFmt(lang, c.area), p: num(lang, approx(c.population.value)), cont: L[lang].cont[c.continent] }) : null;
+  // Search results cut descriptions near 160 characters: drop the closing sentence if needed.
+  const fitDesc = (d) => (d && d.length > 158 ? d.replace(/([.。।۔])\s*[^.。।۔]+[.。।۔]\s*$/u, '$1') : d);
+  const desc = fitDesc(factsDesc) || (sub ? t(lang, 'countryDescMap', { c: name, cap: caps.join(', '), n: divs.length, term: tm }) : t(lang, 'countryDesc', { c: name, cap: caps.join(', ') }));
   const capSentence = caps.length > 1 ? t(lang, 'capitalsAre', { c: name, caps: listJoin(lang, caps) }) : t(lang, 'capitalIs', { c: name, cap: caps[0] });
   const cont = L[lang].cont[c.continent];
   const pop = c.population ? (c.population.year ? t(lang, 'popSource', { pop: num(lang, c.population.value), year: c.population.year }) : t(lang, 'popSourceNoYear', { pop: num(lang, c.population.value) })) : '';
@@ -943,7 +968,7 @@ ${printVersions(lang, [printFor((pr) => pr.kind === 'prov' && pr.c === c), ...EX
   const body = `<h1>${esc(name)}</h1><p class="answer">${esc(capSentence)} ${esc(t(lang, 'inCont', { c: name, cont }))}</p>
 <div class="facts"><dl class="kv">${kv.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${v}</dd>`).join('')}</dl><img class="flagbig" src="${flagSrc(c.iso2)}" alt="${esc(t(lang, 'flagAlt', { c: name }))}" width="300" height="225" fetchpriority="high"></div>
 <h2>${esc(t(lang, 'playCountryQuizzes', { cont }))}</h2><div class="cta">${quizLinks}</div>
-${divBlock}${faq.body}
+${divBlock}${sub ? '' : printVersions(lang, [printFor((pr) => pr.kind === 'country' && pr.c === c)])}${faq.body}
 <h2>${esc(tt(lang, 'moreGames'))}</h2><ul class="links">${COUNTRY_GAMES.map((g) => `<li><a href="${url(lang, `games/${g.key}/`)}">${esc(tt(lang, 'g.' + g.key))}</a></li>`).join('')}</ul>
 ${listLinks(lang, listsFor(c))}`;
 
@@ -990,7 +1015,7 @@ function provinceQuizzes(lang, c) {
     const withCap = divs.filter((d) => d.capital);
     const title = provQuizTitle(lang, c, 'cap');
     const desc = (c.iso2 === 'US' && seo(lang, 'usCapDesc')) || t(lang, 'provCapDesc', { c: name, n: withCap.length, term: tm });
-    const data = { type: 'pcap', key: `pcap-${c.iso2}-${lang}`, title, items: withCap.map((d) => ({ id: d.id, n: nm(d.name, lang), a: nm(d.capital, lang) })), s: quizStrings(lang) };
+    const data = { type: 'pcap', key: `pcap-${c.iso2}-${lang}`, title, picMap: `/maps/p/${c.iso2.toLowerCase()}.svg`, items: withCap.map((d) => ({ id: d.id, n: nm(d.name, lang), a: nm(d.capital, lang) })), s: quizStrings(lang) };
     const faq = faqBlock(lang, [...withCap.slice(0, 3).map((d) => [t(lang, 'qCapitalFaq', { c: nm(d.name, lang) }), t(lang, 'capitalIs', { c: nm(d.name, lang), cap: nm(d.capital, lang) })]), [t(lang, 'qScoreFaq'), t(lang, 'aScore')]]);
     page(lang, p, { title, desc, script: true, nav: 'provinces/', crumbs: [...crumbsBase, { name: title, p }], jsonld: [quizLd(lang, p, title, desc, name), faq.ld],
       body: `${printAside(lang, printFor((pr) => pr.kind === 'prov' && pr.c === c))}<h1>${esc(title)}</h1><p class="lede">${esc(desc)}</p>${gameShell(lang, data, coverImg(`/img/p/${c.iso2.toLowerCase()}-capitals.svg`, '#3F4A5A'))}${table}${faq.body}${other(base + 'map-quiz/', 'provMapQuiz')}` });
@@ -1031,6 +1056,7 @@ function printList() {
   const out = [];
   for (const s of QUIZ_SCOPES) out.push({ kind: 'scope', s, p: `printables/maps/${s}/`, src: `/maps/${s}.svg`, ar: MAP_AR[s], thumb: s === 'world' ? '/img/games/countries.svg' : `/img/c/${s}.svg`, quiz: `maps/${s}/` });
   for (const c of provCountries) out.push({ kind: 'prov', c, p: `printables/countries/${c.slug}/`, src: `/maps/p/${c.iso2.toLowerCase()}.svg`, ar: MAP_AR['p-' + c.iso2], thumb: `/img/p/${c.iso2.toLowerCase()}.svg`, quiz: `countries/${c.slug}/map-quiz/` });
+  for (const c of countries.filter((x) => COUNTRY_PRINTS.has(x.iso2))) out.push({ kind: 'country', c, p: `printables/countries/${c.slug}/`, src: `/maps/c/${c.iso2.toLowerCase()}.svg`, ar: '1000/700', thumb: shapeSrc(c.iso2), quiz: `capitals/${c.continent}/` });
   for (const x of EXTRA_SETS) out.push({ kind: 'extra', x, p: `printables/countries/${x.c.slug}/${x.slug}/`, src: `/maps/x/${x.key}.svg`, ar: MAP_AR['x-' + x.key], thumb: `/img/x/${x.key}.svg`, quiz: extraPath(x) });
   return out;
 }
@@ -1041,6 +1067,10 @@ function printInfo(lang, pr) {
   if (pr.kind === 'scope') {
     const items = inScope(pr.s).map((c) => ({ id: c.iso2, n: cName(c, lang) }));
     return { items, title: t(lang, 'printTitle', { of: L[lang].of[pr.s] }), desc: pr.s === 'world' ? t(lang, 'printDescWorld') : t(lang, 'printDesc', { of: L[lang].of[pr.s], n: items.length }) };
+  }
+  if (pr.kind === 'country') {
+    const items = pr.c.capitals.filter((k) => capCoords[k.qid]).map((k) => ({ id: k.qid, n: nm(k.name, lang) }));
+    return { items, title: t(lang, 'printCountryTitle', { c: cName(pr.c, lang) }), desc: t(lang, 'printCountryDesc', { c: cName(pr.c, lang), cap: listJoin(lang, capsOf(pr.c, lang)) }) };
   }
   const isX = pr.kind === 'extra';
   const divs = isX ? pr.x.divisions.filter((d) => MAP_IDS['x-' + pr.x.key].has(d.id)) : subdivisions[pr.c.iso2].divisions.filter((d) => MAP_IDS[pr.c.iso2].has(d.id));
@@ -1081,11 +1111,13 @@ function printHub(lang) {
   const desc = t(lang, 'printHubDesc', { m: provCountries.length });
   const stamp = (pr, i) => `<a class="stamp" href="${url(lang, pr.p)}"><span class="perf"><span class="art" style="--tile:#2B5F73"><img src="${pr.thumb}" alt="" width="320" height="190"${i < 2 ? '' : ' loading="lazy"'}></span><span class="cap">${esc(printInfo(lang, pr).title)}</span></span></a>`;
   const scopes = printsOf().filter((pr) => pr.kind === 'scope');
-  const rest = sortBy(lang, printsOf().filter((pr) => pr.kind !== 'scope'), (pr) => printInfo(lang, pr).title);
-  const flagOf = (pr) => (pr.kind === 'prov' ? pr.c : pr.x.c).iso2;
+  const rest = sortBy(lang, printsOf().filter((pr) => pr.kind === 'prov' || pr.kind === 'extra'), (pr) => printInfo(lang, pr).title);
+  const small = sortBy(lang, printsOf().filter((pr) => pr.kind === 'country'), (pr) => printInfo(lang, pr).title);
+  const flagOf = (pr) => (pr.kind === 'extra' ? pr.x.c : pr.c).iso2;
   const body = `<h1>${esc(title)}</h1><p class="lede">${esc(desc)}</p>`
     + `<h2>${esc(t(lang, 'printSecCont'))}</h2><nav class="stamps" aria-label="${esc(t(lang, 'printSecCont'))}">${scopes.map(stamp).join('')}</nav>`
-    + `<h2>${esc(t(lang, 'provTitle'))}</h2><ul class="links">${rest.map((pr) => `<li><img src="${flagSrc(flagOf(pr))}" alt="" width="28" height="21" loading="lazy"><a href="${url(lang, pr.p)}">${esc(printInfo(lang, pr).title)}</a></li>`).join('')}</ul>`;
+    + `<h2>${esc(t(lang, 'provTitle'))}</h2><ul class="links">${rest.map((pr) => `<li><img src="${flagSrc(flagOf(pr))}" alt="" width="28" height="21" loading="lazy"><a href="${url(lang, pr.p)}">${esc(printInfo(lang, pr).title)}</a></li>`).join('')}</ul>`
+    + `<h2>${esc(t(lang, 'navCountries'))}</h2><ul class="links">${small.map((pr) => `<li><img src="${flagSrc(flagOf(pr))}" alt="" width="28" height="21" loading="lazy"><a href="${url(lang, pr.p)}">${esc(printInfo(lang, pr).title)}</a></li>`).join('')}</ul>`;
   page(lang, p, { title, desc, body, nav: p, crumbs: [{ name: title, p }] });
 }
 
@@ -1108,7 +1140,7 @@ function extraCapQuiz(lang, x) {
   const withCap = sortBy(lang, x.divisions.filter((d) => d.capital), (d) => nm(d.name, lang));
   const title = extraCapTitle(lang, x);
   const desc = t(lang, 'provCapDesc', { c: place, n: withCap.length, term: L[lang].term[x.term] });
-  const data = { type: 'pcap', key: `xcap-${x.key}-${lang}`, title, items: withCap.map((d) => ({ id: d.id, n: nm(d.name, lang), a: nm(d.capital, lang) })), s: quizStrings(lang) };
+  const data = { type: 'pcap', key: `xcap-${x.key}-${lang}`, title, picMap: `/maps/x/${x.key}.svg`, items: withCap.map((d) => ({ id: d.id, n: nm(d.name, lang), a: nm(d.capital, lang) })), s: quizStrings(lang) };
   const table = `<h2 id="answers">${esc(t(lang, 'answersTitle'))}</h2><div class="tbl"><table><thead><tr><th>${esc(t(lang, 'thName'))}</th><th>${esc(t(lang, 'divCapital'))}</th></tr></thead><tbody>${withCap.map((d) => `<tr><td>${esc(nm(d.name, lang))}</td><td>${esc(nm(d.capital, lang))}</td></tr>`).join('')}</tbody></table></div>`;
   const faq = faqBlock(lang, [...withCap.slice(0, 3).map((d) => [t(lang, 'qCapitalFaq', { c: nm(d.name, lang) }), t(lang, 'capitalIs', { c: nm(d.name, lang), cap: nm(d.capital, lang) })]), [t(lang, 'qScoreFaq'), t(lang, 'aScore')]]);
   const related = `<h2>${esc(t(lang, 'related'))}</h2><ul class="links"><li><a href="${url(lang, extraPath(x))}">${esc(extraTitle(lang, x))}</a></li>${hasProv.has(x.country) ? `<li><a href="${url(lang, `countries/${x.c.slug}/map-quiz/`)}">${esc(provQuizTitle(lang, x.c, 'map'))}</a></li>` : ''}<li><a href="${url(lang, `countries/${x.c.slug}/`)}">${esc(name)}</a></li></ul>`;
@@ -1320,7 +1352,10 @@ function notFound() {
   // Country games: hemisphere data and stamp art.
   HEMI = await hemispheres();
   for (const l of LISTS.filter((x) => HEMI_LISTS[x.key])) write(`img/lists/${l.key}.svg`, await listMap(new Set(l.rows().map((c) => c.iso2)), { shade: HEMI_LISTS[l.key].shade }));
-  SHAPES = await countryShapes();
+  const printCaps = {};
+  for (const c of countries) if (!hasProv.has(c.iso2)) printCaps[c.iso2] = c.capitals.filter((k) => capCoords[k.qid]).map((k) => ({ id: k.qid, at: capCoords[k.qid] }));
+  SHAPES = await countryShapes({ prints: printCaps });
+  for (const [iso2, svg] of Object.entries(printCaps)) if (typeof svg === 'string') { write(`maps/c/${iso2.toLowerCase()}.svg`, svg); COUNTRY_PRINTS.add(iso2); }
   // Every outline is written (capitals quizzes show small countries too); the shapes quizzes use only hasShape ones.
   for (const c of countries.filter((x) => SHAPES[x.iso2])) write(`img/shapes/${c.iso2.toLowerCase()}.svg`, SHAPES[c.iso2]);
   for (const g of COUNTRY_GAMES) write(`img/games/${g.key}.svg`, await countryGameArt(g.key, { landlocked: new Set(countries.filter((c) => c.landlocked).map((c) => c.iso2)), neighbours: byIso.FR.borders }));

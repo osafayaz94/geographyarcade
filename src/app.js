@@ -56,6 +56,13 @@
   var isMap = Q.type === 'map' || Q.type === 'pmap';
   var bestKey = 'best:' + Q.key;
   var state, timer;
+  // Province capitals: the small map (see ask), and the province it currently highlights.
+  var miniMap = null;
+  function highlight(id) {
+    if (!miniMap) return;
+    Array.prototype.forEach.call(miniMap.querySelectorAll('.hl'), function (p) { p.classList.remove('hl'); });
+    if (id) Array.prototype.forEach.call(miniMap.querySelectorAll('[data-id="' + id + '"]'), function (p) { p.classList.add('hl'); });
+  }
 
   var stage = $('.stage', game);
   var bar = el('div', 'bar');
@@ -159,6 +166,21 @@
         var pic = el('img', 'pic'); pic.src = root + Q.picBase + item.id.toLowerCase() + '.svg'; pic.alt = ''; pic.width = 260; pic.height = 195;
         mcBox.appendChild(pic);
         var nxt = state.list[state.i + 1]; if (nxt && nxt.s) (new Image()).src = root + Q.picBase + nxt.id.toLowerCase() + '.svg';
+      }
+      // Province capitals quizzes: the country's map with this province highlighted. The map is
+      // fetched once and kept; each question moves the highlight.
+      if (Q.picMap) {
+        if (!miniMap) {
+          miniMap = el('div', 'pmini');
+          fetch(root + Q.picMap.replace(/^\//, '')).then(function (r) { return r.text(); }).then(function (txt) {
+            miniMap.innerHTML = txt;
+            var s = miniMap.querySelector('svg'); if (s) { s.removeAttribute('role'); s.setAttribute('aria-hidden', 'true'); }
+            highlight(miniMap.getAttribute('data-id'));
+          });
+        }
+        miniMap.setAttribute('data-id', item.id);
+        highlight(item.id);
+        mcBox.appendChild(miniMap);
       }
     }
     var box = el('div', 'opts');

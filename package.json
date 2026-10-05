@@ -5,7 +5,7 @@
   "description": "Static, multilingual geography quiz website: flags, capitals, maps, provinces.",
   "type": "commonjs",
   "scripts": {
-    "fetch": "node scripts/fetch-countries.js && node scripts/fetch-subdivisions.js && node scripts/fetch-extra-maps.js && node scripts/fetch-labels.js && node scripts/fetch-physical.js && node scripts/fetch-planets.js && node scripts/fetch-division-flags.js",
+    "fetch": "node scripts/fetch-countries.js && node scripts/fetch-capital-coords.js && node scripts/fetch-subdivisions.js && node scripts/fetch-extra-maps.js && node scripts/fetch-labels.js && node scripts/fetch-physical.js && node scripts/fetch-planets.js && node scripts/fetch-division-flags.js",
     "build": "node build.js",
     "check": "node scripts/check.js",
     "keywords": "node scripts/keywords.js",
