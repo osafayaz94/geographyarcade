@@ -27,7 +27,9 @@
      "id": "Hawaii",
      "it": "Isola di Hawaii",
      "ja": "ハワイ島",
-     "ko": "하와이섬"
+     "ko": "하와이섬",
+     "pl": "Hawaiʻi",
+     "nl": "Hawaï"
     },
     "capital": null,
     "capitalQid": null,
@@ -56,7 +58,9 @@
      "id": "Maui",
      "it": "Maui",
      "ja": "マウイ",
-     "ko": "마우이섬"
+     "ko": "마우이섬",
+     "pl": "Maui",
+     "nl": "Maui"
     },
     "capital": null,
     "capitalQid": null,
@@ -85,7 +89,9 @@
      "id": "Oahu",
      "it": "Oahu",
      "ja": "オアフ島",
-     "ko": "오아후섬"
+     "ko": "오아후섬",
+     "pl": "O'ahu",
+     "nl": "Oahu"
     },
     "capital": null,
     "capitalQid": null,
@@ -114,7 +120,9 @@
      "id": "Kauai",
      "it": "Kauai",
      "ja": "カウアイ島",
-     "ko": "카우아이섬"
+     "ko": "카우아이섬",
+     "pl": "Kauai",
+     "nl": "Kauai"
     },
     "capital": null,
     "capitalQid": null,
@@ -143,7 +151,9 @@
      "id": "Moloka'i",
      "it": "Molokai",
      "ja": "モロカイ島",
-     "ko": "몰로카이섬"
+     "ko": "몰로카이섬",
+     "pl": "Molokaʻi",
+     "nl": "Molokai"
     },
     "capital": null,
     "capitalQid": null,
@@ -172,7 +182,9 @@
      "id": "Lanai",
      "it": "Lanai",
      "ja": "ラナイ島",
-     "ko": "라나이섬"
+     "ko": "라나이섬",
+     "pl": "Lānaʻi",
+     "nl": "Lanai"
     },
     "capital": null,
     "capitalQid": null,
@@ -201,7 +213,9 @@
      "id": "Niihau",
      "it": "Niihau",
      "ja": "ニイハウ島",
-     "ko": "니하우섬"
+     "ko": "니하우섬",
+     "pl": "Ni'ihau",
+     "nl": "Niihau"
     },
     "capital": null,
     "capitalQid": null,
@@ -230,7 +244,9 @@
      "id": "Kahoolawe",
      "it": "Kahoolawe",
      "ja": "カホオラウェ島",
-     "ko": "카호올라웨섬"
+     "ko": "카호올라웨섬",
+     "pl": "Kaho'olawe",
+     "nl": "Kahoolawe"
     },
     "capital": null,
     "capitalQid": null,
@@ -270,7 +286,9 @@
      "id": "Zealand",
      "it": "Sjælland",
      "ja": "シェラン島",
-     "ko": "셸란섬"
+     "ko": "셸란섬",
+     "pl": "Zelandia",
+     "nl": "Seeland"
     },
     "capital": null,
     "capitalQid": null,
@@ -298,7 +316,9 @@
      "id": "Fyn",
      "it": "Fionia",
      "ja": "フュン島",
-     "ko": "퓐섬"
+     "ko": "퓐섬",
+     "pl": "Fionia",
+     "nl": "Funen"
     },
     "capital": null,
     "capitalQid": null,
@@ -326,7 +346,9 @@
      "id": "Lolland",
      "it": "Lolland",
      "ja": "ロラン島",
-     "ko": "롤란섬"
+     "ko": "롤란섬",
+     "pl": "Lolland",
+     "nl": "Lolland"
     },
     "capital": null,
     "capitalQid": null,
@@ -355,7 +377,9 @@
      "id": "Bornholm",
      "it": "Bornholm",
      "ja": "ボーンホルム島",
-     "ko": "보른홀름섬"
+     "ko": "보른홀름섬",
+     "pl": "Bornholm",
+     "nl": "Bornholm"
     },
     "capital": null,
     "capitalQid": null,
@@ -381,7 +405,9 @@
      "de": "Mors",
      "it": "Morsø",
      "ja": "モース島",
-     "ko": "모르스섬"
+     "ko": "모르스섬",
+     "pl": "Morsø",
+     "nl": "Mors"
     },
     "capital": null,
     "capitalQid": null,
@@ -406,7 +432,9 @@
      "id": "Als",
      "it": "Als",
      "ja": "アルス島",
-     "ko": "알스섬"
+     "ko": "알스섬",
+     "pl": "Als",
+     "nl": "Als"
     },
     "capital": null,
     "capitalQid": null,
@@ -434,7 +462,9 @@
      "id": "Langeland",
      "it": "Langeland",
      "ja": "ランゲラン島",
-     "ko": "랑엘란섬"
+     "ko": "랑엘란섬",
+     "pl": "Langeland",
+     "nl": "Langeland"
     },
     "capital": null,
     "capitalQid": null,
@@ -459,7 +489,9 @@
      "id": "Møn",
      "it": "Møn",
      "ja": "ムーン島",
-     "ko": "묀섬"
+     "ko": "묀섬",
+     "pl": "Møn",
+     "nl": "Møn"
     },
     "capital": null,
     "capitalQid": null,
@@ -484,7 +516,9 @@
      "id": "Læsø",
      "it": "Læsø",
      "ja": "レス島",
-     "ko": "레쇠섬"
+     "ko": "레쇠섬",
+     "pl": "Læsø",
+     "nl": "Læsø"
     },
     "capital": null,
     "capitalQid": null,
@@ -512,7 +546,9 @@
      "de": "Samsø",
      "it": "Samsø",
      "ja": "サムセー島",
-     "ko": "삼쇠섬"
+     "ko": "삼쇠섬",
+     "pl": "Samsø",
+     "nl": "Samsø"
     },
     "capital": null,
     "capitalQid": null,
@@ -537,7 +573,9 @@
      "id": "Ærø",
      "it": "Ærø",
      "ja": "エーロ島",
-     "ko": "에뢰섬"
+     "ko": "에뢰섬",
+     "pl": "Ærø",
+     "nl": "Ærø"
     },
     "capital": null,
     "capitalQid": null,
@@ -565,7 +603,9 @@
      "id": "Amager",
      "it": "Amager",
      "ja": "アマー島",
-     "ko": "아마게르섬"
+     "ko": "아마게르섬",
+     "pl": "Amager",
+     "nl": "Amager"
     },
     "capital": null,
     "capitalQid": null,
@@ -593,7 +633,9 @@
      "id": "Fanø",
      "it": "Fanø",
      "ja": "ファノ島",
-     "ko": "파뇌섬"
+     "ko": "파뇌섬",
+     "pl": "Fanø",
+     "nl": "Fanø"
     },
     "capital": null,
     "capitalQid": null,
@@ -620,7 +662,9 @@
      "de": "Anholt",
      "it": "Anholt",
      "ja": "アンホルト島",
-     "ko": "안홀트섬"
+     "ko": "안홀트섬",
+     "pl": "Anholt",
+     "nl": "Anholt"
     },
     "capital": null,
     "capitalQid": null,
@@ -660,7 +704,9 @@
      "id": "Hertfordshire",
      "it": "Hertfordshire",
      "ja": "ハートフォードシャー",
-     "ko": "하트퍼드셔주"
+     "ko": "하트퍼드셔주",
+     "pl": "Hertfordshire",
+     "nl": "Hertfordshire"
     },
     "capital": {
      "en": "Hertford",
@@ -676,7 +722,9 @@
      "de": "Hertford",
      "it": "Hertford",
      "ja": "ハートフォード",
-     "ko": "하트퍼드"
+     "ko": "하트퍼드",
+     "pl": "Hertford",
+     "nl": "Hertford"
     },
     "capitalQid": "Q9681",
     "population": {
@@ -703,7 +751,9 @@
      "de": "Insel Wight",
      "it": "Isola di Wight",
      "ja": "ワイト島",
-     "ko": "아일오브와이트주"
+     "ko": "아일오브와이트주",
+     "pl": "Wight",
+     "nl": "Eiland Wight"
     },
     "capital": {
      "en": "Newport",
@@ -719,7 +769,9 @@
      "de": "Newport",
      "it": "Newport",
      "ja": "ニューポート (ワイト島)",
-     "ko": "뉴포트"
+     "ko": "뉴포트",
+     "pl": "Newport",
+     "nl": "Newport"
     },
     "capitalQid": "Q985594",
     "population": {
@@ -747,7 +799,9 @@
      "id": "Cheshire",
      "it": "Cheshire",
      "ja": "チェシャー",
-     "ko": "체셔주"
+     "ko": "체셔주",
+     "pl": "Cheshire",
+     "nl": "Cheshire"
     },
     "capital": {
      "en": "Chester",
@@ -764,7 +818,9 @@
      "id": "Chester",
      "it": "Chester",
      "ja": "チェスター",
-     "ko": "체스터"
+     "ko": "체스터",
+     "pl": "Chester",
+     "nl": "Chester"
     },
     "capitalQid": "Q170263",
     "population": {
@@ -792,7 +848,9 @@
      "id": "Cumbria",
      "it": "Cumbria",
      "ja": "カンブリア",
-     "ko": "컴브리아주"
+     "ko": "컴브리아주",
+     "pl": "Kumbria",
+     "nl": "Cumbria"
     },
     "capital": {
      "en": "Carlisle",
@@ -809,7 +867,9 @@
      "id": "Carlisle",
      "it": "Carlisle",
      "ja": "カーライル",
-     "ko": "칼라일"
+     "ko": "칼라일",
+     "pl": "Carlisle",
+     "nl": "Carlisle"
     },
     "capitalQid": "Q192896",
     "population": {
@@ -837,7 +897,9 @@
      "id": "Lancashire",
      "it": "Lancashire",
      "ja": "ランカシャー",
-     "ko": "랭커셔주"
+     "ko": "랭커셔주",
+     "pl": "Lancashire",
+     "nl": "Lancashire"
     },
     "capital": {
      "en": "Preston",
@@ -854,7 +916,9 @@
      "id": "Preston",
      "it": "Preston",
      "ja": "プレストン",
-     "ko": "프레스턴"
+     "ko": "프레스턴",
+     "pl": "Preston",
+     "nl": "Preston"
     },
     "capitalQid": "Q184090",
     "population": {
@@ -882,7 +946,9 @@
      "id": "Northumberland",
      "it": "Northumberland",
      "ja": "ノーサンバーランド",
-     "ko": "노섬벌랜드주"
+     "ko": "노섬벌랜드주",
+     "pl": "Northumberland",
+     "nl": "Northumberland"
     },
     "capital": null,
     "capitalQid": null,
@@ -911,7 +977,9 @@
      "id": "Tyne and Wear",
      "it": "Tyne and Wear",
      "ja": "タイン・アンド・ウィア",
-     "ko": "타인 위어주"
+     "ko": "타인 위어주",
+     "pl": "Tyne and Wear",
+     "nl": "Tyne and Wear"
     },
     "capital": null,
     "capitalQid": null,
@@ -940,7 +1008,9 @@
      "id": "County Durham",
      "it": "Durham",
      "ja": "ダラム",
-     "ko": "더럼주"
+     "ko": "더럼주",
+     "pl": "Durham",
+     "nl": "Durham"
     },
     "capital": {
      "en": "Durham",
@@ -957,7 +1027,9 @@
      "id": "Durham",
      "it": "Durham",
      "ja": "ダラム",
-     "ko": "더럼"
+     "ko": "더럼",
+     "pl": "Durham",
+     "nl": "Durham"
     },
     "capitalQid": "Q179815",
     "population": {
@@ -985,7 +1057,9 @@
      "id": "Yorkshire Barat",
      "it": "West Yorkshire",
      "ja": "ウェスト・ヨークシャー",
-     "ko": "웨스트요크셔주"
+     "ko": "웨스트요크셔주",
+     "pl": "West Yorkshire",
+     "nl": "West Yorkshire"
     },
     "capital": null,
     "capitalQid": null,
@@ -1014,7 +1088,9 @@
      "id": "Yorkshire Utara",
      "it": "North Yorkshire",
      "ja": "ノース・ヨークシャー",
-     "ko": "노스요크셔주"
+     "ko": "노스요크셔주",
+     "pl": "North Yorkshire",
+     "nl": "Noord-Yorkshire"
     },
     "capital": {
      "en": "Northallerton",
@@ -1030,7 +1106,9 @@
      "de": "Northallerton",
      "it": "Northallerton",
      "ja": "ノースアラートン",
-     "ko": "노샐러턴"
+     "ko": "노샐러턴",
+     "pl": "Northallerton",
+     "nl": "Northallerton"
     },
     "capitalQid": "Q920381",
     "population": {
@@ -1058,7 +1136,9 @@
      "id": "Yorkshire Timur",
      "it": "East Riding of Yorkshire",
      "ja": "イースト・ライディング・オブ・ヨークシャー",
-     "ko": "이스트라이딩오브요크셔주"
+     "ko": "이스트라이딩오브요크셔주",
+     "pl": "East Riding of Yorkshire",
+     "nl": "East Riding of Yorkshire"
     },
     "capital": {
      "en": "Beverley",
@@ -1075,7 +1155,9 @@
      "id": "Beverley",
      "it": "Beverley",
      "ja": "ベヴェーレイ",
-     "ko": "비벌리 (이스트라이딩오브요크셔 주)"
+     "ko": "비벌리 (이스트라이딩오브요크셔 주)",
+     "pl": "Beverley",
+     "nl": "Beverley"
     },
     "capitalQid": "Q851718",
     "population": {
@@ -1103,7 +1185,9 @@
      "id": "Lincolnshire",
      "it": "Lincolnshire",
      "ja": "リンカンシャー",
-     "ko": "링컨셔주"
+     "ko": "링컨셔주",
+     "pl": "Lincolnshire",
+     "nl": "Lincolnshire"
     },
     "capital": {
      "en": "Lincoln",
@@ -1120,7 +1204,9 @@
      "id": "Lincoln",
      "it": "Lincoln",
      "ja": "リンカン",
-     "ko": "링컨"
+     "ko": "링컨",
+     "pl": "Lincoln",
+     "nl": "Lincoln"
     },
     "capitalQid": "Q180057",
     "population": {
@@ -1148,7 +1234,9 @@
      "id": "Nottinghamshire",
      "it": "Nottinghamshire",
      "ja": "ノッティンガムシャー",
-     "ko": "노팅엄셔주"
+     "ko": "노팅엄셔주",
+     "pl": "Nottinghamshire",
+     "nl": "Nottinghamshire"
     },
     "capital": {
      "en": "West Bridgford",
@@ -1161,7 +1249,9 @@
      "ur": "ویسٹ برج فورڈ",
      "ru": "Уэст-Бриджфорд",
      "it": "West Bridgford",
-     "ja": "ウェストブリグフォード"
+     "ja": "ウェストブリグフォード",
+     "pl": "West Bridgford",
+     "nl": "West Bridgford"
     },
     "capitalQid": "Q2079944",
     "population": {
@@ -1189,7 +1279,9 @@
      "id": "Yorkshire Selatan",
      "it": "South Yorkshire",
      "ja": "サウス・ヨークシャー",
-     "ko": "사우스요크셔주"
+     "ko": "사우스요크셔주",
+     "pl": "South Yorkshire",
+     "nl": "Zuid-Yorkshire"
     },
     "capital": {
      "en": "Barnsley",
@@ -1206,7 +1298,9 @@
      "id": "Barnsley",
      "it": "Barnsley",
      "ja": "バーンズリー",
-     "ko": "반즐리"
+     "ko": "반즐리",
+     "pl": "Barnsley",
+     "nl": "Barnsley"
     },
     "capitalQid": "Q54212",
     "population": {
@@ -1234,7 +1328,9 @@
      "id": "Derbyshire",
      "it": "Derbyshire",
      "ja": "ダービーシャー",
-     "ko": "더비셔주"
+     "ko": "더비셔주",
+     "pl": "Derbyshire",
+     "nl": "Derbyshire"
     },
     "capital": {
      "en": "Matlock",
@@ -1250,7 +1346,9 @@
      "de": "Matlock",
      "it": "Matlock",
      "ja": "マトロック (ダービーシャー)",
-     "ko": "매틀록"
+     "ko": "매틀록",
+     "pl": "Matlock",
+     "nl": "Matlock"
     },
     "capitalQid": "Q1337703",
     "population": {
@@ -1278,7 +1376,9 @@
      "id": "Manchester Raya",
      "it": "Grande Manchester",
      "ja": "グレーター・マンチェスター",
-     "ko": "그레이터맨체스터주"
+     "ko": "그레이터맨체스터주",
+     "pl": "Wielki Manchester",
+     "nl": "Greater Manchester"
     },
     "capital": null,
     "capitalQid": null,
@@ -1321,7 +1421,9 @@
      "id": "Liverpool",
      "it": "Liverpool",
      "ja": "リヴァプール",
-     "ko": "리버풀"
+     "ko": "리버풀",
+     "pl": "Liverpool",
+     "nl": "Liverpool"
     },
     "capitalQid": "Q24826",
     "population": {
@@ -1349,7 +1451,9 @@
      "id": "Shropshire",
      "it": "Shropshire",
      "ja": "シュロップシャー",
-     "ko": "슈롭셔주"
+     "ko": "슈롭셔주",
+     "pl": "Shropshire",
+     "nl": "Shropshire"
     },
     "capital": {
      "en": "Shrewsbury",
@@ -1366,7 +1470,9 @@
      "id": "Shrewsbury",
      "it": "Shrewsbury",
      "ja": "シュルーズベリー",
-     "ko": "슈루즈버리"
+     "ko": "슈루즈버리",
+     "pl": "Shrewsbury",
+     "nl": "Shrewsbury"
     },
     "capitalQid": "Q201970",
     "population": {
@@ -1394,7 +1500,9 @@
      "id": "Staffordshire",
      "it": "Staffordshire",
      "ja": "スタッフォードシャー",
-     "ko": "스태퍼드셔주"
+     "ko": "스태퍼드셔주",
+     "pl": "Staffordshire",
+     "nl": "Staffordshire"
     },
     "capital": {
      "en": "Stafford",
@@ -1411,7 +1519,9 @@
      "id": "Stafford",
      "it": "Stafford",
      "ja": "スタッフォード",
-     "ko": "스태퍼드"
+     "ko": "스태퍼드",
+     "pl": "Stafford",
+     "nl": "Stafford"
     },
     "capitalQid": "Q826782",
     "population": {
@@ -1439,7 +1549,9 @@
      "id": "Leicestershire",
      "it": "Leicestershire",
      "ja": "レスターシャー",
-     "ko": "레스터셔주"
+     "ko": "레스터셔주",
+     "pl": "Leicestershire",
+     "nl": "Leicestershire"
     },
     "capital": {
      "en": "Leicester",
@@ -1456,7 +1568,9 @@
      "id": "Leicester",
      "it": "Leicester",
      "ja": "レスター",
-     "ko": "레스터"
+     "ko": "레스터",
+     "pl": "Leicester",
+     "nl": "Leicester"
     },
     "capitalQid": "Q83065",
     "population": {
@@ -1484,7 +1598,9 @@
      "id": "Rutland",
      "it": "Rutland",
      "ja": "ラトランド",
-     "ko": "러틀랜드주"
+     "ko": "러틀랜드주",
+     "pl": "Rutland",
+     "nl": "Rutland"
     },
     "capital": {
      "en": "Oakham",
@@ -1500,7 +1616,9 @@
      "de": "Oakham",
      "it": "Oakham",
      "ja": "オーカム",
-     "ko": "오컴"
+     "ko": "오컴",
+     "pl": "Oakham",
+     "nl": "Oakham"
     },
     "capitalQid": "Q1001942",
     "population": {
@@ -1528,7 +1646,9 @@
      "id": "Norfolk",
      "it": "Norfolk",
      "ja": "ノーフォーク",
-     "ko": "노퍽주"
+     "ko": "노퍽주",
+     "pl": "Norfolk",
+     "nl": "Norfolk"
     },
     "capital": {
      "en": "Norwich",
@@ -1545,7 +1665,9 @@
      "id": "Norwich",
      "it": "Norwich",
      "ja": "ノリッジ",
-     "ko": "노리치"
+     "ko": "노리치",
+     "pl": "Norwich",
+     "nl": "Norwich"
     },
     "capitalQid": "Q130191",
     "population": {
@@ -1573,7 +1695,9 @@
      "id": "Suffolk",
      "it": "Suffolk",
      "ja": "サフォーク",
-     "ko": "서퍽주"
+     "ko": "서퍽주",
+     "pl": "Suffolk",
+     "nl": "Suffolk"
     },
     "capital": {
      "en": "Ipswich",
@@ -1590,7 +1714,9 @@
      "id": "Ipswich",
      "it": "Ipswich",
      "ja": "イプスウィッチ",
-     "ko": "입스위치"
+     "ko": "입스위치",
+     "pl": "Ipswich",
+     "nl": "Ipswich"
     },
     "capitalQid": "Q184775",
     "population": {
@@ -1618,7 +1744,9 @@
      "id": "Cambridgeshire",
      "it": "Cambridgeshire",
      "ja": "ケンブリッジシャー",
-     "ko": "케임브리지셔주"
+     "ko": "케임브리지셔주",
+     "pl": "Cambridgeshire",
+     "nl": "Cambridgeshire"
     },
     "capital": {
      "en": "Cambridge",
@@ -1635,7 +1763,9 @@
      "id": "Cambridge",
      "it": "Cambridge",
      "ja": "ケンブリッジ",
-     "ko": "케임브리지"
+     "ko": "케임브리지",
+     "pl": "Cambridge",
+     "nl": "Cambridge"
     },
     "capitalQid": "Q350",
     "population": {
@@ -1663,7 +1793,9 @@
      "id": "Northamptonshire",
      "it": "Northamptonshire",
      "ja": "ノーサンプトンシャー",
-     "ko": "노샘프턴셔주"
+     "ko": "노샘프턴셔주",
+     "pl": "Northamptonshire",
+     "nl": "Northamptonshire"
     },
     "capital": {
      "en": "Northampton",
@@ -1680,7 +1812,9 @@
      "id": "Northampton",
      "it": "Northampton",
      "ja": "ノーザンプトン",
-     "ko": "노샘프턴"
+     "ko": "노샘프턴",
+     "pl": "Northampton",
+     "nl": "Northampton"
     },
     "capitalQid": "Q192240",
     "population": {
@@ -1708,7 +1842,9 @@
      "id": "West Midlands",
      "it": "West Midlands",
      "ja": "ウェスト・ミッドランズ",
-     "ko": "웨스트미들랜즈주"
+     "ko": "웨스트미들랜즈주",
+     "pl": "West Midlands",
+     "nl": "West Midlands"
     },
     "capital": {
      "en": "Birmingham",
@@ -1725,7 +1861,9 @@
      "id": "Birmingham",
      "it": "Birmingham",
      "ja": "バーミンガム",
-     "ko": "버밍엄"
+     "ko": "버밍엄",
+     "pl": "Birmingham",
+     "nl": "Birmingham"
     },
     "capitalQid": "Q2256",
     "population": {
@@ -1766,7 +1904,9 @@
      "id": "Hereford",
      "it": "Hereford",
      "ja": "ヘレフォード",
-     "ko": "헤리퍼드"
+     "ko": "헤리퍼드",
+     "pl": "Hereford",
+     "nl": "Hereford"
     },
     "capitalQid": "Q204720",
     "population": {
@@ -1794,7 +1934,9 @@
      "id": "Worcestershire",
      "it": "Worcestershire",
      "ja": "ウスターシャー",
-     "ko": "우스터셔주"
+     "ko": "우스터셔주",
+     "pl": "Worcestershire",
+     "nl": "Worcestershire"
     },
     "capital": {
      "en": "Worcester",
@@ -1811,7 +1953,9 @@
      "id": "Worcester",
      "it": "Worcester",
      "ja": "ウスター",
-     "ko": "우스터"
+     "ko": "우스터",
+     "pl": "Worcester",
+     "nl": "Worcester"
     },
     "capitalQid": "Q1646181",
     "population": {
@@ -1839,7 +1983,9 @@
      "id": "Warwickshire",
      "it": "Warwickshire",
      "ja": "ウォリックシャー",
-     "ko": "워릭셔주"
+     "ko": "워릭셔주",
+     "pl": "Warwickshire",
+     "nl": "Warwickshire"
     },
     "capital": {
      "en": "Warwick",
@@ -1856,7 +2002,9 @@
      "id": "Warwick",
      "it": "Warwick",
      "ja": "ウォリック",
-     "ko": "워릭"
+     "ko": "워릭",
+     "pl": "Warwick",
+     "nl": "Warwick"
     },
     "capitalQid": "Q549761",
     "population": {
@@ -1884,7 +2032,9 @@
      "id": "Bedfordshire",
      "it": "Bedfordshire",
      "ja": "ベッドフォードシャー",
-     "ko": "베드퍼드셔주"
+     "ko": "베드퍼드셔주",
+     "pl": "Bedfordshire",
+     "nl": "Bedfordshire"
     },
     "capital": {
      "en": "Bedford",
@@ -1900,7 +2050,9 @@
      "de": "Bedford",
      "it": "Bedford",
      "ja": "ベッドフォード",
-     "ko": "베드퍼드"
+     "ko": "베드퍼드",
+     "pl": "Bedford",
+     "nl": "Bedford"
     },
     "capitalQid": "Q208257",
     "population": {
@@ -1928,7 +2080,9 @@
      "id": "Devon",
      "it": "Devon",
      "ja": "デヴォン",
-     "ko": "데번주"
+     "ko": "데번주",
+     "pl": "Devon",
+     "nl": "Devon"
     },
     "capital": {
      "en": "Exeter",
@@ -1945,7 +2099,9 @@
      "id": "Exeter",
      "it": "Exeter",
      "ja": "エクセター",
-     "ko": "엑서터"
+     "ko": "엑서터",
+     "pl": "Exeter",
+     "nl": "Exeter"
     },
     "capitalQid": "Q134672",
     "population": {
@@ -1973,7 +2129,9 @@
      "id": "Somerset",
      "it": "Somerset",
      "ja": "サマセット",
-     "ko": "서머싯주"
+     "ko": "서머싯주",
+     "pl": "Somerset",
+     "nl": "Somerset"
     },
     "capital": {
      "en": "Taunton",
@@ -1990,7 +2148,9 @@
      "id": "Taunton",
      "it": "Taunton",
      "ja": "トーントン",
-     "ko": "톤턴"
+     "ko": "톤턴",
+     "pl": "Taunton",
+     "nl": "Taunton"
     },
     "capitalQid": "Q845619",
     "population": {
@@ -2018,7 +2178,9 @@
      "id": "Dorset",
      "it": "Dorset",
      "ja": "ドーセット",
-     "ko": "도싯주"
+     "ko": "도싯주",
+     "pl": "Dorset",
+     "nl": "Dorset"
     },
     "capital": {
      "en": "Dorchester",
@@ -2034,7 +2196,9 @@
      "de": "Dorchester",
      "it": "Dorchester",
      "ja": "ドーチェスター",
-     "ko": "도체스터"
+     "ko": "도체스터",
+     "pl": "Dorchester",
+     "nl": "Dorchester"
     },
     "capitalQid": "Q503331",
     "population": {
@@ -2062,7 +2226,9 @@
      "id": "Gloucestershire",
      "it": "Gloucestershire",
      "ja": "グロスターシャー",
-     "ko": "글로스터셔주"
+     "ko": "글로스터셔주",
+     "pl": "Gloucestershire",
+     "nl": "Gloucestershire"
     },
     "capital": {
      "en": "Gloucester",
@@ -2079,7 +2245,9 @@
      "id": "Gloucester",
      "it": "Gloucester",
      "ja": "グロスター",
-     "ko": "글로스터"
+     "ko": "글로스터",
+     "pl": "Gloucester",
+     "nl": "Gloucester"
     },
     "capitalQid": "Q170497",
     "population": {
@@ -2107,7 +2275,9 @@
      "id": "Oxfordshire",
      "it": "Oxfordshire",
      "ja": "オックスフォードシャー",
-     "ko": "옥스퍼드셔주"
+     "ko": "옥스퍼드셔주",
+     "pl": "Oxfordshire",
+     "nl": "Oxfordshire"
     },
     "capital": {
      "en": "Oxford",
@@ -2124,7 +2294,9 @@
      "id": "Oxford",
      "it": "Oxford",
      "ja": "オックスフォード",
-     "ko": "옥스퍼드"
+     "ko": "옥스퍼드",
+     "pl": "Oksford",
+     "nl": "Oxford"
     },
     "capitalQid": "Q34217",
     "population": {
@@ -2152,7 +2324,9 @@
      "id": "Wiltshire",
      "it": "Wiltshire",
      "ja": "ウィルトシャー",
-     "ko": "윌트셔주"
+     "ko": "윌트셔주",
+     "pl": "Wiltshire",
+     "nl": "Wiltshire"
     },
     "capital": {
      "en": "Trowbridge",
@@ -2168,7 +2342,9 @@
      "de": "Trowbridge",
      "it": "Trowbridge",
      "ja": "トローブリッジ",
-     "ko": "트로브리지"
+     "ko": "트로브리지",
+     "pl": "Trowbridge",
+     "nl": "Trowbridge"
     },
     "capitalQid": "Q265647",
     "population": {
@@ -2196,7 +2372,9 @@
      "id": "Hampshire",
      "it": "Hampshire",
      "ja": "ハンプシャー",
-     "ko": "햄프셔주"
+     "ko": "햄프셔주",
+     "pl": "Hampshire",
+     "nl": "Hampshire"
     },
     "capital": {
      "en": "Winchester",
@@ -2213,7 +2391,9 @@
      "id": "Winchester",
      "it": "Winchester",
      "ja": "ウィンチェスター",
-     "ko": "윈체스터"
+     "ko": "윈체스터",
+     "pl": "Winchester",
+     "nl": "Winchester"
     },
     "capitalQid": "Q172157",
     "population": {
@@ -2241,7 +2421,9 @@
      "id": "Berkshire",
      "it": "Berkshire",
      "ja": "バークシャー",
-     "ko": "버크셔주"
+     "ko": "버크셔주",
+     "pl": "Berkshire",
+     "nl": "Berkshire"
     },
     "capital": {
      "en": "Reading",
@@ -2258,7 +2440,9 @@
      "id": "Reading",
      "it": "Reading",
      "ja": "レディング",
-     "ko": "레딩"
+     "ko": "레딩",
+     "pl": "Reading",
+     "nl": "Reading"
     },
     "capitalQid": "Q161491",
     "population": {
@@ -2286,7 +2470,9 @@
      "id": "Buckinghamshire",
      "it": "Buckinghamshire",
      "ja": "バッキンガムシャー",
-     "ko": "버킹엄셔주"
+     "ko": "버킹엄셔주",
+     "pl": "Buckinghamshire",
+     "nl": "Buckinghamshire"
     },
     "capital": {
      "en": "Aylesbury",
@@ -2302,7 +2488,9 @@
      "de": "Aylesbury",
      "it": "Aylesbury",
      "ja": "アイルズベリー",
-     "ko": "에일즈버리"
+     "ko": "에일즈버리",
+     "pl": "Aylesbury",
+     "nl": "Aylesbury"
     },
     "capitalQid": "Q213474",
     "population": {
@@ -2330,7 +2518,9 @@
      "id": "Essex",
      "it": "Essex",
      "ja": "エセックス",
-     "ko": "에식스주"
+     "ko": "에식스주",
+     "pl": "Essex",
+     "nl": "Essex"
     },
     "capital": {
      "en": "Chelmsford",
@@ -2347,7 +2537,9 @@
      "id": "Chelmsford",
      "it": "Chelmsford",
      "ja": "チェルムスフォード",
-     "ko": "첼름스퍼드"
+     "ko": "첼름스퍼드",
+     "pl": "Chelmsford",
+     "nl": "Chelmsford"
     },
     "capitalQid": "Q210985",
     "population": {
@@ -2375,7 +2567,9 @@
      "id": "Surrey",
      "it": "Surrey",
      "ja": "サリー",
-     "ko": "서리주"
+     "ko": "서리주",
+     "pl": "Surrey",
+     "nl": "Surrey"
     },
     "capital": null,
     "capitalQid": null,
@@ -2404,7 +2598,9 @@
      "id": "West Sussex",
      "it": "West Sussex",
      "ja": "ウェスト・サセックス",
-     "ko": "웨스트서식스주"
+     "ko": "웨스트서식스주",
+     "pl": "West Sussex",
+     "nl": "West Sussex"
     },
     "capital": {
      "en": "Chichester",
@@ -2421,7 +2617,9 @@
      "id": "Chichester",
      "it": "Chichester",
      "ja": "チチェスター",
-     "ko": "치체스터"
+     "ko": "치체스터",
+     "pl": "Chichester",
+     "nl": "Chichester"
     },
     "capitalQid": "Q207639",
     "population": {
@@ -2449,7 +2647,9 @@
      "id": "East Sussex",
      "it": "East Sussex",
      "ja": "イースト・サセックス",
-     "ko": "이스트서식스주"
+     "ko": "이스트서식스주",
+     "pl": "East Sussex",
+     "nl": "East Sussex"
     },
     "capital": {
      "en": "Lewes",
@@ -2466,7 +2666,9 @@
      "id": "Lewes",
      "it": "Lewes",
      "ja": "ルイス",
-     "ko": "루이스"
+     "ko": "루이스",
+     "pl": "Lewes",
+     "nl": "Lewes"
     },
     "capitalQid": "Q246884",
     "population": {
@@ -2494,7 +2696,9 @@
      "id": "Kent",
      "it": "Kent",
      "ja": "ケント",
-     "ko": "켄트주"
+     "ko": "켄트주",
+     "pl": "Kent",
+     "nl": "Kent"
     },
     "capital": {
      "en": "Maidstone",
@@ -2511,7 +2715,9 @@
      "id": "Maidstone",
      "it": "Maidstone",
      "ja": "メードストン",
-     "ko": "메이드스톤"
+     "ko": "메이드스톤",
+     "pl": "Maidstone",
+     "nl": "Maidstone"
     },
     "capitalQid": "Q213180",
     "population": {
@@ -2539,7 +2745,9 @@
      "id": "London Raya",
      "it": "Grande Londra",
      "ja": "グレーター・ロンドン",
-     "ko": "그레이터런던"
+     "ko": "그레이터런던",
+     "pl": "Wielki Londyn",
+     "nl": "Groot-Londen"
     },
     "capital": null,
     "capitalQid": null,
@@ -2568,7 +2776,9 @@
      "id": "City of London",
      "it": "Città di Londra",
      "ja": "シティ・オブ・ロンドン",
-     "ko": "시티오브런던"
+     "ko": "시티오브런던",
+     "pl": "City of London",
+     "nl": "City of London"
     },
     "capital": null,
     "capitalQid": null,
@@ -2609,7 +2819,9 @@
      "id": "Bristol",
      "it": "Bristol",
      "ja": "ブリストル",
-     "ko": "브리스틀"
+     "ko": "브리스틀",
+     "pl": "Bristol",
+     "nl": "Bristol"
     },
     "capitalQid": "Q23154",
     "population": {
@@ -2672,7 +2884,9 @@
      "id": "Álava",
      "it": "Álava",
      "ja": "アラバ県",
-     "ko": "알라바주"
+     "ko": "알라바주",
+     "pl": "Araba",
+     "nl": "Álava"
     },
     "capital": {
      "en": "Vitoria-Gasteiz",
@@ -2689,7 +2903,9 @@
      "id": "Vitoria",
      "it": "Vitoria",
      "ja": "ビトリア＝ガステイス",
-     "ko": "비토리아"
+     "ko": "비토리아",
+     "pl": "Vitoria-Gasteiz",
+     "nl": "Vitoria-Gasteiz"
     },
     "capitalQid": "Q14318",
     "population": {
@@ -2717,7 +2933,9 @@
      "id": "Provinsi Albacete",
      "it": "provincia di Albacete",
      "ja": "アルバセテ県",
-     "ko": "알바세테주"
+     "ko": "알바세테주",
+     "pl": "Albacete",
+     "nl": "Albacete"
     },
     "capital": {
      "en": "Albacete",
@@ -2734,7 +2952,9 @@
      "id": "Albacete",
      "it": "Albacete",
      "ja": "アルバセテ",
-     "ko": "알바세테"
+     "ko": "알바세테",
+     "pl": "Albacete",
+     "nl": "Albacete"
     },
     "capitalQid": "Q15095",
     "population": {
@@ -2762,7 +2982,9 @@
      "id": "Provinsi Alicante",
      "it": "Alicante",
      "ja": "アリカンテ県",
-     "ko": "알리칸테주"
+     "ko": "알리칸테주",
+     "pl": "Alicante",
+     "nl": "Alicante"
     },
     "capital": {
      "en": "Alicante",
@@ -2779,7 +3001,9 @@
      "id": "Alicante",
      "it": "Alicante",
      "ja": "アリカンテ",
-     "ko": "알리칸테"
+     "ko": "알리칸테",
+     "pl": "Alicante",
+     "nl": "Alicante"
     },
     "capitalQid": "Q11959",
     "population": {
@@ -2807,7 +3031,9 @@
      "id": "Provinsi Almería",
      "it": "provincia di Almería",
      "ja": "アルメリア県",
-     "ko": "알메리아주"
+     "ko": "알메리아주",
+     "pl": "Almería",
+     "nl": "Almería"
     },
     "capital": {
      "en": "Almería",
@@ -2824,7 +3050,9 @@
      "id": "Almería",
      "it": "Almería",
      "ja": "アルメリア",
-     "ko": "알메리아"
+     "ko": "알메리아",
+     "pl": "Almería",
+     "nl": "Almería"
     },
     "capitalQid": "Q10400",
     "population": {
@@ -2852,7 +3080,9 @@
      "id": "Provinsi Ávila",
      "it": "provincia di Ávila",
      "ja": "アビラ県",
-     "ko": "아빌라주"
+     "ko": "아빌라주",
+     "pl": "Ávila",
+     "nl": "Ávila"
     },
     "capital": {
      "en": "Ávila",
@@ -2869,7 +3099,9 @@
      "id": "Ávila",
      "it": "Avila",
      "ja": "アビラ",
-     "ko": "아빌라"
+     "ko": "아빌라",
+     "pl": "Ávila",
+     "nl": "Ávila"
     },
     "capitalQid": "Q15688",
     "population": {
@@ -2897,7 +3129,9 @@
      "id": "Provinsi Badajoz",
      "it": "provincia di Badajoz",
      "ja": "バダホス県",
-     "ko": "바다호스주"
+     "ko": "바다호스주",
+     "pl": "Badajoz",
+     "nl": "Badajoz"
     },
     "capital": {
      "en": "Badajoz",
@@ -2914,7 +3148,9 @@
      "id": "Badajoz",
      "it": "Badajoz",
      "ja": "バダホス",
-     "ko": "바다호스"
+     "ko": "바다호스",
+     "pl": "Badajoz",
+     "nl": "Badajoz"
     },
     "capitalQid": "Q15679",
     "population": {
@@ -2942,7 +3178,9 @@
      "id": "Kepulauan Balearik",
      "it": "isole Baleari",
      "ja": "バレアレス諸島",
-     "ko": "발레아레스 제도"
+     "ko": "발레아레스 제도",
+     "pl": "Baleary",
+     "nl": "Balearen"
     },
     "capital": {
      "en": "Palma",
@@ -2959,7 +3197,9 @@
      "id": "Palma de Mallorca",
      "it": "Palma di Maiorca",
      "ja": "パルマ・デ・マヨルカ",
-     "ko": "팔마데마요르카"
+     "ko": "팔마데마요르카",
+     "pl": "Palma",
+     "nl": "Palma"
     },
     "capitalQid": "Q8826",
     "population": {
@@ -2987,7 +3227,9 @@
      "id": "Provinsi Barcelona",
      "it": "provincia di Barcellona",
      "ja": "バルセロナ県",
-     "ko": "바르셀로나주"
+     "ko": "바르셀로나주",
+     "pl": "Barcelona",
+     "nl": "Provincie Barcelona"
     },
     "capital": {
      "en": "Barcelona",
@@ -3004,7 +3246,9 @@
      "id": "Barcelona",
      "it": "Barcellona",
      "ja": "バルセロナ",
-     "ko": "바르셀로나"
+     "ko": "바르셀로나",
+     "pl": "Barcelona",
+     "nl": "Barcelona"
     },
     "capitalQid": "Q1492",
     "population": {
@@ -3032,7 +3276,9 @@
      "id": "Provinsi Burgos",
      "it": "provincia di Burgos",
      "ja": "ブルゴス県",
-     "ko": "부르고스주"
+     "ko": "부르고스주",
+     "pl": "Burgos",
+     "nl": "Burgos"
     },
     "capital": {
      "en": "Burgos",
@@ -3049,7 +3295,9 @@
      "id": "Burgos",
      "it": "Burgos",
      "ja": "ブルゴス",
-     "ko": "부르고스"
+     "ko": "부르고스",
+     "pl": "Burgos",
+     "nl": "Burgos"
     },
     "capitalQid": "Q9580",
     "population": {
@@ -3077,7 +3325,9 @@
      "id": "Provinsi Cáceres",
      "it": "provincia di Cáceres",
      "ja": "カセレス県",
-     "ko": "카세레스주"
+     "ko": "카세레스주",
+     "pl": "Cáceres",
+     "nl": "Cáceres"
     },
     "capital": {
      "en": "Cáceres",
@@ -3094,7 +3344,9 @@
      "id": "Cáceres, Spanyol",
      "it": "Cáceres",
      "ja": "カセレス",
-     "ko": "카세레스"
+     "ko": "카세레스",
+     "pl": "Cáceres",
+     "nl": "Cáceres"
     },
     "capitalQid": "Q15678",
     "population": {
@@ -3122,7 +3374,9 @@
      "id": "Provinsi Cádiz",
      "it": "provincia di Cadice",
      "ja": "カディス県",
-     "ko": "카디스주"
+     "ko": "카디스주",
+     "pl": "Kadyks",
+     "nl": "Cádiz"
     },
     "capital": {
      "en": "Cádiz",
@@ -3139,7 +3393,9 @@
      "id": "Cádiz",
      "it": "Cadice",
      "ja": "カディス",
-     "ko": "카디스"
+     "ko": "카디스",
+     "pl": "Kadyks",
+     "nl": "Cádiz"
     },
     "capitalQid": "Q15682",
     "population": {
@@ -3167,7 +3423,9 @@
      "id": "Castellón",
      "it": "Castellón",
      "ja": "カステリョン",
-     "ko": "카스테욘"
+     "ko": "카스테욘",
+     "pl": "Castellón",
+     "nl": "Castellón"
     },
     "capital": {
      "en": "Castellón de la Plana",
@@ -3184,7 +3442,9 @@
      "id": "Castellón de la Plana",
      "it": "Castellón de la Plana",
      "ja": "カステリョン・デ・ラ・プラナ",
-     "ko": "카스테욘데라플라나"
+     "ko": "카스테욘데라플라나",
+     "pl": "Castelló de la Plana",
+     "nl": "Castellón de la Plana"
     },
     "capitalQid": "Q15092",
     "population": {
@@ -3212,7 +3472,9 @@
      "id": "Provinsi Ciudad Real",
      "it": "provincia di Ciudad Real",
      "ja": "シウダ・レアル県",
-     "ko": "시우다드레알주"
+     "ko": "시우다드레알주",
+     "pl": "Ciudad Real",
+     "nl": "Ciudad Real"
     },
     "capital": {
      "en": "Ciudad Real",
@@ -3229,7 +3491,9 @@
      "id": "Ciudad Real",
      "it": "Ciudad Real",
      "ja": "シウダー・レアル",
-     "ko": "시우다드레알"
+     "ko": "시우다드레알",
+     "pl": "Ciudad Real",
+     "nl": "Ciudad Real"
     },
     "capitalQid": "Q15093",
     "population": {
@@ -3257,7 +3521,9 @@
      "id": "Provinsi Kordoba",
      "it": "provincia di Cordova",
      "ja": "コルドバ県",
-     "ko": "코르도바도"
+     "ko": "코르도바도",
+     "pl": "Kordoba",
+     "nl": "Córdoba"
     },
     "capital": {
      "en": "Córdoba",
@@ -3274,7 +3540,9 @@
      "id": "Kordoba",
      "it": "Cordova",
      "ja": "コルドバ",
-     "ko": "코르도바"
+     "ko": "코르도바",
+     "pl": "Kordoba",
+     "nl": "Córdoba"
     },
     "capitalQid": "Q5818",
     "population": {
@@ -3302,7 +3570,9 @@
      "id": "Provinsi A Coruña",
      "it": "provincia della Coruña",
      "ja": "ア・コルーニャ県",
-     "ko": "라코루냐주"
+     "ko": "라코루냐주",
+     "pl": "A Coruña",
+     "nl": "A Coruña"
     },
     "capital": {
      "en": "A Coruña",
@@ -3319,7 +3589,9 @@
      "id": "A Coruña",
      "it": "La Coruña",
      "ja": "ア・コルーニャ",
-     "ko": "라코루냐"
+     "ko": "라코루냐",
+     "pl": "A Coruña",
+     "nl": "A Coruña"
     },
     "capitalQid": "Q8757",
     "population": {
@@ -3347,7 +3619,9 @@
      "id": "Provinsi Cuenca",
      "it": "provincia di Cuenca",
      "ja": "クエンカ県",
-     "ko": "쿠엥카주"
+     "ko": "쿠엥카주",
+     "pl": "Cuenca",
+     "nl": "Cuenca"
     },
     "capital": {
      "en": "Cuenca",
@@ -3364,7 +3638,9 @@
      "id": "Cuenca",
      "it": "Cuenca",
      "ja": "クエンカ",
-     "ko": "쿠엥카"
+     "ko": "쿠엥카",
+     "pl": "Cuenca",
+     "nl": "Cuenca"
     },
     "capitalQid": "Q15098",
     "population": {
@@ -3392,7 +3668,9 @@
      "id": "Provinsi Girona",
      "it": "provincia di Gerona",
      "ja": "ジローナ県",
-     "ko": "지로나주"
+     "ko": "지로나주",
+     "pl": "Girona",
+     "nl": "Girona"
     },
     "capital": {
      "en": "Girona",
@@ -3409,7 +3687,9 @@
      "id": "Girona",
      "it": "Gerona",
      "ja": "ジローナ",
-     "ko": "지로나"
+     "ko": "지로나",
+     "pl": "Girona",
+     "nl": "Girona"
     },
     "capitalQid": "Q7038",
     "population": {
@@ -3437,7 +3717,9 @@
      "id": "Provinsi Granada",
      "it": "provincia di Granada",
      "ja": "グラナダ県",
-     "ko": "그라나다도"
+     "ko": "그라나다도",
+     "pl": "Grenada",
+     "nl": "Granada"
     },
     "capital": {
      "en": "Granada",
@@ -3454,7 +3736,9 @@
      "id": "Granada",
      "it": "Granada",
      "ja": "グラナダ",
-     "ko": "그라나다"
+     "ko": "그라나다",
+     "pl": "Grenada",
+     "nl": "Granada"
     },
     "capitalQid": "Q8810",
     "population": {
@@ -3482,7 +3766,9 @@
      "id": "Provinsi Guadalajara",
      "it": "provincia di Guadalajara",
      "ja": "グアダラハラ県",
-     "ko": "과달라하라주"
+     "ko": "과달라하라주",
+     "pl": "Guadalajara",
+     "nl": "Guadalajara"
     },
     "capital": {
      "en": "Guadalajara",
@@ -3499,7 +3785,9 @@
      "id": "Guadalajara",
      "it": "Guadalajara",
      "ja": "グアダラハラ",
-     "ko": "과달라하라"
+     "ko": "과달라하라",
+     "pl": "Guadalajara",
+     "nl": "Guadalajara"
     },
     "capitalQid": "Q11953",
     "population": {
@@ -3527,7 +3815,9 @@
      "id": "Gipuzkoa",
      "it": "Gipuzkoa",
      "ja": "ギプスコア県",
-     "ko": "기푸스코아주"
+     "ko": "기푸스코아주",
+     "pl": "Gipuzkoa",
+     "nl": "Gipuzkoa"
     },
     "capital": {
      "en": "San Sebastián",
@@ -3544,7 +3834,9 @@
      "id": "San Sebastián",
      "it": "San Sebastián",
      "ja": "サン・セバスティアン",
-     "ko": "산세바스티안"
+     "ko": "산세바스티안",
+     "pl": "San Sebastián",
+     "nl": "San Sebastián"
     },
     "capitalQid": "Q10313",
     "population": {
@@ -3572,7 +3864,9 @@
      "id": "Provinsi Huelva",
      "it": "provincia di Huelva",
      "ja": "ウエルバ県",
-     "ko": "우엘바주"
+     "ko": "우엘바주",
+     "pl": "Huelva",
+     "nl": "Huelva"
     },
     "capital": {
      "en": "Huelva",
@@ -3589,7 +3883,9 @@
      "id": "Huelva",
      "it": "Huelva",
      "ja": "ウエルバ",
-     "ko": "우엘바"
+     "ko": "우엘바",
+     "pl": "Huelva",
+     "nl": "Huelva"
     },
     "capitalQid": "Q12246",
     "population": {
@@ -3617,7 +3913,9 @@
      "id": "Provinsi Huesca",
      "it": "provincia di Huesca",
      "ja": "ウエスカ県",
-     "ko": "우에스카주"
+     "ko": "우에스카주",
+     "pl": "Huesca",
+     "nl": "Huesca"
     },
     "capital": {
      "en": "Huesca",
@@ -3634,7 +3932,9 @@
      "id": "Huesca",
      "it": "Huesca",
      "ja": "ウエスカ",
-     "ko": "우에스카"
+     "ko": "우에스카",
+     "pl": "Huesca",
+     "nl": "Huesca"
     },
     "capitalQid": "Q11967",
     "population": {
@@ -3662,7 +3962,9 @@
      "id": "Provinsi Jaén",
      "it": "provincia di Jaén",
      "ja": "ハエン県",
-     "ko": "하엔주"
+     "ko": "하엔주",
+     "pl": "Jaén",
+     "nl": "Jaén"
     },
     "capital": {
      "en": "Jaén",
@@ -3679,7 +3981,9 @@
      "id": "Jaén",
      "it": "Jaén",
      "ja": "ハエン",
-     "ko": "하엔"
+     "ko": "하엔",
+     "pl": "Jaén",
+     "nl": "Jaén"
     },
     "capitalQid": "Q15681",
     "population": {
@@ -3707,7 +4011,9 @@
      "id": "Provinsi León",
      "it": "provincia di León",
      "ja": "レオン県",
-     "ko": "레온도"
+     "ko": "레온도",
+     "pl": "León",
+     "nl": "León"
     },
     "capital": {
      "en": "León",
@@ -3724,7 +4030,9 @@
      "id": "León",
      "it": "León",
      "ja": "レオン",
-     "ko": "레온"
+     "ko": "레온",
+     "pl": "León",
+     "nl": "León"
     },
     "capitalQid": "Q15699",
     "population": {
@@ -3752,7 +4060,9 @@
      "id": "Provinsi Lleida",
      "it": "provincia di Lleida",
      "ja": "リェイダ県",
-     "ko": "예이다주"
+     "ko": "예이다주",
+     "pl": "Lleida",
+     "nl": "provincie Lerida"
     },
     "capital": {
      "en": "Lleida",
@@ -3769,7 +4079,9 @@
      "id": "Lerida",
      "it": "Lleida",
      "ja": "リェイダ",
-     "ko": "예이다"
+     "ko": "예이다",
+     "pl": "Lleida",
+     "nl": "Lleida"
     },
     "capitalQid": "Q15090",
     "population": {
@@ -3806,7 +4118,9 @@
      "id": "Logroño",
      "it": "Logroño",
      "ja": "ログローニョ",
-     "ko": "로그로뇨"
+     "ko": "로그로뇨",
+     "pl": "Logroño",
+     "nl": "Logroño"
     },
     "capitalQid": "Q14325",
     "population": null,
@@ -3831,7 +4145,9 @@
      "id": "Provinsi Lugo",
      "it": "provincia di Lugo",
      "ja": "ルーゴ県",
-     "ko": "루고주"
+     "ko": "루고주",
+     "pl": "Lugo",
+     "nl": "Lugo"
     },
     "capital": {
      "en": "Lugo",
@@ -3848,7 +4164,9 @@
      "id": "Lugo",
      "it": "Lugo",
      "ja": "ルーゴ (スペイン)",
-     "ko": "루고"
+     "ko": "루고",
+     "pl": "Lugo",
+     "nl": "Lugo"
     },
     "capitalQid": "Q11125",
     "population": {
@@ -3888,7 +4206,9 @@
      "id": "Madrid",
      "it": "Madrid",
      "ja": "マドリード",
-     "ko": "마드리드"
+     "ko": "마드리드",
+     "pl": "Madryt",
+     "nl": "Madrid"
     },
     "capitalQid": "Q2807",
     "population": null,
@@ -3913,7 +4233,9 @@
      "id": "Provinsi Málaga",
      "it": "provincia di Malaga",
      "ja": "マラガ県",
-     "ko": "말라가주"
+     "ko": "말라가주",
+     "pl": "Malaga",
+     "nl": "Málaga"
     },
     "capital": {
      "en": "Málaga",
@@ -3930,7 +4252,9 @@
      "id": "Málaga",
      "it": "Malaga",
      "ja": "マラガ",
-     "ko": "말라가"
+     "ko": "말라가",
+     "pl": "Malaga",
+     "nl": "Málaga"
     },
     "capitalQid": "Q8851",
     "population": {
@@ -3968,7 +4292,9 @@
      "id": "Murcia",
      "it": "Murcia",
      "ja": "ムルシア",
-     "ko": "무르시아"
+     "ko": "무르시아",
+     "pl": "Murcja",
+     "nl": "Murcia"
     },
     "capitalQid": "Q12225",
     "population": null,
@@ -4003,7 +4329,9 @@
      "id": "Pamplona",
      "it": "Pamplona",
      "ja": "パンプローナ",
-     "ko": "팜플로나"
+     "ko": "팜플로나",
+     "pl": "Pampeluna",
+     "nl": "Pamplona"
     },
     "capitalQid": "Q10282",
     "population": null,
@@ -4028,7 +4356,9 @@
      "id": "Provinsi Ourense",
      "it": "provincia di Ourense",
      "ja": "オウレンセ県",
-     "ko": "오렌세주"
+     "ko": "오렌세주",
+     "pl": "Ourense",
+     "nl": "Ourense"
     },
     "capital": {
      "en": "Ourense",
@@ -4045,7 +4375,9 @@
      "id": "Ourense",
      "it": "Ourense",
      "ja": "オウレンセ",
-     "ko": "오렌세"
+     "ko": "오렌세",
+     "pl": "Ourense",
+     "nl": "Ourense"
     },
     "capitalQid": "Q99151",
     "population": {
@@ -4085,7 +4417,9 @@
      "id": "Oviedo",
      "it": "Oviedo",
      "ja": "オビエド",
-     "ko": "오비에도"
+     "ko": "오비에도",
+     "pl": "Oviedo",
+     "nl": "Oviedo"
     },
     "capitalQid": "Q14317",
     "population": {
@@ -4113,7 +4447,9 @@
      "id": "Provinsi Palencia",
      "it": "provincia di Palencia",
      "ja": "パレンシア県",
-     "ko": "팔렌시아주"
+     "ko": "팔렌시아주",
+     "pl": "Palencia",
+     "nl": "Palencia"
     },
     "capital": {
      "en": "Palencia",
@@ -4130,7 +4466,9 @@
      "id": "Palencia",
      "it": "Palencia",
      "ja": "パレンシア",
-     "ko": "팔렌시아"
+     "ko": "팔렌시아",
+     "pl": "Palencia",
+     "nl": "Palencia"
     },
     "capitalQid": "Q8378",
     "population": {
@@ -4158,7 +4496,9 @@
      "id": "Las Palmas",
      "it": "provincia di Las Palmas",
      "ja": "ラス・パルマス県",
-     "ko": "라스팔마스"
+     "ko": "라스팔마스",
+     "pl": "Las Palmas",
+     "nl": "Las Palmas"
     },
     "capital": {
      "en": "Las Palmas de Gran Canaria",
@@ -4175,7 +4515,9 @@
      "id": "Las Palmas de Gran Canaria",
      "it": "Las Palmas de Gran Canaria",
      "ja": "ラス・パルマス・デ・グラン・カナリア",
-     "ko": "라스팔마스 데 그란 카나리아"
+     "ko": "라스팔마스 데 그란 카나리아",
+     "pl": "Las Palmas de Gran Canaria",
+     "nl": "Las Palmas de Gran Canaria"
     },
     "capitalQid": "Q11974",
     "population": {
@@ -4203,7 +4545,9 @@
      "id": "Provinsi Pontevedra",
      "it": "provincia di Pontevedra",
      "ja": "ポンテベドラ県",
-     "ko": "폰테베드라주"
+     "ko": "폰테베드라주",
+     "pl": "Pontevedra",
+     "nl": "Pontevedra"
     },
     "capital": {
      "en": "Pontevedra",
@@ -4220,7 +4564,9 @@
      "id": "Pontevedra",
      "it": "Pontevedra",
      "ja": "ポンテベドラ",
-     "ko": "폰테베드라"
+     "ko": "폰테베드라",
+     "pl": "Pontevedra",
+     "nl": "Pontevedra"
     },
     "capitalQid": "Q12411",
     "population": {
@@ -4248,7 +4594,9 @@
      "id": "Provinsi Salamanca",
      "it": "provincia di Salamanca",
      "ja": "サラマンカ県",
-     "ko": "살라망카주"
+     "ko": "살라망카주",
+     "pl": "Salamanka",
+     "nl": "Salamanca"
     },
     "capital": {
      "en": "Salamanca",
@@ -4265,7 +4613,9 @@
      "id": "Salamanca",
      "it": "Salamanca",
      "ja": "サラマンカ",
-     "ko": "살라망카"
+     "ko": "살라망카",
+     "pl": "Salamanka",
+     "nl": "Salamanca"
     },
     "capitalQid": "Q15695",
     "population": {
@@ -4293,7 +4643,9 @@
      "id": "Provinsi Santa Cruz de Tenerife",
      "it": "provincia di Santa Cruz de Tenerife",
      "ja": "サンタ・クルス・デ・テネリフェ県",
-     "ko": "산타크루스데테네리페주"
+     "ko": "산타크루스데테네리페주",
+     "pl": "Santa Cruz de Tenerife",
+     "nl": "Santa Cruz de Tenerife"
     },
     "capital": {
      "en": "Santa Cruz de Tenerife",
@@ -4310,7 +4662,9 @@
      "id": "Santa Cruz de Tenerife",
      "it": "Santa Cruz de Tenerife",
      "ja": "サンタ・クルス・デ・テネリフェ",
-     "ko": "산타크루스데테네리페"
+     "ko": "산타크루스데테네리페",
+     "pl": "Santa Cruz de Tenerife",
+     "nl": "Santa Cruz de Tenerife"
     },
     "capitalQid": "Q14328",
     "population": {
@@ -4348,7 +4702,9 @@
      "id": "Santander",
      "it": "Santander",
      "ja": "サンタンデール",
-     "ko": "산탄데르"
+     "ko": "산탄데르",
+     "pl": "Santander",
+     "nl": "Santander"
     },
     "capitalQid": "Q12233",
     "population": null,
@@ -4373,7 +4729,9 @@
      "id": "Provinsi Segovia",
      "it": "provincia di Segovia",
      "ja": "セゴビア県",
-     "ko": "세고비아주"
+     "ko": "세고비아주",
+     "pl": "Segowia",
+     "nl": "Segovia"
     },
     "capital": {
      "en": "Segovia",
@@ -4390,7 +4748,9 @@
      "id": "Segovia",
      "it": "Segovia",
      "ja": "セゴビア",
-     "ko": "세고비아"
+     "ko": "세고비아",
+     "pl": "Segowia",
+     "nl": "Segovia"
     },
     "capitalQid": "Q15684",
     "population": {
@@ -4418,7 +4778,9 @@
      "id": "Provinsi Sevilla",
      "it": "provincia di Siviglia",
      "ja": "セビリア県",
-     "ko": "세비야주"
+     "ko": "세비야주",
+     "pl": "Sewilla",
+     "nl": "Sevilla"
     },
     "capital": {
      "en": "Seville",
@@ -4435,7 +4797,9 @@
      "id": "Sevilla",
      "it": "Siviglia",
      "ja": "セビリア",
-     "ko": "세비야"
+     "ko": "세비야",
+     "pl": "Sewilla",
+     "nl": "Sevilla"
     },
     "capitalQid": "Q8717",
     "population": {
@@ -4463,7 +4827,9 @@
      "id": "Provinsi Soria",
      "it": "provincia di Soria",
      "ja": "ソリア県",
-     "ko": "소리아주"
+     "ko": "소리아주",
+     "pl": "Soria",
+     "nl": "Soria"
     },
     "capital": {
      "en": "Soria",
@@ -4480,7 +4846,9 @@
      "id": "Soria",
      "it": "Soria",
      "ja": "ソリア",
-     "ko": "소리아"
+     "ko": "소리아",
+     "pl": "Soria",
+     "nl": "Soria"
     },
     "capitalQid": "Q12155",
     "population": {
@@ -4508,7 +4876,9 @@
      "id": "Provinsi Tarragona",
      "it": "provincia di Tarragona",
      "ja": "タラゴナ県",
-     "ko": "타라고나주"
+     "ko": "타라고나주",
+     "pl": "Tarragona",
+     "nl": "Tarragona"
     },
     "capital": {
      "en": "Tarragona",
@@ -4525,7 +4895,9 @@
      "id": "Tarragona",
      "it": "Tarragona",
      "ja": "タラゴナ",
-     "ko": "타라고나"
+     "ko": "타라고나",
+     "pl": "Tarragona",
+     "nl": "Tarragona"
     },
     "capitalQid": "Q15088",
     "population": {
@@ -4553,7 +4925,9 @@
      "id": "Provinsi Teruel",
      "it": "provincia di Teruel",
      "ja": "テルエル県",
-     "ko": "테루엘주"
+     "ko": "테루엘주",
+     "pl": "Teruel",
+     "nl": "Teruel"
     },
     "capital": {
      "en": "Teruel",
@@ -4570,7 +4944,9 @@
      "id": "Teruel",
      "it": "Teruel",
      "ja": "テルエル",
-     "ko": "테루엘"
+     "ko": "테루엘",
+     "pl": "Teruel",
+     "nl": "Teruel"
     },
     "capitalQid": "Q14336",
     "population": {
@@ -4598,7 +4974,9 @@
      "id": "Provinsi Toledo",
      "it": "provincia di Toledo",
      "ja": "トレド県",
-     "ko": "톨레도주"
+     "ko": "톨레도주",
+     "pl": "Toledo",
+     "nl": "Toledo"
     },
     "capital": {
      "en": "Toledo",
@@ -4615,7 +4993,8 @@
      "id": "Toledo, Spanyol",
      "it": "Toledo",
      "ja": "トレド",
-     "ko": "톨레도"
+     "ko": "톨레도",
+     "nl": "Toledo"
     },
     "capitalQid": "Q5836",
     "population": {
@@ -4643,7 +5022,9 @@
      "id": "Provinsi Valencia",
      "it": "provincia di Valencia",
      "ja": "バレンシア県",
-     "ko": "발렌시아도"
+     "ko": "발렌시아도",
+     "pl": "Walencja",
+     "nl": "Valencia"
     },
     "capital": {
      "en": "Valencia",
@@ -4660,7 +5041,9 @@
      "id": "Valencia",
      "it": "Valencia",
      "ja": "バレンシア",
-     "ko": "발렌시아"
+     "ko": "발렌시아",
+     "pl": "Walencja",
+     "nl": "Valencia"
     },
     "capitalQid": "Q8818",
     "population": {
@@ -4688,7 +5071,9 @@
      "id": "Provinsi Valladolid",
      "it": "provincia di Valladolid",
      "ja": "バリャドリッド県",
-     "ko": "바야돌리드주"
+     "ko": "바야돌리드주",
+     "pl": "Valladolid",
+     "nl": "Valladolid"
     },
     "capital": {
      "en": "Valladolid",
@@ -4705,7 +5090,9 @@
      "id": "Valladolid",
      "it": "Valladolid",
      "ja": "バリャドリッド",
-     "ko": "바야돌리드"
+     "ko": "바야돌리드",
+     "pl": "Valladolid",
+     "nl": "Valladolid"
     },
     "capitalQid": "Q8356",
     "population": {
@@ -4733,7 +5120,9 @@
      "id": "Biskay",
      "it": "Biscaglia",
      "ja": "ビスカヤ県",
-     "ko": "비스카야주"
+     "ko": "비스카야주",
+     "pl": "Bizkaia",
+     "nl": "Biskaje"
     },
     "capital": {
      "en": "Bilbao",
@@ -4750,7 +5139,9 @@
      "id": "Bilbao",
      "it": "Bilbao",
      "ja": "ビルバオ",
-     "ko": "빌바오"
+     "ko": "빌바오",
+     "pl": "Bilbao",
+     "nl": "Bilbao"
     },
     "capitalQid": "Q8692",
     "population": {
@@ -4778,7 +5169,9 @@
      "id": "Provinsi Zamora",
      "it": "provincia di Zamora",
      "ja": "サモラ県",
-     "ko": "사모라주"
+     "ko": "사모라주",
+     "pl": "Zamora",
+     "nl": "Zamora"
     },
     "capital": {
      "en": "Zamora",
@@ -4795,7 +5188,9 @@
      "id": "Zamora",
      "it": "Zamora",
      "ja": "サモラ",
-     "ko": "사모라"
+     "ko": "사모라",
+     "pl": "Zamora",
+     "nl": "Zamora"
     },
     "capitalQid": "Q15696",
     "population": {
@@ -4823,7 +5218,9 @@
      "id": "Provinsi Zaragoza",
      "it": "provincia di Saragozza",
      "ja": "サラゴサ県",
-     "ko": "사라고사주"
+     "ko": "사라고사주",
+     "pl": "Saragossa",
+     "nl": "Zaragoza"
     },
     "capital": {
      "en": "Zaragoza",
@@ -4840,7 +5237,9 @@
      "id": "Zaragoza",
      "it": "Saragozza",
      "ja": "サラゴサ",
-     "ko": "사라고사"
+     "ko": "사라고사",
+     "pl": "Saragossa",
+     "nl": "Zaragoza"
     },
     "capitalQid": "Q10305",
     "population": {

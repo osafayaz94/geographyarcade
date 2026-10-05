@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 const { cachedFetch } = require('./wikidata');
 
-const EXTRA = { ur: ['ur'], ru: ['ru'], pt: ['pt-br', 'pt'], de: ['de'], id: ['id'], it: ['it'], ja: ['ja'], ko: ['ko'] };
+const EXTRA = { ur: ['ur'], ru: ['ru'], pt: ['pt-br', 'pt'], de: ['de'], id: ['id'], it: ['it'], ja: ['ja'], ko: ['ko'], pl: ['pl'], nl: ['nl'] };
 const DATA = path.join(__dirname, '..', 'data');
 const cFile = path.join(DATA, 'countries.json');
 const sFile = path.join(DATA, 'subdivisions.json');

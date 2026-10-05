@@ -20,7 +20,9 @@
    "id": "Mercury",
    "it": "Mercurio",
    "ja": "水星",
-   "ko": "수성"
+   "ko": "수성",
+   "pl": "Merkury",
+   "nl": "Mercurius"
   }
  },
  {
@@ -44,7 +46,9 @@
    "id": "Venus",
    "it": "Venere",
    "ja": "金星",
-   "ko": "금성"
+   "ko": "금성",
+   "pl": "Wenus",
+   "nl": "Venus"
   }
  },
  {
@@ -68,7 +72,9 @@
    "id": "Bumi",
    "it": "Terra",
    "ja": "地球",
-   "ko": "지구"
+   "ko": "지구",
+   "pl": "Ziemia",
+   "nl": "Aarde"
   }
  },
  {
@@ -92,7 +98,9 @@
    "id": "Mars",
    "it": "Marte",
    "ja": "火星",
-   "ko": "화성"
+   "ko": "화성",
+   "pl": "Mars",
+   "nl": "Mars"
   }
  },
  {
@@ -116,7 +124,9 @@
    "id": "Yupiter",
    "it": "Giove",
    "ja": "木星",
-   "ko": "목성"
+   "ko": "목성",
+   "pl": "Jowisz",
+   "nl": "Jupiter"
   }
  },
  {
@@ -140,7 +150,9 @@
    "id": "Saturnus",
    "it": "Saturno",
    "ja": "土星",
-   "ko": "토성"
+   "ko": "토성",
+   "pl": "Saturn",
+   "nl": "Saturnus"
   }
  },
  {
@@ -164,7 +176,9 @@
    "id": "Uranus",
    "it": "Urano",
    "ja": "天王星",
-   "ko": "천왕성"
+   "ko": "천왕성",
+   "pl": "Uran",
+   "nl": "Uranus"
   }
  },
  {
@@ -188,7 +202,9 @@
    "id": "Neptunus",
    "it": "Nettuno",
    "ja": "海王星",
-   "ko": "해왕성"
+   "ko": "해왕성",
+   "pl": "Neptun",
+   "nl": "Neptunus"
   }
  }
 ]

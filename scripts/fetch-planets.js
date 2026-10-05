@@ -18,7 +18,7 @@ const PLANETS = [
 // Labels that don't match the style of the rest of their language (Hindi adds "ग्रह" only to Mars).
 const FIX = { mars: { hi: 'मंगल' } };
 // Site language -> Wikidata label languages, in order of preference.
-const LANG = { en: ['en'], zh: ['zh-hans', 'zh-cn', 'zh'], hi: ['hi'], es: ['es'], ar: ['ar'], fr: ['fr'], bn: ['bn'], pt: ['pt-br', 'pt'], ru: ['ru'], ur: ['ur'], de: ['de'], id: ['id'], it: ['it'], ja: ['ja'], ko: ['ko'] };
+const LANG = { en: ['en'], zh: ['zh-hans', 'zh-cn', 'zh'], hi: ['hi'], es: ['es'], ar: ['ar'], fr: ['fr'], bn: ['bn'], pt: ['pt-br', 'pt'], ru: ['ru'], ur: ['ur'], de: ['de'], id: ['id'], it: ['it'], ja: ['ja'], ko: ['ko'], pl: ['pl'], nl: ['nl'] };
 
 (async () => {
   const langs = [...new Set(Object.values(LANG).flat())].join('|');

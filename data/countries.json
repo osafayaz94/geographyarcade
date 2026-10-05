@@ -19,7 +19,9 @@
    "id": "Afganistan",
    "it": "Afghanistan",
    "ja": "アフガニスタン",
-   "ko": "아프가니스탄"
+   "ko": "아프가니스탄",
+   "pl": "Afganistan",
+   "nl": "Afghanistan"
   },
   "official": "Islamic Republic of Afghanistan",
   "capitals": [
@@ -40,7 +42,9 @@
      "id": "Kabul",
      "it": "Kabul",
      "ja": "カーブル",
-     "ko": "카불"
+     "ko": "카불",
+     "pl": "Kabul",
+     "nl": "Kaboel"
     }
    }
   ],
@@ -98,7 +102,9 @@
    "id": "Angola",
    "it": "Angola",
    "ja": "アンゴラ",
-   "ko": "앙골라"
+   "ko": "앙골라",
+   "pl": "Angola",
+   "nl": "Angola"
   },
   "official": "Republic of Angola",
   "capitals": [
@@ -119,7 +125,9 @@
      "id": "Luanda",
      "it": "Luanda",
      "ja": "ルアンダ",
-     "ko": "루안다"
+     "ko": "루안다",
+     "pl": "Luanda",
+     "nl": "Luanda"
     }
    }
   ],
@@ -173,7 +181,9 @@
    "id": "Albania",
    "it": "Albania",
    "ja": "アルバニア",
-   "ko": "알바니아"
+   "ko": "알바니아",
+   "pl": "Albania",
+   "nl": "Albanië"
   },
   "official": "Republic of Albania",
   "capitals": [
@@ -194,7 +204,9 @@
      "id": "Tirana",
      "it": "Tirana",
      "ja": "ティラナ",
-     "ko": "티라나"
+     "ko": "티라나",
+     "pl": "Tirana",
+     "nl": "Tirana"
     }
    }
   ],
@@ -248,7 +260,9 @@
    "id": "Andorra",
    "it": "Andorra",
    "ja": "アンドラ",
-   "ko": "안도라"
+   "ko": "안도라",
+   "pl": "Andora",
+   "nl": "Andorra"
   },
   "official": "Principality of Andorra",
   "capitals": [
@@ -269,7 +283,9 @@
      "id": "Andorra la Vella",
      "it": "Andorra la Vella",
      "ja": "アンドラ・ラ・ベリャ",
-     "ko": "안도라라벨랴"
+     "ko": "안도라라벨랴",
+     "pl": "Andora",
+     "nl": "Andorra la Vella"
     }
    }
   ],
@@ -321,7 +337,9 @@
    "id": "Uni Emirat Arab",
    "it": "Emirati Arabi Uniti",
    "ja": "アラブ首長国連邦",
-   "ko": "아랍에미리트"
+   "ko": "아랍에미리트",
+   "pl": "Zjednoczone Emiraty Arabskie",
+   "nl": "Verenigde Arabische Emiraten"
   },
   "official": "United Arab Emirates",
   "capitals": [
@@ -342,7 +360,9 @@
      "id": "Abu Dhabi",
      "it": "Abu Dhabi",
      "ja": "アブダビ",
-     "ko": "아부다비"
+     "ko": "아부다비",
+     "pl": "Abu Zabi",
+     "nl": "Abu Dhabi"
     }
    }
   ],
@@ -394,7 +414,9 @@
    "id": "Argentina",
    "it": "Argentina",
    "ja": "アルゼンチン",
-   "ko": "아르헨티나"
+   "ko": "아르헨티나",
+   "pl": "Argentyna",
+   "nl": "Argentinië"
   },
   "official": "Argentine Republic",
   "capitals": [
@@ -415,7 +437,9 @@
      "id": "Buenos Aires",
      "it": "Buenos Aires",
      "ja": "ブエノスアイレス",
-     "ko": "부에노스아이레스"
+     "ko": "부에노스아이레스",
+     "pl": "Buenos Aires",
+     "nl": "Buenos Aires"
     }
    }
   ],
@@ -471,7 +495,9 @@
    "id": "Armenia",
    "it": "Armenia",
    "ja": "アルメニア",
-   "ko": "아르메니아"
+   "ko": "아르메니아",
+   "pl": "Armenia",
+   "nl": "Armenië"
   },
   "official": "Republic of Armenia",
   "capitals": [
@@ -492,7 +518,9 @@
      "id": "Yerevan",
      "it": "Erevan",
      "ja": "イェレヴァン",
-     "ko": "예레반"
+     "ko": "예레반",
+     "pl": "Erywań",
+     "nl": "Jerevan"
     }
    }
   ],
@@ -546,7 +574,9 @@
    "id": "Antigua dan Barbuda",
    "it": "Antigua e Barbuda",
    "ja": "アンティグア・バーブーダ",
-   "ko": "앤티가 바부다"
+   "ko": "앤티가 바부다",
+   "pl": "Antigua i Barbuda",
+   "nl": "Antigua en Barbuda"
   },
   "official": "Antigua and Barbuda",
   "capitals": [
@@ -565,7 +595,9 @@
      "pt": "São João",
      "it": "Saint John's",
      "ja": "セイント・ジョンズ",
-     "ko": "세인트존스"
+     "ko": "세인트존스",
+     "pl": "Saint John’s",
+     "nl": "Saint John's"
     }
    }
   ],
@@ -614,7 +646,9 @@
    "id": "Australia",
    "it": "Australia",
    "ja": "オーストラリア",
-   "ko": "오스트레일리아"
+   "ko": "오스트레일리아",
+   "pl": "Australia",
+   "nl": "Australië"
   },
   "official": "Commonwealth of Australia",
   "capitals": [
@@ -635,7 +669,9 @@
      "id": "Canberra",
      "it": "Canberra",
      "ja": "キャンベラ",
-     "ko": "캔버라"
+     "ko": "캔버라",
+     "pl": "Canberra",
+     "nl": "Canberra"
     }
    }
   ],
@@ -684,7 +720,9 @@
    "id": "Austria",
    "it": "Austria",
    "ja": "オーストリア",
-   "ko": "오스트리아"
+   "ko": "오스트리아",
+   "pl": "Austria",
+   "nl": "Oostenrijk"
   },
   "official": "Republic of Austria",
   "capitals": [
@@ -705,7 +743,9 @@
      "id": "Wina",
      "it": "Vienna",
      "ja": "ウィーン",
-     "ko": "빈"
+     "ko": "빈",
+     "pl": "Wiedeń",
+     "nl": "Wenen"
     }
    }
   ],
@@ -763,7 +803,9 @@
    "id": "Azerbaijan",
    "it": "Azerbaigian",
    "ja": "アゼルバイジャン",
-   "ko": "아제르바이잔"
+   "ko": "아제르바이잔",
+   "pl": "Azerbejdżan",
+   "nl": "Azerbeidzjan"
   },
   "official": "Republic of Azerbaijan",
   "capitals": [
@@ -784,7 +826,9 @@
      "id": "Baku",
      "it": "Baku",
      "ja": "バクー",
-     "ko": "바쿠"
+     "ko": "바쿠",
+     "pl": "Baku",
+     "nl": "Bakoe"
     }
    }
   ],
@@ -840,7 +884,9 @@
    "id": "Burundi",
    "it": "Burundi",
    "ja": "ブルンジ",
-   "ko": "부룬디"
+   "ko": "부룬디",
+   "pl": "Burundi",
+   "nl": "Burundi"
   },
   "official": "Republic of Burundi",
   "capitals": [
@@ -861,7 +907,9 @@
      "id": "Gitega",
      "it": "Gitega",
      "ja": "ギテガ",
-     "ko": "기테가"
+     "ko": "기테가",
+     "pl": "Gitega",
+     "nl": "Gitega"
     }
    }
   ],
@@ -915,7 +963,9 @@
    "id": "Belgia",
    "it": "Belgio",
    "ja": "ベルギー",
-   "ko": "벨기에"
+   "ko": "벨기에",
+   "pl": "Belgia",
+   "nl": "België"
   },
   "official": "Kingdom of Belgium",
   "capitals": [
@@ -936,7 +986,9 @@
      "id": "Kota Brussel",
      "it": "Bruxelles",
      "ja": "ブリュッセル市",
-     "ko": "브뤼셀"
+     "ko": "브뤼셀",
+     "pl": "Bruksela",
+     "nl": "Brussel"
     }
    }
   ],
@@ -992,7 +1044,9 @@
    "id": "Benin",
    "it": "Benin",
    "ja": "ベナン",
-   "ko": "베냉"
+   "ko": "베냉",
+   "pl": "Benin",
+   "nl": "Benin"
   },
   "official": "Republic of Benin",
   "capitals": [
@@ -1013,7 +1067,9 @@
      "id": "Porto-Novo",
      "it": "Porto-Novo",
      "ja": "ポルトノボ",
-     "ko": "포르토노보"
+     "ko": "포르토노보",
+     "pl": "Porto-Novo",
+     "nl": "Porto-Novo"
     }
    }
   ],
@@ -1067,7 +1123,9 @@
    "id": "Burkina Faso",
    "it": "Burkina Faso",
    "ja": "ブルキナファソ",
-   "ko": "부르키나파소"
+   "ko": "부르키나파소",
+   "pl": "Burkina Faso",
+   "nl": "Burkina Faso"
   },
   "official": "Burkina Faso",
   "capitals": [
@@ -1088,7 +1146,9 @@
      "id": "Ouagadougou",
      "it": "Ouagadougou",
      "ja": "ワガドゥグー",
-     "ko": "와가두구"
+     "ko": "와가두구",
+     "pl": "Wagadugu",
+     "nl": "Ouagadougou"
     }
    }
   ],
@@ -1144,7 +1204,9 @@
    "id": "Bangladesh",
    "it": "Bangladesh",
    "ja": "バングラデシュ",
-   "ko": "방글라데시"
+   "ko": "방글라데시",
+   "pl": "Bangladesz",
+   "nl": "Bangladesh"
   },
   "official": "People's Republic of Bangladesh",
   "capitals": [
@@ -1165,7 +1227,9 @@
      "id": "Dhaka",
      "it": "Dacca",
      "ja": "ダッカ",
-     "ko": "다카"
+     "ko": "다카",
+     "pl": "Dhaka",
+     "nl": "Dhaka"
     }
    }
   ],
@@ -1217,7 +1281,9 @@
    "id": "Bulgaria",
    "it": "Bulgaria",
    "ja": "ブルガリア",
-   "ko": "불가리아"
+   "ko": "불가리아",
+   "pl": "Bułgaria",
+   "nl": "Bulgarije"
   },
   "official": "Republic of Bulgaria",
   "capitals": [
@@ -1238,7 +1304,9 @@
      "id": "Sofia",
      "it": "Sofia",
      "ja": "ソフィア",
-     "ko": "소피아"
+     "ko": "소피아",
+     "pl": "Sofia",
+     "nl": "Sofia"
     }
    }
   ],
@@ -1293,7 +1361,9 @@
    "id": "Bahrain",
    "it": "Bahrein",
    "ja": "バーレーン",
-   "ko": "바레인"
+   "ko": "바레인",
+   "pl": "Bahrajn",
+   "nl": "Bahrein"
   },
   "official": "Kingdom of Bahrain",
   "capitals": [
@@ -1314,7 +1384,9 @@
      "id": "Al-Manamah",
      "it": "Manama",
      "ja": "マナーマ",
-     "ko": "마나마"
+     "ko": "마나마",
+     "pl": "Manama",
+     "nl": "Manama"
     }
    }
   ],
@@ -1363,7 +1435,9 @@
    "id": "Bahama",
    "it": "Bahamas",
    "ja": "バハマ",
-   "ko": "바하마"
+   "ko": "바하마",
+   "pl": "Bahamy",
+   "nl": "Bahama's"
   },
   "official": "Commonwealth of the Bahamas",
   "capitals": [
@@ -1384,7 +1458,9 @@
      "id": "Nassau",
      "it": "Nassau",
      "ja": "ナッソー",
-     "ko": "나소"
+     "ko": "나소",
+     "pl": "Nassau",
+     "nl": "Nassau"
     }
    }
   ],
@@ -1438,7 +1514,9 @@
    "id": "Bosnia dan Herzegovina",
    "it": "Bosnia ed Erzegovina",
    "ja": "ボスニア・ヘルツェゴビナ",
-   "ko": "보스니아 헤르체고비나"
+   "ko": "보스니아 헤르체고비나",
+   "pl": "Bośnia i Hercegowina",
+   "nl": "Bosnië en Herzegovina"
   },
   "official": "Bosnia and Herzegovina",
   "capitals": [
@@ -1459,7 +1537,9 @@
      "id": "Sarajevo",
      "it": "Sarajevo",
      "ja": "サラエヴォ",
-     "ko": "사라예보"
+     "ko": "사라예보",
+     "pl": "Sarajewo",
+     "nl": "Sarajevo"
     }
    }
   ],
@@ -1514,7 +1594,9 @@
    "id": "Belarus",
    "it": "Bielorussia",
    "ja": "ベラルーシ",
-   "ko": "벨라루스"
+   "ko": "벨라루스",
+   "pl": "Białoruś",
+   "nl": "Wit-Rusland"
   },
   "official": "Republic of Belarus",
   "capitals": [
@@ -1535,7 +1617,9 @@
      "id": "Minsk",
      "it": "Minsk",
      "ja": "ミンスク",
-     "ko": "민스크"
+     "ko": "민스크",
+     "pl": "Mińsk",
+     "nl": "Minsk"
     }
    }
   ],
@@ -1591,7 +1675,9 @@
    "id": "Belize",
    "it": "Belize",
    "ja": "ベリーズ",
-   "ko": "벨리즈"
+   "ko": "벨리즈",
+   "pl": "Belize",
+   "nl": "Belize"
   },
   "official": "Belize",
   "capitals": [
@@ -1612,7 +1698,9 @@
      "id": "Belmopan",
      "it": "Belmopan",
      "ja": "ベルモパン",
-     "ko": "벨모판"
+     "ko": "벨모판",
+     "pl": "Belmopan",
+     "nl": "Belmopan"
     }
    }
   ],
@@ -1666,7 +1754,9 @@
    "id": "Bolivia",
    "it": "Bolivia",
    "ja": "ボリビア",
-   "ko": "볼리비아"
+   "ko": "볼리비아",
+   "pl": "Boliwia",
+   "nl": "Bolivia"
   },
   "official": "Plurinational State of Bolivia",
   "capitals": [
@@ -1687,7 +1777,9 @@
      "id": "Sucre, Bolivia",
      "it": "Sucre",
      "ja": "スクレ",
-     "ko": "수크레"
+     "ko": "수크레",
+     "pl": "Sucre",
+     "nl": "Sucre"
     }
    }
   ],
@@ -1745,7 +1837,9 @@
    "id": "Brasil",
    "it": "Brasile",
    "ja": "ブラジル",
-   "ko": "브라질"
+   "ko": "브라질",
+   "pl": "Brazylia",
+   "nl": "Brazilië"
   },
   "official": "Federative Republic of Brazil",
   "capitals": [
@@ -1766,7 +1860,9 @@
      "id": "Brasilia",
      "it": "Brasilia",
      "ja": "ブラジリア",
-     "ko": "브라질리아"
+     "ko": "브라질리아",
+     "pl": "Brasília",
+     "nl": "Brasilia"
     }
    }
   ],
@@ -1826,7 +1922,9 @@
    "id": "Barbados",
    "it": "Barbados",
    "ja": "バルバドス",
-   "ko": "바베이도스"
+   "ko": "바베이도스",
+   "pl": "Barbados",
+   "nl": "Barbados"
   },
   "official": "Barbados",
   "capitals": [
@@ -1847,7 +1945,9 @@
      "id": "Bridgetown",
      "it": "Bridgetown",
      "ja": "ブリッジタウン",
-     "ko": "브리지타운"
+     "ko": "브리지타운",
+     "pl": "Bridgetown",
+     "nl": "Bridgetown"
     }
    }
   ],
@@ -1896,7 +1996,9 @@
    "id": "Brunei",
    "it": "Brunei",
    "ja": "ブルネイ",
-   "ko": "브루나이"
+   "ko": "브루나이",
+   "pl": "Brunei",
+   "nl": "Brunei"
   },
   "official": "Nation of Brunei, Abode of Peace",
   "capitals": [
@@ -1917,7 +2019,9 @@
      "id": "Bandar Seri Begawan",
      "it": "Bandar Seri Begawan",
      "ja": "バンダルスリブガワン",
-     "ko": "반다르스리브가완"
+     "ko": "반다르스리브가완",
+     "pl": "Bandar Seri Begawan",
+     "nl": "Bandar Seri Begawan"
     }
    }
   ],
@@ -1973,7 +2077,9 @@
    "id": "Bhutan",
    "it": "Bhutan",
    "ja": "ブータン",
-   "ko": "부탄"
+   "ko": "부탄",
+   "pl": "Bhutan",
+   "nl": "Bhutan"
   },
   "official": "Kingdom of Bhutan",
   "capitals": [
@@ -1994,7 +2100,9 @@
      "id": "Thimphu",
      "it": "Thimphu",
      "ja": "ティンプー",
-     "ko": "팀부"
+     "ko": "팀부",
+     "pl": "Thimphu",
+     "nl": "Thimphu"
     }
    }
   ],
@@ -2051,7 +2159,9 @@
    "id": "Botswana",
    "it": "Botswana",
    "ja": "ボツワナ",
-   "ko": "보츠와나"
+   "ko": "보츠와나",
+   "pl": "Botswana",
+   "nl": "Botswana"
   },
   "official": "Republic of Botswana",
   "capitals": [
@@ -2072,7 +2182,9 @@
      "id": "Gaborone",
      "it": "Gaborone",
      "ja": "ハボローネ",
-     "ko": "가보로네"
+     "ko": "가보로네",
+     "pl": "Gaborone",
+     "nl": "Gaborone"
     }
    }
   ],
@@ -2127,7 +2239,9 @@
    "id": "Republik Afrika Tengah",
    "it": "Repubblica Centrafricana",
    "ja": "中央アフリカ共和国",
-   "ko": "중앙아프리카 공화국"
+   "ko": "중앙아프리카 공화국",
+   "pl": "Republika Środkowoafrykańska",
+   "nl": "Centraal-Afrikaanse Republiek"
   },
   "official": "Central African Republic",
   "capitals": [
@@ -2148,7 +2262,9 @@
      "id": "Bangui",
      "it": "Bangui",
      "ja": "バンギ",
-     "ko": "방기"
+     "ko": "방기",
+     "pl": "Bangi",
+     "nl": "Bangui"
     }
    }
   ],
@@ -2205,7 +2321,9 @@
    "id": "Kanada",
    "it": "Canada",
    "ja": "カナダ",
-   "ko": "캐나다"
+   "ko": "캐나다",
+   "pl": "Kanada",
+   "nl": "Canada"
   },
   "official": "Canada",
   "capitals": [
@@ -2226,7 +2344,9 @@
      "id": "Ottawa",
      "it": "Ottawa",
      "ja": "オタワ",
-     "ko": "오타와"
+     "ko": "오타와",
+     "pl": "Ottawa",
+     "nl": "Ottawa"
     }
    }
   ],
@@ -2278,7 +2398,9 @@
    "id": "Swiss",
    "it": "Svizzera",
    "ja": "スイス",
-   "ko": "스위스"
+   "ko": "스위스",
+   "pl": "Szwajcaria",
+   "nl": "Zwitserland"
   },
   "official": "Swiss Confederation",
   "capitals": [
@@ -2299,7 +2421,9 @@
      "id": "Bern",
      "it": "Berna",
      "ja": "ベルン",
-     "ko": "베른"
+     "ko": "베른",
+     "pl": "Berno",
+     "nl": "Bern"
     }
    }
   ],
@@ -2357,7 +2481,9 @@
    "id": "Chili",
    "it": "Cile",
    "ja": "チリ",
-   "ko": "칠레"
+   "ko": "칠레",
+   "pl": "Chile",
+   "nl": "Chili"
   },
   "official": "Republic of Chile",
   "capitals": [
@@ -2378,7 +2504,9 @@
      "id": "Santiago de Chile",
      "it": "Santiago del Cile",
      "ja": "サンティアゴ",
-     "ko": "산티아고"
+     "ko": "산티아고",
+     "pl": "Santiago",
+     "nl": "Santiago"
     }
    }
   ],
@@ -2431,7 +2559,9 @@
    "id": "Tiongkok",
    "it": "Cina",
    "ja": "中華人民共和国",
-   "ko": "중화인민공화국"
+   "ko": "중화인민공화국",
+   "pl": "Chińska Republika Ludowa",
+   "nl": "Volksrepubliek China"
   },
   "official": "People's Republic of China",
   "capitals": [
@@ -2452,7 +2582,9 @@
      "id": "Beijing",
      "it": "Pechino",
      "ja": "北京市",
-     "ko": "베이징시"
+     "ko": "베이징시",
+     "pl": "Pekin",
+     "nl": "Peking"
     }
    }
   ],
@@ -2518,7 +2650,9 @@
    "id": "Pantai Gading",
    "it": "Costa d'Avorio",
    "ja": "コートジボワール",
-   "ko": "코트디부아르"
+   "ko": "코트디부아르",
+   "pl": "Wybrzeże Kości Słoniowej",
+   "nl": "Ivoorkust"
   },
   "official": "Republic of Côte d'Ivoire",
   "capitals": [
@@ -2539,7 +2673,9 @@
      "id": "Yamoussoukro",
      "it": "Yamoussoukro",
      "ja": "ヤムスクロ",
-     "ko": "야무수크로"
+     "ko": "야무수크로",
+     "pl": "Jamusukro",
+     "nl": "Yamoussoukro"
     }
    }
   ],
@@ -2594,7 +2730,9 @@
    "id": "Kamerun",
    "it": "Camerun",
    "ja": "カメルーン",
-   "ko": "카메룬"
+   "ko": "카메룬",
+   "pl": "Kamerun",
+   "nl": "Kameroen"
   },
   "official": "Republic of Cameroon",
   "capitals": [
@@ -2615,7 +2753,9 @@
      "id": "Yaoundé",
      "it": "Yaoundé",
      "ja": "ヤウンデ",
-     "ko": "야운데"
+     "ko": "야운데",
+     "pl": "Jaunde",
+     "nl": "Yaoundé"
     }
    }
   ],
@@ -2672,7 +2812,9 @@
    "id": "Republik Demokratik Kongo",
    "it": "Repubblica Democratica del Congo",
    "ja": "コンゴ民主共和国",
-   "ko": "콩고 민주 공화국"
+   "ko": "콩고 민주 공화국",
+   "pl": "Demokratyczna Republika Konga",
+   "nl": "Congo-Kinshasa"
   },
   "official": "Democratic Republic of the Congo",
   "capitals": [
@@ -2693,7 +2835,9 @@
      "id": "Kinshasa",
      "it": "Kinshasa",
      "ja": "キンシャサ",
-     "ko": "킨샤사"
+     "ko": "킨샤사",
+     "pl": "Kinszasa",
+     "nl": "Kinshasa"
     }
    }
   ],
@@ -2756,7 +2900,9 @@
    "id": "Republik Kongo",
    "it": "Repubblica del Congo",
    "ja": "コンゴ共和国",
-   "ko": "콩고 공화국"
+   "ko": "콩고 공화국",
+   "pl": "Kongo",
+   "nl": "Congo-Brazzaville"
   },
   "official": "Republic of the Congo",
   "capitals": [
@@ -2777,7 +2923,9 @@
      "id": "Brazzaville",
      "it": "Brazzaville",
      "ja": "ブラザヴィル",
-     "ko": "브라자빌"
+     "ko": "브라자빌",
+     "pl": "Brazzaville",
+     "nl": "Brazzaville"
     }
    }
   ],
@@ -2834,7 +2982,9 @@
    "id": "Kolombia",
    "it": "Colombia",
    "ja": "コロンビア",
-   "ko": "콜롬비아"
+   "ko": "콜롬비아",
+   "pl": "Kolumbia",
+   "nl": "Colombia"
   },
   "official": "Republic of Colombia",
   "capitals": [
@@ -2855,7 +3005,9 @@
      "id": "Bogotá",
      "it": "Bogotà",
      "ja": "ボゴタ",
-     "ko": "보고타"
+     "ko": "보고타",
+     "pl": "Bogota",
+     "nl": "Bogota"
     }
    }
   ],
@@ -2910,7 +3062,9 @@
    "id": "Komoro",
    "it": "Comore",
    "ja": "コモロ",
-   "ko": "코모로"
+   "ko": "코모로",
+   "pl": "Komory",
+   "nl": "Comoren"
   },
   "official": "Union of the Comoros",
   "capitals": [
@@ -2931,7 +3085,9 @@
      "id": "Moroni",
      "it": "Moroni",
      "ja": "モロニ",
-     "ko": "모로니"
+     "ko": "모로니",
+     "pl": "Moroni",
+     "nl": "Moroni"
     }
    }
   ],
@@ -2982,7 +3138,9 @@
    "id": "Tanjung Verde",
    "it": "Capo Verde",
    "ja": "カーボベルデ",
-   "ko": "카보베르데"
+   "ko": "카보베르데",
+   "pl": "Republika Zielonego Przylądka",
+   "nl": "Kaapverdië"
   },
   "official": "Republic of Cabo Verde",
   "capitals": [
@@ -3003,7 +3161,9 @@
      "id": "Praia",
      "it": "Praia",
      "ja": "プライア",
-     "ko": "프라이아"
+     "ko": "프라이아",
+     "pl": "Praia",
+     "nl": "Praia"
     }
    }
   ],
@@ -3052,7 +3212,9 @@
    "id": "Kosta Rika",
    "it": "Costa Rica",
    "ja": "コスタリカ",
-   "ko": "코스타리카"
+   "ko": "코스타리카",
+   "pl": "Kostaryka",
+   "nl": "Costa Rica"
   },
   "official": "Republic of Costa Rica",
   "capitals": [
@@ -3073,7 +3235,9 @@
      "id": "San José, Kosta Rika",
      "it": "San José",
      "ja": "サンホセ",
-     "ko": "산호세"
+     "ko": "산호세",
+     "pl": "San José",
+     "nl": "San José"
     }
    }
   ],
@@ -3125,7 +3289,9 @@
    "id": "Kuba",
    "it": "Cuba",
    "ja": "キューバ",
-   "ko": "쿠바"
+   "ko": "쿠바",
+   "pl": "Kuba",
+   "nl": "Cuba"
   },
   "official": "Republic of Cuba",
   "capitals": [
@@ -3146,7 +3312,9 @@
      "id": "Havana",
      "it": "L'Avana",
      "ja": "ハバナ",
-     "ko": "아바나"
+     "ko": "아바나",
+     "pl": "Hawana",
+     "nl": "Havana"
     }
    }
   ],
@@ -3199,7 +3367,9 @@
    "id": "Siprus",
    "it": "Cipro",
    "ja": "キプロス島",
-   "ko": "키프로스섬"
+   "ko": "키프로스섬",
+   "pl": "Cypr",
+   "nl": "Cyprus"
   },
   "official": "Republic of Cyprus",
   "capitals": [
@@ -3220,7 +3390,9 @@
      "id": "Nikosia",
      "it": "Nicosia",
      "ja": "ニコシア",
-     "ko": "니코시아"
+     "ko": "니코시아",
+     "pl": "Nikozja",
+     "nl": "Nicosia"
     }
    }
   ],
@@ -3270,7 +3442,9 @@
    "id": "Ceko",
    "it": "Repubblica Ceca",
    "ja": "チェコ共和国",
-   "ko": "체코"
+   "ko": "체코",
+   "pl": "Czechy",
+   "nl": "Tsjechië"
   },
   "official": "Czech Republic",
   "capitals": [
@@ -3291,7 +3465,9 @@
      "id": "Praha",
      "it": "Praga",
      "ja": "プラハ",
-     "ko": "프라하"
+     "ko": "프라하",
+     "pl": "Praga",
+     "nl": "Praag"
     }
    }
   ],
@@ -3346,7 +3522,9 @@
    "id": "Jerman",
    "it": "Germania",
    "ja": "ドイツ",
-   "ko": "독일"
+   "ko": "독일",
+   "pl": "Niemcy",
+   "nl": "Duitsland"
   },
   "official": "Federal Republic of Germany",
   "capitals": [
@@ -3367,7 +3545,9 @@
      "id": "Berlin",
      "it": "Berlino",
      "ja": "ベルリン",
-     "ko": "베를린"
+     "ko": "베를린",
+     "pl": "Berlin",
+     "nl": "Berlijn"
     }
    }
   ],
@@ -3426,7 +3606,9 @@
    "id": "Jibuti",
    "it": "Gibuti",
    "ja": "ジブチ",
-   "ko": "지부티"
+   "ko": "지부티",
+   "pl": "Dżibuti",
+   "nl": "Djibouti"
   },
   "official": "Republic of Djibouti",
   "capitals": [
@@ -3447,7 +3629,9 @@
      "id": "Kota Djibouti",
      "it": "Gibuti",
      "ja": "ジブチ市",
-     "ko": "지부티"
+     "ko": "지부티",
+     "pl": "Dżibuti",
+     "nl": "Djibouti"
     }
    }
   ],
@@ -3501,7 +3685,9 @@
    "id": "Dominika",
    "it": "Dominica",
    "ja": "ドミニカ国",
-   "ko": "도미니카 연방"
+   "ko": "도미니카 연방",
+   "pl": "Dominika",
+   "nl": "Dominica"
   },
   "official": "Commonwealth of Dominica",
   "capitals": [
@@ -3522,7 +3708,9 @@
      "id": "Roseau",
      "it": "Roseau",
      "ja": "ロゾー",
-     "ko": "로조"
+     "ko": "로조",
+     "pl": "Roseau",
+     "nl": "Roseau"
     }
    }
   ],
@@ -3571,7 +3759,9 @@
    "id": "Denmark",
    "it": "Danimarca",
    "ja": "デンマーク",
-   "ko": "덴마크"
+   "ko": "덴마크",
+   "pl": "Dania",
+   "nl": "Denemarken"
   },
   "official": "Kingdom of Denmark",
   "capitals": [
@@ -3592,7 +3782,9 @@
      "id": "Kopenhagen",
      "it": "Copenaghen",
      "ja": "コペンハーゲン",
-     "ko": "코펜하겐"
+     "ko": "코펜하겐",
+     "pl": "Kopenhaga",
+     "nl": "Kopenhagen"
     }
    }
   ],
@@ -3643,7 +3835,9 @@
    "id": "Republik Dominika",
    "it": "Repubblica Dominicana",
    "ja": "ドミニカ共和国",
-   "ko": "도미니카 공화국"
+   "ko": "도미니카 공화국",
+   "pl": "Dominikana",
+   "nl": "Dominicaanse Republiek"
   },
   "official": "Dominican Republic",
   "capitals": [
@@ -3664,7 +3858,9 @@
      "id": "Santo Domingo",
      "it": "Santo Domingo",
      "ja": "サント・ドミンゴ",
-     "ko": "산토도밍고"
+     "ko": "산토도밍고",
+     "pl": "Santo Domingo",
+     "nl": "Santo Domingo"
     }
    }
   ],
@@ -3715,7 +3911,9 @@
    "id": "Aljazair",
    "it": "Algeria",
    "ja": "アルジェリア",
-   "ko": "알제리"
+   "ko": "알제리",
+   "pl": "Algieria",
+   "nl": "Algerije"
   },
   "official": "People's Democratic Republic of Algeria",
   "capitals": [
@@ -3736,7 +3934,9 @@
      "id": "Aljir",
      "it": "Algeri",
      "ja": "アルジェ",
-     "ko": "알제"
+     "ko": "알제",
+     "pl": "Algier",
+     "nl": "Algiers"
     }
    }
   ],
@@ -3793,7 +3993,9 @@
    "id": "Ekuador",
    "it": "Ecuador",
    "ja": "エクアドル",
-   "ko": "에콰도르"
+   "ko": "에콰도르",
+   "pl": "Ekwador",
+   "nl": "Ecuador"
   },
   "official": "Republic of Ecuador",
   "capitals": [
@@ -3814,7 +4016,9 @@
      "id": "Quito",
      "it": "Quito",
      "ja": "キト",
-     "ko": "키토"
+     "ko": "키토",
+     "pl": "Quito",
+     "nl": "Quito"
     }
    }
   ],
@@ -3866,7 +4070,9 @@
    "id": "Mesir",
    "it": "Egitto",
    "ja": "エジプト",
-   "ko": "이집트"
+   "ko": "이집트",
+   "pl": "Egipt",
+   "nl": "Egypte"
   },
   "official": "Arab Republic of Egypt",
   "capitals": [
@@ -3887,7 +4093,9 @@
      "id": "Kairo",
      "it": "Il Cairo",
      "ja": "カイロ",
-     "ko": "카이로"
+     "ko": "카이로",
+     "pl": "Kair",
+     "nl": "Caïro"
     }
    }
   ],
@@ -3941,7 +4149,9 @@
    "id": "Eritrea",
    "it": "Eritrea",
    "ja": "エリトリア",
-   "ko": "에리트레아"
+   "ko": "에리트레아",
+   "pl": "Erytrea",
+   "nl": "Eritrea"
   },
   "official": "State of Eritrea",
   "capitals": [
@@ -3962,7 +4172,9 @@
      "id": "Asmara",
      "it": "Asmara",
      "ja": "アスマラ",
-     "ko": "아스마라"
+     "ko": "아스마라",
+     "pl": "Asmara",
+     "nl": "Asmara"
     }
    }
   ],
@@ -4017,7 +4229,9 @@
    "id": "Spanyol",
    "it": "Spagna",
    "ja": "スペイン王国",
-   "ko": "스페인"
+   "ko": "스페인",
+   "pl": "Hiszpania",
+   "nl": "Spanje"
   },
   "official": "Kingdom of Spain",
   "capitals": [
@@ -4038,7 +4252,9 @@
      "id": "Madrid",
      "it": "Madrid",
      "ja": "マドリード",
-     "ko": "마드리드"
+     "ko": "마드리드",
+     "pl": "Madryt",
+     "nl": "Madrid"
     }
    }
   ],
@@ -4093,7 +4309,9 @@
    "id": "Estonia",
    "it": "Estonia",
    "ja": "エストニア",
-   "ko": "에스토니아"
+   "ko": "에스토니아",
+   "pl": "Estonia",
+   "nl": "Estland"
   },
   "official": "Republic of Estonia",
   "capitals": [
@@ -4114,7 +4332,9 @@
      "id": "Tallinn",
      "it": "Tallinn",
      "ja": "タリン",
-     "ko": "탈린"
+     "ko": "탈린",
+     "pl": "Tallinn",
+     "nl": "Tallinn"
     }
    }
   ],
@@ -4166,7 +4386,9 @@
    "id": "Etiopia",
    "it": "Etiopia",
    "ja": "エチオピア",
-   "ko": "에티오피아"
+   "ko": "에티오피아",
+   "pl": "Etiopia",
+   "nl": "Ethiopië"
   },
   "official": "Federal Democratic Republic of Ethiopia",
   "capitals": [
@@ -4187,7 +4409,9 @@
      "id": "Addis Ababa",
      "it": "Addis Abeba",
      "ja": "アディスアベバ",
-     "ko": "아디스아바바"
+     "ko": "아디스아바바",
+     "pl": "Addis Abeba",
+     "nl": "Addis Abeba"
     }
    }
   ],
@@ -4243,7 +4467,9 @@
    "id": "Finlandia",
    "it": "Finlandia",
    "ja": "フィンランド",
-   "ko": "핀란드"
+   "ko": "핀란드",
+   "pl": "Finlandia",
+   "nl": "Finland"
   },
   "official": "Republic of Finland",
   "capitals": [
@@ -4264,7 +4490,9 @@
      "id": "Helsinki",
      "it": "Helsinki",
      "ja": "ヘルシンキ",
-     "ko": "헬싱키"
+     "ko": "헬싱키",
+     "pl": "Helsinki",
+     "nl": "Helsinki"
     }
    }
   ],
@@ -4318,7 +4546,9 @@
    "id": "Fiji",
    "it": "Figi",
    "ja": "フィジー",
-   "ko": "피지"
+   "ko": "피지",
+   "pl": "Fidżi",
+   "nl": "Fiji"
   },
   "official": "Republic of Fiji",
   "capitals": [
@@ -4339,7 +4569,9 @@
      "id": "Suva",
      "it": "Suva",
      "ja": "スバ",
-     "ko": "수바"
+     "ko": "수바",
+     "pl": "Suva",
+     "nl": "Suva"
     }
    }
   ],
@@ -4390,7 +4622,9 @@
    "id": "Prancis",
    "it": "Francia",
    "ja": "フランス",
-   "ko": "프랑스"
+   "ko": "프랑스",
+   "pl": "Francja",
+   "nl": "Frankrijk"
   },
   "official": "French Republic",
   "capitals": [
@@ -4411,7 +4645,9 @@
      "id": "Paris",
      "it": "Parigi",
      "ja": "パリ",
-     "ko": "파리"
+     "ko": "파리",
+     "pl": "Paryż",
+     "nl": "Parijs"
     }
    }
   ],
@@ -4469,7 +4705,9 @@
    "id": "Mikronesia",
    "it": "Stati Federati di Micronesia",
    "ja": "ミクロネシア連邦",
-   "ko": "미크로네시아 연방"
+   "ko": "미크로네시아 연방",
+   "pl": "Mikronezja",
+   "nl": "Micronesië"
   },
   "official": "Federated States of Micronesia",
   "capitals": [
@@ -4490,7 +4728,9 @@
      "id": "Palikir",
      "it": "Palikir",
      "ja": "パリキール",
-     "ko": "팔리키르"
+     "ko": "팔리키르",
+     "pl": "Palikir",
+     "nl": "Palikir"
     }
    }
   ],
@@ -4533,7 +4773,9 @@
    "id": "Gabon",
    "it": "Gabon",
    "ja": "ガボン",
-   "ko": "가봉"
+   "ko": "가봉",
+   "pl": "Gabon",
+   "nl": "Gabon"
   },
   "official": "Gabonese Republic",
   "capitals": [
@@ -4554,7 +4796,9 @@
      "id": "Libreville",
      "it": "Libreville",
      "ja": "リーブルヴィル",
-     "ko": "리브르빌"
+     "ko": "리브르빌",
+     "pl": "Libreville",
+     "nl": "Libreville"
     }
    }
   ],
@@ -4607,7 +4851,9 @@
    "id": "Britania Raya",
    "it": "Regno Unito",
    "ja": "イギリス",
-   "ko": "영국"
+   "ko": "영국",
+   "pl": "Wielka Brytania",
+   "nl": "Verenigd Koninkrijk"
   },
   "official": "United Kingdom of Great Britain and Northern Ireland",
   "capitals": [
@@ -4628,7 +4874,9 @@
      "id": "London",
      "it": "Londra",
      "ja": "ロンドン",
-     "ko": "런던"
+     "ko": "런던",
+     "pl": "Londyn",
+     "nl": "Londen"
     }
    }
   ],
@@ -4679,7 +4927,9 @@
    "id": "Georgia",
    "it": "Georgia",
    "ja": "ジョージア",
-   "ko": "조지아"
+   "ko": "조지아",
+   "pl": "Gruzja",
+   "nl": "Georgië"
   },
   "official": "Georgia",
   "capitals": [
@@ -4700,7 +4950,9 @@
      "id": "Tbilisi",
      "it": "Tbilisi",
      "ja": "トビリシ",
-     "ko": "트빌리시"
+     "ko": "트빌리시",
+     "pl": "Tbilisi",
+     "nl": "Tbilisi"
     }
    }
   ],
@@ -4754,7 +5006,9 @@
    "id": "Ghana",
    "it": "Ghana",
    "ja": "ガーナ",
-   "ko": "가나"
+   "ko": "가나",
+   "pl": "Ghana",
+   "nl": "Ghana"
   },
   "official": "Republic of Ghana",
   "capitals": [
@@ -4775,7 +5029,9 @@
      "id": "Accra",
      "it": "Accra",
      "ja": "アクラ",
-     "ko": "아크라"
+     "ko": "아크라",
+     "pl": "Akra",
+     "nl": "Accra"
     }
    }
   ],
@@ -4828,7 +5084,9 @@
    "id": "Guinea",
    "it": "Guinea",
    "ja": "ギニア",
-   "ko": "기니"
+   "ko": "기니",
+   "pl": "Gwinea",
+   "nl": "Guinee"
   },
   "official": "Republic of Guinea",
   "capitals": [
@@ -4849,7 +5107,9 @@
      "id": "Conakry",
      "it": "Conakry",
      "ja": "コナクリ",
-     "ko": "코나크리"
+     "ko": "코나크리",
+     "pl": "Konakry",
+     "nl": "Conakry"
     }
    }
   ],
@@ -4905,7 +5165,9 @@
    "id": "Gambia",
    "it": "Gambia",
    "ja": "ガンビア",
-   "ko": "감비아"
+   "ko": "감비아",
+   "pl": "Gambia",
+   "nl": "Gambia"
   },
   "official": "Republic of the Gambia",
   "capitals": [
@@ -4926,7 +5188,9 @@
      "id": "Banjul",
      "it": "Banjul",
      "ja": "バンジュール",
-     "ko": "반줄"
+     "ko": "반줄",
+     "pl": "Bandżul",
+     "nl": "Banjul"
     }
    }
   ],
@@ -4977,7 +5241,9 @@
    "id": "Guinea-Bissau",
    "it": "Guinea-Bissau",
    "ja": "ギニアビサウ共和国",
-   "ko": "기니비사우"
+   "ko": "기니비사우",
+   "pl": "Gwinea Bissau",
+   "nl": "Guinee-Bissau"
   },
   "official": "Republic of Guinea-Bissau",
   "capitals": [
@@ -4998,7 +5264,9 @@
      "id": "Bissau",
      "it": "Bissau",
      "ja": "ビサウ",
-     "ko": "비사우"
+     "ko": "비사우",
+     "pl": "Bissau",
+     "nl": "Bissau"
     }
    }
   ],
@@ -5051,7 +5319,9 @@
    "id": "Guinea Khatulistiwa",
    "it": "Guinea Equatoriale",
    "ja": "赤道ギニア",
-   "ko": "적도 기니"
+   "ko": "적도 기니",
+   "pl": "Gwinea Równikowa",
+   "nl": "Equatoriaal-Guinea"
   },
   "official": "Republic of Equatorial Guinea",
   "capitals": [
@@ -5072,7 +5342,9 @@
      "id": "Ciudad de la Paz",
      "it": "Ciudad de la Paz",
      "ja": "ラパス",
-     "ko": "오얄라"
+     "ko": "오얄라",
+     "pl": "Ciudad de la Paz",
+     "nl": "Ciudad de la Paz"
     }
    }
   ],
@@ -5126,7 +5398,9 @@
    "id": "Yunani",
    "it": "Grecia",
    "ja": "ギリシャ",
-   "ko": "그리스"
+   "ko": "그리스",
+   "pl": "Grecja",
+   "nl": "Griekenland"
   },
   "official": "Hellenic Republic",
   "capitals": [
@@ -5147,7 +5421,9 @@
      "id": "Athena",
      "it": "Atene",
      "ja": "アテネ",
-     "ko": "아테네"
+     "ko": "아테네",
+     "pl": "Ateny",
+     "nl": "Athene"
     }
    }
   ],
@@ -5201,7 +5477,9 @@
    "id": "Grenada",
    "it": "Grenada",
    "ja": "グレナダ",
-   "ko": "그레나다"
+   "ko": "그레나다",
+   "pl": "Grenada",
+   "nl": "Grenada"
   },
   "official": "Grenada",
   "capitals": [
@@ -5222,7 +5500,9 @@
      "id": "St. George's",
      "it": "Saint George's",
      "ja": "セントジョージズ",
-     "ko": "세인트조지스"
+     "ko": "세인트조지스",
+     "pl": "Saint George's",
+     "nl": "Saint George's"
     }
    }
   ],
@@ -5271,7 +5551,9 @@
    "id": "Guatemala",
    "it": "Guatemala",
    "ja": "グアテマラ",
-   "ko": "과테말라"
+   "ko": "과테말라",
+   "pl": "Gwatemala",
+   "nl": "Guatemala"
   },
   "official": "Republic of Guatemala",
   "capitals": [
@@ -5292,7 +5574,9 @@
      "id": "Kota Guatemala",
      "it": "Città del Guatemala",
      "ja": "グアテマラシティ",
-     "ko": "과테말라시티"
+     "ko": "과테말라시티",
+     "pl": "Gwatemala",
+     "nl": "Guatemala-Stad"
     }
    }
   ],
@@ -5346,7 +5630,9 @@
    "id": "Guyana",
    "it": "Guyana",
    "ja": "ガイアナ",
-   "ko": "가이아나"
+   "ko": "가이아나",
+   "pl": "Gujana",
+   "nl": "Guyana"
   },
   "official": "Co-operative Republic of Guyana",
   "capitals": [
@@ -5367,7 +5653,9 @@
      "id": "Georgetown",
      "it": "Georgetown",
      "ja": "ジョージタウン",
-     "ko": "조지타운"
+     "ko": "조지타운",
+     "pl": "Georgetown",
+     "nl": "Georgetown"
     }
    }
   ],
@@ -5420,7 +5708,9 @@
    "id": "Honduras",
    "it": "Honduras",
    "ja": "ホンジュラス",
-   "ko": "온두라스"
+   "ko": "온두라스",
+   "pl": "Honduras",
+   "nl": "Honduras"
   },
   "official": "Republic of Honduras",
   "capitals": [
@@ -5441,7 +5731,9 @@
      "id": "Tegucigalpa",
      "it": "Tegucigalpa",
      "ja": "テグシガルパ",
-     "ko": "테구시갈파"
+     "ko": "테구시갈파",
+     "pl": "Tegucigalpa",
+     "nl": "Tegucigalpa"
     }
    }
   ],
@@ -5494,7 +5786,9 @@
    "id": "Kroasia",
    "it": "Croazia",
    "ja": "クロアチア",
-   "ko": "크로아티아"
+   "ko": "크로아티아",
+   "pl": "Chorwacja",
+   "nl": "Kroatië"
   },
   "official": "Republic of Croatia",
   "capitals": [
@@ -5515,7 +5809,9 @@
      "id": "Zagreb",
      "it": "Zagabria",
      "ja": "ザグレブ",
-     "ko": "자그레브"
+     "ko": "자그레브",
+     "pl": "Zagrzeb",
+     "nl": "Zagreb"
     }
    }
   ],
@@ -5570,7 +5866,9 @@
    "id": "Haiti",
    "it": "Haiti",
    "ja": "ハイチ",
-   "ko": "아이티"
+   "ko": "아이티",
+   "pl": "Haiti",
+   "nl": "Haïti"
   },
   "official": "Republic of Haiti",
   "capitals": [
@@ -5591,7 +5889,9 @@
      "id": "Port-au-Prince",
      "it": "Port-au-Prince",
      "ja": "ポルトープランス",
-     "ko": "포르토프랭스"
+     "ko": "포르토프랭스",
+     "pl": "Port-au-Prince",
+     "nl": "Port-au-Prince"
     }
    }
   ],
@@ -5643,7 +5943,9 @@
    "id": "Hungaria",
    "it": "Ungheria",
    "ja": "ハンガリー",
-   "ko": "헝가리"
+   "ko": "헝가리",
+   "pl": "Węgry",
+   "nl": "Hongarije"
   },
   "official": "Hungary",
   "capitals": [
@@ -5664,7 +5966,9 @@
      "id": "Budapest",
      "it": "Budapest",
      "ja": "ブダペスト",
-     "ko": "부다페스트"
+     "ko": "부다페스트",
+     "pl": "Budapeszt",
+     "nl": "Boedapest"
     }
    }
   ],
@@ -5721,7 +6025,9 @@
    "id": "Indonesia",
    "it": "Indonesia",
    "ja": "インドネシア",
-   "ko": "인도네시아"
+   "ko": "인도네시아",
+   "pl": "Indonezja",
+   "nl": "Indonesië"
   },
   "official": "Republic of Indonesia",
   "capitals": [
@@ -5742,7 +6048,9 @@
      "id": "Jakarta",
      "it": "Giacarta",
      "ja": "ジャカルタ",
-     "ko": "자카르타"
+     "ko": "자카르타",
+     "pl": "Dżakarta",
+     "nl": "Jakarta"
     }
    }
   ],
@@ -5795,7 +6103,9 @@
    "id": "India",
    "it": "India",
    "ja": "インド",
-   "ko": "인도"
+   "ko": "인도",
+   "pl": "Indie",
+   "nl": "India"
   },
   "official": "Republic of India",
   "capitals": [
@@ -5816,7 +6126,9 @@
      "id": "New Delhi",
      "it": "Nuova Delhi",
      "ja": "ニューデリー",
-     "ko": "뉴델리"
+     "ko": "뉴델리",
+     "pl": "Nowe Delhi",
+     "nl": "New Delhi"
     }
    }
   ],
@@ -5874,7 +6186,9 @@
    "id": "Republik Irlandia",
    "it": "Irlanda",
    "ja": "アイルランド",
-   "ko": "아일랜드"
+   "ko": "아일랜드",
+   "pl": "Irlandia",
+   "nl": "Ierland"
   },
   "official": "Republic of Ireland",
   "capitals": [
@@ -5895,7 +6209,9 @@
      "id": "Dublin",
      "it": "Dublino",
      "ja": "ダブリン",
-     "ko": "더블린"
+     "ko": "더블린",
+     "pl": "Dublin",
+     "nl": "Dublin"
     }
    }
   ],
@@ -5947,7 +6263,9 @@
    "id": "Iran",
    "it": "Iran",
    "ja": "イラン",
-   "ko": "이란"
+   "ko": "이란",
+   "pl": "Iran",
+   "nl": "Iran"
   },
   "official": "Islamic Republic of Iran",
   "capitals": [
@@ -5968,7 +6286,9 @@
      "id": "Teheran",
      "it": "Teheran",
      "ja": "テヘラン",
-     "ko": "테헤란"
+     "ko": "테헤란",
+     "pl": "Teheran",
+     "nl": "Teheran"
     }
    }
   ],
@@ -6025,7 +6345,9 @@
    "id": "Irak",
    "it": "Iraq",
    "ja": "イラク",
-   "ko": "이라크"
+   "ko": "이라크",
+   "pl": "Irak",
+   "nl": "Irak"
   },
   "official": "Republic of Iraq",
   "capitals": [
@@ -6046,7 +6368,9 @@
      "id": "Bagdad",
      "it": "Baghdad",
      "ja": "バグダード",
-     "ko": "바그다드"
+     "ko": "바그다드",
+     "pl": "Bagdad",
+     "nl": "Bagdad"
     }
    }
   ],
@@ -6104,7 +6428,9 @@
    "id": "Islandia",
    "it": "Islanda",
    "ja": "アイスランド",
-   "ko": "아이슬란드"
+   "ko": "아이슬란드",
+   "pl": "Islandia",
+   "nl": "IJsland"
   },
   "official": "Iceland",
   "capitals": [
@@ -6125,7 +6451,9 @@
      "id": "Reykjavík",
      "it": "Reykjavík",
      "ja": "レイキャヴィーク",
-     "ko": "레이캬비크"
+     "ko": "레이캬비크",
+     "pl": "Reykjavík",
+     "nl": "Reykjavik"
     }
    }
   ],
@@ -6174,7 +6502,9 @@
    "id": "Israel",
    "it": "Israele",
    "ja": "イスラエル",
-   "ko": "이스라엘"
+   "ko": "이스라엘",
+   "pl": "Izrael",
+   "nl": "Israël"
   },
   "official": "State of Israel",
   "capitals": [
@@ -6195,7 +6525,9 @@
      "id": "Yerusalem",
      "it": "Gerusalemme",
      "ja": "エルサレム",
-     "ko": "예루살렘"
+     "ko": "예루살렘",
+     "pl": "Jerozolima",
+     "nl": "Jeruzalem"
     }
    }
   ],
@@ -6251,7 +6583,9 @@
    "id": "Italia",
    "it": "Italia",
    "ja": "イタリア",
-   "ko": "이탈리아"
+   "ko": "이탈리아",
+   "pl": "Włochy",
+   "nl": "Italië"
   },
   "official": "Italian Republic",
   "capitals": [
@@ -6272,7 +6606,9 @@
      "id": "Roma",
      "it": "Roma",
      "ja": "ローマ",
-     "ko": "로마"
+     "ko": "로마",
+     "pl": "Rzym",
+     "nl": "Rome"
     }
    }
   ],
@@ -6328,7 +6664,9 @@
    "id": "Jamaika",
    "it": "Giamaica",
    "ja": "ジャマイカ",
-   "ko": "자메이카"
+   "ko": "자메이카",
+   "pl": "Jamajka",
+   "nl": "Jamaica"
   },
   "official": "Jamaica",
   "capitals": [
@@ -6349,7 +6687,9 @@
      "id": "Kingston",
      "it": "Kingston",
      "ja": "キングストン",
-     "ko": "킹스턴"
+     "ko": "킹스턴",
+     "pl": "Kingston",
+     "nl": "Kingston"
     }
    }
   ],
@@ -6399,7 +6739,9 @@
    "id": "Yordania",
    "it": "Giordania",
    "ja": "ヨルダン",
-   "ko": "요르단"
+   "ko": "요르단",
+   "pl": "Jordania",
+   "nl": "Jordanië"
   },
   "official": "Hashemite Kingdom of Jordan",
   "capitals": [
@@ -6420,7 +6762,9 @@
      "id": "Amman",
      "it": "Amman",
      "ja": "アンマン",
-     "ko": "암만"
+     "ko": "암만",
+     "pl": "Amman",
+     "nl": "Amman"
     }
    }
   ],
@@ -6475,7 +6819,9 @@
    "id": "Jepang",
    "it": "Giappone",
    "ja": "日本",
-   "ko": "일본"
+   "ko": "일본",
+   "pl": "Japonia",
+   "nl": "Japan"
   },
   "official": "Japan",
   "capitals": [
@@ -6496,7 +6842,9 @@
      "id": "Tokyo",
      "it": "Tokyo",
      "ja": "東京都",
-     "ko": "도쿄도"
+     "ko": "도쿄도",
+     "pl": "Tokio",
+     "nl": "Tokio"
     }
    }
   ],
@@ -6545,7 +6893,9 @@
    "id": "Kazakhstan",
    "it": "Kazakistan",
    "ja": "カザフスタン",
-   "ko": "카자흐스탄"
+   "ko": "카자흐스탄",
+   "pl": "Kazachstan",
+   "nl": "Kazachstan"
   },
   "official": "Republic of Kazakhstan",
   "capitals": [
@@ -6566,7 +6916,9 @@
      "id": "Astana",
      "it": "Astana",
      "ja": "アスタナ",
-     "ko": "아스타나"
+     "ko": "아스타나",
+     "pl": "Astana",
+     "nl": "Astana"
     }
    }
   ],
@@ -6622,7 +6974,9 @@
    "id": "Kenya",
    "it": "Kenya",
    "ja": "ケニア",
-   "ko": "케냐"
+   "ko": "케냐",
+   "pl": "Kenia",
+   "nl": "Kenia"
   },
   "official": "Republic of Kenya",
   "capitals": [
@@ -6643,7 +6997,9 @@
      "id": "Nairobi",
      "it": "Nairobi",
      "ja": "ナイロビ",
-     "ko": "나이로비"
+     "ko": "나이로비",
+     "pl": "Nairobi",
+     "nl": "Nairobi"
     }
    }
   ],
@@ -6699,7 +7055,9 @@
    "id": "Kirgizstan",
    "it": "Kirghizistan",
    "ja": "キルギス",
-   "ko": "키르기스스탄"
+   "ko": "키르기스스탄",
+   "pl": "Kirgistan",
+   "nl": "Kirgizië"
   },
   "official": "Kyrgyz Republic",
   "capitals": [
@@ -6720,7 +7078,9 @@
      "id": "Bishkek",
      "it": "Biškek",
      "ja": "ビシュケク",
-     "ko": "비슈케크"
+     "ko": "비슈케크",
+     "pl": "Biszkek",
+     "nl": "Bisjkek"
     }
    }
   ],
@@ -6775,7 +7135,9 @@
    "id": "Kamboja",
    "it": "Cambogia",
    "ja": "カンボジア",
-   "ko": "캄보디아"
+   "ko": "캄보디아",
+   "pl": "Kambodża",
+   "nl": "Cambodja"
   },
   "official": "Kingdom of Cambodia",
   "capitals": [
@@ -6796,7 +7158,9 @@
      "id": "Phnom Penh",
      "it": "Phnom Penh",
      "ja": "プノンペン",
-     "ko": "프놈펜"
+     "ko": "프놈펜",
+     "pl": "Phnom Penh",
+     "nl": "Phnom-Penh"
     }
    }
   ],
@@ -6854,7 +7218,9 @@
    "id": "Kiribati",
    "it": "Kiribati",
    "ja": "キリバス",
-   "ko": "키리바시"
+   "ko": "키리바시",
+   "pl": "Kiribati",
+   "nl": "Kiribati"
   },
   "official": "Independent and Sovereign Republic of Kiribati",
   "capitals": [
@@ -6875,7 +7241,9 @@
      "id": "Tarawa Selatan",
      "it": "Tarawa Sud",
      "ja": "サウス・タラワ",
-     "ko": "사우스타라와"
+     "ko": "사우스타라와",
+     "pl": "South Tarawa",
+     "nl": "Zuid-Tarawa"
     }
    }
   ],
@@ -6930,7 +7298,9 @@
    "id": "Saint Kitts dan Nevis",
    "it": "Saint Kitts e Nevis",
    "ja": "セントクリストファー・ネイビス",
-   "ko": "세인트키츠 네비스"
+   "ko": "세인트키츠 네비스",
+   "pl": "Saint Kitts i Nevis",
+   "nl": "Saint Kitts en Nevis"
   },
   "official": "Federation of Saint Christopher and Nevis",
   "capitals": [
@@ -6951,7 +7321,9 @@
      "id": "Basseterre",
      "it": "Basseterre",
      "ja": "バセテール",
-     "ko": "바스테르"
+     "ko": "바스테르",
+     "pl": "Basseterre",
+     "nl": "Basseterre"
     }
    }
   ],
@@ -7000,7 +7372,9 @@
    "id": "Korea Selatan",
    "it": "Corea del Sud",
    "ja": "大韓民国",
-   "ko": "대한민국"
+   "ko": "대한민국",
+   "pl": "Korea Południowa",
+   "nl": "Zuid-Korea"
   },
   "official": "Republic of Korea",
   "capitals": [
@@ -7021,7 +7395,9 @@
      "id": "Seoul",
      "it": "Seul",
      "ja": "ソウル特別市",
-     "ko": "서울특별시"
+     "ko": "서울특별시",
+     "pl": "Seul",
+     "nl": "Seoel"
     }
    }
   ],
@@ -7072,7 +7448,9 @@
    "id": "Kuwait",
    "it": "Kuwait",
    "ja": "クウェート",
-   "ko": "쿠웨이트"
+   "ko": "쿠웨이트",
+   "pl": "Kuwejt",
+   "nl": "Koeweit"
   },
   "official": "State of Kuwait",
   "capitals": [
@@ -7093,7 +7471,9 @@
      "id": "Kota Kuwait",
      "it": "Al Kuwait",
      "ja": "クウェート市",
-     "ko": "쿠웨이트 시"
+     "ko": "쿠웨이트 시",
+     "pl": "Kuwejt",
+     "nl": "Koeweit"
     }
    }
   ],
@@ -7145,7 +7525,9 @@
    "id": "Laos",
    "it": "Laos",
    "ja": "ラオス",
-   "ko": "라오스"
+   "ko": "라오스",
+   "pl": "Laos",
+   "nl": "Laos"
   },
   "official": "Lao People's Democratic Republic",
   "capitals": [
@@ -7166,7 +7548,9 @@
      "id": "Vientiane",
      "it": "Vientiane",
      "ja": "ヴィエンチャン",
-     "ko": "비엔티안"
+     "ko": "비엔티안",
+     "pl": "Wientian",
+     "nl": "Vientiane"
     }
    }
   ],
@@ -7221,7 +7605,9 @@
    "id": "Lebanon",
    "it": "Libano",
    "ja": "レバノン",
-   "ko": "레바논"
+   "ko": "레바논",
+   "pl": "Liban",
+   "nl": "Libanon"
   },
   "official": "Lebanese Republic",
   "capitals": [
@@ -7242,7 +7628,9 @@
      "id": "Beirut",
      "it": "Beirut",
      "ja": "ベイルート",
-     "ko": "베이루트"
+     "ko": "베이루트",
+     "pl": "Bejrut",
+     "nl": "Beiroet"
     }
    }
   ],
@@ -7295,7 +7683,9 @@
    "id": "Liberia",
    "it": "Liberia",
    "ja": "リベリア",
-   "ko": "라이베리아"
+   "ko": "라이베리아",
+   "pl": "Liberia",
+   "nl": "Liberia"
   },
   "official": "Republic of Liberia",
   "capitals": [
@@ -7316,7 +7706,9 @@
      "id": "Monrovia",
      "it": "Monrovia",
      "ja": "モンロビア",
-     "ko": "몬로비아"
+     "ko": "몬로비아",
+     "pl": "Monrovia",
+     "nl": "Monrovia"
     }
    }
   ],
@@ -7369,7 +7761,9 @@
    "id": "Libya",
    "it": "Libia",
    "ja": "リビア",
-   "ko": "리비아"
+   "ko": "리비아",
+   "pl": "Libia",
+   "nl": "Libië"
   },
   "official": "State of Libya",
   "capitals": [
@@ -7390,7 +7784,9 @@
      "id": "Tripoli",
      "it": "Tripoli",
      "ja": "トリポリ",
-     "ko": "트리폴리"
+     "ko": "트리폴리",
+     "pl": "Trypolis",
+     "nl": "Tripoli"
     }
    }
   ],
@@ -7446,7 +7842,9 @@
    "id": "Saint Lucia",
    "it": "Saint Lucia",
    "ja": "セントルシア",
-   "ko": "세인트루시아"
+   "ko": "세인트루시아",
+   "pl": "Saint Lucia",
+   "nl": "Saint Lucia"
   },
   "official": "Saint Lucia",
   "capitals": [
@@ -7467,7 +7865,9 @@
      "id": "Castries",
      "it": "Castries",
      "ja": "カストリーズ",
-     "ko": "캐스트리스"
+     "ko": "캐스트리스",
+     "pl": "Castries",
+     "nl": "Castries"
     }
    }
   ],
@@ -7516,7 +7916,9 @@
    "id": "Liechtenstein",
    "it": "Liechtenstein",
    "ja": "リヒテンシュタイン",
-   "ko": "리히텐슈타인"
+   "ko": "리히텐슈타인",
+   "pl": "Liechtenstein",
+   "nl": "Liechtenstein"
   },
   "official": "Principality of Liechtenstein",
   "capitals": [
@@ -7537,7 +7939,9 @@
      "id": "Vaduz",
      "it": "Vaduz",
      "ja": "ファドゥーツ",
-     "ko": "파두츠"
+     "ko": "파두츠",
+     "pl": "Vaduz",
+     "nl": "Vaduz"
     }
    }
   ],
@@ -7589,7 +7993,9 @@
    "id": "Sri Lanka",
    "it": "Sri Lanka",
    "ja": "スリランカ",
-   "ko": "스리랑카"
+   "ko": "스리랑카",
+   "pl": "Sri Lanka",
+   "nl": "Sri Lanka"
   },
   "official": "Democratic Socialist Republic of Sri Lanka",
   "capitals": [
@@ -7610,7 +8016,9 @@
      "id": "Kolombo",
      "it": "Colombo",
      "ja": "コロンボ",
-     "ko": "콜롬보"
+     "ko": "콜롬보",
+     "pl": "Kolombo",
+     "nl": "Colombo"
     }
    }
   ],
@@ -7662,7 +8070,9 @@
    "id": "Lesotho",
    "it": "Lesotho",
    "ja": "レソト",
-   "ko": "레소토"
+   "ko": "레소토",
+   "pl": "Lesotho",
+   "nl": "Lesotho"
   },
   "official": "Kingdom of Lesotho",
   "capitals": [
@@ -7683,7 +8093,9 @@
      "id": "Maseru",
      "it": "Maseru",
      "ja": "マセル",
-     "ko": "마세루"
+     "ko": "마세루",
+     "pl": "Maseru",
+     "nl": "Maseru"
     }
    }
   ],
@@ -7740,7 +8152,9 @@
    "id": "Lituania",
    "it": "Lituania",
    "ja": "リトアニア",
-   "ko": "리투아니아"
+   "ko": "리투아니아",
+   "pl": "Litwa",
+   "nl": "Litouwen"
   },
   "official": "Republic of Lithuania",
   "capitals": [
@@ -7761,7 +8175,9 @@
      "id": "Vilnius",
      "it": "Vilnius",
      "ja": "ヴィルニュス",
-     "ko": "빌뉴스"
+     "ko": "빌뉴스",
+     "pl": "Wilno",
+     "nl": "Vilnius"
     }
    }
   ],
@@ -7815,7 +8231,9 @@
    "id": "Luksemburg",
    "it": "Lussemburgo",
    "ja": "ルクセンブルク",
-   "ko": "룩셈부르크"
+   "ko": "룩셈부르크",
+   "pl": "Luksemburg",
+   "nl": "Luxemburg"
   },
   "official": "Grand Duchy of Luxembourg",
   "capitals": [
@@ -7836,7 +8254,9 @@
      "id": "Luksemburg",
      "it": "Lussemburgo",
      "ja": "ルクセンブルク市",
-     "ko": "룩셈부르크"
+     "ko": "룩셈부르크",
+     "pl": "Luksemburg",
+     "nl": "Luxemburg"
     }
    }
   ],
@@ -7891,7 +8311,9 @@
    "id": "Latvia",
    "it": "Lettonia",
    "ja": "ラトビア",
-   "ko": "라트비아"
+   "ko": "라트비아",
+   "pl": "Łotwa",
+   "nl": "Letland"
   },
   "official": "Republic of Latvia",
   "capitals": [
@@ -7912,7 +8334,9 @@
      "id": "Riga",
      "it": "Riga",
      "ja": "リガ",
-     "ko": "리가"
+     "ko": "리가",
+     "pl": "Ryga",
+     "nl": "Riga"
     }
    }
   ],
@@ -7966,7 +8390,9 @@
    "id": "Maroko",
    "it": "Marocco",
    "ja": "モロッコ",
-   "ko": "모로코"
+   "ko": "모로코",
+   "pl": "Maroko",
+   "nl": "Marokko"
   },
   "official": "Kingdom of Morocco",
   "capitals": [
@@ -7987,7 +8413,9 @@
      "id": "Rabat",
      "it": "Rabat",
      "ja": "ラバト",
-     "ko": "라바트"
+     "ko": "라바트",
+     "pl": "Rabat",
+     "nl": "Rabat"
     }
    }
   ],
@@ -8041,7 +8469,9 @@
    "id": "Monako",
    "it": "Principato di Monaco",
    "ja": "モナコ",
-   "ko": "모나코"
+   "ko": "모나코",
+   "pl": "Monako",
+   "nl": "Monaco"
   },
   "official": "Principality of Monaco",
   "capitals": [
@@ -8062,7 +8492,9 @@
      "id": "Monako",
      "it": "Principato di Monaco",
      "ja": "モナコ",
-     "ko": "모나코"
+     "ko": "모나코",
+     "pl": "Monako",
+     "nl": "Monaco"
     }
    }
   ],
@@ -8113,7 +8545,9 @@
    "id": "Moldova",
    "it": "Moldavia",
    "ja": "モルドバ",
-   "ko": "몰도바"
+   "ko": "몰도바",
+   "pl": "Mołdawia",
+   "nl": "Moldavië"
   },
   "official": "Republic of Moldova",
   "capitals": [
@@ -8134,7 +8568,9 @@
      "id": "Kishinev",
      "it": "Chișinău",
      "ja": "キシナウ",
-     "ko": "키시너우"
+     "ko": "키시너우",
+     "pl": "Kiszyniów",
+     "nl": "Chisinau"
     }
    }
   ],
@@ -8186,7 +8622,9 @@
    "id": "Madagaskar",
    "it": "Madagascar",
    "ja": "マダガスカル",
-   "ko": "마다가스카르"
+   "ko": "마다가스카르",
+   "pl": "Madagaskar",
+   "nl": "Madagaskar"
   },
   "official": "Republic of Madagascar",
   "capitals": [
@@ -8207,7 +8645,9 @@
      "id": "Antananarivo",
      "it": "Antananarivo",
      "ja": "アンタナナリボ",
-     "ko": "안타나나리보"
+     "ko": "안타나나리보",
+     "pl": "Antananarywa",
+     "nl": "Antananarivo"
     }
    }
   ],
@@ -8257,7 +8697,9 @@
    "id": "Maladewa",
    "it": "Maldive",
    "ja": "モルディブ",
-   "ko": "몰디브"
+   "ko": "몰디브",
+   "pl": "Malediwy",
+   "nl": "Malediven"
   },
   "official": "Republic of the Maldives",
   "capitals": [
@@ -8278,7 +8720,9 @@
      "id": "Malé",
      "it": "Male",
      "ja": "マレ",
-     "ko": "말레"
+     "ko": "말레",
+     "pl": "Male",
+     "nl": "Malé"
     }
    }
   ],
@@ -8327,7 +8771,9 @@
    "id": "Meksiko",
    "it": "Messico",
    "ja": "メキシコ",
-   "ko": "멕시코"
+   "ko": "멕시코",
+   "pl": "Meksyk",
+   "nl": "Mexico"
   },
   "official": "United Mexican States",
   "capitals": [
@@ -8348,7 +8794,9 @@
      "id": "Kota Meksiko",
      "it": "Città del Messico",
      "ja": "メキシコシティ",
-     "ko": "멕시코시티"
+     "ko": "멕시코시티",
+     "pl": "Meksyk",
+     "nl": "Mexico-Stad"
     }
    }
   ],
@@ -8401,7 +8849,9 @@
    "id": "Kepulauan Marshall",
    "it": "Isole Marshall",
    "ja": "マーシャル諸島",
-   "ko": "마셜 제도"
+   "ko": "마셜 제도",
+   "pl": "Wyspy Marshalla",
+   "nl": "Marshalleilanden"
   },
   "official": "Republic of the Marshall Islands",
   "capitals": [
@@ -8422,7 +8872,9 @@
      "id": "Majuro",
      "it": "Majuro",
      "ja": "マジュロ",
-     "ko": "마주로"
+     "ko": "마주로",
+     "pl": "Majuro",
+     "nl": "Majuro"
     }
    }
   ],
@@ -8472,7 +8924,9 @@
    "id": "Makedonia Utara",
    "it": "Macedonia del Nord",
    "ja": "北マケドニア",
-   "ko": "북마케도니아"
+   "ko": "북마케도니아",
+   "pl": "Macedonia Północna",
+   "nl": "Noord-Macedonië"
   },
   "official": "Republic of North Macedonia",
   "capitals": [
@@ -8493,7 +8947,9 @@
      "id": "Skopje",
      "it": "Skopje",
      "ja": "スコピエ",
-     "ko": "스코페"
+     "ko": "스코페",
+     "pl": "Skopje",
+     "nl": "Skopje"
     }
    }
   ],
@@ -8548,7 +9004,9 @@
    "id": "Mali",
    "it": "Mali",
    "ja": "マリ共和国",
-   "ko": "말리"
+   "ko": "말리",
+   "pl": "Mali",
+   "nl": "Mali"
   },
   "official": "Republic of Mali",
   "capitals": [
@@ -8569,7 +9027,9 @@
      "id": "Bamako",
      "it": "Bamako",
      "ja": "バマコ",
-     "ko": "바마코"
+     "ko": "바마코",
+     "pl": "Bamako",
+     "nl": "Bamako"
     }
    }
   ],
@@ -8626,7 +9086,9 @@
    "id": "Malta",
    "it": "Malta",
    "ja": "マルタ",
-   "ko": "몰타"
+   "ko": "몰타",
+   "pl": "Malta",
+   "nl": "Malta"
   },
   "official": "Republic of Malta",
   "capitals": [
@@ -8647,7 +9109,9 @@
      "id": "Valletta",
      "it": "La Valletta",
      "ja": "バレッタ",
-     "ko": "발레타"
+     "ko": "발레타",
+     "pl": "Valletta",
+     "nl": "Valletta"
     }
    }
   ],
@@ -8697,7 +9161,9 @@
    "id": "Myanmar",
    "it": "Myanmar",
    "ja": "ミャンマー",
-   "ko": "미얀마"
+   "ko": "미얀마",
+   "pl": "Mjanma",
+   "nl": "Myanmar"
   },
   "official": "Republic of the Union of Myanmar",
   "capitals": [
@@ -8718,7 +9184,9 @@
      "id": "Naypyidaw",
      "it": "Naypyidaw",
      "ja": "ネピドー",
-     "ko": "네피도"
+     "ko": "네피도",
+     "pl": "Naypyidaw",
+     "nl": "Naypyidaw"
     }
    }
   ],
@@ -8773,7 +9241,9 @@
    "id": "Montenegro",
    "it": "Montenegro",
    "ja": "モンテネグロ",
-   "ko": "몬테네그로"
+   "ko": "몬테네그로",
+   "pl": "Czarnogóra",
+   "nl": "Montenegro"
   },
   "official": "Montenegro",
   "capitals": [
@@ -8794,7 +9264,9 @@
      "id": "Podgorica",
      "it": "Podgorica",
      "ja": "ポドゴリツァ",
-     "ko": "포드고리차"
+     "ko": "포드고리차",
+     "pl": "Podgorica",
+     "nl": "Podgorica"
     }
    }
   ],
@@ -8849,7 +9321,9 @@
    "id": "Mongolia",
    "it": "Mongolia",
    "ja": "モンゴル国",
-   "ko": "몽골"
+   "ko": "몽골",
+   "pl": "Mongolia",
+   "nl": "Mongolië"
   },
   "official": "Mongolia",
   "capitals": [
@@ -8870,7 +9344,9 @@
      "id": "Ulaanbaatar",
      "it": "Ulan Bator",
      "ja": "ウランバートル",
-     "ko": "울란바타르"
+     "ko": "울란바타르",
+     "pl": "Ułan Bator",
+     "nl": "Ulaanbaatar"
     }
    }
   ],
@@ -8922,7 +9398,9 @@
    "id": "Mozambik",
    "it": "Mozambico",
    "ja": "モザンビーク",
-   "ko": "모잠비크"
+   "ko": "모잠비크",
+   "pl": "Mozambik",
+   "nl": "Mozambique"
   },
   "official": "Republic of Mozambique",
   "capitals": [
@@ -8943,7 +9421,9 @@
      "id": "Maputo",
      "it": "Maputo",
      "ja": "マプト",
-     "ko": "마푸투"
+     "ko": "마푸투",
+     "pl": "Maputo",
+     "nl": "Maputo"
     }
    }
   ],
@@ -8999,7 +9479,9 @@
    "id": "Mauritania",
    "it": "Mauritania",
    "ja": "モーリタニア",
-   "ko": "모리타니"
+   "ko": "모리타니",
+   "pl": "Mauretania",
+   "nl": "Mauritanië"
   },
   "official": "Islamic Republic of Mauritania",
   "capitals": [
@@ -9020,7 +9502,9 @@
      "id": "Nouakchott",
      "it": "Nouakchott",
      "ja": "ヌアクショット",
-     "ko": "누악쇼트"
+     "ko": "누악쇼트",
+     "pl": "Nawakszut",
+     "nl": "Nouakchott"
     }
    }
   ],
@@ -9074,7 +9558,9 @@
    "id": "Mauritius",
    "it": "Mauritius",
    "ja": "モーリシャス",
-   "ko": "모리셔스"
+   "ko": "모리셔스",
+   "pl": "Mauritius",
+   "nl": "Mauritius"
   },
   "official": "Republic of Mauritius",
   "capitals": [
@@ -9095,7 +9581,9 @@
      "id": "Port Louis",
      "it": "Port Louis",
      "ja": "ポートルイス",
-     "ko": "포트루이스"
+     "ko": "포트루이스",
+     "pl": "Port Louis",
+     "nl": "Port Louis"
     }
    }
   ],
@@ -9146,7 +9634,9 @@
    "id": "Malawi",
    "it": "Malawi",
    "ja": "マラウイ",
-   "ko": "말라위"
+   "ko": "말라위",
+   "pl": "Malawi",
+   "nl": "Malawi"
   },
   "official": "Republic of Malawi",
   "capitals": [
@@ -9167,7 +9657,9 @@
      "id": "Lilongwe",
      "it": "Lilongwe",
      "ja": "リロングウェ",
-     "ko": "릴롱궤"
+     "ko": "릴롱궤",
+     "pl": "Lilongwe",
+     "nl": "Lilongwe"
     }
    }
   ],
@@ -9221,7 +9713,9 @@
    "id": "Malaysia",
    "it": "Malaysia",
    "ja": "マレーシア",
-   "ko": "말레이시아"
+   "ko": "말레이시아",
+   "pl": "Malezja",
+   "nl": "Maleisië"
   },
   "official": "Malaysia",
   "capitals": [
@@ -9242,7 +9736,9 @@
      "id": "Kuala Lumpur",
      "it": "Kuala Lumpur",
      "ja": "クアラルンプール",
-     "ko": "쿠알라룸푸르"
+     "ko": "쿠알라룸푸르",
+     "pl": "Kuala Lumpur",
+     "nl": "Kuala Lumpur"
     }
    }
   ],
@@ -9296,7 +9792,9 @@
    "id": "Namibia",
    "it": "Namibia",
    "ja": "ナミビア",
-   "ko": "나미비아"
+   "ko": "나미비아",
+   "pl": "Namibia",
+   "nl": "Namibië"
   },
   "official": "Republic of Namibia",
   "capitals": [
@@ -9317,7 +9815,9 @@
      "id": "Windhoek",
      "it": "Windhoek",
      "ja": "ウィントフック",
-     "ko": "빈트후크"
+     "ko": "빈트후크",
+     "pl": "Windhuk",
+     "nl": "Windhoek"
     }
    }
   ],
@@ -9384,7 +9884,9 @@
    "id": "Niger",
    "it": "Niger",
    "ja": "ニジェール",
-   "ko": "니제르"
+   "ko": "니제르",
+   "pl": "Niger",
+   "nl": "Niger"
   },
   "official": "Republic of Niger",
   "capitals": [
@@ -9405,7 +9907,9 @@
      "id": "Niamey",
      "it": "Niamey",
      "ja": "ニアメ",
-     "ko": "니아메"
+     "ko": "니아메",
+     "pl": "Niamey",
+     "nl": "Niamey"
     }
    }
   ],
@@ -9462,7 +9966,9 @@
    "id": "Nigeria",
    "it": "Nigeria",
    "ja": "ナイジェリア",
-   "ko": "나이지리아"
+   "ko": "나이지리아",
+   "pl": "Nigeria",
+   "nl": "Nigeria"
   },
   "official": "Federal Republic of Nigeria",
   "capitals": [
@@ -9479,7 +9985,8 @@
      "ur": "ابوجا",
      "ru": "Абуджа",
      "ja": "アブジャ",
-     "ko": "아부자"
+     "ko": "아부자",
+     "pl": "Abudża"
     }
    }
   ],
@@ -9533,7 +10040,9 @@
    "id": "Nikaragua",
    "it": "Nicaragua",
    "ja": "ニカラグア",
-   "ko": "니카라과"
+   "ko": "니카라과",
+   "pl": "Nikaragua",
+   "nl": "Nicaragua"
   },
   "official": "Republic of Nicaragua",
   "capitals": [
@@ -9554,7 +10063,9 @@
      "id": "Managua",
      "it": "Managua",
      "ja": "マナグア",
-     "ko": "마나과"
+     "ko": "마나과",
+     "pl": "Managua",
+     "nl": "Managua"
     }
    }
   ],
@@ -9606,7 +10117,9 @@
    "id": "Kerajaan Belanda",
    "it": "Regno dei Paesi Bassi",
    "ja": "オランダ王国",
-   "ko": "네덜란드 왕국"
+   "ko": "네덜란드 왕국",
+   "pl": "Królestwo Niderlandów",
+   "nl": "Koninkrijk der Nederlanden"
   },
   "official": "Kingdom of the Netherlands",
   "capitals": [
@@ -9627,7 +10140,9 @@
      "id": "Amsterdam",
      "it": "Amsterdam",
      "ja": "アムステルダム",
-     "ko": "암스테르담"
+     "ko": "암스테르담",
+     "pl": "Amsterdam",
+     "nl": "Amsterdam"
     }
    }
   ],
@@ -9679,7 +10194,9 @@
    "id": "Norwegia",
    "it": "Norvegia",
    "ja": "ノルウェー王国",
-   "ko": "노르웨이"
+   "ko": "노르웨이",
+   "pl": "Norwegia",
+   "nl": "Noorwegen"
   },
   "official": "Kingdom of Norway",
   "capitals": [
@@ -9751,7 +10268,9 @@
    "id": "Nepal",
    "it": "Nepal",
    "ja": "ネパール",
-   "ko": "네팔"
+   "ko": "네팔",
+   "pl": "Nepal",
+   "nl": "Nepal"
   },
   "official": "Federal Democratic Republic of Nepal",
   "capitals": [
@@ -9772,7 +10291,9 @@
      "id": "Kathmandu",
      "it": "Katmandu",
      "ja": "カトマンズ",
-     "ko": "카트만두"
+     "ko": "카트만두",
+     "pl": "Katmandu",
+     "nl": "Kathmandu"
     }
    }
   ],
@@ -9824,7 +10345,9 @@
    "id": "Nauru",
    "it": "Nauru",
    "ja": "ナウル",
-   "ko": "나우루"
+   "ko": "나우루",
+   "pl": "Nauru",
+   "nl": "Naoëro"
   },
   "official": "Republic of Nauru",
   "capitals": [
@@ -9845,7 +10368,9 @@
      "id": "Yaren",
      "it": "Yaren",
      "ja": "ヤレン地区",
-     "ko": "야렌구"
+     "ko": "야렌구",
+     "pl": "Yaren",
+     "nl": "Yaren"
     }
    }
   ],
@@ -9895,7 +10420,9 @@
    "id": "Selandia Baru",
    "it": "Nuova Zelanda",
    "ja": "ニュージーランド",
-   "ko": "뉴질랜드"
+   "ko": "뉴질랜드",
+   "pl": "Nowa Zelandia",
+   "nl": "Nieuw-Zeeland"
   },
   "official": "New Zealand",
   "capitals": [
@@ -9916,7 +10443,9 @@
      "id": "Wellington",
      "it": "Wellington",
      "ja": "ウェリントン",
-     "ko": "웰링턴"
+     "ko": "웰링턴",
+     "pl": "Wellington",
+     "nl": "Wellington"
     }
    }
   ],
@@ -9967,7 +10496,9 @@
    "id": "Oman",
    "it": "Oman",
    "ja": "オマーン",
-   "ko": "오만"
+   "ko": "오만",
+   "pl": "Oman",
+   "nl": "Oman"
   },
   "official": "Sultanate of Oman",
   "capitals": [
@@ -9988,7 +10519,9 @@
      "id": "Muskat",
      "it": "Mascate",
      "ja": "マスカット",
-     "ko": "무스카트"
+     "ko": "무스카트",
+     "pl": "Maskat",
+     "nl": "Masqat"
     }
    }
   ],
@@ -10041,7 +10574,9 @@
    "id": "Pakistan",
    "it": "Pakistan",
    "ja": "パキスタン",
-   "ko": "파키스탄"
+   "ko": "파키스탄",
+   "pl": "Pakistan",
+   "nl": "Pakistan"
   },
   "official": "Islamic Republic of Pakistan",
   "capitals": [
@@ -10062,7 +10597,9 @@
      "id": "Islamabad",
      "it": "Islamabad",
      "ja": "イスラマバード",
-     "ko": "이슬라마바드"
+     "ko": "이슬라마바드",
+     "pl": "Islamabad",
+     "nl": "Islamabad"
     }
    }
   ],
@@ -10117,7 +10654,9 @@
    "id": "Panama",
    "it": "Panama",
    "ja": "パナマ",
-   "ko": "파나마"
+   "ko": "파나마",
+   "pl": "Panama",
+   "nl": "Panama"
   },
   "official": "Republic of Panama",
   "capitals": [
@@ -10138,7 +10677,9 @@
      "id": "Kota Panama",
      "it": "Panama",
      "ja": "パナマ市",
-     "ko": "파나마시티"
+     "ko": "파나마시티",
+     "pl": "Panama",
+     "nl": "Panama-Stad"
     }
    }
   ],
@@ -10195,7 +10736,9 @@
    "id": "Peru",
    "it": "Perù",
    "ja": "ペルー",
-   "ko": "페루"
+   "ko": "페루",
+   "pl": "Peru",
+   "nl": "Peru"
   },
   "official": "Republic of Peru",
   "capitals": [
@@ -10216,7 +10759,9 @@
      "id": "Lima",
      "it": "Lima",
      "ja": "リマ",
-     "ko": "리마"
+     "ko": "리마",
+     "pl": "Lima",
+     "nl": "Lima"
     }
    }
   ],
@@ -10273,7 +10818,9 @@
    "id": "Filipina",
    "it": "Filippine",
    "ja": "フィリピン",
-   "ko": "필리핀"
+   "ko": "필리핀",
+   "pl": "Filipiny",
+   "nl": "Filipijnen"
   },
   "official": "Republic of the Philippines",
   "capitals": [
@@ -10294,7 +10841,9 @@
      "id": "Manila",
      "it": "Manila",
      "ja": "マニラ",
-     "ko": "마닐라"
+     "ko": "마닐라",
+     "pl": "Manila",
+     "nl": "Manilla"
     }
    }
   ],
@@ -10344,7 +10893,9 @@
    "id": "Palau",
    "it": "Palau",
    "ja": "パラオ",
-   "ko": "팔라우"
+   "ko": "팔라우",
+   "pl": "Palau",
+   "nl": "Palau"
   },
   "official": "Republic of Palau",
   "capitals": [
@@ -10365,7 +10916,9 @@
      "id": "Ngerulmud",
      "it": "Ngerulmud",
      "ja": "ンゲルルムッド",
-     "ko": "응게룰무드"
+     "ko": "응게룰무드",
+     "pl": "Ngerulmud",
+     "nl": "Ngerulmud"
     }
    }
   ],
@@ -10415,7 +10968,9 @@
    "id": "Papua Nugini",
    "it": "Papua Nuova Guinea",
    "ja": "パプアニューギニア",
-   "ko": "파푸아뉴기니"
+   "ko": "파푸아뉴기니",
+   "pl": "Papua-Nowa Gwinea",
+   "nl": "Papoea-Nieuw-Guinea"
   },
   "official": "Independent State of Papua New Guinea",
   "capitals": [
@@ -10436,7 +10991,9 @@
      "id": "Port Moresby",
      "it": "Port Moresby",
      "ja": "ポートモレスビー",
-     "ko": "포트모르즈비"
+     "ko": "포트모르즈비",
+     "pl": "Port Moresby",
+     "nl": "Port Moresby"
     }
    }
   ],
@@ -10489,7 +11046,9 @@
    "id": "Polandia",
    "it": "Polonia",
    "ja": "ポーランド",
-   "ko": "폴란드"
+   "ko": "폴란드",
+   "pl": "Polska",
+   "nl": "Polen"
   },
   "official": "Republic of Poland",
   "capitals": [
@@ -10510,7 +11069,9 @@
      "id": "Warsawa",
      "it": "Varsavia",
      "ja": "ワルシャワ",
-     "ko": "바르샤바"
+     "ko": "바르샤바",
+     "pl": "Warszawa",
+     "nl": "Warschau"
     }
    }
   ],
@@ -10567,7 +11128,9 @@
    "id": "Korea Utara",
    "it": "Corea del Nord",
    "ja": "朝鮮民主主義人民共和国",
-   "ko": "조선민주주의인민공화국"
+   "ko": "조선민주주의인민공화국",
+   "pl": "Korea Północna",
+   "nl": "Noord-Korea"
   },
   "official": "Democratic People's Republic of Korea",
   "capitals": [
@@ -10588,7 +11151,9 @@
      "id": "Pyongyang",
      "it": "Pyongyang",
      "ja": "平壌市",
-     "ko": "평양시"
+     "ko": "평양시",
+     "pl": "Pjongjang",
+     "nl": "Pyongyang"
     }
    }
   ],
@@ -10641,7 +11206,9 @@
    "id": "Portugal",
    "it": "Portogallo",
    "ja": "ポルトガル",
-   "ko": "포르투갈"
+   "ko": "포르투갈",
+   "pl": "Portugalia",
+   "nl": "Portugal"
   },
   "official": "Portuguese Republic",
   "capitals": [
@@ -10662,7 +11229,9 @@
      "id": "Lisboa",
      "it": "Lisbona",
      "ja": "リスボン",
-     "ko": "리스본"
+     "ko": "리스본",
+     "pl": "Lizbona",
+     "nl": "Lissabon"
     }
    }
   ],
@@ -10713,7 +11282,9 @@
    "id": "Paraguay",
    "it": "Paraguay",
    "ja": "パラグアイ",
-   "ko": "파라과이"
+   "ko": "파라과이",
+   "pl": "Paragwaj",
+   "nl": "Paraguay"
   },
   "official": "Republic of Paraguay",
   "capitals": [
@@ -10734,7 +11305,9 @@
      "id": "Asunción",
      "it": "Asunción",
      "ja": "アスンシオン",
-     "ko": "아순시온"
+     "ko": "아순시온",
+     "pl": "Asunción",
+     "nl": "Asunción"
     }
    }
   ],
@@ -10788,7 +11361,9 @@
    "id": "Palestina",
    "it": "Stato di Palestina",
    "ja": "パレスチナ国",
-   "ko": "팔레스타인"
+   "ko": "팔레스타인",
+   "pl": "Państwo Palestyna",
+   "nl": "Staat Palestina"
   },
   "official": "State of Palestine",
   "capitals": [
@@ -10809,7 +11384,9 @@
      "id": "Ramallah",
      "it": "Ramallah",
      "ja": "ラマッラー",
-     "ko": "라말라"
+     "ko": "라말라",
+     "pl": "Ramallah",
+     "nl": "Ramallah"
     }
    }
   ],
@@ -10872,7 +11449,9 @@
    "id": "Qatar",
    "it": "Qatar",
    "ja": "カタール",
-   "ko": "카타르"
+   "ko": "카타르",
+   "pl": "Katar",
+   "nl": "Qatar"
   },
   "official": "State of Qatar",
   "capitals": [
@@ -10893,7 +11472,9 @@
      "id": "Doha",
      "it": "Doha",
      "ja": "ドーハ",
-     "ko": "도하"
+     "ko": "도하",
+     "pl": "Doha",
+     "nl": "Doha"
     }
    }
   ],
@@ -10944,7 +11525,9 @@
    "id": "Rumania",
    "it": "Romania",
    "ja": "ルーマニア",
-   "ko": "루마니아"
+   "ko": "루마니아",
+   "pl": "Rumunia",
+   "nl": "Roemenië"
   },
   "official": "Romania",
   "capitals": [
@@ -10965,7 +11548,9 @@
      "id": "Bukares",
      "it": "Bucarest",
      "ja": "ブカレスト",
-     "ko": "부쿠레슈티"
+     "ko": "부쿠레슈티",
+     "pl": "Bukareszt",
+     "nl": "Boekarest"
     }
    }
   ],
@@ -11020,7 +11605,9 @@
    "id": "Rusia",
    "it": "Russia",
    "ja": "ロシア",
-   "ko": "러시아"
+   "ko": "러시아",
+   "pl": "Rosja",
+   "nl": "Rusland"
   },
   "official": "Russian Federation",
   "capitals": [
@@ -11041,7 +11628,9 @@
      "id": "Moskow",
      "it": "Mosca",
      "ja": "モスクワ",
-     "ko": "모스크바"
+     "ko": "모스크바",
+     "pl": "Moskwa",
+     "nl": "Moskou"
     }
    }
   ],
@@ -11105,7 +11694,9 @@
    "id": "Rwanda",
    "it": "Ruanda",
    "ja": "ルワンダ",
-   "ko": "르완다"
+   "ko": "르완다",
+   "pl": "Rwanda",
+   "nl": "Rwanda"
   },
   "official": "Republic of Rwanda",
   "capitals": [
@@ -11126,7 +11717,9 @@
      "id": "Kigali",
      "it": "Kigali",
      "ja": "キガリ",
-     "ko": "키갈리"
+     "ko": "키갈리",
+     "pl": "Kigali",
+     "nl": "Kigali"
     }
    }
   ],
@@ -11182,7 +11775,9 @@
    "id": "Arab Saudi",
    "it": "Arabia Saudita",
    "ja": "サウジアラビア",
-   "ko": "사우디아라비아"
+   "ko": "사우디아라비아",
+   "pl": "Arabia Saudyjska",
+   "nl": "Saoedi-Arabië"
   },
   "official": "Kingdom of Saudi Arabia",
   "capitals": [
@@ -11203,7 +11798,9 @@
      "id": "Riyadh",
      "it": "Riad",
      "ja": "リヤド",
-     "ko": "리야드"
+     "ko": "리야드",
+     "pl": "Rijad",
+     "nl": "Riyad"
     }
    }
   ],
@@ -11260,7 +11857,9 @@
    "id": "Sudan",
    "it": "Sudan",
    "ja": "スーダン",
-   "ko": "수단"
+   "ko": "수단",
+   "pl": "Sudan",
+   "nl": "Soedan"
   },
   "official": "Republic of the Sudan",
   "capitals": [
@@ -11281,7 +11880,9 @@
      "id": "Khartoum",
      "it": "Khartum",
      "ja": "ハルツーム",
-     "ko": "하르툼"
+     "ko": "하르툼",
+     "pl": "Chartum",
+     "nl": "Khartoem"
     }
    }
   ],
@@ -11339,7 +11940,9 @@
    "id": "Senegal",
    "it": "Senegal",
    "ja": "セネガル",
-   "ko": "세네갈"
+   "ko": "세네갈",
+   "pl": "Senegal",
+   "nl": "Senegal"
   },
   "official": "Republic of Senegal",
   "capitals": [
@@ -11360,7 +11963,9 @@
      "id": "Dakar",
      "it": "Dakar",
      "ja": "ダカール",
-     "ko": "다카르"
+     "ko": "다카르",
+     "pl": "Dakar",
+     "nl": "Dakar"
     }
    }
   ],
@@ -11415,7 +12020,9 @@
    "id": "Singapura",
    "it": "Singapore",
    "ja": "シンガポール",
-   "ko": "싱가포르"
+   "ko": "싱가포르",
+   "pl": "Singapur",
+   "nl": "Singapore"
   },
   "official": "Republic of Singapore",
   "capitals": [
@@ -11436,7 +12043,9 @@
      "id": "Singapura",
      "it": "Singapore",
      "ja": "シンガポール",
-     "ko": "싱가포르"
+     "ko": "싱가포르",
+     "pl": "Singapur",
+     "nl": "Singapore"
     }
    }
   ],
@@ -11488,7 +12097,9 @@
    "id": "Kepulauan Solomon",
    "it": "Isole Salomone",
    "ja": "ソロモン諸島",
-   "ko": "솔로몬 제도"
+   "ko": "솔로몬 제도",
+   "pl": "Wyspy Salomona",
+   "nl": "Salomonseilanden"
   },
   "official": "Solomon Islands",
   "capitals": [
@@ -11509,7 +12120,9 @@
      "id": "Honiara",
      "it": "Honiara",
      "ja": "ホニアラ",
-     "ko": "호니아라"
+     "ko": "호니아라",
+     "pl": "Honiara",
+     "nl": "Honiara"
     }
    }
   ],
@@ -11558,7 +12171,9 @@
    "id": "Sierra Leone",
    "it": "Sierra Leone",
    "ja": "シエラレオネ",
-   "ko": "시에라리온"
+   "ko": "시에라리온",
+   "pl": "Sierra Leone",
+   "nl": "Sierra Leone"
   },
   "official": "Republic of Sierra Leone",
   "capitals": [
@@ -11579,7 +12194,9 @@
      "id": "Freetown",
      "it": "Freetown",
      "ja": "フリータウン",
-     "ko": "프리타운"
+     "ko": "프리타운",
+     "pl": "Freetown",
+     "nl": "Freetown"
     }
    }
   ],
@@ -11631,7 +12248,9 @@
    "id": "El Salvador",
    "it": "El Salvador",
    "ja": "エルサルバドル",
-   "ko": "엘살바도르"
+   "ko": "엘살바도르",
+   "pl": "Salwador",
+   "nl": "El Salvador"
   },
   "official": "Republic of El Salvador",
   "capitals": [
@@ -11652,7 +12271,9 @@
      "id": "San Salvador",
      "it": "San Salvador",
      "ja": "サンサルバドル",
-     "ko": "산살바도르"
+     "ko": "산살바도르",
+     "pl": "San Salvador",
+     "nl": "San Salvador"
     }
    }
   ],
@@ -11704,7 +12325,9 @@
    "id": "San Marino",
    "it": "San Marino",
    "ja": "サンマリノ",
-   "ko": "산마리노"
+   "ko": "산마리노",
+   "pl": "San Marino",
+   "nl": "San Marino"
   },
   "official": "Most Serene Republic of San Marino",
   "capitals": [
@@ -11725,7 +12348,9 @@
      "id": "San Marino",
      "it": "Città di San Marino",
      "ja": "サンマリノ市",
-     "ko": "산마리노"
+     "ko": "산마리노",
+     "pl": "San Marino",
+     "nl": "San Marino"
     }
    }
   ],
@@ -11776,7 +12401,9 @@
    "id": "Somalia",
    "it": "Somalia",
    "ja": "ソマリア",
-   "ko": "소말리아"
+   "ko": "소말리아",
+   "pl": "Somalia",
+   "nl": "Somalië"
   },
   "official": "Federal Republic of Somalia",
   "capitals": [
@@ -11797,7 +12424,9 @@
      "id": "Mogadishu",
      "it": "Mogadiscio",
      "ja": "モガディシュ",
-     "ko": "모가디슈"
+     "ko": "모가디슈",
+     "pl": "Mogadiszu",
+     "nl": "Mogadishu"
     }
    }
   ],
@@ -11851,7 +12480,9 @@
    "id": "Serbia",
    "it": "Serbia",
    "ja": "セルビア",
-   "ko": "세르비아"
+   "ko": "세르비아",
+   "pl": "Serbia",
+   "nl": "Servië"
   },
   "official": "Republic of Serbia",
   "capitals": [
@@ -11872,7 +12503,9 @@
      "id": "Beograd",
      "it": "Belgrado",
      "ja": "ベオグラード",
-     "ko": "베오그라드"
+     "ko": "베오그라드",
+     "pl": "Belgrad",
+     "nl": "Belgrado"
     }
    }
   ],
@@ -11930,7 +12563,9 @@
    "id": "Sudan Selatan",
    "it": "Sudan del Sud",
    "ja": "南スーダン",
-   "ko": "남수단"
+   "ko": "남수단",
+   "pl": "Sudan Południowy",
+   "nl": "Zuid-Soedan"
   },
   "official": "Republic of South Sudan",
   "capitals": [
@@ -11951,7 +12586,9 @@
      "id": "Juba, Sudan Selatan",
      "it": "Giuba",
      "ja": "ジュバ",
-     "ko": "주바"
+     "ko": "주바",
+     "pl": "Dżuba",
+     "nl": "Djoeba"
     }
    }
   ],
@@ -12007,7 +12644,9 @@
    "id": "Sao Tome dan Principe",
    "it": "São Tomé e Príncipe",
    "ja": "サントメ・プリンシペ",
-   "ko": "상투메 프린시페"
+   "ko": "상투메 프린시페",
+   "pl": "Wyspy Świętego Tomasza i Książęca",
+   "nl": "Sao Tomé en Principe"
   },
   "official": "Democratic Republic of São Tomé and Príncipe",
   "capitals": [
@@ -12028,7 +12667,9 @@
      "id": "São Tomé",
      "it": "São Tomé",
      "ja": "サントメ",
-     "ko": "상투메"
+     "ko": "상투메",
+     "pl": "São Tomé",
+     "nl": "Sao Tomé"
     }
    }
   ],
@@ -12077,7 +12718,9 @@
    "id": "Suriname",
    "it": "Suriname",
    "ja": "スリナム",
-   "ko": "수리남"
+   "ko": "수리남",
+   "pl": "Surinam",
+   "nl": "Suriname"
   },
   "official": "Republic of Suriname",
   "capitals": [
@@ -12098,7 +12741,9 @@
      "id": "Paramaribo",
      "it": "Paramaribo",
      "ja": "パラマリボ",
-     "ko": "파라마리보"
+     "ko": "파라마리보",
+     "pl": "Paramaribo",
+     "nl": "Paramaribo"
     }
    }
   ],
@@ -12151,7 +12796,9 @@
    "id": "Slowakia",
    "it": "Slovacchia",
    "ja": "スロバキア",
-   "ko": "슬로바키아"
+   "ko": "슬로바키아",
+   "pl": "Słowacja",
+   "nl": "Slowakije"
   },
   "official": "Slovak Republic",
   "capitals": [
@@ -12172,7 +12819,9 @@
      "id": "Bratislava",
      "it": "Bratislava",
      "ja": "ブラチスラヴァ",
-     "ko": "브라티슬라바"
+     "ko": "브라티슬라바",
+     "pl": "Bratysława",
+     "nl": "Bratislava"
     }
    }
   ],
@@ -12227,7 +12876,9 @@
    "id": "Slovenia",
    "it": "Slovenia",
    "ja": "スロベニア",
-   "ko": "슬로베니아"
+   "ko": "슬로베니아",
+   "pl": "Słowenia",
+   "nl": "Slovenië"
   },
   "official": "Republic of Slovenia",
   "capitals": [
@@ -12248,7 +12899,9 @@
      "id": "Ljubljana",
      "it": "Lubiana",
      "ja": "リュブリャナ",
-     "ko": "류블랴나"
+     "ko": "류블랴나",
+     "pl": "Lublana",
+     "nl": "Ljubljana"
     }
    }
   ],
@@ -12302,7 +12955,9 @@
    "id": "Swedia",
    "it": "Svezia",
    "ja": "スウェーデン",
-   "ko": "스웨덴"
+   "ko": "스웨덴",
+   "pl": "Szwecja",
+   "nl": "Zweden"
   },
   "official": "Kingdom of Sweden",
   "capitals": [
@@ -12323,7 +12978,9 @@
      "id": "Stockholm",
      "it": "Stoccolma",
      "ja": "ストックホルム",
-     "ko": "스톡홀름"
+     "ko": "스톡홀름",
+     "pl": "Sztokholm",
+     "nl": "Stockholm"
     }
    }
   ],
@@ -12375,7 +13032,9 @@
    "id": "Eswatini",
    "it": "Eswatini",
    "ja": "エスワティニ",
-   "ko": "에스와티니"
+   "ko": "에스와티니",
+   "pl": "Eswatini",
+   "nl": "Swaziland"
   },
   "official": "Kingdom of Eswatini",
   "capitals": [
@@ -12396,7 +13055,9 @@
      "id": "Lobamba",
      "it": "Lobamba",
      "ja": "ロバンバ",
-     "ko": "로밤바"
+     "ko": "로밤바",
+     "pl": "Lobamba",
+     "nl": "Lobamba"
     }
    }
   ],
@@ -12454,7 +13115,9 @@
    "id": "Seychelles",
    "it": "Seychelles",
    "ja": "セーシェル",
-   "ko": "세이셸"
+   "ko": "세이셸",
+   "pl": "Seszele",
+   "nl": "Seychellen"
   },
   "official": "Republic of Seychelles",
   "capitals": [
@@ -12475,7 +13138,9 @@
      "id": "Victoria, Seychelles",
      "it": "Victoria",
      "ja": "ヴィクトリア",
-     "ko": "빅토리아"
+     "ko": "빅토리아",
+     "pl": "Victoria",
+     "nl": "Victoria"
     }
    }
   ],
@@ -12526,7 +13191,9 @@
    "id": "Suriah",
    "it": "Siria",
    "ja": "シリア",
-   "ko": "시리아"
+   "ko": "시리아",
+   "pl": "Syria",
+   "nl": "Syrië"
   },
   "official": "Syrian Arab Republic",
   "capitals": [
@@ -12547,7 +13214,9 @@
      "id": "Damaskus",
      "it": "Damasco",
      "ja": "ダマスカス",
-     "ko": "다마스쿠스"
+     "ko": "다마스쿠스",
+     "pl": "Damaszek",
+     "nl": "Damascus"
     }
    }
   ],
@@ -12602,7 +13271,9 @@
    "id": "Chad",
    "it": "Ciad",
    "ja": "チャド",
-   "ko": "차드"
+   "ko": "차드",
+   "pl": "Czad",
+   "nl": "Tsjaad"
   },
   "official": "Republic of Chad",
   "capitals": [
@@ -12623,7 +13294,9 @@
      "id": "N'Djamena",
      "it": "N’Djamena",
      "ja": "ンジャメナ",
-     "ko": "은자메나"
+     "ko": "은자메나",
+     "pl": "Ndżamena",
+     "nl": "Ndjamena"
     }
    }
   ],
@@ -12680,7 +13353,9 @@
    "id": "Togo",
    "it": "Togo",
    "ja": "トーゴ",
-   "ko": "토고"
+   "ko": "토고",
+   "pl": "Togo",
+   "nl": "Togo"
   },
   "official": "Togolese Republic",
   "capitals": [
@@ -12701,7 +13376,9 @@
      "id": "Lomé",
      "it": "Lomé",
      "ja": "ロメ",
-     "ko": "로메"
+     "ko": "로메",
+     "pl": "Lomé",
+     "nl": "Lomé"
     }
    }
   ],
@@ -12754,7 +13431,9 @@
    "id": "Thailand",
    "it": "Tailandia",
    "ja": "タイ王国",
-   "ko": "태국"
+   "ko": "태국",
+   "pl": "Tajlandia",
+   "nl": "Thailand"
   },
   "official": "Kingdom of Thailand",
   "capitals": [
@@ -12775,7 +13454,9 @@
      "id": "Bangkok",
      "it": "Bangkok",
      "ja": "バンコク",
-     "ko": "방콕"
+     "ko": "방콕",
+     "pl": "Bangkok",
+     "nl": "Bangkok"
     }
    }
   ],
@@ -12829,7 +13510,9 @@
    "id": "Tajikistan",
    "it": "Tagikistan",
    "ja": "タジキスタン",
-   "ko": "타지키스탄"
+   "ko": "타지키스탄",
+   "pl": "Tadżykistan",
+   "nl": "Tadzjikistan"
   },
   "official": "Republic of Tajikistan",
   "capitals": [
@@ -12850,7 +13533,9 @@
      "id": "Dushanbe",
      "it": "Dušanbe",
      "ja": "ドゥシャンベ",
-     "ko": "두샨베"
+     "ko": "두샨베",
+     "pl": "Duszanbe",
+     "nl": "Doesjanbe"
     }
    }
   ],
@@ -12905,7 +13590,9 @@
    "id": "Turkmenistan",
    "it": "Turkmenistan",
    "ja": "トルクメニスタン",
-   "ko": "투르크메니스탄"
+   "ko": "투르크메니스탄",
+   "pl": "Turkmenistan",
+   "nl": "Turkmenistan"
   },
   "official": "Turkmenistan",
   "capitals": [
@@ -12926,7 +13613,9 @@
      "id": "Ashgabat",
      "it": "Aşgabat",
      "ja": "アシガバート",
-     "ko": "아시가바트"
+     "ko": "아시가바트",
+     "pl": "Aszchabad",
+     "nl": "Asjchabad"
     }
    }
   ],
@@ -12981,7 +13670,9 @@
    "id": "Timor Leste",
    "it": "Timor Est",
    "ja": "東ティモール",
-   "ko": "동티모르"
+   "ko": "동티모르",
+   "pl": "Timor Wschodni",
+   "nl": "Oost-Timor"
   },
   "official": "Democratic Republic of Timor-Leste",
   "capitals": [
@@ -13002,7 +13693,9 @@
      "id": "Dili",
      "it": "Dili",
      "ja": "ディリ",
-     "ko": "딜리"
+     "ko": "딜리",
+     "pl": "Dili",
+     "nl": "Dili"
     }
    }
   ],
@@ -13054,7 +13747,9 @@
    "id": "Tonga",
    "it": "Tonga",
    "ja": "トンガ",
-   "ko": "통가"
+   "ko": "통가",
+   "pl": "Tonga",
+   "nl": "Tonga"
   },
   "official": "Kingdom of Tonga",
   "capitals": [
@@ -13075,7 +13770,9 @@
      "id": "Nukuʻalofa",
      "it": "Nukuʻalofa",
      "ja": "ヌクアロファ",
-     "ko": "누쿠알로파"
+     "ko": "누쿠알로파",
+     "pl": "Nukuʻalofa",
+     "nl": "Nuku'alofa"
     }
    }
   ],
@@ -13125,7 +13822,9 @@
    "id": "Trinidad dan Tobago",
    "it": "Trinidad e Tobago",
    "ja": "トリニダード・トバゴ",
-   "ko": "트리니다드 토바고"
+   "ko": "트리니다드 토바고",
+   "pl": "Trynidad i Tobago",
+   "nl": "Trinidad en Tobago"
   },
   "official": "Republic of Trinidad and Tobago",
   "capitals": [
@@ -13146,7 +13845,9 @@
      "id": "Port of Spain",
      "it": "Port of Spain",
      "ja": "ポートオブスペイン",
-     "ko": "포트오브스페인"
+     "ko": "포트오브스페인",
+     "pl": "Port of Spain",
+     "nl": "Port of Spain"
     }
    }
   ],
@@ -13195,7 +13896,9 @@
    "id": "Tunisia",
    "it": "Tunisia",
    "ja": "チュニジア",
-   "ko": "튀니지"
+   "ko": "튀니지",
+   "pl": "Tunezja",
+   "nl": "Tunesië"
   },
   "official": "Tunisian Republic",
   "capitals": [
@@ -13216,7 +13919,9 @@
      "id": "Tunis",
      "it": "Tunisi",
      "ja": "チュニス",
-     "ko": "튀니스"
+     "ko": "튀니스",
+     "pl": "Tunis",
+     "nl": "Tunis"
     }
    }
   ],
@@ -13268,7 +13973,9 @@
    "id": "Turki",
    "it": "Turchia",
    "ja": "トルコ",
-   "ko": "튀르키예"
+   "ko": "튀르키예",
+   "pl": "Turcja",
+   "nl": "Turkije"
   },
   "official": "Republic of Türkiye",
   "capitals": [
@@ -13289,7 +13996,9 @@
      "id": "Ankara",
      "it": "Ankara",
      "ja": "アンカラ",
-     "ko": "앙카라"
+     "ko": "앙카라",
+     "pl": "Ankara",
+     "nl": "Ankara"
     }
    }
   ],
@@ -13347,7 +14056,9 @@
    "id": "Tuvalu",
    "it": "Tuvalu",
    "ja": "ツバル",
-   "ko": "투발루"
+   "ko": "투발루",
+   "pl": "Tuvalu",
+   "nl": "Tuvalu"
   },
   "official": "Tuvalu",
   "capitals": [
@@ -13368,7 +14079,9 @@
      "id": "Funafuti",
      "it": "Funafuti",
      "ja": "フナフティ島",
-     "ko": "푸나푸티"
+     "ko": "푸나푸티",
+     "pl": "Funafuti",
+     "nl": "Funafuti"
     }
    }
   ],
@@ -13423,7 +14136,9 @@
    "id": "Tanzania",
    "it": "Tanzania",
    "ja": "タンザニア",
-   "ko": "탄자니아"
+   "ko": "탄자니아",
+   "pl": "Tanzania",
+   "nl": "Tanzania"
   },
   "official": "United Republic of Tanzania",
   "capitals": [
@@ -13444,7 +14159,9 @@
      "id": "Dodoma",
      "it": "Dodoma",
      "ja": "ドドマ",
-     "ko": "도도마"
+     "ko": "도도마",
+     "pl": "Dodoma",
+     "nl": "Dodoma"
     }
    }
   ],
@@ -13503,7 +14220,9 @@
    "id": "Uganda",
    "it": "Uganda",
    "ja": "ウガンダ",
-   "ko": "우간다"
+   "ko": "우간다",
+   "pl": "Uganda",
+   "nl": "Oeganda"
   },
   "official": "Republic of Uganda",
   "capitals": [
@@ -13524,7 +14243,9 @@
      "id": "Kampala",
      "it": "Kampala",
      "ja": "カンパラ",
-     "ko": "캄팔라"
+     "ko": "캄팔라",
+     "pl": "Kampala",
+     "nl": "Kampala"
     }
    }
   ],
@@ -13580,7 +14301,9 @@
    "id": "Ukraina",
    "it": "Ucraina",
    "ja": "ウクライナ",
-   "ko": "우크라이나"
+   "ko": "우크라이나",
+   "pl": "Ukraina",
+   "nl": "Oekraïne"
   },
   "official": "Ukraine",
   "capitals": [
@@ -13601,7 +14324,9 @@
      "id": "Kyiv",
      "it": "Kiev",
      "ja": "キーウ",
-     "ko": "키이우"
+     "ko": "키이우",
+     "pl": "Kijów",
+     "nl": "Kiev"
     }
    }
   ],
@@ -13658,7 +14383,9 @@
    "id": "Uruguay",
    "it": "Uruguay",
    "ja": "ウルグアイ",
-   "ko": "우루과이"
+   "ko": "우루과이",
+   "pl": "Urugwaj",
+   "nl": "Uruguay"
   },
   "official": "Oriental Republic of Uruguay",
   "capitals": [
@@ -13679,7 +14406,9 @@
      "id": "Montevideo",
      "it": "Montevideo",
      "ja": "モンテビデオ",
-     "ko": "몬테비데오"
+     "ko": "몬테비데오",
+     "pl": "Montevideo",
+     "nl": "Montevideo"
     }
    }
   ],
@@ -13731,7 +14460,9 @@
    "id": "Amerika Serikat",
    "it": "Stati Uniti",
    "ja": "アメリカ合衆国",
-   "ko": "미국"
+   "ko": "미국",
+   "pl": "Stany Zjednoczone",
+   "nl": "Verenigde Staten"
   },
   "official": "United States of America",
   "capitals": [
@@ -13752,7 +14483,9 @@
      "id": "Washington, D.C.",
      "it": "Washington",
      "ja": "ワシントンD.C.",
-     "ko": "워싱턴 D.C."
+     "ko": "워싱턴 D.C.",
+     "pl": "Waszyngton",
+     "nl": "Washington D.C."
     }
    }
   ],
@@ -13804,7 +14537,9 @@
    "id": "Uzbekistan",
    "it": "Uzbekistan",
    "ja": "ウズベキスタン",
-   "ko": "우즈베키스탄"
+   "ko": "우즈베키스탄",
+   "pl": "Uzbekistan",
+   "nl": "Oezbekistan"
   },
   "official": "Republic of Uzbekistan",
   "capitals": [
@@ -13825,7 +14560,9 @@
      "id": "Tashkent",
      "it": "Tashkent",
      "ja": "タシュケント",
-     "ko": "타슈켄트"
+     "ko": "타슈켄트",
+     "pl": "Taszkent",
+     "nl": "Tasjkent"
     }
    }
   ],
@@ -13881,7 +14618,9 @@
    "id": "Vatikan",
    "it": "Città del Vaticano",
    "ja": "バチカン",
-   "ko": "바티칸 시국"
+   "ko": "바티칸 시국",
+   "pl": "Watykan",
+   "nl": "Vaticaanstad"
   },
   "official": "Vatican City State",
   "capitals": [
@@ -13902,7 +14641,9 @@
      "id": "Vatikan",
      "it": "Città del Vaticano",
      "ja": "バチカン",
-     "ko": "바티칸 시국"
+     "ko": "바티칸 시국",
+     "pl": "Watykan",
+     "nl": "Vaticaanstad"
     }
    }
   ],
@@ -13954,7 +14695,9 @@
    "id": "Saint Vincent dan Grenadines",
    "it": "Saint Vincent e Grenadine",
    "ja": "セントビンセント・グレナディーン",
-   "ko": "세인트빈센트 그레나딘"
+   "ko": "세인트빈센트 그레나딘",
+   "pl": "Saint Vincent i Grenadyny",
+   "nl": "Saint Vincent en de Grenadines"
   },
   "official": "Saint Vincent and the Grenadines",
   "capitals": [
@@ -13975,7 +14718,9 @@
      "id": "Kingstown",
      "it": "Kingstown",
      "ja": "キングスタウン",
-     "ko": "킹스타운"
+     "ko": "킹스타운",
+     "pl": "Kingstown",
+     "nl": "Kingstown"
     }
    }
   ],
@@ -14024,7 +14769,9 @@
    "id": "Venezuela",
    "it": "Venezuela",
    "ja": "ベネズエラ",
-   "ko": "베네수엘라"
+   "ko": "베네수엘라",
+   "pl": "Wenezuela",
+   "nl": "Venezuela"
   },
   "official": "Bolivarian Republic of Venezuela",
   "capitals": [
@@ -14045,7 +14792,9 @@
      "id": "Caracas",
      "it": "Caracas",
      "ja": "カラカス",
-     "ko": "카라카스"
+     "ko": "카라카스",
+     "pl": "Caracas",
+     "nl": "Caracas"
     }
    }
   ],
@@ -14098,7 +14847,9 @@
    "id": "Vietnam",
    "it": "Vietnam",
    "ja": "ベトナム",
-   "ko": "베트남"
+   "ko": "베트남",
+   "pl": "Wietnam",
+   "nl": "Vietnam"
   },
   "official": "Socialist Republic of Vietnam",
   "capitals": [
@@ -14119,7 +14870,9 @@
      "id": "Hanoi",
      "it": "Hanoi",
      "ja": "ハノイ",
-     "ko": "하노이"
+     "ko": "하노이",
+     "pl": "Hanoi",
+     "nl": "Hanoi"
     }
    }
   ],
@@ -14172,7 +14925,9 @@
    "id": "Vanuatu",
    "it": "Vanuatu",
    "ja": "バヌアツ",
-   "ko": "바누아투"
+   "ko": "바누아투",
+   "pl": "Vanuatu",
+   "nl": "Vanuatu"
   },
   "official": "Republic of Vanuatu",
   "capitals": [
@@ -14193,7 +14948,9 @@
      "id": "Port Vila",
      "it": "Port Vila",
      "ja": "ポートビラ",
-     "ko": "포트빌라"
+     "ko": "포트빌라",
+     "pl": "Port Vila",
+     "nl": "Port Vila"
     }
    }
   ],
@@ -14244,7 +15001,9 @@
    "id": "Samoa",
    "it": "Samoa",
    "ja": "サモア",
-   "ko": "사모아"
+   "ko": "사모아",
+   "pl": "Samoa",
+   "nl": "Samoa"
   },
   "official": "Independent State of Samoa",
   "capitals": [
@@ -14265,7 +15024,9 @@
      "id": "Apia",
      "it": "Apia",
      "ja": "アピア",
-     "ko": "아피아"
+     "ko": "아피아",
+     "pl": "Apia",
+     "nl": "Apia"
     }
    }
   ],
@@ -14315,7 +15076,9 @@
    "id": "Yaman",
    "it": "Yemen",
    "ja": "イエメン",
-   "ko": "예멘"
+   "ko": "예멘",
+   "pl": "Jemen",
+   "nl": "Jemen"
   },
   "official": "Republic of Yemen",
   "capitals": [
@@ -14336,7 +15099,9 @@
      "id": "Sana'a",
      "it": "Sana'a",
      "ja": "サヌア",
-     "ko": "사나"
+     "ko": "사나",
+     "pl": "Sana",
+     "nl": "Sanaa"
     }
    }
   ],
@@ -14388,7 +15153,9 @@
    "id": "Afrika Selatan",
    "it": "Sudafrica",
    "ja": "南アフリカ共和国",
-   "ko": "남아프리카 공화국"
+   "ko": "남아프리카 공화국",
+   "pl": "Południowa Afryka",
+   "nl": "Zuid-Afrika"
   },
   "official": "Republic of South Africa",
   "capitals": [
@@ -14409,7 +15176,9 @@
      "id": "Pretoria",
      "it": "Pretoria",
      "ja": "プレトリア",
-     "ko": "프리토리아"
+     "ko": "프리토리아",
+     "pl": "Pretoria",
+     "nl": "Pretoria"
     }
    },
    {
@@ -14429,7 +15198,9 @@
      "id": "Bloemfontein",
      "it": "Bloemfontein",
      "ja": "ブルームフォンテーン",
-     "ko": "블룸폰테인"
+     "ko": "블룸폰테인",
+     "pl": "Bloemfontein",
+     "nl": "Bloemfontein"
     }
    },
    {
@@ -14449,7 +15220,9 @@
      "id": "Cape Town",
      "it": "Città del Capo",
      "ja": "ケープタウン",
-     "ko": "케이프타운"
+     "ko": "케이프타운",
+     "pl": "Kapsztad",
+     "nl": "Kaapstad"
     }
    }
   ],
@@ -14515,7 +15288,9 @@
    "id": "Zambia",
    "it": "Zambia",
    "ja": "ザンビア",
-   "ko": "잠비아"
+   "ko": "잠비아",
+   "pl": "Zambia",
+   "nl": "Zambia"
   },
   "official": "Republic of Zambia",
   "capitals": [
@@ -14536,7 +15311,9 @@
      "id": "Lusaka",
      "it": "Lusaka",
      "ja": "ルサカ",
-     "ko": "루사카"
+     "ko": "루사카",
+     "pl": "Lusaka",
+     "nl": "Lusaka"
     }
    }
   ],
@@ -14594,7 +15371,9 @@
    "id": "Zimbabwe",
    "it": "Zimbabwe",
    "ja": "ジンバブエ",
-   "ko": "짐바브웨"
+   "ko": "짐바브웨",
+   "pl": "Zimbabwe",
+   "nl": "Zimbabwe"
   },
   "official": "Republic of Zimbabwe",
   "capitals": [
@@ -14615,7 +15394,9 @@
      "id": "Harare",
      "it": "Harare",
      "ja": "ハラレ",
-     "ko": "하라레"
+     "ko": "하라레",
+     "pl": "Harare",
+     "nl": "Harare"
     }
    }
   ],

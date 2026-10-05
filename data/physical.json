@@ -1,4 +1,404 @@
 {
+ "wonders": {
+  "kind": "point",
+  "items": [
+   {
+    "id": "q12501",
+    "name": {
+     "en": "Great Wall of China",
+     "zh": "长城",
+     "hi": "चीन की विशाल दीवार",
+     "es": "Gran Muralla china",
+     "ar": "سور الصين العظيم",
+     "fr": "Grande Muraille",
+     "bn": "চীনের মহাপ্রাচীর",
+     "ur": "دیوار چین",
+     "ru": "Великая китайская стена",
+     "pt": "Grande Muralha da China",
+     "de": "Chinesische Mauer",
+     "id": "Tembok Besar Tiongkok",
+     "it": "Grande muraglia cinese",
+     "ja": "万里の長城",
+     "ko": "만리장성",
+     "pl": "Wielki Mur Chiński",
+     "nl": "Chinese Muur"
+    },
+    "at": [
+     116.564444444,
+     40.431388888
+    ]
+   },
+   {
+    "id": "q5788",
+    "name": {
+     "en": "Petra",
+     "zh": "佩特拉",
+     "hi": "पेत्रा",
+     "es": "Petra",
+     "ar": "البتراء",
+     "fr": "Pétra",
+     "bn": "পেত্রা",
+     "ur": "بترا",
+     "ru": "Петра",
+     "pt": "Petra",
+     "de": "Petra",
+     "id": "Petra",
+     "it": "Petra",
+     "ja": "ペトラ",
+     "ko": "페트라",
+     "pl": "Petra",
+     "nl": "Petra"
+    },
+    "at": [
+     35.440277777,
+     30.328888888
+    ]
+   },
+   {
+    "id": "q79961",
+    "name": {
+     "en": "Christ the Redeemer",
+     "zh": "里約熱內盧基督像",
+     "hi": "क्राइस्ट द रिडीमर",
+     "es": "Cristo Redentor",
+     "ar": "تمثال المسيح الفادي",
+     "fr": "statue du Christ Rédempteur",
+     "bn": "ক্রাইস্ট দ্য রিডিমার",
+     "ur": "مسیح نجات دہندہ",
+     "ru": "статуя Христа-Искупителя",
+     "pt": "Cristo Redentor",
+     "de": "Cristo Redentor",
+     "id": "Patung Kristus Penebus",
+     "it": "Cristo Redentore",
+     "ja": "コルコバードのキリスト像",
+     "ko": "구세주 그리스도상",
+     "pl": "Pomnik Chrystusa Odkupiciela w Rio de Janeiro",
+     "nl": "Christus de Verlosser"
+    },
+    "at": [
+     -43.210464122,
+     -22.951915648
+    ]
+   },
+   {
+    "id": "q676203",
+    "name": {
+     "en": "Machu Picchu",
+     "zh": "馬丘比丘",
+     "hi": "माचू पिच्चू",
+     "es": "Machu Picchu",
+     "ar": "ماتشو بيتشو",
+     "fr": "Machu Picchu",
+     "bn": "মাচু পিচু",
+     "ur": "ماچو پیچو",
+     "ru": "Мачу-Пикчу",
+     "pt": "Machu Picchu",
+     "de": "Machu Picchu",
+     "id": "Cagar Alam Machu Picchu",
+     "it": "Machu Picchu",
+     "ja": "マチュ・ピチュ",
+     "ko": "마추 픽추",
+     "pl": "Machu Picchu",
+     "nl": "Machu Picchu"
+    },
+    "at": [
+     -72.545555555,
+     -13.163333333
+    ]
+   },
+   {
+    "id": "q5859",
+    "name": {
+     "en": "Chichen Itza",
+     "zh": "奇琴伊察",
+     "hi": "चिचेन इत्सा",
+     "es": "Chichén Itzá",
+     "ar": "تشيتشن إيتزا",
+     "fr": "Chichén Itzá",
+     "bn": "চিচেন ইৎজা",
+     "ur": "چیچن ایتزا",
+     "ru": "Чичен-Ица",
+     "pt": "Chichén Itzá",
+     "de": "Chichén Itzá",
+     "id": "Chichén Itzá",
+     "it": "Chichén Itzá",
+     "ja": "チチェン・イッツァ",
+     "ko": "치첸이트사",
+     "pl": "Chichén Itzá",
+     "nl": "Chichén Itzá"
+    },
+    "at": [
+     -88.568611111,
+     20.683055555
+    ]
+   },
+   {
+    "id": "q10285",
+    "name": {
+     "en": "Colosseum",
+     "zh": "罗马斗兽场",
+     "hi": "कोलोसियम",
+     "es": "Coliseo",
+     "ar": "كولوسيوم",
+     "fr": "Colisée",
+     "bn": "কলোসিয়াম",
+     "ur": "کولوزیئم",
+     "ru": "Колизей",
+     "pt": "Coliseu de Roma",
+     "de": "Kolosseum",
+     "id": "Koloseum",
+     "it": "Colosseo",
+     "ja": "コロッセオ",
+     "ko": "콜로세움",
+     "pl": "Koloseum",
+     "nl": "Colosseum"
+    },
+    "at": [
+     12.492222222,
+     41.890277777
+    ]
+   },
+   {
+    "id": "q9141",
+    "name": {
+     "en": "Taj Mahal",
+     "zh": "泰姬陵",
+     "hi": "ताजमहल",
+     "es": "Taj Mahal",
+     "ar": "تاج محل",
+     "fr": "Taj Mahal",
+     "bn": "তাজমহল",
+     "ur": "تاج محل",
+     "ru": "Тадж-Махал",
+     "pt": "Taj Mahal",
+     "de": "Taj Mahal",
+     "id": "Taj Mahal",
+     "it": "Taj Mahal",
+     "ja": "タージ・マハル",
+     "ko": "타지마할",
+     "pl": "Tadź Mahal",
+     "nl": "Taj Mahal"
+    },
+    "at": [
+     78.041944444,
+     27.175
+    ]
+   },
+   {
+    "id": "q37200",
+    "name": {
+     "en": "Great Pyramid of Giza",
+     "zh": "胡夫金字塔",
+     "hi": "गीजा का महान पिरामिड",
+     "es": "Gran pirámide de Giza",
+     "ar": "الهرم الأكبر",
+     "fr": "pyramide de Khéops",
+     "bn": "গিজার মহা পিরামিড",
+     "ur": "ہرم خوفو",
+     "ru": "Пирамида Хеопса",
+     "pt": "Pirâmide de Quéops",
+     "de": "Cheops-Pyramide",
+     "id": "Piramida Agung Giza",
+     "it": "piramide di Cheope",
+     "ja": "ギザの大ピラミッド",
+     "ko": "기자의 대피라미드",
+     "pl": "Piramida Cheopsa",
+     "nl": "Piramide van Cheops"
+    },
+    "at": [
+     31.13422,
+     29.97915
+    ]
+   }
+  ]
+ },
+ "ancient-wonders": {
+  "kind": "point",
+  "items": [
+   {
+    "id": "q37200",
+    "name": {
+     "en": "Great Pyramid of Giza",
+     "zh": "胡夫金字塔",
+     "hi": "गीजा का महान पिरामिड",
+     "es": "Gran pirámide de Giza",
+     "ar": "الهرم الأكبر",
+     "fr": "pyramide de Khéops",
+     "bn": "গিজার মহা পিরামিড",
+     "ur": "ہرم خوفو",
+     "ru": "Пирамида Хеопса",
+     "pt": "Pirâmide de Quéops",
+     "de": "Cheops-Pyramide",
+     "id": "Piramida Agung Giza",
+     "it": "piramide di Cheope",
+     "ja": "ギザの大ピラミッド",
+     "ko": "기자의 대피라미드",
+     "pl": "Piramida Cheopsa",
+     "nl": "Piramide van Cheops"
+    },
+    "at": [
+     31.13422,
+     29.97915
+    ]
+   },
+   {
+    "id": "q41931",
+    "name": {
+     "en": "Hanging Gardens of Babylon",
+     "zh": "空中花园",
+     "hi": "बेबीलोन के झूलते उपवन",
+     "es": "Jardines Colgantes de Babilonia",
+     "ar": "حدائق بابل المعلقة",
+     "fr": "jardins suspendus de Babylone",
+     "bn": "ব্যাবিলনের শূন্য উদ্যান",
+     "ur": "بابل کے معلق باغات",
+     "ru": "Висячие сады Семирамиды",
+     "pt": "Jardins Suspensos da Babilónia",
+     "de": "Hängende Gärten der Semiramis",
+     "id": "Taman Gantung Babilonia",
+     "it": "giardini pensili di Babilonia",
+     "ja": "バビロンの空中庭園",
+     "ko": "바빌론의 공중 정원",
+     "pl": "Wiszące ogrody Semiramidy",
+     "nl": "Hangende tuinen van Babylon"
+    },
+    "at": [
+     44.4275,
+     32.5355
+    ]
+   },
+   {
+    "id": "q43018",
+    "name": {
+     "en": "Temple of Ephesian Artemis",
+     "zh": "阿耳忒弥斯神庙",
+     "hi": "अर्टेमिस का मन्दिर",
+     "es": "Templo de Artemisa",
+     "ar": "هيكل آرتميس",
+     "fr": "temple d'Artémis à Éphèse",
+     "bn": "আর্টেমিসের মন্দির",
+     "ur": "معبد آرتمیس",
+     "ru": "Храм Артемиды Эфесской",
+     "pt": "Templo de Ártemis",
+     "de": "Tempel der Artemis in Ephesos",
+     "id": "Kuil Artemis",
+     "it": "Tempio di Artemide",
+     "ja": "アルテミス神殿",
+     "ko": "아르테미스 신전",
+     "pl": "świątynia Artemidy w Efezie",
+     "nl": "Tempel van Artemis in Efeze"
+    },
+    "at": [
+     27.363889,
+     37.949722
+    ]
+   },
+   {
+    "id": "q46239",
+    "name": {
+     "en": "Statue of Zeus at Olympia",
+     "zh": "奧林匹亞宙斯神像",
+     "hi": "ओलम्पिया में जियस की मूर्ति",
+     "es": "Estatua de Zeus en Olimpia",
+     "ar": "تمثال زوس",
+     "fr": "statue chryséléphantine de Zeus à Olympie",
+     "bn": "অলিম্পিয়ার জিউসের মূর্তি",
+     "ur": "اولمپیا میں زیوس کا مجسمہ",
+     "ru": "Статуя Зевса в Олимпии",
+     "pt": "Estátua de Zeus em Olímpia",
+     "de": "Zeus-Statue des Phidias",
+     "id": "Patung Zeus di Olympia",
+     "it": "Statua di Zeus a Olimpia",
+     "ja": "オリンピアのゼウス像",
+     "ko": "올림피아의 제우스상",
+     "pl": "Posąg Zeusa w Olimpii",
+     "nl": "Beeld van Zeus te Olympia"
+    },
+    "at": [
+     21.63,
+     37.637861111
+    ]
+   },
+   {
+    "id": "q45368",
+    "name": {
+     "en": "Mausoleum at Halicarnassus",
+     "zh": "摩索拉斯王陵墓",
+     "hi": "माउसोलस का मकबरा",
+     "es": "Mausoleo de Halicarnaso",
+     "ar": "ضريح موسولوس",
+     "fr": "mausolée d'Halicarnasse",
+     "bn": "হ্যালিকারনেসাসের সমাধি মন্দির",
+     "ur": "موسولس کا مزار",
+     "ru": "Мавзолей в Галикарнасе",
+     "pt": "Mausoléu de Halicarnasso",
+     "de": "Mausoleum von Halikarnassos",
+     "id": "Mausoleum Mausolus",
+     "it": "Mausoleo di Alicarnasso",
+     "ja": "マウソロス霊廟",
+     "ko": "할리카르나소스의 마우솔레움",
+     "pl": "Mauzoleum w Halikarnasie",
+     "nl": "Mausoleum van Halicarnassus"
+    },
+    "at": [
+     27.424097,
+     37.037942
+    ]
+   },
+   {
+    "id": "q41553",
+    "name": {
+     "en": "Colossus of Rhodes",
+     "zh": "罗得岛巨像",
+     "hi": "रोडेस कि विशालमूर्ति",
+     "es": "Coloso de Rodas",
+     "ar": "عملاق رودس",
+     "fr": "colosse de Rhodes",
+     "bn": "রোডস এর মূর্তি",
+     "ur": "روڈس کا مجسمہ",
+     "ru": "Колосс Родосский",
+     "pt": "Colosso de Rodes",
+     "de": "Koloss von Rhodos",
+     "id": "Kolosus di Rodos",
+     "it": "Colosso di Rodi",
+     "ja": "ロドス島の巨像",
+     "ko": "로도스의 거상",
+     "pl": "Kolos Rodyjski",
+     "nl": "Kolossus van Rodos"
+    },
+    "at": [
+     28.227778,
+     36.451111
+    ]
+   },
+   {
+    "id": "q43244",
+    "name": {
+     "en": "Lighthouse of Alexandria",
+     "zh": "亚历山大灯塔",
+     "hi": "सिकन्दरिया का प्रकाशस्तंभ",
+     "es": "Faro de Alejandría",
+     "ar": "فنار الإسكندرية",
+     "fr": "phare d'Alexandrie",
+     "bn": "আলেকজান্দ্রিয়ার বাতিঘর",
+     "ur": "اسکندریہ کا روشن مینار",
+     "ru": "Александрийский маяк",
+     "pt": "Farol de Alexandria",
+     "de": "Pharos von Alexandria",
+     "id": "Mercusuar Iskandariyah",
+     "it": "faro di Alessandria",
+     "ja": "アレクサンドリアの大灯台",
+     "ko": "알렉산드리아의 등대",
+     "pl": "Latarnia morska na Faros",
+     "nl": "Pharos van Alexandrië"
+    },
+    "at": [
+     29.885,
+     31.214167
+    ]
+   }
+  ]
+ },
  "continents": {
   "kind": "poly",
   "items": [
@@ -18,7 +418,9 @@
      "id": "Asia",
      "it": "Asia",
      "ja": "アジア",
-     "ko": "아시아"
+     "ko": "아시아",
+     "pl": "Azja",
+     "nl": "Azië"
     },
     "id": "asia"
    },
@@ -38,7 +440,9 @@
      "id": "Afrika",
      "it": "Africa",
      "ja": "アフリカ",
-     "ko": "아프리카"
+     "ko": "아프리카",
+     "pl": "Afryka",
+     "nl": "Afrika"
     },
     "id": "africa"
    },
@@ -58,7 +462,9 @@
      "id": "Amerika Utara",
      "it": "America del Nord",
      "ja": "北アメリカ",
-     "ko": "북아메리카"
+     "ko": "북아메리카",
+     "pl": "Ameryka Północna",
+     "nl": "Noord-Amerika"
     },
     "id": "north-america"
    },
@@ -78,7 +484,9 @@
      "id": "Amerika Selatan",
      "it": "America meridionale",
      "ja": "南アメリカ",
-     "ko": "남아메리카"
+     "ko": "남아메리카",
+     "pl": "Ameryka Południowa",
+     "nl": "Zuid-Amerika"
     },
     "id": "south-america"
    },
@@ -98,7 +506,9 @@
      "id": "Antarktika",
      "it": "Antartide",
      "ja": "南極大陸",
-     "ko": "남극"
+     "ko": "남극",
+     "pl": "Antarktyda",
+     "nl": "Antarctica"
     },
     "id": "antarctica"
    },
@@ -118,7 +528,9 @@
      "id": "Eropa",
      "it": "Europa",
      "ja": "ヨーロッパ",
-     "ko": "유럽"
+     "ko": "유럽",
+     "pl": "Europa",
+     "nl": "Europa"
     },
     "id": "europe"
    },
@@ -138,7 +550,9 @@
      "id": "Australia",
      "it": "Australia",
      "ja": "オーストラリア大陸",
-     "ko": "오스트레일리아 대륙"
+     "ko": "오스트레일리아 대륙",
+     "pl": "Australia",
+     "nl": "Australië"
     },
     "id": "australian-continent"
    }
@@ -163,7 +577,9 @@
      "id": "Laut Filipina",
      "it": "Mare delle Filippine",
      "ja": "フィリピン海",
-     "ko": "필리핀해"
+     "ko": "필리핀해",
+     "pl": "Morze Filipińskie",
+     "nl": "Filipijnenzee"
     },
     "id": "philippine-sea"
    },
@@ -183,7 +599,9 @@
      "id": "Laut Arab",
      "it": "Mar Arabico",
      "ja": "アラビア海",
-     "ko": "아라비아해"
+     "ko": "아라비아해",
+     "pl": "Morze Arabskie",
+     "nl": "Arabische Zee"
     },
     "id": "arabian-sea"
    },
@@ -203,7 +621,9 @@
      "id": "Laut Karang",
      "it": "mar dei Coralli",
      "ja": "珊瑚海",
-     "ko": "산호해"
+     "ko": "산호해",
+     "pl": "Morze Koralowe",
+     "nl": "Koraalzee"
     },
     "id": "coral-sea"
    },
@@ -223,7 +643,9 @@
      "id": "Laut Tasman",
      "it": "Mar di Tasman",
      "ja": "タスマン海",
-     "ko": "태즈먼해"
+     "ko": "태즈먼해",
+     "pl": "Morze Tasmana",
+     "nl": "Tasmanzee"
     },
     "id": "tasman-sea"
    },
@@ -243,7 +665,9 @@
      "id": "Laut Tiongkok Selatan",
      "it": "Mar Cinese Meridionale",
      "ja": "南シナ海",
-     "ko": "남중국해"
+     "ko": "남중국해",
+     "pl": "Morze Południowochińskie",
+     "nl": "Zuid-Chinese Zee"
     },
     "id": "south-china-sea"
    },
@@ -263,7 +687,9 @@
      "id": "Laut Karibia",
      "it": "mare Caraibico",
      "ja": "カリブ海",
-     "ko": "카리브해"
+     "ko": "카리브해",
+     "pl": "Morze Karaibskie",
+     "nl": "Caraïbische Zee"
     },
     "id": "caribbean-sea"
    },
@@ -283,7 +709,9 @@
      "id": "Laut Tengah",
      "it": "mar Mediterraneo",
      "ja": "地中海",
-     "ko": "지중해"
+     "ko": "지중해",
+     "pl": "Morze Śródziemne",
+     "nl": "Middellandse Zee"
     },
     "id": "mediterranean-sea"
    },
@@ -303,7 +731,9 @@
      "id": "Laut Okhotsk",
      "it": "mare di Ochotsk",
      "ja": "オホーツク海",
-     "ko": "오호츠크해"
+     "ko": "오호츠크해",
+     "pl": "Morze Ochockie",
+     "nl": "Zee van Ochotsk"
     },
     "id": "sea-of-okhotsk"
    },
@@ -323,7 +753,9 @@
      "id": "Laut Weddell",
      "it": "Mare di Weddell",
      "ja": "ウェッデル海",
-     "ko": "웨들해"
+     "ko": "웨들해",
+     "pl": "Morze Weddella",
+     "nl": "Weddellzee"
     },
     "id": "weddell-sea"
    },
@@ -343,7 +775,9 @@
      "id": "Laut Ross",
      "it": "Mare di Ross",
      "ja": "ロス海",
-     "ko": "로스해"
+     "ko": "로스해",
+     "pl": "Morze Rossa",
+     "nl": "Rosszee"
     },
     "id": "ross-sea"
    },
@@ -363,7 +797,9 @@
      "id": "Laut Jepang",
      "it": "Mar del Giappone",
      "ja": "日本海",
-     "ko": "동해"
+     "ko": "동해",
+     "pl": "Morze Japońskie",
+     "nl": "Japanse Zee"
     },
     "id": "sea-of-japan"
    },
@@ -383,7 +819,9 @@
      "id": "Laut Labrador",
      "it": "Mare del Labrador",
      "ja": "ラブラドル海",
-     "ko": "래브라도해"
+     "ko": "래브라도해",
+     "pl": "Morze Labradorskie",
+     "nl": "Labradorzee"
     },
     "id": "labrador-sea"
    },
@@ -403,7 +841,9 @@
      "id": "Laut Beaufort",
      "it": "Mare di Beaufort",
      "ja": "ボーフォート海",
-     "ko": "보퍼트해"
+     "ko": "보퍼트해",
+     "pl": "Morze Beauforta",
+     "nl": "Beaufortzee"
     },
     "id": "beaufort-sea"
    },
@@ -423,7 +863,9 @@
      "id": "Laut Merah",
      "it": "Mar Rosso",
      "ja": "紅海",
-     "ko": "홍해"
+     "ko": "홍해",
+     "pl": "Morze Czerwone",
+     "nl": "Rode Zee"
     },
     "id": "red-sea"
    },
@@ -443,7 +885,9 @@
      "id": "Laut Hitam",
      "it": "mar Nero",
      "ja": "黒海",
-     "ko": "흑해"
+     "ko": "흑해",
+     "pl": "Morze Czarne",
+     "nl": "Zwarte Zee"
     },
     "id": "black-sea"
    },
@@ -463,7 +907,9 @@
      "id": "Laut Kaspia",
      "it": "mar Caspio",
      "ja": "カスピ海",
-     "ko": "카스피해"
+     "ko": "카스피해",
+     "pl": "Morze Kaspijskie",
+     "nl": "Kaspische Zee"
     },
     "id": "caspian-sea"
    },
@@ -483,7 +929,9 @@
      "id": "Laut Sargasso",
      "it": "Mar dei Sargassi",
      "ja": "サルガッソ海",
-     "ko": "사르가소해"
+     "ko": "사르가소해",
+     "pl": "Morze Sargassowe",
+     "nl": "Sargassozee"
     },
     "id": "sargasso-sea"
    },
@@ -503,7 +951,9 @@
      "id": "Laut Bering",
      "it": "Mare di Bering",
      "ja": "ベーリング海",
-     "ko": "베링해"
+     "ko": "베링해",
+     "pl": "Morze Beringa",
+     "nl": "Beringzee"
     },
     "id": "bering-sea"
    },
@@ -523,7 +973,9 @@
      "id": "Laut Norwegia",
      "it": "Mar di Norvegia",
      "ja": "ノルウェー海",
-     "ko": "노르웨이해"
+     "ko": "노르웨이해",
+     "pl": "Morze Norweskie",
+     "nl": "Noorse Zee"
     },
     "id": "norwegian-sea"
    },
@@ -543,7 +995,9 @@
      "id": "Laut Barents",
      "it": "Mmare di Barents",
      "ja": "バレンツ海",
-     "ko": "바렌츠해"
+     "ko": "바렌츠해",
+     "pl": "Morze Barentsa",
+     "nl": "Barentszzee"
     },
     "id": "barents-sea"
    },
@@ -563,7 +1017,9 @@
      "id": "Laut Greenland",
      "it": "Mar di Groenlandia",
      "ja": "グリーンランド海",
-     "ko": "그린란드해"
+     "ko": "그린란드해",
+     "pl": "Morze Grenlandzkie",
+     "nl": "Groenlandzee"
     },
     "id": "greenland-sea"
    },
@@ -583,7 +1039,9 @@
      "id": "Laut Lakadewa",
      "it": "Mar delle Laccadive",
      "ja": "ラッカディブ海",
-     "ko": "라카디브해"
+     "ko": "라카디브해",
+     "pl": "Morze Lakkadiwskie",
+     "nl": "Laccadivenzee"
     },
     "id": "laccadive-sea"
    },
@@ -603,7 +1061,9 @@
      "id": "Laut Kara",
      "it": "mare di Kara",
      "ja": "カラ海",
-     "ko": "카라해"
+     "ko": "카라해",
+     "pl": "Morze Karskie",
+     "nl": "Karazee"
     },
     "id": "kara-sea"
    },
@@ -623,7 +1083,9 @@
      "id": "Laut Banda",
      "it": "Mar di Banda",
      "ja": "バンダ海",
-     "ko": "반다해"
+     "ko": "반다해",
+     "pl": "Morze Banda",
+     "nl": "Bandazee"
     },
     "id": "banda-sea"
    },
@@ -643,7 +1105,9 @@
      "id": "Laut Arafura",
      "it": "Mare degli Arafura",
      "ja": "アラフラ海",
-     "ko": "아라푸라해"
+     "ko": "아라푸라해",
+     "pl": "Morze Arafura",
+     "nl": "Arafurazee"
     },
     "id": "arafura-sea"
    },
@@ -663,7 +1127,9 @@
      "id": "Laut Tiongkok Timur",
      "it": "Mar Cinese Orientale",
      "ja": "東シナ海",
-     "ko": "동중국해"
+     "ko": "동중국해",
+     "pl": "Morze Wschodniochińskie",
+     "nl": "Oost-Chinese Zee"
     },
     "id": "east-china-sea"
    },
@@ -683,7 +1149,9 @@
      "id": "Laut Andaman",
      "it": "Mare delle Andamane",
      "ja": "アンダマン海",
-     "ko": "안다만해"
+     "ko": "안다만해",
+     "pl": "Morze Andamańskie",
+     "nl": "Andamanse Zee"
     },
     "id": "andaman-sea"
    },
@@ -703,7 +1171,9 @@
      "id": "Laut Jawa",
      "it": "Mar di Giava",
      "ja": "ジャワ海",
-     "ko": "자와해"
+     "ko": "자와해",
+     "pl": "Morze Jawajskie",
+     "nl": "Javazee"
     },
     "id": "java-sea"
    },
@@ -723,7 +1193,9 @@
      "id": "Laut Laptev",
      "it": "Mare di Laptev",
      "ja": "ラプテフ海",
-     "ko": "랍테프해"
+     "ko": "랍테프해",
+     "pl": "Morze Łaptiewów",
+     "nl": "Laptevzee"
     },
     "id": "laptev-sea"
    },
@@ -743,7 +1215,9 @@
      "id": "Laut Utara",
      "it": "mare del Nord",
      "ja": "北海",
-     "ko": "북해"
+     "ko": "북해",
+     "pl": "Morze Północne",
+     "nl": "Noordzee"
     },
     "id": "north-sea"
    },
@@ -763,7 +1237,9 @@
      "id": "Laut Sulawesi",
      "it": "mare di Celebes",
      "ja": "セレベス海",
-     "ko": "술라웨시해"
+     "ko": "술라웨시해",
+     "pl": "Morze Celebes",
+     "nl": "Celebeszee"
     },
     "id": "celebes-sea"
    },
@@ -783,7 +1259,9 @@
      "id": "Laut Timor",
      "it": "Mar di Timor",
      "ja": "ティモール海",
-     "ko": "티모르해"
+     "ko": "티모르해",
+     "pl": "Morze Timor",
+     "nl": "Timorzee"
     },
     "id": "timor-sea"
    },
@@ -803,7 +1281,9 @@
      "id": "Laut Kuning",
      "it": "Mar Giallo",
      "ja": "黄海",
-     "ko": "황해"
+     "ko": "황해",
+     "pl": "Morze Żółte",
+     "nl": "Gele Zee"
     },
     "id": "yellow-sea"
    },
@@ -823,7 +1303,9 @@
      "id": "Laut Chukchi",
      "it": "Mare dei Ciukci",
      "ja": "チュクチ海",
-     "ko": "축치해"
+     "ko": "축치해",
+     "pl": "Morze Czukockie",
+     "nl": "Tsjoektsjenzee"
     },
     "id": "chukchi-sea"
    },
@@ -843,7 +1325,9 @@
      "id": "Laut Sulu",
      "it": "Mare di Sulu",
      "ja": "スールー海",
-     "ko": "술루해"
+     "ko": "술루해",
+     "pl": "Morze Sulu",
+     "nl": "Suluzee"
     },
     "id": "sulu-sea"
    },
@@ -863,7 +1347,9 @@
      "id": "Laut Baltik",
      "it": "mar Baltico",
      "ja": "バルト海",
-     "ko": "발트해"
+     "ko": "발트해",
+     "pl": "Morze Bałtyckie",
+     "nl": "Oostzee"
     },
     "id": "baltic-sea"
    },
@@ -883,7 +1369,9 @@
      "id": "Laut Bellingshausen",
      "it": "Mare di Bellingshausen",
      "ja": "ベリングスハウゼン海",
-     "ko": "벨링스하우젠해"
+     "ko": "벨링스하우젠해",
+     "pl": "Morze Bellingshausena",
+     "nl": "Bellingshausenzee"
     },
     "id": "bellingshausen-sea"
    },
@@ -903,7 +1391,9 @@
      "id": "Laut Amundsen",
      "it": "Mare di Amundsen",
      "ja": "アムンゼン海",
-     "ko": "아문센해"
+     "ko": "아문센해",
+     "pl": "Morze Amundsena",
+     "nl": "Amundsenzee"
     },
     "id": "amundsen-sea"
    },
@@ -923,7 +1413,9 @@
      "id": "Laut Irlandia",
      "it": "Mare d'Irlanda",
      "ja": "アイリッシュ海",
-     "ko": "아일랜드해"
+     "ko": "아일랜드해",
+     "pl": "Morze Irlandzkie",
+     "nl": "Ierse Zee"
     },
     "id": "irish-sea"
    },
@@ -943,7 +1435,9 @@
      "id": "Laut Skotia",
      "it": "Mare di Scotia",
      "ja": "スコシア海",
-     "ko": "스코샤해"
+     "ko": "스코샤해",
+     "pl": "Morze Scotia",
+     "nl": "Scotiazee"
     },
     "id": "scotia-sea"
    }
@@ -968,7 +1462,9 @@
      "id": "Selat Mozambique",
      "it": "Canale del Mozambico",
      "ja": "モザンビーク海峡",
-     "ko": "모잠비크 해협"
+     "ko": "모잠비크 해협",
+     "pl": "Kanał Mozambicki",
+     "nl": "Straat Mozambique"
     },
     "id": "mozambique-channel"
    },
@@ -988,7 +1484,9 @@
      "id": "Selat Davis",
      "it": "Stretto di Davis",
      "ja": "デービス海峡",
-     "ko": "데이비스 해협"
+     "ko": "데이비스 해협",
+     "pl": "Cieśnina Davisa",
+     "nl": "Straat Davis"
     },
     "id": "davis-strait"
    },
@@ -1008,7 +1506,9 @@
      "id": "Selat Drake",
      "it": "Canale di Drake",
      "ja": "ドレーク海峡",
-     "ko": "드레이크 해협"
+     "ko": "드레이크 해협",
+     "pl": "Cieśnina Drake'a",
+     "nl": "Straat Drake"
     },
     "id": "drake-passage"
    },
@@ -1028,7 +1528,9 @@
      "id": "Selat Luzon",
      "it": "Stretto di Luzon",
      "ja": "ルソン海峡",
-     "ko": "루손 해협"
+     "ko": "루손 해협",
+     "pl": "Cieśnina Luzon",
+     "nl": "Straat Luzon"
     },
     "id": "luzon-strait"
    },
@@ -1048,7 +1550,9 @@
      "id": "Selat Hudson",
      "it": "Stretto di Hudson",
      "ja": "ハドソン海峡",
-     "ko": "허드슨 해협"
+     "ko": "허드슨 해협",
+     "pl": "Cieśnina Hudsona",
+     "nl": "Straat Hudson"
     },
     "id": "hudson-strait"
    },
@@ -1068,7 +1572,9 @@
      "id": "Selat Inggris",
      "it": "la Manica",
      "ja": "イギリス海峡",
-     "ko": "영국 해협"
+     "ko": "영국 해협",
+     "pl": "Kanał La Manche",
+     "nl": "Het Kanaal"
     },
     "id": "english-channel"
    },
@@ -1088,7 +1594,9 @@
      "id": "Jalur Barat Laut",
      "it": "passaggio a nord-ovest",
      "ja": "北西航路",
-     "ko": "북서항로"
+     "ko": "북서항로",
+     "pl": "Przejście Północno-Zachodnie",
+     "nl": "Noordwestelijke Doorvaart"
     },
     "id": "northwest-passage"
    },
@@ -1108,7 +1616,9 @@
      "id": "Selat Malaka",
      "it": "Stretto di Malacca",
      "ja": "マラッカ海峡",
-     "ko": "믈라카 해협"
+     "ko": "믈라카 해협",
+     "pl": "Cieśnina Malakka",
+     "nl": "Straat Malakka"
     },
     "id": "strait-of-malacca"
    },
@@ -1128,7 +1638,9 @@
      "id": "Selat Makassar",
      "it": "Stretto di Makasar",
      "ja": "マカッサル海峡",
-     "ko": "마카사르 해협"
+     "ko": "마카사르 해협",
+     "pl": "Cieśnina Makasarska",
+     "nl": "Straat Makassar"
     },
     "id": "makassar-strait"
    },
@@ -1148,7 +1660,9 @@
      "id": "Selat Korea",
      "it": "Stretto di Corea",
      "ja": "対馬海峡",
-     "ko": "대한해협"
+     "ko": "대한해협",
+     "pl": "Cieśnina Koreańska",
+     "nl": "Straat Korea"
     },
     "id": "korea-strait"
    },
@@ -1168,7 +1682,9 @@
      "id": "Strait Florida",
      "it": "Stretti della Florida",
      "ja": "フロリダ海峡",
-     "ko": "플로리다 해협"
+     "ko": "플로리다 해협",
+     "pl": "Cieśnina Florydzka",
+     "nl": "Straat Florida"
     },
     "id": "florida-strait"
    },
@@ -1188,7 +1704,9 @@
      "id": "Selat Taiwan",
      "it": "Stretto di Formosa",
      "ja": "台湾海峡",
-     "ko": "대만 해협"
+     "ko": "대만 해협",
+     "pl": "Cieśnina Tajwańska",
+     "nl": "Straat van Taiwan"
     },
     "id": "taiwan-strait"
    },
@@ -1208,7 +1726,9 @@
      "id": "Selat Bristol",
      "it": "Canale di Bristol",
      "ja": "ブリストル海峡",
-     "ko": "브리스틀 해협"
+     "ko": "브리스틀 해협",
+     "pl": "Kanał Bristolski",
+     "nl": "Kanaal van Bristol"
     },
     "id": "bristol-channel"
    },
@@ -1228,7 +1748,9 @@
      "id": "Selat Singapura",
      "it": "Stretto di Singapore",
      "ja": "シンガポール海峡",
-     "ko": "싱가포르 해협"
+     "ko": "싱가포르 해협",
+     "pl": "Cieśnina Singapurska",
+     "nl": "Straat Singapore"
     },
     "id": "singapore-strait"
    },
@@ -1248,7 +1770,9 @@
      "id": "Selat Gibraltar",
      "it": "stretto di Gibilterra",
      "ja": "ジブラルタル海峡",
-     "ko": "지브롤터 해협"
+     "ko": "지브롤터 해협",
+     "pl": "Cieśnina Gibraltarska",
+     "nl": "Straat van Gibraltar"
     },
     "id": "strait-of-gibraltar"
    }
@@ -1273,7 +1797,9 @@
      "id": "Danau Superior",
      "it": "lago Superiore",
      "ja": "スペリオル湖",
-     "ko": "슈피리어호"
+     "ko": "슈피리어호",
+     "pl": "Jezioro Górne",
+     "nl": "Bovenmeer"
     },
     "id": "lake-superior"
    },
@@ -1293,7 +1819,9 @@
      "id": "Danau Victoria",
      "it": "lago Vittoria",
      "ja": "ヴィクトリア湖",
-     "ko": "빅토리아호"
+     "ko": "빅토리아호",
+     "pl": "Jezioro Wiktorii",
+     "nl": "Victoriameer"
     },
     "id": "lake-victoria"
    },
@@ -1313,7 +1841,9 @@
      "id": "Danau Huron",
      "it": "lago Huron",
      "ja": "ヒューロン湖",
-     "ko": "휴런호"
+     "ko": "휴런호",
+     "pl": "Huron",
+     "nl": "Huronmeer"
     },
     "id": "lake-huron"
    },
@@ -1333,7 +1863,9 @@
      "id": "Danau Michigan",
      "it": "lago Michigan",
      "ja": "ミシガン湖",
-     "ko": "미시간호"
+     "ko": "미시간호",
+     "pl": "Michigan",
+     "nl": "Michiganmeer"
     },
     "id": "lake-michigan"
    },
@@ -1353,7 +1885,9 @@
      "id": "Danau Tanganyika",
      "it": "lago Tanganica",
      "ja": "タンガニーカ湖",
-     "ko": "탕가니카호"
+     "ko": "탕가니카호",
+     "pl": "Tanganika",
+     "nl": "Tanganyikameer"
     },
     "id": "lake-tanganyika"
    },
@@ -1373,7 +1907,9 @@
      "id": "Danau Baikal",
      "it": "lago Bajkal",
      "ja": "バイカル湖",
-     "ko": "바이칼호"
+     "ko": "바이칼호",
+     "pl": "Bajkał",
+     "nl": "Baikalmeer"
     },
     "id": "lake-baikal"
    },
@@ -1393,7 +1929,9 @@
      "id": "Danau Beruang Besar",
      "it": "Grande Lago degli Orsi",
      "ja": "グレートベア湖",
-     "ko": "그레이트베어호"
+     "ko": "그레이트베어호",
+     "pl": "Wielkie Jezioro Niedźwiedzie",
+     "nl": "Groot Berenmeer"
     },
     "id": "great-bear-lake"
    },
@@ -1413,7 +1951,9 @@
      "id": "Danau Malawi",
      "it": "lago Malawi",
      "ja": "マラウイ湖",
-     "ko": "말라위호"
+     "ko": "말라위호",
+     "pl": "Niasa",
+     "nl": "Malawimeer"
     },
     "id": "lake-malawi"
    },
@@ -1433,7 +1973,9 @@
      "id": "Danau Great Slave",
      "it": "Grande Lago degli Schiavi",
      "ja": "グレートスレーブ湖",
-     "ko": "그레이트슬레이브호"
+     "ko": "그레이트슬레이브호",
+     "pl": "Wielkie Jezioro Niewolnicze",
+     "nl": "Great Slave Lake"
     },
     "id": "great-slave-lake"
    },
@@ -1453,7 +1995,9 @@
      "id": "Danau Erie",
      "it": "lago Erie",
      "ja": "エリー湖",
-     "ko": "이리호"
+     "ko": "이리호",
+     "pl": "Erie",
+     "nl": "Eriemeer"
     },
     "id": "lake-erie"
    },
@@ -1473,7 +2017,9 @@
      "id": "Danau Winnipeg",
      "it": "Winnipeg",
      "ja": "ウィニペグ湖",
-     "ko": "위니펙호"
+     "ko": "위니펙호",
+     "pl": "Winnipeg",
+     "nl": "Winnipegmeer"
     },
     "id": "lake-winnipeg"
    },
@@ -1493,7 +2039,9 @@
      "id": "Danau Ontario",
      "it": "lago Ontario",
      "ja": "オンタリオ湖",
-     "ko": "온타리오호"
+     "ko": "온타리오호",
+     "pl": "Ontario",
+     "nl": "Ontariomeer"
     },
     "id": "lake-ontario"
    },
@@ -1513,7 +2061,9 @@
      "id": "Danau Ladoga",
      "it": "lago Ladoga",
      "ja": "ラドガ湖",
-     "ko": "라도가호"
+     "ko": "라도가호",
+     "pl": "Ładoga",
+     "nl": "Ladogameer"
     },
     "id": "lake-ladoga"
    },
@@ -1533,7 +2083,9 @@
      "id": "Danau Balkhash",
      "it": "lago Balqaš",
      "ja": "バルハシ湖",
-     "ko": "발하시호"
+     "ko": "발하시호",
+     "pl": "Bałchasz",
+     "nl": "Balkasjmeer"
     },
     "id": "lake-balkhash"
    },
@@ -1553,7 +2105,9 @@
      "id": "Danau Onega",
      "it": "lago Onega",
      "ja": "オネガ湖",
-     "ko": "오네가호"
+     "ko": "오네가호",
+     "pl": "Onega",
+     "nl": "Onegameer"
     },
     "id": "lake-onega"
    },
@@ -1573,7 +2127,9 @@
      "id": "Danau Athabasca",
      "it": "Athabasca",
      "ja": "アサバスカ湖",
-     "ko": "애서배스카호"
+     "ko": "애서배스카호",
+     "pl": "Athabaska",
+     "nl": "Athabascameer"
     },
     "id": "lake-athabasca"
    },
@@ -1593,7 +2149,9 @@
      "id": "Danau Titicaca",
      "it": "Titicaca",
      "ja": "チチカカ湖",
-     "ko": "티티카카호"
+     "ko": "티티카카호",
+     "pl": "Titicaca",
+     "nl": "Titicacameer"
     },
     "id": "titicaca"
    },
@@ -1613,7 +2171,9 @@
      "id": "Danau Nikaragua",
      "it": "Lago Nicaragua",
      "ja": "ニカラグア湖",
-     "ko": "니카라과호"
+     "ko": "니카라과호",
+     "pl": "Jezioro Nikaragua",
+     "nl": "Meer van Nicaragua"
     },
     "id": "lake-nicaragua"
    },
@@ -1633,7 +2193,9 @@
      "id": "Danau Turkana",
      "it": "lago Turkana",
      "ja": "トゥルカナ湖",
-     "ko": "투르카나호"
+     "ko": "투르카나호",
+     "pl": "Jezioro Rudolfa",
+     "nl": "Turkanameer"
     },
     "id": "lake-turkana"
    },
@@ -1653,7 +2215,9 @@
      "id": "Danau Reindeer",
      "it": "lago delle Renne",
      "ja": "レインディア湖",
-     "ko": "레인디어호"
+     "ko": "레인디어호",
+     "pl": "Jezioro Reniferowe",
+     "nl": "Reindeer Lake"
     },
     "id": "reindeer-lake"
    },
@@ -1673,7 +2237,9 @@
      "id": "Issyk Kul",
      "it": "Ysyk-Köl",
      "ja": "イシク・クル",
-     "ko": "이식쿨호"
+     "ko": "이식쿨호",
+     "pl": "Issyk-kul",
+     "nl": "Issyk Koelmeer"
     },
     "id": "issyk-kul"
    },
@@ -1693,7 +2259,9 @@
      "id": "Vänern",
      "it": "Vänern",
      "ja": "ヴェーネルン湖",
-     "ko": "베네른호"
+     "ko": "베네른호",
+     "pl": "Wener",
+     "nl": "Vänermeer"
     },
     "id": "vanern"
    },
@@ -1713,7 +2281,9 @@
      "id": "Danau Albert",
      "it": "lago Alberto",
      "ja": "アルバート湖",
-     "ko": "앨버트호"
+     "ko": "앨버트호",
+     "pl": "Jezioro Alberta",
+     "nl": "Albertmeer"
     },
     "id": "lake-albert"
    },
@@ -1733,7 +2303,9 @@
      "id": "Danau Nettilling",
      "it": "lago Nettilling",
      "ja": "ネチリング湖",
-     "ko": "네틸링호"
+     "ko": "네틸링호",
+     "pl": "Nettilling",
+     "nl": "Nettilling Lake"
     },
     "id": "nettilling-lake"
    },
@@ -1753,7 +2325,9 @@
      "id": "Danau Taymyr",
      "it": "lago Tajmyr",
      "ja": "タイミル湖",
-     "ko": "타이미르호"
+     "ko": "타이미르호",
+     "pl": "Tajmyr",
+     "nl": "Tajmyrmeer"
     },
     "id": "taymyr"
    },
@@ -1773,7 +2347,9 @@
      "id": "Danau Mweru",
      "it": "lago Mweru",
      "ja": "ムウェル湖",
-     "ko": "므웨루호"
+     "ko": "므웨루호",
+     "pl": "Mweru",
+     "nl": "Mwerumeer"
     },
     "id": "lake-mweru"
    },
@@ -1793,7 +2369,9 @@
      "id": "Danau Zaysan",
      "it": "lago Zajsan",
      "ja": "ザイサン湖",
-     "ko": "자이산호"
+     "ko": "자이산호",
+     "pl": "Zajsan",
+     "nl": "Zaysanmeer"
     },
     "id": "lake-zaysan"
    },
@@ -1813,7 +2391,9 @@
      "id": "Danau Nipigon",
      "it": "lago Nipigon",
      "ja": "ニピゴン湖",
-     "ko": "니피곤호"
+     "ko": "니피곤호",
+     "pl": "Nipigon",
+     "nl": "Nipigonmeer"
     },
     "id": "lake-nipigon"
    },
@@ -1833,7 +2413,9 @@
      "id": "Danau Cedar",
      "it": "Cedar Lake",
      "ja": "シーダー湖",
-     "ko": "시더 레이크"
+     "ko": "시더 레이크",
+     "pl": "Cedar",
+     "nl": "Cedar Lake"
     },
     "id": "cedar-lake"
    },
@@ -1853,7 +2435,9 @@
      "id": "Lake of the Woods",
      "it": "lago dei Boschi",
      "ja": "ウッズ湖",
-     "ko": "우즈호"
+     "ko": "우즈호",
+     "pl": "Jezioro Leśne",
+     "nl": "Lake of the Woods"
     },
     "id": "lake-of-the-woods"
    },
@@ -1873,7 +2457,9 @@
      "id": "Danau Urmia",
      "it": "lago di Urmia",
      "ja": "オルーミーイェ湖",
-     "ko": "우르미아호"
+     "ko": "우르미아호",
+     "pl": "Urmia",
+     "nl": "Urmiameer"
     },
     "id": "urmia-lake"
    },
@@ -1893,7 +2479,9 @@
      "id": "Danau Qinghai",
      "it": "lago Qinghai",
      "ja": "青海湖",
-     "ko": "칭하이호"
+     "ko": "칭하이호",
+     "pl": "Kuku-nor",
+     "nl": "Qinghaimeer"
     },
     "id": "qinghai-lake"
    },
@@ -1913,7 +2501,9 @@
      "id": "Danau Garam Besar",
      "it": "Gran Lago Salato",
      "ja": "グレートソルト湖",
-     "ko": "그레이트솔트호"
+     "ko": "그레이트솔트호",
+     "pl": "Wielkie Jezioro Słone",
+     "nl": "Great Salt Lake"
     },
     "id": "great-salt-lake"
    },
@@ -1933,7 +2523,9 @@
      "id": "Danau Khanka",
      "it": "lago Chanka",
      "ja": "ハンカ湖",
-     "ko": "한카호"
+     "ko": "한카호",
+     "pl": "Chanka",
+     "nl": "Chankameer"
     },
     "id": "khanka"
    },
@@ -1953,7 +2545,9 @@
      "id": "Danau Dubawnt",
      "it": "lago Dubawnt",
      "ja": "ドゥボーント湖",
-     "ko": "두번트 레이크"
+     "ko": "두번트 레이크",
+     "pl": "Dubawnt (jezioro)",
+     "nl": "Dubawnt Lake"
     },
     "id": "dubawnt-lake"
    }
@@ -1978,7 +2572,9 @@
      "id": "ISLANDIA",
      "it": "Islanda",
      "ja": "アイスランド島",
-     "ko": "아이슬란드섬"
+     "ko": "아이슬란드섬",
+     "pl": "Islandia",
+     "nl": "Islandia"
     },
     "id": "iceland"
    },
@@ -1998,7 +2594,9 @@
      "id": "Pulau Irlandia",
      "it": "Irlanda",
      "ja": "アイルランド島",
-     "ko": "아일랜드섬"
+     "ko": "아일랜드섬",
+     "pl": "Irlandia",
+     "nl": "Ierland"
     },
     "id": "ireland"
    },
@@ -2018,7 +2616,9 @@
      "id": "Madagascar",
      "it": "Madagascar",
      "ja": "マダガスカル島",
-     "ko": "마다가스카르섬"
+     "ko": "마다가스카르섬",
+     "pl": "MADAGASKAR",
+     "nl": "Madagaskar"
     },
     "id": "madagascar"
    },
@@ -2038,7 +2638,9 @@
      "id": "CUBA",
      "it": "Cuba",
      "ja": "キューバ島",
-     "ko": "쿠바섬"
+     "ko": "쿠바섬",
+     "pl": "Kuba",
+     "nl": "Cuba"
     },
     "id": "cuba"
    },
@@ -2058,7 +2660,9 @@
      "id": "SRI LANKA",
      "it": "Sri Lanka",
      "ja": "セイロン島",
-     "ko": "스리랑카섬"
+     "ko": "스리랑카섬",
+     "pl": "Cejlon",
+     "nl": "Sri Lanka"
     },
     "id": "sri-lanka"
    },
@@ -2078,7 +2682,9 @@
      "id": "Jamaika",
      "it": "Giamaica",
      "ja": "ジャマイカ島",
-     "ko": "자메이카"
+     "ko": "자메이카",
+     "pl": "Jamajka",
+     "nl": "Jamaica"
     },
     "id": "jamaica"
    },
@@ -2098,7 +2704,9 @@
      "id": "Greenland",
      "it": "Groenlandia",
      "ja": "グリーンランド",
-     "ko": "그린란드"
+     "ko": "그린란드",
+     "pl": "Grenlandia",
+     "nl": "Groenland"
     },
     "id": "greenland"
    },
@@ -2118,7 +2726,9 @@
      "id": "Sardinia",
      "it": "Sardegna",
      "ja": "サルデーニャ",
-     "ko": "사르데냐"
+     "ko": "사르데냐",
+     "pl": "Sardynia",
+     "nl": "Sardinië"
     },
     "id": "sardinia"
    },
@@ -2138,7 +2748,9 @@
      "id": "Korsika",
      "it": "Corsica",
      "ja": "コルシカ島",
-     "ko": "코르시카"
+     "ko": "코르시카",
+     "pl": "Korsyka",
+     "nl": "Corsica"
     },
     "id": "corsica"
    },
@@ -2158,7 +2770,9 @@
      "id": "Britania Raya",
      "it": "Gran Bretagna",
      "ja": "グレートブリテン島",
-     "ko": "그레이트브리튼섬"
+     "ko": "그레이트브리튼섬",
+     "pl": "Wielka Brytania",
+     "nl": "Groot-Brittannië"
     },
     "id": "great-britain"
    },
@@ -2178,7 +2792,9 @@
      "id": "Jawa",
      "it": "Giava",
      "ja": "ジャワ島",
-     "ko": "자와섬"
+     "ko": "자와섬",
+     "pl": "Jawa",
+     "nl": "Java"
     },
     "id": "java"
    },
@@ -2198,7 +2814,9 @@
      "id": "Hokkaido",
      "it": "Hokkaidō",
      "ja": "北海道",
-     "ko": "홋카이도"
+     "ko": "홋카이도",
+     "pl": "Hokkaido",
+     "nl": "Hokkaido"
     },
     "id": "hokkaido"
    },
@@ -2218,7 +2836,9 @@
      "id": "Sumatera",
      "it": "Sumatra",
      "ja": "スマトラ島",
-     "ko": "수마트라섬"
+     "ko": "수마트라섬",
+     "pl": "Sumatra",
+     "nl": "Sumatra"
     },
     "id": "sumatra"
    },
@@ -2238,7 +2858,9 @@
      "id": "Nova Scotia",
      "it": "Nuova Scozia",
      "ja": "ノバスコシア州",
-     "ko": "노바스코샤주"
+     "ko": "노바스코샤주",
+     "pl": "Nowa Szkocja",
+     "nl": "Nova Scotia"
     },
     "id": "nova-scotia"
    },
@@ -2258,7 +2880,9 @@
      "id": "Pulau Papua",
      "it": "Nuova Guinea",
      "ja": "ニューギニア島",
-     "ko": "뉴기니섬"
+     "ko": "뉴기니섬",
+     "pl": "Nowa Gwinea",
+     "nl": "Nieuw-Guinea"
     },
     "id": "new-guinea"
    },
@@ -2278,7 +2902,9 @@
      "id": "Kalimantan",
      "it": "Borneo",
      "ja": "ボルネオ島",
-     "ko": "보르네오"
+     "ko": "보르네오",
+     "pl": "Borneo",
+     "nl": "Borneo"
     },
     "id": "borneo"
    },
@@ -2298,7 +2924,9 @@
      "id": "Honshu",
      "it": "Honshū",
      "ja": "本州",
-     "ko": "혼슈"
+     "ko": "혼슈",
+     "pl": "Honsiu",
+     "nl": "Honshu"
     },
     "id": "honshu"
    },
@@ -2318,7 +2946,9 @@
      "id": "Kyushu",
      "it": "Kyūshū",
      "ja": "九州",
-     "ko": "규슈"
+     "ko": "규슈",
+     "pl": "Kiusiu",
+     "nl": "Kyushu"
     },
     "id": "kyushu"
    },
@@ -2338,7 +2968,9 @@
      "id": "Shikoku",
      "it": "Shikoku",
      "ja": "四国",
-     "ko": "시코쿠"
+     "ko": "시코쿠",
+     "pl": "Sikoku",
+     "nl": "Shikoku"
     },
     "id": "shikoku"
    },
@@ -2358,7 +2990,9 @@
      "id": "Sulawesi",
      "it": "Sulawesi",
      "ja": "スラウェシ島",
-     "ko": "술라웨시섬"
+     "ko": "술라웨시섬",
+     "pl": "Celebes",
+     "nl": "Sulawesi"
     },
     "id": "sulawesi"
    },
@@ -2378,7 +3012,9 @@
      "id": "Hispaniola",
      "it": "Hispaniola",
      "ja": "イスパニョーラ島",
-     "ko": "히스파니올라섬"
+     "ko": "히스파니올라섬",
+     "pl": "Haiti",
+     "nl": "Hispaniola"
     },
     "id": "hispaniola"
    },
@@ -2398,7 +3034,9 @@
      "id": "Luson",
      "it": "Luzon",
      "ja": "ルソン",
-     "ko": "루손섬"
+     "ko": "루손섬",
+     "pl": "Luzon",
+     "nl": "Luzon"
     },
     "id": "luzon"
    },
@@ -2418,7 +3056,9 @@
      "id": "Sakhalin",
      "it": "Sachalin",
      "ja": "樺太",
-     "ko": "사할린섬"
+     "ko": "사할린섬",
+     "pl": "Sachalin",
+     "nl": "Sachalin"
     },
     "id": "sakhalin"
    },
@@ -2438,7 +3078,9 @@
      "id": "pulau Mindanau",
      "it": "Mindanao",
      "ja": "ミンダナオ島",
-     "ko": "민다나오섬"
+     "ko": "민다나오섬",
+     "pl": "Mindanao",
+     "nl": "Mindanao"
     },
     "id": "mindanao"
    },
@@ -2458,7 +3100,9 @@
      "id": "Tierra del Fuego",
      "it": "Terra del Fuoco",
      "ja": "ティエラ・デル・フエゴ",
-     "ko": "티에라델푸에고 제도"
+     "ko": "티에라델푸에고 제도",
+     "pl": "Ziemia Ognista",
+     "nl": "Vuurland"
     },
     "id": "tierra-del-fuego"
    },
@@ -2478,7 +3122,9 @@
      "id": "Newfoundland",
      "it": "Terranova",
      "ja": "ニューファンドランド島",
-     "ko": "뉴펀들랜드(섬)"
+     "ko": "뉴펀들랜드(섬)",
+     "pl": "Nowa Fundlandia",
+     "nl": "Newfoundland"
     },
     "id": "newfoundland"
    },
@@ -2498,7 +3144,9 @@
      "id": "Pulau Timor",
      "it": "Timor",
      "ja": "ティモール島",
-     "ko": "티모르섬"
+     "ko": "티모르섬",
+     "pl": "Timor",
+     "nl": "Timor"
     },
     "id": "timor"
    },
@@ -2518,7 +3166,9 @@
      "id": "Pulau Utara",
      "it": "Isola del Nord",
      "ja": "北島",
-     "ko": "북섬"
+     "ko": "북섬",
+     "pl": "Wyspa Północna",
+     "nl": "Noordereiland"
     },
     "id": "north-island"
    },
@@ -2538,7 +3188,9 @@
      "id": "Pulau Selatan",
      "it": "Isola del Sud",
      "ja": "南島",
-     "ko": "남섬"
+     "ko": "남섬",
+     "pl": "Wyspa Południowa",
+     "nl": "Zuidereiland"
     },
     "id": "south-island"
    },
@@ -2558,7 +3210,9 @@
      "id": "Taiwan",
      "it": "Isola di Formosa",
      "ja": "台湾",
-     "ko": "대만"
+     "ko": "대만",
+     "pl": "Tajwan",
+     "nl": "Taiwan"
     },
     "id": "taiwan-island"
    },
@@ -2578,7 +3232,9 @@
      "id": "Pulau Baffin",
      "it": "Isola di Baffin",
      "ja": "バフィン島",
-     "ko": "배핀섬"
+     "ko": "배핀섬",
+     "pl": "Ziemia Baffina",
+     "nl": "Baffineiland"
     },
     "id": "baffin-island"
    },
@@ -2598,7 +3254,9 @@
      "id": "Ellesmere",
      "it": "isola di Ellesmere",
      "ja": "エルズミーア島",
-     "ko": "엘즈미어섬"
+     "ko": "엘즈미어섬",
+     "pl": "Wyspa Ellesmere'a",
+     "nl": "Ellesmere-eiland"
     },
     "id": "ellesmere-island"
    },
@@ -2618,7 +3276,9 @@
      "id": "Pulau Vancouver",
      "it": "isola di Vancouver",
      "ja": "バンクーバー島",
-     "ko": "밴쿠버섬"
+     "ko": "밴쿠버섬",
+     "pl": "Vancouver",
+     "nl": "Vancouvereiland"
     },
     "id": "vancouver-island"
    },
@@ -2638,7 +3298,9 @@
      "id": "Trinidad",
      "it": "Trinidad",
      "ja": "トリニダード島",
-     "ko": "트리니다드섬"
+     "ko": "트리니다드섬",
+     "pl": "Trynidad",
+     "nl": "Trinidad"
     },
     "id": "trinidad"
    },
@@ -2658,7 +3320,9 @@
      "id": "Pulau Victoria",
      "it": "Isola Victoria",
      "ja": "ビクトリア島",
-     "ko": "빅토리아섬"
+     "ko": "빅토리아섬",
+     "pl": "Wyspa Wiktorii",
+     "nl": "Victoria-eiland"
     },
     "id": "victoria-island"
    },
@@ -2678,7 +3342,9 @@
      "id": "Pulau Tanjung Breton",
      "it": "isola del Capo Bretone",
      "ja": "ケープ・ブレトン島",
-     "ko": "케이프브레튼 섬"
+     "ko": "케이프브레튼 섬",
+     "pl": "Cape Breton",
+     "nl": "Cape Bretoneiland"
     },
     "id": "cape-breton-island"
    },
@@ -2698,7 +3364,9 @@
      "id": "Pulau Banks",
      "it": "isola di Banks",
      "ja": "バンクス島",
-     "ko": "뱅크스섬"
+     "ko": "뱅크스섬",
+     "pl": "Wyspa Banksa",
+     "nl": "Bankseiland"
     },
     "id": "banks-island"
    },
@@ -2718,7 +3386,9 @@
      "id": "Pulau Aleksander",
      "it": "isola Alessandro I",
      "ja": "アレクサンダー島",
-     "ko": "알렉산더섬"
+     "ko": "알렉산더섬",
+     "pl": "Wyspa Aleksandra",
+     "nl": "Alexandereiland"
     },
     "id": "alexander-island"
    },
@@ -2738,7 +3408,9 @@
      "id": "Pulau Halmahera",
      "it": "Halmahera",
      "ja": "ハルマヘラ島",
-     "ko": "할마헤라섬"
+     "ko": "할마헤라섬",
+     "pl": "Halmahera",
+     "nl": "Halmahera"
     },
     "id": "halmahera-island"
    },
@@ -2758,7 +3430,9 @@
      "id": "Mindoro",
      "it": "Mindoro",
      "ja": "ミンドロ島",
-     "ko": "민도로섬"
+     "ko": "민도로섬",
+     "pl": "Mindoro",
+     "nl": "Mindoro"
     },
     "id": "mindoro"
    }
@@ -2783,7 +3457,9 @@
      "id": "Jepang",
      "it": "Giappone",
      "ja": "日本",
-     "ko": "일본"
+     "ko": "일본",
+     "pl": "Japonia",
+     "nl": "Japan"
     },
     "id": "japan"
    },
@@ -2803,7 +3479,9 @@
      "id": "Selandia Baru",
      "it": "Nuova Zelanda",
      "ja": "ニュージーランド",
-     "ko": "뉴질랜드"
+     "ko": "뉴질랜드",
+     "pl": "Nowa Zelandia",
+     "nl": "Nieuw-Zeeland"
     },
     "id": "new-zealand"
    },
@@ -2823,7 +3501,9 @@
      "id": "Filipina",
      "it": "Filippine",
      "ja": "フィリピン",
-     "ko": "필리핀"
+     "ko": "필리핀",
+     "pl": "Filipiny",
+     "nl": "Filipijnen"
     },
     "id": "philippines"
    },
@@ -2843,7 +3523,9 @@
      "id": "Tanjung Verde",
      "it": "Capo Verde",
      "ja": "カーボベルデ",
-     "ko": "카보베르데"
+     "ko": "카보베르데",
+     "pl": "Republika Zielonego Przylądka",
+     "nl": "Kaapverdië"
     },
     "id": "cape-verde"
    },
@@ -2863,7 +3545,9 @@
      "id": "Fiji",
      "it": "Figi",
      "ja": "フィジー",
-     "ko": "피지"
+     "ko": "피지",
+     "pl": "Fidżi",
+     "nl": "Fiji"
     },
     "id": "fiji"
    },
@@ -2883,7 +3567,9 @@
      "id": "Seychelles",
      "it": "Seychelles",
      "ja": "セーシェル",
-     "ko": "세이셸"
+     "ko": "세이셸",
+     "pl": "Seszele",
+     "nl": "Seychellen"
     },
     "id": "seychelles"
    },
@@ -2903,7 +3589,9 @@
      "id": "KEPULAUAN TONGA",
      "it": "Tonga",
      "ja": "トンガ島",
-     "ko": "통가 아일랜즈"
+     "ko": "통가 아일랜즈",
+     "pl": "Wyspy Tonga",
+     "nl": "Tonga (eilandengroep)"
     },
     "id": "tonga"
    },
@@ -2923,7 +3611,9 @@
      "id": "Kiribati",
      "it": "Kiribati",
      "ja": "キリバス",
-     "ko": "키리바시"
+     "ko": "키리바시",
+     "pl": "Kiribati",
+     "nl": "Kiribati"
     },
     "id": "kiribati"
    },
@@ -2943,7 +3633,9 @@
      "id": "Kepulauan Solomon",
      "it": "isole Salomone",
      "ja": "ソロモン諸島",
-     "ko": "솔로몬 아일랜즈"
+     "ko": "솔로몬 아일랜즈",
+     "pl": "Wyspy Salomona",
+     "nl": "Salomonseilanden"
     },
     "id": "solomon-islands"
    },
@@ -2963,7 +3655,9 @@
      "id": "Kepulauan Marshall",
      "it": "Isole Marshall",
      "ja": "マーシャル諸島",
-     "ko": "마셜 제도"
+     "ko": "마셜 제도",
+     "pl": "Wyspy Marshalla",
+     "nl": "Marshalleilanden"
     },
     "id": "marshall-islands"
    },
@@ -2983,7 +3677,9 @@
      "id": "Mikronesia",
      "it": "Micronesia",
      "ja": "ミクロネシア",
-     "ko": "미크로네시아"
+     "ko": "미크로네시아",
+     "pl": "Mikronezja",
+     "nl": "Micronesië"
     },
     "id": "micronesia"
    },
@@ -3003,7 +3699,9 @@
      "id": "Kepulauan Kanaria",
      "it": "Isole Canarie",
      "ja": "カナリア諸島",
-     "ko": "카나리아 제도"
+     "ko": "카나리아 제도",
+     "pl": "Wyspy Kanaryjskie",
+     "nl": "Canarische Eilanden"
     },
     "id": "canary-islands"
    },
@@ -3023,7 +3721,9 @@
      "id": "Kepulauan Balearik",
      "it": "isole Baleari",
      "ja": "バレアレス諸島",
-     "ko": "발레아레스 제도"
+     "ko": "발레아레스 제도",
+     "pl": "Baleary",
+     "nl": "Balearen"
     },
     "id": "balearic-islands"
    },
@@ -3043,7 +3743,9 @@
      "id": "Svalbard",
      "it": "Svalbard",
      "ja": "スヴァールバル諸島",
-     "ko": "스발바르 제도"
+     "ko": "스발바르 제도",
+     "pl": "Svalbard",
+     "nl": "Spitsbergen"
     },
     "id": "svalbard"
    },
@@ -3063,7 +3765,9 @@
      "id": "Polinesia",
      "it": "Polinesia",
      "ja": "ポリネシア",
-     "ko": "폴리네시아"
+     "ko": "폴리네시아",
+     "pl": "Polinezja",
+     "nl": "Polynesië"
     },
     "id": "polynesia"
    },
@@ -3083,7 +3787,9 @@
      "id": "Melanesia",
      "it": "Melanesia",
      "ja": "メラネシア",
-     "ko": "멜라네시아"
+     "ko": "멜라네시아",
+     "pl": "Melanezja",
+     "nl": "Melanesië"
     },
     "id": "melanesia"
    },
@@ -3103,7 +3809,9 @@
      "id": "Azores",
      "it": "Azzorre",
      "ja": "アゾレス諸島",
-     "ko": "아소르스 제도"
+     "ko": "아소르스 제도",
+     "pl": "Azory",
+     "nl": "Azoren"
     },
     "id": "azores"
    },
@@ -3123,7 +3831,9 @@
      "id": "Kepulauan Britania",
      "it": "Isole britanniche",
      "ja": "ブリテン諸島",
-     "ko": "브리튼 제도"
+     "ko": "브리튼 제도",
+     "pl": "Wyspy Brytyjskie",
+     "nl": "Britse Eilanden"
     },
     "id": "british-isles"
    },
@@ -3143,7 +3853,9 @@
      "id": "Kepulauan Maluku",
      "it": "Molucche",
      "ja": "モルッカ諸島",
-     "ko": "말루쿠 제도"
+     "ko": "말루쿠 제도",
+     "pl": "Moluki",
+     "nl": "Molukken"
     },
     "id": "maluku-islands"
    },
@@ -3163,7 +3875,9 @@
      "id": "Kepulauan Kuril",
      "it": "Isole Curili",
      "ja": "千島列島",
-     "ko": "쿠릴 열도"
+     "ko": "쿠릴 열도",
+     "pl": "Wyspy Kurylskie",
+     "nl": "Koerilen"
     },
     "id": "kuril-islands"
    },
@@ -3183,7 +3897,9 @@
      "id": "Kepulauan Nusa Tenggara",
      "it": "Piccole Isole della Sonda",
      "ja": "小スンダ列島",
-     "ko": "소순다 열도"
+     "ko": "소순다 열도",
+     "pl": "Małe Wyspy Sundajskie",
+     "nl": "Kleine Sunda-eilanden"
     },
     "id": "lesser-sunda-islands"
    },
@@ -3203,7 +3919,9 @@
      "id": "Antilles Kecil",
      "it": "Piccole Antille",
      "ja": "小アンティル諸島",
-     "ko": "소앤틸리스 제도"
+     "ko": "소앤틸리스 제도",
+     "pl": "Małe Antyle",
+     "nl": "Kleine Antillen"
     },
     "id": "lesser-antilles"
    },
@@ -3223,7 +3941,9 @@
      "id": "Kepulauan Zemlya Baru",
      "it": "Novaja Zemlja",
      "ja": "ノヴァヤゼムリャ",
-     "ko": "노바야제믈랴 제도"
+     "ko": "노바야제믈랴 제도",
+     "pl": "Nowa Ziemia",
+     "nl": "Nova Zembla"
     },
     "id": "novaya-zemlya"
    },
@@ -3243,7 +3963,9 @@
      "id": "Antilles Besar",
      "it": "Grandi Antille",
      "ja": "大アンティル諸島",
-     "ko": "대앤틸리스 제도"
+     "ko": "대앤틸리스 제도",
+     "pl": "Wielkie Antyle",
+     "nl": "Grote Antillen"
     },
     "id": "greater-antilles"
    },
@@ -3263,7 +3985,9 @@
      "id": "Pulau Okinawa",
      "it": "isola di Okinawa",
      "ja": "沖縄本島",
-     "ko": "오키나와섬"
+     "ko": "오키나와섬",
+     "pl": "Okinawa",
+     "nl": "Okinawa"
     },
     "id": "okinawa"
    },
@@ -3283,7 +4007,9 @@
      "id": "Kepulauan Melayu",
      "it": "arcipelago malese",
      "ja": "マレー諸島",
-     "ko": "말레이 제도"
+     "ko": "말레이 제도",
+     "pl": "Archipelag Malajski",
+     "nl": "Maleise archipel"
     },
     "id": "malay-archipelago"
    },
@@ -3303,7 +4029,9 @@
      "id": "Kepulauan Aleut",
      "it": "Isole Aleutine",
      "ja": "アリューシャン列島",
-     "ko": "알류샨 열도"
+     "ko": "알류샨 열도",
+     "pl": "Aleuty",
+     "nl": "Aleoeten"
     },
     "id": "aleutian-islands"
    },
@@ -3323,7 +4051,9 @@
      "id": "Hindia Barat",
      "it": "Indie occidentali",
      "ja": "西インド諸島",
-     "ko": "서인도 제도"
+     "ko": "서인도 제도",
+     "pl": "Indie Zachodnie",
+     "nl": "West-Indië"
     },
     "id": "west-indies"
    },
@@ -3343,7 +4073,9 @@
      "id": "Kepulauan Hawaii",
      "it": "Isole delle Hawaii",
      "ja": "ハワイ諸島",
-     "ko": "하와이 제도"
+     "ko": "하와이 제도",
+     "pl": "Hawaje",
+     "nl": "Hawaïaanse eilanden"
     },
     "id": "hawaiian-islands"
    },
@@ -3363,7 +4095,9 @@
      "id": "Daratan Franz Josef",
      "it": "Terra di Francesco Giuseppe",
      "ja": "ゼムリャフランツァヨシファ",
-     "ko": "제믈랴프란차이오시파 제도"
+     "ko": "제믈랴프란차이오시파 제도",
+     "pl": "Ziemia Franciszka Józefa",
+     "nl": "Frans Jozefland"
     },
     "id": "franz-josef-land"
    },
@@ -3383,7 +4117,9 @@
      "id": "Andaman",
      "it": "Andamane",
      "ja": "アンダマン諸島",
-     "ko": "안다만 제도"
+     "ko": "안다만 제도",
+     "pl": "Andamany",
+     "nl": "Andamanen"
     },
     "id": "andaman-islands"
    }
@@ -3408,7 +4144,9 @@
      "id": "Alaska",
      "it": "Alaska",
      "ja": "アラスカ州",
-     "ko": "알래스카주"
+     "ko": "알래스카주",
+     "pl": "Alaska",
+     "nl": "Alaska"
     },
     "id": "alaska"
    },
@@ -3428,7 +4166,9 @@
      "id": "Florida",
      "it": "Florida",
      "ja": "フロリダ州",
-     "ko": "플로리다주"
+     "ko": "플로리다주",
+     "pl": "Floryda",
+     "nl": "Florida"
     },
     "id": "florida"
    },
@@ -3448,7 +4188,9 @@
      "id": "Krimea",
      "it": "Crimea",
      "ja": "クリミア半島",
-     "ko": "크림반도"
+     "ko": "크림반도",
+     "pl": "Półwysep Krymski",
+     "nl": "Krim"
     },
     "id": "crimea"
    },
@@ -3468,7 +4210,9 @@
      "id": "Balkan",
      "it": "penisola balcanica",
      "ja": "バルカン半島",
-     "ko": "발칸반도"
+     "ko": "발칸반도",
+     "pl": "Półwysep Bałkański",
+     "nl": "Balkan"
     },
     "id": "balkans"
    },
@@ -3488,7 +4232,9 @@
      "id": "Siberia",
      "it": "Siberia",
      "ja": "シベリア",
-     "ko": "시베리아"
+     "ko": "시베리아",
+     "pl": "Syberia",
+     "nl": "Siberië"
     },
     "id": "siberia"
    },
@@ -3508,7 +4254,9 @@
      "id": "Mesopotamia",
      "it": "Mesopotamia",
      "ja": "メソポタミア",
-     "ko": "메소포타미아"
+     "ko": "메소포타미아",
+     "pl": "Mezopotamia",
+     "nl": "Mesopotamië"
     },
     "id": "mesopotamia"
    },
@@ -3528,7 +4276,9 @@
      "id": "Skandinavia",
      "it": "Scandinavia",
      "ja": "スカンディナヴィア",
-     "ko": "스칸디나비아"
+     "ko": "스칸디나비아",
+     "pl": "Skandynawia",
+     "nl": "Scandinavië"
     },
     "id": "scandinavia"
    },
@@ -3548,7 +4298,9 @@
      "id": "Iberia",
      "it": "penisola iberica",
      "ja": "イベリア半島",
-     "ko": "이베리아반도"
+     "ko": "이베리아반도",
+     "pl": "Półwysep Iberyjski",
+     "nl": "Iberisch Schiereiland"
     },
     "id": "iberian-peninsula"
    },
@@ -3568,7 +4320,9 @@
      "id": "Semenanjung Arab",
      "it": "penisola araba",
      "ja": "アラビア半島",
-     "ko": "아라비아반도"
+     "ko": "아라비아반도",
+     "pl": "Półwysep Arabski",
+     "nl": "Arabisch schiereiland"
     },
     "id": "arabian-peninsula"
    },
@@ -3588,7 +4342,9 @@
      "id": "Anatolia",
      "it": "Anatolia",
      "ja": "アナトリア",
-     "ko": "아나톨리아"
+     "ko": "아나톨리아",
+     "pl": "Anatolia",
+     "nl": "Anatolië"
     },
     "id": "anatolia"
    },
@@ -3608,7 +4364,9 @@
      "id": "Tanduk Afrika",
      "it": "Corno d'Africa",
      "ja": "アフリカの角",
-     "ko": "아프리카의 뿔"
+     "ko": "아프리카의 뿔",
+     "pl": "Półwysep Somalijski",
+     "nl": "Hoorn van Afrika"
     },
     "id": "horn-of-africa"
    },
@@ -3628,7 +4386,9 @@
      "id": "anak benua India",
      "it": "subcontinente indiano",
      "ja": "インド亜大陸",
-     "ko": "인도 아대륙"
+     "ko": "인도 아대륙",
+     "pl": "subkontynent indyjski",
+     "nl": "Indiaas subcontinent"
     },
     "id": "indian-subcontinent"
    },
@@ -3648,7 +4408,9 @@
      "id": "Semenanjung Kamchatka",
      "it": "Camciatca",
      "ja": "カムチャツカ半島",
-     "ko": "캄차카 반도"
+     "ko": "캄차카 반도",
+     "pl": "Kamczatka",
+     "nl": "Kamtsjatka"
     },
     "id": "kamchatka-peninsula"
    },
@@ -3668,7 +4430,9 @@
      "id": "Patagonia",
      "it": "Patagonia",
      "ja": "パタゴニア",
-     "ko": "파타고니아"
+     "ko": "파타고니아",
+     "pl": "Patagonia",
+     "nl": "Patagonië"
     },
     "id": "patagonia"
    },
@@ -3688,7 +4452,9 @@
      "id": "Semenanjung Yukatan",
      "it": "Penisola dello Yucatán",
      "ja": "ユカタン半島",
-     "ko": "유카탄반도"
+     "ko": "유카탄반도",
+     "pl": "Jukatan",
+     "nl": "Yucatán"
     },
     "id": "yucatan-peninsula"
    },
@@ -3708,7 +4474,9 @@
      "id": "Jutland",
      "it": "Jutland",
      "ja": "ユトランド半島",
-     "ko": "윌란반도"
+     "ko": "윌란반도",
+     "pl": "Jutlandia",
+     "nl": "Jutland"
     },
     "id": "jutland"
    },
@@ -3728,7 +4496,9 @@
      "id": "Semenanjung Korea",
      "it": "Penisola coreana",
      "ja": "朝鮮半島",
-     "ko": "한반도"
+     "ko": "한반도",
+     "pl": "Półwysep Koreański",
+     "nl": "Koreaans Schiereiland"
     },
     "id": "korean-peninsula"
    },
@@ -3748,7 +4518,9 @@
      "id": "Semenanjung Malaya",
      "it": "penisola malese",
      "ja": "マレー半島",
-     "ko": "말레이반도"
+     "ko": "말레이반도",
+     "pl": "Półwysep Malajski",
+     "nl": "Malakka"
     },
     "id": "malay-peninsula"
    },
@@ -3768,7 +4540,9 @@
      "id": "Great Plains",
      "it": "Grandi Pianure",
      "ja": "グレートプレーンズ",
-     "ko": "그레이트플레인스"
+     "ko": "그레이트플레인스",
+     "pl": "Wielkie Równiny",
+     "nl": "Great Plains"
     },
     "id": "great-plains"
    },
@@ -3788,7 +4562,9 @@
      "id": "Dataran Tinggi Tibet",
      "it": "altopiano del Tibet",
      "ja": "チベット高原",
-     "ko": "티베트고원"
+     "ko": "티베트고원",
+     "pl": "Wyżyna Tybetańska",
+     "nl": "Tibetaans Hoogland"
     },
     "id": "tibetan-plateau"
    },
@@ -3808,7 +4584,9 @@
      "id": "Semenanjung Baja California",
      "it": "Penisola di Bassa California",
      "ja": "バハ・カリフォルニア半島",
-     "ko": "바하칼리포르니아반도"
+     "ko": "바하칼리포르니아반도",
+     "pl": "Półwysep Kalifornijski",
+     "nl": "Neder-Californië"
     },
     "id": "baja-california-peninsula"
    },
@@ -3828,7 +4606,9 @@
      "id": "Laplandia",
      "it": "Lapponia",
      "ja": "ラッピ県",
-     "ko": "라피 지역"
+     "ko": "라피 지역",
+     "pl": "Laponia",
+     "nl": "Lapland"
     },
     "id": "lapland"
    },
@@ -3848,7 +4628,9 @@
      "id": "Semenanjung Kola",
      "it": "penisola di Kola",
      "ja": "コラ半島",
-     "ko": "콜라반도"
+     "ko": "콜라반도",
+     "pl": "Półwysep Kolski",
+     "nl": "Kola"
     },
     "id": "kola-peninsula"
    },
@@ -3868,7 +4650,9 @@
      "id": "Balochistan",
      "it": "Belucistan",
      "ja": "バルーチスターン",
-     "ko": "발루치스탄"
+     "ko": "발루치스탄",
+     "pl": "Beludżystan",
+     "nl": "Beloetsjistan"
     },
     "id": "balochistan"
    },
@@ -3888,7 +4672,9 @@
      "id": "Dataran Tinggi Dekkan",
      "it": "altopiano del Deccan",
      "ja": "デカン高原",
-     "ko": "데칸고원"
+     "ko": "데칸고원",
+     "pl": "Dekan",
+     "nl": "Hoogland van Dekan"
     },
     "id": "deccan-plateau"
    },
@@ -3908,7 +4694,9 @@
      "id": "Pampa",
      "it": "Pampa",
      "ja": "パンパ",
-     "ko": "팜파스"
+     "ko": "팜파스",
+     "pl": "Pampa",
+     "nl": "Pampa's"
     },
     "id": "pampa"
    },
@@ -3928,7 +4716,9 @@
      "id": "Semenanjung Taymyr",
      "it": "penisola del Tajmyr",
      "ja": "タイミル半島",
-     "ko": "타이미르반도"
+     "ko": "타이미르반도",
+     "pl": "Tajmyr",
+     "nl": "Tajmyr-schiereiland"
     },
     "id": "taymyr-peninsula"
    },
@@ -3948,7 +4738,9 @@
      "id": "Semenanjung Chukotka",
      "it": "Penisola dei Ciukci",
      "ja": "チュクチ半島",
-     "ko": "축치반도"
+     "ko": "축치반도",
+     "pl": "Półwysep Czukocki",
+     "nl": "Tsjoektsjenschiereiland"
     },
     "id": "chukchi-peninsula"
    },
@@ -3968,7 +4760,9 @@
      "id": "Dataran Rendah Indo-Gangga",
      "it": "pianura indo-gangetica",
      "ja": "ヒンドスタン平野",
-     "ko": "힌두스탄 평원"
+     "ko": "힌두스탄 평원",
+     "pl": "Nizina Hindustańska",
+     "nl": "Indus-Gangesvlakte"
     },
     "id": "indo-gangetic-plain"
    },
@@ -3988,7 +4782,9 @@
      "id": "altiplano",
      "it": "Altiplano",
      "ja": "アルティプラーノ",
-     "ko": "알티플라노고원"
+     "ko": "알티플라노고원",
+     "pl": "Altiplano",
+     "nl": "hoogland van Bolivia"
     },
     "id": "altiplano"
    },
@@ -4008,7 +4804,9 @@
      "id": "Semenanjung Tanjung York",
      "it": "Penisola di Capo York",
      "ja": "ヨーク岬半島",
-     "ko": "케이프요크반도"
+     "ko": "케이프요크반도",
+     "pl": "Jork",
+     "nl": "Kaap York-schiereiland"
     },
     "id": "cape-york-peninsula"
    },
@@ -4028,7 +4826,9 @@
      "id": "Cekungan Tarim",
      "it": "Bacino del Tarim",
      "ja": "タリム盆地",
-     "ko": "타리무 분지"
+     "ko": "타리무 분지",
+     "pl": "Kotlina Kaszgarska",
+     "nl": "Tarimbekken"
     },
     "id": "tarim-basin"
    },
@@ -4048,7 +4848,9 @@
      "id": "Semenanjung Alaska",
      "it": "Penisola di Alaska",
      "ja": "アラスカ半島",
-     "ko": "알래스카반도"
+     "ko": "알래스카반도",
+     "pl": "Alaska",
+     "nl": "Alaska-schiereiland"
     },
     "id": "alaska-peninsula"
    },
@@ -4068,7 +4870,9 @@
      "id": "Dataran Tinggi Siberia Tengah",
      "it": "altopiano della Siberia centrale",
      "ja": "中央シベリア高原",
-     "ko": "중앙시베리아고원"
+     "ko": "중앙시베리아고원",
+     "pl": "Wyżyna Środkowosyberyjska",
+     "nl": "Midden-Siberisch Bergland"
     },
     "id": "central-siberian-plateau"
    },
@@ -4088,7 +4892,9 @@
      "id": "Semenanjung Valdés",
      "it": "Penisola di Valdés",
      "ja": "バルデス半島",
-     "ko": "발데스반도"
+     "ko": "발데스반도",
+     "pl": "Półwysep Valdés",
+     "nl": "Valdés"
     },
     "id": "valdes-peninsula"
    }
@@ -4113,7 +4919,9 @@
      "id": "Alpen",
      "it": "Alpi",
      "ja": "アルプス山脈",
-     "ko": "알프스산맥"
+     "ko": "알프스산맥",
+     "pl": "Alpy",
+     "nl": "Alpen"
     },
     "id": "alps"
    },
@@ -4133,7 +4941,9 @@
      "id": "Himalaya",
      "it": "Himalaya",
      "ja": "ヒマラヤ山脈",
-     "ko": "히말라야산맥"
+     "ko": "히말라야산맥",
+     "pl": "Himalaje",
+     "nl": "Himalaya"
     },
     "id": "himalayas"
    },
@@ -4153,7 +4963,9 @@
      "id": "Andes",
      "it": "Ande",
      "ja": "アンデス山脈",
-     "ko": "안데스산맥"
+     "ko": "안데스산맥",
+     "pl": "Andy",
+     "nl": "Andes"
     },
     "id": "andes"
    },
@@ -4173,7 +4985,9 @@
      "id": "Pegunungan Rocky",
      "it": "Montagne Rocciose",
      "ja": "ロッキー山脈",
-     "ko": "로키산맥"
+     "ko": "로키산맥",
+     "pl": "Góry Skaliste",
+     "nl": "Rocky Mountains"
     },
     "id": "rocky-mountains"
    },
@@ -4193,7 +5007,9 @@
      "id": "Pegunungan Ural",
      "it": "Urali",
      "ja": "ウラル山脈",
-     "ko": "우랄산맥"
+     "ko": "우랄산맥",
+     "pl": "Ural",
+     "nl": "Oeral"
     },
     "id": "ural-mountains"
    },
@@ -4213,7 +5029,9 @@
      "id": "Pirenia",
      "it": "Pirenei",
      "ja": "ピレネー山脈",
-     "ko": "피레네산맥"
+     "ko": "피레네산맥",
+     "pl": "Pireneje",
+     "nl": "Pyreneeën"
     },
     "id": "pyrenees"
    },
@@ -4233,7 +5051,9 @@
      "id": "Pegunungan Karpatia",
      "it": "Carpazi",
      "ja": "カルパティア山脈",
-     "ko": "카르파티아산맥"
+     "ko": "카르파티아산맥",
+     "pl": "Karpaty",
+     "nl": "Karpaten"
     },
     "id": "carpathians"
    },
@@ -4253,7 +5073,9 @@
      "id": "Pegunungan Kaukasus",
      "it": "Catena del Caucaso",
      "ja": "コーカサス山脈",
-     "ko": "캅카스산맥"
+     "ko": "캅카스산맥",
+     "pl": "Kaukaz",
+     "nl": "Kaukasus"
     },
     "id": "caucasus-mountains"
    },
@@ -4273,7 +5095,9 @@
      "id": "Hindu Kush",
      "it": "Hindu Kush",
      "ja": "ヒンドゥークシュ山脈",
-     "ko": "힌두쿠시산맥"
+     "ko": "힌두쿠시산맥",
+     "pl": "Hindukusz",
+     "nl": "Hindoekoesj"
     },
     "id": "hindu-kush"
    },
@@ -4293,7 +5117,9 @@
      "id": "Karakoram",
      "it": "Karakorum",
      "ja": "カラコルム山脈",
-     "ko": "카라코람산맥"
+     "ko": "카라코람산맥",
+     "pl": "Karakorum",
+     "nl": "Karakoram"
     },
     "id": "karakoram"
    },
@@ -4313,7 +5139,9 @@
      "id": "Pegunungan Appalachia",
      "it": "Appalachi",
      "ja": "アパラチア山脈",
-     "ko": "애팔래치아산맥"
+     "ko": "애팔래치아산맥",
+     "pl": "Appalachy",
+     "nl": "Appalachen"
     },
     "id": "appalachian-mountains"
    },
@@ -4333,7 +5161,9 @@
      "id": "Pegunungan Atlas",
      "it": "Atlante",
      "ja": "アトラス山脈",
-     "ko": "아틀라스산맥"
+     "ko": "아틀라스산맥",
+     "pl": "Atlas",
+     "nl": "Atlasgebergte"
     },
     "id": "atlas-mountains"
    },
@@ -4353,7 +5183,9 @@
      "id": "Tian Shan",
      "it": "Tien Shan",
      "ja": "天山山脈",
-     "ko": "톈산산맥"
+     "ko": "톈산산맥",
+     "pl": "Tienszan",
+     "nl": "Tiensjan"
     },
     "id": "tianshan-mountains"
    },
@@ -4373,7 +5205,9 @@
      "id": "Pegunungan Pamir",
      "it": "Pamir",
      "ja": "パミール高原",
-     "ko": "파미르고원"
+     "ko": "파미르고원",
+     "pl": "Pamir",
+     "nl": "Pamir"
     },
     "id": "pamir-mountains"
    },
@@ -4393,7 +5227,9 @@
      "id": "Pegunungan Altai",
      "it": "Monti Altaj",
      "ja": "アルタイ山脈",
-     "ko": "알타이산맥"
+     "ko": "알타이산맥",
+     "pl": "Ałtaj",
+     "nl": "Altaj"
     },
     "id": "altai-mountains"
    },
@@ -4413,7 +5249,9 @@
      "id": "Zagros",
      "it": "Monti Zagros",
      "ja": "ザグロス山脈",
-     "ko": "자그로스산맥"
+     "ko": "자그로스산맥",
+     "pl": "Zagros",
+     "nl": "Zagrosgebergte"
     },
     "id": "zagros-mountains"
    },
@@ -4433,7 +5271,9 @@
      "id": "Ghat Barat",
      "it": "Ghati occidentali",
      "ja": "西ガーツ山脈",
-     "ko": "웨스턴 고츠"
+     "ko": "웨스턴 고츠",
+     "pl": "Ghaty Zachodnie",
+     "nl": "West-Ghats"
     },
     "id": "western-ghats"
    },
@@ -4453,7 +5293,9 @@
      "id": "Pegunungan Balkan",
      "it": "Monti Balcani",
      "ja": "バルカン山脈",
-     "ko": "발칸산맥"
+     "ko": "발칸산맥",
+     "pl": "Stara Płanina",
+     "nl": "Balkangebergte"
     },
     "id": "balkan-mountains"
    },
@@ -4473,7 +5315,9 @@
      "id": "Pegunungan Sierra Nevada",
      "it": "Sierra Nevada",
      "ja": "シエラネバダ山脈",
-     "ko": "시에라네바다산맥"
+     "ko": "시에라네바다산맥",
+     "pl": "Sierra Nevada",
+     "nl": "Sierra Nevada"
     },
     "id": "sierra-nevada"
    },
@@ -4493,7 +5337,9 @@
      "id": "Alborz",
      "it": "Elburz",
      "ja": "アルボルズ山脈",
-     "ko": "엘부르즈산맥"
+     "ko": "엘부르즈산맥",
+     "pl": "Elburs",
+     "nl": "Elboers"
     },
     "id": "alborz"
    },
@@ -4513,7 +5359,9 @@
      "id": "Pegunungan Kunlun",
      "it": "Kunlun",
      "ja": "崑崙山脈",
-     "ko": "쿤룬산맥"
+     "ko": "쿤룬산맥",
+     "pl": "Kunlun",
+     "nl": "Kunlun"
     },
     "id": "kunlun-mountains"
    },
@@ -4533,7 +5381,9 @@
      "id": "Drakensberg",
      "it": "Monti dei Draghi",
      "ja": "ドラケンスバーグ山脈",
-     "ko": "드라켄즈버그산맥"
+     "ko": "드라켄즈버그산맥",
+     "pl": "Góry Smocze",
+     "nl": "Drakensbergen"
     },
     "id": "drakensberg"
    },
@@ -4553,7 +5403,9 @@
      "id": "Alpen Selatan",
      "it": "Alpi meridionali",
      "ja": "南アルプス山脈",
-     "ko": "남알프스산맥"
+     "ko": "남알프스산맥",
+     "pl": "Alpy Południowe",
+     "nl": "Nieuw-Zeelandse Alpen"
     },
     "id": "southern-alps-ka-tiritiri-o-te-moana"
    },
@@ -4573,7 +5425,9 @@
      "id": "PEGUNUNGAN KJØLEN",
      "it": "Monti Scandinavi",
      "ja": "スカンディナヴィア山脈",
-     "ko": "스칸디나비아산맥"
+     "ko": "스칸디나비아산맥",
+     "pl": "Góry Skandynawskie",
+     "nl": "Scandinavisch Hoogland"
     },
     "id": "scandinavian-mountains"
    },
@@ -4593,7 +5447,9 @@
      "id": "Pegunungan Cascade",
      "it": "Catena delle Cascate",
      "ja": "カスケード山脈",
-     "ko": "캐스케이드산맥"
+     "ko": "캐스케이드산맥",
+     "pl": "Góry Kaskadowe",
+     "nl": "Cascade Range"
     },
     "id": "cascade-range"
    },
@@ -4613,7 +5469,9 @@
      "id": "Pegunungan Pemisah Besar",
      "it": "Grande Catena Divisoria",
      "ja": "グレートディヴァイディング山脈",
-     "ko": "그레이트디바이딩산맥"
+     "ko": "그레이트디바이딩산맥",
+     "pl": "Wielkie Góry Wododziałowe",
+     "nl": "Groot Australisch Scheidingsgebergte"
     },
     "id": "great-dividing-range"
    },
@@ -4633,7 +5491,9 @@
      "id": "Dataran Tinggi Etiopia",
      "it": "Acrocoro Etiopico",
      "ja": "エチオピア高原",
-     "ko": "에티오피아고원"
+     "ko": "에티오피아고원",
+     "pl": "Wyżyna Abisyńska",
+     "nl": "Ethiopisch Hoogland"
     },
     "id": "ethiopian-highlands"
    },
@@ -4653,7 +5513,9 @@
      "id": "Alpen Dinari",
      "it": "Alpi Dinariche",
      "ja": "ディナル・アルプス山脈",
-     "ko": "디나르알프스산맥"
+     "ko": "디나르알프스산맥",
+     "pl": "Góry Dynarskie",
+     "nl": "Dinarische Alpen"
     },
     "id": "dinaric-alps"
    },
@@ -4673,7 +5535,9 @@
      "id": "Kaukasus Kecil",
      "it": "Caucaso Minore",
      "ja": "小コーカサス山脈",
-     "ko": "말리캅카스산맥"
+     "ko": "말리캅카스산맥",
+     "pl": "Mały Kaukaz",
+     "nl": "Kleine Kaukasus"
     },
     "id": "lesser-caucasus"
    },
@@ -4693,7 +5557,9 @@
      "id": "Pegunungan Pontus",
      "it": "Monti del Ponto",
      "ja": "ポントス山脈",
-     "ko": "폰투스산맥"
+     "ko": "폰투스산맥",
+     "pl": "Góry Pontyjskie",
+     "nl": "Pontisch Gebergte"
     },
     "id": "pontic-mountains"
    },
@@ -4713,7 +5579,9 @@
      "id": "Pegunungan Aïr",
      "it": "Aïr",
      "ja": "アイル山地",
-     "ko": "아이르산맥"
+     "ko": "아이르산맥",
+     "pl": "Aïr",
+     "nl": "Aïr"
     },
     "id": "air-mountains"
    },
@@ -4733,7 +5601,9 @@
      "id": "EASTERN GHATS",
      "it": "Ghati orientali",
      "ja": "東ガーツ山脈",
-     "ko": "동고츠산맥"
+     "ko": "동고츠산맥",
+     "pl": "Ghaty Wschodnie",
+     "nl": "Oost-Ghats"
     },
     "id": "eastern-ghats"
    },
@@ -4753,7 +5623,9 @@
      "id": "PEGUNUNGAN SIKHOTE-ALIN",
      "it": "Sichotė-Alin'",
      "ja": "シホテアリニ山脈",
-     "ko": "시호테알린산맥"
+     "ko": "시호테알린산맥",
+     "pl": "Sichote-Aliń",
+     "nl": "Sichote-Alin"
     },
     "id": "sikhote-alin"
    },
@@ -4773,7 +5645,9 @@
      "id": "Pegunungan Verkhoyansk",
      "it": "Monti di Verchojansk",
      "ja": "ベルホヤンスク山脈",
-     "ko": "베르호얀스크산맥"
+     "ko": "베르호얀스크산맥",
+     "pl": "Góry Wierchojańskie",
+     "nl": "Verchojanskgebergte"
     },
     "id": "verkhoyansk-range"
    },
@@ -4793,7 +5667,9 @@
      "id": "Pegunungan Wuyi",
      "it": "Monte Wuyi",
      "ja": "武夷山",
-     "ko": "우이산"
+     "ko": "우이산",
+     "pl": "Wuyi Shan",
+     "nl": "Wuyigebergte"
     },
     "id": "wuyi-mountains"
    },
@@ -4813,7 +5689,9 @@
      "id": "Pegunungan Cantabria",
      "it": "Cordigliera Cantabrica",
      "ja": "カンタブリア山脈",
-     "ko": "칸타브리아산맥"
+     "ko": "칸타브리아산맥",
+     "pl": "Góry Kantabryjskie",
+     "nl": "Cantabrisch Gebergte"
     },
     "id": "cantabrian-mountains"
    },
@@ -4833,7 +5711,9 @@
      "id": "Pegunungan Vindhya",
      "it": "Monti Vindhya",
      "ja": "ヴィンディヤ山脈",
-     "ko": "빈디아산맥"
+     "ko": "빈디아산맥",
+     "pl": "Windhja",
+     "nl": "Vindhyagebergte"
     },
     "id": "vindhya-range"
    },
@@ -4853,7 +5733,9 @@
      "id": "Serra do Mar",
      "it": "Serra do Mar",
      "ja": "セーハ・ド・マール",
-     "ko": "남동부 대서양림 보호지역"
+     "ko": "남동부 대서양림 보호지역",
+     "pl": "Serra do Mar",
+     "nl": "Serra do Mar"
     },
     "id": "serra-do-mar"
    },
@@ -4873,7 +5755,9 @@
      "id": "Pegunungan Tibesti",
      "it": "Tibesti",
      "ja": "ティベスティ山地",
-     "ko": "티베스티산맥"
+     "ko": "티베스티산맥",
+     "pl": "Tibesti",
+     "nl": "Tibestigebergte"
     },
     "id": "tibesti-mountains"
    },
@@ -4893,7 +5777,9 @@
      "id": "PEGUNUNGAN STANOVOY",
      "it": "Monti Stanovoj",
      "ja": "スタノヴォイ山脈",
-     "ko": "스타노보이산맥"
+     "ko": "스타노보이산맥",
+     "pl": "Pasmo Stanowe",
+     "nl": "Stanovojgebergte"
     },
     "id": "stanovoy-range"
    }
@@ -4918,7 +5804,9 @@
      "id": "Gurun Sahara",
      "it": "deserto del Sahara",
      "ja": "サハラ砂漠",
-     "ko": "사하라 사막"
+     "ko": "사하라 사막",
+     "pl": "Sahara",
+     "nl": "Sahara"
     },
     "id": "sahara"
    },
@@ -4938,7 +5826,9 @@
      "id": "Gurun Gobi",
      "it": "deserto del Gobi",
      "ja": "ゴビ砂漠",
-     "ko": "고비 사막"
+     "ko": "고비 사막",
+     "pl": "Gobi",
+     "nl": "Gobi"
     },
     "id": "gobi-desert"
    },
@@ -4958,7 +5848,9 @@
      "id": "Gurun Kalahari",
      "it": "Kalahari",
      "ja": "カラハリ砂漠",
-     "ko": "칼라하리 사막"
+     "ko": "칼라하리 사막",
+     "pl": "Kalahari",
+     "nl": "Kalahari"
     },
     "id": "kalahari-desert"
    },
@@ -4978,7 +5870,9 @@
      "id": "Gurun Atacama",
      "it": "deserto di Atacama",
      "ja": "アタカマ砂漠",
-     "ko": "아타카마 사막"
+     "ko": "아타카마 사막",
+     "pl": "Atakama",
+     "nl": "Atacama"
     },
     "id": "atacama-desert"
    },
@@ -4998,7 +5892,9 @@
      "id": "Taklamakan",
      "it": "deserto di Taklamakan",
      "ja": "タクラマカン砂漠",
-     "ko": "타커라마간 사막"
+     "ko": "타커라마간 사막",
+     "pl": "Takla Makan",
+     "nl": "Taklamakan"
     },
     "id": "taklamakan"
    },
@@ -5018,7 +5914,9 @@
      "id": "Karakum",
      "it": "deserto del Karakum",
      "ja": "カラクム砂漠",
-     "ko": "카라쿰 사막"
+     "ko": "카라쿰 사막",
+     "pl": "Kara-kum",
+     "nl": "Karakum"
     },
     "id": "karakum-desert"
    },
@@ -5038,7 +5936,9 @@
      "id": "Gurun Namib",
      "it": "Deserto del Namib",
      "ja": "ナミブ砂漠",
-     "ko": "나미브 사막"
+     "ko": "나미브 사막",
+     "pl": "Namib",
+     "nl": "Namibwoestijn"
     },
     "id": "namib"
    },
@@ -5058,7 +5958,9 @@
      "id": "Gurun Thar",
      "it": "deserto di Thar",
      "ja": "タール砂漠",
-     "ko": "타르 사막"
+     "ko": "타르 사막",
+     "pl": "Thar",
+     "nl": "Tharwoestijn"
     },
     "id": "thar-desert"
    },
@@ -5078,7 +5980,9 @@
      "id": "Gurun Victoria Besar",
      "it": "Gran Deserto Victoria",
      "ja": "グレートビクトリア砂漠",
-     "ko": "그레이트빅토리아 사막"
+     "ko": "그레이트빅토리아 사막",
+     "pl": "Wielka Pustynia Wiktorii",
+     "nl": "Grote Victoriawoestijn"
     },
     "id": "great-victoria-desert"
    },
@@ -5098,7 +6002,9 @@
      "id": "Gurun Kyzylkum",
      "it": "deserto del Kizilkum",
      "ja": "キジルクム砂漠",
-     "ko": "키질쿰 사막"
+     "ko": "키질쿰 사막",
+     "pl": "Kyzył-kum",
+     "nl": "Kyzylkum"
     },
     "id": "kyzyl-kum"
    },
@@ -5118,7 +6024,9 @@
      "id": "Gurun Suriah",
      "it": "deserto siriaco",
      "ja": "シリア砂漠",
-     "ko": "시리아 사막"
+     "ko": "시리아 사막",
+     "pl": "Pustynia Syryjska",
+     "nl": "Syrische Woestijn"
     },
     "id": "syrian-desert"
    },
@@ -5138,7 +6046,9 @@
      "id": "Rub' Al-Khali",
      "it": "Rub' al-Khali",
      "ja": "ルブアルハリ砂漠",
-     "ko": "룹알할리 사막"
+     "ko": "룹알할리 사막",
+     "pl": "Ar-Rab al-Chali",
+     "nl": "Rub al Khali"
     },
     "id": "rub-al-khali"
    },
@@ -5158,7 +6068,9 @@
      "id": "Tassili n'Ajjer",
      "it": "Tassili n'Ajjer",
      "ja": "タッシリ・ナジェール",
-     "ko": "타실리나제르"
+     "ko": "타실리나제르",
+     "pl": "Tasili Wan Ahdżar",
+     "nl": "Tassili n'Ajjer"
     },
     "id": "tassili-n-ajjer"
    },
@@ -5178,7 +6090,9 @@
      "id": "Gurun Sonora",
      "it": "deserto di Sonora",
      "ja": "ソノラ砂漠",
-     "ko": "소노라 사막"
+     "ko": "소노라 사막",
+     "pl": "Pustynia Sonora",
+     "nl": "Sonorawoestijn"
     },
     "id": "sonoran-desert"
    },
@@ -5198,7 +6112,9 @@
      "id": "Gurun Libya",
      "it": "deserto Libico-Nubiano",
      "ja": "リビア砂漠",
-     "ko": "리비아 사막"
+     "ko": "리비아 사막",
+     "pl": "Pustynia Libijska",
+     "nl": "Libische Woestijn"
     },
     "id": "libyan-desert"
    },
@@ -5218,7 +6134,9 @@
      "id": "Dasht-e Lut",
      "it": "Dasht-e Lut",
      "ja": "ルート砂漠",
-     "ko": "루트 사막"
+     "ko": "루트 사막",
+     "pl": "Pustynia Lut",
+     "nl": "Dasht-e Lut"
     },
     "id": "dasht-e-lut"
    },
@@ -5238,7 +6156,9 @@
      "id": "Gurun Pasir Besar",
      "it": "Gran Deserto Sabbioso",
      "ja": "グレートサンディ砂漠",
-     "ko": "그레이트샌디 사막"
+     "ko": "그레이트샌디 사막",
+     "pl": "Wielka Pustynia Piaszczysta",
+     "nl": "Grote Zandwoestijn"
     },
     "id": "great-sandy-desert"
    },
@@ -5258,7 +6178,9 @@
      "id": "Gurun Pasir Nubia",
      "it": "deserto di Nubia",
      "ja": "ヌビア砂漠",
-     "ko": "누비아 사막"
+     "ko": "누비아 사막",
+     "pl": "Pustynia Nubijska",
+     "nl": "Nubische Woestijn"
     },
     "id": "nubian-desert"
    },
@@ -5278,7 +6200,9 @@
      "id": "Gurun Gibson",
      "it": "deserto di Gibson",
      "ja": "ギブソン砂漠",
-     "ko": "기브슨 사막"
+     "ko": "기브슨 사막",
+     "pl": "Pustynia Gibsona",
+     "nl": "Gibsonwoestijn"
     },
     "id": "gibson-desert"
    },
@@ -5298,7 +6222,9 @@
      "id": "Gurun Chihuahua",
      "it": "deserto di Chihuahua",
      "ja": "チワワ砂漠",
-     "ko": "치와와 사막"
+     "ko": "치와와 사막",
+     "pl": "Pustynia Chihuahua",
+     "nl": "Chihuahuawoestijn"
     },
     "id": "chihuahuan-desert"
    },
@@ -5318,7 +6244,9 @@
      "id": "Gurun Ténéré",
      "it": "Ténéré",
      "ja": "テネレ",
-     "ko": "테레네 사막"
+     "ko": "테레네 사막",
+     "pl": "Ténéré",
+     "nl": "Ténéréwoestijn"
     },
     "id": "tenere-desert"
    },
@@ -5338,7 +6266,9 @@
      "id": "GURUN BETPAQDALA",
      "it": "Betpak-Dala",
      "ja": "ベトパクダラ砂漠",
-     "ko": "벳팩달라 데저트"
+     "ko": "벳팩달라 데저트",
+     "pl": "Betpakdała",
+     "nl": "Hongersteppe"
     },
     "id": "betpak-dala"
    },
@@ -5358,7 +6288,9 @@
      "id": "Gurun Ordos",
      "it": "deserto Ordos",
      "ja": "オルドス地方",
-     "ko": "오르도스 사막"
+     "ko": "오르도스 사막",
+     "pl": "Ordos",
+     "nl": "Ordoswoestijn"
     },
     "id": "ordos-desert"
    },
@@ -5378,7 +6310,9 @@
      "id": "Grand Erg Oriental",
      "it": "Grande Erg Orientale",
      "ja": "グランドエルグオリエンタル砂漠",
-     "ko": "그랜드 에르그 오리엔탈"
+     "ko": "그랜드 에르그 오리엔탈",
+     "pl": "Wielki Erg Wschodni",
+     "nl": "Oostelijke Grote Erg"
     },
     "id": "grand-erg-oriental"
    },
@@ -5398,7 +6332,9 @@
      "id": "Great Salt Lake Desert",
      "it": "deserto del Gran Lago Salato",
      "ja": "グレートソルトレイク砂漠",
-     "ko": "그레이트솔트레이크 사막"
+     "ko": "그레이트솔트레이크 사막",
+     "pl": "Wielka Pustynia Słona (USA)",
+     "nl": "Great Salt Lake Desert"
     },
     "id": "great-salt-lake-desert"
    },
@@ -5418,7 +6354,9 @@
      "id": "Grand Erg Occidental",
      "it": "Grande Erg Occidentale",
      "ja": "グランデルグオクシデンタル砂漠",
-     "ko": "그랜드 에르그 옥시덴탈"
+     "ko": "그랜드 에르그 옥시덴탈",
+     "pl": "Wielki Erg Zachodni",
+     "nl": "Westelijke Grote Erg"
     },
     "id": "grand-erg-occidental"
    },
@@ -5438,7 +6376,9 @@
      "id": "Gurun Barat",
      "it": "Deserto occidentale",
      "ja": "西部砂漠 (エジプト)",
-     "ko": "서부 사막"
+     "ko": "서부 사막",
+     "pl": "ZACHODNIA PUSTYNIA",
+     "nl": "Westelijke Woestijn"
     },
     "id": "western-desert"
    },
@@ -5458,7 +6398,9 @@
      "id": "El Djouf",
      "it": "El Djouf",
      "ja": "ジューフ砂漠",
-     "ko": "엘 주프"
+     "ko": "엘 주프",
+     "pl": "Al-Dżuf",
+     "nl": "El Djouf"
     },
     "id": "el-djouf"
    },
@@ -5478,7 +6420,9 @@
      "id": "Idhan Murzuq",
      "it": "deserto di Murzuch",
      "ja": "ムルズク砂漠",
-     "ko": "이단 무르주크"
+     "ko": "이단 무르주크",
+     "pl": "Idhan Murzuk",
+     "nl": "Murzuq Desert"
     },
     "id": "murzuq-desert"
    },
@@ -5498,7 +6442,9 @@
      "id": "Erg Chech",
      "it": "Erg Chech",
      "ja": "チェク砂漠",
-     "ko": "에르그 체흐"
+     "ko": "에르그 체흐",
+     "pl": "Erg Szasz",
+     "nl": "Erg Chech"
     },
     "id": "erg-chech"
    }
@@ -5523,7 +6469,9 @@
      "id": "Samudra Pasifik",
      "it": "Oceano Pacifico",
      "ja": "太平洋",
-     "ko": "태평양"
+     "ko": "태평양",
+     "pl": "Ocean Spokojny",
+     "nl": "Grote Oceaan"
     },
     "id": "pacific-ocean"
    },
@@ -5543,7 +6491,9 @@
      "id": "Samudra Atlantik",
      "it": "Oceano Atlantico",
      "ja": "大西洋",
-     "ko": "대서양"
+     "ko": "대서양",
+     "pl": "Ocean Atlantycki",
+     "nl": "Atlantische Oceaan"
     },
     "id": "atlantic-ocean"
    },
@@ -5563,7 +6513,9 @@
      "id": "Samudra Hindia",
      "it": "Oceano Indiano",
      "ja": "インド洋",
-     "ko": "인도양"
+     "ko": "인도양",
+     "pl": "Ocean Indyjski",
+     "nl": "Indische Oceaan"
     },
     "id": "indian-ocean"
    },
@@ -5583,7 +6535,9 @@
      "id": "Samudra Arktik",
      "it": "Mar Glaciale Artico",
      "ja": "北極海",
-     "ko": "북극해"
+     "ko": "북극해",
+     "pl": "Ocean Arktyczny",
+     "nl": "Noordelijke IJszee"
     },
     "id": "arctic-ocean"
    },
@@ -5603,7 +6557,9 @@
      "id": "Samudra Selatan",
      "it": "Oceano Antartico",
      "ja": "南極海",
-     "ko": "남극해"
+     "ko": "남극해",
+     "pl": "Ocean Południowy",
+     "nl": "Zuidelijke Oceaan"
     },
     "id": "southern-ocean"
    }
@@ -5628,7 +6584,9 @@
      "id": "Tokyo",
      "it": "Tokyo",
      "ja": "東京都",
-     "ko": "도쿄도"
+     "ko": "도쿄도",
+     "pl": "Tokio",
+     "nl": "Tokio"
     },
     "at": [
      139.749462,
@@ -5652,7 +6610,9 @@
      "id": "Kota New York",
      "it": "New York",
      "ja": "ニューヨーク",
-     "ko": "뉴욕"
+     "ko": "뉴욕",
+     "pl": "Nowy Jork",
+     "nl": "New York"
     },
     "at": [
      -73.995718,
@@ -5676,7 +6636,9 @@
      "id": "Kota Meksiko",
      "it": "Città del Messico",
      "ja": "メキシコシティ",
-     "ko": "멕시코시티"
+     "ko": "멕시코시티",
+     "pl": "Meksyk",
+     "nl": "Mexico-Stad"
     },
     "at": [
      -99.132934,
@@ -5700,7 +6662,9 @@
      "id": "Mumbai",
      "it": "Mumbai",
      "ja": "ムンバイ",
-     "ko": "뭄바이"
+     "ko": "뭄바이",
+     "pl": "Mumbaj",
+     "nl": "Mumbai"
     },
     "at": [
      72.875839,
@@ -5724,7 +6688,9 @@
      "id": "São Paulo",
      "it": "San Paolo",
      "ja": "サンパウロ",
-     "ko": "상파울루"
+     "ko": "상파울루",
+     "pl": "São Paulo",
+     "nl": "São Paulo"
     },
     "at": [
      -46.626966,
@@ -5748,7 +6714,9 @@
      "id": "Delhi",
      "it": "Delhi",
      "ja": "デリー",
-     "ko": "델리"
+     "ko": "델리",
+     "pl": "Delhi",
+     "nl": "Delhi"
     },
     "at": [
      77.228058,
@@ -5772,7 +6740,9 @@
      "id": "Shanghai",
      "it": "Shanghai",
      "ja": "上海市",
-     "ko": "상하이시"
+     "ko": "상하이시",
+     "pl": "Szanghaj",
+     "nl": "Shanghai"
     },
     "at": [
      121.434559,
@@ -5796,7 +6766,9 @@
      "id": "Kolkata",
      "it": "Colcata",
      "ja": "コルカタ",
-     "ko": "콜카타"
+     "ko": "콜카타",
+     "pl": "Kolkata",
+     "nl": "Calcutta"
     },
     "at": [
      88.369126,
@@ -5820,7 +6792,9 @@
      "id": "Dhaka",
      "it": "Dacca",
      "ja": "ダッカ",
-     "ko": "다카"
+     "ko": "다카",
+     "pl": "Dhaka",
+     "nl": "Dhaka"
     },
     "at": [
      90.406634,
@@ -5844,7 +6818,9 @@
      "id": "Buenos Aires",
      "it": "Buenos Aires",
      "ja": "ブエノスアイレス",
-     "ko": "부에노스아이레스"
+     "ko": "부에노스아이레스",
+     "pl": "Buenos Aires",
+     "nl": "Buenos Aires"
     },
     "at": [
      -58.432513,
@@ -5868,7 +6844,9 @@
      "id": "Los Angeles",
      "it": "Los Angeles",
      "ja": "ロサンゼルス",
-     "ko": "로스앤젤레스"
+     "ko": "로스앤젤레스",
+     "pl": "Los Angeles",
+     "nl": "Los Angeles"
     },
     "at": [
      -118.231986,
@@ -5892,7 +6870,9 @@
      "id": "Karachi",
      "it": "Karachi",
      "ja": "カラチ",
-     "ko": "카라치"
+     "ko": "카라치",
+     "pl": "Karaczi",
+     "nl": "Karachi"
     },
     "at": [
      66.988063,
@@ -5916,7 +6896,9 @@
      "id": "Kairo",
      "it": "Il Cairo",
      "ja": "カイロ",
-     "ko": "카이로"
+     "ko": "카이로",
+     "pl": "Kair",
+     "nl": "Caïro"
     },
     "at": [
      31.248022,
@@ -5940,7 +6922,9 @@
      "id": "Rio de Janeiro",
      "it": "Rio de Janeiro",
      "ja": "リオデジャネイロ",
-     "ko": "리우데자네이루"
+     "ko": "리우데자네이루",
+     "pl": "Rio de Janeiro",
+     "nl": "Rio de Janeiro"
     },
     "at": [
      -43.212117,
@@ -5964,7 +6948,9 @@
      "id": "Osaka",
      "it": "Osaka",
      "ja": "大阪市",
-     "ko": "오사카시"
+     "ko": "오사카시",
+     "pl": "Osaka",
+     "nl": "Osaka"
     },
     "at": [
      135.503754,
@@ -5988,7 +6974,9 @@
      "id": "Beijing",
      "it": "Pechino",
      "ja": "北京市",
-     "ko": "베이징시"
+     "ko": "베이징시",
+     "pl": "Pekin",
+     "nl": "Peking"
     },
     "at": [
      116.394201,
@@ -6012,7 +7000,9 @@
      "id": "Manila",
      "it": "Manila",
      "ja": "マニラ",
-     "ko": "마닐라"
+     "ko": "마닐라",
+     "pl": "Manila",
+     "nl": "Manilla"
     },
     "at": [
      120.980271,
@@ -6036,7 +7026,9 @@
      "id": "Moskow",
      "it": "Mosca",
      "ja": "モスクワ",
-     "ko": "모스크바"
+     "ko": "모스크바",
+     "pl": "Moskwa",
+     "nl": "Moskou"
     },
     "at": [
      37.613577,
@@ -6060,7 +7052,9 @@
      "id": "Istanbul",
      "it": "Istanbul",
      "ja": "イスタンブール",
-     "ko": "이스탄불"
+     "ko": "이스탄불",
+     "pl": "Stambuł",
+     "nl": "Istanbul"
     },
     "at": [
      28.974277,
@@ -6084,7 +7078,9 @@
      "id": "Paris",
      "it": "Parigi",
      "ja": "パリ",
-     "ko": "파리"
+     "ko": "파리",
+     "pl": "Paryż",
+     "nl": "Parijs"
     },
     "at": [
      2.352992,
@@ -6108,7 +7104,9 @@
      "id": "Seoul",
      "it": "Seul",
      "ja": "ソウル特別市",
-     "ko": "서울특별시"
+     "ko": "서울특별시",
+     "pl": "Seul",
+     "nl": "Seoel"
     },
     "at": [
      126.997785,
@@ -6132,7 +7130,9 @@
      "id": "Lagos",
      "it": "Lagos",
      "ja": "ラゴス",
-     "ko": "라고스"
+     "ko": "라고스",
+     "pl": "Lagos",
+     "nl": "Lagos"
     },
     "at": [
      3.389585,
@@ -6156,7 +7156,9 @@
      "id": "Jakarta",
      "it": "Giacarta",
      "ja": "ジャカルタ",
-     "ko": "자카르타"
+     "ko": "자카르타",
+     "pl": "Dżakarta",
+     "nl": "Jakarta"
     },
     "at": [
      106.827492,
@@ -6180,7 +7182,9 @@
      "id": "Chicago",
      "it": "Chicago",
      "ja": "シカゴ",
-     "ko": "시카고"
+     "ko": "시카고",
+     "pl": "Chicago",
+     "nl": "Chicago"
     },
     "at": [
      -87.635237,
@@ -6204,7 +7208,9 @@
      "id": "Guangzhou",
      "it": "Canton",
      "ja": "広州市",
-     "ko": "광저우시"
+     "ko": "광저우시",
+     "pl": "Kanton",
+     "nl": "Guangzhou"
     },
     "at": [
      113.261785,
@@ -6228,7 +7234,9 @@
      "id": "London",
      "it": "Londra",
      "ja": "ロンドン",
-     "ko": "런던"
+     "ko": "런던",
+     "pl": "Londyn",
+     "nl": "Londen"
     },
     "at": [
      -0.118668,
@@ -6252,7 +7260,9 @@
      "id": "Lima",
      "it": "Lima",
      "ja": "リマ",
-     "ko": "리마"
+     "ko": "리마",
+     "pl": "Lima",
+     "nl": "Lima"
     },
     "at": [
      -77.052008,
@@ -6276,7 +7286,9 @@
      "id": "Teheran",
      "it": "Teheran",
      "ja": "テヘラン",
-     "ko": "테헤란"
+     "ko": "테헤란",
+     "pl": "Teheran",
+     "nl": "Teheran"
     },
     "at": [
      51.422398,
@@ -6300,7 +7312,9 @@
      "id": "Kinshasa",
      "it": "Kinshasa",
      "ja": "キンシャサ",
-     "ko": "킨샤사"
+     "ko": "킨샤사",
+     "pl": "Kinszasa",
+     "nl": "Kinshasa"
     },
     "at": [
      15.313026,
@@ -6324,7 +7338,9 @@
      "id": "Bogotá",
      "it": "Bogotà",
      "ja": "ボゴタ",
-     "ko": "보고타"
+     "ko": "보고타",
+     "pl": "Bogota",
+     "nl": "Bogota"
     },
     "at": [
      -74.08529,
@@ -6348,7 +7364,9 @@
      "id": "Shenzhen",
      "it": "Shenzhen",
      "ja": "深圳市",
-     "ko": "선전시"
+     "ko": "선전시",
+     "pl": "Shenzhen",
+     "nl": "Shenzhen"
     },
     "at": [
      114.061154,
@@ -6372,7 +7390,9 @@
      "id": "Wuhan",
      "it": "Wuhan",
      "ja": "武漢市",
-     "ko": "우한시"
+     "ko": "우한시",
+     "pl": "Wuhan",
+     "nl": "Wuhan"
     },
     "at": [
      114.268071,
@@ -6396,7 +7416,9 @@
      "id": "Hong Kong",
      "it": "Hong Kong",
      "ja": "香港",
-     "ko": "홍콩"
+     "ko": "홍콩",
+     "pl": "Hongkong",
+     "nl": "Hongkong"
     },
     "at": [
      114.183064,
@@ -6420,7 +7442,9 @@
      "id": "Tianjin",
      "it": "Tientsin",
      "ja": "天津市",
-     "ko": "톈진시"
+     "ko": "톈진시",
+     "pl": "Tiencin",
+     "nl": "Tianjin"
     },
     "at": [
      117.196607,
@@ -6444,7 +7468,9 @@
      "id": "Chennai",
      "it": "Chennai",
      "ja": "チェンナイ",
-     "ko": "첸나이"
+     "ko": "첸나이",
+     "pl": "Ćennaj",
+     "nl": "Chennai"
     },
     "at": [
      80.278053,
@@ -6468,7 +7494,9 @@
      "id": "Taipei",
      "it": "Taipei",
      "ja": "台北市",
-     "ko": "타이베이시"
+     "ko": "타이베이시",
+     "pl": "Tajpej",
+     "nl": "Taipei"
     },
     "at": [
      121.568333,
@@ -6492,7 +7520,9 @@
      "id": "Bengaluru",
      "it": "Bangalore",
      "ja": "ベンガルール",
-     "ko": "벵갈루루"
+     "ko": "벵갈루루",
+     "pl": "Bengaluru",
+     "nl": "Bangalore"
     },
     "at": [
      77.558064,
@@ -6516,7 +7546,9 @@
      "id": "Bangkok",
      "it": "Bangkok",
      "ja": "バンコク",
-     "ko": "방콕"
+     "ko": "방콕",
+     "pl": "Bangkok",
+     "nl": "Bangkok"
     },
     "at": [
      100.514699,
@@ -6540,7 +7572,9 @@
      "id": "Lahore",
      "it": "Lahore",
      "ja": "ラホール",
-     "ko": "라호르"
+     "ko": "라호르",
+     "pl": "Lahaur",
+     "nl": "Lahore"
     },
     "at": [
      74.348079,
@@ -6564,7 +7598,9 @@
      "id": "Chongqing",
      "it": "Chongqing",
      "ja": "重慶市",
-     "ko": "충칭시"
+     "ko": "충칭시",
+     "pl": "Chongqing",
+     "nl": "Chongqing"
     },
     "at": [
      106.593036,
@@ -6588,7 +7624,9 @@
      "id": "Hyderabad",
      "it": "Haidrābād",
      "ja": "ハイデラバード",
-     "ko": "하이데라바드"
+     "ko": "하이데라바드",
+     "pl": "Hajdarabad",
+     "nl": "Haiderabad"
     },
     "at": [
      78.478008,
@@ -6612,7 +7650,9 @@
      "id": "Santiago de Chile",
      "it": "Santiago del Cile",
      "ja": "サンティアゴ",
-     "ko": "산티아고"
+     "ko": "산티아고",
+     "pl": "Santiago",
+     "nl": "Santiago"
     },
     "at": [
      -70.650504,
@@ -6636,7 +7676,9 @@
      "id": "Miami",
      "it": "Miami",
      "ja": "マイアミ",
-     "ko": "마이애미"
+     "ko": "마이애미",
+     "pl": "Miami",
+     "nl": "Miami"
     },
     "at": [
      -80.226052,
@@ -6660,7 +7702,9 @@
      "id": "Belo Horizonte",
      "it": "Belo Horizonte",
      "ja": "ベロオリゾンテ",
-     "ko": "벨루오리존치"
+     "ko": "벨루오리존치",
+     "pl": "Belo Horizonte",
+     "nl": "Belo Horizonte"
     },
     "at": [
      -43.91695,
@@ -6684,7 +7728,9 @@
      "id": "Madrid",
      "it": "Madrid",
      "ja": "マドリード",
-     "ko": "마드리드"
+     "ko": "마드리드",
+     "pl": "Madryt",
+     "nl": "Madrid"
     },
     "at": [
      -3.685297,
@@ -6708,7 +7754,9 @@
      "id": "Philadelphia",
      "it": "Filadelfia",
      "ja": "フィラデルフィア",
-     "ko": "필라델피아"
+     "ko": "필라델피아",
+     "pl": "Filadelfia",
+     "nl": "Philadelphia"
     },
     "at": [
      -75.179841,
@@ -6732,7 +7780,9 @@
      "id": "Ahmedabad",
      "it": "Ahmedabad",
      "ja": "アフマダーバード",
-     "ko": "아마다바드"
+     "ko": "아마다바드",
+     "pl": "Ahmadabad",
+     "nl": "Ahmedabad"
     },
     "at": [
      72.578058,
@@ -6756,7 +7806,9 @@
      "id": "Kota Hồ Chí Minh",
      "it": "Ho Chi Minh",
      "ja": "ホーチミン市",
-     "ko": "호찌민시"
+     "ko": "호찌민시",
+     "pl": "Ho Chi Minh",
+     "nl": "Ho Chi Minhstad"
     },
     "at": [
      106.702985,
@@ -6780,7 +7832,9 @@
      "id": "Toronto",
      "it": "Toronto",
      "ja": "トロント",
-     "ko": "토론토"
+     "ko": "토론토",
+     "pl": "Toronto",
+     "nl": "Toronto"
     },
     "at": [
      -79.389459,
@@ -6804,7 +7858,9 @@
      "id": "Singapura",
      "it": "Singapore",
      "ja": "シンガポール",
-     "ko": "싱가포르"
+     "ko": "싱가포르",
+     "pl": "Singapur",
+     "nl": "Singapore"
     },
     "at": [
      103.853875,
@@ -6828,7 +7884,9 @@
      "id": "Luanda",
      "it": "Luanda",
      "ja": "ルアンダ",
-     "ko": "루안다"
+     "ko": "루안다",
+     "pl": "Luanda",
+     "nl": "Luanda"
     },
     "at": [
      13.232481,
@@ -6852,7 +7910,9 @@
      "id": "Bagdad",
      "it": "Baghdad",
      "ja": "バグダード",
-     "ko": "바그다드"
+     "ko": "바그다드",
+     "pl": "Bagdad",
+     "nl": "Bagdad"
     },
     "at": [
      44.391923,
@@ -6876,7 +7936,9 @@
      "id": "Barcelona",
      "it": "Barcellona",
      "ja": "バルセロナ",
-     "ko": "바르셀로나"
+     "ko": "바르셀로나",
+     "pl": "Barcelona",
+     "nl": "Barcelona"
     },
     "at": [
      2.181424,
@@ -6900,7 +7962,9 @@
      "id": "Dallas",
      "it": "Dallas",
      "ja": "ダラス",
-     "ko": "댈러스"
+     "ko": "댈러스",
+     "pl": "Dallas",
+     "nl": "Dallas"
     },
     "at": [
      -96.794687,
@@ -6924,7 +7988,9 @@
      "id": "Shenyang",
      "it": "Shenyang",
      "ja": "瀋陽市",
-     "ko": "선양시"
+     "ko": "선양시",
+     "pl": "Shenyang",
+     "nl": "Shenyang"
     },
     "at": [
      123.448028,
@@ -6948,7 +8014,9 @@
      "id": "Khartoum",
      "it": "Khartum",
      "ja": "ハルツーム",
-     "ko": "하르툼"
+     "ko": "하르툼",
+     "pl": "Chartum",
+     "nl": "Khartoem"
     },
     "at": [
      32.532233,
@@ -6972,7 +8040,9 @@
      "id": "Pune",
      "it": "Pune",
      "ja": "プネー",
-     "ko": "푸네"
+     "ko": "푸네",
+     "pl": "Pune",
+     "nl": "Pune"
     },
     "at": [
      73.851892,
@@ -6996,7 +8066,9 @@
      "id": "Sydney",
      "it": "Sydney",
      "ja": "シドニー",
-     "ko": "시드니"
+     "ko": "시드니",
+     "pl": "Sydney",
+     "nl": "Sydney"
     },
     "at": [
      151.212548,
@@ -7020,7 +8092,9 @@
      "id": "Sankt-Peterburg",
      "it": "San Pietroburgo",
      "ja": "サンクトペテルブルク",
-     "ko": "상트페테르부르크"
+     "ko": "상트페테르부르크",
+     "pl": "Petersburg",
+     "nl": "Sint-Petersburg"
     },
     "at": [
      30.314074,
@@ -7044,7 +8118,9 @@
      "id": "Chittagong",
      "it": "Chittagong",
      "ja": "チッタゴン",
-     "ko": "치타공"
+     "ko": "치타공",
+     "pl": "Ćottogram",
+     "nl": "Chittagong"
     },
     "at": [
      91.798022,
@@ -7073,7 +8149,9 @@
      "id": "Everest",
      "it": "Everest",
      "ja": "エベレスト",
-     "ko": "에베레스트산"
+     "ko": "에베레스트산",
+     "pl": "Mount Everest",
+     "nl": "Mount Everest"
     },
     "at": [
      86.880596,
@@ -7097,7 +8175,9 @@
      "id": "Kilimanjaro",
      "it": "Kilimangiaro",
      "ja": "キリマンジャロ",
-     "ko": "킬리만자로산"
+     "ko": "킬리만자로산",
+     "pl": "Kilimandżaro",
+     "nl": "Kilimanjaro"
     },
     "at": [
      37.353252,
@@ -7121,7 +8201,9 @@
      "id": "Gunung Blanc",
      "it": "Monte Bianco",
      "ja": "モンブラン",
-     "ko": "몽블랑산"
+     "ko": "몽블랑산",
+     "pl": "Mont Blanc",
+     "nl": "Mont Blanc"
     },
     "at": [
      6.865043,
@@ -7145,7 +8227,9 @@
      "id": "Gunung Elbrus",
      "it": "monte Elbrus",
      "ja": "エルブルス山",
-     "ko": "옐브루스산"
+     "ko": "옐브루스산",
+     "pl": "Elbrus",
+     "nl": "Elbroes"
     },
     "at": [
      42.439198,
@@ -7169,7 +8253,9 @@
      "id": "Akonkagua",
      "it": "Aconcagua",
      "ja": "アコンカグア",
-     "ko": "아콩카과산"
+     "ko": "아콩카과산",
+     "pl": "Aconcagua",
+     "nl": "Aconcagua"
     },
     "at": [
      -70.015801,
@@ -7193,7 +8279,9 @@
      "id": "K2",
      "it": "K2",
      "ja": "K2",
-     "ko": "K2"
+     "ko": "K2",
+     "pl": "K2",
+     "nl": "K2"
     },
     "at": [
      76.513209,
@@ -7217,7 +8305,9 @@
      "id": "Denali",
      "it": "Monte McKinley",
      "ja": "デナリ",
-     "ko": "디날리산"
+     "ko": "디날리산",
+     "pl": "Denali",
+     "nl": "Mount Denali"
     },
     "at": [
      -151.007296,
@@ -7241,7 +8331,9 @@
      "id": "Gunung Kailash",
      "it": "Kailash",
      "ja": "カイラス山",
-     "ko": "카일라스산"
+     "ko": "카일라스산",
+     "pl": "Kajlas",
+     "nl": "Kailash"
     },
     "at": [
      81.312536,
@@ -7265,7 +8357,9 @@
      "id": "Dhaulagiri",
      "it": "Dhaulagiri",
      "ja": "ダウラギリ",
-     "ko": "다울라기리"
+     "ko": "다울라기리",
+     "pl": "Dhaulagiri",
+     "nl": "Dhaulagiri"
     },
     "at": [
      83.495136,
@@ -7289,7 +8383,9 @@
      "id": "Gunung Kenya",
      "it": "Monte Kenya",
      "ja": "ケニア山",
-     "ko": "케냐산"
+     "ko": "케냐산",
+     "pl": "Kenia",
+     "nl": "Mount Kenya"
     },
     "at": [
      37.299935,
@@ -7313,7 +8409,9 @@
      "id": "Gunung Kosciuszko",
      "it": "Monte Kosciuszko",
      "ja": "コジオスコ",
-     "ko": "코지어스코산"
+     "ko": "코지어스코산",
+     "pl": "Góra Kościuszki",
+     "nl": "Mount Kosciuszko"
     },
     "at": [
      148.263192,
@@ -7337,7 +8435,9 @@
      "id": "Gunung Chimborazo",
      "it": "Chimborazo",
      "ja": "チンボラソ",
-     "ko": "침보라소산"
+     "ko": "침보라소산",
+     "pl": "Chimborazo",
+     "nl": "Chimborazo"
     },
     "at": [
      -78.817489,
@@ -7361,7 +8461,9 @@
      "id": "Puncak Jaya",
      "it": "Puncak Jaya",
      "ja": "プンチャック・ジャヤ",
-     "ko": "푼착자야산"
+     "ko": "푼착자야산",
+     "pl": "Jaya",
+     "nl": "Puncak Jaya"
     },
     "at": [
      137.166252,
@@ -7385,7 +8487,9 @@
      "id": "Masif Vinson",
      "it": "monte Vinson",
      "ja": "ヴィンソン・マシフ",
-     "ko": "빈슨 산괴"
+     "ko": "빈슨 산괴",
+     "pl": "Masyw Vinsona",
+     "nl": "Vinsonmassief"
     },
     "at": [
      -85.633729,
@@ -7409,7 +8513,9 @@
      "id": "Gunung Kinabalu",
      "it": "Monte Kinabalu",
      "ja": "キナバル山",
-     "ko": "키나발루산"
+     "ko": "키나발루산",
+     "pl": "Kinabalu",
+     "nl": "Mount Kinabalu"
     },
     "at": [
      116.549987,
@@ -7433,7 +8539,9 @@
      "id": "Klyuchevskaya Sopka",
      "it": "Ključevskaja Sopka",
      "ja": "クリュチェフスカヤ山",
-     "ko": "클류쳅스카야산"
+     "ko": "클류쳅스카야산",
+     "pl": "Kluczewska Sopka",
+     "nl": "Kljoetsjevskaja Sopka"
     },
     "at": [
      160.643937,
@@ -7457,7 +8565,9 @@
      "id": "Gunung Whitney",
      "it": "Monte Whitney",
      "ja": "ホイットニー山",
-     "ko": "휘트니산"
+     "ko": "휘트니산",
+     "pl": "Mount Whitney",
+     "nl": "Mount Whitney"
     },
     "at": [
      -118.292218,
@@ -7481,7 +8591,9 @@
      "id": "Puncak Ismail Samani",
      "it": "Picco Ismail Samani",
      "ja": "イスモイル・ソモニ峰",
-     "ko": "이스모일소모니봉"
+     "ko": "이스모일소모니봉",
+     "pl": "Szczyt Ismaila Samaniego",
+     "nl": "Ismail Samanipiek"
     },
     "at": [
      72.021746,
@@ -7505,7 +8617,9 @@
      "id": "Jbel Toubkal",
      "it": "Jbel Toubkal",
      "ja": "ツブカル山",
-     "ko": "투브칼산"
+     "ko": "투브칼산",
+     "pl": "Tubkal",
+     "nl": "Toubkal"
     },
     "at": [
      -7.916134,
@@ -7529,7 +8643,9 @@
      "id": "Gunung Belukha",
      "it": "Belucha",
      "ja": "ベルーハ山",
-     "ko": "벨루하산"
+     "ko": "벨루하산",
+     "pl": "Biełucha",
+     "nl": "Beloecha"
     },
     "at": [
      86.606337,
@@ -7553,7 +8669,9 @@
      "id": "Gunung Wutai",
      "it": "Monte Wutai",
      "ja": "五台山",
-     "ko": "우타이산"
+     "ko": "우타이산",
+     "pl": "Wutai Shan",
+     "nl": "Wutai Shan"
     },
     "at": [
      113.570219,
@@ -7577,7 +8695,9 @@
      "id": "Ras Dashen",
      "it": "Ras Dascian",
      "ja": "ラス・ダシャン山",
-     "ko": "라스다샨산"
+     "ko": "라스다샨산",
+     "pl": "Ras Daszan",
+     "nl": "Ras Dashan"
     },
     "at": [
      38.372331,
@@ -7601,7 +8721,9 @@
      "id": "Gunung Bolivar",
      "it": "Pico Bolívar",
      "ja": "ボリバル山",
-     "ko": "볼리바르봉"
+     "ko": "볼리바르봉",
+     "pl": "Bolívar",
+     "nl": "Pico Bolívar"
     },
     "at": [
      -71.052734,
@@ -7625,7 +8747,9 @@
      "id": "Gunung Stanley",
      "it": "Monte Stanley",
      "ja": "スタンリー山",
-     "ko": "스탠리산"
+     "ko": "스탠리산",
+     "pl": "Góra Stanleya",
+     "nl": "Mount Stanley"
     },
     "at": [
      29.872085,
@@ -7649,7 +8773,9 @@
      "id": "Gunung Elgon",
      "it": "Monte Elgon",
      "ja": "エルゴン山",
-     "ko": "엘곤산"
+     "ko": "엘곤산",
+     "pl": "Mount Elgon",
+     "nl": "Mount Elgon"
     },
     "at": [
      34.534162,
@@ -7678,7 +8804,9 @@
      "id": "Kilimanjaro",
      "it": "Kilimangiaro",
      "ja": "キリマンジャロ",
-     "ko": "킬리만자로산"
+     "ko": "킬리만자로산",
+     "pl": "Kilimandżaro",
+     "nl": "Kilimanjaro"
     },
     "at": [
      37.359166666,
@@ -7702,7 +8830,9 @@
      "id": "Gunung Fuji",
      "it": "Fuji",
      "ja": "富士山",
-     "ko": "후지산"
+     "ko": "후지산",
+     "pl": "Fudżi",
+     "nl": "Fuji"
     },
     "at": [
      138.7275,
@@ -7726,7 +8856,9 @@
      "id": "Gunung Vesuvius",
      "it": "Vesuvio",
      "ja": "ヴェスヴィオ",
-     "ko": "베수비오산"
+     "ko": "베수비오산",
+     "pl": "Wezuwiusz",
+     "nl": "Vesuvius"
     },
     "at": [
      14.42919,
@@ -7750,7 +8882,9 @@
      "id": "Etna",
      "it": "Etna",
      "ja": "エトナ火山",
-     "ko": "에트나산"
+     "ko": "에트나산",
+     "pl": "Etna",
+     "nl": "Etna"
     },
     "at": [
      14.993220288,
@@ -7774,7 +8908,9 @@
      "id": "Ararat",
      "it": "Ararat",
      "ja": "アララト山",
-     "ko": "아라라트산"
+     "ko": "아라라트산",
+     "pl": "Ararat",
+     "nl": "Ararat"
     },
     "at": [
      44.298333333,
@@ -7798,7 +8934,9 @@
      "id": "Teide",
      "it": "Teide",
      "ja": "テイデ山",
-     "ko": "테이데봉"
+     "ko": "테이데봉",
+     "pl": "Teide",
+     "nl": "El Teide"
     },
     "at": [
      -16.643611111,
@@ -7822,7 +8960,9 @@
      "id": "Mauna Kea",
      "it": "Mauna Kea",
      "ja": "マウナ・ケア山",
-     "ko": "마우나케아산"
+     "ko": "마우나케아산",
+     "pl": "Mauna Kea",
+     "nl": "Mauna Kea"
     },
     "at": [
      -155.468055555,
@@ -7845,7 +8985,9 @@
      "id": "Gunung Chimborazo",
      "it": "Chimborazo",
      "ja": "チンボラソ",
-     "ko": "침보라소산"
+     "ko": "침보라소산",
+     "pl": "Chimborazo",
+     "nl": "Chimborazo"
     },
     "at": [
      -78.8175,
@@ -7868,7 +9010,9 @@
      "id": "Gunung Merapi",
      "it": "Monte Merapi",
      "ja": "ムラピ山",
-     "ko": "므라피산"
+     "ko": "므라피산",
+     "pl": "Merapi",
+     "nl": "Merapi"
     },
     "at": [
      110.446111111,
@@ -7892,7 +9036,9 @@
      "id": "Gunung Damavand",
      "it": "Damavand",
      "ja": "ダマーヴァンド山",
-     "ko": "다마반드산"
+     "ko": "다마반드산",
+     "pl": "Demawend",
+     "nl": "Demavend"
     },
     "at": [
      52.109166666,
@@ -7915,7 +9061,9 @@
      "id": "Mauna Loa",
      "it": "Mauna Loa",
      "ja": "マウナ・ロア山",
-     "ko": "마우나로아산"
+     "ko": "마우나로아산",
+     "pl": "Mauna Loa",
+     "nl": "Mauna Loa"
     },
     "at": [
      -155.6,
@@ -7939,7 +9087,9 @@
      "id": "Gunung Baekdu",
      "it": "Montagna Baitou",
      "ja": "白頭山",
-     "ko": "백두산"
+     "ko": "백두산",
+     "pl": "Pektu-san",
+     "nl": "Paektusan"
     },
     "at": [
      126.83,
@@ -7962,7 +9112,9 @@
      "id": "Gunung Tambora",
      "it": "Tambora",
      "ja": "タンボラ山",
-     "ko": "탐보라 화산"
+     "ko": "탐보라 화산",
+     "pl": "Tambora",
+     "nl": "Tambora"
     },
     "at": [
      117.992777777,
@@ -7985,7 +9137,9 @@
      "id": "Popocatépetl",
      "it": "Popocatépetl",
      "ja": "ポポカテペトル山",
-     "ko": "포포카테페틀산"
+     "ko": "포포카테페틀산",
+     "pl": "Popocatépetl",
+     "nl": "Popocatépetl"
     },
     "at": [
      -98.623434,
@@ -8008,7 +9162,9 @@
      "id": "Gunung Pinatubo",
      "it": "Pinatubo",
      "ja": "ピナトゥボ山",
-     "ko": "피나투보산"
+     "ko": "피나투보산",
+     "pl": "Pinatubo",
+     "nl": "Pinatubo"
     },
     "at": [
      120.35,
@@ -8031,7 +9187,9 @@
      "id": "Gunung Erebus",
      "it": "Erebus",
      "ja": "エレバス山",
-     "ko": "에러버스산"
+     "ko": "에러버스산",
+     "pl": "Erebus",
+     "nl": "Erebus"
     },
     "at": [
      167.283333333,
@@ -8055,7 +9213,9 @@
      "id": "Gunung Rainier",
      "it": "Monte Rainier",
      "ja": "レーニア山",
-     "ko": "레이니어산"
+     "ko": "레이니어산",
+     "pl": "Mount Rainier",
+     "nl": "Mount Rainier"
     },
     "at": [
      -121.760277777,
@@ -8078,7 +9238,9 @@
      "id": "Gunung Mayon",
      "it": "Mayon",
      "ja": "マヨン山",
-     "ko": "마욘산"
+     "ko": "마욘산",
+     "pl": "Mayon",
+     "nl": "Mayon"
     },
     "at": [
      123.685,
@@ -8101,7 +9263,9 @@
      "id": "Gunung Cotopaxi",
      "it": "Cotopaxi",
      "ja": "コトパクシ山",
-     "ko": "코토팍시산"
+     "ko": "코토팍시산",
+     "pl": "Cotopaxi",
+     "nl": "Cotopaxi"
     },
     "at": [
      -78.437777777,
@@ -8124,7 +9288,9 @@
      "id": "Kīlauea",
      "it": "Kīlauea",
      "ja": "キラウエア火山",
-     "ko": "킬라우에아산"
+     "ko": "킬라우에아산",
+     "pl": "Kīlauea",
+     "nl": "Kīlauea"
     },
     "at": [
      -155.286762,
@@ -8147,36 +9313,15 @@
      "id": "Gunung Kazbek",
      "it": "Monte Kazbek",
      "ja": "カズベキ山",
-     "ko": "카즈벡산"
+     "ko": "카즈벡산",
+     "pl": "Kazbek",
+     "nl": "Kazbek"
     },
     "at": [
      44.518888888,
      42.696944444
     ],
     "id": "mount-kazbek"
-   },
-   {
-    "name": {
-     "en": "Klyuchevskaya Sopka",
-     "zh": "克柳切夫火山",
-     "hi": "क्ल्यूचेव्सकाया",
-     "es": "Kliuchevskoi",
-     "ar": "كلويشيفسكايا سوبكا",
-     "fr": "Klioutchevskoï",
-     "bn": null,
-     "ru": "Ключевская Сопка",
-     "pt": "Kliutchevskaia Sopka",
-     "de": "Kljutschewskaja Sopka",
-     "id": "Klyuchevskaya Sopka",
-     "it": "Ključevskaja Sopka",
-     "ja": "クリュチェフスカヤ山",
-     "ko": "클류쳅스카야산"
-    },
-    "at": [
-     160.633333333,
-     56.066666666
-    ],
-    "id": "klyuchevskaya-sopka"
    },
    {
     "name": {
@@ -8193,7 +9338,9 @@
      "id": "Gunung Mont Pelee",
      "it": "La Pelée",
      "ja": "プレー山",
-     "ko": "몽펠레 산"
+     "ko": "몽펠레 산",
+     "pl": "Montagne Pelée",
+     "nl": "Mont Pelée"
     },
     "at": [
      -61.165555555,
@@ -8216,13 +9363,40 @@
      "id": "Hekla",
      "it": "Hekla",
      "ja": "ヘクラ山",
-     "ko": "헤클라산"
+     "ko": "헤클라산",
+     "pl": "Hekla",
+     "nl": "Hekla"
     },
     "at": [
      -19.665833333,
      63.992222222
     ],
     "id": "hekla"
+   },
+   {
+    "name": {
+     "en": "Klyuchevskaya Sopka",
+     "zh": "克柳切夫火山",
+     "hi": "क्ल्यूचेव्सकाया",
+     "es": "Kliuchevskoi",
+     "ar": "كلويشيفسكايا سوبكا",
+     "fr": "Klioutchevskoï",
+     "bn": null,
+     "ru": "Ключевская Сопка",
+     "pt": "Kliutchevskaia Sopka",
+     "de": "Kljutschewskaja Sopka",
+     "id": "Klyuchevskaya Sopka",
+     "it": "Ključevskaja Sopka",
+     "ja": "クリュチェフスカヤ山",
+     "ko": "클류쳅스카야산",
+     "pl": "Kluczewska Sopka",
+     "nl": "Kljoetsjevskaja Sopka"
+    },
+    "at": [
+     160.633333333,
+     56.066666666
+    ],
+    "id": "klyuchevskaya-sopka"
    },
    {
     "name": {
@@ -8239,7 +9413,9 @@
      "id": "Gunung Kamerun",
      "it": "Monte Camerun",
      "ja": "カメルーン山",
-     "ko": "카메룬산"
+     "ko": "카메룬산",
+     "pl": "Kamerun",
+     "nl": "Mount Cameroon"
     },
     "at": [
      9.1725,
@@ -8262,36 +9438,15 @@
      "id": "Vurcanu",
      "it": "isola di Vulcano",
      "ja": "ヴルカーノ島",
-     "ko": "불카노섬"
+     "ko": "불카노섬",
+     "pl": "Vulcano",
+     "nl": "Vulcano"
     },
     "at": [
      14.9658,
      38.4042
     ],
     "id": "vulcano"
-   },
-   {
-    "name": {
-     "en": "Semeru",
-     "zh": "塞梅鲁火山",
-     "hi": "सेमेरू",
-     "es": "Semeru",
-     "ar": "بركان سيمرو",
-     "fr": "Semeru",
-     "bn": "মেরু পর্বত (ইন্দোনেশিয়া)",
-     "ru": "Семеру",
-     "pt": "Monte Semeru",
-     "de": "Semeru",
-     "id": "Semeru",
-     "it": "Semeru",
-     "ja": "スメル山",
-     "ko": "세메루 산"
-    },
-    "at": [
-     112.916666666,
-     -8.1
-    ],
-    "id": "semeru"
    },
    {
     "name": {
@@ -8308,13 +9463,40 @@
      "id": "Gunung Agung",
      "it": "Agung",
      "ja": "アグン山",
-     "ko": "아궁산"
+     "ko": "아궁산",
+     "pl": "Agung",
+     "nl": "Agung"
     },
     "at": [
      115.507777777,
      -8.341944444
     ],
     "id": "mount-agung"
+   },
+   {
+    "name": {
+     "en": "Semeru",
+     "zh": "塞梅鲁火山",
+     "hi": "सेमेरू",
+     "es": "Semeru",
+     "ar": "بركان سيمرو",
+     "fr": "Semeru",
+     "bn": "মেরু পর্বত (ইন্দোনেশিয়া)",
+     "ru": "Семеру",
+     "pt": "Monte Semeru",
+     "de": "Semeru",
+     "id": "Semeru",
+     "it": "Semeru",
+     "ja": "スメル山",
+     "ko": "세메루 산",
+     "pl": "Semeru",
+     "nl": "Semeru"
+    },
+    "at": [
+     112.916666666,
+     -8.1
+    ],
+    "id": "semeru"
    },
    {
     "name": {
@@ -8331,7 +9513,9 @@
      "id": "Gunung Nyiragongo",
      "it": "Nyiragongo",
      "ja": "ニーラゴンゴ山",
-     "ko": "니라공고산"
+     "ko": "니라공고산",
+     "pl": "Nyiragongo",
+     "nl": "Nyiragongo"
     },
     "at": [
      29.25,
@@ -8360,7 +9544,9 @@
      "id": "Sungai Panjang",
      "it": "Fiume Azzurro",
      "ja": "長江",
-     "ko": "창 강"
+     "ko": "창 강",
+     "pl": "Jangcy",
+     "nl": "Jangtsekiang"
     },
     "id": "yangtze-river"
    },
@@ -8380,7 +9566,9 @@
      "id": "Sungai Kuning",
      "it": "Fiume Giallo",
      "ja": "黄河",
-     "ko": "황하"
+     "ko": "황하",
+     "pl": "Huang He",
+     "nl": "Gele Rivier"
     },
     "id": "yellow-river"
    },
@@ -8400,7 +9588,9 @@
      "id": "Sungai Paraná",
      "it": "Paraná",
      "ja": "パラナ川",
-     "ko": "파라나강"
+     "ko": "파라나강",
+     "pl": "Parana",
+     "nl": "Paraná"
     },
     "id": "parana-river"
    },
@@ -8420,7 +9610,9 @@
      "id": "Sungai Niger",
      "it": "Niger",
      "ja": "ニジェール川",
-     "ko": "나이저강"
+     "ko": "나이저강",
+     "pl": "Niger",
+     "nl": "Niger"
     },
     "id": "niger-river"
    },
@@ -8440,7 +9632,9 @@
      "id": "Mekong",
      "it": "Mekong",
      "ja": "メコン川",
-     "ko": "메콩강"
+     "ko": "메콩강",
+     "pl": "Mekong",
+     "nl": "Mekong"
     },
     "id": "mekong-river"
    },
@@ -8460,7 +9654,9 @@
      "id": "Sungai Lena",
      "it": "Lena",
      "ja": "レナ川",
-     "ko": "레나강"
+     "ko": "레나강",
+     "pl": "Lena",
+     "nl": "Lena"
     },
     "id": "lena-river"
    },
@@ -8480,7 +9676,9 @@
      "id": "Sungai Kongo",
      "it": "Congo",
      "ja": "コンゴ川",
-     "ko": "콩고강"
+     "ko": "콩고강",
+     "pl": "Kongo",
+     "nl": "Kongo"
     },
     "id": "river-congo"
    },
@@ -8500,7 +9698,9 @@
      "id": "Sungai Gangga",
      "it": "Gange",
      "ja": "ガンジス川",
-     "ko": "갠지스강"
+     "ko": "갠지스강",
+     "pl": "Ganges",
+     "nl": "Ganges"
     },
     "id": "ganges"
    },
@@ -8520,7 +9720,9 @@
      "id": "Sungai Ob",
      "it": "Ob'",
      "ja": "オビ川",
-     "ko": "오비강"
+     "ko": "오비강",
+     "pl": "Ob",
+     "nl": "Ob"
     },
     "id": "ob"
    },
@@ -8540,7 +9742,9 @@
      "id": "Sungai Amazon",
      "it": "Rio delle Amazzoni",
      "ja": "アマゾン川",
-     "ko": "아마존강"
+     "ko": "아마존강",
+     "pl": "Amazonka",
+     "nl": "Amazone"
     },
     "id": "amazon-river"
    },
@@ -8560,7 +9764,9 @@
      "id": "Sungai Columbia",
      "it": "Columbia",
      "ja": "コロンビア川",
-     "ko": "컬럼비아강"
+     "ko": "컬럼비아강",
+     "pl": "Kolumbia",
+     "nl": "Columbia"
     },
     "id": "columbia-river"
    },
@@ -8580,7 +9786,9 @@
      "id": "Sungai Irtysh",
      "it": "Irtyš",
      "ja": "エルティシ川",
-     "ko": "이르티시강"
+     "ko": "이르티시강",
+     "pl": "Irtysz",
+     "nl": "Irtysj"
     },
     "id": "irtysh"
    },
@@ -8600,7 +9808,9 @@
      "id": "Sungai Yukon",
      "it": "Yukon",
      "ja": "ユーコン川",
-     "ko": "유콘강"
+     "ko": "유콘강",
+     "pl": "Jukon",
+     "nl": "Yukon"
     },
     "id": "yukon-river"
    },
@@ -8620,7 +9830,9 @@
      "id": "Sungai Indus",
      "it": "Indo",
      "ja": "インダス川",
-     "ko": "인더스강"
+     "ko": "인더스강",
+     "pl": "Indus",
+     "nl": "Indus"
     },
     "id": "indus-river"
    },
@@ -8639,7 +9851,9 @@
      "id": "Sungai Salween",
      "it": "Saluen",
      "ja": "サルウィン川",
-     "ko": "살윈강"
+     "ko": "살윈강",
+     "pl": "Saluin",
+     "nl": "Salween"
     },
     "id": "salween-river"
    },
@@ -8659,7 +9873,9 @@
      "id": "Nil",
      "it": "Nilo",
      "ja": "ナイル川",
-     "ko": "나일강"
+     "ko": "나일강",
+     "pl": "Nil",
+     "nl": "Nijl"
     },
     "id": "nile"
    },
@@ -8678,7 +9894,9 @@
      "id": "Rio Negro",
      "it": "Rio Negro",
      "ja": "ネグロ川",
-     "ko": "네그루강"
+     "ko": "네그루강",
+     "pl": "Rio Negro",
+     "nl": "Rio Negro"
     },
     "id": "rio-negro"
    },
@@ -8698,7 +9916,9 @@
      "id": "Sungai Zambezi",
      "it": "Zambesi",
      "ja": "ザンベジ川",
-     "ko": "잠베지강"
+     "ko": "잠베지강",
+     "pl": "Zambezi",
+     "nl": "Zambezi"
     },
     "id": "zambezi-river"
    },
@@ -8718,7 +9938,9 @@
      "id": "Rio Grande",
      "it": "Rio Grande",
      "ja": "リオ・グランデ川",
-     "ko": "리오그란데강"
+     "ko": "리오그란데강",
+     "pl": "Rio Grande",
+     "nl": "Rio Grande"
     },
     "id": "rio-grande"
    },
@@ -8738,7 +9960,9 @@
      "id": "Sungai Missouri",
      "it": "Missouri",
      "ja": "ミズーリ川",
-     "ko": "미주리강"
+     "ko": "미주리강",
+     "pl": "Missouri",
+     "nl": "Missouri"
     },
     "id": "missouri-river"
    },
@@ -8757,7 +9981,9 @@
      "id": "Sungai Ucayali",
      "it": "Ucayali",
      "ja": "ウカヤリ川",
-     "ko": "우카얄리강"
+     "ko": "우카얄리강",
+     "pl": "Ukajali",
+     "nl": "Ucayali"
     },
     "id": "ucayali-river"
    },
@@ -8777,7 +10003,9 @@
      "id": "Sungai Efrat",
      "it": "Eufrate",
      "ja": "ユーフラテス川",
-     "ko": "유프라테스강"
+     "ko": "유프라테스강",
+     "pl": "Eufrat",
+     "nl": "Eufraat"
     },
     "id": "euphrates"
    },
@@ -8797,7 +10025,9 @@
      "id": "Sungai Volga",
      "it": "Volga",
      "ja": "ヴォルガ川",
-     "ko": "볼가강"
+     "ko": "볼가강",
+     "pl": "Wołga",
+     "nl": "Wolga"
     },
     "id": "volga"
    },
@@ -8816,7 +10046,9 @@
      "id": "Sungai Kolyma",
      "it": "Kolyma",
      "ja": "コリマ川",
-     "ko": "콜리마강"
+     "ko": "콜리마강",
+     "pl": "Kołyma",
+     "nl": "Kolyma"
     },
     "id": "kolyma"
    },
@@ -8835,7 +10067,9 @@
      "id": "Sungai Orinoko",
      "it": "Orinoco",
      "ja": "オリノコ川",
-     "ko": "오리노코강"
+     "ko": "오리노코강",
+     "pl": "Orinoko",
+     "nl": "Orinoco"
     },
     "id": "orinoco-river"
    },
@@ -8854,7 +10088,9 @@
      "id": "Sungai Aldan",
      "it": "Aldan",
      "ja": "アルダン川",
-     "ko": "알단강"
+     "ko": "알단강",
+     "pl": "Ałdan",
+     "nl": "Aldan"
     },
     "id": "aldan"
    },
@@ -8874,7 +10110,9 @@
      "id": "Sungai Arkansas",
      "it": "Arkansas",
      "ja": "アーカンザス川",
-     "ko": "아칸소강"
+     "ko": "아칸소강",
+     "pl": "Arkansas",
+     "nl": "Arkansas"
     },
     "id": "arkansas-river"
    },
@@ -8892,7 +10130,9 @@
      "de": "Rio Araguaia",
      "it": "Araguaia",
      "ja": "アラグアイア川",
-     "ko": "아라과이아강"
+     "ko": "아라과이아강",
+     "pl": "Araguaia",
+     "nl": "Araguaia"
     },
     "id": "araguaia-river"
    },
@@ -8912,7 +10152,9 @@
      "id": "Sungai Yenisei",
      "it": "Enisej",
      "ja": "エニセイ川",
-     "ko": "예니세이강"
+     "ko": "예니세이강",
+     "pl": "Jenisej",
+     "nl": "Jenisej"
     },
     "id": "yenisei"
    },
@@ -8932,7 +10174,9 @@
      "id": "Sungai Mississippi",
      "it": "Mississippi",
      "ja": "ミシシッピ川",
-     "ko": "미시시피강"
+     "ko": "미시시피강",
+     "pl": "Missisipi",
+     "nl": "Mississippi"
     },
     "id": "mississippi-river"
    }
@@ -9024,376 +10268,6 @@
     "name": {
      "en": "Tropical & Subtropical Coniferous Forests"
     }
-   }
-  ]
- },
- "wonders": {
-  "kind": "point",
-  "items": [
-   {
-    "id": "q12501",
-    "name": {
-     "en": "Great Wall of China",
-     "zh": "长城",
-     "hi": "चीन की विशाल दीवार",
-     "es": "Gran Muralla china",
-     "ar": "سور الصين العظيم",
-     "fr": "Grande Muraille",
-     "bn": "চীনের মহাপ্রাচীর",
-     "ur": "دیوار چین",
-     "ru": "Великая китайская стена",
-     "pt": "Grande Muralha da China",
-     "de": "Chinesische Mauer",
-     "id": "Tembok Besar Tiongkok",
-     "it": "Grande muraglia cinese",
-     "ja": "万里の長城",
-     "ko": "만리장성"
-    },
-    "at": [
-     116.564444444,
-     40.431388888
-    ]
-   },
-   {
-    "id": "q5788",
-    "name": {
-     "en": "Petra",
-     "zh": "佩特拉",
-     "hi": "पेत्रा",
-     "es": "Petra",
-     "ar": "البتراء",
-     "fr": "Pétra",
-     "bn": "পেত্রা",
-     "ur": "بترا",
-     "ru": "Петра",
-     "pt": "Petra",
-     "de": "Petra",
-     "id": "Petra",
-     "it": "Petra",
-     "ja": "ペトラ",
-     "ko": "페트라"
-    },
-    "at": [
-     35.440277777,
-     30.328888888
-    ]
-   },
-   {
-    "id": "q79961",
-    "name": {
-     "en": "Christ the Redeemer",
-     "zh": "里約熱內盧基督像",
-     "hi": "क्राइस्ट द रिडीमर",
-     "es": "Cristo Redentor",
-     "ar": "تمثال المسيح الفادي",
-     "fr": "statue du Christ Rédempteur",
-     "bn": "ক্রাইস্ট দ্য রিডিমার",
-     "ur": "مسیح نجات دہندہ",
-     "ru": "статуя Христа-Искупителя",
-     "pt": "Cristo Redentor",
-     "de": "Cristo Redentor",
-     "id": "Patung Kristus Penebus",
-     "it": "Cristo Redentore",
-     "ja": "コルコバードのキリスト像",
-     "ko": "구세주 그리스도상"
-    },
-    "at": [
-     -43.210464122,
-     -22.951915648
-    ]
-   },
-   {
-    "id": "q676203",
-    "name": {
-     "en": "Machu Picchu",
-     "zh": "馬丘比丘",
-     "hi": "माचू पिच्चू",
-     "es": "Machu Picchu",
-     "ar": "ماتشو بيتشو",
-     "fr": "Machu Picchu",
-     "bn": "মাচু পিচু",
-     "ur": "ماچو پیچو",
-     "ru": "Мачу-Пикчу",
-     "pt": "Machu Picchu",
-     "de": "Machu Picchu",
-     "id": "Cagar Alam Machu Picchu",
-     "it": "Machu Picchu",
-     "ja": "マチュ・ピチュ",
-     "ko": "마추 픽추"
-    },
-    "at": [
-     -72.545555555,
-     -13.163333333
-    ]
-   },
-   {
-    "id": "q5859",
-    "name": {
-     "en": "Chichen Itza",
-     "zh": "奇琴伊察",
-     "hi": "चिचेन इत्सा",
-     "es": "Chichén Itzá",
-     "ar": "تشيتشن إيتزا",
-     "fr": "Chichén Itzá",
-     "bn": "চিচেন ইৎজা",
-     "ur": "چیچن ایتزا",
-     "ru": "Чичен-Ица",
-     "pt": "Chichén Itzá",
-     "de": "Chichén Itzá",
-     "id": "Chichén Itzá",
-     "it": "Chichén Itzá",
-     "ja": "チチェン・イッツァ",
-     "ko": "치첸이트사"
-    },
-    "at": [
-     -88.568611111,
-     20.683055555
-    ]
-   },
-   {
-    "id": "q10285",
-    "name": {
-     "en": "Colosseum",
-     "zh": "罗马斗兽场",
-     "hi": "कोलोसियम",
-     "es": "Coliseo",
-     "ar": "كولوسيوم",
-     "fr": "Colisée",
-     "bn": "কলোসিয়াম",
-     "ur": "کولوزیئم",
-     "ru": "Колизей",
-     "pt": "Coliseu de Roma",
-     "de": "Kolosseum",
-     "id": "Koloseum",
-     "it": "Colosseo",
-     "ja": "コロッセオ",
-     "ko": "콜로세움"
-    },
-    "at": [
-     12.492222222,
-     41.890277777
-    ]
-   },
-   {
-    "id": "q9141",
-    "name": {
-     "en": "Taj Mahal",
-     "zh": "泰姬陵",
-     "hi": "ताजमहल",
-     "es": "Taj Mahal",
-     "ar": "تاج محل",
-     "fr": "Taj Mahal",
-     "bn": "তাজমহল",
-     "ur": "تاج محل",
-     "ru": "Тадж-Махал",
-     "pt": "Taj Mahal",
-     "de": "Taj Mahal",
-     "id": "Taj Mahal",
-     "it": "Taj Mahal",
-     "ja": "タージ・マハル",
-     "ko": "타지마할"
-    },
-    "at": [
-     78.041944444,
-     27.175
-    ]
-   },
-   {
-    "id": "q37200",
-    "name": {
-     "en": "Great Pyramid of Giza",
-     "zh": "胡夫金字塔",
-     "hi": "गीजा का महान पिरामिड",
-     "es": "Gran pirámide de Giza",
-     "ar": "الهرم الأكبر",
-     "fr": "pyramide de Khéops",
-     "bn": "গিজার মহা পিরামিড",
-     "ur": "ہرم خوفو",
-     "ru": "Пирамида Хеопса",
-     "pt": "Pirâmide de Quéops",
-     "de": "Cheops-Pyramide",
-     "id": "Piramida Agung Giza",
-     "it": "piramide di Cheope",
-     "ja": "ギザの大ピラミッド",
-     "ko": "기자의 대피라미드"
-    },
-    "at": [
-     31.13422,
-     29.97915
-    ]
-   }
-  ]
- },
- "ancient-wonders": {
-  "kind": "point",
-  "items": [
-   {
-    "id": "q37200",
-    "name": {
-     "en": "Great Pyramid of Giza",
-     "zh": "胡夫金字塔",
-     "hi": "गीजा का महान पिरामिड",
-     "es": "Gran pirámide de Giza",
-     "ar": "الهرم الأكبر",
-     "fr": "pyramide de Khéops",
-     "bn": "গিজার মহা পিরামিড",
-     "ur": "ہرم خوفو",
-     "ru": "Пирамида Хеопса",
-     "pt": "Pirâmide de Quéops",
-     "de": "Cheops-Pyramide",
-     "id": "Piramida Agung Giza",
-     "it": "piramide di Cheope",
-     "ja": "ギザの大ピラミッド",
-     "ko": "기자의 대피라미드"
-    },
-    "at": [
-     31.13422,
-     29.97915
-    ]
-   },
-   {
-    "id": "q41931",
-    "name": {
-     "en": "Hanging Gardens of Babylon",
-     "zh": "空中花园",
-     "hi": "बेबीलोन के झूलते उपवन",
-     "es": "Jardines Colgantes de Babilonia",
-     "ar": "حدائق بابل المعلقة",
-     "fr": "jardins suspendus de Babylone",
-     "bn": "ব্যাবিলনের শূন্য উদ্যান",
-     "ur": "بابل کے معلق باغات",
-     "ru": "Висячие сады Семирамиды",
-     "pt": "Jardins Suspensos da Babilónia",
-     "de": "Hängende Gärten der Semiramis",
-     "id": "Taman Gantung Babilonia",
-     "it": "giardini pensili di Babilonia",
-     "ja": "バビロンの空中庭園",
-     "ko": "바빌론의 공중 정원"
-    },
-    "at": [
-     44.4275,
-     32.5355
-    ]
-   },
-   {
-    "id": "q43018",
-    "name": {
-     "en": "Temple of Ephesian Artemis",
-     "zh": "阿耳忒弥斯神庙",
-     "hi": "अर्टेमिस का मन्दिर",
-     "es": "Templo de Artemisa",
-     "ar": "هيكل آرتميس",
-     "fr": "temple d'Artémis à Éphèse",
-     "bn": "আর্টেমিসের মন্দির",
-     "ur": "معبد آرتمیس",
-     "ru": "Храм Артемиды Эфесской",
-     "pt": "Templo de Ártemis",
-     "de": "Tempel der Artemis in Ephesos",
-     "id": "Kuil Artemis",
-     "it": "Tempio di Artemide",
-     "ja": "アルテミス神殿",
-     "ko": "아르테미스 신전"
-    },
-    "at": [
-     27.363889,
-     37.949722
-    ]
-   },
-   {
-    "id": "q46239",
-    "name": {
-     "en": "Statue of Zeus at Olympia",
-     "zh": "奧林匹亞宙斯神像",
-     "hi": "ओलम्पिया में जियस की मूर्ति",
-     "es": "Estatua de Zeus en Olimpia",
-     "ar": "تمثال زوس",
-     "fr": "statue chryséléphantine de Zeus à Olympie",
-     "bn": "অলিম্পিয়ার জিউসের মূর্তি",
-     "ur": "اولمپیا میں زیوس کا مجسمہ",
-     "ru": "Статуя Зевса в Олимпии",
-     "pt": "Estátua de Zeus em Olímpia",
-     "de": "Zeus-Statue des Phidias",
-     "id": "Patung Zeus di Olympia",
-     "it": "Statua di Zeus a Olimpia",
-     "ja": "オリンピアのゼウス像",
-     "ko": "올림피아의 제우스상"
-    },
-    "at": [
-     21.63,
-     37.637861111
-    ]
-   },
-   {
-    "id": "q45368",
-    "name": {
-     "en": "Mausoleum at Halicarnassus",
-     "zh": "摩索拉斯王陵墓",
-     "hi": "माउसोलस का मकबरा",
-     "es": "Mausoleo de Halicarnaso",
-     "ar": "ضريح موسولوس",
-     "fr": "mausolée d'Halicarnasse",
-     "bn": "হ্যালিকারনেসাসের সমাধি মন্দির",
-     "ur": "موسولس کا مزار",
-     "ru": "Мавзолей в Галикарнасе",
-     "pt": "Mausoléu de Halicarnasso",
-     "de": "Mausoleum von Halikarnassos",
-     "id": "Mausoleum Mausolus",
-     "it": "Mausoleo di Alicarnasso",
-     "ja": "マウソロス霊廟",
-     "ko": "할리카르나소스의 마우솔레움"
-    },
-    "at": [
-     27.424097,
-     37.037942
-    ]
-   },
-   {
-    "id": "q41553",
-    "name": {
-     "en": "Colossus of Rhodes",
-     "zh": "罗得岛巨像",
-     "hi": "रोडेस कि विशालमूर्ति",
-     "es": "Coloso de Rodas",
-     "ar": "عملاق رودس",
-     "fr": "colosse de Rhodes",
-     "bn": "রোডস এর মূর্তি",
-     "ur": "روڈس کا مجسمہ",
-     "ru": "Колосс Родосский",
-     "pt": "Colosso de Rodes",
-     "de": "Koloss von Rhodos",
-     "id": "Kolosus di Rodos",
-     "it": "Colosso di Rodi",
-     "ja": "ロドス島の巨像",
-     "ko": "로도스의 거상"
-    },
-    "at": [
-     28.227778,
-     36.451111
-    ]
-   },
-   {
-    "id": "q43244",
-    "name": {
-     "en": "Lighthouse of Alexandria",
-     "zh": "亚历山大灯塔",
-     "hi": "सिकन्दरिया का प्रकाशस्तंभ",
-     "es": "Faro de Alejandría",
-     "ar": "فنار الإسكندرية",
-     "fr": "phare d'Alexandrie",
-     "bn": "আলেকজান্দ্রিয়ার বাতিঘর",
-     "ur": "اسکندریہ کا روشن مینار",
-     "ru": "Александрийский маяк",
-     "pt": "Farol de Alexandria",
-     "de": "Pharos von Alexandria",
-     "id": "Mercusuar Iskandariyah",
-     "it": "faro di Alessandria",
-     "ja": "アレクサンドリアの大灯台",
-     "ko": "알렉산드리아의 등대"
-    },
-    "at": [
-     29.885,
-     31.214167
-    ]
    }
   ]
  }

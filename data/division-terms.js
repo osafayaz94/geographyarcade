@@ -10,12 +10,13 @@ const groups = {
   provincesTerritories: 'CA',
   prefectures: 'JP',
   countries: 'GB',
-  regions: 'RU FR IT CL PE GH KZ UZ CM TZ ET SN ML NE ES CZ SK PL DK GN CI BF CF SA TM KG TJ BY UA NA LY GR NZ FI SO PH',
+  regions: 'RU FR IT CL PE GH KZ UZ CM TZ ET SN ML NE ES CZ SK DK GN CI BF CF SA TM KG TJ BY UA NA LY GR NZ FI SO PH',
   departments: 'CO BO PY UY CG BJ HN GT SV NI HT',
   governorates: 'EG IQ SY YE OM TN JO LB KW BH',
   counties: 'KE NO SE LR HU HR RO EE LV LT AL IE',
   districts: 'BW CY IL MW UG',
   cantons: 'CH LU',
+  voivodeships: 'PL', // województwa
   divisions: 'BA', // Bosnia: cantons, an entity and a district
   municipalities: 'MK QA',
 };

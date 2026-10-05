@@ -1,10 +1,10 @@
 # Geography Arcade
 
-Free geography quizzes: flags, capital cities, click-the-country maps, and provinces/states. Static HTML, 15 languages, no server code.
+Free geography quizzes: flags, capital cities, click-the-country maps, and provinces/states. Static HTML, 17 languages, no server code.
 
 - **195 countries:** the 193 UN member states plus the two observer states (Vatican City, Palestine).
 - **Provinces and states** (names, capitals, population, area, map) for 131 countries: 107 of the largest by area, plus the smaller countries listed in `extraProvinceCountries` (site.config.js), such as Switzerland, the Netherlands and Belgium. Each continent page shows a stamp for every one of them.
-- **Languages:** English (root), Chinese (`/zh/`), Hindi (`/hi/`), Spanish (`/es/`), Arabic (`/ar/`, right to left), French (`/fr/`), Bengali (`/bn/`), Portuguese (`/pt/`, Brazilian), Russian (`/ru/`), Urdu (`/ur/`, right to left; uses the Nastaliq font built into Android and iOS, no download), German (`/de/`), Indonesian (`/id/`), Italian (`/it/`), Japanese (`/ja/`) and Korean (`/ko/`). Every page exists in every language. Indonesian, Italian, Japanese and Korean were added on 2026-10-01 and still need a native speaker's review.
+- **Languages:** English (root), Chinese (`/zh/`), Hindi (`/hi/`), Spanish (`/es/`), Arabic (`/ar/`, right to left), French (`/fr/`), Bengali (`/bn/`), Portuguese (`/pt/`, Brazilian), Russian (`/ru/`), Urdu (`/ur/`, right to left; uses the Nastaliq font built into Android and iOS, no download), German (`/de/`), Indonesian (`/id/`), Italian (`/it/`), Japanese (`/ja/`), Korean (`/ko/`), Polish (`/pl/`) and Dutch (`/nl/`). Every page exists in every language. Indonesian, Italian, Japanese and Korean (added 2026-10-01) and Polish and Dutch (added 2026-10-05) still need a native speaker's review. Poland's divisions are called voivodeships (województwa) in every language that has a word for them.
 
 The site is **Geography Arcade** at https://geographyarcade.com (`siteName` and `domain` in `site.config.js`; `aliasDomains` lists hostnames such as www that 301-redirect to it).
 
@@ -119,11 +119,11 @@ Scopes for the quizzes: `world`, `africa`, `asia`, `europe`, `north-america` (in
 
 **Search engines (SEO)**
 - Every page is complete HTML. The quiz runs in the browser, but the full answer list (flags, countries, capitals) is written into the page, so search engines index real content.
-- `hreflang` for all 10 languages plus `x-default`, one sitemap per language with alternates, unique titles and descriptions.
+- `hreflang` for all 17 languages plus `x-default`, one sitemap per language with alternates, unique titles and descriptions.
 - Structured data: `Quiz`, `WebPage` about a `Country` (linked to Wikidata with `sameAs`), `FAQPage`, `BreadcrumbList`, `WebSite`, `AboutPage`.
 - Every page is at most 3 clicks from the home page. `npm run check` fails on orphans.
 
-**Local search:** every country and province page exists in all 10 languages, with the country's own names from Wikidata (so `/hi/countries/india/` uses भारत and Hindi province names). Province quizzes target searches like "Pakistan provinces quiz" or "Mexico states map".
+**Local search:** every country and province page exists in all 17 languages, with the country's own names from Wikidata (so `/hi/countries/india/` uses भारत and Hindi province names). Province quizzes target searches like "Pakistan provinces quiz" or "Mexico states map".
 
 **Answer engines (AEO):** each country page opens with a one-sentence answer ("The capital of Pakistan is Islamabad. Pakistan is in Asia.") and has 5 or 6 questions with direct answers: capital, continent, area rank, population with year, number of provinces, neighbours. Each list page opens with a computed answer ("The largest country by area is Russia (17,098,242 km²), followed by Canada and China.").
 

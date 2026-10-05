@@ -776,6 +776,7 @@ function countryGameStamps(lang) {
 // ---------- Lists and rankings (topic pages that answer "which countries..." searches) ----------
 // kind "rank": ordered by a value; "set": countries that match, largest first.
 const byArea = (a, b) => b.area - a.area;
+const CUR_NAMES = { pl: { XOF: 'zachodnioafrykański frank CFA', XAF: 'środkowoafrykański frank CFA' }, nl: { XOF: 'West-Afrikaanse CFA-frank', XAF: 'Centraal-Afrikaanse CFA-frank' } };
 // List pages that also explain their line or hemisphere and show a map (shade: hemisphere tinted).
 const HEMI_LISTS = { south: { x: 'hemiSouthX', shade: 'S' }, north: { x: 'hemiNorthX', shade: 'N' }, equator: { x: 'hemiEquatorX', shade: null } };
 const LISTS = [
@@ -794,7 +795,8 @@ const LISTS = [
   ...[['EUR', 'euro'], ['USD', 'us-dollar'], ['XOF', 'west-african-cfa-franc'], ['XAF', 'central-african-cfa-franc']].map(([code, s]) => ({
     key: 'cur', code, slug: `countries-using-${s}`, kind: 'set', rows: () => countries.filter((c) => c.currencies.some((x) => x.code === code)).sort(byArea), game: 'games/currencies/',
     // English runs names like "Euro" inside a sentence, so use normal lower-case forms there.
-    x: (lang) => (lang === 'en' ? { EUR: 'euro', USD: 'US dollar', XOF: 'West African CFA franc', XAF: 'Central African CFA franc' }[code] : currencyNames(lang, { currencies: [{ code, name: code }] })[0].replace(/\s*\([A-Z]{3}\)$/, '')),
+    // Polish and Dutch: the built-in names don't tell the two CFA francs apart.
+    x: (lang) => (lang === 'en' ? { EUR: 'euro', USD: 'US dollar', XOF: 'West African CFA franc', XAF: 'Central African CFA franc' }[code] : (CUR_NAMES[lang] || {})[code] || currencyNames(lang, { currencies: [{ code, name: code }] })[0].replace(/\s*\([A-Z]{3}\)$/, '')),
   })),
   ...[['eng', 'english'], ['fra', 'french'], ['spa', 'spanish'], ['ara', 'arabic'], ['por', 'portuguese'], ['rus', 'russian']].map(([code, s]) => ({
     key: 'lang', code, slug: `countries-where-${s}-is-official`, kind: 'set', rows: () => countries.filter((c) => Object.keys(wcLangs[c.iso2] || {}).includes(code)).sort(byArea), game: 'games/languages/',

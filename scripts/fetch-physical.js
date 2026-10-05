@@ -12,7 +12,7 @@ const { cachedFetch, sparql, entities, labels } = require('./wikidata');
 const NE = 'https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/';
 const DATA = path.join(__dirname, '..', 'data');
 const GEO = path.join(DATA, 'geo');
-const LANGS = ['en', 'zh', 'hi', 'es', 'ar', 'fr', 'bn', 'pt', 'ru', 'ur', 'de', 'id', 'it', 'ja', 'ko'];
+const LANGS = ['en', 'zh', 'hi', 'es', 'ar', 'fr', 'bn', 'pt', 'ru', 'ur', 'de', 'id', 'it', 'ja', 'ko', 'pl', 'nl'];
 const slug = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
 // Natural Earth stores names as name_xx or NAME_XX.
@@ -32,12 +32,12 @@ async function wdNames(qids) {
   for (const q of qids) if (ent[q]) out[q] = labels(ent[q]);
   // Urdu, Russian and Portuguese are not in the entity fetch; get them as plain labels.
   for (let i = 0; i < qids.length; i += 50) {
-    const d = await cachedFetch(`https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&props=labels&languages=ur|ru|pt-br|pt|de|id|it|ja|ko&ids=${qids.slice(i, i + 50).join('|')}`);
+    const d = await cachedFetch(`https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&props=labels&languages=ur|ru|pt-br|pt|de|id|it|ja|ko|pl|nl&ids=${qids.slice(i, i + 50).join('|')}`);
     for (const [q, e] of Object.entries(d.entities || {})) {
       const L = e.labels || {};
       out[q] = out[q] || {};
       out[q].ur = L.ur && L.ur.value; out[q].ru = L.ru && L.ru.value; out[q].pt = (L['pt-br'] || L.pt || {}).value; out[q].de = L.de && L.de.value;
-      for (const l of ['id', 'it', 'ja', 'ko']) out[q][l] = L[l] && L[l].value;
+      for (const l of ['id', 'it', 'ja', 'ko', 'pl', 'nl']) out[q][l] = L[l] && L[l].value;
     }
   }
   return out;
