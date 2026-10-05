@@ -19,12 +19,19 @@
       b.setAttribute('aria-pressed', b.getAttribute('data-mode') === mode ? 'true' : 'false');
     });
   }
+  // A link can name the version (#blank, #worksheet, #labeled, #answers); switching updates it,
+  // so the address can be shared or bookmarked.
+  var MODES = ['blank', 'worksheet', 'labeled', 'answers'];
   Array.prototype.forEach.call(document.querySelectorAll('[data-mode]'), function (b) {
-    b.addEventListener('click', function () { setMode(b.getAttribute('data-mode')); });
+    b.addEventListener('click', function () {
+      setMode(b.getAttribute('data-mode'));
+      if (window.history && history.replaceState) history.replaceState(null, '', '#' + b.getAttribute('data-mode'));
+    });
   });
   var printBtn = document.querySelector('[data-print]');
   if (printBtn) printBtn.addEventListener('click', function () { window.print(); });
-  setMode('worksheet');
+  var fromLink = location.hash.slice(1);
+  setMode(MODES.indexOf(fromLink) >= 0 ? fromLink : 'worksheet');
 
   // The centre of the biggest piece of a shape (the mainland, not an outlying island), in the
   // coordinates of the shape's parent, so a number placed there sits on the right spot even

@@ -936,6 +936,7 @@ function countryPage(lang, c) {
     divBlock = `<h2 id="divisions">${esc(t(lang, 'divTitle', { Term: term(c, lang, true), term: tm, c: name }))}</h2><p>${esc(t(lang, 'divCount', { c: name, n: divs.length, term: tm }))}</p>
 <div class="cta"><a class="btn" href="${url(lang, `${p}map-quiz/`)}">${esc(t(lang, 'playProvMap', { term: tm }))}</a>${hasCapQuiz(c) ? `<a class="btn ghost" href="${url(lang, `${p}capitals-quiz/`)}">${esc(t(lang, 'playProvCap', { term: tm }))}</a>` : ''}${flagCountries.includes(c.iso2) ? `<a class="btn ghost" href="${url(lang, flagQuizPath(c))}">${esc(flagQuizTitle(lang, c))}</a>` : ''}${extraLinks(lang, EXTRA_SETS.filter((x) => x.c === c)).map(([h, n]) => `<a class="btn ghost" href="${url(lang, h)}">${esc(n)}</a>`).join('')}</div>
 <p><img src="/maps/p/${c.iso2.toLowerCase()}.svg" alt="${esc(t(lang, 'divTitle', { Term: term(c, lang, true), term: tm, c: name }))}" width="1000" height="${MAP_AR['p-' + c.iso2].split('/')[1]}" loading="lazy" style="background:var(--ocean);border-radius:14px"></p>
+${printVersions(lang, [printFor((pr) => pr.kind === 'prov' && pr.c === c), ...EXTRA_SETS.filter((x) => x.c === c).map((x) => printFor((pr) => pr.kind === 'extra' && pr.x === x))])}
 <div class="tbl"><table><thead><tr><th>${esc(t(lang, 'thName'))}</th><th>${esc(t(lang, 'divCapital'))}</th><th class="num">${esc(t(lang, 'thPopulation'))}</th><th class="num">${esc(t(lang, 'thArea'))}</th></tr></thead><tbody>${divs.map((d) => `<tr><td>${esc(nm(d.name, lang))}</td><td>${esc(nm(d.capital, lang))}</td><td class="num">${d.population ? num(lang, d.population.value) : ''}</td><td class="num">${d.area ? num(lang, d.area) : ''}</td></tr>`).join('')}</tbody></table></div>`;
   }
 
@@ -1051,6 +1052,13 @@ function printInfo(lang, pr) {
 function printAside(lang, pr) {
   if (!pr) return '';
   return `<a class="paside" href="${url(lang, pr.p)}"><img src="${pr.thumb}" alt="" width="160" height="96" loading="lazy"><span>${esc(t(lang, 'printLink'))}</span></a>`;
+}
+// The printable maps of a country page, each with its four versions as direct links.
+function printVersions(lang, prints) {
+  const list = prints.filter(Boolean);
+  if (!list.length) return '';
+  const modes = [['blank', 'modeBlank'], ['worksheet', 'modeWorksheet'], ['labeled', 'modeLabeled'], ['answers', 'modeAnswers']];
+  return `<h2>${esc(t(lang, 'printHubTitle'))}</h2>` + list.map((pr) => `<div class="pver"><a class="pver-t" href="${url(lang, pr.p)}"><img src="${pr.thumb}" alt="" width="120" height="72" loading="lazy"><span>${esc(printInfo(lang, pr).title)}</span></a><span class="pver-l">${modes.map(([m, k]) => `<a href="${url(lang, pr.p)}#${m}">${esc(t(lang, k))}</a>`).join('')}</span></div>`).join('');
 }
 function printPage(lang, pr) {
   const { items, title, desc } = printInfo(lang, pr);

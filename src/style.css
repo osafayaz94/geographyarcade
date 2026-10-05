@@ -272,3 +272,9 @@ footer .wrap{display:flex;gap:.5rem 1.5rem;flex-wrap:wrap}
 .pm-labeled .pnum,.pm-labeled .pkey{display:none}
 .pwm{fill:#8A97A3;font-family:system-ui,sans-serif;font-weight:700;text-anchor:end;letter-spacing:.02em}
 .lmap{margin:1rem 0}.lmap img{display:block;width:100%;height:auto;border-radius:10px}
+.pver{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem 1rem;padding:.7rem;margin:.6rem 0;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+.pver-t{display:flex;align-items:center;gap:.7rem;color:var(--ink);font-weight:600;text-decoration:none}
+.pver-t img{width:120px;height:auto;border-radius:8px;background:var(--water)}
+.pver-l{display:flex;flex-wrap:wrap;gap:.4rem}
+.pver-l a{padding:.4rem .8rem;border:1.5px solid var(--line);border-radius:999px;color:var(--ink);text-decoration:none;font-size:.92rem}
+.pver-l a:hover{border-color:var(--mag)}
