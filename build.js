@@ -1100,6 +1100,7 @@ function printPage(lang, pr) {
   const body = `<h1>${esc(title)}</h1><p class="lede">${esc(desc)}</p>`
     + `<div class="pctl"><div class="seg" role="group" aria-label="${esc(title)}">${modes}</div><button class="btn" type="button" data-print>${esc(t(lang, 'printBtn'))}</button><a class="btn ghost" href="${url(lang, pr.quiz)}">${esc(t(lang, 'printQuizLink'))}</a></div>`
     + `<p class="note ptip">${esc(t(lang, 'printTip'))}</p>`
+    + (w > h * 1.15 ? '<style>@page{size:landscape}@media print{.pmap svg{max-height:160mm}}</style>' : '')
     + `<div class="pmap" data-src="${pr.src}"><img src="${pr.src}" alt="${esc(title)}" width="${w}" height="${h}" decoding="async" fetchpriority="low"></div>`
     + `<ol class="pkey">${list.map((x) => `<li data-id="${esc(x.id)}"><span class="nm">${esc(x.n)}</span></li>`).join('')}</ol>`;
   const crumbs = [{ name: t(lang, 'printHubTitle'), p: 'printables/' }, { name: title, p: pr.p }];

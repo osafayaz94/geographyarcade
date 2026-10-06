@@ -1,5 +1,5 @@
 // Printable maps (/printables/...): loads the quiz map as inline SVG, numbers every place in the
-// list (in list order) and switches between three versions: a blank outline map, a worksheet
+// list (in list order) and shows four versions one below the other: a blank outline map, a worksheet
 // (numbers on the map, empty lines in the list), a labelled map (names on the map) and an answer
 // key (numbers and names). Every version carries a small geographyarcade.com mark.
 // Without this script the page still shows the coloured map image and the full list of names.
@@ -8,30 +8,71 @@
   var box = document.querySelector('.pmap');
   if (!box) return;
   var NS = 'http://www.w3.org/2000/svg';
-  var body = document.body;
 
-  // Version buttons, and the Print button (window.print opens the browser's print dialog,
-  // where "Save as PDF" makes a PDF).
+  // All four versions sit one below the other. A version button scrolls to its sheet and selects
+  // it; scrolling selects the sheet in view. Print prints only the selected sheet (window.print
+  // opens the browser's print dialog, where "Save as PDF" makes a PDF).
+  var MODES = ['blank', 'worksheet', 'labeled', 'answers'];
+  var buttons = Array.prototype.slice.call(document.querySelectorAll('[data-mode]'));
+  var sheets = {};
+  var current = 'worksheet';
   function setMode(mode) {
-    body.classList.remove('pm-blank', 'pm-worksheet', 'pm-labeled', 'pm-answers');
-    body.classList.add('pm-' + mode);
-    Array.prototype.forEach.call(document.querySelectorAll('[data-mode]'), function (b) {
+    current = mode;
+    buttons.forEach(function (b) {
       b.setAttribute('aria-pressed', b.getAttribute('data-mode') === mode ? 'true' : 'false');
     });
+    MODES.forEach(function (m) { if (sheets[m]) sheets[m].classList.toggle('pon', m === mode); });
   }
-  // A link can name the version (#blank, #worksheet, #labeled, #answers); switching updates it,
-  // so the address can be shared or bookmarked.
-  var MODES = ['blank', 'worksheet', 'labeled', 'answers'];
-  Array.prototype.forEach.call(document.querySelectorAll('[data-mode]'), function (b) {
-    b.addEventListener('click', function () {
-      setMode(b.getAttribute('data-mode'));
-      if (window.history && history.replaceState) history.replaceState(null, '', '#' + b.getAttribute('data-mode'));
-    });
+  // A link can name the version (#blank, #worksheet, #labeled, #answers); choosing one updates
+  // it, so the address can be shared or bookmarked.
+  function go(mode) {
+    setMode(mode);
+    if (window.history && history.replaceState) history.replaceState(null, '', '#' + mode);
+    if (sheets[mode]) sheets[mode].scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  buttons.forEach(function (b) {
+    b.addEventListener('click', function () { go(b.getAttribute('data-mode')); });
   });
   var printBtn = document.querySelector('[data-print]');
   if (printBtn) printBtn.addEventListener('click', function () { window.print(); });
   var fromLink = location.hash.slice(1);
   setMode(MODES.indexOf(fromLink) >= 0 ? fromLink : 'worksheet');
+
+  // Copies the finished map and list into one sheet per version, in place of the single map.
+  function makeSheets(svg) {
+    var key = document.querySelector('.pkey');
+    var wrap = document.createElement('div');
+    MODES.forEach(function (m) {
+      var b = document.querySelector('[data-mode="' + m + '"]');
+      var s = document.createElement('section');
+      s.className = 'psheet pm-' + m;
+      s.id = m;
+      var h = document.createElement('h2');
+      h.textContent = b ? b.textContent : m;
+      var map = document.createElement('div');
+      map.className = 'pmap';
+      map.appendChild(svg.cloneNode(true));
+      s.appendChild(h);
+      s.appendChild(map);
+      if (key && m !== 'blank' && m !== 'labeled') s.appendChild(key.cloneNode(true));
+      wrap.appendChild(s);
+      sheets[m] = s;
+    });
+    box.parentNode.insertBefore(wrap, box);
+    box.parentNode.removeChild(box);
+    if (key) key.parentNode.removeChild(key);
+    setMode(current);
+    if (MODES.indexOf(fromLink) >= 0) sheets[fromLink].scrollIntoView({ block: 'start' });
+    // The sheet nearest the top of the screen becomes the selected one while scrolling.
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) setMode(e.target.id);
+        });
+      }, { rootMargin: '-30% 0px -60% 0px' });
+      MODES.forEach(function (m) { io.observe(sheets[m]); });
+    }
+  }
 
   // The centre of the biggest piece of a shape (the mainland, not an outlying island), in the
   // coordinates of the shape's parent, so a number placed there sits on the right spot even
@@ -109,5 +150,6 @@
     wm.setAttribute('font-size', Math.max(10, Math.round(vb[2] / 60)));
     wm.textContent = 'geographyarcade.com';
     svg.appendChild(wm);
+    makeSheets(svg);
   });
 })();
