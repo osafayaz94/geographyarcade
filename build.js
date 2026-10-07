@@ -112,7 +112,11 @@ function write(rel, content) {
 const CSS = fs.readFileSync(path.join(__dirname, 'src', 'style.css'), 'utf8').replace(/\/\*[\s\S]*?\*\//g, '').replace(/\s*\n\s*/g, '').replace(/\s*([{};,>])\s*/g, '$1').replace(/:\s+/g, ':').replace(/;}/g, '}');
 const APP_VERSION = require('crypto').createHash('md5').update(fs.readFileSync(path.join(__dirname, 'src', 'app.js'))).digest('hex').slice(0, 8);
 const PRINT_VERSION = require('crypto').createHash('md5').update(fs.readFileSync(path.join(__dirname, 'src', 'print.js'))).digest('hex').slice(0, 8);
-const SEARCH_VERSION = require('crypto').createHash('md5').update(fs.readFileSync(path.join(__dirname, 'src', 'search.js'))).digest('hex').slice(0, 8);
+// Google Analytics (src/ga.js), only when site.config.js has a Measurement ID.
+if (config.gaId && !/^G-[A-Z0-9]+$/.test(config.gaId)) throw new Error('site.config.js gaId must look like G-XXXXXXXXXX');
+const GA_JS = fs.readFileSync(path.join(__dirname, 'src', 'ga.js'), 'utf8').replace("'__GA_ID__'", `'${config.gaId}'`);
+const GA_VERSION = require('crypto').createHash('md5').update(GA_JS).digest('hex').slice(0, 8);
+const SEARCH_VERSION =require('crypto').createHash('md5').update(fs.readFileSync(path.join(__dirname, 'src', 'search.js'))).digest('hex').slice(0, 8);
 const LOGO = '<svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="#1F5F8B"/><path d="M8 11c3-3 7-1 9 1s1 5-2 6-3 5 0 7M20 6c-1 3 1 5 4 5s4 3 3 6" fill="none" stroke="#B9CC8E" stroke-width="2.4" stroke-linecap="round"/><circle cx="22" cy="21" r="3" fill="#A3195B"/></svg>';
 
 const sitemap = Object.fromEntries(LANGS.map((l) => [l, []]));
@@ -177,11 +181,11 @@ function makeOgCards() {
 const FONT_ONLOAD = "this.media='all'";
 const CSP = [
   "default-src 'self'",
-  `script-src 'self' 'unsafe-hashes' 'sha256-${crypto.createHash('sha256').update(FONT_ONLOAD).digest('base64')}'`,
+  `script-src 'self' 'unsafe-hashes' 'sha256-${crypto.createHash('sha256').update(FONT_ONLOAD).digest('base64')}'` + (config.gaId ? ' https://www.googletagmanager.com' : ''),
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
   "font-src 'self' https://fonts.gstatic.com",
-  "img-src 'self' data:",
-  "connect-src 'self'",
+  "img-src 'self' data:" + (config.gaId ? ' https://*.google-analytics.com https://*.googletagmanager.com' : ''),
+  "connect-src 'self'" + (config.gaId ? ' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com' : ''),
   "object-src 'none'",
   "base-uri 'self'",
   "form-action 'self'",
@@ -252,7 +256,7 @@ ${body}
 <a href="${url(lang)}">${esc(SITE)}</a>${navItems.map(([k, h]) => `<a href="${url(lang, h)}">${esc(t(lang, k))}</a>`).join('')}<a href="${url(lang, 'world/')}">${esc(tt(lang, 'worldGames'))}</a><a href="${url(lang, 'lists/')}">${esc(tt(lang, 'l.related'))}</a><a href="${url(lang, 'about/')}">${esc(t(lang, 'navAbout'))}</a>
 <span>${esc(t(lang, 'updated', { d: LASTMOD_TEXT }))}</span>
 </div></footer>
-${script ? `<script src="/app.js?v=${APP_VERSION}" defer></script>` : ''}${printJs ? `<script src="/print.js?v=${PRINT_VERSION}" defer></script>` : ''}<script src="/search.js?v=${SEARCH_VERSION}" defer></script>
+${script ? `<script src="/app.js?v=${APP_VERSION}" defer></script>` : ''}${printJs ? `<script src="/print.js?v=${PRINT_VERSION}" defer></script>` : ''}<script src="/search.js?v=${SEARCH_VERSION}" defer></script>${config.gaId ? `<script src="/ga.js?v=${GA_VERSION}" defer></script>` : ''}
 </body>
 </html>`;
   let date = TODAY;
@@ -1211,6 +1215,7 @@ function statics() {
   for (const c of countries) fs.copyFileSync(flagDir + c.iso2.toLowerCase() + '.svg', path.join(DIST, 'flags', c.iso2.toLowerCase() + '.svg'));
   write('app.js', fs.readFileSync(path.join(__dirname, 'src', 'app.js'), 'utf8'));
   write('search.js', fs.readFileSync(path.join(__dirname, 'src', 'search.js'), 'utf8'));
+  if (config.gaId) write('ga.js', GA_JS);
   write('print.js', fs.readFileSync(path.join(__dirname, 'src', 'print.js'), 'utf8'));
   for (const lang of LANGS) write(`search/${lang}.json`, JSON.stringify(SEARCH[lang].sort((a, b) => a[2] - b[2])));
   write('favicon.svg', LOGO.replace('<svg', '<svg xmlns="http://www.w3.org/2000/svg"').replace(' aria-hidden="true"', ''));
