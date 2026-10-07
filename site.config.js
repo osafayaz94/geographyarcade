@@ -18,5 +18,5 @@ module.exports = {
   googleVerification: '',
   bingVerification: '',
   // Google Analytics 4 Measurement ID (G-XXXXXXXXXX). Empty = no analytics script on the site.
-  gaId: '',
+  gaId: 'G-93E7396862',
 };
