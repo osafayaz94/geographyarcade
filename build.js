@@ -1092,6 +1092,16 @@ function printVersions(lang, prints) {
   const modes = [['blank', 'modeBlank'], ['worksheet', 'modeWorksheet'], ['labeled', 'modeLabeled'], ['answers', 'modeAnswers']];
   return `<h2>${esc(t(lang, 'printHubTitle'))}</h2>` + list.map((pr) => `<div class="pver"><a class="pver-t" href="${url(lang, pr.p)}"><img src="${pr.thumb}" alt="" width="120" height="72" loading="lazy"><span>${esc(printInfo(lang, pr).title)}</span></a><span class="pver-l">${modes.map(([m, k]) => `<a href="${url(lang, pr.p)}#${m}">${esc(t(lang, k))}</a>`).join('')}</span></div>`).join('');
 }
+// "About this printable map": what each version is for and how to use it. Maps with more than
+// 80 places number only the places big enough for a number (see src/print.js), so their text
+// gives no count.
+function printAbout(lang, pr, n) {
+  const how = pr.kind === 'country' ? t(lang, 'pAboutCountry')
+    : n > 80 ? t(lang, 'pAboutMany') + (pr.kind === 'scope' && pr.s === 'world' ? ' ' + t(lang, 'pAboutSmall') : '')
+    : t(lang, 'pAboutN', { n });
+  return `<section class="pabout"><h2>${esc(t(lang, 'pAboutH'))}</h2><p>${esc(how)}</p><p>${esc(t(lang, 'pAboutUse'))}</p>`
+    + `<p><a href="${url(lang, pr.quiz)}">${esc(t(lang, 'pAboutQuiz'))}</a></p></section>`;
+}
 function printPage(lang, pr) {
   const { items, title, desc } = printInfo(lang, pr);
   const list = sortBy(lang, items, (x) => x.n);
@@ -1102,7 +1112,8 @@ function printPage(lang, pr) {
     + `<p class="note ptip">${esc(t(lang, 'printTip'))}</p>`
     + (w > h * 1.15 ? '<style>@page{size:landscape}@media print{.pmap svg{max-height:160mm}}</style>' : '')
     + `<div class="pmap" data-src="${pr.src}"><img src="${pr.src}" alt="${esc(title)}" width="${w}" height="${h}" decoding="async" fetchpriority="low"></div>`
-    + `<ol class="pkey">${list.map((x) => `<li data-id="${esc(x.id)}"><span class="nm">${esc(x.n)}</span></li>`).join('')}</ol>`;
+    + `<ol class="pkey">${list.map((x) => `<li data-id="${esc(x.id)}"><span class="nm">${esc(x.n)}</span></li>`).join('')}</ol>`
+    + printAbout(lang, pr, items.length);
   const crumbs = [{ name: t(lang, 'printHubTitle'), p: 'printables/' }, { name: title, p: pr.p }];
   const ld = { '@context': 'https://schema.org', '@type': 'WebPage', name: title, description: desc, url: abs(lang, pr.p), inLanguage: L[lang].hreflang, dateModified: LASTMOD, publisher: ORG,
     primaryImageOfPage: { '@type': 'ImageObject', url: DOMAIN + pr.src }, learningResourceType: 'Worksheet', isAccessibleForFree: true };

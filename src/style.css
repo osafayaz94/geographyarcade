@@ -260,7 +260,7 @@ footer .wrap{display:flex;gap:.5rem 1.5rem;flex-wrap:wrap}
 .pm-worksheet .pkey .nm{visibility:hidden}
 .pm-blank .pkey{display:none}
 @media print{
-  header.top,footer,.crumbs,.pctl,.ptip,.lede,.skip,.paside{display:none!important}
+  header.top,footer,.crumbs,.pctl,.ptip,.lede,.skip,.paside,.pabout{display:none!important}
   body{background:#fff!important;color:#000!important}
   main.wrap{max-width:none;padding:0}
   h1{font-size:18pt;margin:0 0 6pt;color:#000}
