@@ -138,6 +138,10 @@ function boxPoints([x0, y0, x1, y1]) {
   return { type: 'MultiPoint', coordinates: pts };
 }
 
+// Where a small country's dot goes instead of on the country, in dot radii (x right, y down).
+// Bahrain sits next to Qatar's northern tip; north of it is open Gulf water.
+const DOT_NUDGE = { BH: [0, -3.2] };
+
 // countries: [{ iso2, area, latlng }] that are playable on this map.
 async function continentSvg(viewKey, countries) {
   const v = VIEWS[viewKey];
@@ -175,8 +179,12 @@ async function continentSvg(viewKey, countries) {
     if (!d || c.area < 3000) {
       const p = proj([c.latlng[1], c.latlng[0]]);
       if (p && p[0] >= 0 && p[0] <= W && p[1] >= 0 && p[1] <= H) {
-        const x = round(p[0]);
-        const y = round(p[1]);
+        // A dot that would cover a small neighbour (Bahrain over Qatar) moves off into the sea,
+        // with a short line back to the real spot.
+        const nudge = !isWorld && DOT_NUDGE[c.iso2];
+        const x = round(p[0] + (nudge ? nudge[0] * r : 0));
+        const y = round(p[1] + (nudge ? nudge[1] * r : 0));
+        if (nudge) rings.push(`<line class="ring" x1="${round(p[0])}" y1="${round(p[1])}" x2="${x}" y2="${y}" stroke-dasharray="none"/>`);
         rings.push(`<circle class="ring" cx="${x}" cy="${y}" r="${r * 2.2}"/>`);
         dots.push(`<circle class="c dot k${kc}" fill="${PALETTE[kc]}" data-id="${c.iso2}" cx="${x}" cy="${y}" r="${r}"/>`);
       }

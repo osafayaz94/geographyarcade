@@ -176,6 +176,7 @@ html:not(.lat) .prompt{font-family:var(--body)}
 .map .k0{fill:var(--m0)}.map .k1{fill:var(--m1)}.map .k2{fill:var(--m2)}.map .k3{fill:var(--m3)}.map .k4{fill:var(--m4)}.map .k5{fill:var(--m5)}
 .map .ctx{fill:var(--mctx);stroke:#fff;stroke-width:.5;vector-effect:non-scaling-stroke;pointer-events:none}
 .map .ring{fill:none;stroke:#fff;stroke-width:1.2;stroke-dasharray:3 2;vector-effect:non-scaling-stroke;pointer-events:none;opacity:.85}
+.map line.ring{stroke-dasharray:none}
 .map .inset{fill:none;stroke:#fff;stroke-dasharray:4 3;vector-effect:non-scaling-stroke}
 @media (hover:hover){.map .c:hover{filter:brightness(1.12) saturate(1.15) drop-shadow(0 1px 2px rgba(0,0,0,.35))}}
 .map .c.ok,.map .c.done-ok{fill:var(--right)}
