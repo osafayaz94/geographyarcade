@@ -58,7 +58,23 @@ function cover(name, W, H, safe) {
     + '</svg>', W);
 }
 
+// A centred cover for platforms that zoom in and crop to the middle (Pinterest): the world map
+// faint across the whole image, logo, name and tagline in the centre.
+function centred(name, W, H) {
+  const mapW = W * 1.05, mapH = mapW * worldVB[3] / worldVB[2];
+  const title = H * 0.08, sub = title * 0.46, lsize = H * 0.15;
+  return render(name, `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">`
+    + `<rect width="${W}" height="${H}" fill="${PAPER}"/>`
+    + `<image href="${uri(world)}" x="${(W - mapW) / 2}" y="${(H - mapH) / 2}" width="${mapW}" height="${mapH}" opacity=".28" preserveAspectRatio="xMidYMid meet"/>`
+    + logo(W / 2 - lsize / 2, H * 0.27, lsize)
+    + `<text x="${W / 2}" y="${H * 0.57}" text-anchor="middle" font-family="${FONT}" font-weight="800" font-size="${title}" fill="${INK}">Geography Arcade</text>`
+    + `<text x="${W / 2}" y="${H * 0.57 + sub * 1.9}" text-anchor="middle" font-family="${FONT}" font-weight="600" font-size="${sub}" fill="${SEA}">Free geography quizzes and printable maps</text>`
+    + `<text x="${W / 2}" y="${H * 0.57 + sub * 3.4}" text-anchor="middle" font-family="${FONT}" font-weight="700" font-size="${sub * 0.9}" fill="${MAG}">geographyarcade.com</text>`
+    + '</svg>', W);
+}
+
 square('logo-512.png', 512);
+centred('pinterest-cover-centred-1600x900.png', 1600, 900);
 square('logo-512-background.png', 512, PAPER);
 square('logo-1024-background.png', 1024, PAPER);
 cover('pinterest-cover-1600x900.png', 1600, 900);
