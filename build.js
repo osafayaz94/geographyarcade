@@ -1247,6 +1247,12 @@ function statics() {
   write('print.js', fs.readFileSync(path.join(__dirname, 'src', 'print.js'), 'utf8'));
   for (const lang of LANGS) write(`search/${lang}.json`, JSON.stringify(SEARCH[lang].sort((a, b) => a[2] - b[2])));
   fs.copyFileSync(path.join(__dirname, 'brand', 'logo-512-background.png'), path.join(DIST, 'logo.png'));
+  // Pinterest pin images (scripts/pin-images.js), served so brand/pins/pins.csv can bulk-upload them.
+  const pinDir = path.join(__dirname, 'brand', 'pins');
+  if (fs.existsSync(pinDir)) {
+    fs.mkdirSync(path.join(DIST, 'img', 'pins'), { recursive: true });
+    for (const f of fs.readdirSync(pinDir).filter((x) => x.endsWith('.png'))) fs.copyFileSync(path.join(pinDir, f), path.join(DIST, 'img', 'pins', f));
+  }
   write('favicon.svg',LOGO.replace('<svg', '<svg xmlns="http://www.w3.org/2000/svg"').replace(' aria-hidden="true"', ''));
 
   const bots = ['Googlebot', 'Bingbot', 'GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-SearchBot', 'PerplexityBot', 'Google-Extended', 'Applebot', 'Applebot-Extended', 'CCBot', 'DuckDuckBot', 'YandexBot', 'Baiduspider'];
