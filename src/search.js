@@ -14,7 +14,7 @@
 
   const SEP = /[\s,.:;!?"'«»„“”()/\-–]+/g;
   // Little words that titles phrase differently ("provinces of Spain" vs "Spain: regions").
-  const STOP = new Set('of the and a in on quiz de del la las los el le les des du d y et en und der die das von e do da dos das di dei della delle degli dello il lo gli i dan yang di ke kuis и в के की का और এর ও i w z na quizy van het een en op.split(' '));
+  const STOP = new Set('of the and a in on quiz de del la las los el le les des du d y et en und der die das von e do da dos das di dei della delle degli dello il lo gli i dan yang di ke kuis и в के की का और এর ও i w z na quizy van het een en op'.split(' '));
   // Chinese and Japanese have no spaces between words: match anywhere. Elsewhere: word starts.
   const CJK = /[぀-鿿]/;
 

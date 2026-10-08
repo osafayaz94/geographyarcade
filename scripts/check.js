@@ -13,6 +13,11 @@ const SITE = CONFIG.domain.replace(/\/+$/, '');
 const errors = [];
 const warnings = [];
 
+// The site's own scripts must parse: a syntax error stops a whole script (search broke this way).
+for (const f of fs.readdirSync(DIST).filter((x) => x.endsWith('.js'))) {
+  try { new (require('vm').Script)(fs.readFileSync(path.join(DIST, f), 'utf8'), { filename: f }); } catch (e) { errors.push(`/${f}: ${e.message}`); }
+}
+
 function walk(dir) {
   return fs.readdirSync(dir, { withFileTypes: true }).flatMap((d) => {
     const p = path.join(dir, d.name);
