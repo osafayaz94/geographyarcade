@@ -17,6 +17,8 @@ module.exports = {
   // Paste the codes from Google Search Console and Bing Webmaster Tools (HTML tag method) to verify the site.
   googleVerification: '',
   bingVerification: '',
+  // Pinterest "Claim website" code (HTML tag method: the content="..." value only).
+  pinterestVerification: '',
   // Google Analytics 4 Measurement ID (G-XXXXXXXXXX). Empty = no analytics script on the site.
   gaId: 'G-93E7396862',
 };

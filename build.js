@@ -234,7 +234,7 @@ ${alts}
 <meta property="og:type" content="website"><meta property="og:site_name" content="${esc(SITE)}"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}"><meta property="og:url" content="${abs(lang, p)}"><meta property="og:locale" content="${Ls.locale.replace('-', '_')}"><meta property="og:image" content="${DOMAIN}/img/og/${ogFor(p)}.png"><meta property="og:image:width" content="${og.OG_W}"><meta property="og:image:height" content="${og.OG_H}"><meta property="og:image:alt" content="${esc(title)}"><meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#EAF1EF" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0E1A24" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-${config.googleVerification ? `<meta name="google-site-verification" content="${esc(config.googleVerification)}">` : ''}${config.bingVerification ? `<meta name="msvalidate.01" content="${esc(config.bingVerification)}">` : ''}
+${config.googleVerification ? `<meta name="google-site-verification" content="${esc(config.googleVerification)}">` : ''}${config.bingVerification ? `<meta name="msvalidate.01" content="${esc(config.bingVerification)}">` : ''}${config.pinterestVerification ? `<meta name="p:domain_verify" content="${esc(config.pinterestVerification)}">` : ''}
 ${preload ? `<link rel="preload" as="image" href="${preload}" fetchpriority="high">` : ''}
 ${font}
 <style>${CSS}</style>
@@ -253,7 +253,7 @@ ${crumbs.length ? `<nav class="crumbs" aria-label="Breadcrumb">${crumbList.map((
 ${body}
 </main>
 <footer><div class="wrap">
-<a href="${url(lang)}">${esc(SITE)}</a>${navItems.map(([k, h]) => `<a href="${url(lang, h)}">${esc(t(lang, k))}</a>`).join('')}<a href="${url(lang, 'world/')}">${esc(tt(lang, 'worldGames'))}</a><a href="${url(lang, 'lists/')}">${esc(tt(lang, 'l.related'))}</a><a href="${url(lang, 'about/')}">${esc(t(lang, 'navAbout'))}</a>
+<a href="${url(lang)}">${esc(SITE)}</a>${navItems.map(([k, h]) => `<a href="${url(lang, h)}">${esc(t(lang, k))}</a>`).join('')}<a href="${url(lang, 'world/')}">${esc(tt(lang, 'worldGames'))}</a><a href="${url(lang, 'lists/')}">${esc(tt(lang, 'l.related'))}</a><a href="${url(lang, 'about/')}">${esc(t(lang, 'navAbout'))}</a><a href="${url(lang, 'about-us/')}">${esc((PAGES[lang] || PAGES.en).navUs)}</a><a href="${url(lang, 'privacy/')}">${esc((PAGES[lang] || PAGES.en).navPrivacy)}</a>
 <span>${esc(t(lang, 'updated', { d: LASTMOD_TEXT }))}</span>
 </div></footer>
 ${script ? `<script src="/app.js?v=${APP_VERSION}" defer></script>` : ''}${printJs ? `<script src="/print.js?v=${PRINT_VERSION}" defer></script>` : ''}<script src="/search.js?v=${SEARCH_VERSION}" defer></script>${config.gaId ? `<script src="/ga.js?v=${GA_VERSION}" defer></script>` : ''}
@@ -1207,6 +1207,33 @@ function about(lang) {
   page(lang, p, { title, desc, body, crumbs: [{ name: title, p }], jsonld: [{ '@context': 'https://schema.org', '@type': 'AboutPage', name: title, url: abs(lang, p), inLanguage: L[lang].hreflang, dateModified: LASTMOD, publisher: ORG }] });
 }
 
+// ---------- About us and Privacy policy ----------
+// Text in src/i18n-pages.js. PRIVACY_DATE is the date the policy last changed: update it with
+// any change to what the site collects or stores.
+const PAGES = require('./src/i18n-pages');
+const PRIVACY_DATE = '2026-10-09';
+const pg = (lang) => PAGES[lang] || PAGES.en;
+function fillPage(lang, txt) {
+  const mail = config.contactEmail ? `<a href="mailto:${esc(config.contactEmail)}">${esc(config.contactEmail)}</a>` : '';
+  return esc(txt.replace('{n}', countries.length).replace('{p}', provCountries.length).replace('{l}', LANGS.length).replace('{d}', dateFmt(lang, PRIVACY_DATE)))
+    .replace('{e}', mail);
+}
+function aboutUs(lang) {
+  const P = pg(lang), p = 'about-us/';
+  const body = `<h1>${esc(P.usTitle)}</h1><p class="lede">${esc(P.usDesc)}</p>`
+    + P.us.map(([h, txt]) => `<h2>${esc(h)}</h2><p>${fillPage(lang, txt)}</p>`).join('')
+    + `<p><a href="${url(lang, 'about/')}">${esc(P.usSources)}</a></p>`;
+  page(lang, p, { title: P.usTitle, desc: P.usDesc, body, crumbs: [{ name: P.usTitle, p }],
+    jsonld: [{ '@context': 'https://schema.org', '@type': 'AboutPage', name: P.usTitle, description: P.usDesc, url: abs(lang, p), inLanguage: L[lang].hreflang, dateModified: LASTMOD, about: ORG, publisher: ORG }] });
+}
+function privacy(lang) {
+  const P = pg(lang), p = 'privacy/';
+  const body = `<h1>${esc(P.pvTitle)}</h1><p class="lede">${esc(P.pvDesc)}</p><p class="note">${fillPage(lang, P.pvDate)}</p>`
+    + P.pv.map(([h, txt]) => `<h2>${esc(h)}</h2><p>${fillPage(lang, txt)}</p>`).join('');
+  page(lang, p, { title: P.pvTitle, desc: P.pvDesc, body, crumbs: [{ name: P.pvTitle, p }],
+    jsonld: [{ '@context': 'https://schema.org', '@type': 'WebPage', name: P.pvTitle, description: P.pvDesc, url: abs(lang, p), inLanguage: L[lang].hreflang, dateModified: PRIVACY_DATE, publisher: ORG }] });
+}
+
 // ---------- Static files ----------
 function statics() {
   // Flags: only the countries on the site.
@@ -1426,6 +1453,8 @@ function notFound() {
     printHub(lang);
     for (const pr of printsOf()) printPage(lang, pr);
     about(lang);
+    aboutUs(lang);
+    privacy(lang);
     searchPage(lang);
   }
   notFound();
