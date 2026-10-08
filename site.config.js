@@ -18,7 +18,7 @@ module.exports = {
   googleVerification: '',
   bingVerification: '',
   // Pinterest "Claim website" code (HTML tag method: the content="..." value only).
-  pinterestVerification: '',
+  pinterestVerification: '33c38c16b6997245aa18ea3638392b16',
   // Google Analytics 4 Measurement ID (G-XXXXXXXXXX). Empty = no analytics script on the site.
   gaId: 'G-93E7396862',
 };
