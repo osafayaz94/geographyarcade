@@ -29,7 +29,8 @@ const lastmodPrev = fs.existsSync(lastmodFile) ? JSON.parse(fs.readFileSync(last
 const lastmodNext = {};
 const pageDate = {}; // lang -> path -> date, for the sitemaps
 // The publisher, on every page that names one.
-const ORG = { '@type': 'Organization', '@id': `${DOMAIN}/#organization`, name: SITE, url: DOMAIN + '/', logo: { '@type': 'ImageObject', url: DOMAIN + '/favicon.svg' }, ...(config.contactEmail ? { email: config.contactEmail } : {}) };
+// sameAs: the site's official profiles elsewhere (site.config.js socialProfiles).
+const ORG = { '@type': 'Organization', '@id': `${DOMAIN}/#organization`, name: SITE, url: DOMAIN + '/', logo: { '@type': 'ImageObject', url: DOMAIN + '/logo.png', width: 512, height: 512 }, ...(config.contactEmail ? { email: config.contactEmail } : {}), ...(config.socialProfiles && config.socialProfiles.length ? { sameAs: config.socialProfiles } : {}) };
 const DATA_DATE = fs.statSync(path.join(__dirname, 'data', 'countries.json')).mtime.toISOString().slice(0, 10);
 
 // ---------- Data ----------
@@ -1245,7 +1246,8 @@ function statics() {
   if (config.gaId) write('ga.js', GA_JS);
   write('print.js', fs.readFileSync(path.join(__dirname, 'src', 'print.js'), 'utf8'));
   for (const lang of LANGS) write(`search/${lang}.json`, JSON.stringify(SEARCH[lang].sort((a, b) => a[2] - b[2])));
-  write('favicon.svg', LOGO.replace('<svg', '<svg xmlns="http://www.w3.org/2000/svg"').replace(' aria-hidden="true"', ''));
+  fs.copyFileSync(path.join(__dirname, 'brand', 'logo-512-background.png'), path.join(DIST, 'logo.png'));
+  write('favicon.svg',LOGO.replace('<svg', '<svg xmlns="http://www.w3.org/2000/svg"').replace(' aria-hidden="true"', ''));
 
   const bots = ['Googlebot', 'Bingbot', 'GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-SearchBot', 'PerplexityBot', 'Google-Extended', 'Applebot', 'Applebot-Extended', 'CCBot', 'DuckDuckBot', 'YandexBot', 'Baiduspider'];
   write('robots.txt', `${bots.map((b) => `User-agent: ${b}\nAllow: /\n`).join('\n')}\nUser-agent: *\nAllow: /\n\nSitemap: ${DOMAIN}/sitemap.xml\n`);
