@@ -35,9 +35,9 @@ module.exports = {
   AGO: { skip: '2024 reform to 21 provinces; Wikidata and geoBoundaries still show 18' },
   BFA: { skip: '2025 reform to 17 regions; Wikidata and geoBoundaries still show 13' },
   // geoBoundaries predates a reform: current divisions from Wikidata + OpenStreetMap.
-  BDI: { source: 'osm' }, // 2025 reform to 5 provinces
+  BDI: { skip: '2025 reform to 5 provinces; geoBoundaries shows the old 18 and Wikidata lacks OpenStreetMap links for the new ones' },
   SLE: { source: 'osm' }, // 2017: North West Province added
-  GNQ: { source: 'osm' }, // 2017: Djibloho added
+  GNQ: { skip: '2017: Djibloho added; geoBoundaries shows 7 and Wikidata lacks an OpenStreetMap link for Djibloho' },
   TLS: { source: 'osm' }, // 2022: Atauro became a municipality
   MNE: { source: 'osm' }, // municipalities added up to 2022 (Zeta)
   // geoBoundaries names here don't join cleanly to Wikidata (truncated or different units), so two

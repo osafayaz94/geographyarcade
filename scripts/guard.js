@@ -31,7 +31,12 @@ if (popCount(newC) < popCount(oldC) - 3) problems.push(`population missing for $
 // Provinces: no country dropped; division counts may change (reforms) but not wildly.
 const oldS = load(baseDir, 'subdivisions.json') || {};
 const newS = load(DATA, 'subdivisions.json') || {};
+// A country taken out on purpose (`skip` in data/subdivision-overrides.js) is not a problem.
+const overrides = require('../data/subdivision-overrides');
+const iso3Of = Object.fromEntries((load(DATA, 'countries.json') || []).map((c) => [c.iso2, c.iso3]));
 for (const iso2 of Object.keys(oldS)) {
+  const skip = overrides[iso3Of[iso2]] && overrides[iso3Of[iso2]].skip;
+  if (!newS[iso2] && skip) { notes.push(`${iso2}: province data left out on purpose (${skip})`); continue; }
   if (!newS[iso2]) { problems.push(`${iso2}: province data disappeared`); continue; }
   const a = oldS[iso2].divisions.length;
   const b = newS[iso2].divisions.length;
