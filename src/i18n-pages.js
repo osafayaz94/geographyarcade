@@ -8,6 +8,10 @@ module.exports = {
     navUs: 'About us', navPrivacy: 'Privacy',
 
     pdfBtn: "Download PDF",
+    printSetTitle: "{t}: printable map worksheet (PDF)",
+    printSetDesc: "{t} ({n}) on a free printable map: a blank map, a numbered worksheet, a labeled map and an answer key, each as its own PDF.",
+    orgMem: "{org} member countries",
+    printSecSets: "Equator, hemispheres and organisations",
 
     orgHubTitle: "International organisations: member countries",
 
@@ -105,6 +109,10 @@ module.exports = {
     navUs: '关于我们', navPrivacy: '隐私',
 
     pdfBtn: "下载 PDF",
+    printSetTitle: "{t}：可打印地图练习纸（PDF）",
+    printSetDesc: "{t}（{n} 个）免费可打印地图：空白地图、编号练习纸、标注地图和答案页，每种都有单独的 PDF。",
+    orgMem: "{org}成员国",
+    printSecSets: "赤道、南北半球和国际组织",
 
     orgHubTitle: "国际组织：成员国",
 
@@ -202,6 +210,10 @@ module.exports = {
     navUs: 'हमारे बारे में', navPrivacy: 'गोपनीयता',
 
     pdfBtn: "PDF डाउनलोड करें",
+    printSetTitle: "{t}: प्रिंट करने योग्य नक्शा और वर्कशीट (PDF)",
+    printSetDesc: "{t} ({n}) का मुफ़्त प्रिंट करने योग्य नक्शा: खाली नक्शा, नंबर वाली वर्कशीट, नाम वाला नक्शा और उत्तर कुंजी, हर एक अलग PDF में।",
+    orgMem: "{org} के सदस्य देश",
+    printSecSets: "भूमध्य रेखा, गोलार्ध और अंतरराष्ट्रीय संगठन",
 
     orgHubTitle: "अंतरराष्ट्रीय संगठन: सदस्य देश",
 
@@ -299,6 +311,10 @@ module.exports = {
     navUs: 'Quiénes somos', navPrivacy: 'Privacidad',
 
     pdfBtn: "Descargar PDF",
+    printSetTitle: "{t}: mapa imprimible y ficha (PDF)",
+    printSetDesc: "{t} ({n}) en un mapa imprimible gratis: mapa mudo, ficha numerada, mapa con nombres y solucionario, cada uno en su propio PDF.",
+    orgMem: "Países miembros de {org}",
+    printSecSets: "Ecuador, hemisferios y organizaciones",
 
     orgHubTitle: "Organizaciones internacionales: países miembros",
 
@@ -396,6 +412,10 @@ module.exports = {
     navUs: 'من نحن', navPrivacy: 'الخصوصية',
 
     pdfBtn: "تنزيل PDF",
+    printSetTitle: "{t}: خريطة للطباعة وورقة عمل (PDF)",
+    printSetDesc: "{t} ({n}) على خريطة مجانية للطباعة: خريطة صمّاء، وورقة عمل مرقمة، وخريطة بالأسماء، ومفتاح للإجابات، لكل منها ملف PDF خاص.",
+    orgMem: "الدول الأعضاء في {org}",
+    printSecSets: "خط الاستواء ونصفا الكرة الأرضية والمنظمات الدولية",
 
     orgHubTitle: "المنظمات الدولية: الدول الأعضاء",
 
@@ -493,6 +513,10 @@ module.exports = {
     navUs: 'Qui sommes-nous', navPrivacy: 'Confidentialité',
 
     pdfBtn: "Télécharger le PDF",
+    printSetTitle: "{t} : carte à imprimer et fiche (PDF)",
+    printSetDesc: "{t} ({n}) sur une carte gratuite à imprimer : carte muette, fiche numérotée, carte avec les noms et corrigé, chacun dans son propre PDF.",
+    orgMem: "Pays membres de {org}",
+    printSecSets: "Équateur, hémisphères et organisations",
 
     orgHubTitle: "Organisations internationales : pays membres",
 
@@ -590,6 +614,10 @@ module.exports = {
     navUs: 'Über uns', navPrivacy: 'Datenschutz',
 
     pdfBtn: "PDF herunterladen",
+    printSetTitle: "{t}: Karte und Arbeitsblatt zum Ausdrucken (PDF)",
+    printSetDesc: "{t} ({n}) auf einer kostenlosen Karte zum Ausdrucken: stumme Karte, nummeriertes Arbeitsblatt, beschriftete Karte und Lösungen, jeweils als eigenes PDF.",
+    orgMem: "{org}: Mitgliedstaaten",
+    printSecSets: "Äquator, Hemisphären und Organisationen",
 
     orgHubTitle: "Internationale Organisationen: Mitgliedsländer",
 
@@ -687,6 +715,10 @@ module.exports = {
     navUs: 'আমাদের সম্পর্কে', navPrivacy: 'গোপনীয়তা',
 
     pdfBtn: "PDF ডাউনলোড করুন",
+    printSetTitle: "{t}: প্রিন্টযোগ্য মানচিত্র ও ওয়ার্কশিট (PDF)",
+    printSetDesc: "{t} ({n}) বিনামূল্যের প্রিন্টযোগ্য মানচিত্রে: ফাঁকা মানচিত্র, নম্বর দেওয়া ওয়ার্কশিট, নামসহ মানচিত্র এবং উত্তরপত্র, প্রতিটি আলাদা PDF-এ।",
+    orgMem: "{org}-এর সদস্য দেশ",
+    printSecSets: "বিষুবরেখা, গোলার্ধ ও আন্তর্জাতিক সংস্থা",
 
     orgHubTitle: "আন্তর্জাতিক সংস্থা: সদস্য দেশ",
 
@@ -784,6 +816,10 @@ module.exports = {
     navUs: 'Quem somos', navPrivacy: 'Privacidade',
 
     pdfBtn: "Baixar PDF",
+    printSetTitle: "{t}: mapa para imprimir e ficha (PDF)",
+    printSetDesc: "{t} ({n}) num mapa grátis para imprimir: mapa mudo, ficha numerada, mapa com nomes e gabarito, cada um em seu próprio PDF.",
+    orgMem: "Países-membros de {org}",
+    printSecSets: "Equador, hemisférios e organizações",
 
     orgHubTitle: "Organizações internacionais: países-membros",
 
@@ -881,6 +917,10 @@ module.exports = {
     navUs: 'О нас', navPrivacy: 'Конфиденциальность',
 
     pdfBtn: "Скачать PDF",
+    printSetTitle: "{t}: карта для печати и рабочий лист (PDF)",
+    printSetDesc: "{t} ({n}) на бесплатной карте для печати: контурная карта, рабочий лист с номерами, карта с названиями и ответы, каждый в отдельном PDF.",
+    orgMem: "{org}: страны-члены",
+    printSecSets: "Экватор, полушария и организации",
 
     orgHubTitle: "Международные организации: страны-участницы",
 
@@ -978,6 +1018,10 @@ module.exports = {
     navUs: 'ہمارے بارے میں', navPrivacy: 'رازداری',
 
     pdfBtn: "PDF ڈاؤن لوڈ کریں",
+    printSetTitle: "{t}: پرنٹ کے قابل نقشہ اور ورک شیٹ (PDF)",
+    printSetDesc: "{t} ({n}) مفت پرنٹ کے قابل نقشے پر: خالی نقشہ، نمبر والی ورک شیٹ، ناموں والا نقشہ اور جوابات، ہر ایک الگ PDF میں۔",
+    orgMem: "{org} کے رکن ممالک",
+    printSecSets: "خط استوا، نصف کرے اور بین الاقوامی تنظیمیں",
 
     orgHubTitle: "بین الاقوامی تنظیمیں: رکن ممالک",
 
@@ -1075,6 +1119,10 @@ module.exports = {
     navUs: 'Tentang kami', navPrivacy: 'Privasi',
 
     pdfBtn: "Unduh PDF",
+    printSetTitle: "{t}: peta cetak dan lembar kerja (PDF)",
+    printSetDesc: "{t} ({n}) di peta cetak gratis: peta kosong, lembar kerja bernomor, peta berlabel, dan kunci jawaban, masing-masing dalam PDF tersendiri.",
+    orgMem: "Negara anggota {org}",
+    printSecSets: "Khatulistiwa, belahan bumi, dan organisasi",
 
     orgHubTitle: "Organisasi internasional: negara anggota",
 
@@ -1172,6 +1220,10 @@ module.exports = {
     navUs: 'Chi siamo', navPrivacy: 'Privacy',
 
     pdfBtn: "Scarica il PDF",
+    printSetTitle: "{t}: mappa da stampare e scheda (PDF)",
+    printSetDesc: "{t} ({n}) su una mappa gratuita da stampare: mappa muta, scheda numerata, mappa con i nomi e soluzioni, ognuna in un PDF a parte.",
+    orgMem: "{org}: paesi membri",
+    printSecSets: "Equatore, emisferi e organizzazioni",
 
     orgHubTitle: "Organizzazioni internazionali: paesi membri",
 
@@ -1269,6 +1321,10 @@ module.exports = {
     navUs: '運営者について', navPrivacy: 'プライバシー',
 
     pdfBtn: "PDFをダウンロード",
+    printSetTitle: "{t}：印刷用地図ワークシート（PDF）",
+    printSetDesc: "{t}（{n}か国）の無料印刷用地図：白地図、番号付きワークシート、名前入り地図、解答。それぞれ別のPDFでダウンロードできます。",
+    orgMem: "{org}加盟国",
+    printSecSets: "赤道・北半球・南半球と国際機関",
 
     orgHubTitle: "国際機関：加盟国",
 
@@ -1366,6 +1422,10 @@ module.exports = {
     navUs: '소개', navPrivacy: '개인정보',
 
     pdfBtn: "PDF 다운로드",
+    printSetTitle: "{t}: 인쇄용 지도 학습지 (PDF)",
+    printSetDesc: "{t}({n}) 무료 인쇄용 지도: 백지도, 번호 학습지, 이름 지도, 정답지를 각각 PDF로 받을 수 있습니다.",
+    orgMem: "{org} 회원국",
+    printSecSets: "적도, 반구, 국제기구",
 
     orgHubTitle: "국제기구: 회원국",
 
@@ -1463,6 +1523,10 @@ module.exports = {
     navUs: 'O nas', navPrivacy: 'Prywatność',
 
     pdfBtn: "Pobierz PDF",
+    printSetTitle: "{t}: mapa do druku i karta pracy (PDF)",
+    printSetDesc: "{t} ({n}) na darmowej mapie do druku: mapa konturowa, karta pracy z numerami, mapa z nazwami i odpowiedzi, każda w osobnym PDF.",
+    orgMem: "{org}: państwa członkowskie",
+    printSecSets: "Równik, półkule i organizacje",
 
     orgHubTitle: "Organizacje międzynarodowe: państwa członkowskie",
 
@@ -1560,6 +1624,10 @@ module.exports = {
     navUs: 'Over ons', navPrivacy: 'Privacy',
 
     pdfBtn: "PDF downloaden",
+    printSetTitle: "{t}: printbare kaart en werkblad (PDF)",
+    printSetDesc: "{t} ({n}) op een gratis printbare kaart: blinde kaart, genummerd werkblad, kaart met namen en antwoorden, elk als eigen PDF.",
+    orgMem: "Lidstaten van {org}",
+    printSecSets: "Evenaar, halfronden en organisaties",
 
     orgHubTitle: "Internationale organisaties: lidstaten",
 

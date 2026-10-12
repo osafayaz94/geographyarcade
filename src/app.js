@@ -115,8 +115,22 @@
   }
 
   // "Pick all that apply": toggle options, then Check. Correct only if the picks match exactly.
+  // The country's outline with its name under it, above the choices (capitals and country games).
+  function addPic(item) {
+    var code = item.pic || (item.s && item.id.toLowerCase());
+    if (!Q.picBase || !code) return;
+    var fig = el('figure', 'qpic');
+    var pic = el('img', 'pic'); pic.src = root + Q.picBase + code + '.svg'; pic.alt = item.n || ''; pic.width = 260; pic.height = 195;
+    fig.appendChild(pic);
+    if (item.n) fig.appendChild(el('figcaption', null, item.n));
+    mcBox.appendChild(fig);
+    var nx = state.list[state.i + 1], nc = nx && (nx.pic || (nx.s && nx.id.toLowerCase()));
+    if (nc) (new Image()).src = root + Q.picBase + nc + '.svg';
+  }
+
   function askMulti(item) {
     prompt.textContent = item.p;
+    addPic(item);
     var box = el('div', 'opts multi');
     var picked = {};
     shuffle(item.o).forEach(function (o) {
@@ -152,7 +166,7 @@
     var field = Q.type === 'flags' ? 'n' : 'a';
     // Questions that bring their own prompt and options (currencies, languages, hemispheres, yes/no).
     var fixed = item.o ? (Q.type === 'tf' ? item.o : shuffle(item.o)) : null;
-    if (fixed) prompt.textContent = item.p;
+    if (fixed) { prompt.textContent = item.p; addPic(item); }
     else if (Q.type === 'flags') {
       prompt.textContent = S.qFlag;
       var im = el('img', 'flag'); im.src = imgOf(item); im.alt = ''; im.width = 400; im.height = 300;
@@ -162,11 +176,7 @@
     } else {
       prompt.textContent = fmt(S.qCapital, { c: item.n });
       // Capitals quizzes: the country's outline above the choices (item.s: an outline exists).
-      if (Q.picBase && item.s) {
-        var pic = el('img', 'pic'); pic.src = root + Q.picBase + item.id.toLowerCase() + '.svg'; pic.alt = ''; pic.width = 260; pic.height = 195;
-        mcBox.appendChild(pic);
-        var nxt = state.list[state.i + 1]; if (nxt && nxt.s) (new Image()).src = root + Q.picBase + nxt.id.toLowerCase() + '.svg';
-      }
+      addPic(item);
       // Province capitals quizzes: the country's map with this province highlighted. The map is
       // fetched once and kept; each question moves the highlight.
       if (Q.picMap) {

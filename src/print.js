@@ -38,8 +38,10 @@
   // carries numbers, the answer sheet (numbered blank lines) and the answer key, each on a new page.
   // The two lists are never shown on the page itself.
   var printDoc = null;
-  function buildPrint() {
+  // buildPrint('blank') etc. prints that one version alone (scripts/make-pdfs.js: one PDF each).
+  function buildPrint(only) {
     if (!sheets.worksheet) return;
+    if (typeof only !== 'string') only = null;
     if (!printDoc) {
       printDoc = document.createElement('div');
       printDoc.className = 'pprint';
@@ -57,7 +59,9 @@
       });
       printDoc.appendChild(s);
     }
-    if (current === 'worksheet' || current === 'answers') {
+    if (only) {
+      part(only, only === 'blank' || only === 'labeled' ? ['.pmap'] : ['.pmap', '.pkey']);
+    } else if (current === 'worksheet' || current === 'answers') {
       part('worksheet', ['.pmap', '.pkey']);
       part('answers', ['.pmap', '.pkey']);
     } else {
@@ -146,8 +150,16 @@
     // enough to hold one; the others are left out of the worksheet list too, so the numbers on
     // the map and in the list always match.
     var crowded = items.length > 80;
+    // A map of some countries only (the Equator, a hemisphere, an organisation): those are shaded.
+    var setMap = box.hasAttribute('data-set');
+    if (setMap) svg.classList.add('pset');
     // Country outlines carry only their capital: big, readable labels there.
-    var size = crowded ? Math.max(7, Math.round(vb[2] / 120)) : items.length <= 3 ? Math.round(vb[2] / 38) : Math.max(8, Math.round(vb[2] / 85));
+    // Minimum sizes are for a map about 1000 units wide; a cropped map (an organisation) scales them.
+    var k = Math.min(1, vb[2] / 1000);
+    var size = crowded ? Math.max(7 * k, vb[2] / 120) : items.length <= 3 ? vb[2] / 38 : Math.max(8 * k, vb[2] / (k < 1 ? 45 : 85));
+    size = Math.round(size * 10) / 10;
+    // Small-country circles shrink with a cropped map too.
+    if (k < 1) Array.prototype.forEach.call(svg.querySelectorAll('circle'), function (c) { c.setAttribute('r', +c.getAttribute('r') * Math.max(k * 1.6, 0.35)); });
     var minArea = crowded ? size * size * 2.2 : 0;
     var n = 0;
     items.forEach(function (li) {
@@ -157,6 +169,7 @@
         var c = centre(el);
         if (c && (!pick || c.area > pick.c.area)) pick = { el: el, c: c };
       });
+      if (setMap) Array.prototype.forEach.call(els, function (el) { el.classList.add('pin'); });
       if (!pick || pick.c.area < minArea) { li.classList.add('pskip'); return; }
       n += 1;
       var t = document.createElementNS(NS, 'text');
@@ -165,14 +178,16 @@
       t.setAttribute('class', 'pnum');
       t.setAttribute('font-size', size);
       t.textContent = String(n);
+      if (k < 1) t.style.strokeWidth = (3 * k) + 'px';
       pick.el.parentNode.appendChild(t);
       // The name, for the labelled version.
       var nm = document.createElementNS(NS, 'text');
       nm.setAttribute('x', pick.c.x);
       nm.setAttribute('y', pick.c.y);
       nm.setAttribute('class', 'pname');
-      nm.setAttribute('font-size', Math.max(6, Math.round(size * 0.8)));
+      nm.setAttribute('font-size', Math.round(Math.max(6 * k, size * 0.8) * 10) / 10);
       nm.textContent = (li.querySelector('.nm') || li).textContent;
+      if (k < 1) nm.style.strokeWidth = (2.5 * k) + 'px';
       pick.el.parentNode.appendChild(nm);
     });
     // The site's mark in the bottom corner of every version.
@@ -180,7 +195,7 @@
     wm.setAttribute('x', vb[0] + vb[2] - 10);
     wm.setAttribute('y', vb[1] + vb[3] - 10);
     wm.setAttribute('class', 'pwm');
-    wm.setAttribute('font-size', Math.max(10, Math.round(vb[2] / 60)));
+    wm.setAttribute('font-size', Math.round(Math.max(10 * k, vb[2] / 60) * 10) / 10);
     wm.textContent = 'geographyarcade.com';
     svg.appendChild(wm);
     makeSheets(svg);

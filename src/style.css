@@ -148,6 +148,7 @@ html:not(.lat) .cap,html:not(.lat) .denom{font-family:var(--body)}
 .prompt{font:700 clamp(1.2rem,2.6vw,1.6rem)/1.25 var(--head);margin:.25rem 0 .75rem;min-height:1.6em}
 html:not(.lat) .prompt{font-family:var(--body)}
 .game .pic{display:block;width:min(100%,260px);aspect-ratio:4/3;object-fit:contain;margin:0 auto 12px;background:var(--water);border-radius:10px}
+.game .qpic{margin:0 auto 12px;text-align:center}.game .qpic .pic{margin-bottom:6px}.game .qpic figcaption{font-weight:700;font-size:1.05rem}
 .game .flag{display:block;width:min(100%,420px);aspect-ratio:4/3;object-fit:contain;margin:0 auto;background:var(--water);border-radius:10px}
 .feedback{min-height:1.6em;margin:.6rem 0 0;font-weight:600}
 .feedback.ok{color:var(--ok)}.feedback.bad{color:var(--bad)}
@@ -241,6 +242,7 @@ footer .wrap{display:flex;gap:.5rem 1.5rem;flex-wrap:wrap}
 .paside img{width:100%;height:auto;border-radius:8px;background:var(--water)}
 @media (max-width:760px){.paside{float:none;flex-direction:row;align-items:center;width:auto;margin:0 0 1rem;text-align:start}.paside img{width:96px}}
 .pctl{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem;margin:1rem 0 .4rem;position:sticky;top:0;z-index:5;background:var(--paper);padding:.5rem 0}
+.pdl{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;margin:.2rem 0 .6rem}.pdl .btn{padding:.35rem .8rem;font-size:.9rem}
 .psheet{scroll-margin-top:5rem;margin:0 0 2.5rem}.psheet h2{margin:1.5rem 0 .4rem}
 .seg{display:inline-flex;border:1.5px solid var(--line);border-radius:999px;overflow:hidden}
 .seg button{border:0;background:transparent;color:var(--ink);font:600 .95rem var(--body);padding:.6rem 1rem;cursor:pointer}
@@ -252,6 +254,8 @@ footer .wrap{display:flex;gap:.5rem 1.5rem;flex-wrap:wrap}
 .pmap svg .c{fill:#fff!important;stroke:#222!important;stroke-width:.7}
 .pmap svg g{stroke:#222}
 .pmap svg .ring{display:none}
+.pmap svg.pset .pin{fill:#D6D6D6!important}
+.pmap svg.pset path{vector-effect:non-scaling-stroke}
 .pnum{fill:#000;stroke:#fff;stroke-width:3px;paint-order:stroke;font-family:system-ui,sans-serif;font-weight:700;text-anchor:middle;dominant-baseline:central}
 .pm-blank .pnum{display:none}
 .pkey{columns:4 11rem;column-gap:1.6rem;padding-inline-start:2.4rem;margin:1rem 0 2rem}
@@ -260,7 +264,7 @@ footer .wrap{display:flex;gap:.5rem 1.5rem;flex-wrap:wrap}
 .pm-worksheet .pkey .nm{visibility:hidden}
 .pm-blank .pkey{display:none}
 @media print{
-  header.top,footer,.crumbs,.pctl,.ptip,.lede,.skip,.paside,.pabout{display:none!important}
+  header.top,footer,.crumbs,.pctl,.pdl,.ptip,.lede,.skip,.paside,.pabout{display:none!important}
   body{background:#fff!important;color:#000!important}
   main.wrap{max-width:none;padding:0}
   h1{font-size:18pt;margin:0 0 6pt;color:#000}

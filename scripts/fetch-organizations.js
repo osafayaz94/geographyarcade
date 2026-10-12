@@ -43,10 +43,14 @@ async function labelsOf(ids) {
   const out = {};
   for (const o of ORGS) {
     const f = facts.find((r) => r.o === o.qid) || {};
-    const h = headOf[o.qid];
+    // Only a holder of a standing office (Secretary General, Head of the Commonwealth) with a
+    // start date: rotating chairs (OPEC president, AU chairperson, ECOWAS chair) go out of date.
+    const h0 = headOf[o.qid];
+    const officeEn = h0 && h0.office && lab[h0.office] ? lab[h0.office].en || '' : '';
+    const h = h0 && h0.fromOffice && h0.since && /secretary|head of the commonwealth/i.test(officeEn) ? h0 : null;
     out[o.key] = {
       name: { ...(lab[o.qid] || {}), ...(o.name || {}) },
-      founded: f.inc ? Number(String(f.inc).slice(0, 4)) : null,
+      founded: o.founded || (f.inc ? Number(String(f.inc).slice(0, 4)) : null),
       website: f.web || null,
       hq: o.hq ? lab[o.hq] || null : null,
       head: h && lab[h.qid] ? { name: lab[h.qid], office: h.office ? lab[h.office] || null : null, since: h.since || null } : null,

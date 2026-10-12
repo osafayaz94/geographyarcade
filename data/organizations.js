@@ -2,6 +2,7 @@
 // membership data is incomplete), the headquarters city, and the Wikidata item for the names,
 // founding year and current head (scripts/fetch-organizations.js -> data/organizations.json).
 // `count` is the official number of member countries, checked against `members` when fetching.
+// `founded`: year, where Wikidata's inception is a forerunner (OEEC for the OECD...).
 // `note`: key of a sentence in src/i18n-pages.js for members that are not countries on this site.
 module.exports = [
   { key: 'g20', slug: 'g20-countries', qid: 'Q19771', hq: null, count: 19, note: 'orgNoteG20',
@@ -28,7 +29,7 @@ module.exports = [
     members: 'AT BE BG HR CY CZ DK EE FI FR DE GR HU IE IT LV LT LU MT NL PL PT RO SK SI ES SE' },
   { key: 'nato', slug: 'nato-countries', qid: 'Q7184', hq: 'Q239', count: 32,
     members: 'AL BE BG CA HR CZ DK EE FI FR DE GR HU IS IT LV LT LU ME NL MK NO PL PT RO SK SI ES SE TR GB US' },
-  { key: 'african-union', slug: 'african-union-countries', qid: 'Q7159', hq: 'Q3624', count: 54, note: 'orgNoteAU',
+  { key: 'african-union', founded: 2002, slug: 'african-union-countries', qid: 'Q7159', hq: 'Q3624', count: 54, note: 'orgNoteAU',
     members: 'DZ AO BJ BW BF BI CV CM CF TD KM CG CD CI DJ EG GQ ER SZ ET GA GM GH GN GW KE LS LR LY MG MW ML MR MU MA MZ NA NE NG RW ST SN SC SL SO ZA SS SD TZ TG TN UG ZM ZW' },
   { key: 'commonwealth', slug: 'commonwealth-countries', qid: 'Q7785', hq: 'Q84', count: 56,
     members: 'AG AU BS BD BB BZ BW BN CM CA CY DM SZ FJ GA GM GH GD GY IN JM KE KI LS MW MY MV MT MU MZ NA NR NZ NG PK PG RW KN LC VC WS SC SL SG SB ZA LK TZ TO TT TV UG GB VU ZM TG' },
@@ -36,4 +37,48 @@ module.exports = [
     members: 'AR BR PY UY BO' },
   { key: 'un-security-council', slug: 'un-security-council-permanent-members', qid: 'Q37470', hq: 'Q60', count: 5, note: 'orgNoteUNSC',
     members: 'CN FR RU GB US' },
+  { key: 'oecd', founded: 1961, slug: 'oecd-countries', qid: 'Q41550', hq: 'Q90', count: 38,
+    members: 'AU AT BE CA CL CO CR CZ DK EE FI FR DE GR HU IS IE IL IT JP KR LV LT LU MX NL NZ NO PL PT SK SI ES SE CH TR GB US' },
+  { key: 'schengen', slug: 'schengen-countries', qid: 'Q1969730', hq: null, count: 29, // Bulgaria and Romania in full since January 2025
+    members: 'AT BE BG HR CZ DK EE FI FR DE GR HU IS IT LV LI LT LU MT NL NO PL PT RO SK SI ES SE CH' },
+  { key: 'eurozone', slug: 'eurozone-countries', qid: 'Q8268', hq: null, count: 21, name: { en: 'Eurozone' }, // Bulgaria since January 2026
+    members: 'AT BE BG HR CY EE FI FR DE GR IE IT LV LT LU MT NL PT SK SI ES' },
+  { key: 'council-of-europe', slug: 'council-of-europe-countries', qid: 'Q8908', hq: 'Q6602', count: 46,
+    members: 'AL AD AM AT AZ BE BA BG HR CY CZ DK EE FI FR GE DE GR HU IS IE IT LV LI LT LU MT MD MC ME NL MK NO PL PT RO SM RS SK SI ES SE CH TR UA GB' },
+  { key: 'ecowas', slug: 'ecowas-countries', qid: 'Q193272', hq: 'Q3787', count: 12, name: { en: 'ECOWAS' }, // Burkina Faso, Mali and Niger left in January 2025
+    members: 'BJ CV CI GM GH GN GW LR NG SN SL TG' },
+  { key: 'sadc', founded: 1992, slug: 'sadc-countries', qid: 'Q816706', hq: 'Q3919', count: 16, name: { en: 'Southern African Development Community (SADC)' },
+    members: 'AO BW KM CD SZ LS MG MW MU MZ NA SC ZA TZ ZM ZW' },
+  { key: 'eac', slug: 'east-african-community-countries', qid: 'Q337456', hq: 'Q4301', count: 8, // Somalia since 2024
+    members: 'BI CD KE RW SS TZ UG SO' },
+  { key: 'eccas', slug: 'eccas-countries', qid: 'Q189966', hq: 'Q3825', count: 11,
+    members: 'AO BI CM CF TD CG CD GQ GA RW ST' },
+  { key: 'sahel-states', slug: 'alliance-of-sahel-states-countries', qid: 'Q122624387', hq: null, count: 3,
+    members: 'BF ML NE' },
+  { key: 'maghreb', slug: 'arab-maghreb-union-countries', qid: 'Q370862', hq: 'Q3551', count: 5,
+    members: 'DZ LY MR MA TN' },
+  { key: 'eco', slug: 'eco-countries', qid: 'Q225950', hq: 'Q3616', count: 10,
+    members: 'AF AZ IR KZ KG PK TJ TR TM UZ' },
+  { key: 'd8', founded: 1997, slug: 'd8-countries', qid: 'Q577526', hq: 'Q406', count: 9, name: { en: 'D-8 Organization for Economic Cooperation' }, // Azerbaijan since December 2024
+    members: 'BD EG ID IR MY NG PK TR AZ' },
+  { key: 'turkic-states', slug: 'turkic-states-countries', qid: 'Q596850', hq: 'Q406', count: 5,
+    members: 'AZ KZ KG TR UZ' },
+  { key: 'eaeu', founded: 2015, slug: 'eurasian-economic-union-countries', qid: 'Q4173083', hq: 'Q649', count: 5,
+    members: 'AM BY KZ KG RU' },
+  { key: 'csto', slug: 'csto-countries', qid: 'Q318693', hq: 'Q649', count: 6, // Armenia froze its participation in 2024 but is still a member
+    members: 'AM BY KZ KG RU TJ' },
+  { key: 'bimstec', slug: 'bimstec-countries', qid: 'Q795985', hq: 'Q1354', count: 7, name: { en: 'BIMSTEC' },
+    members: 'BD BT IN MM NP LK TH' },
+  { key: 'andean', slug: 'andean-community-countries', qid: 'Q471690', hq: 'Q2868', count: 4,
+    members: 'BO CO EC PE' },
+  { key: 'pacific-alliance', slug: 'pacific-alliance-countries', qid: 'Q7122288', hq: null, count: 4,
+    members: 'CL CO MX PE' },
+  { key: 'nordic', slug: 'nordic-council-countries', qid: 'Q146165', hq: 'Q1748', count: 5,
+    members: 'DK FI IS NO SE' },
+  { key: 'visegrad', slug: 'visegrad-group-countries', qid: 'Q244323', hq: null, count: 4,
+    members: 'CZ HU PL SK' },
+  { key: 'quad', slug: 'quad-countries', qid: 'Q7268405', hq: null, count: 4, name: { en: 'Quad (Quadrilateral Security Dialogue)' },
+    members: 'AU IN JP US' },
+  { key: 'five-eyes', founded: 1946, slug: 'five-eyes-countries', qid: 'Q15978258', hq: null, count: 5,
+    members: 'AU CA NZ GB US' },
 ];

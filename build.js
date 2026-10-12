@@ -668,6 +668,8 @@ let HEMI = {}; // filled in main() from the map data
 // Currency and language quizzes also come in one version per continent (games/currencies/europe/).
 const CONT_GAMES = ['currencies', 'languages'];
 const contGameTitle = (lang, g, scope) => t(lang, g.key === 'currencies' ? 'contTitleCurrencies' : 'contTitleLanguages', { of: L[lang].of[scope] });
+// Every question shows the country's outline and name (src/app.js, Q.picBase + item.pic).
+const withPic = (items) => items.map((it) => { const iso = it.id.slice(0, 2); return SHAPES[iso] ? { ...it, pic: iso.toLowerCase() } : it; });
 function contGameItems(g, lang, scope) {
   const ids = new Set(inScope(scope).map((c) => c.iso2));
   return countryGameItems(g, lang).filter((it) => ids.has(it.id));
@@ -739,11 +741,12 @@ function countryGame(lang, g, scope = 'world') {
   const home = `games/${g.key}/`;
   const p = world ? home : `${home}${scope}/`;
   const label = tt(lang, 'g.' + g.key);
-  const items = world ? countryGameItems(g, lang) : contGameItems(g, lang, scope);
+  const items = withPic(world ? countryGameItems(g, lang) : contGameItems(g, lang, scope));
   const title = world ? tt(lang, 'physTitle', { g: label }) : contGameTitle(lang, g, scope);
   const desc = world ? tt(lang, 'desc.' + g.key) : t(lang, g.key === 'currencies' ? 'contDescCurrencies' : 'contDescLanguages', { of: L[lang].of[scope], n: items.length });
   const scoped = world ? countries : inScope(scope);
   const data = { type: g.key === 'neighbours' ? 'multi' : g.key === 'landlocked' ? 'tf' : 'mc', key: world ? `g-${g.key}-${lang}` : `g-${g.key}-${scope}-${lang}`, title, items, s: { ...quizStrings(lang), check: tt(lang, 'check'), timeLeft: tt(lang, 'timeLeft') } };
+  data.picBase = 'img/shapes/';
   if (g.key === 'landlocked') data.seconds = 60; else data.limit = ROUND;
   // Answer table: one row per country.
   const rows = sortBy(lang, scoped, (c) => cName(c, lang)).map((c) => {
@@ -860,7 +863,7 @@ function listPage(lang, l) {
     extra = `<p>${esc(t(lang, hemi.x))}</p><figure class="lmap"><img src="/img/lists/${l.key}.svg" alt="${esc(title)}" width="1000" height="510"><figcaption class="note">${esc(t(lang, 'mapLegend'))}</figcaption></figure>`
       + byCont + `<h2 id="quiz">${esc(qTitle)}</h2>${gameShell(lang, data)}`;
   }
-  const body = `<h1>${esc(title)}</h1><p class="answer">${esc(answer)}</p>${extra}<div class="cta"><a class="btn" href="${url(lang, l.game)}">${esc(gameName)}</a></div>${table}<h2>${esc(tt(lang, 'l.related'))}</h2><ul class="links">${others}</ul>`;
+  const body = `${hemi ? printAside(lang, printFor((pr) => pr.key === 'l-' + l.key)) : ''}<h1>${esc(title)}</h1><p class="answer">${esc(answer)}</p>${extra}<div class="cta"><a class="btn" href="${url(lang, l.game)}">${esc(gameName)}</a></div>${table}<h2>${esc(tt(lang, 'l.related'))}</h2><ul class="links">${others}</ul>`;
   const ld = { '@context': 'https://schema.org', '@type': 'ItemList', name: title, description: answer, numberOfItems: rows.length, itemListOrder: l.kind === 'rank' ? 'https://schema.org/ItemListOrderDescending' : 'https://schema.org/ItemListUnordered', itemListElement: rows.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: nameOf(c), url: abs(lang, `countries/${c.slug}/`) })) };
   page(lang, p, { title: seoTitle, desc, body, script: !!hemi, crumbs: [{ name: tt(lang, 'l.hub.t'), p: 'lists/' }, { name: title, p }], jsonld: [ld] });
 }
@@ -898,7 +901,7 @@ function orgPage(lang, o) {
   const data = { type: 'map', key: `org-${o.key}-${lang}`, title: qTitle, map: '/maps/world.svg', ar: MAP_AR.world, items: rows.map((c) => ({ id: c.iso2, n: cName(c, lang) })), s: quizStrings(lang) };
   const table = `<div class="tbl"><table><thead><tr><th>${esc(t(lang, 'thFlag'))}</th><th>${esc(t(lang, 'thCountry'))}</th><th>${esc(t(lang, 'thCapital'))}</th></tr></thead><tbody>${rows.map((c) => `<tr><td><img src="${flagSrc(c.iso2)}" alt="" width="32" height="24" loading="lazy"></td><td><a href="${url(lang, `countries/${c.slug}/`)}">${esc(cName(c, lang))}</a></td><td>${esc(capsOf(c, lang).join(', '))}</td></tr>`).join('')}</tbody></table></div>`;
   const others = ORGS.filter((x) => x !== o).map((x) => `<li><a href="${url(lang, orgPath(x))}">${esc(orgName(lang, x))}</a> <small class="note">${num(lang, orgMembers(x).length)}</small></li>`).join('');
-  const body = `<h1>${esc(title)}</h1><p class="answer">${esc(answer)}${o.note ? ' ' + esc(P[o.note]) : ''}</p>`
+  const body = `${printAside(lang, printFor((pr) => pr.key === 'o-' + o.key))}<h1>${esc(title)}</h1><p class="answer">${esc(answer)}${o.note ? ' ' + esc(P[o.note]) : ''}</p>`
     + `<div class="facts"><dl class="kv">${kv.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${v}</dd>`).join('')}</dl></div>`
     + (head ? `<p class="note">${esc(fillP(P.headSource, { d: dateFmt(lang, ORGD.fetched || DATA_DATE) }))}</p>` : '')
     + `<figure class="lmap"><img src="/img/orgs/${o.key}.svg" alt="${esc(title)}" width="1000" height="510"><figcaption class="note">${esc(t(lang, 'mapLegend'))}</figcaption></figure>`
@@ -1174,7 +1177,36 @@ function printList() {
   for (const c of provCountries) out.push({ kind: 'prov', c, p: `printables/countries/${c.slug}/`, src: `/maps/p/${c.iso2.toLowerCase()}.svg`, ar: MAP_AR['p-' + c.iso2], thumb: `/img/p/${c.iso2.toLowerCase()}.svg`, quiz: `countries/${c.slug}/map-quiz/` });
   for (const c of countries.filter((x) => COUNTRY_PRINTS.has(x.iso2))) out.push({ kind: 'country', c, p: `printables/countries/${c.slug}/`, src: `/maps/c/${c.iso2.toLowerCase()}.svg`, ar: '1000/700', thumb: shapeSrc(c.iso2), quiz: `capitals/${c.continent}/` });
   for (const x of EXTRA_SETS) out.push({ kind: 'extra', x, p: `printables/countries/${x.c.slug}/${x.slug}/`, src: `/maps/x/${x.key}.svg`, ar: MAP_AR['x-' + x.key], thumb: `/img/x/${x.key}.svg`, quiz: extraPath(x) });
+  // Some countries on a world map: the Equator, the hemispheres, each organisation (cropped to its members).
+  for (const l of LISTS.filter((x) => HEMI_LISTS[x.key])) out.push({ kind: 'set', key: 'l-' + l.key, rows: l.rows, name: (lang) => listTitle(lang, l), p: `printables/maps/${l.slug}/`, src: '/maps/world.svg', ar: MAP_AR.world, thumb: `/img/lists/${l.key}.svg`, quiz: listPath(l) });
+  for (const o of ORGS) out.push({ kind: 'set', key: 'o-' + o.key, rows: () => orgMembers(o), name: (lang) => fillP(pg(lang).orgMem, { org: orgName(lang, o) }), p: `printables/organizations/${o.slug}/`, src: `/maps/o/${o.key}.svg`, ar: MAP_AR['o-' + o.key], thumb: `/img/orgs/${o.key}.svg`, quiz: orgPath(o) });
   return out;
+}
+// The world map cut down to the members of an organisation: the box around the main piece of
+// each member (not far islands), with a margin, at least 22% of the map wide and not too tall.
+function cropTo(svg, ids) {
+  let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
+  for (const m of svg.matchAll(/<path [^>]*data-id="([A-Z]{2})"[^>]* d="([^"]+)"/g)) {
+    if (!ids.has(m[1])) continue;
+    let best = null;
+    for (const piece of m[2].split('M')) {
+      const n = (piece.match(/-?\d+(?:\.\d+)?/g) || []).map(Number);
+      if (n.length < 4) continue;
+      const b = [Infinity, Infinity, -Infinity, -Infinity];
+      for (let i = 0; i + 1 < n.length; i += 2) { b[0] = Math.min(b[0], n[i]); b[2] = Math.max(b[2], n[i]); b[1] = Math.min(b[1], n[i + 1]); b[3] = Math.max(b[3], n[i + 1]); }
+      const area = (b[2] - b[0]) * (b[3] - b[1]);
+      if (!best || area > best.area) best = { b, area };
+    }
+    if (best) { x0 = Math.min(x0, best.b[0]); y0 = Math.min(y0, best.b[1]); x1 = Math.max(x1, best.b[2]); y1 = Math.max(y1, best.b[3]); }
+  }
+  const [, , W, H] = svg.match(/viewBox="([\d.-]+) ([\d.-]+) ([\d.]+) ([\d.]+)"/).slice(1).map(Number);
+  if (!isFinite(x0)) return svg;
+  let w = (x1 - x0) * 1.12 + 20, h = (y1 - y0) * 1.12 + 20;
+  w = Math.max(w, W * 0.22, h * 1.25); h = Math.max(h, w / 2.2);
+  w = Math.min(w, W); h = Math.min(h, H);
+  const cx = (x0 + x1) / 2, cy = (y0 + y1) / 2;
+  const vx = Math.min(Math.max(cx - w / 2, 0), W - w), vy = Math.min(Math.max(cy - h / 2, 0), H - h);
+  return svg.replace(/viewBox="[^"]+"/, `viewBox="${vx.toFixed(1)} ${vy.toFixed(1)} ${w.toFixed(1)} ${h.toFixed(1)}"`);
 }
 let PRINTS = null;
 const printsOf = () => (PRINTS = PRINTS || printList());
@@ -1183,6 +1215,11 @@ function printInfo(lang, pr) {
   if (pr.kind === 'scope') {
     const items = inScope(pr.s).map((c) => ({ id: c.iso2, n: cName(c, lang) }));
     return { items, title: t(lang, 'printTitle', { of: L[lang].of[pr.s] }), desc: pr.s === 'world' ? t(lang, 'printDescWorld') : t(lang, 'printDesc', { of: L[lang].of[pr.s], n: items.length }) };
+  }
+  if (pr.kind === 'set') {
+    const items = pr.rows().map((c) => ({ id: c.iso2, n: cName(c, lang) }));
+    const v = { t: pr.name(lang), n: num(lang, items.length) };
+    return { items, title: fillP(pg(lang).printSetTitle, v), desc: fillP(pg(lang).printSetDesc, v) };
   }
   if (pr.kind === 'country') {
     const items = pr.c.capitals.filter((k) => capCoords[k.qid]).map((k) => ({ id: k.qid, n: nm(k.name, lang) }));
@@ -1216,6 +1253,9 @@ function printAbout(lang, pr, n) {
   return `<section class="pabout"><h2>${esc(t(lang, 'pAboutH'))}</h2><p>${esc(how)}</p><p>${esc(t(lang, 'pAboutUse'))}</p>`
     + `<p><a href="${url(lang, pr.quiz)}">${esc(t(lang, 'pAboutQuiz'))}</a></p></section>`;
 }
+// The four versions of a printable map, each also a PDF of its own (made by scripts/make-pdfs.js).
+const PRINT_MODES = [['blank', 'modeBlank'], ['worksheet', 'modeWorksheet'], ['labeled', 'modeLabeled'], ['answers', 'modeAnswers']];
+const pdfFile = (p, mode) => `${p.split('/').filter(Boolean).pop()}-${{ blank: 'blank-map', worksheet: 'map-worksheet', labeled: 'labeled-map', answers: 'map-answer-key' }[mode]}.pdf`;
 function printPage(lang, pr) {
   const { items, title, desc } = printInfo(lang, pr);
   const list = sortBy(lang, items, (x) => x.n);
@@ -1224,10 +1264,11 @@ function printPage(lang, pr) {
   // "(PDF)" helps the search-result title; the heading printed on the worksheet leaves it out.
   const heading = title.replace(/\s*[（(]PDF[)）]$/, '');
   const body = `<h1>${esc(heading)}</h1><p class="lede">${esc(desc)}</p>`
-    + `<div class="pctl"><div class="seg" role="group" aria-label="${esc(heading)}">${modes}</div><button class="btn" type="button" data-print>${esc(t(lang, 'printBtn'))}</button><a class="btn ghost" href="${url(lang, pr.p)}${pr.p.split('/').filter(Boolean).pop()}-map-worksheet.pdf" download>${esc(pg(lang).pdfBtn)}</a><a class="btn ghost" href="${url(lang, pr.quiz)}">${esc(t(lang, 'printQuizLink'))}</a></div>`
+    + `<div class="pctl"><div class="seg" role="group" aria-label="${esc(heading)}">${modes}</div><button class="btn" type="button" data-print>${esc(t(lang, 'printBtn'))}</button><a class="btn ghost" href="${url(lang, pr.quiz)}">${esc(t(lang, 'printQuizLink'))}</a></div>`
+    + `<p class="pdl"><span>${esc(pg(lang).pdfBtn)}:</span>${PRINT_MODES.map(([m, k]) => `<a class="btn ghost" href="${url(lang, pr.p)}${pdfFile(pr.p, m)}" download>${esc(t(lang, k))}</a>`).join('')}</p>`
     + `<p class="note ptip">${esc(t(lang, 'printTip'))}</p>`
     + (w > h * 1.15 ? '<style>@page{size:landscape}@media print{.pprint .pmap svg{max-height:115mm}}</style>' : '')
-    + `<div class="pmap" data-src="${pr.src}"><img src="${pr.src}" alt="${esc(title)}" width="${w}" height="${h}" decoding="async" fetchpriority="low"></div>`
+    + `<div class="pmap" data-src="${pr.src}"${pr.kind === 'set' ? ' data-set' : ''}><img src="${pr.src}" alt="${esc(title)}" width="${w}" height="${h}" decoding="async" fetchpriority="low"></div>`
     + `<ol class="pkey">${list.map((x) => `<li data-id="${esc(x.id)}"><span class="nm">${esc(x.n)}</span></li>`).join('')}</ol>`
     + printAbout(lang, pr, items.length);
   const crumbs = [{ name: t(lang, 'printHubTitle'), p: 'printables/' }, { name: title, p: pr.p }];
@@ -1243,9 +1284,11 @@ function printHub(lang) {
   const scopes = printsOf().filter((pr) => pr.kind === 'scope');
   const rest = sortBy(lang, printsOf().filter((pr) => pr.kind === 'prov' || pr.kind === 'extra'), (pr) => printInfo(lang, pr).title);
   const small = sortBy(lang, printsOf().filter((pr) => pr.kind === 'country'), (pr) => printInfo(lang, pr).title);
+  const sets = printsOf().filter((pr) => pr.kind === 'set');
   const flagOf = (pr) => (pr.kind === 'extra' ? pr.x.c : pr.c).iso2;
   const body = `<h1>${esc(title)}</h1><p class="lede">${esc(desc)}</p>`
     + `<h2>${esc(t(lang, 'printSecCont'))}</h2><nav class="stamps" aria-label="${esc(t(lang, 'printSecCont'))}">${scopes.map(stamp).join('')}</nav>`
+    + `<h2>${esc(pg(lang).printSecSets)}</h2><nav class="stamps" aria-label="${esc(pg(lang).printSecSets)}">${sets.map((pr, i) => stamp(pr, i + 2)).join('')}</nav>`
     + `<h2>${esc(t(lang, 'provTitle'))}</h2><ul class="links">${rest.map((pr) => `<li><img src="${flagSrc(flagOf(pr))}" alt="" width="28" height="21" loading="lazy"><a href="${url(lang, pr.p)}">${esc(printInfo(lang, pr).title)}</a></li>`).join('')}</ul>`
     + `<h2>${esc(t(lang, 'navCountries'))}</h2><ul class="links">${small.map((pr) => `<li><img src="${flagSrc(flagOf(pr))}" alt="" width="28" height="21" loading="lazy"><a href="${url(lang, pr.p)}">${esc(printInfo(lang, pr).title)}</a></li>`).join('')}</ul>`;
   page(lang, p, { title, desc, body, nav: p, crumbs: [{ name: title, p }] });
@@ -1483,6 +1526,12 @@ function notFound() {
     write(`maps/${s}.svg`, svg);
     const vb = svg.match(/viewBox="0 0 (\d+) (\d+)"/);
     MAP_AR[s] = `${vb[1]}/${vb[2]}`;
+    if (s === 'world') for (const o of ORGS) {
+      const crop = cropTo(svg, new Set(o.members.split(' ')));
+      write(`maps/o/${o.key}.svg`, crop);
+      const v = crop.match(/viewBox="[\d.-]+ [\d.-]+ ([\d.]+) ([\d.]+)"/);
+      MAP_AR['o-' + o.key] = `${Math.round(v[1] * 10)}/${Math.round(v[2] * 10)}`;
+    }
   }
   for (const c of provCountries) {
     const { svg, ids } = await adm1Svg(c.iso3, subdivisions[c.iso2].divisions);
