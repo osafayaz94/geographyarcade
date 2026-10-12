@@ -9,3 +9,6 @@ geographyarcade-site.zip
 .claude/
 geographyarcade-site.7z
 .cache/
+
+# Graphify knowledge graph (local only)
+graphify-out/
