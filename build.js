@@ -824,6 +824,10 @@ function listPage(lang, l) {
   // The meta description names at most three countries so it fits in a search result.
   const short = tt(lang, `l.${l.key}.a`, { ...(l.vars ? l.vars() : {}), top: topName, v: l.value ? l.value(lang, top) : '', next: listJoin(lang, nextList.slice(0, 3).map(nameOf)), n: rows.length, x: l.x ? l.x(lang) : '' });
   const desc = `${short} ${tt(lang, 'l.more')}`;
+  // The search-result title also says how many countries, and what else is on the page:
+  // searchers ask "how many countries..." (the visible heading stays short).
+  const hemiList = !!HEMI_LISTS[l.key];
+  const seoTitle = l.kind === 'set' ? t(lang, hemiList ? 'lTM' : 'lTN', { t: title, n: num(lang, rows.length) }) : title;
   const valueHead = l.th ? t(lang, l.th) : l.thT ? tt(lang, l.thT) : '';
   const table = `<div class="tbl"><table><thead><tr><th class="num">${esc(tt(lang, 'l.rank'))}</th><th>${esc(t(lang, 'thFlag'))}</th><th>${esc(t(lang, 'thCountry'))}</th><th>${esc(t(lang, 'thCapital'))}</th>${valueHead ? `<th class="num">${esc(valueHead)}</th>` : ''}</tr></thead><tbody>${rows.map((c, i) => `<tr><td class="num">${i + 1}</td><td><img src="${flagSrc(c.iso2)}" alt="" width="32" height="24" loading="lazy"></td><td><a href="${url(lang, `countries/${c.slug}/`)}">${esc(nameOf(c))}</a></td><td>${esc(capsOf(c, lang).join(', '))}</td>${valueHead ? `<td class="num">${l.value(lang, c)}</td>` : ''}</tr>`).join('')}</tbody></table></div>`;
   const gameName = { 'maps/world/': quizTitle(lang, 'maps', 'world'), 'countries/': t(lang, 'countriesTitle') }[l.game] || tt(lang, 'g.' + l.game.split('/')[1]);
@@ -842,7 +846,7 @@ function listPage(lang, l) {
   }
   const body = `<h1>${esc(title)}</h1><p class="answer">${esc(answer)}</p>${extra}<div class="cta"><a class="btn" href="${url(lang, l.game)}">${esc(gameName)}</a></div>${table}<h2>${esc(tt(lang, 'l.related'))}</h2><ul class="links">${others}</ul>`;
   const ld = { '@context': 'https://schema.org', '@type': 'ItemList', name: title, description: answer, numberOfItems: rows.length, itemListOrder: l.kind === 'rank' ? 'https://schema.org/ItemListOrderDescending' : 'https://schema.org/ItemListUnordered', itemListElement: rows.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: nameOf(c), url: abs(lang, `countries/${c.slug}/`) })) };
-  page(lang, p, { title, desc, body, script: !!hemi, crumbs: [{ name: tt(lang, 'l.hub.t'), p: 'lists/' }, { name: title, p }], jsonld: [ld] });
+  page(lang, p, { title: seoTitle, desc, body, script: !!hemi, crumbs: [{ name: tt(lang, 'l.hub.t'), p: 'lists/' }, { name: title, p }], jsonld: [ld] });
 }
 
 function listsHub(lang) {
@@ -1021,7 +1025,10 @@ function provinceQuizzes(lang, c) {
     const p = base + 'capitals-quiz/';
     const withCap = divs.filter((d) => d.capital);
     const title = provQuizTitle(lang, c, 'cap');
-    const desc = (c.iso2 === 'US' && seo(lang, 'usCapDesc')) || t(lang, 'provCapDesc', { c: name, n: withCap.length, term: tm });
+    // People also land here searching for the country's own capital: answer that first.
+    const caps = capsOf(c, lang);
+    const own = caps.length === 1 ? t(lang, 'capitalIs', { c: name, cap: caps[0] }) + ' ' : '';
+    const desc = own + ((c.iso2 === 'US' && seo(lang, 'usCapDesc')) || t(lang, 'provCapDesc', { c: name, n: withCap.length, term: tm }));
     const data = { type: 'pcap', key: `pcap-${c.iso2}-${lang}`, title, picMap: `/maps/p/${c.iso2.toLowerCase()}.svg`, items: withCap.map((d) => ({ id: d.id, n: nm(d.name, lang), a: nm(d.capital, lang) })), s: quizStrings(lang) };
     const faq = faqBlock(lang, [...withCap.slice(0, 3).map((d) => [t(lang, 'qCapitalFaq', { c: nm(d.name, lang) }), t(lang, 'capitalIs', { c: nm(d.name, lang), cap: nm(d.capital, lang) })]), [t(lang, 'qScoreFaq'), t(lang, 'aScore')]]);
     page(lang, p, { title, desc, script: true, nav: 'provinces/', crumbs: [...crumbsBase, { name: title, p }], jsonld: [quizLd(lang, p, title, desc, name), faq.ld],
