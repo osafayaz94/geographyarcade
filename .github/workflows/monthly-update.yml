@@ -74,6 +74,26 @@ jobs:
       - name: Build the site
         run: npm run build
 
+      # PDF downloads of the printable maps (worksheet + answer key). Cached by page content, so a
+      # run only prints the pages that changed.
+      - name: Restore the printable PDFs
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache/pdf
+          key: pdf-${{ github.run_id }}
+          restore-keys: pdf-
+
+      - name: Make the printable PDFs
+        run: node scripts/make-pdfs.js
+
+      - name: Save the printable PDFs
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: .cache/pdf
+          key: pdf-${{ github.run_id }}
+
+      # After the PDFs, so the check also confirms every "Download PDF" link has its file.
       - name: Check every page
         run: npm run check
 

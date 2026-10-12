@@ -266,7 +266,7 @@ ${crumbs.length ? `<nav class="crumbs" aria-label="Breadcrumb">${crumbList.map((
 ${body}
 </main>
 <footer><div class="wrap">
-<a href="${url(lang)}">${esc(SITE)}</a>${navItems.map(([k, h]) => `<a href="${url(lang, h)}">${esc(t(lang, k))}</a>`).join('')}<a href="${url(lang, 'world/')}">${esc(tt(lang, 'worldGames'))}</a><a href="${url(lang, 'lists/')}">${esc(tt(lang, 'l.related'))}</a><a href="${url(lang, 'about/')}">${esc(t(lang, 'navAbout'))}</a><a href="${url(lang, 'about-us/')}">${esc((PAGES[lang] || PAGES.en).navUs)}</a><a href="${url(lang, 'privacy/')}">${esc((PAGES[lang] || PAGES.en).navPrivacy)}</a>
+<a href="${url(lang)}">${esc(SITE)}</a>${navItems.map(([k, h]) => `<a href="${url(lang, h)}">${esc(t(lang, k))}</a>`).join('')}<a href="${url(lang, 'world/')}">${esc(tt(lang, 'worldGames'))}</a><a href="${url(lang, 'lists/')}">${esc(tt(lang, 'l.related'))}</a><a href="${url(lang, 'organizations/')}">${esc((PAGES[lang] || PAGES.en).orgHubTitle.split(':')[0].split('：')[0].trim())}</a><a href="${url(lang, 'about/')}">${esc(t(lang, 'navAbout'))}</a><a href="${url(lang, 'about-us/')}">${esc((PAGES[lang] || PAGES.en).navUs)}</a><a href="${url(lang, 'privacy/')}">${esc((PAGES[lang] || PAGES.en).navPrivacy)}</a>
 <span>${esc(t(lang, 'updated', { d: LASTMOD_TEXT }))}</span>
 </div></footer>
 ${script ? `<script src="/app.js?v=${APP_VERSION}" defer></script>` : ''}${printJs ? `<script src="/print.js?v=${PRINT_VERSION}" defer></script>` : ''}<script src="/search.js?v=${SEARCH_VERSION}" defer></script>${config.gaId ? `<script src="/ga.js?v=${GA_VERSION}" defer></script>` : ''}
@@ -786,8 +786,13 @@ function countryGameStamps(lang) {
   return `<nav class="stamps" aria-label="${esc(tt(lang, 'moreGames'))}">${COUNTRY_GAMES.map((g) => {
     const n = g.key === 'landlocked' ? '60s' : num(lang, g.key === 'neighbours' ? countries.filter((c) => c.borders.length).length : countries.length);
     return `<a class="stamp" href="${url(lang, `games/${g.key}/`)}"><span class="perf"><span class="art" style="--tile:${g.tile}"><span class="denom">${n}</span><img src="/img/games/${g.key}.svg" alt="" width="320" height="190" loading="lazy"></span><span class="cap">${esc(tt(lang, 'g.' + g.key))}</span></span></a>`;
-  }).join('')}</nav>`;
+  }).join('')}${HEMI_STAMPS.map(([key, tile]) => {
+    const l = LISTS.find((x) => x.key === key);
+    return `<a class="stamp" href="${url(lang, listPath(l))}"><span class="perf"><span class="art" style="--tile:${tile}"><span class="denom">${num(lang, l.rows().length)}</span><img src="/img/lists/${key}.svg" alt="" width="320" height="163" loading="lazy"></span><span class="cap">${esc(listTitle(lang, l))}</span></span></a>`;
+  }).join('')}${orgStamps(lang)}</nav>`;
 }
+// The Equator and hemisphere lists, each with its explanation, map and map quiz, as game cards.
+const HEMI_STAMPS = [['equator', '#8A5A2B'], ['north', '#2D6A8F'], ['south', '#3F7A55']];
 
 // ---------- Lists and rankings (topic pages that answer "which countries..." searches) ----------
 // kind "rank": ordered by a value; "set": countries that match, largest first.
@@ -859,6 +864,60 @@ function listPage(lang, l) {
   const ld = { '@context': 'https://schema.org', '@type': 'ItemList', name: title, description: answer, numberOfItems: rows.length, itemListOrder: l.kind === 'rank' ? 'https://schema.org/ItemListOrderDescending' : 'https://schema.org/ItemListUnordered', itemListElement: rows.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: nameOf(c), url: abs(lang, `countries/${c.slug}/`) })) };
   page(lang, p, { title: seoTitle, desc, body, script: !!hemi, crumbs: [{ name: tt(lang, 'l.hub.t'), p: 'lists/' }, { name: title, p }], jsonld: [ld] });
 }
+
+// ---------- International organisations (G20, ASEAN, SAARC, EU, NATO...) ----------
+// Members curated in data/organizations.js; names, founding year, headquarters and head from
+// Wikidata (data/organizations.json, scripts/fetch-organizations.js).
+const ORGS = require('./data/organizations');
+const ORGD = fs.existsSync(path.join(__dirname, 'data', 'organizations.json')) ? require('./data/organizations.json') : { orgs: {} };
+const orgName = (lang, o) => { const n = (ORGD.orgs[o.key] || {}).name || {}; return n[lang] || n.en || o.key.toUpperCase(); };
+const orgPath = (o) => `organizations/${o.slug}/`;
+const orgMembers = (o) => o.members.split(' ').map((i) => byIso[i]).filter(Boolean);
+const orgsOf = (c) => ORGS.filter((o) => o.members.split(' ').includes(c.iso2));
+const fillP = (s, v) => Object.entries(v).reduce((a, [k, x]) => a.split(`{${k}}`).join(String(x)), s);
+
+function orgPage(lang, o) {
+  const P = pg(lang);
+  const p = orgPath(o);
+  const d = ORGD.orgs[o.key] || {};
+  const name = orgName(lang, o);
+  const rows = sortBy(lang, orgMembers(o), (c) => cName(c, lang));
+  const title = fillP(P.orgTitle, { org: name });
+  const desc = fillP(P.orgDesc, { org: name, n: num(lang, rows.length) });
+  const answer = fillP(P.orgAnswer, { org: name, n: num(lang, rows.length), list: listJoin(lang, rows.map((c) => cName(c, lang))) });
+  const nm2 = (x) => (x ? x[lang] || x.en : '');
+  const head = d.head ? `${esc(nm2(d.head.name))}${d.head.office ? ` (${esc(nm2(d.head.office))})` : ''}` : '';
+  const kv = [
+    d.founded && [P.fFounded, esc(num(lang, d.founded).replace(/[,.\s ]/g, ''))],
+    [P.fHQ, d.hq ? esc(nm2(d.hq)) : esc(P.noHQ)],
+    head && [P.fHead, head],
+    [P.fMembers, esc(num(lang, rows.length))],
+    d.website && [P.fWebsite, `<a href="${esc(d.website)}" rel="noopener">${esc(d.website.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, ''))}</a>`],
+  ].filter(Boolean);
+  const qTitle = fillP(P.orgQuiz, { n: num(lang, rows.length) });
+  const data = { type: 'map', key: `org-${o.key}-${lang}`, title: qTitle, map: '/maps/world.svg', ar: MAP_AR.world, items: rows.map((c) => ({ id: c.iso2, n: cName(c, lang) })), s: quizStrings(lang) };
+  const table = `<div class="tbl"><table><thead><tr><th>${esc(t(lang, 'thFlag'))}</th><th>${esc(t(lang, 'thCountry'))}</th><th>${esc(t(lang, 'thCapital'))}</th></tr></thead><tbody>${rows.map((c) => `<tr><td><img src="${flagSrc(c.iso2)}" alt="" width="32" height="24" loading="lazy"></td><td><a href="${url(lang, `countries/${c.slug}/`)}">${esc(cName(c, lang))}</a></td><td>${esc(capsOf(c, lang).join(', '))}</td></tr>`).join('')}</tbody></table></div>`;
+  const others = ORGS.filter((x) => x !== o).map((x) => `<li><a href="${url(lang, orgPath(x))}">${esc(orgName(lang, x))}</a> <small class="note">${num(lang, orgMembers(x).length)}</small></li>`).join('');
+  const body = `<h1>${esc(title)}</h1><p class="answer">${esc(answer)}${o.note ? ' ' + esc(P[o.note]) : ''}</p>`
+    + `<div class="facts"><dl class="kv">${kv.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${v}</dd>`).join('')}</dl></div>`
+    + (head ? `<p class="note">${esc(fillP(P.headSource, { d: dateFmt(lang, ORGD.fetched || DATA_DATE) }))}</p>` : '')
+    + `<figure class="lmap"><img src="/img/orgs/${o.key}.svg" alt="${esc(title)}" width="1000" height="510"><figcaption class="note">${esc(t(lang, 'mapLegend'))}</figcaption></figure>`
+    + `<h2 id="quiz">${esc(qTitle)}</h2>${gameShell(lang, data)}`
+    + `<h2>${esc(P.fMembers)}</h2>${table}<h2>${esc(P.orgHubTitle)}</h2><ul class="links">${others}</ul>`;
+  const ld = { '@context': 'https://schema.org', '@type': 'Organization', name, url: abs(lang, p), sameAs: [`https://www.wikidata.org/wiki/${o.qid}`, ...(d.website ? [d.website] : [])],
+    ...(d.founded ? { foundingDate: String(d.founded) } : {}), ...(d.hq ? { location: { '@type': 'Place', name: nm2(d.hq) } } : {}),
+    member: rows.map((c) => ({ '@type': 'Country', name: cName(c, lang), url: abs(lang, `countries/${c.slug}/`) })) };
+  page(lang, p, { title, desc, body, script: true, crumbs: [{ name: P.orgHubTitle, p: 'organizations/' }, { name: title, p }], jsonld: [ld] });
+}
+function orgHub(lang) {
+  const P = pg(lang);
+  const p = 'organizations/';
+  const body = `<h1>${esc(P.orgHubTitle)}</h1><p class="lede">${esc(P.orgHubDesc)}</p><nav class="stamps" aria-label="${esc(P.orgHubTitle)}">${ORGS.map((o) => `<a class="stamp" href="${url(lang, orgPath(o))}"><span class="perf"><span class="art" style="--tile:#2B5F73"><span class="denom">${num(lang, orgMembers(o).length)}</span><img src="/img/orgs/${o.key}.svg" alt="" width="320" height="163" loading="lazy"></span><span class="cap">${esc(orgName(lang, o))}</span></span></a>`).join('')}</nav>`;
+  const ld = { '@context': 'https://schema.org', '@type': 'ItemList', name: P.orgHubTitle, itemListElement: ORGS.map((o, i) => ({ '@type': 'ListItem', position: i + 1, name: orgName(lang, o), url: abs(lang, orgPath(o)) })) };
+  page(lang, p, { title: P.orgHubTitle, desc: P.orgHubDesc, body, crumbs: [{ name: P.orgHubTitle, p }], jsonld: [ld] });
+}
+// The game card that leads to the organisations.
+const orgStamps = (lang) => `<a class="stamp" href="${url(lang, 'organizations/')}"><span class="perf"><span class="art" style="--tile:#5B4B8A"><span class="denom">${num(lang, ORGS.length)}</span><img src="/img/orgs/g20.svg" alt="" width="320" height="163" loading="lazy"></span><span class="cap">${esc(pg(lang).orgHubTitle)}</span></span></a>`;
 
 function listsHub(lang) {
   const p = 'lists/';
@@ -988,6 +1047,7 @@ function countryPage(lang, c) {
     [t(lang, 'fBorders'), borders.length ? borders.map((b) => `<a href="${url(lang, `countries/${b.slug}/`)}">${esc(cName(b, lang))}</a>`).join(', ') : esc(t(lang, 'none'))],
     [t(lang, 'fLandlocked'), esc(t(lang, c.landlocked ? 'yes' : 'no'))],
     callingCode(c.iso2) && [pg(lang).fCalling, esc(callingCode(c.iso2))],
+    orgsOf(c).length && [pg(lang).fMemberOf, orgsOf(c).map((o) => `<a href="${url(lang, orgPath(o))}">${esc(orgName(lang, o))}</a>`).join(', ')],
   ].filter(Boolean);
 
   const qa = [
@@ -1161,10 +1221,12 @@ function printPage(lang, pr) {
   const list = sortBy(lang, items, (x) => x.n);
   const [w, h] = (pr.ar || '1000/600').split('/').map(Number);
   const modes = ['blank', 'worksheet', 'labeled', 'answers'].map((m) => `<button type="button" data-mode="${m}" aria-pressed="${m === 'worksheet'}">${esc(t(lang, { blank: 'modeBlank', worksheet: 'modeWorksheet', labeled: 'modeLabeled', answers: 'modeAnswers' }[m]))}</button>`).join('');
-  const body = `<h1>${esc(title)}</h1><p class="lede">${esc(desc)}</p>`
-    + `<div class="pctl"><div class="seg" role="group" aria-label="${esc(title)}">${modes}</div><button class="btn" type="button" data-print>${esc(t(lang, 'printBtn'))}</button><a class="btn ghost" href="${url(lang, pr.quiz)}">${esc(t(lang, 'printQuizLink'))}</a></div>`
+  // "(PDF)" helps the search-result title; the heading printed on the worksheet leaves it out.
+  const heading = title.replace(/\s*[（(]PDF[)）]$/, '');
+  const body = `<h1>${esc(heading)}</h1><p class="lede">${esc(desc)}</p>`
+    + `<div class="pctl"><div class="seg" role="group" aria-label="${esc(heading)}">${modes}</div><button class="btn" type="button" data-print>${esc(t(lang, 'printBtn'))}</button><a class="btn ghost" href="${url(lang, pr.p)}${pr.p.split('/').filter(Boolean).pop()}-map-worksheet.pdf" download>${esc(pg(lang).pdfBtn)}</a><a class="btn ghost" href="${url(lang, pr.quiz)}">${esc(t(lang, 'printQuizLink'))}</a></div>`
     + `<p class="note ptip">${esc(t(lang, 'printTip'))}</p>`
-    + (w > h * 1.15 ? '<style>@page{size:landscape}@media print{.pmap svg{max-height:160mm}}</style>' : '')
+    + (w > h * 1.15 ? '<style>@page{size:landscape}@media print{.pprint .pmap svg{max-height:115mm}}</style>' : '')
     + `<div class="pmap" data-src="${pr.src}"><img src="${pr.src}" alt="${esc(title)}" width="${w}" height="${h}" decoding="async" fetchpriority="low"></div>`
     + `<ol class="pkey">${list.map((x) => `<li data-id="${esc(x.id)}"><span class="nm">${esc(x.n)}</span></li>`).join('')}</ol>`
     + printAbout(lang, pr, items.length);
@@ -1458,6 +1520,7 @@ function notFound() {
   // Country games: hemisphere data and stamp art.
   HEMI = await hemispheres();
   for (const l of LISTS.filter((x) => HEMI_LISTS[x.key])) write(`img/lists/${l.key}.svg`, await listMap(new Set(l.rows().map((c) => c.iso2)), { shade: HEMI_LISTS[l.key].shade }));
+  for (const o of ORGS) write(`img/orgs/${o.key}.svg`, await listMap(new Set(o.members.split(' '))));
   const printCaps = {};
   for (const c of countries) if (!hasProv.has(c.iso2)) printCaps[c.iso2] = c.capitals.filter((k) => capCoords[k.qid]).map((k) => ({ id: k.qid, at: capCoords[k.qid] }));
   SHAPES = await countryShapes({ prints: printCaps });
@@ -1503,6 +1566,8 @@ function notFound() {
     for (const g of COUNTRY_GAMES.filter((x) => CONT_GAMES.includes(x.key))) for (const s of CONT_KEYS.filter((x) => x !== 'world')) countryGame(lang, g, s);
     listsHub(lang);
     for (const l of LISTS) listPage(lang, l);
+    orgHub(lang);
+    for (const o of ORGS) orgPage(lang, o);
     for (const q of QUIZ_TYPES) { hubPage(lang, q); for (const s of QUIZ_SCOPES) continentQuiz(lang, q, s); }
     countriesIndex(lang);
     for (const c of countries) countryPage(lang, c);

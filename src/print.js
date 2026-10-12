@@ -10,9 +10,9 @@
   var NS = 'http://www.w3.org/2000/svg';
 
   // All four versions sit one below the other. A version button scrolls to its sheet and selects
-  // it; scrolling selects the sheet in view. Print prints the selected map plus, for a numbered
-  // map, the answer sheet and answer key (window.print opens the browser's print dialog, where
-  // "Save as PDF" makes a PDF).
+  // it; scrolling selects the sheet in view. Print prints, for a numbered map, two pages: the
+  // worksheet (map + blank lines) and the answer key (map + names); a blank or labelled map prints
+  // on its own (window.print opens the browser's print dialog, where "Save as PDF" makes a PDF).
   var MODES = ['blank', 'worksheet', 'labeled', 'answers'];
   var buttons = Array.prototype.slice.call(document.querySelectorAll('[data-mode]'));
   var sheets = {};
@@ -46,20 +46,25 @@
       sheets.answers.parentNode.parentNode.insertBefore(printDoc, sheets.answers.parentNode.nextSibling);
     }
     printDoc.innerHTML = '';
+    // One page per version, like a classroom worksheet: the map with its list underneath.
     function part(mode, what) {
       var s = document.createElement('section');
       s.className = 'pm-' + mode;
       s.appendChild(sheets[mode].querySelector('h2').cloneNode(true));
-      var el = sheets[mode].querySelector(what);
-      if (el) s.appendChild(el.cloneNode(true));
+      what.forEach(function (sel) {
+        var el = sheets[mode].querySelector(sel);
+        if (el) s.appendChild(el.cloneNode(true));
+      });
       printDoc.appendChild(s);
     }
-    part(current, '.pmap');
     if (current === 'worksheet' || current === 'answers') {
-      part('worksheet', '.pkey');
-      part('answers', '.pkey');
+      part('worksheet', ['.pmap', '.pkey']);
+      part('answers', ['.pmap', '.pkey']);
+    } else {
+      part(current, ['.pmap']);
     }
   }
+  window.buildPrint = buildPrint; // used by scripts/make-pdfs.js
   window.addEventListener('beforeprint', buildPrint);
   var printBtn = document.querySelector('[data-print]');
   if (printBtn) printBtn.addEventListener('click', function () { buildPrint(); window.print(); });

@@ -7,6 +7,46 @@ module.exports = {
   en: {
     navUs: 'About us', navPrivacy: 'Privacy',
 
+    pdfBtn: "Download PDF",
+
+    orgHubTitle: "International organisations: member countries",
+
+    orgHubDesc: "Which countries belong to the G20, G7, BRICS, ASEAN, SAARC, SCO, the EU, NATO and other groups: member lists, maps and quizzes.",
+
+    orgTitle: "{org}: member countries",
+
+    orgAnswer: "{org} has {n} member countries: {list}.",
+
+    fFounded: "Founded",
+
+    fHQ: "Headquarters",
+
+    fHead: "Head",
+
+    fMembers: "Member countries",
+
+    fWebsite: "Website",
+
+    noHQ: "No permanent headquarters",
+
+    headSource: "Head as listed on Wikidata on {d}.",
+
+    orgQuiz: "Find the {n} members on the map",
+
+    fMemberOf: "Member of",
+
+    orgNoteG20: "The European Union and the African Union are also members.",
+
+    orgNoteG7: "Russia was also a member from 1997 to 2014, when the group was called the G8.",
+
+    orgNoteAU: "The Sahrawi Arab Democratic Republic (Western Sahara) is also a member.",
+
+    orgNoteMercosur: "Venezuela is a member, but suspended.",
+
+    orgNoteUNSC: "These are the five permanent members; ten more are elected for two-year terms.",
+
+    orgDesc: "{org}: the {n} member countries on a map, with founding year, headquarters and head, plus a quiz.",
+
     moreIn: "More countries in {cont}",
 
     qLoc: "Where is {c}?",
@@ -63,6 +103,46 @@ module.exports = {
   },
   zh: {
     navUs: '关于我们', navPrivacy: '隐私',
+
+    pdfBtn: "下载 PDF",
+
+    orgHubTitle: "国际组织：成员国",
+
+    orgHubDesc: "哪些国家属于二十国集团、七国集团、金砖国家、东盟、南盟、上合组织、欧盟、北约等组织：成员名单、地图和测验。",
+
+    orgTitle: "{org}：成员国",
+
+    orgAnswer: "{org}有 {n} 个成员国：{list}。",
+
+    fFounded: "成立",
+
+    fHQ: "总部",
+
+    fHead: "负责人",
+
+    fMembers: "成员国",
+
+    fWebsite: "网站",
+
+    noHQ: "没有常设总部",
+
+    headSource: "负责人以 Wikidata 于{d}的记录为准。",
+
+    orgQuiz: "在地图上找出全部 {n} 个成员国",
+
+    fMemberOf: "所属组织",
+
+    orgNoteG20: "欧盟和非洲联盟也是成员。",
+
+    orgNoteG7: "俄罗斯在 1997 年至 2014 年间也是成员，当时称为八国集团。",
+
+    orgNoteAU: "阿拉伯撒哈拉民主共和国（西撒哈拉）也是成员。",
+
+    orgNoteMercosur: "委内瑞拉是成员，但已被暂停资格。",
+
+    orgNoteUNSC: "这是五个常任理事国；另有十个成员经选举产生，任期两年。",
+
+    orgDesc: "{org}：地图上的 {n} 个成员国，以及成立年份、总部和负责人，并附测验。",
 
     moreIn: "{cont}的其他国家",
 
@@ -121,6 +201,46 @@ module.exports = {
   hi: {
     navUs: 'हमारे बारे में', navPrivacy: 'गोपनीयता',
 
+    pdfBtn: "PDF डाउनलोड करें",
+
+    orgHubTitle: "अंतरराष्ट्रीय संगठन: सदस्य देश",
+
+    orgHubDesc: "G20, G7, ब्रिक्स, आसियान, सार्क, एससीओ, यूरोपीय संघ, नाटो और दूसरे समूहों में कौन-से देश हैं: सदस्यों की सूची, नक्शे और क्विज़।",
+
+    orgTitle: "{org}: सदस्य देश",
+
+    orgAnswer: "{org} के {n} सदस्य देश हैं: {list}।",
+
+    fFounded: "स्थापना",
+
+    fHQ: "मुख्यालय",
+
+    fHead: "प्रमुख",
+
+    fMembers: "सदस्य देश",
+
+    fWebsite: "वेबसाइट",
+
+    noHQ: "कोई स्थायी मुख्यालय नहीं",
+
+    headSource: "प्रमुख का नाम Wikidata के {d} के रिकॉर्ड के अनुसार।",
+
+    orgQuiz: "नक्शे पर सभी {n} सदस्य ढूँढें",
+
+    fMemberOf: "सदस्यता",
+
+    orgNoteG20: "यूरोपीय संघ और अफ़्रीकी संघ भी सदस्य हैं।",
+
+    orgNoteG7: "रूस भी 1997 से 2014 तक सदस्य था, तब इस समूह को G8 कहा जाता था।",
+
+    orgNoteAU: "सहरावी अरब लोकतांत्रिक गणराज्य (पश्चिमी सहारा) भी सदस्य है।",
+
+    orgNoteMercosur: "वेनेज़ुएला सदस्य है, लेकिन निलंबित है।",
+
+    orgNoteUNSC: "ये पाँच स्थायी सदस्य हैं; दस और सदस्य दो साल के लिए चुने जाते हैं।",
+
+    orgDesc: "{org}: नक्शे पर {n} सदस्य देश, स्थापना वर्ष, मुख्यालय और प्रमुख के साथ, और एक क्विज़।",
+
     moreIn: "{cont} के और देश",
 
     qLoc: "{c} कहाँ स्थित है?",
@@ -177,6 +297,46 @@ module.exports = {
   },
   es: {
     navUs: 'Quiénes somos', navPrivacy: 'Privacidad',
+
+    pdfBtn: "Descargar PDF",
+
+    orgHubTitle: "Organizaciones internacionales: países miembros",
+
+    orgHubDesc: "Qué países forman parte del G20, el G7, los BRICS, la ASEAN, la SAARC, la OCS, la UE, la OTAN y otros grupos: listas de miembros, mapas y juegos.",
+
+    orgTitle: "{org}: países miembros",
+
+    orgAnswer: "{org} tiene {n} países miembros: {list}.",
+
+    fFounded: "Fundación",
+
+    fHQ: "Sede",
+
+    fHead: "Dirigente",
+
+    fMembers: "Países miembros",
+
+    fWebsite: "Sitio web",
+
+    noHQ: "Sin sede permanente",
+
+    headSource: "Dirigente según Wikidata el {d}.",
+
+    orgQuiz: "Encuentra en el mapa los {n} miembros",
+
+    fMemberOf: "Miembro de",
+
+    orgNoteG20: "La Unión Europea y la Unión Africana también son miembros.",
+
+    orgNoteG7: "Rusia también fue miembro de 1997 a 2014, cuando el grupo se llamaba G8.",
+
+    orgNoteAU: "La República Árabe Saharaui Democrática (Sáhara Occidental) también es miembro.",
+
+    orgNoteMercosur: "Venezuela es miembro, pero está suspendida.",
+
+    orgNoteUNSC: "Son los cinco miembros permanentes; otros diez se eligen por dos años.",
+
+    orgDesc: "{org}: los {n} países miembros en un mapa, con año de fundación, sede y dirigente, y un juego.",
 
     moreIn: "Más países: {cont}",
 
@@ -235,6 +395,46 @@ module.exports = {
   ar: {
     navUs: 'من نحن', navPrivacy: 'الخصوصية',
 
+    pdfBtn: "تنزيل PDF",
+
+    orgHubTitle: "المنظمات الدولية: الدول الأعضاء",
+
+    orgHubDesc: "ما الدول الأعضاء في مجموعة العشرين ومجموعة السبع وبريكس وآسيان وسارك ومنظمة شنغهاي والاتحاد الأوروبي والناتو وغيرها: قوائم الأعضاء وخرائط واختبارات.",
+
+    orgTitle: "{org}: الدول الأعضاء",
+
+    orgAnswer: "تضم {org} دولًا أعضاء عددها {n}: {list}.",
+
+    fFounded: "التأسيس",
+
+    fHQ: "المقر",
+
+    fHead: "الرئيس",
+
+    fMembers: "الدول الأعضاء",
+
+    fWebsite: "الموقع الإلكتروني",
+
+    noHQ: "لا يوجد مقر دائم",
+
+    headSource: "اسم الرئيس كما في Wikidata بتاريخ {d}.",
+
+    orgQuiz: "حدّد الأعضاء ({n}) على الخريطة",
+
+    fMemberOf: "عضو في",
+
+    orgNoteG20: "الاتحاد الأوروبي والاتحاد الأفريقي عضوان أيضًا.",
+
+    orgNoteG7: "كانت روسيا أيضًا عضوًا من 1997 إلى 2014، حين كانت المجموعة تُسمى مجموعة الثماني.",
+
+    orgNoteAU: "الجمهورية العربية الصحراوية الديمقراطية (الصحراء الغربية) عضو أيضًا.",
+
+    orgNoteMercosur: "فنزويلا عضو، لكن عضويتها معلّقة.",
+
+    orgNoteUNSC: "هؤلاء هم الأعضاء الخمسة الدائمون؛ ويُنتخب عشرة أعضاء آخرون لمدة سنتين.",
+
+    orgDesc: "{org}: الدول الأعضاء ({n}) على الخريطة، مع سنة التأسيس والمقر والرئيس، واختبار.",
+
     moreIn: "دول أخرى في {cont}",
 
     qLoc: "أين تقع {c}؟",
@@ -291,6 +491,46 @@ module.exports = {
   },
   fr: {
     navUs: 'Qui sommes-nous', navPrivacy: 'Confidentialité',
+
+    pdfBtn: "Télécharger le PDF",
+
+    orgHubTitle: "Organisations internationales : pays membres",
+
+    orgHubDesc: "Quels pays font partie du G20, du G7, des BRICS, de l'ASEAN, de l'ASACR, de l'OCS, de l'UE, de l'OTAN et d'autres groupes : listes des membres, cartes et quiz.",
+
+    orgTitle: "{org} : pays membres",
+
+    orgAnswer: "{org} compte {n} pays membres : {list}.",
+
+    fFounded: "Création",
+
+    fHQ: "Siège",
+
+    fHead: "Dirigeant",
+
+    fMembers: "Pays membres",
+
+    fWebsite: "Site web",
+
+    noHQ: "Pas de siège permanent",
+
+    headSource: "Dirigeant selon Wikidata au {d}.",
+
+    orgQuiz: "Trouvez les {n} membres sur la carte",
+
+    fMemberOf: "Membre de",
+
+    orgNoteG20: "L'Union européenne et l'Union africaine sont aussi membres.",
+
+    orgNoteG7: "La Russie a aussi été membre de 1997 à 2014, quand le groupe s'appelait le G8.",
+
+    orgNoteAU: "La République arabe sahraouie démocratique (Sahara occidental) est aussi membre.",
+
+    orgNoteMercosur: "Le Venezuela est membre, mais suspendu.",
+
+    orgNoteUNSC: "Ce sont les cinq membres permanents ; dix autres sont élus pour deux ans.",
+
+    orgDesc: "{org} : les {n} pays membres sur une carte, avec année de création, siège et dirigeant, et un quiz.",
 
     moreIn: "Autres pays : {cont}",
 
@@ -349,6 +589,46 @@ module.exports = {
   de: {
     navUs: 'Über uns', navPrivacy: 'Datenschutz',
 
+    pdfBtn: "PDF herunterladen",
+
+    orgHubTitle: "Internationale Organisationen: Mitgliedsländer",
+
+    orgHubDesc: "Welche Länder gehören zu G20, G7, BRICS, ASEAN, SAARC, SOZ, EU, NATO und anderen Gruppen: Mitgliederlisten, Karten und Quiz.",
+
+    orgTitle: "{org}: Mitgliedsländer",
+
+    orgAnswer: "{org} hat {n} Mitgliedsländer: {list}.",
+
+    fFounded: "Gründung",
+
+    fHQ: "Sitz",
+
+    fHead: "Leitung",
+
+    fMembers: "Mitgliedsländer",
+
+    fWebsite: "Website",
+
+    noHQ: "Kein ständiger Sitz",
+
+    headSource: "Leitung laut Wikidata am {d}.",
+
+    orgQuiz: "Finde die {n} Mitglieder auf der Karte",
+
+    fMemberOf: "Mitglied in",
+
+    orgNoteG20: "Auch die Europäische Union und die Afrikanische Union sind Mitglieder.",
+
+    orgNoteG7: "Russland war von 1997 bis 2014 ebenfalls Mitglied, als die Gruppe G8 hieß.",
+
+    orgNoteAU: "Auch die Demokratische Arabische Republik Sahara (Westsahara) ist Mitglied.",
+
+    orgNoteMercosur: "Venezuela ist Mitglied, aber suspendiert.",
+
+    orgNoteUNSC: "Das sind die fünf ständigen Mitglieder; zehn weitere werden für zwei Jahre gewählt.",
+
+    orgDesc: "{org}: die {n} Mitgliedsländer auf einer Karte, mit Gründungsjahr, Sitz und Leitung, dazu ein Quiz.",
+
     moreIn: "Weitere Länder in {cont}",
 
     qLoc: "Wo liegt {c}?",
@@ -405,6 +685,46 @@ module.exports = {
   },
   bn: {
     navUs: 'আমাদের সম্পর্কে', navPrivacy: 'গোপনীয়তা',
+
+    pdfBtn: "PDF ডাউনলোড করুন",
+
+    orgHubTitle: "আন্তর্জাতিক সংস্থা: সদস্য দেশ",
+
+    orgHubDesc: "জি২০, জি৭, ব্রিকস, আসিয়ান, সার্ক, এসসিও, ইউরোপীয় ইউনিয়ন, ন্যাটো ও অন্যান্য জোটে কোন কোন দেশ আছে: সদস্যদের তালিকা, মানচিত্র ও কুইজ।",
+
+    orgTitle: "{org}: সদস্য দেশ",
+
+    orgAnswer: "{org}-এর সদস্য দেশ {n}টি: {list}।",
+
+    fFounded: "প্রতিষ্ঠা",
+
+    fHQ: "সদর দপ্তর",
+
+    fHead: "প্রধান",
+
+    fMembers: "সদস্য দেশ",
+
+    fWebsite: "ওয়েবসাইট",
+
+    noHQ: "কোনো স্থায়ী সদর দপ্তর নেই",
+
+    headSource: "প্রধানের নাম Wikidata-র {d} তারিখের তথ্য অনুযায়ী।",
+
+    orgQuiz: "মানচিত্রে {n}টি সদস্য খুঁজুন",
+
+    fMemberOf: "সদস্যপদ",
+
+    orgNoteG20: "ইউরোপীয় ইউনিয়ন ও আফ্রিকান ইউনিয়নও সদস্য।",
+
+    orgNoteG7: "রাশিয়াও ১৯৯৭ থেকে ২০১৪ পর্যন্ত সদস্য ছিল, তখন জোটটির নাম ছিল জি৮।",
+
+    orgNoteAU: "সাহরাউই আরব গণতান্ত্রিক প্রজাতন্ত্র (পশ্চিম সাহারা)ও সদস্য।",
+
+    orgNoteMercosur: "ভেনেজুয়েলা সদস্য, তবে স্থগিত।",
+
+    orgNoteUNSC: "এরা পাঁচ স্থায়ী সদস্য; আরও দশটি সদস্য দুই বছরের জন্য নির্বাচিত হয়।",
+
+    orgDesc: "{org}: মানচিত্রে {n}টি সদস্য দেশ, প্রতিষ্ঠার বছর, সদর দপ্তর ও প্রধানসহ, আর একটি কুইজ।",
 
     moreIn: "{cont}-এর আরও দেশ",
 
@@ -463,6 +783,46 @@ module.exports = {
   pt: {
     navUs: 'Quem somos', navPrivacy: 'Privacidade',
 
+    pdfBtn: "Baixar PDF",
+
+    orgHubTitle: "Organizações internacionais: países-membros",
+
+    orgHubDesc: "Quais países fazem parte do G20, G7, BRICS, ASEAN, SAARC, OCX, UE, OTAN e outros grupos: listas de membros, mapas e quizzes.",
+
+    orgTitle: "{org}: países-membros",
+
+    orgAnswer: "{org} tem {n} países-membros: {list}.",
+
+    fFounded: "Fundação",
+
+    fHQ: "Sede",
+
+    fHead: "Dirigente",
+
+    fMembers: "Países-membros",
+
+    fWebsite: "Site",
+
+    noHQ: "Sem sede permanente",
+
+    headSource: "Dirigente segundo o Wikidata em {d}.",
+
+    orgQuiz: "Encontre os {n} membros no mapa",
+
+    fMemberOf: "Membro de",
+
+    orgNoteG20: "A União Europeia e a União Africana também são membros.",
+
+    orgNoteG7: "A Rússia também foi membro de 1997 a 2014, quando o grupo se chamava G8.",
+
+    orgNoteAU: "A República Árabe Saaraui Democrática (Saara Ocidental) também é membro.",
+
+    orgNoteMercosur: "A Venezuela é membro, mas está suspensa.",
+
+    orgNoteUNSC: "Estes são os cinco membros permanentes; outros dez são eleitos por dois anos.",
+
+    orgDesc: "{org}: os {n} países-membros num mapa, com ano de fundação, sede e dirigente, e um quiz.",
+
     moreIn: "Mais países: {cont}",
 
     qLoc: "Onde fica {c}?",
@@ -519,6 +879,46 @@ module.exports = {
   },
   ru: {
     navUs: 'О нас', navPrivacy: 'Конфиденциальность',
+
+    pdfBtn: "Скачать PDF",
+
+    orgHubTitle: "Международные организации: страны-участницы",
+
+    orgHubDesc: "Какие страны входят в G20, G7, БРИКС, АСЕАН, СААРК, ШОС, ЕС, НАТО и другие объединения: списки, карты и викторины.",
+
+    orgTitle: "{org}: страны-участницы",
+
+    orgAnswer: "В {org} входит стран: {n}. Это {list}.",
+
+    fFounded: "Основание",
+
+    fHQ: "Штаб-квартира",
+
+    fHead: "Руководитель",
+
+    fMembers: "Страны-участницы",
+
+    fWebsite: "Сайт",
+
+    noHQ: "Нет постоянной штаб-квартиры",
+
+    headSource: "Руководитель по данным Wikidata на {d}.",
+
+    orgQuiz: "Найдите на карте всех участников ({n})",
+
+    fMemberOf: "Членство",
+
+    orgNoteG20: "Европейский союз и Африканский союз тоже входят в группу.",
+
+    orgNoteG7: "Россия тоже входила в группу с 1997 по 2014 год, когда она называлась G8.",
+
+    orgNoteAU: "Сахарская Арабская Демократическая Республика (Западная Сахара) тоже является членом.",
+
+    orgNoteMercosur: "Венесуэла является членом, но её членство приостановлено.",
+
+    orgNoteUNSC: "Это пять постоянных членов; ещё десять избираются на два года.",
+
+    orgDesc: "{org}: страны-участницы ({n}) на карте, год основания, штаб-квартира и руководитель, а также викторина.",
 
     moreIn: "Другие страны ({cont})",
 
@@ -577,6 +977,46 @@ module.exports = {
   ur: {
     navUs: 'ہمارے بارے میں', navPrivacy: 'رازداری',
 
+    pdfBtn: "PDF ڈاؤن لوڈ کریں",
+
+    orgHubTitle: "بین الاقوامی تنظیمیں: رکن ممالک",
+
+    orgHubDesc: "جی20، جی7، برکس، آسیان، سارک، ایس سی او، یورپی یونین، نیٹو اور دوسرے گروپوں میں کون سے ممالک ہیں: رکن ممالک کی فہرستیں، نقشے اور کوئز۔",
+
+    orgTitle: "{org}: رکن ممالک",
+
+    orgAnswer: "{org} کے {n} رکن ممالک ہیں: {list}۔",
+
+    fFounded: "قیام",
+
+    fHQ: "صدر دفتر",
+
+    fHead: "سربراہ",
+
+    fMembers: "رکن ممالک",
+
+    fWebsite: "ویب سائٹ",
+
+    noHQ: "کوئی مستقل صدر دفتر نہیں",
+
+    headSource: "سربراہ کا نام Wikidata کے {d} کے ریکارڈ کے مطابق۔",
+
+    orgQuiz: "نقشے پر تمام {n} ارکان تلاش کریں",
+
+    fMemberOf: "رکنیت",
+
+    orgNoteG20: "یورپی یونین اور افریقی یونین بھی رکن ہیں۔",
+
+    orgNoteG7: "روس بھی 1997 سے 2014 تک رکن تھا، جب اس گروپ کو جی8 کہا جاتا تھا۔",
+
+    orgNoteAU: "صحراوی عرب جمہوری ریاست (مغربی صحارا) بھی رکن ہے۔",
+
+    orgNoteMercosur: "وینزویلا رکن ہے، مگر معطل ہے۔",
+
+    orgNoteUNSC: "یہ پانچ مستقل ارکان ہیں؛ مزید دس ارکان دو سال کے لیے منتخب ہوتے ہیں۔",
+
+    orgDesc: "{org}: نقشے پر {n} رکن ممالک، سالِ قیام، صدر دفتر اور سربراہ کے ساتھ، اور ایک کوئز۔",
+
     moreIn: "{cont} کے مزید ممالک",
 
     qLoc: "{c} کہاں واقع ہے؟",
@@ -633,6 +1073,46 @@ module.exports = {
   },
   id: {
     navUs: 'Tentang kami', navPrivacy: 'Privasi',
+
+    pdfBtn: "Unduh PDF",
+
+    orgHubTitle: "Organisasi internasional: negara anggota",
+
+    orgHubDesc: "Negara mana saja yang tergabung dalam G20, G7, BRICS, ASEAN, SAARC, SCO, Uni Eropa, NATO, dan kelompok lain: daftar anggota, peta, dan kuis.",
+
+    orgTitle: "{org}: negara anggota",
+
+    orgAnswer: "{org} punya {n} negara anggota: {list}.",
+
+    fFounded: "Didirikan",
+
+    fHQ: "Markas",
+
+    fHead: "Pemimpin",
+
+    fMembers: "Negara anggota",
+
+    fWebsite: "Situs web",
+
+    noHQ: "Tidak punya markas tetap",
+
+    headSource: "Pemimpin menurut Wikidata pada {d}.",
+
+    orgQuiz: "Temukan {n} anggota di peta",
+
+    fMemberOf: "Anggota dari",
+
+    orgNoteG20: "Uni Eropa dan Uni Afrika juga menjadi anggota.",
+
+    orgNoteG7: "Rusia juga menjadi anggota pada 1997 sampai 2014, ketika kelompok ini disebut G8.",
+
+    orgNoteAU: "Republik Demokratik Arab Sahrawi (Sahara Barat) juga menjadi anggota.",
+
+    orgNoteMercosur: "Venezuela adalah anggota, tetapi keanggotaannya ditangguhkan.",
+
+    orgNoteUNSC: "Ini adalah lima anggota tetap; sepuluh anggota lain dipilih untuk dua tahun.",
+
+    orgDesc: "{org}: {n} negara anggota di peta, dengan tahun berdiri, markas, dan pemimpin, serta kuis.",
 
     moreIn: "Negara lain di {cont}",
 
@@ -691,6 +1171,46 @@ module.exports = {
   it: {
     navUs: 'Chi siamo', navPrivacy: 'Privacy',
 
+    pdfBtn: "Scarica il PDF",
+
+    orgHubTitle: "Organizzazioni internazionali: paesi membri",
+
+    orgHubDesc: "Quali paesi fanno parte di G20, G7, BRICS, ASEAN, SAARC, SCO, UE, NATO e altri gruppi: elenchi dei membri, cartine e quiz.",
+
+    orgTitle: "{org}: paesi membri",
+
+    orgAnswer: "{org} conta {n} paesi membri: {list}.",
+
+    fFounded: "Fondazione",
+
+    fHQ: "Sede",
+
+    fHead: "Guida",
+
+    fMembers: "Paesi membri",
+
+    fWebsite: "Sito web",
+
+    noHQ: "Nessuna sede permanente",
+
+    headSource: "Guida secondo Wikidata al {d}.",
+
+    orgQuiz: "Trova i {n} membri sulla cartina",
+
+    fMemberOf: "Membro di",
+
+    orgNoteG20: "Anche l'Unione europea e l'Unione africana sono membri.",
+
+    orgNoteG7: "Anche la Russia è stata membro dal 1997 al 2014, quando il gruppo si chiamava G8.",
+
+    orgNoteAU: "Anche la Repubblica Araba Sahrawi Democratica (Sahara Occidentale) è membro.",
+
+    orgNoteMercosur: "Il Venezuela è membro, ma sospeso.",
+
+    orgNoteUNSC: "Sono i cinque membri permanenti; altri dieci vengono eletti per due anni.",
+
+    orgDesc: "{org}: i {n} paesi membri su una cartina, con anno di fondazione, sede e guida, e un quiz.",
+
     moreIn: "Altri paesi: {cont}",
 
     qLoc: "Dove si trova {c}?",
@@ -747,6 +1267,46 @@ module.exports = {
   },
   ja: {
     navUs: '運営者について', navPrivacy: 'プライバシー',
+
+    pdfBtn: "PDFをダウンロード",
+
+    orgHubTitle: "国際機関：加盟国",
+
+    orgHubDesc: "G20、G7、BRICS、ASEAN、南アジア地域協力連合、上海協力機構、EU、NATO などに加盟する国：加盟国の一覧、地図、クイズ。",
+
+    orgTitle: "{org}：加盟国",
+
+    orgAnswer: "{org}の加盟国は{n}か国です：{list}。",
+
+    fFounded: "設立",
+
+    fHQ: "本部",
+
+    fHead: "代表",
+
+    fMembers: "加盟国",
+
+    fWebsite: "ウェブサイト",
+
+    noHQ: "常設の本部はありません",
+
+    headSource: "代表は{d}時点の Wikidata によります。",
+
+    orgQuiz: "{n}の加盟国を地図で探そう",
+
+    fMemberOf: "加盟機関",
+
+    orgNoteG20: "欧州連合とアフリカ連合も加盟しています。",
+
+    orgNoteG7: "ロシアも1997年から2014年まで加盟しており、当時はG8と呼ばれていました。",
+
+    orgNoteAU: "サハラ・アラブ民主共和国（西サハラ）も加盟しています。",
+
+    orgNoteMercosur: "ベネズエラは加盟国ですが、資格停止中です。",
+
+    orgNoteUNSC: "これは5つの常任理事国です。ほかに10か国が任期2年で選ばれます。",
+
+    orgDesc: "{org}：{n}の加盟国を地図で表示し、設立年、本部、代表も紹介。クイズ付き。",
 
     moreIn: "{cont}のほかの国",
 
@@ -805,6 +1365,46 @@ module.exports = {
   ko: {
     navUs: '소개', navPrivacy: '개인정보',
 
+    pdfBtn: "PDF 다운로드",
+
+    orgHubTitle: "국제기구: 회원국",
+
+    orgHubDesc: "G20, G7, 브릭스, 아세안, 남아시아지역협력연합, 상하이협력기구, 유럽연합, 나토 등에 속한 나라: 회원국 목록, 지도, 퀴즈.",
+
+    orgTitle: "{org}: 회원국",
+
+    orgAnswer: "{org}의 회원국은 {n}개국입니다: {list}.",
+
+    fFounded: "창설",
+
+    fHQ: "본부",
+
+    fHead: "수장",
+
+    fMembers: "회원국",
+
+    fWebsite: "웹사이트",
+
+    noHQ: "상설 본부 없음",
+
+    headSource: "수장은 {d} 기준 Wikidata 자료입니다.",
+
+    orgQuiz: "지도에서 {n}개 회원국 찾기",
+
+    fMemberOf: "가입 기구",
+
+    orgNoteG20: "유럽연합과 아프리카연합도 회원입니다.",
+
+    orgNoteG7: "러시아도 1997년부터 2014년까지 회원이었으며, 당시에는 G8이라 불렸습니다.",
+
+    orgNoteAU: "사라위 아랍 민주 공화국(서사하라)도 회원입니다.",
+
+    orgNoteMercosur: "베네수엘라는 회원국이지만 자격이 정지되었습니다.",
+
+    orgNoteUNSC: "5개 상임이사국입니다. 나머지 10개국은 2년 임기로 선출됩니다.",
+
+    orgDesc: "{org}: 지도로 보는 {n}개 회원국, 창설 연도, 본부, 수장, 그리고 퀴즈.",
+
     moreIn: "{cont}의 다른 나라",
 
     qLoc: "{c}는 어디에 있나요?",
@@ -862,6 +1462,46 @@ module.exports = {
   pl: {
     navUs: 'O nas', navPrivacy: 'Prywatność',
 
+    pdfBtn: "Pobierz PDF",
+
+    orgHubTitle: "Organizacje międzynarodowe: państwa członkowskie",
+
+    orgHubDesc: "Które państwa należą do G20, G7, BRICS, ASEAN, SAARC, SOW, UE, NATO i innych grup: listy członków, mapy i quizy.",
+
+    orgTitle: "{org}: państwa członkowskie",
+
+    orgAnswer: "Liczba państw członkowskich ({org}): {n}. Są to: {list}.",
+
+    fFounded: "Założenie",
+
+    fHQ: "Siedziba",
+
+    fHead: "Przewodniczący",
+
+    fMembers: "Państwa członkowskie",
+
+    fWebsite: "Strona internetowa",
+
+    noHQ: "Brak stałej siedziby",
+
+    headSource: "Przewodniczący według Wikidata z dnia {d}.",
+
+    orgQuiz: "Znajdź na mapie wszystkich członków ({n})",
+
+    fMemberOf: "Członkostwo",
+
+    orgNoteG20: "Członkami są też Unia Europejska i Unia Afrykańska.",
+
+    orgNoteG7: "Rosja również była członkiem od 1997 do 2014 roku, gdy grupa nazywała się G8.",
+
+    orgNoteAU: "Członkiem jest też Saharyjska Arabska Republika Demokratyczna (Sahara Zachodnia).",
+
+    orgNoteMercosur: "Wenezuela jest członkiem, ale jej członkostwo zawieszono.",
+
+    orgNoteUNSC: "To pięciu stałych członków; dziesięciu kolejnych wybiera się na dwa lata.",
+
+    orgDesc: "{org}: państwa członkowskie ({n}) na mapie, z rokiem założenia, siedzibą i przewodniczącym, oraz quiz.",
+
     moreIn: "Inne kraje ({cont})",
 
     qLoc: "Gdzie leży {c}?",
@@ -918,6 +1558,46 @@ module.exports = {
   },
   nl: {
     navUs: 'Over ons', navPrivacy: 'Privacy',
+
+    pdfBtn: "PDF downloaden",
+
+    orgHubTitle: "Internationale organisaties: lidstaten",
+
+    orgHubDesc: "Welke landen horen bij de G20, G7, BRICS, ASEAN, SAARC, SCO, EU, NAVO en andere groepen: ledenlijsten, kaarten en quizzen.",
+
+    orgTitle: "{org}: lidstaten",
+
+    orgAnswer: "{org} heeft {n} lidstaten: {list}.",
+
+    fFounded: "Opgericht",
+
+    fHQ: "Hoofdkantoor",
+
+    fHead: "Leiding",
+
+    fMembers: "Lidstaten",
+
+    fWebsite: "Website",
+
+    noHQ: "Geen vast hoofdkantoor",
+
+    headSource: "Leiding volgens Wikidata op {d}.",
+
+    orgQuiz: "Vind de {n} leden op de kaart",
+
+    fMemberOf: "Lid van",
+
+    orgNoteG20: "Ook de Europese Unie en de Afrikaanse Unie zijn lid.",
+
+    orgNoteG7: "Rusland was van 1997 tot 2014 ook lid, toen de groep G8 heette.",
+
+    orgNoteAU: "Ook de Arabische Democratische Republiek Sahara (Westelijke Sahara) is lid.",
+
+    orgNoteMercosur: "Venezuela is lid, maar geschorst.",
+
+    orgNoteUNSC: "Dit zijn de vijf permanente leden; tien andere worden voor twee jaar gekozen.",
+
+    orgDesc: "{org}: de {n} lidstaten op een kaart, met oprichtingsjaar, hoofdkantoor en leiding, plus een quiz.",
 
     moreIn: "Meer landen in {cont}",
 

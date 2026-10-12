@@ -272,6 +272,9 @@ footer .wrap{display:flex;gap:.5rem 1.5rem;flex-wrap:wrap}
   .psheet{display:none!important}
   .pprint{display:block!important}
   .pprint section+section{break-before:page}
+  /* Map and its list on one sheet, like a classroom worksheet. */
+  .pprint .pmap svg{max-height:165mm;width:auto;max-width:100%;margin:0 auto}
+  .pprint .pkey{columns:5 9rem;column-gap:1rem;margin-top:4pt}
   .pprint h2{font-size:12pt;margin:0 0 6pt;color:#000}
   .pkey{font-size:10pt;margin:0;color:#000}
   .pkey li{border-color:#999;padding:3pt 0}

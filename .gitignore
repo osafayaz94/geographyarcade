@@ -8,3 +8,4 @@ geographyarcade-site.zip
 # Local tools
 .claude/
 geographyarcade-site.7z
+.cache/
