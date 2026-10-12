@@ -8,7 +8,7 @@ module.exports = {
     navUs: 'About us', navPrivacy: 'Privacy',
     aPopWB: "The World Bank puts the population of {c} at {pop} ({year}).",
     aboutData: "Country names, capitals, province names, province capitals and province populations come from Wikidata (CC0), fetched on {d}. Country populations come from the World Bank (CC BY 4.0), the latest year it publishes, the same year for every country; Vatican City's comes from Wikidata. ISO codes, areas, borders, languages and currencies come from the world-countries dataset (ODbL). Where these sources differ from official ones (a missing second capital, a regional language listed as official), the site corrects them.",
-    kashmirQuiz: "That applies to the world and continent maps. In the state and province quizzes, Jammu and Kashmir appears in both India's and Pakistan's.",
+    kashmirQuiz: "That applies to the world and continent maps. A map of a single country (its states or provinces) follows that country's own official map, so the quizzes of both India and Pakistan include Jammu and Kashmir.",
     usTitle: 'About Geography Arcade',
     usDesc: 'Who makes Geography Arcade, why it is free, and how we keep the quizzes, maps and facts accurate.',
     us: [
@@ -41,7 +41,7 @@ module.exports = {
     navUs: '关于我们', navPrivacy: '隐私',
     aPopWB: "据世界银行统计，{c}的人口为 {pop}（{year}年）。",
     aboutData: "国家名称、首都、省份名称、省会和省份人口来自 Wikidata（CC0），获取于{d}。国家人口来自世界银行（CC BY 4.0），采用其公布的最新年份，所有国家为同一年；梵蒂冈的人口来自 Wikidata。ISO 代码、面积、边界、语言和货币来自 world-countries 数据集（ODbL）。这些来源与官方资料不一致时（例如漏掉第二个首都，或把地区语言列为官方语言），本站会加以更正。",
-    kashmirQuiz: "这适用于世界地图和各大洲地图。在省份和州的测验中，查谟和克什米尔同时出现在印度和巴基斯坦的测验里。",
+    kashmirQuiz: "这适用于世界地图和各大洲地图。单个国家的地图（其省份或州）以该国官方地图为准，因此印度和巴基斯坦的测验都包含查谟和克什米尔。",
     usTitle: '关于 Geography Arcade',
     usDesc: '谁在制作 Geography Arcade、为什么免费，以及我们如何保证测验、地图和资料准确。',
     us: [
@@ -74,7 +74,7 @@ module.exports = {
     navUs: 'हमारे बारे में', navPrivacy: 'गोपनीयता',
     aPopWB: "विश्व बैंक के अनुसार {c} की जनसंख्या {pop} ({year}) है।",
     aboutData: "देशों के नाम, राजधानियाँ, प्रांतों के नाम, प्रांतों की राजधानियाँ और प्रांतों की जनसंख्या Wikidata (CC0) से ली गई है, {d} को। देशों की जनसंख्या विश्व बैंक (CC BY 4.0) से है, उसका प्रकाशित सबसे नया वर्ष, सभी देशों के लिए एक ही वर्ष; वेटिकन सिटी की जनसंख्या Wikidata से है। ISO कोड, क्षेत्रफल, सीमाएँ, भाषाएँ और मुद्राएँ world-countries डेटासेट (ODbL) से हैं। जहाँ ये स्रोत आधिकारिक जानकारी से अलग हैं (जैसे दूसरी राजधानी छूट जाना, या किसी क्षेत्रीय भाषा को आधिकारिक बताना), वहाँ साइट उन्हें ठीक करती है।",
-    kashmirQuiz: "यह विश्व और महाद्वीपों के नक्शों पर लागू होता है। राज्यों और प्रांतों की क्विज़ में जम्मू और कश्मीर भारत और पाकिस्तान दोनों की क्विज़ में आता है।",
+    kashmirQuiz: "यह विश्व और महाद्वीपों के नक्शों पर लागू होता है। किसी एक देश का नक्शा (उसके राज्य या प्रांत) उसी देश के आधिकारिक नक्शे के अनुसार है, इसलिए भारत और पाकिस्तान दोनों की क्विज़ में जम्मू और कश्मीर शामिल है।",
     usTitle: 'Geography Arcade के बारे में',
     usDesc: 'Geography Arcade कौन बनाता है, यह मुफ़्त क्यों है, और हम क्विज़, नक्शों और तथ्यों को सही कैसे रखते हैं।',
     us: [
@@ -107,7 +107,7 @@ module.exports = {
     navUs: 'Quiénes somos', navPrivacy: 'Privacidad',
     aPopWB: "Según el Banco Mundial, {c} tiene {pop} habitantes ({year}).",
     aboutData: "Los nombres de países, capitales, provincias y capitales de provincia, y la población de las provincias, vienen de Wikidata (CC0), obtenidos el {d}. La población de los países viene del Banco Mundial (CC BY 4.0), el último año que publica, el mismo para todos los países; la de la Ciudad del Vaticano viene de Wikidata. Los códigos ISO, superficies, fronteras, idiomas y monedas vienen del conjunto world-countries (ODbL). Cuando estas fuentes difieren de las oficiales (una segunda capital que falta, un idioma regional dado como oficial), el sitio las corrige.",
-    kashmirQuiz: "Eso se aplica a los mapas del mundo y de los continentes. En los juegos de estados y provincias, Jammu y Cachemira aparece tanto en el de la India como en el de Pakistán.",
+    kashmirQuiz: "Eso se aplica a los mapas del mundo y de los continentes. El mapa de un solo país (sus estados o provincias) sigue el mapa oficial de ese país, por eso los juegos de la India y de Pakistán incluyen Jammu y Cachemira.",
     usTitle: 'Sobre Geography Arcade',
     usDesc: 'Quién hace Geography Arcade, por qué es gratis y cómo mantenemos correctos los juegos, los mapas y los datos.',
     us: [
@@ -140,7 +140,7 @@ module.exports = {
     navUs: 'من نحن', navPrivacy: 'الخصوصية',
     aPopWB: "يقدّر البنك الدولي عدد سكان {c} بـ {pop} ({year}).",
     aboutData: "أسماء الدول والعواصم وأسماء المقاطعات وعواصمها وعدد سكانها من Wikidata (CC0)، جُلبت في {d}. أما عدد سكان الدول فمن البنك الدولي (CC BY 4.0)، بأحدث سنة ينشرها، وهي السنة نفسها لكل الدول؛ وعدد سكان مدينة الفاتيكان من Wikidata. رموز ISO والمساحات والحدود واللغات والعملات من مجموعة بيانات world-countries (ODbL). وحين تختلف هذه المصادر عن المصادر الرسمية (عاصمة ثانية ناقصة، أو لغة إقليمية مذكورة كلغة رسمية) يصححها الموقع.",
-    kashmirQuiz: "ينطبق ذلك على خرائط العالم والقارات. أما في اختبارات الولايات والمقاطعات، فتظهر جامو وكشمير في اختبار الهند وفي اختبار باكستان معًا.",
+    kashmirQuiz: "ينطبق ذلك على خرائط العالم والقارات. أما خريطة الدولة الواحدة (ولاياتها أو مقاطعاتها) فتتبع الخريطة الرسمية لتلك الدولة، لذلك يضم اختبارا الهند وباكستان كلاهما جامو وكشمير.",
     usTitle: 'عن Geography Arcade',
     usDesc: 'من يصنع Geography Arcade، ولماذا هو مجاني، وكيف نحافظ على دقة الاختبارات والخرائط والمعلومات.',
     us: [
@@ -173,7 +173,7 @@ module.exports = {
     navUs: 'Qui sommes-nous', navPrivacy: 'Confidentialité',
     aPopWB: "Selon la Banque mondiale, la population de {c} est de {pop} habitants ({year}).",
     aboutData: "Les noms des pays, les capitales, les noms des provinces, leurs chefs-lieux et leur population viennent de Wikidata (CC0), récupérés le {d}. La population des pays vient de la Banque mondiale (CC BY 4.0), la dernière année publiée, la même pour tous les pays ; celle de la Cité du Vatican vient de Wikidata. Les codes ISO, superficies, frontières, langues et monnaies viennent du jeu de données world-countries (ODbL). Quand ces sources diffèrent des sources officielles (une deuxième capitale manquante, une langue régionale donnée comme officielle), le site les corrige.",
-    kashmirQuiz: "Cela vaut pour les cartes du monde et des continents. Dans les quiz des États et des provinces, le Jammu-et-Cachemire figure à la fois dans celui de l'Inde et dans celui du Pakistan.",
+    kashmirQuiz: "Cela vaut pour les cartes du monde et des continents. La carte d'un seul pays (ses États ou provinces) suit la carte officielle de ce pays : les quiz de l'Inde et du Pakistan incluent donc tous deux le Jammu-et-Cachemire.",
     usTitle: 'À propos de Geography Arcade',
     usDesc: 'Qui fait Geography Arcade, pourquoi c\'est gratuit et comment nous gardons les quiz, les cartes et les données exacts.',
     us: [
@@ -206,7 +206,7 @@ module.exports = {
     navUs: 'Über uns', navPrivacy: 'Datenschutz',
     aPopWB: "Laut Weltbank hat {c} {pop} Einwohner ({year}).",
     aboutData: "Ländernamen, Hauptstädte, Namen und Hauptstädte der Provinzen sowie deren Einwohnerzahlen stammen aus Wikidata (CC0), abgerufen am {d}. Die Einwohnerzahlen der Länder stammen von der Weltbank (CC BY 4.0), aus dem neuesten veröffentlichten Jahr, für alle Länder dasselbe Jahr; die der Vatikanstadt aus Wikidata. ISO-Codes, Flächen, Grenzen, Sprachen und Währungen stammen aus dem Datensatz world-countries (ODbL). Wo diese Quellen von offiziellen Angaben abweichen (eine fehlende zweite Hauptstadt, eine Regionalsprache als Amtssprache), korrigiert die Seite sie.",
-    kashmirQuiz: "Das gilt für die Welt- und Kontinentkarten. In den Quiz zu Bundesstaaten und Provinzen kommt Jammu und Kashmir sowohl bei Indien als auch bei Pakistan vor.",
+    kashmirQuiz: "Das gilt für die Welt- und Kontinentkarten. Die Karte eines einzelnen Landes (seine Bundesstaaten oder Provinzen) folgt der offiziellen Karte dieses Landes, daher enthalten die Quiz zu Indien und zu Pakistan beide Jammu und Kashmir.",
     usTitle: 'Über Geography Arcade',
     usDesc: 'Wer Geography Arcade macht, warum es kostenlos ist und wie wir Quiz, Karten und Fakten korrekt halten.',
     us: [
@@ -239,7 +239,7 @@ module.exports = {
     navUs: 'আমাদের সম্পর্কে', navPrivacy: 'গোপনীয়তা',
     aPopWB: "বিশ্বব্যাংকের হিসাবে {c}-এর জনসংখ্যা {pop} ({year})।",
     aboutData: "দেশের নাম, রাজধানী, প্রদেশের নাম, প্রদেশের রাজধানী ও প্রদেশের জনসংখ্যা Wikidata (CC0) থেকে নেওয়া, {d} তারিখে। দেশের জনসংখ্যা বিশ্বব্যাংক (CC BY 4.0) থেকে, তাদের প্রকাশিত সর্বশেষ বছরের, সব দেশের জন্য একই বছর; ভ্যাটিকান সিটির জনসংখ্যা Wikidata থেকে। ISO কোড, আয়তন, সীমান্ত, ভাষা ও মুদ্রা world-countries ডেটাসেট (ODbL) থেকে। এসব উৎস যেখানে সরকারি তথ্যের সঙ্গে মেলে না (যেমন দ্বিতীয় রাজধানী বাদ পড়া, বা আঞ্চলিক ভাষাকে সরকারি ভাষা বলা), সেখানে সাইটটি তা সংশোধন করে।",
-    kashmirQuiz: "এটি বিশ্ব ও মহাদেশের মানচিত্রের ক্ষেত্রে প্রযোজ্য। রাজ্য ও প্রদেশের কুইজে জম্মু ও কাশ্মীর ভারত ও পাকিস্তান দুই দেশের কুইজেই আছে।",
+    kashmirQuiz: "এটি বিশ্ব ও মহাদেশের মানচিত্রের ক্ষেত্রে প্রযোজ্য। একটি দেশের মানচিত্র (তার রাজ্য বা প্রদেশ) সেই দেশের সরকারি মানচিত্র অনুসরণ করে, তাই ভারত ও পাকিস্তান দুই দেশের কুইজেই জম্মু ও কাশ্মীর আছে।",
     usTitle: 'Geography Arcade সম্পর্কে',
     usDesc: 'Geography Arcade কারা বানায়, এটি কেন বিনামূল্যে, আর আমরা কুইজ, মানচিত্র ও তথ্য কীভাবে নির্ভুল রাখি।',
     us: [
@@ -272,7 +272,7 @@ module.exports = {
     navUs: 'Quem somos', navPrivacy: 'Privacidade',
     aPopWB: "Segundo o Banco Mundial, a população de {c} é de {pop} habitantes ({year}).",
     aboutData: "Os nomes dos países, capitais, nomes e capitais das províncias e a população das províncias vêm do Wikidata (CC0), obtidos em {d}. A população dos países vem do Banco Mundial (CC BY 4.0), o ano mais recente publicado, o mesmo para todos os países; a da Cidade do Vaticano vem do Wikidata. Códigos ISO, áreas, fronteiras, idiomas e moedas vêm do conjunto world-countries (ODbL). Quando essas fontes diferem das oficiais (uma segunda capital ausente, um idioma regional dado como oficial), o site as corrige.",
-    kashmirQuiz: "Isso vale para os mapas do mundo e dos continentes. Nos quizzes de estados e províncias, Jammu e Caxemira aparece tanto no da Índia quanto no do Paquistão.",
+    kashmirQuiz: "Isso vale para os mapas do mundo e dos continentes. O mapa de um único país (seus estados ou províncias) segue o mapa oficial desse país, por isso os quizzes da Índia e do Paquistão incluem Jammu e Caxemira.",
     usTitle: 'Sobre o Geography Arcade',
     usDesc: 'Quem faz o Geography Arcade, por que ele é grátis e como mantemos quizzes, mapas e dados corretos.',
     us: [
@@ -305,7 +305,7 @@ module.exports = {
     navUs: 'О нас', navPrivacy: 'Конфиденциальность',
     aPopWB: "По данным Всемирного банка, население ({c}) составляет {pop} ({year}).",
     aboutData: "Названия стран, столицы, названия и центры провинций, а также население провинций взяты из Wikidata (CC0), загружены {d}. Население стран взято у Всемирного банка (CC BY 4.0), за последний опубликованный год, одинаковый для всех стран; население Ватикана взято из Wikidata. Коды ISO, площади, границы, языки и валюты взяты из набора данных world-countries (ODbL). Если эти источники расходятся с официальными (не указана вторая столица, региональный язык назван официальным), сайт их исправляет.",
-    kashmirQuiz: "Это относится к картам мира и континентов. В викторинах по штатам и провинциям Джамму и Кашмир есть и у Индии, и у Пакистана.",
+    kashmirQuiz: "Это относится к картам мира и континентов. Карта одной страны (её штатов или провинций) следует официальной карте этой страны, поэтому викторины и по Индии, и по Пакистану включают Джамму и Кашмир.",
     usTitle: 'О Geography Arcade',
     usDesc: 'Кто делает Geography Arcade, почему он бесплатный и как мы следим за точностью викторин, карт и фактов.',
     us: [
@@ -338,7 +338,7 @@ module.exports = {
     navUs: 'ہمارے بارے میں', navPrivacy: 'رازداری',
     aPopWB: "عالمی بینک کے مطابق {c} کی آبادی {pop} ({year}) ہے۔",
     aboutData: "ممالک کے نام، دارالحکومت، صوبوں کے نام، صوبائی دارالحکومت اور صوبوں کی آبادی Wikidata (CC0) سے لی گئی ہے، {d} کو۔ ممالک کی آبادی عالمی بینک (CC BY 4.0) سے ہے، اس کا شائع کردہ تازہ ترین سال، تمام ممالک کے لیے ایک ہی سال؛ ویٹیکن سٹی کی آبادی Wikidata سے ہے۔ ISO کوڈ، رقبہ، سرحدیں، زبانیں اور کرنسیاں world-countries ڈیٹاسیٹ (ODbL) سے ہیں۔ جہاں یہ ماخذ سرکاری معلومات سے مختلف ہوں (جیسے دوسرا دارالحکومت رہ جانا، یا کسی علاقائی زبان کو سرکاری کہنا)، وہاں سائٹ انہیں درست کرتی ہے۔",
-    kashmirQuiz: "یہ دنیا اور براعظموں کے نقشوں پر لاگو ہوتا ہے۔ ریاستوں اور صوبوں کے کوئز میں جموں و کشمیر بھارت اور پاکستان دونوں کے کوئز میں شامل ہے۔",
+    kashmirQuiz: "یہ دنیا اور براعظموں کے نقشوں پر لاگو ہوتا ہے۔ کسی ایک ملک کا نقشہ (اس کی ریاستیں یا صوبے) اسی ملک کے سرکاری نقشے کے مطابق ہے، اس لیے بھارت اور پاکستان دونوں کے کوئز میں جموں و کشمیر شامل ہے۔",
     usTitle: 'Geography Arcade کے بارے میں',
     usDesc: 'Geography Arcade کون بناتا ہے، یہ مفت کیوں ہے، اور ہم کوئز، نقشوں اور معلومات کو درست کیسے رکھتے ہیں۔',
     us: [
@@ -371,7 +371,7 @@ module.exports = {
     navUs: 'Tentang kami', navPrivacy: 'Privasi',
     aPopWB: "Menurut Bank Dunia, jumlah penduduk {c} adalah {pop} ({year}).",
     aboutData: "Nama negara, ibu kota, nama dan ibu kota provinsi, serta jumlah penduduk provinsi berasal dari Wikidata (CC0), diambil pada {d}. Jumlah penduduk negara berasal dari Bank Dunia (CC BY 4.0), tahun terbaru yang diterbitkannya, tahun yang sama untuk semua negara; penduduk Kota Vatikan berasal dari Wikidata. Kode ISO, luas, perbatasan, bahasa, dan mata uang berasal dari dataset world-countries (ODbL). Jika sumber ini berbeda dari sumber resmi (ibu kota kedua yang terlewat, bahasa daerah yang disebut resmi), situs ini memperbaikinya.",
-    kashmirQuiz: "Itu berlaku untuk peta dunia dan peta benua. Dalam kuis negara bagian dan provinsi, Jammu dan Kashmir muncul di kuis India maupun Pakistan.",
+    kashmirQuiz: "Itu berlaku untuk peta dunia dan peta benua. Peta satu negara (negara bagian atau provinsinya) mengikuti peta resmi negara itu, sehingga kuis India maupun Pakistan sama-sama mencakup Jammu dan Kashmir.",
     usTitle: 'Tentang Geography Arcade',
     usDesc: 'Siapa yang membuat Geography Arcade, mengapa gratis, dan bagaimana kami menjaga kuis, peta, dan fakta tetap akurat.',
     us: [
@@ -404,7 +404,7 @@ module.exports = {
     navUs: 'Chi siamo', navPrivacy: 'Privacy',
     aPopWB: "Secondo la Banca Mondiale, la popolazione di {c} è di {pop} abitanti ({year}).",
     aboutData: "I nomi dei paesi, le capitali, i nomi e i capoluoghi delle province e la popolazione delle province vengono da Wikidata (CC0), scaricati il {d}. La popolazione dei paesi viene dalla Banca Mondiale (CC BY 4.0), l'ultimo anno pubblicato, lo stesso per tutti i paesi; quella della Città del Vaticano viene da Wikidata. Codici ISO, superfici, confini, lingue e valute vengono dal dataset world-countries (ODbL). Quando queste fonti differiscono da quelle ufficiali (una seconda capitale mancante, una lingua regionale indicata come ufficiale), il sito le corregge.",
-    kashmirQuiz: "Questo vale per le cartine del mondo e dei continenti. Nei quiz su stati e province, Jammu e Kashmir compare sia in quello dell'India sia in quello del Pakistan.",
+    kashmirQuiz: "Questo vale per le cartine del mondo e dei continenti. La cartina di un solo paese (i suoi stati o province) segue la cartina ufficiale di quel paese, perciò i quiz dell'India e del Pakistan includono entrambi Jammu e Kashmir.",
     usTitle: 'Chi è Geography Arcade',
     usDesc: 'Chi fa Geography Arcade, perché è gratis e come teniamo corretti quiz, cartine e dati.',
     us: [
@@ -437,7 +437,7 @@ module.exports = {
     navUs: '運営者について', navPrivacy: 'プライバシー',
     aPopWB: "世界銀行によると、{c}の人口は{pop}人です（{year}年）。",
     aboutData: "国名、首都、州・県の名前と州都・県庁所在地、州・県の人口は Wikidata（CC0）から{d}に取得しています。国の人口は世界銀行（CC BY 4.0）の最新の公表年のもので、すべての国で同じ年です。バチカン市国の人口は Wikidata から取得しています。ISO コード、面積、国境、言語、通貨は world-countries データセット（ODbL）によるものです。これらの情報源が公式の情報と異なる場合（2つ目の首都が抜けている、地域の言語が公用語とされている など）は、当サイトで修正しています。",
-    kashmirQuiz: "これは世界地図と大陸の地図に当てはまります。州・県のクイズでは、ジャンムー・カシミールはインドとパキスタンの両方のクイズに登場します。",
+    kashmirQuiz: "これは世界地図と大陸の地図に当てはまります。1つの国の地図（州や県）はその国の公式地図に従うため、インドとパキスタンのクイズにはどちらもジャンムー・カシミールが含まれます。",
     usTitle: 'Geography Arcade について',
     usDesc: 'Geography Arcade を作っているのは誰か、なぜ無料なのか、クイズ・地図・データの正確さをどう保っているか。',
     us: [
@@ -470,7 +470,7 @@ module.exports = {
     navUs: '소개', navPrivacy: '개인정보',
     aPopWB: "세계은행에 따르면 {c}의 인구는 {pop}명입니다({year}년).",
     aboutData: "나라 이름, 수도, 주·도 이름과 주도, 주·도 인구는 Wikidata(CC0)에서 {d}에 가져왔습니다. 나라 인구는 세계은행(CC BY 4.0)이 발표한 최신 연도의 자료로, 모든 나라가 같은 연도입니다. 바티칸 시국의 인구는 Wikidata에서 가져왔습니다. ISO 코드, 면적, 국경, 언어, 통화는 world-countries 데이터셋(ODbL)에서 가져왔습니다. 이 자료가 공식 자료와 다를 때(두 번째 수도가 빠진 경우, 지역 언어가 공용어로 적힌 경우 등)에는 사이트에서 바로잡습니다.",
-    kashmirQuiz: "이는 세계 지도와 대륙 지도에 해당합니다. 주와 도 퀴즈에서는 잠무 카슈미르가 인도와 파키스탄 퀴즈 모두에 나옵니다.",
+    kashmirQuiz: "이는 세계 지도와 대륙 지도에 해당합니다. 한 나라의 지도(주나 도)는 그 나라의 공식 지도를 따르므로, 인도와 파키스탄 퀴즈 모두에 잠무 카슈미르가 들어 있습니다.",
     usTitle: 'Geography Arcade 소개',
     usDesc: 'Geography Arcade를 누가 만드는지, 왜 무료인지, 퀴즈와 지도와 정보를 어떻게 정확하게 유지하는지 알려드립니다.',
     us: [
@@ -503,7 +503,7 @@ module.exports = {
     navUs: 'O nas', navPrivacy: 'Prywatność',
     aPopWB: "Według Banku Światowego liczba ludności ({c}) wynosi {pop} ({year}).",
     aboutData: "Nazwy państw, stolice, nazwy i stolice prowincji oraz liczba ludności prowincji pochodzą z Wikidata (CC0), pobrane {d}. Liczba ludności państw pochodzi z Banku Światowego (CC BY 4.0), z najnowszego opublikowanego roku, tego samego dla wszystkich państw; dla Watykanu z Wikidata. Kody ISO, powierzchnie, granice, języki i waluty pochodzą ze zbioru world-countries (ODbL). Gdy te źródła różnią się od oficjalnych (brak drugiej stolicy, język regionalny podany jako urzędowy), strona je poprawia.",
-    kashmirQuiz: "Dotyczy to map świata i kontynentów. W quizach o stanach i prowincjach Dżammu i Kaszmir występuje zarówno w quizie Indii, jak i Pakistanu.",
+    kashmirQuiz: "Dotyczy to map świata i kontynentów. Mapa jednego państwa (jego stanów lub prowincji) jest zgodna z oficjalną mapą tego państwa, dlatego quizy o Indiach i o Pakistanie obejmują Dżammu i Kaszmir.",
     usTitle: 'O Geography Arcade',
     usDesc: 'Kto tworzy Geography Arcade, dlaczego jest za darmo i jak dbamy o poprawność quizów, map i danych.',
     us: [
@@ -536,7 +536,7 @@ module.exports = {
     navUs: 'Over ons', navPrivacy: 'Privacy',
     aPopWB: "Volgens de Wereldbank heeft {c} {pop} inwoners ({year}).",
     aboutData: "Namen van landen, hoofdsteden, namen en hoofdsteden van provincies en het inwonertal van provincies komen uit Wikidata (CC0), opgehaald op {d}. Het inwonertal van landen komt van de Wereldbank (CC BY 4.0), het nieuwste gepubliceerde jaar, voor alle landen hetzelfde jaar; dat van Vaticaanstad komt uit Wikidata. ISO-codes, oppervlaktes, grenzen, talen en munten komen uit de dataset world-countries (ODbL). Waar deze bronnen afwijken van officiële bronnen (een ontbrekende tweede hoofdstad, een streektaal die als officieel staat vermeld), corrigeert de site ze.",
-    kashmirQuiz: "Dat geldt voor de wereldkaart en de kaarten van de werelddelen. In de quizzen over staten en provincies staat Jammu en Kasjmir zowel bij India als bij Pakistan.",
+    kashmirQuiz: "Dat geldt voor de wereldkaart en de kaarten van de werelddelen. De kaart van één land (zijn staten of provincies) volgt de officiële kaart van dat land, dus de quizzen over India en over Pakistan bevatten allebei Jammu en Kasjmir.",
     usTitle: 'Over Geography Arcade',
     usDesc: 'Wie Geography Arcade maakt, waarom het gratis is en hoe we de quizzen, kaarten en feiten kloppend houden.',
     us: [
