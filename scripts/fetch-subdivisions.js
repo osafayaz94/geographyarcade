@@ -124,14 +124,18 @@ async function osmDivisions(c, ov, report) {
   return out;
 }
 
+// `--only=IND,PAK` refreshes just those countries and keeps everyone else's saved data.
+const ONLY = (process.argv.find((a) => a.startsWith('--only=')) || '').slice(7).split(',').filter(Boolean);
+
 (async () => {
   const report = [];
-  const out = {};
+  const out = ONLY.length ? JSON.parse(fs.readFileSync(path.join(DATA, 'subdivisions.json'), 'utf8')) : {};
   const skipped = [];
   let byArea = 0;
   for (const c of BY_AREA) {
     const extra = EXTRA.has(c.iso3);
     if (!extra && byArea >= provinceCountries) continue;
+    if (ONLY.length && !ONLY.includes(c.iso3)) { if (!extra && out[c.iso2]) byArea++; continue; }
     const ov = overrides[c.iso3] || {};
     if (ov.skip) { skipped.push(`${c.iso3} ${c.name.en}: ${ov.skip}`); continue; }
     let m;
@@ -157,6 +161,25 @@ async function osmDivisions(c, ov, report) {
     if (ov.exportKashmir) {
       const src = gj.features.filter((f) => ov.exportKashmir.includes(f.properties.shapeName));
       fs.writeFileSync(path.join(GEO, 'kashmir-source.json'), JSON.stringify({ type: 'FeatureCollection', features: src }));
+    }
+    // India's own map keeps Jammu and Kashmir and Ladakh, cut to the land India administers (the
+    // source also draws Gilgit-Baltistan and Aksai Chin), using Pakistan's last saved divisions.
+    if (ov.exportKashmir && ov.trimKashmir) {
+      const pakFile = path.join(GEO, 'adm1-PAK.json');
+      if (!fs.existsSync(pakFile)) report.push(`  ${c.iso3}: no saved Pakistan map yet, Kashmir shapes left untrimmed`);
+      else {
+        const pak = JSON.parse(fs.readFileSync(pakFile, 'utf8'));
+        pak.features = pak.features.filter((f) => f.properties.shapeID !== 'PAK-JK');
+        const topo = require('world-atlas/countries-50m.json');
+        const china = feature(topo, topo.objects.countries).features.filter((f) => f.id === '156');
+        for (const f of gj.features.filter((x) => ov.exportKashmir.includes(x.properties.shapeName))) {
+          const res = await mapshaper.applyCommands('-i src.json -erase china.json -erase pak.json -filter-slivers min-area=100km2 -o out.json format=geojson',
+            { 'src.json': { type: 'FeatureCollection', features: [f] }, 'china.json': { type: 'FeatureCollection', features: china }, 'pak.json': pak });
+          const o = JSON.parse(res['out.json']);
+          const g = o.features ? o.features[0] && o.features[0].geometry : o.geometries && o.geometries[0];
+          if (g) f.geometry = g;
+        }
+      }
     }
     if (ov.addKashmir) gj.features.push(await kashmirFeature(gj, ov.addKashmir));
     gj.features = gj.features.filter((f) => !drop.has(f.properties.shapeName) && !drop.has(f.properties.shapeISO));
@@ -224,6 +247,6 @@ async function osmDivisions(c, ov, report) {
   }
   fs.writeFileSync(path.join(DATA, 'subdivisions.json'), JSON.stringify(out, null, 1));
   const text = report.join('\n') + '\n\nSkipped:\n' + skipped.join('\n');
-  fs.writeFileSync(path.join(DATA, 'subdivisions-report.txt'), text);
+  if (!ONLY.length) fs.writeFileSync(path.join(DATA, 'subdivisions-report.txt'), text);
   console.log(text);
 })();

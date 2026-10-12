@@ -66,10 +66,12 @@ module.exports = {
     iso: { 'Anatolikis Makedonias kai Thr*': 'GR-A', 'Kentrikis Makedonias': 'GR-B', 'Dytikis Makedonias': 'GR-C', Ipeiroy: 'GR-D', Thessalias: 'GR-E', 'Ionion Nison': 'GR-F', 'Dytikis Elladas': 'GR-G', 'Stereas Elladas': 'GR-H', Attikis: 'GR-I', Peloponnisoy: 'GR-J', 'Voreioy Aigaioy': 'GR-K', 'Notioy Aigaioy': 'GR-L', Kritis: 'GR-M', 'Agion Oros': 'GR-69' },
   },
 
-  // Kashmir, site owner's decision (2026-09-28): Indian-administered Jammu and Kashmir and
-  // Ladakh are drawn as part of Pakistan on every map, and removed from India's states map.
-  // Aksai Chin stays with China. The added unit takes its names from Wikidata Q1180.
-  IND: { exportKashmir: ['Jammu and Kashmīr', 'Ladākh'], drop: ['Jammu and Kashmīr', 'Ladākh'] },
+  // Kashmir, site owner's decisions: on world and continent maps, Indian-administered Jammu and
+  // Kashmir and Ladakh are drawn as part of Pakistan (2026-09-28). In the state and province
+  // quizzes, Jammu and Kashmir appears in both India's and Pakistan's (2026-10-12): India keeps its
+  // Jammu and Kashmir and Ladakh, Pakistan gets the added unit. Aksai Chin stays with China.
+  // The added unit takes its names from Wikidata Q1180.
+  IND: { exportKashmir: ['Jammu and Kashmīr', 'Ladākh'], trimKashmir: true },
   // Wikidata's zh and ar labels say "state" (the Indian state); these are the plain region names.
   PAK: { addKashmir: { id: 'PAK-JK', name: 'Jammu and Kashmir', names: { zh: '查谟和克什米尔', ar: 'جامو وكشمير' } }, qid: { 'Jammu and Kashmir': 'Q1180' } },
 

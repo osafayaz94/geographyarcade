@@ -38,6 +38,13 @@ const countries = require('./data/countries.json');
 for (const c of countries) Object.assign(c.name, nameFixes[c.iso2] || {});
 const dataFixes = require('./data/currency-language-fixes');
 for (const c of countries) if (dataFixes.currencies[c.iso2]) c.currencies = dataFixes.currencies[c.iso2].map(([code, name]) => ({ code, name }));
+// Population: World Bank, one year for every country (scripts/fetch-population.js); Wikidata only
+// where the World Bank has no figure (Vatican City).
+const wbPop = fs.existsSync(path.join(__dirname, 'data', 'population.json')) ? require('./data/population.json') : {};
+for (const c of countries) if (wbPop[c.iso3]) c.population = { value: wbPop[c.iso3].value, year: wbPop[c.iso3].year };
+// Capitals Wikidata's export misses or orders differently from common sources (first = quiz answer).
+const capFixes = fs.existsSync(path.join(__dirname, 'data', 'capital-fixes.json')) ? require('./data/capital-fixes.json') : {};
+for (const c of countries) if (capFixes[c.iso2]) c.capitals = capFixes[c.iso2];
 const subsFile = path.join(__dirname, 'data', 'subdivisions.json');
 const subdivisions = fs.existsSync(subsFile) ? require(subsFile) : {};
 const byIso = Object.fromEntries(countries.map((c) => [c.iso2, c]));
@@ -52,7 +59,7 @@ const provCountries = [...countries].sort((a, b) => b.area - a.area)
 const hasProv = new Set(provCountries.map((c) => c.iso2));
 // Capital coordinates (scripts/fetch-capital-coords.js), for the outline printables of countries
 // without a province map; COUNTRY_PRINTS lists the countries that got one (filled in main()).
-const capCoords = fs.existsSync(path.join(__dirname, 'data', 'capital-coords.json')) ? require('./data/capital-coords.json') : {};
+const capCoords = { ...(fs.existsSync(path.join(__dirname, 'data', 'capital-coords.json')) ? require('./data/capital-coords.json') : {}), ...(capFixes._coords || {}) };
 const COUNTRY_PRINTS = new Set();
 // Sentences say "the N largest countries": count only those, not the smaller extras.
 const EXTRA_PROV = new Set(config.extraProvinceCountries || []);
@@ -961,7 +968,7 @@ function countryPage(lang, c) {
     [t(lang, 'qContFaq', { c: name }), t(lang, 'inCont', { c: name, cont })],
     [t(lang, 'qAreaFaq', { c: name }), t(lang, 'aArea', { c: name, area: num(lang, c.area), rank: areaRank[c.iso2], n: countries.length })],
   ];
-  if (c.population) qa.push([t(lang, 'qPopFaq', { c: name }), c.population.year ? t(lang, 'aPop', { c: name, pop: num(lang, c.population.value), year: c.population.year }) : t(lang, 'aPopNoYear', { c: name, pop: num(lang, c.population.value) })]);
+  if (c.population) qa.push([t(lang, 'qPopFaq', { c: name }), wbPop[c.iso3] ? pg(lang).aPopWB.replace('{c}', name).replace('{pop}', num(lang, c.population.value)).replace('{year}', c.population.year) : c.population.year ? t(lang, 'aPop', { c: name, pop: num(lang, c.population.value), year: c.population.year }) : t(lang, 'aPopNoYear', { c: name, pop: num(lang, c.population.value) })]);
   if (sub) qa.push([t(lang, 'qDivFaq', { c: name, term: tm }), t(lang, 'aDiv', { c: name, n: divs.length, term: tm, list: listJoin(lang, divs.slice(0, 3).map((d) => nm(d.name, lang))) })]);
   qa.push([t(lang, 'qBordersFaq', { c: name }), borders.length ? t(lang, 'aBorders', { c: name, list: listJoin(lang, borders.map((b) => cName(b, lang))) }) : t(lang, 'aNoBorders', { c: name })]);
   const faq = faqBlock(lang, qa);
@@ -1206,7 +1213,9 @@ function about(lang) {
   const p = 'about/';
   const title = t(lang, 'aboutTitle');
   const desc = t(lang, 'aboutDesc');
-  const secs = L[lang].about.map(([h, txt]) => `<h2>${esc(h)}</h2><p>${esc(txt.replace('{n}', countries.length).replace('{d}', dateFmt(lang, DATA_DATE)))}</p>`).join('');
+  // The maps section (the one naming Natural Earth) also says how the quizzes treat Kashmir.
+  // The second section (names, capitals, population) now has its text in src/i18n-pages.js.
+  const secs = L[lang].about.map(([h, txt], i) => [h, i === 1 ? pg(lang).aboutData : txt]).map(([h, txt]) => `<h2>${esc(h)}</h2><p>${esc(txt.replace('{n}', countries.length).replace('{d}', dateFmt(lang, DATA_DATE)) + (txt.includes('Natural Earth') ? ' ' + pg(lang).kashmirQuiz : ''))}</p>`).join('');
   const lic = provCountries.map((c) => `<li>${esc(cName(c, lang))}: ${esc(subdivisions[c.iso2].source.license || '')}${subdivisions[c.iso2].source.sourceName ? ' · ' + esc(subdivisions[c.iso2].source.sourceName) : ''}</li>`).join('');
   const worldSrc = `<h2>${esc(tt(lang, 'worldGames'))}</h2><p>${esc(tt(lang, 'source', { s: 'Natural Earth (public domain); Wikidata (CC0); RESOLVE Ecoregions 2017 (CC BY 4.0); NASA Planetary Fact Sheet' }))}</p>`;
   // Contact line, once an address is set in site.config.js (contactEmail).
@@ -1287,6 +1296,7 @@ Every quiz page lists all of its answers in plain HTML, so the pages can be read
 - [World games](${abs('en', 'world/')}): ${WORLD_GAMES.map((g) => tt('en', 'g.' + g.key)).join(', ')}
 - Country games: ${COUNTRY_GAMES.map((g) => `[${tt('en', 'g.' + g.key)}](${abs('en', `games/${g.key}/`)})`).join(', ')}
 - [Country lists and rankings](${abs('en', 'lists/')}): ${LISTS.map((l) => `[${listTitle('en', l)}](${abs('en', listPath(l))})`).join(', ')}
+- [Printable maps and worksheets](${abs('en', 'printables/')}): free printable maps of the world, every continent, the provinces and states of ${provCountries.length} countries and outline maps of smaller countries, each as a blank map, numbered worksheet, labelled map and answer key
 - [Key facts for every country as plain text](${DOMAIN}/llms-full.txt)
 - [Sources and methodology](${abs('en', 'about/')})
 
@@ -1297,8 +1307,9 @@ Every quiz page lists all of its answers in plain HTML, so the pages can be read
 - Other languages: prefix the path with ${LANGS.slice(1).map((l) => `/${l}/`).join(', ')}
 
 ## Data sources
-- Names, capitals, population, province data: Wikidata (CC0), fetched ${DATA_DATE}
-- Country codes, area, borders: world-countries (ODbL)
+- Names, capitals and province data: Wikidata (CC0), fetched ${DATA_DATE}
+- Country population: World Bank (CC BY 4.0), latest year, the same year for every country (Vatican City: Wikidata)
+- Country codes, area, borders, languages, currencies: world-countries (ODbL), with corrections where it differs from official sources
 - Country boundaries: Natural Earth 1:50m (public domain). Province boundaries: geoBoundaries ADM1 (gbOpen), or OpenStreetMap (ODbL) via Wikidata for countries whose divisions changed after the geoBoundaries release. Division flags: Wikimedia Commons (author and licence listed on each flag quiz page)
 - Flags: flag-icons (MIT)
 `);
@@ -1317,7 +1328,7 @@ Every quiz page lists all of its answers in plain HTML, so the pages can be read
   };
   write('llms-full.txt', `# ${SITE}: key facts for ${countries.length} countries
 
-> Data: Wikidata (CC0) for names, capitals and population, fetched ${DATA_DATE}; world-countries (ODbL) for area, borders, languages and currencies. Each line links to the country's page, which has its flag, map, provinces and quizzes.
+> Data: Wikidata (CC0) for names and capitals, fetched ${DATA_DATE}; World Bank (CC BY 4.0) for population, the same year for every country; world-countries (ODbL, with corrections) for area, borders, languages and currencies. Each line links to the country's page, which has its flag, map, provinces and quizzes.
 
 ${sortBy('en', countries, (c) => c.name.en).map(factLine).join('\n')}
 `);

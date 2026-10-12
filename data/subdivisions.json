@@ -11192,6 +11192,55 @@
     "area": 94163
    },
    {
+    "id": "1811400B23769854471902",
+    "iso": "IN-LA",
+    "qid": "Q200667",
+    "name": {
+     "en": "Ladakh",
+     "zh": "拉达克",
+     "hi": "लद्दाख़",
+     "es": "Ladakh",
+     "ar": "لداخ",
+     "fr": "Ladakh",
+     "bn": "লাদাখ",
+     "de": "Ladakh",
+     "pt": "Ladaque",
+     "ru": "Ладакх",
+     "ur": "لداخ",
+     "id": "Ladakh",
+     "it": "Ladakh",
+     "ja": "ラダック",
+     "ko": "라다크",
+     "pl": "Ladakh",
+     "nl": "Ladakh"
+    },
+    "capital": {
+     "en": "Leh",
+     "zh": "莱镇",
+     "hi": "लेह",
+     "es": "Leh",
+     "ar": "لياه",
+     "fr": "Leh",
+     "bn": "লেহ",
+     "de": "Leh",
+     "pt": "Leh",
+     "ru": "Лех",
+     "ur": "لہہ",
+     "id": "Leh",
+     "it": "Leh",
+     "ja": "レー",
+     "ko": "레",
+     "pl": "Leh",
+     "nl": "Leh"
+    },
+    "capitalQid": "Q230818",
+    "population": {
+     "value": 274289,
+     "year": 2011
+    },
+    "area": 59196
+   },
+   {
     "id": "1811400B37341166588993",
     "iso": "IN-RJ",
     "qid": "Q1437",
@@ -12058,6 +12107,55 @@
      "year": 2011
     },
     "area": 55780
+   },
+   {
+    "id": "1811400B42025667129192",
+    "iso": "IN-JK",
+    "qid": "Q66278313",
+    "name": {
+     "en": "Jammu and Kashmir",
+     "zh": "查谟和克什米尔",
+     "hi": "जम्मू और कश्मीर",
+     "es": "Jammu y Cachemira",
+     "ar": "إقليم جمون وكشمير",
+     "fr": "Jammu-et-Cachemire",
+     "bn": "জম্মু ও কাশ্মীর",
+     "de": "Jammu und Kashmir",
+     "pt": "Jammu e Caxemira",
+     "ru": "Джамму и Кашмир",
+     "ur": "جموں و کشمیر",
+     "id": "Jammu dan Kashmir",
+     "it": "Jammu e Kashmir",
+     "ja": "ジャンムー・カシミール連邦直轄領",
+     "ko": "잠무 카슈미르",
+     "pl": "Dżammu i Kaszmir",
+     "nl": "Jammu en Kasjmir"
+    },
+    "capital": {
+     "en": "Srinagar",
+     "zh": "斯利那加",
+     "hi": "श्रीनगर",
+     "es": "Srinagar",
+     "ar": "سري نكر",
+     "fr": "Srinagar",
+     "bn": "শ্রীনগর",
+     "de": "Srinagar",
+     "pt": "Srinagar",
+     "ru": "Сринагар",
+     "ur": "سری نگر",
+     "id": "Srinagar",
+     "it": "Srinagar",
+     "ja": "シュリーナガル",
+     "ko": "스리나가르",
+     "pl": "Śrinagar",
+     "nl": "Srinagar"
+    },
+    "capitalQid": "Q170115",
+    "population": {
+     "value": 12258433,
+     "year": 2011
+    },
+    "area": 42241
    },
    {
     "id": "1811400B91946361694107",

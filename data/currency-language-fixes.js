@@ -9,5 +9,13 @@ module.exports = {
   // Official languages (ISO 639-3 code -> English name).
   languages: {
     CH: { deu: 'German', fra: 'French', ita: 'Italian', roh: 'Romansh' }, // the dataset has Swiss German; the official language is standard German
+    // The dataset mixes in regional, national or creole languages that are not official:
+    AT: { deu: 'German' }, // dataset: Austro-Bavarian German
+    IN: { hin: 'Hindi', eng: 'English' }, // dataset adds Tamil (official in Tamil Nadu, not nationally)
+    BZ: { eng: 'English' },
+    GW: { por: 'Portuguese' },
+    JM: { eng: 'English' },
+    NA: { eng: 'English' }, // the others are recognised national languages
+    CD: { fra: 'French' }, // Kikongo, Lingala, Tshiluba and Swahili are national languages
   },
 };

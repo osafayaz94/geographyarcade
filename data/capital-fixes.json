@@ -1,0 +1,220 @@
+{
+ "_coords": {
+  "Q2907": [
+   -65.26,
+   -19.0475
+  ],
+  "Q3818": [
+   8.7737,
+   3.752063888
+  ],
+  "Q1491": [
+   -68.133333333,
+   -16.495833333
+  ],
+  "Q41963": [
+   79.916388888,
+   6.9
+  ],
+  "Q101418": [
+   31.206411,
+   -26.44648
+  ],
+  "Q3904": [
+   31.133333333,
+   -26.316666666
+  ],
+  "Q35381": [
+   79.860555555,
+   6.926666666
+  ],
+  "Q1140136": [
+   10.822222222,
+   1.591666666
+  ]
+ },
+ "LK": [
+  {
+   "qid": "Q41963",
+   "name": {
+    "ur": "سری جے وردھنے پورا کوٹے",
+    "zh": "斯里贾亚瓦德纳普拉科特",
+    "pt": "Kotte",
+    "ar": "سري جاياواردنابورا كوتي",
+    "bn": "শ্রী জয়বর্ধনপুর কোট্টে",
+    "de": "Sri Jayewardenepura Kotte",
+    "es": "Sri Jayawardenapura Kotte",
+    "fr": "Sri Jayawardenapura",
+    "hi": "श्री जयवर्धनेपुरा कोट्टी",
+    "id": "Sri Jayawardenapura Kotte",
+    "it": "Sri Jayawardenapura Kotte",
+    "ja": "スリジャヤワルダナプラコッテ",
+    "ko": "스리자야와르데네푸라코테",
+    "nl": "Sri Jayewardenapura Kotte",
+    "pl": "Sri Dźajawardanapura Kotte",
+    "ru": "Шри-Джаяварденепура-Котте",
+    "en": "Sri Jayawardenepura Kotte"
+   }
+  },
+  {
+   "qid": "Q35381",
+   "name": {
+    "de": "Colombo",
+    "en": "Colombo",
+    "es": "Colombo",
+    "fr": "Colombo",
+    "it": "Colombo",
+    "nl": "Colombo",
+    "pt": "Colombo",
+    "ja": "コロンボ",
+    "ru": "Коломбо",
+    "id": "Kolombo",
+    "pl": "Kolombo",
+    "ar": "كولمبو",
+    "bn": "কলম্বো",
+    "hi": "कोलंबो",
+    "ko": "콜롬보",
+    "ur": "کولمبو",
+    "zh": "科伦坡"
+   }
+  }
+ ],
+ "BO": [
+  {
+   "qid": "Q2907",
+   "name": {
+    "ur": "سکرے",
+    "hi": "सुक्रे",
+    "pt": "Sucre",
+    "ar": "سوكري",
+    "bn": "সুক্রে",
+    "id": "Sucre, Bolivia",
+    "es": "Sucre",
+    "en": "Sucre",
+    "fr": "Sucre",
+    "de": "Sucre",
+    "ja": "スクレ",
+    "ko": "수크레",
+    "ru": "Сукре",
+    "zh": "苏克雷",
+    "it": "Sucre",
+    "nl": "Sucre",
+    "pl": "Sucre"
+   }
+  },
+  {
+   "qid": "Q1491",
+   "name": {
+    "ur": "لا پاز",
+    "zh": "拉巴斯",
+    "es": "La Paz",
+    "en": "La Paz",
+    "ru": "Ла-Пас",
+    "de": "La Paz",
+    "fr": "La Paz",
+    "it": "La Paz",
+    "nl": "La Paz",
+    "pl": "La Paz",
+    "pt": "La Paz",
+    "ja": "ラパス",
+    "ko": "라파스",
+    "ar": "لاباز",
+    "bn": "লা পাজ",
+    "hi": "ला पास",
+    "id": "La Paz, Bolivia"
+   }
+  }
+ ],
+ "SZ": [
+  {
+   "qid": "Q3904",
+   "name": {
+    "ur": "مبابنے",
+    "zh": "姆巴巴内",
+    "id": "Mbabane",
+    "it": "Mbabane",
+    "nl": "Mbabane",
+    "pl": "Mbabane",
+    "ja": "ムババーネ",
+    "ar": "مبابان",
+    "bn": "এম্বাবানে",
+    "hi": "बाबाने",
+    "ko": "음바바네",
+    "pt": "Mebabane",
+    "en": "Mbabane",
+    "ru": "Мбабане",
+    "de": "Mbabane",
+    "es": "Mbabane",
+    "fr": "Mbabane"
+   }
+  },
+  {
+   "qid": "Q101418",
+   "name": {
+    "ar": "لوبامبا",
+    "bn": "লোবেম্বা",
+    "de": "Lobamba",
+    "en": "Lobamba",
+    "es": "Lobamba",
+    "fr": "Lobamba",
+    "hi": "लोबम्बा",
+    "id": "Lobamba",
+    "it": "Lobamba",
+    "ja": "ロバンバ",
+    "ko": "로밤바",
+    "nl": "Lobamba",
+    "pl": "Lobamba",
+    "pt": "Lobamba",
+    "ru": "Лобамба",
+    "ur": "لوبامبا",
+    "zh": "洛班巴"
+   }
+  }
+ ],
+ "GQ": [
+  {
+   "qid": "Q3818",
+   "name": {
+    "es": "Malabo",
+    "en": "Malabo",
+    "de": "Malabo",
+    "fr": "Malabo",
+    "id": "Malabo",
+    "nl": "Malabo",
+    "pt": "Malabo",
+    "ru": "Малабо",
+    "it": "Malabo",
+    "ar": "مالابو",
+    "bn": "মালাবো",
+    "hi": "मलाबो",
+    "ja": "マラボ",
+    "ko": "말라보",
+    "pl": "Malabo",
+    "ur": "ملابو",
+    "zh": "马拉博"
+   }
+  },
+  {
+   "qid": "Q1140136",
+   "name": {
+    "ar": "سيوداد دي لا باز",
+    "de": "Ciudad de la Paz",
+    "en": "Ciudad de la Paz",
+    "es": "Ciudad de la Paz",
+    "it": "Ciudad de la Paz",
+    "ja": "ラパス",
+    "ko": "오얄라",
+    "nl": "Ciudad de la Paz",
+    "pt": "Ciudad de la Paz",
+    "ru": "Сьюдад-де-ла-Пас",
+    "ur": "سیوداد دے لا پاز",
+    "zh": "拉巴斯城",
+    "fr": "Ciudad de la Paz",
+    "id": "Ciudad de la Paz",
+    "pl": "Ciudad de la Paz",
+    "bn": "সিউদাদ দে লা পাজ",
+    "hi": "सियुदाद दे ला पास"
+   }
+  }
+ ]
+}
