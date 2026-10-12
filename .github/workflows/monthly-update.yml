@@ -46,7 +46,8 @@ jobs:
 
       - name: Full data refresh or quick rebuild?
         id: mode
-        run: echo "full=${{ github.event_name != 'push' || steps.geo.outputs.cache-matched-key == '' }}" >> "$GITHUB_OUTPUT"
+        # A push whose commit message contains "[full data]" also runs the full refresh.
+        run: echo "full=${{ github.event_name != 'push' || steps.geo.outputs.cache-matched-key == '' || contains(github.event.head_commit.message, '[full data]') }}" >> "$GITHUB_OUTPUT"
 
       - name: Keep last month's data for comparison
         if: steps.mode.outputs.full == 'true'
