@@ -211,6 +211,9 @@ function fitDescription(d) {
 }
 function page(lang, p, { title, desc, body, crumbs = [], jsonld = [], preload, script = false, printJs = false, nav, noindex = false }) {
   desc = fitDescription(desc);
+  // Site owner's decision (2026-10-12): quiz answers are not shown on the pages. Every answer block
+  // is an "answers" heading followed by one table or one list.
+  body = body.replace(/<h2 id="answers">[^<]*<\/h2>\s*(?:<div class="tbl"><table>[\s\S]*?<\/table><\/div>|<ul class="links">[\s\S]*?<\/ul>)/g, '');
   const Ls = L[lang];
   // The site name is added only where the whole title stays within 60 characters (search results cut longer ones).
   const fullTitle = (title + ' | ' + SITE).length <= 60 ? title + ' | ' + SITE : title;
@@ -420,7 +423,6 @@ function continentQuiz(lang, q, scope) {
   if (q.type === 'maps') qa.push([t(lang, 'qMapFaq'), t(lang, 'aMap')], ...contFacts(lang, scope, { landlocked: false, learn: false }));
   if (q.type === 'shapes') qa.push([t(lang, 'qShapesFaq'), t(lang, 'aShapes', { of: L[lang].of[scope] })]);
   // Two sample capital answers help answer engines pick the page up for "capital of X" queries.
-  if (q.type === 'capitals') for (const c of list.slice(0, 2)) qa.push([t(lang, 'qCapitalFaq', { c: cName(c, lang) }), t(lang, 'capitalIs', { c: cName(c, lang), cap: capOf(c, lang) })]);
   qa.push([t(lang, 'qScoreFaq'), t(lang, 'aScore')]);
   const faq = faqBlock(lang, qa);
   const pop = (c) => (c.population && c.population.value) || 0;
@@ -1037,7 +1039,7 @@ function provinceQuizzes(lang, c) {
     const own = caps.length === 1 ? t(lang, 'capitalIs', { c: name, cap: caps[0] }) + ' ' : '';
     const desc = own + ((c.iso2 === 'US' && seo(lang, 'usCapDesc')) || t(lang, 'provCapDesc', { c: name, n: withCap.length, term: tm }));
     const data = { type: 'pcap', key: `pcap-${c.iso2}-${lang}`, title, picMap: `/maps/p/${c.iso2.toLowerCase()}.svg`, items: withCap.map((d) => ({ id: d.id, n: nm(d.name, lang), a: nm(d.capital, lang) })), s: quizStrings(lang) };
-    const faq = faqBlock(lang, [...withCap.slice(0, 3).map((d) => [t(lang, 'qCapitalFaq', { c: nm(d.name, lang) }), t(lang, 'capitalIs', { c: nm(d.name, lang), cap: nm(d.capital, lang) })]), [t(lang, 'qScoreFaq'), t(lang, 'aScore')]]);
+    const faq = faqBlock(lang, [[t(lang, 'qScoreFaq'), t(lang, 'aScore')]]);
     page(lang, p, { title, desc, script: true, nav: 'provinces/', crumbs: [...crumbsBase, { name: title, p }], jsonld: [quizLd(lang, p, title, desc, name), faq.ld],
       body: `${printAside(lang, printFor((pr) => pr.kind === 'prov' && pr.c === c))}<h1>${esc(title)}</h1><p class="lede">${esc(desc)}</p>${gameShell(lang, data, coverImg(`/img/p/${c.iso2.toLowerCase()}-capitals.svg`, '#3F4A5A'))}${table}${faq.body}${other(base + 'map-quiz/', 'provMapQuiz')}` });
   }
@@ -1175,7 +1177,7 @@ function extraCapQuiz(lang, x) {
   const desc = t(lang, 'provCapDesc', { c: place, n: withCap.length, term: L[lang].term[x.term] });
   const data = { type: 'pcap', key: `xcap-${x.key}-${lang}`, title, picMap: `/maps/x/${x.key}.svg`, items: withCap.map((d) => ({ id: d.id, n: nm(d.name, lang), a: nm(d.capital, lang) })), s: quizStrings(lang) };
   const table = `<h2 id="answers">${esc(t(lang, 'answersTitle'))}</h2><div class="tbl"><table><thead><tr><th>${esc(t(lang, 'thName'))}</th><th>${esc(t(lang, 'divCapital'))}</th></tr></thead><tbody>${withCap.map((d) => `<tr><td>${esc(nm(d.name, lang))}</td><td>${esc(nm(d.capital, lang))}</td></tr>`).join('')}</tbody></table></div>`;
-  const faq = faqBlock(lang, [...withCap.slice(0, 3).map((d) => [t(lang, 'qCapitalFaq', { c: nm(d.name, lang) }), t(lang, 'capitalIs', { c: nm(d.name, lang), cap: nm(d.capital, lang) })]), [t(lang, 'qScoreFaq'), t(lang, 'aScore')]]);
+  const faq = faqBlock(lang, [[t(lang, 'qScoreFaq'), t(lang, 'aScore')]]);
   const related = `<h2>${esc(t(lang, 'related'))}</h2><ul class="links"><li><a href="${url(lang, extraPath(x))}">${esc(extraTitle(lang, x))}</a></li>${hasProv.has(x.country) ? `<li><a href="${url(lang, `countries/${x.c.slug}/map-quiz/`)}">${esc(provQuizTitle(lang, x.c, 'map'))}</a></li>` : ''}<li><a href="${url(lang, `countries/${x.c.slug}/`)}">${esc(name)}</a></li></ul>`;
   page(lang, p, { title, desc, script: true, nav: 'maps/', crumbs: [{ name: t(lang, 'countriesTitle'), p: 'countries/' }, { name, p: `countries/${x.c.slug}/` }, { name: title, p }],
     jsonld: [quizLd(lang, p, title, desc, place), faq.ld], body: `<h1>${esc(title)}</h1><p class="lede">${esc(desc)}</p>${gameShell(lang, data, coverImg(`/img/x/${x.key}-capitals.svg`, '#3F4A5A'))}${table}${faq.body}${related}` });
@@ -1285,8 +1287,6 @@ function statics() {
   write('llms.txt', `# ${SITE}
 
 > Free geography quizzes: flags, capital cities, click-the-country maps, and province/state quizzes. ${countries.length} countries (193 UN members plus Vatican City and Palestine), and first-level divisions with capitals for ${provCountries.length} countries, large and small. Available in ${LANGS.length} languages: ${LANGS.map((l) => L[l].native).join(', ')}.
-
-Every quiz page lists all of its answers in plain HTML, so the pages can be read and cited without running the quiz.
 
 ## Key pages
 - [Countries of the world](${abs('en', 'countries/')}): capital, flag, continent, area and population of every country

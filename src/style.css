@@ -265,11 +265,18 @@ footer .wrap{display:flex;gap:.5rem 1.5rem;flex-wrap:wrap}
   main.wrap{max-width:none;padding:0}
   h1{font-size:18pt;margin:0 0 6pt;color:#000}
   .pmap{border:0;padding:0;margin:0 0 8pt}
-  .psheet:not(.pon){display:none!important}
-  .psheet{margin:0}.psheet h2{font-size:11pt;margin:0 0 4pt;color:#000}
-  .pkey{font-size:9pt;margin:0;color:#000}
-  .pkey li{border-color:#999}
+  /* The printed document: the chosen map; for a numbered map, then the answer sheet (blank lines)
+     and the answer key (names), each on its own page. The lists are not shown on screen. */
+  /* The printed document is .pprint, put together by src/print.js when printing: the chosen map,
+     then for a numbered map the answer sheet (blank lines) and the answer key, each on a new page. */
+  .psheet{display:none!important}
+  .pprint{display:block!important}
+  .pprint section+section{break-before:page}
+  .pprint h2{font-size:12pt;margin:0 0 6pt;color:#000}
+  .pkey{font-size:10pt;margin:0;color:#000}
+  .pkey li{border-color:#999;padding:3pt 0}
 }
+@media screen{.pkey,.pprint{display:none}}
 .pkey li.pskip{display:none}
 .pname{display:none;fill:#000;stroke:#fff;stroke-width:2.5px;paint-order:stroke;font-family:system-ui,sans-serif;font-weight:600;text-anchor:middle;dominant-baseline:central}
 .pm-labeled .pname{display:inline}

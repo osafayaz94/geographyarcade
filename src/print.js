@@ -10,8 +10,9 @@
   var NS = 'http://www.w3.org/2000/svg';
 
   // All four versions sit one below the other. A version button scrolls to its sheet and selects
-  // it; scrolling selects the sheet in view. Print prints only the selected sheet (window.print
-  // opens the browser's print dialog, where "Save as PDF" makes a PDF).
+  // it; scrolling selects the sheet in view. Print prints the selected map plus, for a numbered
+  // map, the answer sheet and answer key (window.print opens the browser's print dialog, where
+  // "Save as PDF" makes a PDF).
   var MODES = ['blank', 'worksheet', 'labeled', 'answers'];
   var buttons = Array.prototype.slice.call(document.querySelectorAll('[data-mode]'));
   var sheets = {};
@@ -33,8 +34,35 @@
   buttons.forEach(function (b) {
     b.addEventListener('click', function () { go(b.getAttribute('data-mode')); });
   });
+  // The printed document (.pprint, shown only when printing): the chosen map, then, when that map
+  // carries numbers, the answer sheet (numbered blank lines) and the answer key, each on a new page.
+  // The two lists are never shown on the page itself.
+  var printDoc = null;
+  function buildPrint() {
+    if (!sheets.worksheet) return;
+    if (!printDoc) {
+      printDoc = document.createElement('div');
+      printDoc.className = 'pprint';
+      sheets.answers.parentNode.parentNode.insertBefore(printDoc, sheets.answers.parentNode.nextSibling);
+    }
+    printDoc.innerHTML = '';
+    function part(mode, what) {
+      var s = document.createElement('section');
+      s.className = 'pm-' + mode;
+      s.appendChild(sheets[mode].querySelector('h2').cloneNode(true));
+      var el = sheets[mode].querySelector(what);
+      if (el) s.appendChild(el.cloneNode(true));
+      printDoc.appendChild(s);
+    }
+    part(current, '.pmap');
+    if (current === 'worksheet' || current === 'answers') {
+      part('worksheet', '.pkey');
+      part('answers', '.pkey');
+    }
+  }
+  window.addEventListener('beforeprint', buildPrint);
   var printBtn = document.querySelector('[data-print]');
-  if (printBtn) printBtn.addEventListener('click', function () { window.print(); });
+  if (printBtn) printBtn.addEventListener('click', function () { buildPrint(); window.print(); });
   var fromLink = location.hash.slice(1);
   setMode(MODES.indexOf(fromLink) >= 0 ? fromLink : 'worksheet');
 
