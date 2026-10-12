@@ -137,7 +137,7 @@ const ONLY = (process.argv.find((a) => a.startsWith('--only=')) || '').slice(7).
     if (!extra && byArea >= provinceCountries) continue;
     if (ONLY.length && !ONLY.includes(c.iso3)) { if (!extra && out[c.iso2]) byArea++; continue; }
     const ov = overrides[c.iso3] || {};
-    if (ov.skip) { skipped.push(`${c.iso3} ${c.name.en}: ${ov.skip}`); continue; }
+    if (ov.skip) { delete out[c.iso2]; skipped.push(`${c.iso3} ${c.name.en}: ${ov.skip}`); continue; }
     let m;
     let gj;
     if (ov.source === 'osm') {
@@ -148,8 +148,9 @@ const ONLY = (process.argv.find((a) => a.startsWith('--only=')) || '').slice(7).
         const meta = await cachedFetch(`https://www.geoboundaries.org/api/current/${ov.source || 'gbOpen'}/${c.iso3}/${ov.level || 'ADM1'}/`);
         m = Array.isArray(meta) ? meta[0] : meta;
       } catch (e) { skipped.push(`${c.iso3} ${c.name.en}: no boundary data (${e.message})`); continue; }
-      gj = await cachedFetch(m.simplifiedGeometryGeoJSON);
+      try { gj = await cachedFetch(m.simplifiedGeometryGeoJSON); } catch (e) { gj = null; }
     }
+    if (!gj || !Array.isArray(gj.features)) { skipped.push(`${c.iso3} ${c.name.en}: no usable boundary shapes`); continue; }
     const drop = new Set(ov.drop || []);
     for (const f of gj.features) {
       f.properties.shapeName = fixText(f.properties.shapeName);
@@ -261,6 +262,24 @@ const ONLY = (process.argv.find((a) => a.startsWith('--only=')) || '').slice(7).
       return o;
     });
 
+    // One division split into several shapes in the source (a city and its rural part): keep one
+    // division and draw all its shapes under it.
+    const firstOf = {};
+    for (let i = list.length - 1; i >= 0; i--) if (list[i].qid) firstOf[list[i].qid] = i;
+    for (let i = list.length - 1; i >= 0; i--) {
+      const s = list[i];
+      const keep = s.qid != null ? firstOf[s.qid] : i;
+      if (keep === i) continue;
+      const a = gj.features.find((f) => f.properties.shapeID === list[keep].id);
+      const b = gj.features.find((f) => f.properties.shapeID === s.id);
+      if (a && b && a.geometry && b.geometry) {
+        const polys = (g) => (g.type === 'Polygon' ? [g.coordinates] : g.coordinates);
+        a.geometry = { type: 'MultiPolygon', coordinates: [...polys(a.geometry), ...polys(b.geometry)] };
+        gj.features = gj.features.filter((f) => f !== b);
+      }
+      report.push(`  ${c.iso3}: merged a second shape into ${list[keep].name.en}`);
+      list.splice(i, 1);
+    }
     // Two boundaries joined to the same Wikidata item means one join is wrong.
     const seenQ = {};
     for (const s of list) if (s.qid) (seenQ[s.qid] = seenQ[s.qid] || []).push(s.name.en);

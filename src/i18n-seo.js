@@ -1383,4 +1383,14 @@ const S = {
 // Words for Poland's voivodeships (src/i18n.js falls back to each language's word for provinces).
 const VOIV = { "en": [ "voivodeships", "Voivodeships" ], "pl": [ "województwa", "Województwa" ], "de": [ "Woiwodschaften", "Woiwodschaften" ], "nl": [ "woiwodschappen", "Woiwodschappen" ], "fr": [ "voïvodies", "Voïvodies" ], "es": [ "voivodatos", "Voivodatos" ], "it": [ "voivodati", "Voivodati" ], "pt": [ "voivodias", "Voivodias" ], "ru": [ "воеводства", "Воеводства" ] };
 
-module.exports = { IN, S, GRAM, VOIV };
+// More names for first-level divisions (2026-10-12, when every country got its divisions):
+// [lower-case, capitalised] per language.
+const MORE_TERMS = {
+  parishes: { en: ['parishes', 'Parishes'], zh: ['堂区', '堂区'], hi: ['पैरिश', 'पैरिश'], es: ['parroquias', 'Parroquias'], ar: ['أبرشيات', 'أبرشيات'], fr: ['paroisses', 'Paroisses'], de: ['Parishes', 'Parishes'], bn: ['প্যারিশ', 'প্যারিশ'], pt: ['paróquias', 'Paróquias'], ru: ['приходы', 'Приходы'], ur: ['پیرش', 'پیرش'], id: ['paroki', 'Paroki'], it: ['parrocchie', 'Parrocchie'], ja: ['教区', '教区'], ko: ['교구', '교구'], pl: ['parafie', 'Parafie'], nl: ['parishes', 'Parishes'] },
+  atolls: { en: ['atolls', 'Atolls'], zh: ['环礁', '环礁'], hi: ['एटॉल', 'एटॉल'], es: ['atolones', 'Atolones'], ar: ['جزر مرجانية', 'جزر مرجانية'], fr: ['atolls', 'Atolls'], de: ['Atolle', 'Atolle'], bn: ['অ্যাটল', 'অ্যাটল'], pt: ['atóis', 'Atóis'], ru: ['атоллы', 'Атоллы'], ur: ['اٹول', 'اٹول'], id: ['atol', 'Atol'], it: ['atolli', 'Atolli'], ja: ['環礁', '環礁'], ko: ['환초', '환초'], pl: ['atole', 'Atole'], nl: ['atollen', 'Atollen'] },
+};
+// Hindi and Urdu oblique forms for them (both masculine).
+Object.assign(GRAM.hi.obl, { 'पैरिश': 'पैरिशों', 'एटॉल': 'एटॉलों' });
+Object.assign(GRAM.ur.obl, { 'پیرش': 'پیرشوں', 'اٹول': 'اٹولوں' });
+
+module.exports = { IN, S, GRAM, VOIV, MORE_TERMS };

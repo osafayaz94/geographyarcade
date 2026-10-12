@@ -28,14 +28,34 @@ module.exports = {
   // (its 10 municipalities are too small to click).
   MKD: { source: 'osm', drop: ['MK-801', 'MK-803', 'MK-804', 'MK-805', 'MK-808', 'MK-809', 'MK-811', 'MK-814', 'MK-815', 'MK-817'] },
 
-  // Reorganised, and neither geoBoundaries nor Wikidata has the new divisions yet.
-  KAZ: { skip: '2022 reform added Abai, Jetisu and Ulytau; boundary data predates it' },
-  AGO: { skip: '2024 reform to 21 provinces; boundary data shows 18' },
-  BFA: { skip: '2025 reform to 17 regions; boundary data shows 13' },
-  AZE: { skip: 'ADM1 holds only the mainland and Nakhchivan; ADM2 is 60+ districts' },
-  MDG: { skip: '2021 split to 23 regions; boundary data shows 22' },
-  CAF: { skip: '2020 reform to 20 prefectures; boundary data shows 17' },
-  MLI: { skip: '2023 reform to 19 regions; boundary data predates it' },
+  // Reorganised after the geoBoundaries release: current divisions from Wikidata + OpenStreetMap
+  // (2026-10-12; they were skipped while Wikidata lacked the new divisions).
+  KAZ: { source: 'osm' }, // 2022 reform added Abai, Jetisu and Ulytau
+  // Wikidata still lists the divisions from before the reform, so these wait.
+  AGO: { skip: '2024 reform to 21 provinces; Wikidata and geoBoundaries still show 18' },
+  BFA: { skip: '2025 reform to 17 regions; Wikidata and geoBoundaries still show 13' },
+  // geoBoundaries predates a reform: current divisions from Wikidata + OpenStreetMap.
+  BDI: { source: 'osm' }, // 2025 reform to 5 provinces
+  SLE: { source: 'osm' }, // 2017: North West Province added
+  GNQ: { source: 'osm' }, // 2017: Djibloho added
+  TLS: { source: 'osm' }, // 2022: Atauro became a municipality
+  MNE: { source: 'osm' }, // municipalities added up to 2022 (Zeta)
+  // geoBoundaries names here don't join cleanly to Wikidata (truncated or different units), so two
+  // shapes landed on one item: take the official list from Wikidata and the shapes from OSM.
+  SGP: { source: 'osm' },
+  GMB: { source: 'osm' },
+  // Same join problem, and Wikidata lacks OpenStreetMap links for some of their divisions.
+  SYC: { skip: 'geoBoundaries names truncated (two Grand\'Anse districts joined to one item); OSM links missing on Wikidata' },
+  MLT: { skip: 'geoBoundaries councils join two shapes to one item; OSM links missing on Wikidata' },
+  LVA: { skip: 'geoBoundaries municipalities join two shapes to one item; OSM links missing on Wikidata' },
+  // Too few first-level divisions to make a quiz, or the source has the wrong level.
+  SVN: { skip: 'ADM1 in the source is the two cohesion regions; the 212 municipalities are too many' },
+  PSE: { skip: 'only two divisions (West Bank, Gaza Strip)' },
+  STP: { skip: 'only two divisions (São Tomé, Príncipe)' },
+  AZE: { source: 'osm' }, // geoBoundaries ADM1 holds only the mainland and Nakhchivan
+  MDG: { source: 'osm' }, // 2021 split to 23 regions
+  CAF: { source: 'osm' }, // 2020 reform to 20 prefectures
+  MLI: { source: 'osm' }, // 2023 reform to 19 regions
 
   // Better source or tier.
   ARG: { source: 'gbHumanitarian', iso: { 'Ciudad de Buenos Aires': 'AR-C', 'Buenos Aires': 'AR-B' } }, // adds the City of Buenos Aires

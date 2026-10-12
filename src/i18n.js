@@ -253,7 +253,7 @@ L.hi = {
     faqTitle: 'झटपट जवाब',
     qCapitalFaq: '{c} की राजधानी क्या है?',
     qContFaq: '{c} किस महाद्वीप में है?',
-    qAreaFaq: '{c} कितना बड़ा है?', aArea: '{c} का क्षेत्रफल {area} वर्ग किमी है। क्षेत्रफल में यह {n} देशों में {rank}वें स्थान पर है।',
+    qAreaFaq: '{c} का क्षेत्रफल कितना है?', aArea: '{c} का क्षेत्रफल {area} वर्ग किमी है। क्षेत्रफल में यह {n} देशों में {rank}वें स्थान पर है।',
     qPopFaq: '{c} की जनसंख्या कितनी है?', aPop: 'Wikidata के अनुसार {c} की जनसंख्या {pop} ({year}) है।', aPopNoYear: 'Wikidata के अनुसार {c} की जनसंख्या {pop} है।',
     qDivFaq: '{c} में {kitne} {term} हैं?', aDiv: '{c} में {n} {adm} हैं, जिनमें {list} शामिल हैं।',
     qBordersFaq: '{c} की सीमा किन देशों से लगती है?', aBorders: '{c} की ज़मीनी सीमा {list} से लगती है।', aNoBorders: '{c} की किसी देश से ज़मीनी सीमा नहीं है।',
@@ -615,9 +615,9 @@ L.bn = {
     playProvMap: 'মানচিত্রে {term} খুঁজুন', playProvCap: '{term}-এর রাজধানী বলুন',
     playCountryQuizzes: '{cont} কুইজ',
     faqTitle: 'দ্রুত উত্তর',
-    qCapitalFaq: '{c}-এর রাজধানী কী?',
-    qContFaq: '{c} কোন মহাদেশে?',
-    qAreaFaq: '{c} কত বড়?', aArea: '{c}-এর আয়তন {area} বর্গ কিমি। আয়তনে এটি {n}টি দেশের মধ্যে {rank} নম্বরে।',
+    qCapitalFaq: '{c}-এর রাজধানীর নাম কী?',
+    qContFaq: '{c} কোন মহাদেশে অবস্থিত?',
+    qAreaFaq: '{c}-এর আয়তন কত বর্গ কিলোমিটার?', aArea: '{c}-এর আয়তন {area} বর্গ কিমি। আয়তনে এটি {n}টি দেশের মধ্যে {rank} নম্বরে।',
     qPopFaq: '{c}-এর জনসংখ্যা কত?', aPop: 'Wikidata অনুযায়ী {c}-এর জনসংখ্যা {pop} ({year})।', aPopNoYear: 'Wikidata অনুযায়ী {c}-এর জনসংখ্যা {pop}।',
     qDivFaq: '{c}-এ কয়টি {term} আছে?', aDiv: '{c}-এ {n}টি {adm} আছে, যেমন {list}।',
     qBordersFaq: '{c}-এর সীমান্তে কোন কোন দেশ?', aBorders: '{c}-এর স্থল সীমান্ত আছে {list}-এর সঙ্গে।', aNoBorders: 'অন্য কোনো দেশের সঙ্গে {c}-এর স্থল সীমান্ত নেই।',
@@ -2009,6 +2009,7 @@ for (const l of LANGS) { Object.assign(L[l].s, SEO_STRINGS.S[l]); L[l].in = SEO_
 // Poland's first-level divisions are voivodeships (województwa); other languages without their own
 // word for them use their word for provinces.
 for (const l of LANGS) { const v = SEO_STRINGS.VOIV[l] || [L[l].term.provinces, L[l].Term.provinces]; L[l].term.voivodeships = v[0]; L[l].Term.voivodeships = v[1]; }
+for (const [k, byLang] of Object.entries(SEO_STRINGS.MORE_TERMS)) for (const l of LANGS) { const v = byLang[l] || byLang.en; L[l].term[k] = v[0]; L[l].Term[k] = v[1]; }
 
 function t(lang, key, vars = {}) {
   let s = L[lang].s[key];

@@ -54,8 +54,10 @@ for (const c of countries) c.borders = c.borders.filter((b) => byIso[b]);
 const areaRank = Object.fromEntries([...countries].sort((a, b) => b.area - a.area).map((c, i) => [c.iso2, i + 1]));
 // The fetch script already picked which countries get province pages (largest first,
 // skipping ones with outdated boundary data), so take whatever it saved.
+// Only countries whose map shapes are on disk: data/geo is not in git, so a quick (push) deploy
+// uses the cached shapes and a newly added country waits for the next full data run.
 const provCountries = [...countries].sort((a, b) => b.area - a.area)
-  .filter((c) => subdivisions[c.iso2] && subdivisions[c.iso2].divisions.length > 1);
+  .filter((c) => subdivisions[c.iso2] && subdivisions[c.iso2].divisions.length > 1 && fs.existsSync(path.join(__dirname, 'data', 'geo', `adm1-${c.iso3}.json`)));
 const hasProv = new Set(provCountries.map((c) => c.iso2));
 // Capital coordinates (scripts/fetch-capital-coords.js), for the outline printables of countries
 // without a province map; COUNTRY_PRINTS lists the countries that got one (filled in main()).
@@ -913,6 +915,28 @@ function countriesIndex(lang) {
 
 // Official languages come as ISO 639-3 codes; Intl names the ones it knows, English otherwise.
 const wcLangs = Object.fromEntries(require('world-countries/countries.json').map((x) => [x.cca2, dataFixes.languages[x.cca2] || x.languages || {}]));
+// Up to 12 countries from the same sub-region (world-countries), largest first, topped up from the
+// same continent: links that tie each country into its regional topic cluster.
+function nearbyBlock(lang, c, cont) {
+  const byArea = (a, b) => b.area - a.area;
+  const near = countries.filter((x) => x !== c && x.subregion && x.subregion === c.subregion).sort(byArea).slice(0, 12);
+  if (near.length < 6) near.push(...countries.filter((x) => x !== c && !near.includes(x) && x.continent === c.continent).sort(byArea).slice(0, 12 - near.length));
+  if (!near.length) return '';
+  return `<h2>${esc(pg(lang).moreIn.replace('{cont}', cont))}</h2><ul class="links">${near.map((x) => `<li><img src="${flagSrc(x.iso2)}" alt="" width="28" height="21" loading="lazy"><a href="${url(lang, `countries/${x.slug}/`)}">${esc(cName(x, lang))}</a></li>`).join('')}</ul>`;
+}
+// International calling code (world-countries idd): "+92"; where a country has many area-code
+// suffixes under one root (+1 for the US and Canada), just the root.
+const wcIdd = Object.fromEntries(require('world-countries/countries.json').map((x) => [x.cca2, x.idd || {}]));
+// Vatican City dials through Italy's +39 (06 698); the dataset's "+3" root is not a code.
+// North American numbering countries read "+1 876" (Jamaica), as they are usually written.
+const callingCode = (iso2) => {
+  if (iso2 === 'VA') return '+39 06 698';
+  const d = wcIdd[iso2] || {};
+  if (!d.root) return '';
+  const s = d.suffixes || [];
+  if (s.length !== 1) return d.root;
+  return d.root === '+1' ? `+1 ${s[0]}` : d.root + s[0];
+};
 function langNames(lang, c) {
   const dn = new Intl.DisplayNames([L[lang].locale], { type: 'language', fallback: 'none' });
   return Object.entries(wcLangs[c.iso2]).map(([code, en]) => {
@@ -963,6 +987,7 @@ function countryPage(lang, c) {
     c.currencies.length && [t(lang, 'fCurrency'), esc(currencyNames(lang, c).join(', '))],
     [t(lang, 'fBorders'), borders.length ? borders.map((b) => `<a href="${url(lang, `countries/${b.slug}/`)}">${esc(cName(b, lang))}</a>`).join(', ') : esc(t(lang, 'none'))],
     [t(lang, 'fLandlocked'), esc(t(lang, c.landlocked ? 'yes' : 'no'))],
+    callingCode(c.iso2) && [pg(lang).fCalling, esc(callingCode(c.iso2))],
   ].filter(Boolean);
 
   const qa = [
@@ -973,6 +998,13 @@ function countryPage(lang, c) {
   if (c.population) qa.push([t(lang, 'qPopFaq', { c: name }), wbPop[c.iso3] ? pg(lang).aPopWB.replace('{c}', name).replace('{pop}', num(lang, c.population.value)).replace('{year}', c.population.year) : c.population.year ? t(lang, 'aPop', { c: name, pop: num(lang, c.population.value), year: c.population.year }) : t(lang, 'aPopNoYear', { c: name, pop: num(lang, c.population.value) })]);
   if (sub) qa.push([t(lang, 'qDivFaq', { c: name, term: tm }), t(lang, 'aDiv', { c: name, n: divs.length, term: tm, list: listJoin(lang, divs.slice(0, 3).map((d) => nm(d.name, lang))) })]);
   qa.push([t(lang, 'qBordersFaq', { c: name }), borders.length ? t(lang, 'aBorders', { c: name, list: listJoin(lang, borders.map((b) => cName(b, lang))) }) : t(lang, 'aNoBorders', { c: name })]);
+  // More questions people ask in search, phrased the way they ask them (src/i18n-pages.js).
+  const P = pg(lang);
+  const fill = (s, v) => Object.entries(v).reduce((a, [k, x]) => a.split(`{${k}}`).join(x), s);
+  qa.push([fill(P.qLoc, { c: name }), borders.length ? fill(P.aLoc, { c: name, cont, list: listJoin(lang, borders.map((b) => cName(b, lang))) }) : fill(P.aLocNone, { c: name, cont })]);
+  if (c.currencies.length) qa.push([fill(P.qCur, { c: name }), fill(P.aCur, { c: name, list: listJoin(lang, currencyNames(lang, c)) })]);
+  if (c.languages.length) qa.push([fill(P.qLang, { c: name }), fill(P.aLang, { c: name, list: listJoin(lang, langNames(lang, c)) })]);
+  if (callingCode(c.iso2)) qa.push([fill(P.qCall, { c: name }), fill(P.aCall, { c: name, code: callingCode(c.iso2) })]);
   const faq = faqBlock(lang, qa);
 
   const quizLinks = QUIZ_TYPES.map((q) => `<a class="btn ghost" href="${url(lang, `${q.dir}/${c.continent}/`)}">${esc(quizTitle(lang, q.type, c.continent))}</a>`).join('');
@@ -989,6 +1021,7 @@ ${printVersions(lang, [printFor((pr) => pr.kind === 'prov' && pr.c === c), ...EX
 <div class="facts"><dl class="kv">${kv.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${v}</dd>`).join('')}</dl><img class="flagbig" src="${flagSrc(c.iso2)}" alt="${esc(t(lang, 'flagAlt', { c: name }))}" width="300" height="225" fetchpriority="high"></div>
 <h2>${esc(t(lang, 'playCountryQuizzes', { cont }))}</h2><div class="cta">${quizLinks}</div>
 ${divBlock}${sub ? '' : printVersions(lang, [printFor((pr) => pr.kind === 'country' && pr.c === c)])}${faq.body}
+${nearbyBlock(lang, c, cont)}
 <h2>${esc(tt(lang, 'moreGames'))}</h2><ul class="links">${COUNTRY_GAMES.map((g) => `<li><a href="${url(lang, `games/${g.key}/`)}">${esc(tt(lang, 'g.' + g.key))}</a></li>`).join('')}</ul>
 ${listLinks(lang, listsFor(c))}`;
 
