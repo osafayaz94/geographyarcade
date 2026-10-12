@@ -1215,9 +1215,10 @@ function about(lang) {
   const p = 'about/';
   const title = t(lang, 'aboutTitle');
   const desc = t(lang, 'aboutDesc');
-  // The maps section (the one naming Natural Earth) also says how the quizzes treat Kashmir.
-  // The second section (names, capitals, population) now has its text in src/i18n-pages.js.
-  const secs = L[lang].about.map(([h, txt], i) => [h, i === 1 ? pg(lang).aboutData : txt]).map(([h, txt]) => `<h2>${esc(h)}</h2><p>${esc(txt.replace('{n}', countries.length).replace('{d}', dateFmt(lang, DATA_DATE)) + (txt.includes('Natural Earth') ? ' ' + pg(lang).kashmirQuiz : ''))}</p>`).join('');
+  // Two sections have their current text in src/i18n-pages.js: names, capitals and population
+  // (the second), and the maps section (the one naming Natural Earth), which states the owner's
+  // border policy.
+  const secs = L[lang].about.map(([h, txt], i) => [h, i === 1 ? pg(lang).aboutData : txt.includes('Natural Earth') ? pg(lang).aboutMaps : txt]).map(([h, txt]) => `<h2>${esc(h)}</h2><p>${esc(txt.replace('{n}', countries.length).replace('{d}', dateFmt(lang, DATA_DATE)))}</p>`).join('');
   const lic = provCountries.map((c) => `<li>${esc(cName(c, lang))}: ${esc(subdivisions[c.iso2].source.license || '')}${subdivisions[c.iso2].source.sourceName ? ' · ' + esc(subdivisions[c.iso2].source.sourceName) : ''}</li>`).join('');
   const worldSrc = `<h2>${esc(tt(lang, 'worldGames'))}</h2><p>${esc(tt(lang, 'source', { s: 'Natural Earth (public domain); Wikidata (CC0); RESOLVE Ecoregions 2017 (CC BY 4.0); NASA Planetary Fact Sheet' }))}</p>`;
   // Contact line, once an address is set in site.config.js (contactEmail).

@@ -6,6 +6,8 @@
 module.exports = {
   en: {
     navUs: 'About us', navPrivacy: 'Privacy',
+
+    aboutMaps: "Country maps use Natural Earth 1:50m boundaries (public domain) through the world-atlas package. Province and state maps use geoBoundaries ADM1 boundaries (licences listed per country below), or OpenStreetMap where divisions changed more recently. A map of a single country follows that country's own official map, including land it claims: India's and Pakistan's both include Jammu and Kashmir, China's includes Taiwan, Russia's includes Crimea and four Ukrainian regions, Serbia's includes Kosovo and Venezuela's includes Guayana Esequiba. On world and continent maps, Indian-administered Jammu and Kashmir and Ladakh are shown as part of Pakistan, Crimea as part of Ukraine, the Golan Heights as part of Syria and Taiwan as part of China; Kosovo and the Falkland Islands are shown but not asked about. Maps are simplified so they load fast, so small details are smoothed.",
     aPopWB: "The World Bank puts the population of {c} at {pop} ({year}).",
     aboutData: "Country names, capitals, province names, province capitals and province populations come from Wikidata (CC0), fetched on {d}. Country populations come from the World Bank (CC BY 4.0), the latest year it publishes, the same year for every country; Vatican City's comes from Wikidata. ISO codes, areas, borders, languages and currencies come from the world-countries dataset (ODbL). Where these sources differ from official ones (a missing second capital, a regional language listed as official), the site corrects them.",
     kashmirQuiz: "That applies to the world and continent maps. A map of a single country (its states or provinces) follows that country's own official map, so the quizzes of both India and Pakistan include Jammu and Kashmir.",
@@ -39,6 +41,8 @@ module.exports = {
   },
   zh: {
     navUs: '关于我们', navPrivacy: '隐私',
+
+    aboutMaps: "国家地图使用 Natural Earth 1:50m 边界（公有领域），通过 world-atlas 软件包提供。省份和州的地图使用 geoBoundaries ADM1 边界（各国许可见下文），区划近年有变化的国家则使用 OpenStreetMap。单个国家的地图以该国官方地图为准，包括其主张的领土：印度和巴基斯坦的地图都包含查谟和克什米尔，中国的包含台湾，俄罗斯的包含克里米亚和乌克兰的四个地区，塞尔维亚的包含科索沃，委内瑞拉的包含埃塞奎博圭亚那。在世界地图和各大洲地图上，印度控制的查谟和克什米尔以及拉达克显示为巴基斯坦的一部分，克里米亚为乌克兰的一部分，戈兰高地为叙利亚的一部分，台湾为中国的一部分；科索沃和福克兰群岛会显示，但不出题。地图经过简化以便快速加载，因此细小部分会被平滑处理。",
     aPopWB: "据世界银行统计，{c}的人口为 {pop}（{year}年）。",
     aboutData: "国家名称、首都、省份名称、省会和省份人口来自 Wikidata（CC0），获取于{d}。国家人口来自世界银行（CC BY 4.0），采用其公布的最新年份，所有国家为同一年；梵蒂冈的人口来自 Wikidata。ISO 代码、面积、边界、语言和货币来自 world-countries 数据集（ODbL）。这些来源与官方资料不一致时（例如漏掉第二个首都，或把地区语言列为官方语言），本站会加以更正。",
     kashmirQuiz: "这适用于世界地图和各大洲地图。单个国家的地图（其省份或州）以该国官方地图为准，因此印度和巴基斯坦的测验都包含查谟和克什米尔。",
@@ -72,6 +76,8 @@ module.exports = {
   },
   hi: {
     navUs: 'हमारे बारे में', navPrivacy: 'गोपनीयता',
+
+    aboutMaps: "देशों के नक्शे world-atlas पैकेज के ज़रिए Natural Earth 1:50m सीमाओं (सार्वजनिक डोमेन) का उपयोग करते हैं। प्रांतों और राज्यों के नक्शे geoBoundaries ADM1 सीमाओं (हर देश का लाइसेंस नीचे दिया है) का, या जहाँ विभाजन हाल में बदले हैं वहाँ OpenStreetMap का उपयोग करते हैं। किसी एक देश का नक्शा उसी देश के आधिकारिक नक्शे के अनुसार है, उसके दावे वाली ज़मीन समेत: भारत और पाकिस्तान दोनों के नक्शों में जम्मू और कश्मीर शामिल है, चीन के नक्शे में ताइवान, रूस के नक्शे में क्रीमिया और यूक्रेन के चार क्षेत्र, सर्बिया के नक्शे में कोसोवो और वेनेज़ुएला के नक्शे में गुयाना एसेक्विबा। विश्व और महाद्वीपों के नक्शों पर भारत-प्रशासित जम्मू और कश्मीर तथा लद्दाख पाकिस्तान के हिस्से के रूप में, क्रीमिया यूक्रेन के, गोलान हाइट्स सीरिया के और ताइवान चीन के हिस्से के रूप में दिखाए गए हैं; कोसोवो और फ़ॉकलैंड द्वीप दिखाए गए हैं पर उन पर सवाल नहीं पूछे जाते। नक्शे जल्दी लोड हों, इसलिए उन्हें सरल बनाया गया है और छोटे विवरण चिकने कर दिए गए हैं।",
     aPopWB: "विश्व बैंक के अनुसार {c} की जनसंख्या {pop} ({year}) है।",
     aboutData: "देशों के नाम, राजधानियाँ, प्रांतों के नाम, प्रांतों की राजधानियाँ और प्रांतों की जनसंख्या Wikidata (CC0) से ली गई है, {d} को। देशों की जनसंख्या विश्व बैंक (CC BY 4.0) से है, उसका प्रकाशित सबसे नया वर्ष, सभी देशों के लिए एक ही वर्ष; वेटिकन सिटी की जनसंख्या Wikidata से है। ISO कोड, क्षेत्रफल, सीमाएँ, भाषाएँ और मुद्राएँ world-countries डेटासेट (ODbL) से हैं। जहाँ ये स्रोत आधिकारिक जानकारी से अलग हैं (जैसे दूसरी राजधानी छूट जाना, या किसी क्षेत्रीय भाषा को आधिकारिक बताना), वहाँ साइट उन्हें ठीक करती है।",
     kashmirQuiz: "यह विश्व और महाद्वीपों के नक्शों पर लागू होता है। किसी एक देश का नक्शा (उसके राज्य या प्रांत) उसी देश के आधिकारिक नक्शे के अनुसार है, इसलिए भारत और पाकिस्तान दोनों की क्विज़ में जम्मू और कश्मीर शामिल है।",
@@ -105,6 +111,8 @@ module.exports = {
   },
   es: {
     navUs: 'Quiénes somos', navPrivacy: 'Privacidad',
+
+    aboutMaps: "Los mapas de países usan los límites de Natural Earth 1:50m (dominio público) a través del paquete world-atlas. Los mapas de provincias y estados usan los límites ADM1 de geoBoundaries (licencias por país más abajo), u OpenStreetMap donde las divisiones cambiaron hace poco. El mapa de un solo país sigue el mapa oficial de ese país, incluidos los territorios que reclama: los de la India y Pakistán incluyen Jammu y Cachemira, el de China incluye Taiwán, el de Rusia incluye Crimea y cuatro regiones ucranianas, el de Serbia incluye Kosovo y el de Venezuela incluye la Guayana Esequiba. En los mapas del mundo y de los continentes, Jammu y Cachemira y Ladakh administrados por la India aparecen como parte de Pakistán, Crimea como parte de Ucrania, los Altos del Golán como parte de Siria y Taiwán como parte de China; Kosovo y las islas Malvinas se muestran, pero no se preguntan. Los mapas están simplificados para que carguen rápido, así que los detalles pequeños se suavizan.",
     aPopWB: "Según el Banco Mundial, {c} tiene {pop} habitantes ({year}).",
     aboutData: "Los nombres de países, capitales, provincias y capitales de provincia, y la población de las provincias, vienen de Wikidata (CC0), obtenidos el {d}. La población de los países viene del Banco Mundial (CC BY 4.0), el último año que publica, el mismo para todos los países; la de la Ciudad del Vaticano viene de Wikidata. Los códigos ISO, superficies, fronteras, idiomas y monedas vienen del conjunto world-countries (ODbL). Cuando estas fuentes difieren de las oficiales (una segunda capital que falta, un idioma regional dado como oficial), el sitio las corrige.",
     kashmirQuiz: "Eso se aplica a los mapas del mundo y de los continentes. El mapa de un solo país (sus estados o provincias) sigue el mapa oficial de ese país, por eso los juegos de la India y de Pakistán incluyen Jammu y Cachemira.",
@@ -138,6 +146,8 @@ module.exports = {
   },
   ar: {
     navUs: 'من نحن', navPrivacy: 'الخصوصية',
+
+    aboutMaps: "تستخدم خرائط الدول حدود Natural Earth بمقياس 1:50m (ملكية عامة) عبر حزمة world-atlas. وتستخدم خرائط المقاطعات والولايات حدود geoBoundaries من المستوى ADM1 (التراخيص مذكورة لكل دولة أدناه)، أو OpenStreetMap حيث تغيّرت التقسيمات مؤخرًا. خريطة الدولة الواحدة تتبع الخريطة الرسمية لتلك الدولة، بما في ذلك الأراضي التي تطالب بها: خريطتا الهند وباكستان تضمان جامو وكشمير، وخريطة الصين تضم تايوان، وخريطة روسيا تضم القرم وأربع مناطق أوكرانية، وخريطة صربيا تضم كوسوفو، وخريطة فنزويلا تضم غيانا إسيكيبا. وعلى خرائط العالم والقارات تظهر جامو وكشمير ولداخ الخاضعتان لإدارة الهند جزءًا من باكستان، والقرم جزءًا من أوكرانيا، ومرتفعات الجولان جزءًا من سوريا، وتايوان جزءًا من الصين؛ أما كوسوفو وجزر فوكلاند فتظهر دون أن تُطرح عنها أسئلة. الخرائط مبسّطة لتُحمَّل بسرعة، لذا تُنعَّم التفاصيل الصغيرة.",
     aPopWB: "يقدّر البنك الدولي عدد سكان {c} بـ {pop} ({year}).",
     aboutData: "أسماء الدول والعواصم وأسماء المقاطعات وعواصمها وعدد سكانها من Wikidata (CC0)، جُلبت في {d}. أما عدد سكان الدول فمن البنك الدولي (CC BY 4.0)، بأحدث سنة ينشرها، وهي السنة نفسها لكل الدول؛ وعدد سكان مدينة الفاتيكان من Wikidata. رموز ISO والمساحات والحدود واللغات والعملات من مجموعة بيانات world-countries (ODbL). وحين تختلف هذه المصادر عن المصادر الرسمية (عاصمة ثانية ناقصة، أو لغة إقليمية مذكورة كلغة رسمية) يصححها الموقع.",
     kashmirQuiz: "ينطبق ذلك على خرائط العالم والقارات. أما خريطة الدولة الواحدة (ولاياتها أو مقاطعاتها) فتتبع الخريطة الرسمية لتلك الدولة، لذلك يضم اختبارا الهند وباكستان كلاهما جامو وكشمير.",
@@ -171,6 +181,8 @@ module.exports = {
   },
   fr: {
     navUs: 'Qui sommes-nous', navPrivacy: 'Confidentialité',
+
+    aboutMaps: "Les cartes des pays utilisent les frontières Natural Earth 1:50m (domaine public) via le paquet world-atlas. Les cartes des provinces et États utilisent les limites ADM1 de geoBoundaries (licences par pays ci-dessous), ou OpenStreetMap là où les divisions ont changé récemment. La carte d'un seul pays suit la carte officielle de ce pays, y compris les territoires qu'il revendique : celles de l'Inde et du Pakistan incluent toutes deux le Jammu-et-Cachemire, celle de la Chine inclut Taïwan, celle de la Russie la Crimée et quatre régions ukrainiennes, celle de la Serbie le Kosovo et celle du Venezuela la Guayana Esequiba. Sur les cartes du monde et des continents, le Jammu-et-Cachemire et le Ladakh administrés par l'Inde font partie du Pakistan, la Crimée de l'Ukraine, le plateau du Golan de la Syrie et Taïwan de la Chine ; le Kosovo et les îles Malouines sont affichés mais ne font pas l'objet de questions. Les cartes sont simplifiées pour charger vite, les petits détails sont donc lissés.",
     aPopWB: "Selon la Banque mondiale, la population de {c} est de {pop} habitants ({year}).",
     aboutData: "Les noms des pays, les capitales, les noms des provinces, leurs chefs-lieux et leur population viennent de Wikidata (CC0), récupérés le {d}. La population des pays vient de la Banque mondiale (CC BY 4.0), la dernière année publiée, la même pour tous les pays ; celle de la Cité du Vatican vient de Wikidata. Les codes ISO, superficies, frontières, langues et monnaies viennent du jeu de données world-countries (ODbL). Quand ces sources diffèrent des sources officielles (une deuxième capitale manquante, une langue régionale donnée comme officielle), le site les corrige.",
     kashmirQuiz: "Cela vaut pour les cartes du monde et des continents. La carte d'un seul pays (ses États ou provinces) suit la carte officielle de ce pays : les quiz de l'Inde et du Pakistan incluent donc tous deux le Jammu-et-Cachemire.",
@@ -204,6 +216,8 @@ module.exports = {
   },
   de: {
     navUs: 'Über uns', navPrivacy: 'Datenschutz',
+
+    aboutMaps: "Länderkarten nutzen die Grenzen von Natural Earth 1:50m (gemeinfrei) über das Paket world-atlas. Karten der Provinzen und Bundesstaaten nutzen die ADM1-Grenzen von geoBoundaries (Lizenzen je Land unten) oder OpenStreetMap, wo sich die Gliederung zuletzt geändert hat. Die Karte eines einzelnen Landes folgt der offiziellen Karte dieses Landes, einschließlich beanspruchter Gebiete: Die Karten Indiens und Pakistans enthalten beide Jammu und Kashmir, die Chinas enthält Taiwan, die Russlands die Krim und vier ukrainische Regionen, die Serbiens den Kosovo und die Venezuelas Guayana Esequiba. Auf Welt- und Kontinentkarten gehören das von Indien verwaltete Jammu und Kashmir sowie Ladakh zu Pakistan, die Krim zur Ukraine, die Golanhöhen zu Syrien und Taiwan zu China; der Kosovo und die Falklandinseln werden gezeigt, aber nicht abgefragt. Die Karten sind vereinfacht, damit sie schnell laden, deshalb sind kleine Details geglättet.",
     aPopWB: "Laut Weltbank hat {c} {pop} Einwohner ({year}).",
     aboutData: "Ländernamen, Hauptstädte, Namen und Hauptstädte der Provinzen sowie deren Einwohnerzahlen stammen aus Wikidata (CC0), abgerufen am {d}. Die Einwohnerzahlen der Länder stammen von der Weltbank (CC BY 4.0), aus dem neuesten veröffentlichten Jahr, für alle Länder dasselbe Jahr; die der Vatikanstadt aus Wikidata. ISO-Codes, Flächen, Grenzen, Sprachen und Währungen stammen aus dem Datensatz world-countries (ODbL). Wo diese Quellen von offiziellen Angaben abweichen (eine fehlende zweite Hauptstadt, eine Regionalsprache als Amtssprache), korrigiert die Seite sie.",
     kashmirQuiz: "Das gilt für die Welt- und Kontinentkarten. Die Karte eines einzelnen Landes (seine Bundesstaaten oder Provinzen) folgt der offiziellen Karte dieses Landes, daher enthalten die Quiz zu Indien und zu Pakistan beide Jammu und Kashmir.",
@@ -237,6 +251,8 @@ module.exports = {
   },
   bn: {
     navUs: 'আমাদের সম্পর্কে', navPrivacy: 'গোপনীয়তা',
+
+    aboutMaps: "দেশের মানচিত্রে world-atlas প্যাকেজের মাধ্যমে Natural Earth 1:50m সীমানা (পাবলিক ডোমেইন) ব্যবহার করা হয়। প্রদেশ ও রাজ্যের মানচিত্রে geoBoundaries ADM1 সীমানা (প্রতিটি দেশের লাইসেন্স নিচে দেওয়া) বা যেখানে বিভাগ সম্প্রতি বদলেছে সেখানে OpenStreetMap ব্যবহার করা হয়। একটি দেশের মানচিত্র সেই দেশের সরকারি মানচিত্র অনুসরণ করে, তার দাবি করা ভূখণ্ডসহ: ভারত ও পাকিস্তান দুই দেশের মানচিত্রেই জম্মু ও কাশ্মীর আছে, চীনের মানচিত্রে তাইওয়ান, রাশিয়ার মানচিত্রে ক্রিমিয়া ও ইউক্রেনের চারটি অঞ্চল, সার্বিয়ার মানচিত্রে কসোভো এবং ভেনেজুয়েলার মানচিত্রে গায়ানা এসেকিবা। বিশ্ব ও মহাদেশের মানচিত্রে ভারত-শাসিত জম্মু ও কাশ্মীর এবং লাদাখ পাকিস্তানের অংশ, ক্রিমিয়া ইউক্রেনের, গোলান মালভূমি সিরিয়ার এবং তাইওয়ান চীনের অংশ হিসেবে দেখানো হয়েছে; কসোভো ও ফকল্যান্ড দ্বীপপুঞ্জ দেখানো হয়, কিন্তু এদের নিয়ে প্রশ্ন করা হয় না। দ্রুত লোড হওয়ার জন্য মানচিত্র সরল করা হয়েছে, তাই ছোট খুঁটিনাটি মসৃণ করা হয়েছে।",
     aPopWB: "বিশ্বব্যাংকের হিসাবে {c}-এর জনসংখ্যা {pop} ({year})।",
     aboutData: "দেশের নাম, রাজধানী, প্রদেশের নাম, প্রদেশের রাজধানী ও প্রদেশের জনসংখ্যা Wikidata (CC0) থেকে নেওয়া, {d} তারিখে। দেশের জনসংখ্যা বিশ্বব্যাংক (CC BY 4.0) থেকে, তাদের প্রকাশিত সর্বশেষ বছরের, সব দেশের জন্য একই বছর; ভ্যাটিকান সিটির জনসংখ্যা Wikidata থেকে। ISO কোড, আয়তন, সীমান্ত, ভাষা ও মুদ্রা world-countries ডেটাসেট (ODbL) থেকে। এসব উৎস যেখানে সরকারি তথ্যের সঙ্গে মেলে না (যেমন দ্বিতীয় রাজধানী বাদ পড়া, বা আঞ্চলিক ভাষাকে সরকারি ভাষা বলা), সেখানে সাইটটি তা সংশোধন করে।",
     kashmirQuiz: "এটি বিশ্ব ও মহাদেশের মানচিত্রের ক্ষেত্রে প্রযোজ্য। একটি দেশের মানচিত্র (তার রাজ্য বা প্রদেশ) সেই দেশের সরকারি মানচিত্র অনুসরণ করে, তাই ভারত ও পাকিস্তান দুই দেশের কুইজেই জম্মু ও কাশ্মীর আছে।",
@@ -270,6 +286,8 @@ module.exports = {
   },
   pt: {
     navUs: 'Quem somos', navPrivacy: 'Privacidade',
+
+    aboutMaps: "Os mapas dos países usam as fronteiras Natural Earth 1:50m (domínio público) por meio do pacote world-atlas. Os mapas de províncias e estados usam os limites ADM1 do geoBoundaries (licenças por país abaixo), ou o OpenStreetMap onde as divisões mudaram recentemente. O mapa de um único país segue o mapa oficial desse país, incluindo os territórios que ele reivindica: os da Índia e do Paquistão incluem Jammu e Caxemira, o da China inclui Taiwan, o da Rússia inclui a Crimeia e quatro regiões ucranianas, o da Sérvia inclui Kosovo e o da Venezuela inclui a Guiana Essequiba. Nos mapas do mundo e dos continentes, Jammu e Caxemira e Ladakh administrados pela Índia aparecem como parte do Paquistão, a Crimeia como parte da Ucrânia, as Colinas de Golã como parte da Síria e Taiwan como parte da China; Kosovo e as Ilhas Malvinas aparecem, mas não são perguntados. Os mapas são simplificados para carregar rápido, por isso os detalhes pequenos são suavizados.",
     aPopWB: "Segundo o Banco Mundial, a população de {c} é de {pop} habitantes ({year}).",
     aboutData: "Os nomes dos países, capitais, nomes e capitais das províncias e a população das províncias vêm do Wikidata (CC0), obtidos em {d}. A população dos países vem do Banco Mundial (CC BY 4.0), o ano mais recente publicado, o mesmo para todos os países; a da Cidade do Vaticano vem do Wikidata. Códigos ISO, áreas, fronteiras, idiomas e moedas vêm do conjunto world-countries (ODbL). Quando essas fontes diferem das oficiais (uma segunda capital ausente, um idioma regional dado como oficial), o site as corrige.",
     kashmirQuiz: "Isso vale para os mapas do mundo e dos continentes. O mapa de um único país (seus estados ou províncias) segue o mapa oficial desse país, por isso os quizzes da Índia e do Paquistão incluem Jammu e Caxemira.",
@@ -303,6 +321,8 @@ module.exports = {
   },
   ru: {
     navUs: 'О нас', navPrivacy: 'Конфиденциальность',
+
+    aboutMaps: "Карты стран используют границы Natural Earth 1:50m (общественное достояние) через пакет world-atlas. Карты провинций и штатов используют границы ADM1 из geoBoundaries (лицензии по странам указаны ниже) или OpenStreetMap там, где деление недавно менялось. Карта одной страны следует официальной карте этой страны, включая территории, на которые она претендует: карты Индии и Пакистана обе включают Джамму и Кашмир, карта Китая включает Тайвань, карта России включает Крым и четыре украинских региона, карта Сербии включает Косово, а карта Венесуэлы включает Гайана-Эссекибо. На картах мира и континентов управляемые Индией Джамму и Кашмир и Ладакх показаны как часть Пакистана, Крым как часть Украины, Голанские высоты как часть Сирии, а Тайвань как часть Китая; Косово и Фолклендские острова показаны, но о них не спрашивают. Карты упрощены, чтобы быстро загружаться, поэтому мелкие детали сглажены.",
     aPopWB: "По данным Всемирного банка, население ({c}) составляет {pop} ({year}).",
     aboutData: "Названия стран, столицы, названия и центры провинций, а также население провинций взяты из Wikidata (CC0), загружены {d}. Население стран взято у Всемирного банка (CC BY 4.0), за последний опубликованный год, одинаковый для всех стран; население Ватикана взято из Wikidata. Коды ISO, площади, границы, языки и валюты взяты из набора данных world-countries (ODbL). Если эти источники расходятся с официальными (не указана вторая столица, региональный язык назван официальным), сайт их исправляет.",
     kashmirQuiz: "Это относится к картам мира и континентов. Карта одной страны (её штатов или провинций) следует официальной карте этой страны, поэтому викторины и по Индии, и по Пакистану включают Джамму и Кашмир.",
@@ -336,6 +356,8 @@ module.exports = {
   },
   ur: {
     navUs: 'ہمارے بارے میں', navPrivacy: 'رازداری',
+
+    aboutMaps: "ممالک کے نقشے world-atlas پیکیج کے ذریعے Natural Earth 1:50m سرحدیں (پبلک ڈومین) استعمال کرتے ہیں۔ صوبوں اور ریاستوں کے نقشے geoBoundaries ADM1 سرحدیں (ہر ملک کا لائسنس نیچے درج ہے) استعمال کرتے ہیں، یا جہاں تقسیم حال ہی میں بدلی ہو وہاں OpenStreetMap۔ کسی ایک ملک کا نقشہ اسی ملک کے سرکاری نقشے کے مطابق ہے، اس کے دعوے والی زمین سمیت: بھارت اور پاکستان دونوں کے نقشوں میں جموں و کشمیر شامل ہے، چین کے نقشے میں تائیوان، روس کے نقشے میں کریمیا اور یوکرین کے چار علاقے، سربیا کے نقشے میں کوسووو اور وینزویلا کے نقشے میں گیانا ایسیکیبو۔ دنیا اور براعظموں کے نقشوں پر بھارت کے زیرِ انتظام جموں و کشمیر اور لداخ پاکستان کا حصہ، کریمیا یوکرین کا، گولان کی پہاڑیاں شام کا اور تائیوان چین کا حصہ دکھائے گئے ہیں؛ کوسووو اور فاک لینڈ جزائر دکھائے جاتے ہیں مگر ان کے بارے میں سوال نہیں پوچھا جاتا۔ نقشوں کو تیزی سے لوڈ کرنے کے لیے سادہ بنایا گیا ہے، اس لیے چھوٹی تفصیلات ہموار کر دی گئی ہیں۔",
     aPopWB: "عالمی بینک کے مطابق {c} کی آبادی {pop} ({year}) ہے۔",
     aboutData: "ممالک کے نام، دارالحکومت، صوبوں کے نام، صوبائی دارالحکومت اور صوبوں کی آبادی Wikidata (CC0) سے لی گئی ہے، {d} کو۔ ممالک کی آبادی عالمی بینک (CC BY 4.0) سے ہے، اس کا شائع کردہ تازہ ترین سال، تمام ممالک کے لیے ایک ہی سال؛ ویٹیکن سٹی کی آبادی Wikidata سے ہے۔ ISO کوڈ، رقبہ، سرحدیں، زبانیں اور کرنسیاں world-countries ڈیٹاسیٹ (ODbL) سے ہیں۔ جہاں یہ ماخذ سرکاری معلومات سے مختلف ہوں (جیسے دوسرا دارالحکومت رہ جانا، یا کسی علاقائی زبان کو سرکاری کہنا)، وہاں سائٹ انہیں درست کرتی ہے۔",
     kashmirQuiz: "یہ دنیا اور براعظموں کے نقشوں پر لاگو ہوتا ہے۔ کسی ایک ملک کا نقشہ (اس کی ریاستیں یا صوبے) اسی ملک کے سرکاری نقشے کے مطابق ہے، اس لیے بھارت اور پاکستان دونوں کے کوئز میں جموں و کشمیر شامل ہے۔",
@@ -369,6 +391,8 @@ module.exports = {
   },
   id: {
     navUs: 'Tentang kami', navPrivacy: 'Privasi',
+
+    aboutMaps: "Peta negara menggunakan batas Natural Earth 1:50m (domain publik) melalui paket world-atlas. Peta provinsi dan negara bagian menggunakan batas ADM1 dari geoBoundaries (lisensi per negara tercantum di bawah), atau OpenStreetMap jika pembagian wilayahnya baru berubah. Peta satu negara mengikuti peta resmi negara itu, termasuk wilayah yang diklaimnya: peta India dan Pakistan sama-sama mencakup Jammu dan Kashmir, peta Tiongkok mencakup Taiwan, peta Rusia mencakup Krimea dan empat wilayah Ukraina, peta Serbia mencakup Kosovo, dan peta Venezuela mencakup Guayana Esequiba. Di peta dunia dan peta benua, Jammu dan Kashmir serta Ladakh yang dikelola India ditampilkan sebagai bagian Pakistan, Krimea sebagai bagian Ukraina, Dataran Tinggi Golan sebagai bagian Suriah, dan Taiwan sebagai bagian Tiongkok; Kosovo dan Kepulauan Falkland ditampilkan, tetapi tidak ditanyakan. Peta disederhanakan agar cepat dimuat, sehingga detail kecil dihaluskan.",
     aPopWB: "Menurut Bank Dunia, jumlah penduduk {c} adalah {pop} ({year}).",
     aboutData: "Nama negara, ibu kota, nama dan ibu kota provinsi, serta jumlah penduduk provinsi berasal dari Wikidata (CC0), diambil pada {d}. Jumlah penduduk negara berasal dari Bank Dunia (CC BY 4.0), tahun terbaru yang diterbitkannya, tahun yang sama untuk semua negara; penduduk Kota Vatikan berasal dari Wikidata. Kode ISO, luas, perbatasan, bahasa, dan mata uang berasal dari dataset world-countries (ODbL). Jika sumber ini berbeda dari sumber resmi (ibu kota kedua yang terlewat, bahasa daerah yang disebut resmi), situs ini memperbaikinya.",
     kashmirQuiz: "Itu berlaku untuk peta dunia dan peta benua. Peta satu negara (negara bagian atau provinsinya) mengikuti peta resmi negara itu, sehingga kuis India maupun Pakistan sama-sama mencakup Jammu dan Kashmir.",
@@ -402,6 +426,8 @@ module.exports = {
   },
   it: {
     navUs: 'Chi siamo', navPrivacy: 'Privacy',
+
+    aboutMaps: "Le cartine dei paesi usano i confini Natural Earth 1:50m (pubblico dominio) tramite il pacchetto world-atlas. Le cartine di province e stati usano i confini ADM1 di geoBoundaries (licenze per paese qui sotto), oppure OpenStreetMap dove le suddivisioni sono cambiate di recente. La cartina di un solo paese segue la cartina ufficiale di quel paese, compresi i territori che rivendica: quelle dell'India e del Pakistan includono entrambe Jammu e Kashmir, quella della Cina include Taiwan, quella della Russia la Crimea e quattro regioni ucraine, quella della Serbia il Kosovo e quella del Venezuela la Guayana Esequiba. Sulle cartine del mondo e dei continenti, Jammu e Kashmir e Ladakh amministrati dall'India sono mostrati come parte del Pakistan, la Crimea come parte dell'Ucraina, le alture del Golan come parte della Siria e Taiwan come parte della Cina; il Kosovo e le isole Falkland sono mostrati, ma non sono oggetto di domande. Le cartine sono semplificate per caricarsi in fretta, quindi i dettagli piccoli sono smussati.",
     aPopWB: "Secondo la Banca Mondiale, la popolazione di {c} è di {pop} abitanti ({year}).",
     aboutData: "I nomi dei paesi, le capitali, i nomi e i capoluoghi delle province e la popolazione delle province vengono da Wikidata (CC0), scaricati il {d}. La popolazione dei paesi viene dalla Banca Mondiale (CC BY 4.0), l'ultimo anno pubblicato, lo stesso per tutti i paesi; quella della Città del Vaticano viene da Wikidata. Codici ISO, superfici, confini, lingue e valute vengono dal dataset world-countries (ODbL). Quando queste fonti differiscono da quelle ufficiali (una seconda capitale mancante, una lingua regionale indicata come ufficiale), il sito le corregge.",
     kashmirQuiz: "Questo vale per le cartine del mondo e dei continenti. La cartina di un solo paese (i suoi stati o province) segue la cartina ufficiale di quel paese, perciò i quiz dell'India e del Pakistan includono entrambi Jammu e Kashmir.",
@@ -435,6 +461,8 @@ module.exports = {
   },
   ja: {
     navUs: '運営者について', navPrivacy: 'プライバシー',
+
+    aboutMaps: "国の地図は world-atlas パッケージを通じて Natural Earth 1:50m の境界（パブリックドメイン）を使用しています。州・県の地図は geoBoundaries の ADM1 境界（各国のライセンスは下記）、または区分が最近変わった国では OpenStreetMap を使用しています。1つの国の地図は、その国が主張する領土を含め、その国の公式地図に従います。インドとパキスタンの地図はどちらもジャンムー・カシミールを含み、中国の地図は台湾を、ロシアの地図はクリミアとウクライナの4地域を、セルビアの地図はコソボを、ベネズエラの地図はグアヤナ・エセキバを含みます。世界地図と大陸の地図では、インドが管理するジャンムー・カシミールとラダックはパキスタンの一部、クリミアはウクライナの一部、ゴラン高原はシリアの一部、台湾は中国の一部として表示しています。コソボとフォークランド諸島は表示しますが、出題はしません。地図は速く読み込めるよう簡略化しているため、細かな部分はなめらかになっています。",
     aPopWB: "世界銀行によると、{c}の人口は{pop}人です（{year}年）。",
     aboutData: "国名、首都、州・県の名前と州都・県庁所在地、州・県の人口は Wikidata（CC0）から{d}に取得しています。国の人口は世界銀行（CC BY 4.0）の最新の公表年のもので、すべての国で同じ年です。バチカン市国の人口は Wikidata から取得しています。ISO コード、面積、国境、言語、通貨は world-countries データセット（ODbL）によるものです。これらの情報源が公式の情報と異なる場合（2つ目の首都が抜けている、地域の言語が公用語とされている など）は、当サイトで修正しています。",
     kashmirQuiz: "これは世界地図と大陸の地図に当てはまります。1つの国の地図（州や県）はその国の公式地図に従うため、インドとパキスタンのクイズにはどちらもジャンムー・カシミールが含まれます。",
@@ -468,6 +496,8 @@ module.exports = {
   },
   ko: {
     navUs: '소개', navPrivacy: '개인정보',
+
+    aboutMaps: "나라 지도는 world-atlas 패키지를 통해 Natural Earth 1:50m 경계(퍼블릭 도메인)를 사용합니다. 주와 도 지도는 geoBoundaries ADM1 경계(나라별 라이선스는 아래 참조)를 사용하며, 행정구역이 최근에 바뀐 나라는 OpenStreetMap을 사용합니다. 한 나라의 지도는 그 나라가 주장하는 영토를 포함해 그 나라의 공식 지도를 따릅니다. 인도와 파키스탄 지도에는 모두 잠무 카슈미르가, 중국 지도에는 대만이, 러시아 지도에는 크림반도와 우크라이나의 네 지역이, 세르비아 지도에는 코소보가, 베네수엘라 지도에는 과야나에세키바가 들어 있습니다. 세계 지도와 대륙 지도에서는 인도가 관할하는 잠무 카슈미르와 라다크를 파키스탄의 일부로, 크림반도를 우크라이나의 일부로, 골란고원을 시리아의 일부로, 대만을 중국의 일부로 표시합니다. 코소보와 포클랜드 제도는 표시하지만 문제로 내지는 않습니다. 지도는 빠르게 불러오도록 단순화했기 때문에 작은 부분은 매끄럽게 처리되어 있습니다.",
     aPopWB: "세계은행에 따르면 {c}의 인구는 {pop}명입니다({year}년).",
     aboutData: "나라 이름, 수도, 주·도 이름과 주도, 주·도 인구는 Wikidata(CC0)에서 {d}에 가져왔습니다. 나라 인구는 세계은행(CC BY 4.0)이 발표한 최신 연도의 자료로, 모든 나라가 같은 연도입니다. 바티칸 시국의 인구는 Wikidata에서 가져왔습니다. ISO 코드, 면적, 국경, 언어, 통화는 world-countries 데이터셋(ODbL)에서 가져왔습니다. 이 자료가 공식 자료와 다를 때(두 번째 수도가 빠진 경우, 지역 언어가 공용어로 적힌 경우 등)에는 사이트에서 바로잡습니다.",
     kashmirQuiz: "이는 세계 지도와 대륙 지도에 해당합니다. 한 나라의 지도(주나 도)는 그 나라의 공식 지도를 따르므로, 인도와 파키스탄 퀴즈 모두에 잠무 카슈미르가 들어 있습니다.",
@@ -501,6 +531,8 @@ module.exports = {
   },
   pl: {
     navUs: 'O nas', navPrivacy: 'Prywatność',
+
+    aboutMaps: "Mapy państw korzystają z granic Natural Earth 1:50m (domena publiczna) za pośrednictwem pakietu world-atlas. Mapy prowincji i stanów korzystają z granic geoBoundaries ADM1 (licencje podane niżej dla każdego kraju) lub z OpenStreetMap tam, gdzie podział niedawno się zmienił. Mapa jednego państwa jest zgodna z oficjalną mapą tego państwa, łącznie z terenami, do których rości sobie prawo: mapy Indii i Pakistanu obejmują Dżammu i Kaszmir, mapa Chin obejmuje Tajwan, mapa Rosji Krym i cztery regiony Ukrainy, mapa Serbii Kosowo, a mapa Wenezueli Gujanę Essequibo. Na mapach świata i kontynentów administrowane przez Indie Dżammu i Kaszmir oraz Ladakh są pokazane jako część Pakistanu, Krym jako część Ukrainy, Wzgórza Golan jako część Syrii, a Tajwan jako część Chin; Kosowo i Falklandy są pokazane, ale nie ma o nie pytań. Mapy są uproszczone, aby szybko się wczytywały, więc drobne szczegóły są wygładzone.",
     aPopWB: "Według Banku Światowego liczba ludności ({c}) wynosi {pop} ({year}).",
     aboutData: "Nazwy państw, stolice, nazwy i stolice prowincji oraz liczba ludności prowincji pochodzą z Wikidata (CC0), pobrane {d}. Liczba ludności państw pochodzi z Banku Światowego (CC BY 4.0), z najnowszego opublikowanego roku, tego samego dla wszystkich państw; dla Watykanu z Wikidata. Kody ISO, powierzchnie, granice, języki i waluty pochodzą ze zbioru world-countries (ODbL). Gdy te źródła różnią się od oficjalnych (brak drugiej stolicy, język regionalny podany jako urzędowy), strona je poprawia.",
     kashmirQuiz: "Dotyczy to map świata i kontynentów. Mapa jednego państwa (jego stanów lub prowincji) jest zgodna z oficjalną mapą tego państwa, dlatego quizy o Indiach i o Pakistanie obejmują Dżammu i Kaszmir.",
@@ -534,6 +566,8 @@ module.exports = {
   },
   nl: {
     navUs: 'Over ons', navPrivacy: 'Privacy',
+
+    aboutMaps: "Landkaarten gebruiken de grenzen van Natural Earth 1:50m (publiek domein) via het pakket world-atlas. Kaarten van provincies en staten gebruiken de ADM1-grenzen van geoBoundaries (licenties per land hieronder), of OpenStreetMap waar de indeling onlangs is veranderd. De kaart van één land volgt de officiële kaart van dat land, inclusief gebied dat het claimt: de kaarten van India en Pakistan bevatten allebei Jammu en Kasjmir, die van China bevat Taiwan, die van Rusland de Krim en vier Oekraïense regio's, die van Servië Kosovo en die van Venezuela Guayana Esequiba. Op de wereldkaart en de kaarten van de werelddelen horen het door India bestuurde Jammu en Kasjmir en Ladakh bij Pakistan, de Krim bij Oekraïne, de Golanhoogten bij Syrië en Taiwan bij China; Kosovo en de Falklandeilanden worden getoond, maar er wordt niet naar gevraagd. De kaarten zijn vereenvoudigd zodat ze snel laden, dus kleine details zijn gladgestreken.",
     aPopWB: "Volgens de Wereldbank heeft {c} {pop} inwoners ({year}).",
     aboutData: "Namen van landen, hoofdsteden, namen en hoofdsteden van provincies en het inwonertal van provincies komen uit Wikidata (CC0), opgehaald op {d}. Het inwonertal van landen komt van de Wereldbank (CC BY 4.0), het nieuwste gepubliceerde jaar, voor alle landen hetzelfde jaar; dat van Vaticaanstad komt uit Wikidata. ISO-codes, oppervlaktes, grenzen, talen en munten komen uit de dataset world-countries (ODbL). Waar deze bronnen afwijken van officiële bronnen (een ontbrekende tweede hoofdstad, een streektaal die als officieel staat vermeld), corrigeert de site ze.",
     kashmirQuiz: "Dat geldt voor de wereldkaart en de kaarten van de werelddelen. De kaart van één land (zijn staten of provincies) volgt de officiële kaart van dat land, dus de quizzen over India en over Pakistan bevatten allebei Jammu en Kasjmir.",

@@ -70,6 +70,15 @@ async function simplify(geojson, pct) {
 const numToIso2 = Object.fromEntries(wc.map((c) => [c.ccn3, c.cca2]));
 // Territories that UN-recognised borders place inside a member state.
 const MERGE = { Somaliland: 'SO', 'N. Cyprus': 'CY' };
+// Owner's decision for world and continent maps: Taiwan is shown and played as part of China.
+const REASSIGN = { TW: 'CN' };
+const isoOf = (num, name) => { const i = numToIso2[num]; return REASSIGN[i] || i || MERGE[name] || null; };
+// Land moved between countries on world and continent maps (Natural Earth ids: 643 Russia,
+// 804 Ukraine, 376 Israel, 760 Syria).
+const WORLD_TRANSFERS = [
+  { from: '643', to: '804', file: 'UKR', names: ['Autonomous Republic of Crimea', 'Sevastopol'] },
+  { from: '376', to: '760', file: 'SYR', names: ['Quneitra'] },
+];
 
 // Kashmir (site owner's decision, see data/subdivision-overrides.js): the area in
 // data/geo/kashmir.json is cut out of India and merged, with the Siachen Glacier, into Pakistan.
@@ -90,6 +99,19 @@ async function worldBase() {
     pak.geometry = geomOf(await mapshaper.applyCommands('-i a.json -dissolve2 gap-fill-area=300km2 -o out.json format=geojson', { 'a.json': fcOf(pak, k.features[0], ...(siachen ? [siachen] : [])) }));
     fc.features = fc.features.filter((f) => f !== siachen);
   }
+  // Owner's decisions for world and continent maps (2026-10-12): Crimea with Ukraine, the Golan
+  // Heights with Syria (outlines from Ukraine's and Syria's own division maps).
+  for (const t of WORLD_TRANSFERS) {
+    const f = path.join(__dirname, '..', 'data', 'geo', `adm1-${t.file}.json`);
+    if (!fs.existsSync(f)) continue;
+    const src = JSON.parse(fs.readFileSync(f, 'utf8'));
+    const area = { type: 'FeatureCollection', features: src.features.filter((x) => t.names.includes(x.properties.shapeName)) };
+    if (area.features.length !== t.names.length) continue;
+    const from = fc.features.find((x) => x.id === t.from);
+    const to = fc.features.find((x) => x.id === t.to);
+    from.geometry = geomOf(await mapshaper.applyCommands('-i a.json -erase k.json -filter-slivers min-area=100km2 -o out.json format=geojson', { 'a.json': fcOf(from), 'k.json': area }));
+    to.geometry = geomOf(await mapshaper.applyCommands('-i a.json -dissolve2 gap-fill-area=300km2 -o out.json format=geojson', { 'a.json': fcOf(to, ...area.features) }));
+  }
   return (worldRaw = fc);
 }
 
@@ -99,7 +121,7 @@ async function worldFeatures(pct) {
   if (worldCache[pct]) return worldCache[pct];
   const fc = await simplify(JSON.parse(JSON.stringify(await worldBase())), pct);
   for (const f of fc.features) {
-    f.iso2 = numToIso2[f.id] || MERGE[f.properties.name] || null;
+    f.iso2 = isoOf(f.id, f.properties.name);
     rewind(f);
   }
   return (worldCache[pct] = fc.features);
@@ -110,7 +132,7 @@ let worldColours = null;
 function countryColours() {
   if (worldColours) return worldColours;
   const topo = require('world-atlas/countries-50m.json');
-  const keyOf = (g) => numToIso2[g.id] || MERGE[g.properties && g.properties.name] || null;
+  const keyOf = (g) => isoOf(g.id, g.properties && g.properties.name);
   const adj = adjacency(topo, 'countries', keyOf);
   const ids = [...new Set(topo.objects.countries.geometries.map(keyOf).filter(Boolean)), ...wc.map((c) => c.cca2)];
   return (worldColours = colour([...new Set(ids)], adj));
@@ -200,7 +222,8 @@ async function continentSvg(viewKey, countries) {
 // drawn on the main map. Farther pieces: a whole division becomes an inset box; a remote
 // island belonging to a mainland division (Easter Island, for Chile) is left off.
 // Parts further than this from the main landmass are drawn as insets (Spain: the Canary Islands).
-const NEAR_KM = { RUS: 4200, IDN: 4000, USA: Infinity, ESP: 1200, 'x-spain-provinces': 1200 };
+// China: distances run from Xinjiang (the largest single shape), so Taiwan is about 3,850 km away.
+const NEAR_KM = { RUS: 4200, IDN: 4000, CHN: 4500, USA: Infinity, ESP: 1200, 'x-spain-provinces': 1200 };
 const MAX_BYTES = 70 * 1024;
 
 // Returns { svg, ids } where ids are the divisions actually drawn (and so playable).
@@ -332,7 +355,7 @@ async function artFeatures() {
   if (artLand) return artLand;
   const topo = require('world-atlas/countries-110m.json');
   const fc = await simplify(feature(topo, topo.objects.countries), 12);
-  fc.features.forEach((f) => { f.iso2 = numToIso2[f.id] || MERGE[f.properties.name] || null; rewind(f); });
+  fc.features.forEach((f) => { f.iso2 = isoOf(f.id, f.properties.name); rewind(f); });
   return (artLand = fc.features.filter((f) => f.id !== '010'));
 }
 
@@ -642,7 +665,7 @@ async function hemispheres() {
   const fc = await worldBase();
   const byIso = {};
   for (const f of fc.features) {
-    const iso2 = numToIso2[f.id] || MERGE[f.properties.name];
+    const iso2 = isoOf(f.id, f.properties.name);
     if (!iso2 || !f.geometry) continue;
     const polys = f.geometry.type === 'Polygon' ? [f.geometry.coordinates] : f.geometry.coordinates;
     for (const p of polys) {

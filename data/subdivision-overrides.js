@@ -80,7 +80,42 @@ module.exports = {
   // Name and code fixes.
   CHN: {
     iso: { 'Guangzhou Province': 'CN-GD' }, // mislabelled Guangdong in the source
-    drop: ['Taiwan Province'], // shown as the divisions the PRC administers
+    // Owner's policy: one-country maps follow that government's official map, so China's includes
+    // Taiwan Province (the source already does; Arunachal Pradesh and Aksai Chin lie within Tibet
+    // and Xinjiang there). Its capital as the PRC designates it: Taipei.
+    qid: { 'Taiwan Province': 'Q57251' },
+    capital: { 'Taiwan Province': 'Q1867' },
+  },
+  // Same policy, units each government claims, with outlines from the other country's data:
+  // Russia's constitution lists Crimea, Sevastopol and four Ukrainian regions (whole oblasts);
+  // Serbia's districts include Kosovo (Serbia's five districts, built from Kosovo's seven); Venezuela's
+  // states include Guayana Esequiba (Guyana's regions west of the Essequibo River).
+  RUS: {
+    addUnits: [
+      { id: 'RUS-CR', name: 'Republic of Crimea', qid: 'Q15966495', file: 'UKR', names: ['Autonomous Republic of Crimea'] },
+      { id: 'RUS-SEV', name: 'Sevastopol', qid: 'Q7525', file: 'UKR', names: ['Sevastopol'] },
+      { id: 'RUS-DPR', name: "Donetsk People's Republic", qid: 'Q16150196', file: 'UKR', names: ['Donetsk Oblast'] },
+      { id: 'RUS-LPR', name: "Luhansk People's Republic", qid: 'Q16746854', file: 'UKR', names: ['Luhansk Oblast'] },
+      { id: 'RUS-ZAP', name: 'Zaporozhye Oblast', qid: 'Q114333615', file: 'UKR', names: ['Zaporizhia Oblast'], capital: 'Q157835' },
+      { id: 'RUS-KHE', name: 'Kherson Oblast', qid: 'Q114331288', file: 'UKR', names: ['Kherson Oblast'], capital: 'Q156732' },
+    ],
+    capitalNames: { Q157835: { en: 'Zaporozhye' } },
+  },
+  SRB: {
+    addUnits: [
+      { id: 'SRB-KOS', name: 'Kosovo District', qid: 'Q1452368', gb: 'XKX', names: ['District of Prishtina', 'District of Ferizaj'] },
+      { id: 'SRB-PEC', name: 'Peć District', qid: 'Q2510536', gb: 'XKX', names: ['District of Peja', 'District of Gjakova'] },
+      { id: 'SRB-PRZ', name: 'Prizren District', qid: 'Q201085', gb: 'XKX', names: ['District of Prizren'] },
+      { id: 'SRB-KMI', name: 'Kosovska Mitrovica District', qid: 'Q2017517', gb: 'XKX', names: ['District of Mitrovica'] },
+      { id: 'SRB-KPO', name: 'Kosovo-Pomoravlje District', qid: 'Q124725', gb: 'XKX', names: ['District of Gjilan'] },
+    ],
+    // Serbian names of the district seats (Wikidata labels use the Albanian forms).
+    capitalNames: { Q25270: { en: 'Priština' }, Q112657: { en: 'Peć' }, Q178168: { en: 'Kosovska Mitrovica' }, Q739808: { en: 'Gnjilane' } },
+  },
+  VEN: {
+    addUnits: [
+      { id: 'VEN-GE', name: 'Guayana Esequiba', qid: 'Q816253', file: 'GUY', names: ['Barina-Waini', 'Pomeroon-Supenaam', 'Cuyuni-Mazaruni', 'Potaro-Siparuni', 'Upper Takutu-Upper Essequibo'] },
+    ],
   },
   CIV: { iso: { 'Bas-Sassandra': 'CI-BS', Denguele: 'CI-DN', "District Autonome D'Abidjan": 'CI-AB', 'District Autonome De Yamoussoukro': 'CI-YM', 'Goh-Djiboua': 'CI-GD', Lacs: 'CI-LC', Montagnes: 'CI-MG', Savanes: 'CI-SV', 'Valle Du Bandama': 'CI-VB', Woroba: 'CI-WR', Zanzan: 'CI-ZZ', Lagunes: 'CI-LG' } },
   ESP: { iso: { 'Comunitat Valenciana': 'ES-VC', 'Illes Balears': 'ES-IB' } },

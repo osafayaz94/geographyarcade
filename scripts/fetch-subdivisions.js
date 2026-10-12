@@ -182,6 +182,26 @@ const ONLY = (process.argv.find((a) => a.startsWith('--only=')) || '').slice(7).
       }
     }
     if (ov.addKashmir) gj.features.push(await kashmirFeature(gj, ov.addKashmir));
+    // Units the government claims, outlined from another country's saved map (file) or from
+    // geoBoundaries (gb), several source shapes dissolved into one.
+    for (const u of ov.addUnits || []) {
+      let src;
+      if (u.file) {
+        const f = path.join(GEO, `adm1-${u.file}.json`);
+        if (!fs.existsSync(f)) { report.push(`  ${c.iso3}: ${u.name} skipped, no saved ${u.file} map yet`); continue; }
+        src = JSON.parse(fs.readFileSync(f, 'utf8'));
+      } else {
+        const meta = await cachedFetch(`https://www.geoboundaries.org/api/current/gbOpen/${u.gb}/ADM1/`);
+        src = await cachedFetch((Array.isArray(meta) ? meta[0] : meta).simplifiedGeometryGeoJSON);
+      }
+      const parts = src.features.filter((f) => u.names.includes(fixText(f.properties.shapeName)) || u.names.includes(f.properties.shapeName));
+      if (parts.length !== u.names.length) { report.push(`  ${c.iso3}: ${u.name} skipped, found ${parts.length} of ${u.names.length} source shapes`); continue; }
+      const res = await mapshaper.applyCommands('-i src.json -dissolve -o out.json format=geojson', { 'src.json': { type: 'FeatureCollection', features: parts } });
+      const o = JSON.parse(res['out.json']);
+      const geometry = o.geometries ? o.geometries[0] : o.features[0].geometry;
+      gj.features.push({ type: 'Feature', properties: { shapeName: u.name, shapeID: u.id, shapeISO: null, qid: u.qid }, geometry });
+      if (u.capital) (ov.capital = ov.capital || {})[u.name] = u.capital;
+    }
     gj.features = gj.features.filter((f) => !drop.has(f.properties.shapeName) && !drop.has(f.properties.shapeISO));
     const feats = gj.features;
     if (feats.length < 2) { skipped.push(`${c.iso3} ${c.name.en}: fewer than 2 divisions`); continue; }
@@ -213,14 +233,16 @@ const ONLY = (process.argv.find((a) => a.startsWith('--only=')) || '').slice(7).
     }
 
     // Capitals of the subdivisions.
-    const capIds = subs.flatMap((s) => (s.qid ? qidValues(ent[s.qid], 'P36').slice(0, 1) : []));
+    // A capital set in the overrides wins over Wikidata's (e.g. the capital a government's law names).
+    const capFor = (s) => (ov.capital && ov.capital[s.shapeName]) || (s.qid && ent[s.qid] ? qidValues(ent[s.qid], 'P36')[0] : null);
+    const capIds = subs.map(capFor).filter(Boolean);
     const capEnt = await entities(capIds);
 
     const list = subs.map((s) => {
       const e = s.qid && ent[s.qid];
       const name = e ? labels(e) : { en: s.shapeName };
       if (!name.en) name.en = s.shapeName;
-      const capId = e && !ov.noCapitals ? qidValues(e, 'P36')[0] : null;
+      const capId = !ov.noCapitals ? capFor(s) : null;
       const cap = capId && capEnt[capId] ? labels(capEnt[capId]) : null;
       const pop = e ? latestQuantity(e, 'P1082') : null;
       const area = e ? latestQuantity(e, 'P2046') : null;
@@ -231,6 +253,11 @@ const ONLY = (process.argv.find((a) => a.startsWith('--only=')) || '').slice(7).
       // The added Kashmir unit: Wikidata's area for the former state includes land drawn
       // elsewhere on this map, so leave it blank rather than show a figure that doesn't match.
       if (ov.addKashmir && s.shapeID === ov.addKashmir.id) { o.area = null; Object.assign(o.name, ov.addKashmir.names || {}); }
+      // Added units: the English name chosen in the overrides, and no area (the source's area is
+      // for a differently drawn territory). Capital names as the claiming government writes them.
+      const added = (ov.addUnits || []).find((u) => u.id === s.shapeID);
+      if (added) { o.name.en = added.name; o.area = null; }
+      if (o.capital && ov.capitalNames && ov.capitalNames[o.capitalQid]) Object.assign(o.capital, ov.capitalNames[o.capitalQid]);
       return o;
     });
 
