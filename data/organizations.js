@@ -86,6 +86,7 @@ module.exports = [
   // section). `former`: the state these countries once formed (Wikidata item, first and last year);
   // `unitedUntil`: a full date or a year; `indep`: the year each country became independent.
   { key: 'scandinavia', slug: 'scandinavia-countries', qid: 'Q21195', region: true, count: 3, members: 'DK NO SE' },
+  { key: 'nordic-region', slug: 'nordic-countries', qid: 'Q52062', region: true, count: 5, name: { en: 'Nordic countries' }, members: 'DK FI IS NO SE' },
   { key: 'baltic', slug: 'baltic-states', qid: 'Q39731', region: true, count: 3, members: 'EE LV LT' },
   { key: 'benelux', slug: 'benelux-countries', qid: 'Q13116', region: true, count: 3, members: 'BE NL LU' },
   { key: 'balkans', slug: 'balkan-countries', qid: 'Q23522', region: true, count: 10, note: 'orgNoteKosovo', members: 'AL BA BG HR GR ME MK RO RS SI' },
