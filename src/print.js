@@ -86,6 +86,17 @@
       s.id = m;
       var h = document.createElement('h2');
       h.textContent = b ? b.textContent : m;
+      // Each version has its own PDF: a download button beside its heading.
+      var pl = document.querySelector('.pdl a[data-pdf="' + m + '"]');
+      var lab = document.querySelector('.pdl');
+      if (pl && lab) {
+        var dl = document.createElement('a');
+        dl.className = 'btn ghost pdfdl';
+        dl.href = pl.getAttribute('href');
+        dl.setAttribute('download', '');
+        dl.textContent = lab.getAttribute('data-label');
+        h.appendChild(dl);
+      }
       var map = document.createElement('div');
       map.className = 'pmap';
       map.appendChild(svg.cloneNode(true));

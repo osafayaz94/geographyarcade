@@ -1265,7 +1265,7 @@ function printPage(lang, pr) {
   const heading = title.replace(/\s*[（(]PDF[)）]$/, '');
   const body = `<h1>${esc(heading)}</h1><p class="lede">${esc(desc)}</p>`
     + `<div class="pctl"><div class="seg" role="group" aria-label="${esc(heading)}">${modes}</div><button class="btn" type="button" data-print>${esc(t(lang, 'printBtn'))}</button><a class="btn ghost" href="${url(lang, pr.quiz)}">${esc(t(lang, 'printQuizLink'))}</a></div>`
-    + `<p class="pdl"><span>${esc(pg(lang).pdfBtn)}:</span>${PRINT_MODES.map(([m, k]) => `<a class="btn ghost" href="${url(lang, pr.p)}${pdfFile(pr.p, m)}" download>${esc(t(lang, k))}</a>`).join('')}</p>`
+    + `<p class="pdl" data-label="${esc(pg(lang).pdfBtn)}"><span>${esc(pg(lang).pdfBtn)}:</span>${PRINT_MODES.map(([m, k]) => `<a class="btn ghost" data-pdf="${m}" href="${url(lang, pr.p)}${pdfFile(pr.p, m)}" download>${esc(t(lang, k))}</a>`).join('')}</p>`
     + `<p class="note ptip">${esc(t(lang, 'printTip'))}</p>`
     + (w > h * 1.15 ? '<style>@page{size:landscape}@media print{.pprint .pmap svg{max-height:115mm}}</style>' : '')
     + `<div class="pmap" data-src="${pr.src}"${pr.kind === 'set' ? ' data-set' : ''}><img src="${pr.src}" alt="${esc(title)}" width="${w}" height="${h}" decoding="async" fetchpriority="low"></div>`
