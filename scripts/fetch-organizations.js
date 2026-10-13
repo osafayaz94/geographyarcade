@@ -14,7 +14,7 @@ async function labelsOf(ids) {
   const out = {};
   if (!ids.length) return out;
   const rows = await sparql(`SELECT ?i ?l ?lang WHERE { VALUES ?i { ${ids.map((q) => 'wd:' + q).join(' ')} } ?i rdfs:label ?l. BIND(LANG(?l) AS ?lang) FILTER(?lang IN (${LANGS.map((l) => `"${l}"`).join(',')}, "zh-hans")) }`);
-  for (const r of rows) { const l = r.lang === 'zh-hans' ? 'zh' : r.lang; out[r.i] = out[r.i] || {}; if (!out[r.i][l] || r.lang === 'zh-hans') out[r.i][l] = r.l; }
+  for (const r of rows) { const l = r.lang === 'zh-hans' ? 'zh' : r.lang; out[r.i] = out[r.i] || {}; if (!out[r.i][l] || r.lang === 'zh-hans') out[r.i][l] = r.l.replace(/\s*[–—]\s*/g, '-'); } // house style: no dashes ("стран-экспортёров", "secretaris-generaal")
   return out;
 }
 
