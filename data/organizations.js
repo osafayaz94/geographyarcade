@@ -2,6 +2,7 @@
 // membership data is incomplete), the headquarters city, and the Wikidata item for the names,
 // founding year and current head (scripts/fetch-organizations.js -> data/organizations.json).
 // `count` is the official number of member countries, checked against `members` when fetching.
+// `region`, `former`, `unitedUntil`, `indep`: see the regions block at the end.
 // `founded`: year, where Wikidata's inception is a forerunner (OEEC for the OECD...).
 // `note`: key of a sentence in src/i18n-pages.js for members that are not countries on this site.
 module.exports = [
@@ -81,4 +82,37 @@ module.exports = [
     members: 'AU IN JP US' },
   { key: 'five-eyes', founded: 1946, slug: 'five-eyes-countries', qid: 'Q15978258', hq: null, count: 5,
     members: 'AU CA NZ GB US' },
+  // ----- Regions and groups of countries: no headquarters or head, so `region: true` (shown in their own
+  // section). `former`: the state these countries once formed (Wikidata item, first and last year);
+  // `unitedUntil`: a full date or a year; `indep`: the year each country became independent.
+  { key: 'scandinavia', slug: 'scandinavia-countries', qid: 'Q21195', region: true, count: 3, members: 'DK NO SE' },
+  { key: 'baltic', slug: 'baltic-states', qid: 'Q39731', region: true, count: 3, members: 'EE LV LT' },
+  { key: 'benelux', slug: 'benelux-countries', qid: 'Q13116', region: true, count: 3, members: 'BE NL LU' },
+  { key: 'balkans', slug: 'balkan-countries', qid: 'Q23522', region: true, count: 10, note: 'orgNoteKosovo', members: 'AL BA BG HR GR ME MK RO RS SI' },
+  { key: 'western-balkans', slug: 'western-balkans-countries', qid: null, region: true, count: 5, note: 'orgNoteKosovo', name: { en: 'Western Balkans', zh: '西巴尔干', hi: 'पश्चिमी बाल्कन', es: 'Balcanes Occidentales', ar: 'غرب البلقان', fr: 'Balkans occidentaux', de: 'Westbalkan', bn: 'পশ্চিম বলকান', pt: 'Bálcãs Ocidentais', ru: 'Западные Балканы', ur: 'مغربی بلقان', id: 'Balkan Barat', it: 'Balcani occidentali', ja: '西バルカン', ko: '서발칸', pl: 'Bałkany Zachodnie', nl: 'Westelijke Balkan' },
+    members: 'AL BA ME MK RS' },
+  { key: 'iberia', slug: 'iberian-peninsula-countries', qid: 'Q12837', region: true, count: 3, members: 'ES PT AD' },
+  { key: 'british-isles', slug: 'british-isles-countries', qid: 'Q38272', region: true, count: 2, members: 'GB IE' },
+  { key: 'central-asia', slug: 'central-asia-countries', qid: 'Q27275', region: true, count: 5, members: 'KZ KG TJ TM UZ' },
+  { key: 'southeast-asia', slug: 'southeast-asia-countries', qid: 'Q11708', region: true, count: 11, members: 'BN KH ID LA MY MM PH SG TH TL VN' },
+  { key: 'middle-east', slug: 'middle-east-countries', qid: 'Q7204', region: true, count: 17, members: 'BH CY EG IR IQ IL JO KW LB OM PS QA SA SY TR AE YE' },
+  { key: 'gulf-states', slug: 'gulf-states', qid: 'Q2218629', region: true, count: 6, name: { en: 'Gulf states' }, members: 'BH KW OM QA SA AE' },
+  { key: 'horn-of-africa', slug: 'horn-of-africa-countries', qid: 'Q40556', region: true, count: 4, members: 'DJ ER ET SO' },
+  { key: 'central-america', slug: 'central-america-countries', qid: 'Q27611', region: true, count: 7, members: 'BZ CR SV GT HN NI PA' },
+  { key: 'caribbean', slug: 'caribbean-countries', qid: 'Q664609', region: true, count: 13, members: 'AG BS BB CU DM DO GD HT JM KN LC VC TT' },
+  { key: 'andean-countries', slug: 'andean-countries', qid: 'Q490417', region: true, count: 6, name: { en: 'Andean countries' }, members: 'BO CL CO EC PE VE' },
+  { key: 'southern-cone', slug: 'southern-cone-countries', qid: 'Q236118', region: true, count: 4, members: 'AR CL PY UY' },
+  { key: 'guianas', slug: 'guianas-countries', qid: 'Q650667', region: true, name: { en: 'The Guianas' }, count: 2, note: 'orgNoteGuianas', members: 'GY SR' },
+  { key: 'polynesia', slug: 'polynesia-countries', qid: 'Q35942', region: true, count: 3, members: 'WS TO TV' },
+  { key: 'melanesia', slug: 'melanesia-countries', qid: 'Q37394', region: true, count: 4, members: 'FJ PG SB VU' },
+  { key: 'micronesia-region', slug: 'micronesia-region-countries', qid: 'Q3359409', region: true, name: { en: 'Micronesia (region)' }, count: 5, members: 'FM KI MH NR PW' },
+  { key: 'former-soviet', slug: 'former-soviet-republics', qid: 'Q302045', region: true, count: 15, name: { en: 'Former Soviet republics' },
+    former: [{ qid: 'Q15180', from: 1922, until: 1991 }], unitedUntil: '1991-12-26',
+    indep: { LT: 1990, AM: 1991, AZ: 1991, BY: 1991, EE: 1991, GE: 1991, KZ: 1991, KG: 1991, LV: 1991, MD: 1991, RU: 1991, TJ: 1991, TM: 1991, UA: 1991, UZ: 1991 },
+    members: 'AM AZ BY EE GE KZ KG LV LT MD RU TJ TM UA UZ' },
+  { key: 'former-yugoslavia', slug: 'former-yugoslavia-countries', qid: null, region: true, count: 6, note: 'orgNoteKosovo',
+    name: { en: 'Former Yugoslavia', zh: '前南斯拉夫', hi: 'पूर्व यूगोस्लाविया', es: 'Antigua Yugoslavia', ar: 'يوغوسلافيا السابقة', fr: 'Ex-Yougoslavie', de: 'Ehemaliges Jugoslawien', bn: 'প্রাক্তন যুগোস্লাভিয়া', pt: 'Antiga Jugoslávia', ru: 'Бывшая Югославия', ur: 'سابق یوگوسلاویہ', id: 'Bekas Yugoslavia', it: 'Ex Jugoslavia', ja: '旧ユーゴスラビア', ko: '구 유고슬라비아', pl: 'Dawna Jugosławia', nl: 'Voormalig Joegoslavië' },
+    former: [{ qid: 'Q36704', from: 1918, until: 1992 }, { qid: 'Q838261', from: 1992, until: 2003 }, { qid: 'Q37024', from: 2003, until: 2006 }], unitedUntil: '2006',
+    indep: { SI: 1991, HR: 1991, MK: 1991, BA: 1992, RS: 2006, ME: 2006 },
+    members: 'SI HR BA RS ME MK' },
 ];
