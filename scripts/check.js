@@ -8,6 +8,8 @@ const fs = require('fs');
 const path = require('path');
 const CONFIG = require('../site.config');
 
+// --no-pdf: skip the PDF links (before scripts/make-pdfs.js has run, e.g. a local check: `npm run verify`).
+const NO_PDF = process.argv.includes('--no-pdf');
 const DIST = path.join(__dirname, '..', 'dist');
 const SITE = CONFIG.domain.replace(/\/+$/, '');
 const errors = [];
@@ -77,6 +79,7 @@ Object.values(pages).forEach((p) => {
   });
   // Internal links and assets must exist.
   all(/\s(?:href|src)="(\/[^"]*)"/g, p.html).forEach((m) => {
+    if (NO_PDF && m[1].endsWith('.pdf')) return;
     if (!exists(decode(m[1]))) errors.push(`${where}: broken link ${m[1]}`);
   });
 
@@ -155,6 +158,10 @@ console.log(`Every indexable page is reachable from / in at most ${maxDepth} cli
 if (warnings.length) console.log(`\n${warnings.length} warning(s):\n  ` + warnings.slice(0, 40).join('\n  '));
 if (errors.length) {
   console.error(`\n${errors.length} error(s):\n  ` + errors.slice(0, 60).join('\n  '));
+  // A summary by kind, last, so a few real problems are not buried under a long list.
+  const kinds = {};
+  for (const e of errors) { const k = e.replace(/^\/\S*: /, '').replace(/\/\S+/g, '...').slice(0, 70); kinds[k] = (kinds[k] || 0) + 1; }
+  console.error('\nErrors by kind:\n  ' + Object.entries(kinds).sort((x, y) => y[1] - x[1]).map(([k, n]) => `${n} x ${k}`).join('\n  '));
   process.exit(1);
 }
 console.log('No errors.');
