@@ -753,4 +753,60 @@ async function listMapZoom(highlight, members, view) {
     + `<path d="${off}" fill="#EFE9DC" stroke="#fff" stroke-width=".6"/><path d="${on}" fill="#E07A3F" stroke="#fff" stroke-width=".8"/>${dots}</svg>`;
 }
 
-module.exports = { groupView, listMapZoom, listMap, countryShapes, continentSvg, adm1Svg, adm1Thumb, continentThumb, addStar, regionArt, physSvg, latLongSvg, hemispheres, countryGameArt, LAT_LINES, VIEWS };
+// ---------- History: the area of a civilization on today's borders ----------
+// area: GeoJSON MultiPolygon (lon/lat, from data/history-areas.json); countries: [{ iso2, latlng }].
+// Returns the picture (1000 x 510: the area in orange over modern countries, zoomed to fit) and the
+// countries it covers, in whole or in part: the country's centre, or a quarter of its outline, lies inside.
+async function historyMap(area, countries) {
+  const W2 = 1000, H2 = 510;
+  const [[w, s], [e, n]] = d3.geoBounds(area);
+  const lonSpan = e >= w ? e - w : e - w + 360;
+  const wide = lonSpan > 120 || n - s > 80;
+  let proj;
+  if (wide) {
+    proj = d3.geoNaturalEarth1().fitExtent([[6, 6], [W2 - 6, H2 - 6]], { type: 'Sphere' });
+  } else {
+    const m = Math.max(3, 0.12 * Math.max(lonSpan, n - s));
+    const box = [w - m, Math.max(s - m, -80), w + lonSpan + m, Math.min(n + m, 80)];
+    proj = d3.geoMercator().rotate([-(w + lonSpan / 2), 0]).fitExtent([[6, 6], [W2 - 6, H2 - 6]], boxPoints(box)).clipExtent([[0, 0], [W2, H2]]);
+  }
+  const pg = d3.geoPath(proj).digits(1);
+  const feats = await worldFeatures(wide ? 10 : 30);
+  let land = '';
+  const want = new Map(countries.map((c) => [c.iso2, c]));
+  const shapes = [];
+  for (const f of feats) {
+    if (f.id === '010') continue;
+    const d = pg(f);
+    if (d) land += d;
+    if (f.iso2 && want.has(f.iso2)) shapes.push({ iso2: f.iso2, f, b: d3.geoBounds(f) });
+  }
+  // Which countries does the area cover? Sample points on a grid inside the area and see which
+  // modern country each falls in; a country counts with at least 0.4% of the samples (three at the least), or when its centre is inside.
+  const step = Math.max(0.1, Math.max(lonSpan, n - s) / 110);
+  const count = {};
+  let inArea = 0;
+  for (let lat = s + step / 2; lat < n; lat += step) {
+    for (let k = 0; k * step < lonSpan + step; k++) {
+      let lon = w + step / 2 + k * step;
+      if (lon > 180) lon -= 360;
+      if (!d3.geoContains(area, [lon, lat])) continue;
+      inArea++;
+      for (const sh of shapes) {
+        const [[bw, bs], [be, bn]] = sh.b;
+        if (lat < bs || lat > bn) continue;
+        if (bw <= be ? (lon < bw || lon > be) : (lon < bw && lon > be)) continue;
+        if (d3.geoContains(sh.f, [lon, lat])) { count[sh.iso2] = (count[sh.iso2] || 0) + 1; break; }
+      }
+    }
+  }
+  const covered = new Set(Object.keys(count).filter((k) => count[k] >= Math.max(3, 0.004 * inArea)));
+  // Small countries fall between the sample points: they count when their centre is inside the area.
+  for (const [iso2, c] of want) if (c.latlng && d3.geoContains(area, [c.latlng[1], c.latlng[0]])) covered.add(iso2);
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W2} ${H2}" role="img"><rect width="${W2}" height="${H2}" fill="#BFE3F2"/>`
+    + `<path d="${land}" fill="#EFE9DC" stroke="#fff" stroke-width=".6"/>`
+    + `<path d="${pg(area)}" fill="#E07A3F" fill-opacity=".62" stroke="#B5541C" stroke-width="1.4" stroke-linejoin="round"/></svg>`;
+  return { svg, covered: [...covered] };
+}
+
+module.exports = { historyMap, groupView, listMapZoom, listMap, countryShapes, continentSvg, adm1Svg, adm1Thumb, continentThumb, addStar, regionArt, physSvg, latLongSvg, hemispheres, countryGameArt, LAT_LINES, VIEWS };

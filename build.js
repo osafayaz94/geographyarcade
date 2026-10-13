@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const config = require('./site.config');
 const { L, LANGS, CONT_KEYS, t } = require('./src/i18n');
-const { listMap, groupView, listMapZoom, countryShapes, continentSvg, adm1Svg, adm1Thumb, continentThumb, addStar, regionArt, physSvg, latLongSvg, hemispheres, countryGameArt, LAT_LINES } = require('./src/maps');
+const { historyMap, listMap, groupView, listMapZoom, countryShapes, continentSvg, adm1Svg, adm1Thumb, continentThumb, addStar, regionArt, physSvg, latLongSvg, hemispheres, countryGameArt, LAT_LINES } = require('./src/maps');
 const { T, tt } = require('./src/terms');
 for (const l of LANGS) if (T[l]) Object.assign(T[l], { 'g.shapes': t(l, 'hubShapes'), 'l.cfa.t': L[l].s.cfaTitle, 'l.cfa.a': L[l].s.cfaAnswer, 'g.wonders': L[l].s.gWonders, 'l.north.t': L[l].s.northT, 'l.north.a': L[l].s.northA, 'g.ancient-wonders': L[l].s.gAncient });
 const { DIAGRAMS } = require('./src/diagrams');
@@ -266,7 +266,7 @@ ${crumbs.length ? `<nav class="crumbs" aria-label="Breadcrumb">${crumbList.map((
 ${body}
 </main>
 <footer><div class="wrap">
-<a href="${url(lang)}">${esc(SITE)}</a>${navItems.map(([k, h]) => `<a href="${url(lang, h)}">${esc(t(lang, k))}</a>`).join('')}<a href="${url(lang, 'world/')}">${esc(tt(lang, 'worldGames'))}</a><a href="${url(lang, 'lists/')}">${esc(tt(lang, 'l.related'))}</a><a href="${url(lang, 'organizations/')}">${esc((PAGES[lang] || PAGES.en).orgHubTitle.split(':')[0].split('：')[0].trim())}</a><a href="${url(lang, 'about/')}">${esc(t(lang, 'navAbout'))}</a><a href="${url(lang, 'about-us/')}">${esc((PAGES[lang] || PAGES.en).navUs)}</a><a href="${url(lang, 'privacy/')}">${esc((PAGES[lang] || PAGES.en).navPrivacy)}</a>
+<a href="${url(lang)}">${esc(SITE)}</a>${navItems.map(([k, h]) => `<a href="${url(lang, h)}">${esc(t(lang, k))}</a>`).join('')}<a href="${url(lang, 'world/')}">${esc(tt(lang, 'worldGames'))}</a><a href="${url(lang, 'lists/')}">${esc(tt(lang, 'l.related'))}</a><a href="${url(lang, 'organizations/')}">${esc((PAGES[lang] || PAGES.en).orgHubTitle.split(':')[0].split('：')[0].trim())}</a><a href="${url(lang, 'history/')}">${esc((PAGES[lang] || PAGES.en).histHubShort)}</a><a href="${url(lang, 'about/')}">${esc(t(lang, 'navAbout'))}</a><a href="${url(lang, 'about-us/')}">${esc((PAGES[lang] || PAGES.en).navUs)}</a><a href="${url(lang, 'privacy/')}">${esc((PAGES[lang] || PAGES.en).navPrivacy)}</a>
 <span>${esc(t(lang, 'updated', { d: LASTMOD_TEXT }))}</span>
 </div></footer>
 ${script ? `<script src="/app.js?v=${APP_VERSION}" defer></script>` : ''}${printJs ? `<script src="/print.js?v=${PRINT_VERSION}" defer></script>` : ''}<script src="/search.js?v=${SEARCH_VERSION}" defer></script>${config.gaId ? `<script src="/ga.js?v=${GA_VERSION}" defer></script>` : ''}
@@ -941,6 +941,70 @@ function orgHub(lang) {
   const ld = { '@context': 'https://schema.org', '@type': 'ItemList', name: P.orgHubTitle, itemListElement: ORGS.map((o, i) => ({ '@type': 'ListItem', position: i + 1, name: orgName(lang, o), url: abs(lang, orgPath(o)) })) };
   page(lang, p, { title: P.orgHubTitle, desc: P.orgHubDesc, body, crumbs: [{ name: P.orgHubTitle, p }], jsonld: [ld] });
 }
+// ---------- Ancient civilizations (/history/) ----------
+// Dates and catalogue in data/history.js; names and Wikipedia links from Wikidata (data/history.json);
+// areas from the Historical Basemaps project (data/history-areas.json, data/history-source.md).
+const HISTORY = require('./data/history');
+const HISTD = fs.existsSync(path.join(__dirname, 'data', 'history.json')) ? require('./data/history.json') : { civs: {} };
+const HISTA = require('./data/history-areas.json');
+const HIST_COV = {}; // civilization key -> the modern countries (iso2) its area covers; filled in main()
+const histName = (lang, c) => { const n = (HISTD.civs[c.key] || {}).name || {}; const v = n[lang] || n.en || c.key; return v.charAt(0).toLocaleUpperCase(L[lang].locale) + v.slice(1); };
+const histPath = (c) => `history/${c.slug}/`;
+const snapYear = (c) => (c.snap.startsWith('bc') ? -Number(c.snap.slice(2)) : Number(c.snap));
+const eraYear = (lang, y, circa) => { const P = pg(lang); const x = fillP(y < 0 ? P.eraBCE : P.eraCE, { n: String(Math.abs(y)) }); return circa ? fillP(P.eraCirca, { x }) : x; };
+const histRange = (lang, c) => fillP(pg(lang).histRange, { a: eraYear(lang, c.from, c.circa), b: eraYear(lang, c.to, c.circa) });
+// About how many years it lasted: rounded to 10 (under 200), 50 (under 1000) or 100 (there is no year 0).
+const histYears = (c) => { const d = c.to - c.from - (c.from < 0 && c.to > 0 ? 1 : 0); return d < 200 ? Math.max(10, Math.round(d / 10) * 10) : d < 1000 ? Math.round(d / 50) * 50 : Math.round(d / 100) * 100; };
+const histCovered = (c) => (HIST_COV[c.key] || []).map((i) => byIso[i]).filter(Boolean);
+const HIST_SORTED = [...HISTORY].sort((a, b) => a.from - b.from);
+const histCivsOf = (country) => HIST_SORTED.filter((c) => (HIST_COV[c.key] || []).includes(country.iso2));
+// Civilizations that overlapped in time (by 50 years or more) and shared at least one modern country.
+const histSameTime = (c) => HIST_SORTED.filter((x) => x !== c && Math.min(x.to, c.to) - Math.max(x.from, c.from) >= 50 && (HIST_COV[x.key] || []).some((i) => (HIST_COV[c.key] || []).includes(i))).slice(0, 12);
+
+function histPage(lang, c) {
+  const P = pg(lang);
+  const p = histPath(c);
+  const name = histName(lang, c);
+  const cov = sortBy(lang, histCovered(c), (x) => cName(x, lang));
+  const a = eraYear(lang, c.from, c.circa);
+  const b = eraYear(lang, c.to, c.circa);
+  const title = fillP(P.histTitle, { name });
+  const desc = fillP(P.histDesc, { name, a, b });
+  const answer = fillP(P.histAnswer, { name, a, b, d: fillP(P.durAbout, { n: histYears(c) }), list: listJoin(lang, cov.slice(0, 8).map((x) => cName(x, lang))) });
+  const my = eraYear(lang, snapYear(c), true);
+  const kv = [
+    [P.fPeriod, esc(histRange(lang, c))],
+    [P.fDuration, esc(fillP(P.durAbout, { n: histYears(c) }))],
+    [P.fCovered, cov.map((x) => `<a href="${url(lang, `countries/${x.slug}/`)}">${esc(cName(x, lang))}</a>`).join(', ')],
+    [P.fMapShows, esc(fillP(P.histMapYear, { y: my }))],
+  ];
+  const wiki = ((HISTD.civs[c.key] || {}).wiki || {})[lang] || ((HISTD.civs[c.key] || {}).wiki || {}).en;
+  const same = histSameTime(c);
+  const body = `<h1>${esc(title)}</h1><p class="answer">${esc(answer)}</p>`
+    + `<div class="facts"><dl class="kv">${kv.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${v}</dd>`).join('')}</dl></div>`
+    + `<figure class="lmap"><img src="/img/history/${c.key}.svg" alt="${esc(fillP(P.histMapCaption, { name, y: my }))}" width="1000" height="510"><figcaption class="note">${esc(fillP(P.histMapCaption, { name, y: my }))}</figcaption></figure>`
+    + `<h2>${esc(P.fCovered)}</h2><ul class="links">${cov.map((x) => `<li><img src="${flagSrc(x.iso2)}" alt="" width="28" height="21" loading="lazy"><a href="${url(lang, `countries/${x.slug}/`)}">${esc(cName(x, lang))}</a></li>`).join('')}</ul>`
+    + (wiki ? `<p><a class="btn ghost" href="${esc(wiki)}" rel="noopener">${esc(P.histWiki)}</a></p>` : '')
+    + `<h2>${esc(P.histAbout)}</h2><p>${esc(P.histNote)}</p><p class="note"><a href="https://github.com/aourednik/historical-basemaps" rel="noopener">${esc(P.histSource)}</a></p>`
+    + (same.length ? `<h2>${esc(P.histSame)}</h2><ul class="links">${same.map((x) => `<li><a href="${url(lang, histPath(x))}">${esc(histName(lang, x))}</a> <small class="note">${esc(histRange(lang, x))}</small></li>`).join('')}</ul>` : '')
+    + `<p><a href="${url(lang, 'history/')}">${esc(P.histHubTitle)}</a></p>`;
+  const ld = { '@context': 'https://schema.org', '@type': 'WebPage', name: title, description: desc, url: abs(lang, p), inLanguage: L[lang].hreflang, dateModified: LASTMOD, publisher: ORG,
+    about: { '@type': 'Thing', name, sameAs: `https://www.wikidata.org/wiki/${c.qid}` }, temporalCoverage: `${c.from}/${c.to}`,
+    primaryImageOfPage: { '@type': 'ImageObject', url: DOMAIN + `/img/history/${c.key}.svg` } };
+  page(lang, p, { title, desc, body, crumbs: [{ name: P.histHubShort, p: 'history/' }, { name, p }], jsonld: [ld] });
+}
+function histHub(lang) {
+  const P = pg(lang);
+  const p = 'history/';
+  const stamp = (c) => `<a class="stamp" href="${url(lang, histPath(c))}"><span class="perf"><span class="art" style="--tile:#8A5A2B"><img src="/img/history/${c.key}.svg" alt="" width="320" height="163" loading="lazy"></span><span class="cap">${esc(histName(lang, c))}</span></span></a>`;
+  const table = `<h2>${esc(P.histTimeline)}</h2><div class="tbl"><table><thead><tr><th>${esc(t(lang, 'thName'))}</th><th>${esc(P.thPeriod)}</th><th>${esc(P.fDuration)}</th></tr></thead><tbody>${HIST_SORTED.map((c) => `<tr><td><a href="${url(lang, histPath(c))}">${esc(histName(lang, c))}</a></td><td>${esc(histRange(lang, c))}</td><td>${esc(fillP(P.durAbout, { n: histYears(c) }))}</td></tr>`).join('')}</tbody></table></div>`;
+  const body = `<h1>${esc(P.histHubTitle)}</h1><p class="lede">${esc(P.histHubDesc)}</p><nav class="stamps" aria-label="${esc(P.histHubShort)}">${HIST_SORTED.map(stamp).join('')}</nav>${table}`;
+  const ld = { '@context': 'https://schema.org', '@type': 'ItemList', name: P.histHubTitle, itemListElement: HIST_SORTED.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: histName(lang, c), url: abs(lang, histPath(c)) })) };
+  page(lang, p, { title: P.histHubTitle, desc: P.histHubDesc, body, crumbs: [{ name: P.histHubShort, p }], jsonld: [ld] });
+}
+// The civilizations as a one-line row on the home page.
+const histStamps = (lang) => `<h2>${esc(pg(lang).histHubShort)}</h2><nav class="stamps one" aria-label="${esc(pg(lang).histHubShort)}">${HIST_SORTED.map((c) => `<a class="stamp" href="${url(lang, histPath(c))}"><span class="perf"><span class="art" style="--tile:#8A5A2B"><img src="/img/history/${c.key}.svg" alt="" width="320" height="163" loading="lazy"></span><span class="cap">${esc(histName(lang, c))}</span></span></a>`).join('')}</nav>`;
+
 // The game card that leads to the organisations.
 const orgStamps = (lang) => `<a class="stamp" href="${url(lang, 'organizations/')}"><span class="perf"><span class="art" style="--tile:#5B4B8A"><span class="denom">${num(lang, ORGS.length)}</span><img src="/img/orgs/g20.svg" alt="" width="320" height="163" loading="lazy"></span><span class="cap">${esc(pg(lang).orgHubTitle)}</span></span></a>`;
 
@@ -976,6 +1040,7 @@ function home(lang) {
 <nav class="stamps" aria-label="${esc(t(lang, 'indexTitle'))}">${cards}</nav>
 <h2>${esc(tt(lang, 'moreGames'))}</h2>${countryGameStamps(lang)}
 ${regionStamps(lang)}
+${histStamps(lang)}
 ${listLinks(lang, LISTS)}
 <h2>${esc(t(lang, 'provTitle'))}</h2><p>${esc(t(lang, 'provIntro', { n: m }))}</p><ul class="links">${prov}</ul><div class="cta"><a class="btn ghost" href="${url(lang, 'provinces/')}">${esc(t(lang, 'provTitle'))}: ${provCountries.length}</a><a class="btn ghost" href="${url(lang, 'countries/')}">${esc(t(lang, 'countriesTitle'))}: ${n}</a></div>
 ${faq.body}`;
@@ -1074,6 +1139,7 @@ function countryPage(lang, c) {
     [t(lang, 'fLandlocked'), esc(t(lang, c.landlocked ? 'yes' : 'no'))],
     callingCode(c.iso2) && [pg(lang).fCalling, esc(callingCode(c.iso2))],
     orgsOf(c).length && [pg(lang).fMemberOf, orgsOf(c).map((o) => `<a href="${url(lang, orgPath(o))}">${esc(orgName(lang, o))}</a>`).join(', ')],
+    histCivsOf(c).length && [pg(lang).fCivs, histCivsOf(c).map((h) => `<a href="${url(lang, histPath(h))}">${esc(histName(lang, h))}</a>`).join(', ')],
     orgsOf(c, true).length && [pg(lang).fPartOf, orgsOf(c, true).map((o) => `<a href="${url(lang, orgPath(o))}">${esc(orgName(lang, o))}</a>`).join(', ')],
   ].filter(Boolean);
 
@@ -1585,6 +1651,13 @@ function notFound() {
     else write(`img/lists/${listId(l)}.svg`, await listMap(new Set(members.map((c) => c.iso2)), { shade: mapOf(l).shade, equator: true }));
   }
   for (const o of ORGS) await makeGroupMap('o-' + o.key, orgMembers(o), `img/orgs/${o.key}.svg`);
+  // Ancient civilizations: the area on today's borders, and the modern countries it covers.
+  for (const c of HISTORY) {
+    const r = await historyMap(HISTA[c.key], countries);
+    if (!r.covered.length) throw new Error(`history: ${c.key} covers no modern country`);
+    HIST_COV[c.key] = r.covered;
+    write(`img/history/${c.key}.svg`, r.svg);
+  }
   const printCaps = {};
   for (const c of countries) if (!hasProv.has(c.iso2)) printCaps[c.iso2] = c.capitals.filter((k) => capCoords[k.qid]).map((k) => ({ id: k.qid, at: capCoords[k.qid] }));
   SHAPES = await countryShapes({ prints: printCaps });
@@ -1632,6 +1705,8 @@ function notFound() {
     for (const l of LISTS) listPage(lang, l);
     orgHub(lang);
     for (const o of ORGS) orgPage(lang, o);
+    histHub(lang);
+    for (const c of HISTORY) histPage(lang, c);
     for (const q of QUIZ_TYPES) { hubPage(lang, q); for (const s of QUIZ_SCOPES) continentQuiz(lang, q, s); }
     countriesIndex(lang);
     for (const c of countries) countryPage(lang, c);
