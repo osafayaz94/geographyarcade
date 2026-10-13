@@ -165,8 +165,8 @@ function boxPoints([x0, y0, x1, y1]) {
 const DOT_NUDGE = { BH: [0, -3.2] };
 
 // countries: [{ iso2, area, latlng }] that are playable on this map.
-async function continentSvg(viewKey, countries) {
-  const v = VIEWS[viewKey];
+async function continentSvg(viewKey, countries, view) {
+  const v = view || VIEWS[viewKey];
   const H = v.height;
   const isWorld = v.projection === 'naturalEarth';
   // The world view fits the globe minus Antarctica; continent views fit their lon/lat box.
@@ -705,4 +705,52 @@ async function listMap(highlight, { shade = null, equator = true } = {}) {
     + `${equator ? `<path d="${eq}" fill="none" stroke="#C0262D" stroke-width="2.5" stroke-dasharray="8 5"/>` : ''}<path d="${sphere}" fill="none" stroke="#14202E" stroke-width="1.5"/></svg>`;
 }
 
-module.exports = { listMap, countryShapes, continentSvg, adm1Svg, adm1Thumb, continentThumb, addStar, regionArt, physSvg, latLongSvg, hemispheres, countryGameArt, LAT_LINES, VIEWS };
+// ---------- Groups of countries (organisations, regions, language lists) ----------
+// A zoomed map view for a group: centred on its members, with a margin. A group spread over more
+// than 120 degrees of longitude (G20, NATO, English-speaking...) returns null: it keeps the world map.
+async function groupView(members) {
+  const polys = {};
+  for (const f of await worldFeatures(30)) {
+    if (!f.iso2) continue;
+    const g = f.geometry;
+    const parts = g.type === 'Polygon' ? [g.coordinates] : g.type === 'MultiPolygon' ? g.coordinates : [];
+    for (const coordinates of parts) {
+      const geo = { type: 'Polygon', coordinates };
+      const a = d3.geoArea(geo);
+      if (!polys[f.iso2] || a > polys[f.iso2].a) polys[f.iso2] = { a, geo };
+    }
+  }
+  // The main landmass of each country (not far islands); a dot position for the small ones.
+  const geometries = members.map((c) => (c.area >= 3000 && polys[c.iso2] ? polys[c.iso2].geo : { type: 'Point', coordinates: [c.latlng[1], c.latlng[0]] }));
+  const [[w, s], [e, n]] = d3.geoBounds({ type: 'GeometryCollection', geometries });
+  const lonSpan = e >= w ? e - w : e - w + 360;
+  if (lonSpan > 120 || n - s > 80) return null;
+  const m = Math.max(3, 0.12 * Math.max(lonSpan, n - s));
+  const view = { box: [w - m, s - m, w + lonSpan + m, Math.min(n + m, 80)], rotate: -(w + lonSpan / 2) };
+  // As tall as the box needs at the map's width, within limits.
+  const pts = boxPoints(view.box);
+  const p0 = d3.geoMercator().rotate([view.rotate, 0]).fitWidth(W - 8, pts);
+  const bb = d3.geoPath(p0).bounds(pts);
+  view.height = Math.round(Math.min(Math.max(bb[1][1] - bb[0][1] + 8, 300), 1100));
+  return view;
+}
+
+// The same zoomed view as a picture: the group in orange on a pale map (1000 x 510), for the page,
+// the cards and the share image. Small countries get an orange dot.
+async function listMapZoom(highlight, members, view) {
+  const W2 = 1000, H2 = 510;
+  const proj = d3.geoMercator().rotate([view.rotate, 0]).fitExtent([[6, 6], [W2 - 6, H2 - 6]], boxPoints(view.box)).clipExtent([[0, 0], [W2, H2]]);
+  const pg = d3.geoPath(proj).digits(1);
+  let on = '', off = '';
+  for (const f of await worldFeatures(30)) { if (f.id === '010') continue; const d = pg(f); if (!d) continue; if (highlight.has(f.iso2)) on += d; else off += d; }
+  let dots = '';
+  for (const c of members) {
+    if (c.area >= 3000) continue;
+    const p = proj([c.latlng[1], c.latlng[0]]);
+    if (p && p[0] >= 0 && p[0] <= W2 && p[1] >= 0 && p[1] <= H2) dots += `<circle cx="${round(p[0])}" cy="${round(p[1])}" r="9" fill="#E07A3F" stroke="#fff" stroke-width="2"/>`;
+  }
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W2} ${H2}" role="img"><rect width="${W2}" height="${H2}" fill="#BFE3F2"/>`
+    + `<path d="${off}" fill="#EFE9DC" stroke="#fff" stroke-width=".6"/><path d="${on}" fill="#E07A3F" stroke="#fff" stroke-width=".8"/>${dots}</svg>`;
+}
+
+module.exports = { groupView, listMapZoom, listMap, countryShapes, continentSvg, adm1Svg, adm1Thumb, continentThumb, addStar, regionArt, physSvg, latLongSvg, hemispheres, countryGameArt, LAT_LINES, VIEWS };

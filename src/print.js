@@ -14,6 +14,7 @@
   // worksheet (map + blank lines) and the answer key (map + names); a blank or labelled map prints
   // on its own (window.print opens the browser's print dialog, where "Save as PDF" makes a PDF).
   var MODES = ['blank', 'worksheet', 'labeled', 'answers'];
+  var landscape = false; // a wide map prints on a landscape page (build.js sets @page for it)
   var buttons = Array.prototype.slice.call(document.querySelectorAll('[data-mode]'));
   var sheets = {};
   var current = 'worksheet';
@@ -39,9 +40,13 @@
   // The two lists are never shown on the page itself.
   var printDoc = null;
   // buildPrint('blank') etc. prints that one version alone (scripts/make-pdfs.js: one PDF each).
+  // The version is remembered, because the browser's own "beforeprint" event calls this again just
+  // before printing and must not turn a single version back into the full set.
+  var forced = null;
   function buildPrint(only) {
     if (!sheets.worksheet) return;
-    if (typeof only !== 'string') only = null;
+    if (typeof only === 'string') forced = only;
+    only = forced;
     if (!printDoc) {
       printDoc = document.createElement('div');
       printDoc.className = 'pprint';
@@ -57,6 +62,12 @@
         var el = sheets[mode].querySelector(sel);
         if (el) s.appendChild(el.cloneNode(true));
       });
+      // A short list stays under its map on one page; a long one starts on the next page (and may
+      // run on to a third), so a list is never cut in two across the map's page.
+      if (what.indexOf('.pkey') >= 0) {
+        var rows = sheets[mode].querySelectorAll('.pkey li:not(.pskip)').length;
+        s.classList.add(rows > (landscape ? 30 : 50) ? 'psplit' : 'ptog');
+      }
       printDoc.appendChild(s);
     }
     if (only) {
@@ -156,6 +167,7 @@
     box.innerHTML = '';
     box.appendChild(svg);
     var vb = (svg.getAttribute('viewBox') || '0 0 1000 600').split(/\s+/).map(Number);
+    landscape = vb[2] > vb[3] * 1.15;
     var items = Array.prototype.slice.call(document.querySelectorAll('.pkey li[data-id]'));
     // Crowded maps (the world: 195 countries) use smaller numbers and number only the places big
     // enough to hold one; the others are left out of the worksheet list too, so the numbers on

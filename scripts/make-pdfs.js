@@ -21,6 +21,7 @@ const CHROME = process.env.CHROME_PATH || [
 ].find((p) => fs.existsSync(p));
 // Same names as pdfFile() in build.js.
 const MODES = { blank: 'blank-map', worksheet: 'map-worksheet', labeled: 'labeled-map', answers: 'map-answer-key' };
+const PRINT_JS = fs.existsSync(path.join(DIST, 'print.js')) ? fs.readFileSync(path.join(DIST, 'print.js')) : '';
 const pdfName = (dir, mode) => `${path.basename(dir)}-${MODES[mode]}.pdf`;
 const TYPES = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.svg': 'image/svg+xml', '.png': 'image/png', '.json': 'application/json' };
 
@@ -58,7 +59,8 @@ function pages() {
       const dir = queue.shift();
       const html = fs.readFileSync(path.join(dir, 'index.html'));
       // The footer's "updated" date changes on every data run; the PDF doesn't show it.
-      const hash = crypto.createHash('sha1').update(String(html).replace(/<footer[\s\S]*?<\/footer>/, '')).digest('hex').slice(0, 16);
+      // The print script decides what each version contains, so it is part of the cache key too.
+      const hash = crypto.createHash('sha1').update(String(html).replace(/<footer[\s\S]*?<\/footer>/, '')).update(PRINT_JS).digest('hex').slice(0, 16);
       const rel = path.relative(DIST, dir).split(path.sep).join('/');
       const prefix = rel.replace(/\//g, '__') + '.';
       const cacheOf = (mode) => path.join(CACHE, `${prefix}${hash}.${mode}.pdf`);
