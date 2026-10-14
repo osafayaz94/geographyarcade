@@ -1060,6 +1060,10 @@ function countriesIndex(lang) {
     const list = sortBy(lang, inScope(s), (c) => cName(c, lang));
     body += `<h2 id="${s}">${esc(L[lang].cont[s])} <small class="note">${list.length}</small></h2><div class="tbl"><table><thead><tr><th>${esc(t(lang, 'thFlag'))}</th><th>${esc(t(lang, 'thCountry'))}</th><th>${esc(t(lang, 'thCapital'))}</th><th class="num">${esc(t(lang, 'thArea'))}</th><th class="num">${esc(t(lang, 'thPopulation'))}</th></tr></thead><tbody>${list.map((c) => `<tr><td><img src="${flagSrc(c.iso2)}" alt="" width="32" height="24" loading="lazy"></td><td><a href="${url(lang, `countries/${c.slug}/`)}">${esc(cName(c, lang))}</a></td><td>${esc(capsOf(c, lang).join(', '))}</td><td class="num">${num(lang, c.area)}</td><td class="num">${c.population ? num(lang, c.population.value) : ''}</td></tr>`).join('')}</tbody></table></div>`;
   }
+  // More to explore: direct links to the newer hubs and every region group, from a page Google visits often.
+  const more = [['organizations/', pg(lang).orgHubTitle], ['history/', pg(lang).histHubTitle], ['printables/', t(lang, 'printHubTitle')], ['lists/', tt(lang, 'l.hub.t')]];
+  body += `<h2>${esc(tt(lang, 'moreGames'))}</h2><ul class="links">${more.map(([h, n]) => `<li><a href="${url(lang, h)}">${esc(n)}</a></li>`).join('')}</ul>`
+    + `<h2>${esc(pg(lang).regHubTitle)}</h2><ul class="links">${ORGS.filter((o) => o.region).map((o) => `<li><a href="${url(lang, orgPath(o))}">${esc(orgName(lang, o))}</a></li>`).join('')}</ul>`;
   page(lang, p, { title, desc, body, nav: p, crumbs: [{ name: title, p }] });
 }
 
@@ -1484,7 +1488,11 @@ function statics() {
   write('favicon.svg',LOGO.replace('<svg', '<svg xmlns="http://www.w3.org/2000/svg"').replace(' aria-hidden="true"', ''));
 
   const bots = ['Googlebot', 'Bingbot', 'GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-SearchBot', 'PerplexityBot', 'Google-Extended', 'Applebot', 'Applebot-Extended', 'CCBot', 'DuckDuckBot', 'YandexBot', 'Baiduspider'];
-  write('robots.txt', `${bots.map((b) => `User-agent: ${b}\nAllow: /\n`).join('\n')}\nUser-agent: *\nAllow: /\n\nSitemap: ${DOMAIN}/sitemap.xml\n`);
+  // The printable-map PDFs (about 19,000, 4 per printable page) are not crawled for now: they would use up the
+  // crawl time of a young site that still has thousands of real pages waiting. Visitors can still download
+  // them. Remove BLOCK_PDF once most pages are indexed (around December 2026).
+  const BLOCK_PDF = 'Disallow: /*.pdf$\n';
+  write('robots.txt', `${bots.map((b) => `User-agent: ${b}\nAllow: /\n${BLOCK_PDF}`).join('\n')}\nUser-agent: *\nAllow: /\n${BLOCK_PDF}\nSitemap: ${DOMAIN}/sitemap.xml\n`);
 
   // Sitemaps: one per language, each URL with its alternates.
   const alt = (p) => LANGS.map((l) => `<xhtml:link rel="alternate" hreflang="${L[l].hreflang}" href="${abs(l, p)}"/>`).join('') + `<xhtml:link rel="alternate" hreflang="x-default" href="${abs('en', p)}"/>`;
