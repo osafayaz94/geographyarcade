@@ -23,6 +23,8 @@ module.exports = {
   // Organization schema. Add each new account here.
   socialProfiles: [
     'https://www.pinterest.com/geographyarcade/',
+    'https://www.facebook.com/profile.php?id=61595367984247',
+    'https://www.instagram.com/geography.arcade/',
   ],
   pinterestVerification: '33c38c16b6997245aa18ea3638392b16',
   // Google Analytics 4 Measurement ID (G-XXXXXXXXXX). Empty = no analytics script on the site.
