@@ -49,12 +49,30 @@ function pages() {
     fs.readFile(f, (err, data) => { if (err) { res.writeHead(404); return res.end(); } res.writeHead(200, { 'Content-Type': TYPES[path.extname(f)] || 'application/octet-stream' }); res.end(data); });
   }).listen(0);
   const port = server.address().port;
-  const browser = await puppeteer.launch({ executablePath: CHROME, headless: true, args: ['--no-sandbox', '--disable-gpu', '--font-render-hinting=none'] });
+  // Chrome is started only when a page really needs printing (a run with everything cached never needs it),
+  // and a start that times out (it happens on busy CI machines) is tried again.
+  let browserPromise = null;
+  const getBrowser = () => {
+    if (!browserPromise) {
+      browserPromise = (async () => {
+        for (let attempt = 1; ; attempt++) {
+          try {
+            return await puppeteer.launch({ executablePath: CHROME, headless: true, timeout: 120000, args: ['--no-sandbox', '--disable-gpu', '--disable-dev-shm-usage', '--font-render-hinting=none'] });
+          } catch (e) {
+            if (attempt >= 4) throw e;
+            console.log(`  Chrome did not start (${e.message.split('\n')[0]}), trying again (${attempt}/3)`);
+            await new Promise((r) => setTimeout(r, 5000 * attempt));
+          }
+        }
+      })();
+    }
+    return browserPromise;
+  };
   const list = pages().filter((d) => !ONLY || d.split(path.sep).join('/').includes(ONLY)).slice(0, LIMIT);
   let made = 0, cached = 0, failed = 0;
   const queue = list.slice();
   async function worker() {
-    const tab = await browser.newPage();
+    let tab = null;
     while (queue.length) {
       const dir = queue.shift();
       const html = fs.readFileSync(path.join(dir, 'index.html'));
@@ -67,6 +85,7 @@ function pages() {
       const modes = Object.keys(MODES);
       if (modes.every((m) => fs.existsSync(cacheOf(m)))) { for (const m of modes) fs.copyFileSync(cacheOf(m), path.join(dir, pdfName(dir, m))); cached++; continue; }
       try {
+        if (!tab) tab = await (await getBrowser()).newPage();
         await tab.goto(`http://localhost:${port}/${rel}/#worksheet`, { waitUntil: 'networkidle0', timeout: 60000 });
         await tab.waitForSelector('.psheet svg', { timeout: 30000 });
         const done = [];
@@ -83,10 +102,10 @@ function pages() {
         if (made % 50 === 0) console.log(`  ${made} printed, ${cached} from cache, ${queue.length} left`);
       } catch (e) { failed++; console.log(`  FAILED ${rel}: ${e.message.split('\n')[0]}`); }
     }
-    await tab.close();
+    if (tab) await tab.close();
   }
   await Promise.all(Array.from({ length: 4 }, worker));
-  await browser.close();
+  if (browserPromise) await (await browserPromise).close();
   server.close();
   console.log(`PDFs: ${made} printed, ${cached} from cache, ${failed} failed (${list.length} printable pages)`);
   if (failed > list.length * 0.02) process.exit(1);
