@@ -55,6 +55,17 @@
   var imgOf = function (item) { return root + (Q.imgBase || 'flags/') + (item.img || item.id.toLowerCase() + '.svg'); };
   var isMap = Q.type === 'map' || Q.type === 'pmap';
   var bestKey = 'best:' + Q.key;
+
+  // Quiz events for Google Analytics (src/ga.js defines gtag when analytics is on; without it nothing is sent).
+  // Only the quiz, its type and language, the score and the time: no personal data.
+  var attempts = 0;
+  function track(name, extra) {
+    if (typeof window.gtag !== 'function') return;
+    var m = /^(.*)-([a-z]{2})$/.exec(Q.key || '');
+    var p = { quiz_id: m ? m[1] : Q.key, quiz_type: Q.type, quiz_lang: m ? m[2] : '' };
+    for (var k in extra) p[k] = extra[k];
+    window.gtag('event', name, p);
+  }
   var state, timer;
   // Province capitals: the small map (see ask), and the province it currently highlights.
   var miniMap = null;
@@ -98,6 +109,8 @@
     var list = shuffle(Q.items.filter(function (x) { return Q.type !== 'capitals' && Q.type !== 'pcap' || x.a; }));
     if (Q.limit) list = list.slice(0, Q.limit); // e.g. 20 countries per round
     state = { list: list, i: 0, score: 0, miss: [], t0: Date.now(), done: false };
+    attempts++;
+    track('quiz_start', { attempt: attempts, questions: Q.seconds ? 0 : list.length });
     stage.innerHTML = '';
     stage.append(bar, meter, prompt);
     if (isMap) { overlay.remove(); tip.hidden = true; stage.appendChild(mapBox); resetMap(); } else stage.appendChild(mcBox);
@@ -214,6 +227,7 @@
     state.done = true; clearInterval(timer);
     meter.firstChild.style.width = '100%';
     var n = Q.seconds ? state.i : state.list.length; // a countdown round counts the questions answered
+    track('quiz_complete', { attempt: attempts, score: state.score, answered: n, score_pct: n ? Math.round(100 * state.score / n) : 0, seconds: Math.round((Date.now() - state.t0) / 1000) });
     var best = store.get(bestKey);
     if (best == null || state.score > best) { best = state.score; store.set(bestKey, best); }
     var r = el('div', 'result');
