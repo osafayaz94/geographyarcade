@@ -168,6 +168,7 @@ html:not(.lat) .prompt{font-family:var(--body)}
 .result{text-align:center;padding:1.5rem .5rem}
 .result .big{font:800 clamp(2rem,6vw,3.2rem)/1 var(--head);margin:.25rem 0 .5rem}
 .result ul{text-align:start;display:inline-block;margin:1rem auto 0}
+.result p{margin-inline:auto}.result .btn{margin:1rem 0 1.5rem}.result h3{margin:1rem 0 .5rem}
 
 /* Map: one colour per country (k0..k5, neighbours never match) on a bright sea */
 :root{--ocean:#5CC8EC;--m0:#F4A259;--m1:#8CC084;--m2:#E9C46A;--m3:#F28DB2;--m4:#5FB3A1;--m5:#B497D6;--mctx:#EFE9DC;--right:#157347;--miss:#B3192E}
