@@ -31,15 +31,13 @@ Subject: Website suggestion: free printable maps and map quizzes
 
 Hello,
 
-We run Geography Arcade (geographyarcade.com), a free site with map quizzes and printable maps. Every printable map comes as a blank map, a numbered worksheet, a labelled map and an answer key, each as a PDF. There are maps of every country, plus the states, provinces and regions of 178 countries. The site has no ads and needs no sign-up.
+We run Geography Arcade (geographyarcade.com), a free site with map quizzes and printable maps. Every printable map comes as a blank map, a numbered worksheet, a labelled map and an answer key, each as a PDF. There are maps of every country, plus the states, provinces and regions of 178 countries. The site needs no sign-up.
 
 If it fits your resources page, a good starting point is the printable world map:
 https://geographyarcade.com/printables/maps/world/
 
 Thank you for looking.
 The Geography Arcade team
-
-Note before sending: check that the site really has no ads at that moment (it does today, 2026-10-21). If AdSense is switched on later, change the sentence.
 
 ## D. Email to NCGE (info@ncge.org)
 
