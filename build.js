@@ -211,8 +211,26 @@ function fitDescription(d) {
   const cut = d.replace(/([.。।۔])\s*[^.。।۔]+[.。।۔]\s*$/u, '$1');
   return cut.length >= 70 ? cut : d;
 }
+// ---------- Staged release (owner's decision, 2026-10-31) ----------
+// After Google dropped most of the site from its index on 23 October 2026, the sections added in bulk on
+// 12-13 October are held back from Google and released one batch a month. A held-back page stays on the
+// site for visitors and for Bing (it keeps index for other engines, sits in sitemap-held.xml, which only
+// IndexNow/Bing reads), but carries <meta name="googlebot" content="noindex"> and is left out of the
+// sitemap Google reads. The monthly rebuild on the 1st releases each batch on its date. To pause a batch
+// (the safety brake), move its date later.
+const RELEASES = [
+  ['2026-12-01', (p) => p === 'organizations/' || /^organizations\/(european-union|nato|g20|schengen|oecd|council-of-europe)-countries\/$/.test(p)],
+  ['2027-01-01', (p) => p.startsWith('organizations/') || /^lists\/countries-where-(german|italian|dutch|swahili|malay)-is-official\/$/.test(p)],
+  ['2027-02-01', (p) => p.startsWith('history/')],
+  ['2027-03-01', (p) => p.startsWith('printables/organizations/') || /^printables\/maps\/(countries-on-the-equator|northern-hemisphere-countries|southern-hemisphere-countries|countries-where-[a-z]+-is-official)\/$/.test(p)],
+];
+const releaseDate = (p) => { for (const [d, f] of RELEASES) if (f(p)) return d; return null; };
+const heldBack = (p) => { const d = releaseDate(p); return !!d && TODAY < d; };
+const heldMap = Object.fromEntries(LANGS.map((l) => [l, []]));
+
 function page(lang, p, { title, desc, body, crumbs = [], jsonld = [], preload, script = false, printJs = false, nav, noindex = false }) {
   desc = fitDescription(desc);
+  const held = !noindex && heldBack(p);
   // Site owner's decision (2026-10-12): quiz answers are not shown on the pages. Every answer block
   // is an "answers" heading followed by one table or one list.
   body = body.replace(/<h2 id="answers">[^<]*<\/h2>\s*(?:<div class="tbl"><table>[\s\S]*?<\/table><\/div>|<ul class="links">[\s\S]*?<\/ul>)/g, '');
@@ -243,7 +261,7 @@ function page(lang, p, { title, desc, body, crumbs = [], jsonld = [], preload, s
 <meta name="description" content="${esc(desc)}">
 ${noindex ? '' : `<link rel="canonical" href="${abs(lang, p)}">`}
 ${alts}
-<meta name="robots" content="${noindex ? 'noindex' : 'index,follow,max-snippet:-1,max-image-preview:large'}">
+<meta name="robots" content="${noindex ? 'noindex' : 'index,follow,max-snippet:-1,max-image-preview:large'}">${held ? '\n<meta name="googlebot" content="noindex">' : ''}
 <meta property="og:type" content="website"><meta property="og:site_name" content="${esc(SITE)}"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}"><meta property="og:url" content="${abs(lang, p)}"><meta property="og:locale" content="${Ls.locale.replace('-', '_')}"><meta property="og:image" content="${DOMAIN}/img/og/${ogFor(p)}.png"><meta property="og:image:width" content="${og.OG_W}"><meta property="og:image:height" content="${og.OG_H}"><meta property="og:image:alt" content="${esc(title)}"><meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#EAF1EF" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0E1A24" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -282,7 +300,7 @@ ${script ? `<script src="/app.js?v=${APP_VERSION}" defer></script>` : ''}${print
   }
   const out = html.split(LASTMOD).join(date).split(LASTMOD_TEXT).join(esc(dateFmt(lang, date)));
   write(path.join(lang === 'en' ? '' : lang, p, 'index.html'), out);
-  if (!noindex) { sitemap[lang].push(p); searchEntry(lang, p, title); }
+  if (!noindex) { (held ? heldMap : sitemap)[lang].push(p); searchEntry(lang, p, title); }
 }
 
 // ---------- Site search ----------
@@ -1496,6 +1514,8 @@ function statics() {
 
   // Sitemaps: one per language, each URL with its alternates.
   const alt = (p) => LANGS.map((l) => `<xhtml:link rel="alternate" hreflang="${L[l].hreflang}" href="${abs(l, p)}"/>`).join('') + `<xhtml:link rel="alternate" hreflang="x-default" href="${abs('en', p)}"/>`;
+  // Held-back pages (see RELEASES): a sitemap only IndexNow/Bing reads; it is not in sitemap.xml.
+  write('sitemap-held.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${LANGS.flatMap((l) => heldMap[l].map((p) => `<url><loc>${abs(l, p)}</loc><lastmod>${pageDate[l][p]}</lastmod></url>`)).join('\n')}\n</urlset>\n`);
   for (const l of LANGS) write(`sitemap-${l}.xml`, `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${sitemap[l].map((p) => `<url><loc>${abs(l, p)}</loc><lastmod>${pageDate[l][p]}</lastmod>${alt(p)}</url>`).join('\n')}\n</urlset>\n`);
   write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${LANGS.map((l) => `<sitemap><loc>${DOMAIN}/sitemap-${l}.xml</loc><lastmod>${Object.values(pageDate[l]).sort().pop()}</lastmod></sitemap>`).join('\n')}\n</sitemapindex>\n`);
 

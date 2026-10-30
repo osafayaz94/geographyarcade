@@ -47,6 +47,8 @@ htmlFiles.forEach((file) => {
   const u = toUrlPath(file);
   const p = { u, html };
   p.noindex = /<meta name="robots" content="noindex/.test(html);
+  // Held back from Google only (staged release, see RELEASES in build.js): listed in sitemap-held.xml, not sitemap.xml.
+  p.held = /<meta name="googlebot" content="noindex">/.test(html);
   p.title = (html.match(/<title>([^<]*)<\/title>/) || [])[1];
   p.desc = (html.match(/<meta name="description" content="([^"]*)">/) || [])[1];
   p.canonical = (html.match(/<link rel="canonical" href="([^"]*)">/) || [])[1];
@@ -125,10 +127,17 @@ if (/<sitemapindex/.test(rootMap)) {
   }).join('\n');
 }
 const locs = new Set(all(/<loc>([^<]+)<\/loc>/g, sitemap).map((m) => m[1]));
-const indexable = Object.values(pages).filter((p) => !p.noindex).map((p) => SITE + p.u);
+const indexable = Object.values(pages).filter((p) => !p.noindex && !p.held).map((p) => SITE + p.u);
 indexable.forEach((u) => { if (!locs.has(u)) errors.push(`Sitemap is missing ${u}`); });
 locs.forEach((u) => { if (!indexable.includes(u)) errors.push(`Sitemap lists a non-page ${u}`); });
 if (!/Sitemap: /.test(fs.readFileSync(path.join(DIST, 'robots.txt'), 'utf8'))) errors.push('robots.txt has no Sitemap line');
+// The held-back sitemap lists exactly the held-back pages and is never in the index Google reads.
+if (/sitemap-held\.xml/.test(rootMap)) errors.push('sitemap.xml must not list sitemap-held.xml');
+const heldLocs = new Set(exists('/sitemap-held.xml') ? all(/<loc>([^<]+)<\/loc>/g, fs.readFileSync(path.join(DIST, 'sitemap-held.xml'), 'utf8')).map((m) => m[1]) : []);
+const heldPages = Object.values(pages).filter((p) => p.held).map((p) => SITE + p.u);
+heldPages.forEach((u) => { if (!heldLocs.has(u)) errors.push(`sitemap-held.xml is missing ${u}`); });
+heldLocs.forEach((u) => { if (!heldPages.includes(u)) errors.push(`sitemap-held.xml lists a page that is not held back ${u}`); });
+console.log(`Held back from Google (staged release): ${heldPages.length} pages.`);
 
 // Crawl like a search engine from the home page: every indexable page must be reachable (no orphans).
 const depth = { '/': 0 };
