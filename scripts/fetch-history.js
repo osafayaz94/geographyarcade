@@ -27,4 +27,10 @@ const clean = (s) => s.replace(/\s*[–—]\s*/g, '-'); // house style: no dashe
     console.log(`${c.key}: ${out[c.key].name.en} | names ${17 - miss.length}/17${miss.length ? ' missing ' + miss.join(',') : ''} | wiki ${Object.keys(wiki).length}`);
   }
   fs.writeFileSync(path.join(__dirname, '..', 'data', 'history.json'), JSON.stringify({ fetched: new Date().toISOString().slice(0, 10), civs: out }, null, 1));
-})().catch((e) => { console.error(e.message); process.exit(1); });
+})().catch((e) => {
+  // A source that is down for a day (the World Bank on 1 Nov 2026) must not stop the whole monthly update:
+  // keep last month's data/history.json when there is one. The guard still checks the data afterwards.
+  const kept = fs.existsSync(path.join(__dirname, '..', 'data', 'history.json'));
+  console.error(e.message + (kept ? '  (kept the previous data/history.json)' : ''));
+  process.exit(kept ? 0 : 1);
+});

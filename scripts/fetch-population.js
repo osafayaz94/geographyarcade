@@ -19,4 +19,10 @@ const path = require('path');
   if (Object.keys(out).length < 150) throw new Error('World Bank returned too few countries: ' + Object.keys(out).length);
   fs.writeFileSync(path.join(__dirname, '..', 'data', 'population.json'), JSON.stringify(out, null, 1));
   console.log(`World Bank population: ${countries.length - missing.length} of ${countries.length} countries, years ${JSON.stringify(years)}; keeping Wikidata for: ${missing.join(' ') || 'none'}`);
-})().catch((e) => { console.error(e.message); process.exit(1); });
+})().catch((e) => {
+  // A source that is down for a day (the World Bank on 1 Nov 2026) must not stop the whole monthly update:
+  // keep last month's data/population.json when there is one. The guard still checks the data afterwards.
+  const kept = fs.existsSync(path.join(__dirname, '..', 'data', 'population.json'));
+  console.error(e.message + (kept ? '  (kept the previous data/population.json)' : ''));
+  process.exit(kept ? 0 : 1);
+});

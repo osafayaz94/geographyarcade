@@ -61,4 +61,10 @@ async function labelsOf(ids) {
     console.log(`${o.key}: ${out[o.key].name.en} | founded ${out[o.key].founded} | HQ ${out[o.key].hq ? out[o.key].hq.en : '-'} | head ${out[o.key].head ? out[o.key].head.name.en + (out[o.key].head.office ? ' (' + out[o.key].head.office.en + ')' : '') : '-'} | names ${Object.keys(out[o.key].name).length}`);
   }
   fs.writeFileSync(path.join(__dirname, '..', 'data', 'organizations.json'), JSON.stringify({ fetched: new Date().toISOString().slice(0, 10), orgs: out }, null, 1));
-})().catch((e) => { console.error(e.message); process.exit(1); });
+})().catch((e) => {
+  // A source that is down for a day (the World Bank on 1 Nov 2026) must not stop the whole monthly update:
+  // keep last month's data/organizations.json when there is one. The guard still checks the data afterwards.
+  const kept = fs.existsSync(path.join(__dirname, '..', 'data', 'organizations.json'));
+  console.error(e.message + (kept ? '  (kept the previous data/organizations.json)' : ''));
+  process.exit(kept ? 0 : 1);
+});
