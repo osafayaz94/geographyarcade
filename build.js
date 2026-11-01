@@ -1219,6 +1219,15 @@ ${listLinks(lang, listsFor(c))}`;
 }
 
 // ---------- Provinces ----------
+// ' Includes X, Y, Z and more.': the three most populous divisions (or their capitals), for the page description.
+function topThree(lang, divs, key, nameOf) {
+  const pop = (d) => (d.population && (d.population.value || d.population)) || 0;
+  const names = [...divs].filter(pop).sort((a, b) => pop(b) - pop(a)).map(nameOf).filter(Boolean).slice(0, 3);
+  if (names.length < 3) return '';
+  const sep = ['zh', 'ja'].includes(lang) ? '、' : ['ar', 'ur'].includes(lang) ? '، ' : ', ';
+  const list = key === 'descCaps' ? listJoin(lang, names) : names.join(sep);
+  return (['zh', 'ja'].includes(lang) ? '' : ' ') + fillP(pg(lang)[key], { list });
+}
 function provinceQuizzes(lang, c) {
   const sub = subdivisions[c.iso2];
   const name = cName(c, lang);
@@ -1234,7 +1243,8 @@ function provinceQuizzes(lang, c) {
     const p = base + 'map-quiz/';
     const onMap = divs.filter((d) => MAP_IDS[c.iso2].has(d.id));
     const title = provQuizTitle(lang, c, 'map');
-    const desc = (c.iso2 === 'US' && seo(lang, 'usMapDesc')) || t(lang, 'provMapDesc', { c: name, n: onMap.length, term: tm });
+    // A second sentence names the three most populous divisions: real, and different on every page.
+    const desc = ((c.iso2 === 'US' && seo(lang, 'usMapDesc')) || t(lang, 'provMapDesc', { c: name, n: onMap.length, term: tm })) + topThree(lang, onMap, 'descIncl', (d) => nm(d.name, lang));
     const data = { type: 'pmap', key: `pmap-${c.iso2}-${lang}`, title, map: `/maps/p/${c.iso2.toLowerCase()}.svg`, ar: MAP_AR['p-' + c.iso2], items: onMap.map((d) => ({ id: d.id, n: nm(d.name, lang) })), s: quizStrings(lang) };
     const faq = faqBlock(lang, [[t(lang, 'qDivFaq', { c: name, term: tm }), t(lang, 'aDiv', { c: name, n: divs.length, term: tm, list: listJoin(lang, divs.slice(0, 3).map((d) => nm(d.name, lang))) })], [t(lang, 'qMapFaq'), t(lang, 'aMap')], [t(lang, 'qScoreFaq'), t(lang, 'aScore')]]);
     page(lang, p, { title, desc, script: true, nav: 'provinces/', crumbs: [...crumbsBase, { name: title, p }], jsonld: [quizLd(lang, p, title, desc, name), faq.ld],
@@ -1248,7 +1258,7 @@ function provinceQuizzes(lang, c) {
     // People also land here searching for the country's own capital: answer that first.
     const caps = capsOf(c, lang);
     const own = caps.length === 1 ? t(lang, 'capitalIs', { c: name, cap: caps[0] }) + ' ' : '';
-    const desc = own + ((c.iso2 === 'US' && seo(lang, 'usCapDesc')) || t(lang, 'provCapDesc', { c: name, n: withCap.length, term: tm }));
+    const desc = own + ((c.iso2 === 'US' && seo(lang, 'usCapDesc')) || t(lang, 'provCapDesc', { c: name, n: withCap.length, term: tm })) + topThree(lang, withCap, 'descCaps', (d) => nm(d.capital, lang));
     const data = { type: 'pcap', key: `pcap-${c.iso2}-${lang}`, title, picMap: `/maps/p/${c.iso2.toLowerCase()}.svg`, items: withCap.map((d) => ({ id: d.id, n: nm(d.name, lang), a: nm(d.capital, lang) })), s: quizStrings(lang) };
     const faq = faqBlock(lang, [[t(lang, 'qScoreFaq'), t(lang, 'aScore')]]);
     page(lang, p, { title, desc, script: true, nav: 'provinces/', crumbs: [...crumbsBase, { name: title, p }], jsonld: [quizLd(lang, p, title, desc, name), faq.ld],

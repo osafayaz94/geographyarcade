@@ -15,11 +15,19 @@ const KEY = CONFIG.indexNowKey;
 if (/example\.com/.test(SITE)) { console.error('Set domain in site.config.js first.'); process.exit(1); }
 if (!KEY) { console.error('Set indexNowKey in site.config.js first.'); process.exit(1); }
 
-// sitemap.xml is an index; the page URLs are in the per-language sitemaps next to it.
+// sitemap.xml is an index; the page URLs are in the per-language sitemaps next to it (and in
+// sitemap-held.xml, the pages held back from Google only).
+// Only the pages that changed in this build are sent: Bing asks sites not to send everything in one
+// batch on every deploy. A page that changed carries the build's date as its lastmod, the newest date
+// in the sitemaps; unchanged pages keep their older date. --all sends every URL (first setup only).
 const dist = path.join(__dirname, '..', 'dist');
-const urls = fs.readdirSync(dist).filter((f) => /^sitemap-.+\.xml$/.test(f)).flatMap((f) =>
-  Array.from(fs.readFileSync(path.join(dist, f), 'utf8').matchAll(/<loc>([^<]+)<\/loc>/g), (m) => m[1]));
-console.log(`Found ${urls.length} page URLs.`);
+const entries = fs.readdirSync(dist).filter((f) => /^sitemap-.+\.xml$/.test(f)).flatMap((f) =>
+  Array.from(fs.readFileSync(path.join(dist, f), 'utf8').matchAll(/<loc>([^<]+)<\/loc>(?:<lastmod>([^<]+)<\/lastmod>)?/g), (m) => ({ url: m[1], date: m[2] || '' })));
+const newest = entries.reduce((d, e) => (e.date > d ? e.date : d), '');
+const recent = newest && Date.now() - Date.parse(newest + 'T00:00:00Z') < 2 * 864e5;
+const urls = process.argv.includes('--all') ? entries.map((e) => e.url) : recent ? entries.filter((e) => e.date === newest).map((e) => e.url) : [];
+console.log(`${entries.length} page URLs in the sitemaps; ${urls.length} changed in this build (${newest || 'no dates'}).`);
+if (!urls.length) { console.log('Nothing new to send.'); process.exit(0); }
 
 (async () => {
   // The key file must be reachable on the live site, or the submission is rejected.

@@ -8,6 +8,8 @@ module.exports = {
     navUs: 'About us', navPrivacy: 'Privacy',
 
     pdfBtn: "Download PDF",
+    descIncl: "Includes {list} and more.",
+    descCaps: "Capitals to find include {list}.",
     histHubTitle: "Ancient civilizations: timeline and maps",
     histHubDesc: "The major civilizations and empires of history, from the Indus Valley to the Inca, in order of when they began. See when each one lasted and the area it covered on a map of today's borders.",
     histHubShort: "Ancient civilizations",
@@ -153,6 +155,8 @@ module.exports = {
     navUs: '关于我们', navPrivacy: '隐私',
 
     pdfBtn: "下载 PDF",
+    descIncl: "包括{list}等。",
+    descCaps: "要找的首府包括{list}等。",
     histHubTitle: "古代文明：时间线和地图",
     histHubDesc: "从印度河流域到印加的历史上主要文明和帝国，按出现的先后排列。查看每个文明延续的时间，以及它在今天国界地图上的范围。",
     histHubShort: "古代文明",
@@ -298,6 +302,8 @@ module.exports = {
     navUs: 'हमारे बारे में', navPrivacy: 'गोपनीयता',
 
     pdfBtn: "PDF डाउनलोड करें",
+    descIncl: "इसमें {list} और अन्य शामिल हैं।",
+    descCaps: "जिन राजधानियों को खोजना है उनमें {list} शामिल हैं।",
     histHubTitle: "प्राचीन सभ्यताएँ: समयरेखा और नक्शे",
     histHubDesc: "सिंधु घाटी से लेकर इंका तक इतिहास की प्रमुख सभ्यताएँ और साम्राज्य, उनके शुरू होने के क्रम में। देखिए हर एक कब तक चली और आज की सीमाओं वाले नक्शे पर उसका क्षेत्र कितना था।",
     histHubShort: "प्राचीन सभ्यताएँ",
@@ -443,6 +449,8 @@ module.exports = {
     navUs: 'Quiénes somos', navPrivacy: 'Privacidad',
 
     pdfBtn: "Descargar PDF",
+    descIncl: "Incluye {list} y más.",
+    descCaps: "Entre las capitales están {list}.",
     histHubTitle: "Civilizaciones antiguas: línea de tiempo y mapas",
     histHubDesc: "Las grandes civilizaciones e imperios de la historia, del valle del Indo a los incas, por orden de aparición. Mira cuándo duró cada una y el territorio que abarcó en un mapa con las fronteras de hoy.",
     histHubShort: "Civilizaciones antiguas",
@@ -588,6 +596,8 @@ module.exports = {
     navUs: 'من نحن', navPrivacy: 'الخصوصية',
 
     pdfBtn: "تنزيل PDF",
+    descIncl: "يشمل {list} وغيرها.",
+    descCaps: "من العواصم المطلوبة: {list}.",
     histHubTitle: "الحضارات القديمة: الخط الزمني والخرائط",
     histHubDesc: "أبرز حضارات التاريخ وإمبراطورياته، من وادي السند إلى الإنكا، مرتبة حسب زمن ظهورها. اطّلع على مدة كل منها والمساحة التي غطّتها على خريطة بحدود اليوم.",
     histHubShort: "الحضارات القديمة",
@@ -733,6 +743,8 @@ module.exports = {
     navUs: 'Qui sommes-nous', navPrivacy: 'Confidentialité',
 
     pdfBtn: "Télécharger le PDF",
+    descIncl: "Avec notamment {list}.",
+    descCaps: "Parmi les capitales à trouver : {list}.",
     histHubTitle: "Civilisations antiques : frise chronologique et cartes",
     histHubDesc: "Les grandes civilisations et empires de l'histoire, de la vallée de l'Indus aux Incas, dans l'ordre de leur apparition. Voyez la durée de chacun et le territoire couvert sur une carte aux frontières d'aujourd'hui.",
     histHubShort: "Civilisations antiques",
@@ -878,6 +890,8 @@ module.exports = {
     navUs: 'Über uns', navPrivacy: 'Datenschutz',
 
     pdfBtn: "PDF herunterladen",
+    descIncl: "Darunter {list} und weitere.",
+    descCaps: "Gesuchte Hauptstädte sind unter anderem {list}.",
     histHubTitle: "Antike Kulturen: Zeitstrahl und Karten",
     histHubDesc: "Die großen Kulturen und Reiche der Geschichte, vom Indus-Tal bis zu den Inka, in der Reihenfolge ihres Beginns. Sehen Sie, wie lange jede bestand und welches Gebiet sie auf einer Karte mit den heutigen Grenzen umfasste.",
     histHubShort: "Antike Kulturen",
@@ -1023,6 +1037,8 @@ module.exports = {
     navUs: 'আমাদের সম্পর্কে', navPrivacy: 'গোপনীয়তা',
 
     pdfBtn: "PDF ডাউনলোড করুন",
+    descIncl: "এর মধ্যে আছে {list} ও আরও অনেক।",
+    descCaps: "যে রাজধানীগুলো খুঁজতে হবে তার মধ্যে আছে {list}।",
     histHubTitle: "প্রাচীন সভ্যতা: সময়রেখা ও মানচিত্র",
     histHubDesc: "সিন্ধু উপত্যকা থেকে ইনকা পর্যন্ত ইতিহাসের প্রধান সভ্যতা ও সাম্রাজ্য, শুরুর ক্রম অনুযায়ী। প্রতিটি কত সময় টিকে ছিল এবং আজকের সীমানার মানচিত্রে তার এলাকা কতটা ছিল দেখুন।",
     histHubShort: "প্রাচীন সভ্যতা",
@@ -1168,6 +1184,8 @@ module.exports = {
     navUs: 'Quem somos', navPrivacy: 'Privacidade',
 
     pdfBtn: "Baixar PDF",
+    descIncl: "Inclui {list} e mais.",
+    descCaps: "Entre as capitais estão {list}.",
     histHubTitle: "Civilizações antigas: linha do tempo e mapas",
     histHubDesc: "As grandes civilizações e impérios da história, do vale do Indo aos incas, por ordem de surgimento. Veja quanto tempo durou cada uma e o território que abrangeu num mapa com as fronteiras de hoje.",
     histHubShort: "Civilizações antigas",
@@ -1313,6 +1331,8 @@ module.exports = {
     navUs: 'О нас', navPrivacy: 'Конфиденциальность',
 
     pdfBtn: "Скачать PDF",
+    descIncl: "Среди них {list} и другие.",
+    descCaps: "Среди столиц, которые нужно найти: {list}.",
     histHubTitle: "Древние цивилизации: хронология и карты",
     histHubDesc: "Главные цивилизации и империи истории, от долины Инда до инков, в порядке их появления. Смотрите, сколько каждая просуществовала и какую территорию занимала, на карте с современными границами.",
     histHubShort: "Древние цивилизации",
@@ -1458,6 +1478,8 @@ module.exports = {
     navUs: 'ہمارے بارے میں', navPrivacy: 'رازداری',
 
     pdfBtn: "PDF ڈاؤن لوڈ کریں",
+    descIncl: "ان میں {list} اور دیگر شامل ہیں۔",
+    descCaps: "تلاش کیے جانے والے دارالحکومتوں میں {list} شامل ہیں۔",
     histHubTitle: "قدیم تہذیبیں: ٹائم لائن اور نقشے",
     histHubDesc: "وادیٔ سندھ سے انکا تک تاریخ کی بڑی تہذیبیں اور سلطنتیں، ان کے آغاز کی ترتیب سے۔ دیکھیں ہر ایک کتنا عرصہ قائم رہی اور آج کی سرحدوں والے نقشے پر اس کا علاقہ کتنا تھا۔",
     histHubShort: "قدیم تہذیبیں",
@@ -1603,6 +1625,8 @@ module.exports = {
     navUs: 'Tentang kami', navPrivacy: 'Privasi',
 
     pdfBtn: "Unduh PDF",
+    descIncl: "Termasuk {list} dan lainnya.",
+    descCaps: "Ibu kota yang dicari antara lain {list}.",
     histHubTitle: "Peradaban kuno: lini masa dan peta",
     histHubDesc: "Peradaban dan kekaisaran besar dalam sejarah, dari Lembah Indus sampai Inka, berurutan menurut awal berdirinya. Lihat berapa lama masing-masing bertahan dan wilayahnya di peta dengan batas negara masa kini.",
     histHubShort: "Peradaban kuno",
@@ -1748,6 +1772,8 @@ module.exports = {
     navUs: 'Chi siamo', navPrivacy: 'Privacy',
 
     pdfBtn: "Scarica il PDF",
+    descIncl: "Tra cui {list} e altre.",
+    descCaps: "Tra le capitali da trovare: {list}.",
     histHubTitle: "Civiltà antiche: linea del tempo e mappe",
     histHubDesc: "Le grandi civiltà e imperi della storia, dalla valle dell'Indo agli Inca, in ordine di nascita. Guarda quanto è durata ciascuna e il territorio coperto su una mappa con i confini di oggi.",
     histHubShort: "Civiltà antiche",
@@ -1893,6 +1919,8 @@ module.exports = {
     navUs: '運営者について', navPrivacy: 'プライバシー',
 
     pdfBtn: "PDFをダウンロード",
+    descIncl: "{list}などが含まれます。",
+    descCaps: "探す首府には{list}などがあります。",
     histHubTitle: "古代文明：年表と地図",
     histHubDesc: "インダス文明からインカまで、歴史上の主な文明と帝国を、始まった順に紹介します。それぞれが続いた期間と、今の国境の地図上での範囲がわかります。",
     histHubShort: "古代文明",
@@ -2038,6 +2066,8 @@ module.exports = {
     navUs: '소개', navPrivacy: '개인정보',
 
     pdfBtn: "PDF 다운로드",
+    descIncl: "{list} 등이 포함됩니다.",
+    descCaps: "찾아야 할 주도에는 {list} 등이 있습니다.",
     histHubTitle: "고대 문명: 연표와 지도",
     histHubDesc: "인더스 문명에서 잉카까지, 역사 속 주요 문명과 제국을 시작된 순서대로 소개합니다. 각각 얼마나 이어졌는지, 오늘날의 국경 지도에서 어느 범위였는지 확인하세요.",
     histHubShort: "고대 문명",
@@ -2183,6 +2213,8 @@ module.exports = {
     navUs: 'O nas', navPrivacy: 'Prywatność',
 
     pdfBtn: "Pobierz PDF",
+    descIncl: "Między innymi {list}.",
+    descCaps: "Stolice do znalezienia to m.in. {list}.",
     histHubTitle: "Starożytne cywilizacje: oś czasu i mapy",
     histHubDesc: "Najważniejsze cywilizacje i imperia w historii, od doliny Indusu po Inków, w kolejności powstania. Zobacz, jak długo trwała każda z nich i jaki obszar zajmowała, na mapie z dzisiejszymi granicami.",
     histHubShort: "Starożytne cywilizacje",
@@ -2328,6 +2360,8 @@ module.exports = {
     navUs: 'Over ons', navPrivacy: 'Privacy',
 
     pdfBtn: "PDF downloaden",
+    descIncl: "Onder meer {list}.",
+    descCaps: "Te vinden hoofdsteden zijn onder meer {list}.",
     histHubTitle: "Oude beschavingen: tijdlijn en kaarten",
     histHubDesc: "De grote beschavingen en rijken uit de geschiedenis, van de Indusvallei tot de Inca, in volgorde van ontstaan. Bekijk hoe lang elk bestond en welk gebied het besloeg op een kaart met de grenzen van nu.",
     histHubShort: "Oude beschavingen",
