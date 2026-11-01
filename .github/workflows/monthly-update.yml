@@ -61,6 +61,10 @@ jobs:
         if: steps.mode.outputs.full == 'true'
         run: node scripts/stabilize.js /tmp/baseline
 
+      - name: Keep last month's provinces for a country whose download failed
+        if: steps.mode.outputs.full == 'true'
+        run: node scripts/keep-missing.js /tmp/baseline
+
       - name: Check the new data (stops here if something looks broken)
         if: steps.mode.outputs.full == 'true'
         run: node scripts/guard.js /tmp/baseline
