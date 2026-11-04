@@ -370,8 +370,8 @@
   "subregion": "Western Asia",
   "area": 83600,
   "population": {
-   "value": 9890400,
-   "year": 2020
+   "value": 10100000,
+   "year": 2026
   },
   "landlocked": false,
   "borders": [
@@ -1237,8 +1237,8 @@
   "subregion": "Southern Asia",
   "area": 147570,
   "population": {
-   "value": 171466990,
-   "year": 2023
+   "value": 175686899,
+   "year": 2025
   },
   "landlocked": false,
   "borders": [
@@ -1394,8 +1394,8 @@
   "subregion": "Western Asia",
   "area": 765,
   "population": {
-   "value": 1569666,
-   "year": 2023
+   "value": 2700000,
+   "year": 2026
   },
   "landlocked": false,
   "borders": [],
@@ -2250,7 +2250,7 @@
     "name": {
      "en": "Bangui",
      "zh": "班吉",
-     "hi": "बैंगुई",
+     "hi": "बांगी",
      "es": "Bangui",
      "ar": "بنغي",
      "fr": "Bangui",
@@ -2354,8 +2354,8 @@
   "subregion": "North America",
   "area": 9984670,
   "population": {
-   "value": 40000000,
-   "year": 2023
+   "value": 41798407,
+   "year": 2026
   },
   "landlocked": false,
   "borders": [
@@ -3095,8 +3095,8 @@
   "subregion": "Eastern Africa",
   "area": 1862,
   "population": {
-   "value": 902348,
-   "year": 2022
+   "value": 900000,
+   "year": 2026
   },
   "landlocked": false,
   "borders": [],
@@ -3639,8 +3639,8 @@
   "subregion": "Eastern Africa",
   "area": 23200,
   "population": {
-   "value": 1152944,
-   "year": 2023
+   "value": 1000000,
+   "year": 2026
   },
   "landlocked": false,
   "borders": [
@@ -3944,8 +3944,8 @@
   "subregion": "Northern Africa",
   "area": 2381741,
   "population": {
-   "value": 46164219,
-   "year": 2023
+   "value": 45600000,
+   "year": 2026
   },
   "landlocked": false,
   "borders": [
@@ -4103,8 +4103,8 @@
   "subregion": "Northern Africa",
   "area": 1002450,
   "population": {
-   "value": 114535772,
-   "year": 2023
+   "value": 114500000,
+   "year": 2026
   },
   "landlocked": false,
   "borders": [
@@ -6378,8 +6378,8 @@
   "subregion": "Western Asia",
   "area": 438317,
   "population": {
-   "value": 38274618,
-   "year": 2017
+   "value": 43500000,
+   "year": 2026
   },
   "landlocked": false,
   "borders": [
@@ -6772,8 +6772,8 @@
   "subregion": "Western Asia",
   "area": 89342,
   "population": {
-   "value": 10428241,
-   "year": 2019
+   "value": 11300000,
+   "year": 2026
   },
   "landlocked": false,
   "borders": [
@@ -7481,8 +7481,8 @@
   "subregion": "Western Asia",
   "area": 17818,
   "population": {
-   "value": 4464000,
-   "year": 2020
+   "value": 4300000,
+   "year": 2026
   },
   "landlocked": false,
   "borders": [
@@ -7638,8 +7638,8 @@
   "subregion": "Western Asia",
   "area": 10452,
   "population": {
-   "value": 5261372,
-   "year": 2021
+   "value": 5300000,
+   "year": 2026
   },
   "landlocked": false,
   "borders": [
@@ -7794,8 +7794,8 @@
   "subregion": "Northern Africa",
   "area": 1759540,
   "population": {
-   "value": 7381023,
-   "year": 2024
+   "value": 7100000,
+   "year": 2026
   },
   "landlocked": false,
   "borders": [
@@ -8423,8 +8423,8 @@
   "subregion": "Northern Africa",
   "area": 446550,
   "population": {
-   "value": 36828330,
-   "year": 2024
+   "value": 38300000,
+   "year": 2026
   },
   "landlocked": false,
   "borders": [
@@ -9512,8 +9512,8 @@
   "subregion": "Western Africa",
   "area": 1030700,
   "population": {
-   "value": 4736139,
-   "year": 2022
+   "value": 4900000,
+   "year": 2026
   },
   "landlocked": false,
   "borders": [
@@ -10047,7 +10047,7 @@
   "official": "Republic of Nicaragua",
   "capitals": [
    {
-    "qid": "Q3274",
+    "qid": "Q131546626",
     "name": {
      "en": "Managua",
      "zh": "马那瓜",
@@ -10529,8 +10529,8 @@
   "subregion": "Western Asia",
   "area": 309500,
   "population": {
-   "value": 4829480,
-   "year": 2018
+   "value": 5100000,
+   "year": 2026
   },
   "landlocked": false,
   "borders": [
@@ -11394,8 +11394,8 @@
   "subregion": "Western Asia",
   "area": 6220,
   "population": {
-   "value": 5227193,
-   "year": 2021
+   "value": 5400000,
+   "year": 2026
   },
   "landlocked": false,
   "borders": [
@@ -11973,8 +11973,8 @@
   "subregion": "Western Africa",
   "area": 196722,
   "population": {
-   "value": 16876720,
-   "year": 2021
+   "value": 18100000,
+   "year": 2026
   },
   "landlocked": false,
   "borders": [
@@ -12434,8 +12434,8 @@
   "subregion": "Eastern Africa",
   "area": 637657,
   "population": {
-   "value": 11031386,
-   "year": 2017
+   "value": 18100000,
+   "year": 2026
   },
   "landlocked": false,
   "borders": [
@@ -13224,8 +13224,8 @@
   "subregion": "Western Asia",
   "area": 185180,
   "population": {
-   "value": 23865423,
-   "year": 2024
+   "value": 23000000,
+   "year": 2026
   },
   "landlocked": false,
   "borders": [
@@ -13386,8 +13386,8 @@
   "subregion": "Western Africa",
   "area": 56785,
   "population": {
-   "value": 9515240,
-   "year": 2024
+   "value": 12400000,
+   "year": 2026
   },
   "landlocked": false,
   "borders": [
@@ -13929,8 +13929,8 @@
   "subregion": "Northern Africa",
   "area": 163610,
   "population": {
-   "value": 11972169,
-   "year": 2024
+   "value": 37100000,
+   "year": 2026
   },
   "landlocked": false,
   "borders": [
@@ -14651,7 +14651,7 @@
   "subregion": "Southern Europe",
   "area": 0.44,
   "population": {
-   "value": 882,
+   "value": 949,
    "year": 2024
   },
   "landlocked": true,
@@ -14728,7 +14728,7 @@
   "subregion": "Caribbean",
   "area": 389,
   "population": {
-   "value": 100804,
+   "value": 109296,
    "year": 2023
   },
   "landlocked": false,
@@ -15109,8 +15109,8 @@
   "subregion": "Western Asia",
   "area": 527968,
   "population": {
-   "value": 28250420,
-   "year": 2017
+   "value": 34400000,
+   "year": 2026
   },
   "landlocked": false,
   "borders": [

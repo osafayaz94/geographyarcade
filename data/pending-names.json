@@ -1,58 +1,774 @@
 {
- "country CF capital Q3832|hi": {
-  "value": "बांगी",
-  "since": "2026-09-30"
+ "country CN name|fr": {
+  "value": "République populaire de Chine",
+  "since": "2026-11-04"
  },
- "RU 28173009B7235812138525 name|ru": {
-  "value": "Северная Осетия",
-  "since": "2026-10-02"
+ "country HT name|bn": {
+  "value": "হাইতি",
+  "since": "2026-11-04"
  },
- "US 66186276B43575054209436 name|fr": {
-  "value": "New York",
-  "since": "2026-09-30"
+ "country NR name|pl": {
+  "value": "Naoero",
+  "since": "2026-11-04"
  },
- "DZ DZA-Q213950 capital|en": {
-  "value": "Khenchela",
-  "since": "2026-10-02"
+ "country SM capital Q1848|it": {
+  "value": "San Marino",
+  "since": "2026-11-04"
  },
- "PE 1875124B3772980127380 name|es": {
-  "value": "departamento de Puno",
-  "since": "2026-09-30"
+ "country US capital Q61|it": {
+  "value": "Washington D.C.",
+  "since": "2026-11-04"
  },
- "PE 1875124B80189625477090 name|es": {
-  "value": "departamento de Ucayali",
-  "since": "2026-09-30"
+ "RU 28173009B731487536241 name|en": {
+  "value": "Khanty-Mansi Autonomous Okrug",
+  "since": "2026-11-04"
  },
- "PE 1875124B61678101818850 name|es": {
-  "value": "departamento de Junín",
-  "since": "2026-09-30"
+ "RU 28173009B3082792446388 capital|es": {
+  "value": "Narián-Mar",
+  "since": "2026-11-04"
  },
- "PE 1875124B2667580847298 name|es": {
-  "value": "departamento de Madre de Dios",
-  "since": "2026-09-30"
+ "RU RUS-ZAP capital|pt": {
+  "value": "Zaporizhzhya",
+  "since": "2026-11-04"
  },
- "PE 1875124B5984096006894 name|es": {
-  "value": "departamento de Cusco",
-  "since": "2026-09-30"
+ "CA 82249235B66370767641120 capital|ar": {
+  "value": "تورنتو",
+  "since": "2026-11-04"
  },
- "PE 1875124B63771233756824 name|es": {
-  "value": "departamento de Apurímac",
-  "since": "2026-09-30"
+ "CN 43563684B32372453033755 name|pt": {
+  "value": "Província de Taiwan",
+  "since": "2026-11-04"
  },
- "PE 1875124B76579830071892 name|es": {
-  "value": "departamento de Ayacucho",
-  "since": "2026-09-30"
+ "US 66186276B98555229882405 name|ru": {
+  "value": "штат Вашингтон",
+  "since": "2026-11-04"
  },
- "PE 1875124B34173194899706 name|es": {
-  "value": "departamento de Arequipa",
-  "since": "2026-09-30"
+ "US 66186276B94082813086253 capital|it": {
+  "value": "Washington D.C.",
+  "since": "2026-11-04"
  },
- "LA 31783359B64397225362620 name|en": {
-  "value": "Sekong",
-  "since": "2026-10-02"
+ "IN 1811400B56841107211215 capital|fr": {
+  "value": "Bengaluru",
+  "since": "2026-11-04"
  },
- "DO 93820187B75937606305335 capital|en": {
-  "value": "Luperon pto pta",
-  "since": "2026-09-30"
+ "DZ DZA-Q266411 capital|en": {
+  "value": "Bordj Bou Arréridj",
+  "since": "2026-11-04"
+ },
+ "CD 28894549B61915221715888 name|en": {
+  "value": "Kasaï-Central",
+  "since": "2026-11-04"
+ },
+ "CD 28894549B61915221715888 name|fr": {
+  "value": "Kasaï central",
+  "since": "2026-11-04"
+ },
+ "CD 28894549B61915221715888 name|pt": {
+  "value": "Cassai Central",
+  "since": "2026-11-04"
+ },
+ "CD 28894549B61915221715888 name|ja": {
+  "value": "中央カサイ州",
+  "since": "2026-11-04"
+ },
+ "CD 28894549B61915221715888 name|ko": {
+  "value": "카사이상트랄 주",
+  "since": "2026-11-04"
+ },
+ "MX 31927357B35339934753022 capital|ja": {
+  "value": "メヒカリ",
+  "since": "2026-11-04"
+ },
+ "MX 31927357B41082348713023 name|ru": {
+  "value": "штат Мехико",
+  "since": "2026-11-04"
+ },
+ "SD 86620642B86272532082738 name|ar": {
+  "value": "اقليم النيل الأزرق",
+  "since": "2026-11-04"
+ },
+ "SD 86620642B89646054714247 name|ru": {
+  "value": "Северная провинция",
+  "since": "2026-11-04"
+ },
+ "SD 86620642B212901614698 name|ar": {
+  "value": "ولاية سنار اقليم النيل الازرق",
+  "since": "2026-11-04"
+ },
+ "LY 10800210B58781405840719 name|en": {
+  "value": "Misurata Municipality",
+  "since": "2026-11-04"
+ },
+ "LY 10800210B58781405840719 capital|en": {
+  "value": "Misrata",
+  "since": "2026-11-04"
+ },
+ "MN 14279143B7284431230829 capital|hi": {
+  "value": "ओलगी",
+  "since": "2026-11-04"
+ },
+ "PE 1875124B51528250409360 name|es": {
+  "value": "departamento de Cajamarca",
+  "since": "2026-11-04"
+ },
+ "PE 1875124B91024374055933 name|es": {
+  "value": "departamento de La Libertad",
+  "since": "2026-11-04"
+ },
+ "PE 1875124B5969368354394 name|es": {
+  "value": "departamento de Huánuco",
+  "since": "2026-11-04"
+ },
+ "PE 1875124B43998217738279 name|es": {
+  "value": "provincia de Lima",
+  "since": "2026-11-04"
+ },
+ "PE 1875124B25343038633883 name|es": {
+  "value": "departamento de Ica",
+  "since": "2026-11-04"
+ },
+ "PE 1875124B3524833739478 name|es": {
+  "value": "departamento de Loreto",
+  "since": "2026-11-04"
+ },
+ "PE 1875124B3524833739478 name|fr": {
+  "value": "département de Loreto",
+  "since": "2026-11-04"
+ },
+ "TD 23847190B50657270888212 name|hi": {
+  "value": "वद्दाय प्रांत",
+  "since": "2026-11-04"
+ },
+ "EG 46179711B98212466425872 name|ja": {
+  "value": "ダカフリーヤ県",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B95172477822815 name|hi": {
+  "value": "अदाना प्रांत",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B90872828599679 name|hi": {
+  "value": "अदुयामान प्रांत",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B90872828599679 capital|hi": {
+  "value": "अदुयामान",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B26209284550223 name|hi": {
+  "value": "अफ़योनकाराहिसार प्रांत",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B39003465173278 name|hi": {
+  "value": "आरु प्रांत",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B39003465173278 capital|hi": {
+  "value": "आरु",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B32583172380009 name|hi": {
+  "value": "अमास्या प्रांत",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B1602304411378 name|hi": {
+  "value": "अर्तविन प्रांत",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B1602304411378 capital|hi": {
+  "value": "अर्तविन",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B63739470532168 name|hi": {
+  "value": "अयदुन प्रांत",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B63739470532168 capital|hi": {
+  "value": "अयदुन",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B55384476443375 capital|hi": {
+  "value": "बालुकेसिर",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B3524648625362 name|hi": {
+  "value": "चांकुरु प्रांत",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B3524648625362 capital|hi": {
+  "value": "चांकुरु",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B99670107521163 capital|hi": {
+  "value": "दियारबाकुर",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B68163725002210 capital|hi": {
+  "value": "एदिर्ने",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B73855241915553 name|hi": {
+  "value": "एलाज़ू प्रांत",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B21238382887484 name|hi": {
+  "value": "एर्ज़िंजान प्रांत",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B21238382887484 capital|hi": {
+  "value": "एर्ज़िंजान",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B12971548112787 capital|hi": {
+  "value": "एस्कीशेहिर",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B57211123653900 name|hi": {
+  "value": "गिरेसुन प्रांत",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B57211123653900 capital|hi": {
+  "value": "गिरेसुन",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B20089439873245 name|hi": {
+  "value": "ऊदुर प्रांत",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B20089439873245 capital|hi": {
+  "value": "ऊदुर",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B9026957888422 name|hi": {
+  "value": "उस्पार्ता प्रांत",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B9026957888422 capital|hi": {
+  "value": "उस्पार्ता",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B58862484177861 name|hi": {
+  "value": "कहरमानमराश प्रांत",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B58862484177861 capital|hi": {
+  "value": "कहरमानमराश",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B55399473509250 name|hi": {
+  "value": "काराबुक प्रांत",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B55399473509250 capital|hi": {
+  "value": "काराबुक",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B10334298996421 capital|hi": {
+  "value": "कुर्कलारेली",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B83185192232063 capital|hi": {
+  "value": "कुरशेहिर",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B59741408878569 name|hi": {
+  "value": "नीदे प्रांत",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B30494634933389 name|hi": {
+  "value": "साकार्या प्रांत",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B86660708585065 name|hi": {
+  "value": "सिनोप प्रांत",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B86660708585065 capital|hi": {
+  "value": "सिनोप",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B4318484465943 name|hi": {
+  "value": "तेकिरदा प्रांत",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B4318484465943 capital|hi": {
+  "value": "तेकिरदा",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B20532508270601 name|hi": {
+  "value": "तोकात प्रांत",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B20532508270601 capital|hi": {
+  "value": "तोकात",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B1589724669162 name|hi": {
+  "value": "त्राबज़ोन प्रांत",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B1589724669162 capital|hi": {
+  "value": "त्राबज़ोन",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B95251525471141 name|hi": {
+  "value": "उशाक प्रांत",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B28392380114016 capital|hi": {
+  "value": "वान",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B35512619552530 name|hi": {
+  "value": "शानलूरफ़ा प्रांत",
+  "since": "2026-11-04"
+ },
+ "TR 25984515B35512619552530 capital|hi": {
+  "value": "शानलूरफ़ा",
+  "since": "2026-11-04"
+ },
+ "SO 83879307B13610404434600 name|en": {
+  "value": "Sanaag Region",
+  "since": "2026-11-04"
+ },
+ "UA 14850775B55286662261645 capital|es": {
+  "value": "Cherníhiv",
+  "since": "2026-11-04"
+ },
+ "UA 14850775B53240635394722 capital|fr": {
+  "value": "Odesa",
+  "since": "2026-11-04"
+ },
+ "UA 14850775B64193679462794 capital|es": {
+  "value": "Kropyvnytsky",
+  "since": "2026-11-04"
+ },
+ "SE 68755315B22015401421101 name|it": {
+  "value": "contea di Västerbotten",
+  "since": "2026-11-04"
+ },
+ "JP 47310658B55038426470858 name|ru": {
+  "value": "префектура Осака",
+  "since": "2026-11-04"
+ },
+ "JP 47310658B55038426470858 name|it": {
+  "value": "Prefettura di Osaka",
+  "since": "2026-11-04"
+ },
+ "JP 47310658B55038426470858 name|nl": {
+  "value": "Prefectuur Osaka",
+  "since": "2026-11-04"
+ },
+ "DE 10402087B40185768535592 name|es": {
+  "value": "Brandemburgo",
+  "since": "2026-11-04"
+ },
+ "DE 10402087B40185768535592 capital|hi": {
+  "value": "पॉट्सडाम",
+  "since": "2026-11-04"
+ },
+ "DE 10402087B85226028911536 capital|hi": {
+  "value": "वीसबाडन",
+  "since": "2026-11-04"
+ },
+ "FI 49019192B22299411224621 name|de": {
+  "value": "Ostbottnien",
+  "since": "2026-11-04"
+ },
+ "IT 23120603B10307341449000 name|es": {
+  "value": "Trentino-Alto Adigio/Südtirol",
+  "since": "2026-11-04"
+ },
+ "IT 23120603B10307341449000 name|it": {
+  "value": "Trentino-Alto Adige/Südtirol",
+  "since": "2026-11-04"
+ },
+ "LA 31783359B43569910510083 capital|hi": {
+  "value": "मुआंग सय",
+  "since": "2026-11-04"
+ },
+ "LA 31783359B41032705110141 capital|en": {
+  "value": "Kaysone Phomvihane",
+  "since": "2026-11-04"
+ },
+ "BY 45462678B29468378769629 name|en": {
+  "value": "Brest region",
+  "since": "2026-11-04"
+ },
+ "SY 8384693B93490606690779 capital|pt": {
+  "value": "Hómece",
+  "since": "2026-11-04"
+ },
+ "GR 26713481B23289270995723 name|en": {
+  "value": "Thessaly Region",
+  "since": "2026-11-04"
+ },
+ "GR 26713481B23289270995723 name|zh": {
+  "value": "色萨利大区",
+  "since": "2026-11-04"
+ },
+ "GR 26713481B23289270995723 name|es": {
+  "value": "periferia de Thessalia",
+  "since": "2026-11-04"
+ },
+ "GR 26713481B23289270995723 name|bn": {
+  "value": "থেসালি অঞ্চল",
+  "since": "2026-11-04"
+ },
+ "GR 26713481B23289270995723 name|ur": {
+  "value": "تھیسالی",
+  "since": "2026-11-04"
+ },
+ "GR 26713481B23289270995723 name|pt": {
+  "value": "Periferia da Tessália",
+  "since": "2026-11-04"
+ },
+ "GR 26713481B23289270995723 name|ko": {
+  "value": "테살리아주",
+  "since": "2026-11-04"
+ },
+ "GR 26713481B23289270995723 name|pl": {
+  "value": "Region Tesalia",
+  "since": "2026-11-04"
+ },
+ "GR 26713481B43979888680650 capital|hi": {
+  "value": "मितिलिनी",
+  "since": "2026-11-04"
+ },
+ "BG 22928101B68200013052436 capital|hi": {
+  "value": "कर्जाली",
+  "since": "2026-11-04"
+ },
+ "GT 53557124B24572600119042 name|hi": {
+  "value": "आल्ता बेरापास विभाग",
+  "since": "2026-11-04"
+ },
+ "GT 53557124B97439913802456 name|hi": {
+  "value": "सुचितेपेकेस विभाग",
+  "since": "2026-11-04"
+ },
+ "GT 53557124B14274164057878 name|hi": {
+  "value": "साकापा विभाग",
+  "since": "2026-11-04"
+ },
+ "GT 53557124B7234641414324 name|hi": {
+  "value": "पेतेन विभाग",
+  "since": "2026-11-04"
+ },
+ "GT 53557124B57493731306464 name|hi": {
+  "value": "किचे विभाग",
+  "since": "2026-11-04"
+ },
+ "GT 53557124B25298484445247 capital|hi": {
+  "value": "चिकिमुला",
+  "since": "2026-11-04"
+ },
+ "GT 53557124B89655490483829 name|hi": {
+  "value": "साकातेपेकेस विभाग",
+  "since": "2026-11-04"
+ },
+ "GT 53557124B93889796431495 name|hi": {
+  "value": "इसाबाल विभाग",
+  "since": "2026-11-04"
+ },
+ "GT 53557124B78393665096661 name|hi": {
+  "value": "ख़ालापा विभाग",
+  "since": "2026-11-04"
+ },
+ "GT 53557124B78398693011322 name|hi": {
+  "value": "सान मार्कोस विभाग",
+  "since": "2026-11-04"
+ },
+ "GT 53557124B22904219543889 name|hi": {
+  "value": "वेवेतेनांगो विभाग",
+  "since": "2026-11-04"
+ },
+ "GT 53557124B40850127361414 name|hi": {
+  "value": "तोतोनिकापान विभाग",
+  "since": "2026-11-04"
+ },
+ "GT 53557124B53470403358651 name|hi": {
+  "value": "केत्सालतेनांगो विभाग",
+  "since": "2026-11-04"
+ },
+ "GT 53557124B53470403358651 capital|hi": {
+  "value": "केत्सालतेनांगो",
+  "since": "2026-11-04"
+ },
+ "GT 53557124B13979183410132 name|hi": {
+  "value": "रेताल्वेलेउ विभाग",
+  "since": "2026-11-04"
+ },
+ "GT 53557124B73602535274933 name|hi": {
+  "value": "बाख़ा बेरापास विभाग",
+  "since": "2026-11-04"
+ },
+ "GT 53557124B88187939081538 name|hi": {
+  "value": "एस्क्विंत्ला विभाग",
+  "since": "2026-11-04"
+ },
+ "GT 53557124B88187939081538 capital|hi": {
+  "value": "एस्क्विंत्ला",
+  "since": "2026-11-04"
+ },
+ "GT 53557124B66453733615856 name|hi": {
+  "value": "चिमालतेनांगो विभाग",
+  "since": "2026-11-04"
+ },
+ "GT 53557124B49951428420175 name|hi": {
+  "value": "ख़ुतियापा विभाग",
+  "since": "2026-11-04"
+ },
+ "GT 53557124B49951428420175 capital|hi": {
+  "value": "ख़ुतियापा",
+  "since": "2026-11-04"
+ },
+ "GT 53557124B32978494135306 name|hi": {
+  "value": "सांता रोसा विभाग",
+  "since": "2026-11-04"
+ },
+ "PT 24955722B24387739047039 name|en": {
+  "value": "Oporto",
+  "since": "2026-11-04"
+ },
+ "RS SRB-PRZ capital|hi": {
+  "value": "प्रिज़्रेन",
+  "since": "2026-11-04"
+ },
+ "CZ 73172107B56271871797203 capital|de": {
+  "value": "Hradec Králové / Königgrätz",
+  "since": "2026-11-04"
+ },
+ "GW 76643164B18917431809987 name|pt": {
+  "value": "Bolama",
+  "since": "2026-11-04"
+ },
+ "MD 25212430B95154791539173 capital|en": {
+  "value": "Bender",
+  "since": "2026-11-04"
+ },
+ "MD 25212430B95154791539173 capital|de": {
+  "value": "Bender",
+  "since": "2026-11-04"
+ },
+ "MD 25212430B29368029244886 name|ru": {
+  "value": "Муниципий Кишинёв",
+  "since": "2026-11-04"
+ },
+ "MD 25212430B29368029244886 capital|pt": {
+  "value": "Chişinău",
+  "since": "2026-11-04"
+ },
+ "MD 25212430B46101437811477 name|pt": {
+  "value": "Briceni (condado)",
+  "since": "2026-11-04"
+ },
+ "BE 21686613B2396966306431 name|en": {
+  "value": "Antwerp",
+  "since": "2026-11-04"
+ },
+ "BE 21686613B2396966306431 name|es": {
+  "value": "Amberes",
+  "since": "2026-11-04"
+ },
+ "BE 21686613B2396966306431 name|fr": {
+  "value": "Anvers",
+  "since": "2026-11-04"
+ },
+ "BE 21686613B2396966306431 name|de": {
+  "value": "Antwerpen",
+  "since": "2026-11-04"
+ },
+ "BE 21686613B2396966306431 name|it": {
+  "value": "Anversa",
+  "since": "2026-11-04"
+ },
+ "BE 21686613B2396966306431 name|nl": {
+  "value": "Antwerpen",
+  "since": "2026-11-04"
+ },
+ "BE 21686613B30775418393346 name|en": {
+  "value": "Liege",
+  "since": "2026-11-04"
+ },
+ "BE 21686613B30775418393346 name|es": {
+  "value": "Lieja",
+  "since": "2026-11-04"
+ },
+ "BE 21686613B30775418393346 name|fr": {
+  "value": "Liège",
+  "since": "2026-11-04"
+ },
+ "BE 21686613B30775418393346 name|de": {
+  "value": "Lüttich",
+  "since": "2026-11-04"
+ },
+ "BE 21686613B30775418393346 name|it": {
+  "value": "Liegi",
+  "since": "2026-11-04"
+ },
+ "BE 21686613B30775418393346 name|pl": {
+  "value": "Liège",
+  "since": "2026-11-04"
+ },
+ "BE 21686613B30775418393346 name|nl": {
+  "value": "Luik",
+  "since": "2026-11-04"
+ },
+ "BE 21686613B13309387984844 name|en": {
+  "value": "Luxembourg Province",
+  "since": "2026-11-04"
+ },
+ "BE 21686613B13309387984844 name|fr": {
+  "value": "Luxembourg",
+  "since": "2026-11-04"
+ },
+ "BE 21686613B13309387984844 name|nl": {
+  "value": "Luxemburg",
+  "since": "2026-11-04"
+ },
+ "BE 21686613B39201499637991 name|en": {
+  "value": "Namur",
+  "since": "2026-11-04"
+ },
+ "BE 21686613B39201499637991 name|fr": {
+  "value": "Namur",
+  "since": "2026-11-04"
+ },
+ "BE 21686613B39201499637991 name|de": {
+  "value": "Namur",
+  "since": "2026-11-04"
+ },
+ "BE 21686613B39201499637991 name|pl": {
+  "value": "Namur",
+  "since": "2026-11-04"
+ },
+ "BE 21686613B39201499637991 name|nl": {
+  "value": "Namen",
+  "since": "2026-11-04"
+ },
+ "BE 21686613B83431002442680 capital|bn": {
+  "value": "ল্যোভেন",
+  "since": "2026-11-04"
+ },
+ "AM 6114869B51735422330893 name|pt": {
+  "value": "Erevan",
+  "since": "2026-11-04"
+ },
+ "AM 6114869B31075086997569 capital|en": {
+  "value": "Artashat",
+  "since": "2026-11-04"
+ },
+ "HT 49955354B70742132222307 name|pt": {
+  "value": "Departamento do Norte",
+  "since": "2026-11-04"
+ },
+ "MK MKD-Q2370973 capital|hi": {
+  "value": "देमीर कापिया",
+  "since": "2026-11-04"
+ },
+ "DJ 25444519B34443348585704 name|pt": {
+  "value": "Djibuti",
+  "since": "2026-11-04"
+ },
+ "IL 19161824B24193204184747 capital|it": {
+  "value": "Be'er Sheva",
+  "since": "2026-11-04"
+ },
+ "BS 57655419B82083755348588 name|pl": {
+  "value": "Bimini",
+  "since": "2026-11-04"
+ },
+ "BS 57655419B42503330785161 name|en": {
+  "value": "Rum Cay District",
+  "since": "2026-11-04"
+ },
+ "ME MNE-Q2384773 name|pt": {
+  "value": "Andrijevica (município)",
+  "since": "2026-11-04"
+ },
+ "ME MNE-Q2604068 name|pt": {
+  "value": "Bar (município)",
+  "since": "2026-11-04"
+ },
+ "ME MNE-Q3299782 name|pt": {
+  "value": "Mojkovac (município)",
+  "since": "2026-11-04"
+ },
+ "ME MNE-Q3299950 name|pt": {
+  "value": "Pljevlja (município)",
+  "since": "2026-11-04"
+ },
+ "ME MNE-Q3303233 name|pt": {
+  "value": "Kolašin (município)",
+  "since": "2026-11-04"
+ },
+ "ME MNE-Q3304454 name|pt": {
+  "value": "Žabljak (município)",
+  "since": "2026-11-04"
+ },
+ "ME MNE-Q3305075 name|pt": {
+  "value": "Cetinje (município)",
+  "since": "2026-11-04"
+ },
+ "ME MNE-Q3305250 name|pt": {
+  "value": "Podgoritza (município)",
+  "since": "2026-11-04"
+ },
+ "ME MNE-Q3317366 name|pt": {
+  "value": "Herceg-Novi (município)",
+  "since": "2026-11-04"
+ },
+ "ME MNE-Q3738564 name|pt": {
+  "value": "Tivat (município)",
+  "since": "2026-11-04"
+ },
+ "ME MNE-Q3741507 name|pt": {
+  "value": "Danilovgrad (município)",
+  "since": "2026-11-04"
+ },
+ "ME MNE-Q4853794 name|pt": {
+  "value": "Berane (município)",
+  "since": "2026-11-04"
+ },
+ "ME MNE-Q4856305 name|pt": {
+  "value": "Kotor (município)",
+  "since": "2026-11-04"
+ },
+ "MU 65221844B53255720811613 name|pt": {
+  "value": "Porto Luís",
+  "since": "2026-11-04"
+ },
+ "MU 65221844B53255720811613 capital|pt": {
+  "value": "Porto Luís",
+  "since": "2026-11-04"
+ },
+ "KI 97431129B55805139245338 capital|pt": {
+  "value": "Taraua do Sul",
+  "since": "2026-11-04"
+ },
+ "TO 12702645B14713027314985 name|pt": {
+  "value": "Vava'u",
+  "since": "2026-11-04"
+ },
+ "AD 23515209B24107209170284 name|es": {
+  "value": "Parroquia de Andorra la Vella",
+  "since": "2026-11-04"
+ },
+ "AD 23515209B24107209170284 name|it": {
+  "value": "parrocchia di Andorra la Vella",
+  "since": "2026-11-04"
+ },
+ "AD 23515209B24107209170284 name|ja": {
+  "value": "アンドラ・ラ・ベリャ教区",
+  "since": "2026-11-04"
+ },
+ "AD 23515209B24107209170284 name|nl": {
+  "value": "Parochie Andorra la Vella",
+  "since": "2026-11-04"
+ },
+ "SM 276375B17354965621201 name|it": {
+  "value": "San Marino",
+  "since": "2026-11-04"
  }
 }

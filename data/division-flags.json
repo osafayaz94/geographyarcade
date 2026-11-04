@@ -451,13 +451,71 @@
    "author": "Kooma (original)"
   }
  },
+ "AU": {
+  "82085004B21656044714531": {
+   "file": "82085004B21656044714531.svg",
+   "commons": "Flag of New South Wales.svg",
+   "page": "https://commons.wikimedia.org/wiki/File:Flag_of_New_South_Wales.svg",
+   "license": "Public domain",
+   "author": "Denelson83 (original)"
+  },
+  "82085004B60194602145168": {
+   "file": "82085004B60194602145168.png",
+   "commons": "Flag of Victoria (Australia).svg",
+   "page": "https://commons.wikimedia.org/wiki/File:Flag_of_Victoria_(Australia).svg",
+   "license": "Public domain",
+   "author": "Denelson83 (original)"
+  },
+  "82085004B13995298844162": {
+   "file": "82085004B13995298844162.png",
+   "commons": "Flag of Queensland.svg",
+   "page": "https://commons.wikimedia.org/wiki/File:Flag_of_Queensland.svg",
+   "license": "Public domain",
+   "author": "Government of Queensland"
+  },
+  "82085004B14973555098025": {
+   "file": "82085004B14973555098025.svg",
+   "commons": "Flag of South Australia.svg",
+   "page": "https://commons.wikimedia.org/wiki/File:Flag_of_South_Australia.svg",
+   "license": "Public domain",
+   "author": "Robert Craig (Likely Original Designer)"
+  },
+  "82085004B93533858076668": {
+   "file": "82085004B93533858076668.svg",
+   "commons": "Flag of Western Australia.svg",
+   "page": "https://commons.wikimedia.org/wiki/File:Flag_of_Western_Australia.svg",
+   "license": "Public domain",
+   "author": "Original: Frederick Weld Vector: Denelson83"
+  },
+  "82085004B70793016411369": {
+   "file": "82085004B70793016411369.svg",
+   "commons": "Flag of Tasmania.svg",
+   "page": "https://commons.wikimedia.org/wiki/File:Flag_of_Tasmania.svg",
+   "license": "Public domain",
+   "author": "Unknown author (Proclaimed by Sir Frederick Weld)"
+  },
+  "82085004B70364588595557": {
+   "file": "82085004B70364588595557.svg",
+   "commons": "Flag of the Northern Territory.svg",
+   "page": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Northern_Territory.svg",
+   "license": "Public domain",
+   "author": "Robert Ingpen"
+  },
+  "82085004B40257551482390": {
+   "file": "82085004B40257551482390.png",
+   "commons": "Flag of the Australian Capital Territory.svg",
+   "page": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Australian_Capital_Territory.svg",
+   "license": "Public domain",
+   "author": "Ivo Ostyn (Original Designer)"
+  }
+ },
  "DE": {
   "10402087B60055985875400": {
    "file": "10402087B60055985875400.svg",
    "commons": "Flag of Baden-Württemberg.svg",
    "page": "https://commons.wikimedia.org/wiki/File:Flag_of_Baden-W%C3%BCrttemberg.svg",
-   "license": "",
-   "author": ""
+   "license": "Public domain",
+   "author": "Dbenbenn"
   },
   "10402087B60477050509260": {
    "file": "10402087B60477050509260.svg",
@@ -555,7 +613,7 @@
    "commons": "Flag of Schleswig-Holstein.svg",
    "page": "https://commons.wikimedia.org/wiki/File:Flag_of_Schleswig-Holstein.svg",
    "license": "Public domain",
-   "author": ""
+   "author": "Jon Harald Søby"
   },
   "10402087B67217417145666": {
    "file": "10402087B67217417145666.svg",
@@ -936,8 +994,8 @@
    "file": "47310658B84769036468911.svg",
    "commons": "Flag of Hiroshima Prefecture.svg",
    "page": "https://commons.wikimedia.org/wiki/File:Flag_of_Hiroshima_Prefecture.svg",
-   "license": "CC BY-SA 3.0",
-   "author": "Alex Tora, Mike Rohsopht"
+   "license": "",
+   "author": "Unknown"
   },
   "47310658B78383189487115": {
    "file": "47310658B78383189487115.svg",
@@ -1174,10 +1232,10 @@
   },
   "70761945B64873726514121": {
    "file": "70761945B64873726514121.svg",
-   "commons": "CHE Canton de Neuchâtel Flag.svg",
-   "page": "https://commons.wikimedia.org/wiki/File:CHE_Canton_de_Neuch%C3%A2tel_Flag.svg",
+   "commons": "Flag of Canton of Neuchâtel.svg",
+   "page": "https://commons.wikimedia.org/wiki/File:Flag_of_Canton_of_Neuch%C3%A2tel.svg",
    "license": "Public domain",
-   "author": "Original: Unknown author Vector: SpinnerLaserzthe2nd"
+   "author": "Unknown authorUnknown author"
   },
   "70761945B45925471978558": {
    "file": "70761945B45925471978558.svg",

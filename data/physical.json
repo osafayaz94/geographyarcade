@@ -795,7 +795,7 @@
      "ur": "بحیرہ جاپان",
      "de": "Japanisches Meer",
      "id": "Laut Jepang",
-     "it": "Mar del Giappone",
+     "it": "mar del Giappone",
      "ja": "日本海",
      "ko": "동해",
      "pl": "Morze Japońskie",
@@ -2015,7 +2015,7 @@
      "ur": "جھیل ونیپیگ",
      "de": "Winnipegsee",
      "id": "Danau Winnipeg",
-     "it": "Winnipeg",
+     "it": "lago Winnipeg",
      "ja": "ウィニペグ湖",
      "ko": "위니펙호",
      "pl": "Winnipeg",
@@ -2081,7 +2081,7 @@
      "ur": "جھیل بالخش",
      "de": "Balchaschsee",
      "id": "Danau Balkhash",
-     "it": "lago Balqaš",
+     "it": "lago Balqaş",
      "ja": "バルハシ湖",
      "ko": "발하시호",
      "pl": "Bałchasz",
@@ -2125,7 +2125,7 @@
      "ur": "جھیل اتھابسکا",
      "de": "Athabascasee",
      "id": "Danau Athabasca",
-     "it": "Athabasca",
+     "it": "lago Athabasca",
      "ja": "アサバスカ湖",
      "ko": "애서배스카호",
      "pl": "Athabaska",
@@ -2169,7 +2169,7 @@
      "ur": "جھیل نکاراگوا",
      "de": "Nicaraguasee",
      "id": "Danau Nikaragua",
-     "it": "Lago Nicaragua",
+     "it": "lago Nicaragua",
      "ja": "ニカラグア湖",
      "ko": "니카라과호",
      "pl": "Jezioro Nikaragua",
@@ -2915,7 +2915,7 @@
      "hi": "होन्शू",
      "es": "Honshū",
      "ar": "هونشو",
-     "fr": "Honshū",
+     "fr": "Honshu",
      "bn": "হোনশু",
      "pt": "Honshu",
      "ru": "Хонсю",
@@ -2937,7 +2937,7 @@
      "hi": "क्यूशू",
      "es": "Kyūshū",
      "ar": "كيوشو",
-     "fr": "Kyūshū",
+     "fr": "Kyushu",
      "bn": "কিউশু",
      "pt": "Kyushu",
      "ru": "Кюсю",
@@ -3108,28 +3108,6 @@
    },
    {
     "name": {
-     "en": "Newfoundland",
-     "zh": "纽芬兰岛",
-     "hi": "न्यूफ़ाउण्डलैण्ड",
-     "es": "Isla de Terranova",
-     "ar": "نيوفاوندلاند",
-     "fr": "Terre-Neuve",
-     "bn": "নিউফাউন্ডল্যান্ড",
-     "pt": "Terra Nova",
-     "ru": "Ньюфаундленд",
-     "ur": "نیو فاؤنڈ لینڈ",
-     "de": "Neufundland",
-     "id": "Newfoundland",
-     "it": "Terranova",
-     "ja": "ニューファンドランド島",
-     "ko": "뉴펀들랜드(섬)",
-     "pl": "Nowa Fundlandia",
-     "nl": "Newfoundland"
-    },
-    "id": "newfoundland"
-   },
-   {
-    "name": {
      "en": "Timor",
      "zh": "帝汶",
      "hi": "तिमोर द्वीप",
@@ -3149,6 +3127,28 @@
      "nl": "Timor"
     },
     "id": "timor"
+   },
+   {
+    "name": {
+     "en": "Newfoundland",
+     "zh": "纽芬兰岛",
+     "hi": "न्यूफ़ाउण्डलैण्ड",
+     "es": "Isla de Terranova",
+     "ar": "نيوفاوندلاند",
+     "fr": "Terre-Neuve",
+     "bn": "নিউফাউন্ডল্যান্ড",
+     "pt": "Terra Nova",
+     "ru": "Ньюфаундленд",
+     "ur": "نیو فاؤنڈ لینڈ",
+     "de": "Neufundland",
+     "id": "Newfoundland",
+     "it": "Terranova",
+     "ja": "ニューファンドランド島",
+     "ko": "뉴펀들랜드(섬)",
+     "pl": "Nowa Fundlandia",
+     "nl": "Newfoundland"
+    },
+    "id": "newfoundland"
    },
    {
     "name": {
@@ -3328,28 +3328,6 @@
    },
    {
     "name": {
-     "en": "Cape Breton Island",
-     "zh": "布雷顿角岛",
-     "hi": "केप ब्रेटन द्वीप",
-     "es": "Isla del Cabo Bretón",
-     "ar": "جزيرة كيب بريتون",
-     "fr": "île du Cap-Breton",
-     "bn": "কেপ ব্রেটন আইল্যান্ড",
-     "pt": "Ilha Cape Breton",
-     "ru": "Кейп-Бретон",
-     "ur": "کیپ بریٹن جیرہ",
-     "de": "Kap-Breton-Insel",
-     "id": "Pulau Tanjung Breton",
-     "it": "isola del Capo Bretone",
-     "ja": "ケープ・ブレトン島",
-     "ko": "케이프브레튼 섬",
-     "pl": "Cape Breton",
-     "nl": "Cape Bretoneiland"
-    },
-    "id": "cape-breton-island"
-   },
-   {
-    "name": {
      "en": "Banks Island",
      "zh": "班克斯岛",
      "hi": "बैंक्स द्वीप",
@@ -3369,6 +3347,28 @@
      "nl": "Bankseiland"
     },
     "id": "banks-island"
+   },
+   {
+    "name": {
+     "en": "Cape Breton Island",
+     "zh": "布雷顿角岛",
+     "hi": "केप ब्रेटन द्वीप",
+     "es": "Isla del Cabo Bretón",
+     "ar": "جزيرة كيب بريتون",
+     "fr": "île du Cap-Breton",
+     "bn": "কেপ ব্রেটন আইল্যান্ড",
+     "pt": "Ilha Cape Breton",
+     "ru": "Кейп-Бретон",
+     "ur": "کیپ بریٹن جیرہ",
+     "de": "Kap-Breton-Insel",
+     "id": "Pulau Tanjung Breton",
+     "it": "isola del Capo Bretone",
+     "ja": "ケープ・ブレトン島",
+     "ko": "케이프브레튼 섬",
+     "pl": "Cape Breton",
+     "nl": "Cape Bretoneiland"
+    },
+    "id": "cape-breton-island"
    },
    {
     "name": {
@@ -4416,28 +4416,6 @@
    },
    {
     "name": {
-     "en": "Patagonia",
-     "zh": "巴塔哥尼亞",
-     "hi": "पैटागोनिया",
-     "es": "Patagonia",
-     "ar": "باتاغونيا",
-     "fr": "Patagonie",
-     "bn": "পাতাগোনিয়া",
-     "pt": "Patagónia",
-     "ru": "Патагония",
-     "ur": "پیٹاگونیا",
-     "de": "Patagonien",
-     "id": "Patagonia",
-     "it": "Patagonia",
-     "ja": "パタゴニア",
-     "ko": "파타고니아",
-     "pl": "Patagonia",
-     "nl": "Patagonië"
-    },
-    "id": "patagonia"
-   },
-   {
-    "name": {
      "en": "Yucatan Peninsula",
      "zh": "尤卡坦半岛",
      "hi": "युकातान प्रायद्वीप",
@@ -4457,6 +4435,28 @@
      "nl": "Yucatán"
     },
     "id": "yucatan-peninsula"
+   },
+   {
+    "name": {
+     "en": "Patagonia",
+     "zh": "巴塔哥尼亞",
+     "hi": "पैटागोनिया",
+     "es": "Patagonia",
+     "ar": "باتاغونيا",
+     "fr": "Patagonie",
+     "bn": "পাতাগোনিয়া",
+     "pt": "Patagónia",
+     "ru": "Патагония",
+     "ur": "پیٹاگونیا",
+     "de": "Patagonien",
+     "id": "Patagonia",
+     "it": "Patagonia",
+     "ja": "パタゴニア",
+     "ko": "파타고니아",
+     "pl": "Patagonia",
+     "nl": "Patagonië"
+    },
+    "id": "patagonia"
    },
    {
     "name": {
@@ -4878,25 +4878,25 @@
    },
    {
     "name": {
-     "en": "Valdes Peninsula",
-     "zh": "瓦尔德斯半岛",
-     "hi": "वालदेस प्रायद्वीप",
-     "es": "Península Valdés",
-     "ar": "شبه جزيرة فالديه",
-     "fr": "péninsule Valdés",
-     "bn": "পেনিনসুলা ভ্যালদেস",
-     "pt": "Península Valdés",
-     "ru": "Вальдес",
-     "ur": "پیننزولا والدیز",
-     "de": "Halbinsel Valdés",
-     "id": "Semenanjung Valdés",
-     "it": "Penisola di Valdés",
-     "ja": "バルデス半島",
-     "ko": "발데스반도",
-     "pl": "Półwysep Valdés",
-     "nl": "Valdés"
+     "en": "North China Plain",
+     "zh": "华北平原",
+     "hi": "उत्तरी चीन का मैदान",
+     "es": "Llanura del Norte de China",
+     "ar": "سهل شمال الصين",
+     "fr": "Grande plaine du Nord de la Chine",
+     "bn": "নর্থ চায়না প্লেন",
+     "pt": "Planície do norte da China",
+     "ru": "Великая Китайская равнина",
+     "ur": "نارتھ چائنہ پلین",
+     "de": "Nordchinesische Ebene",
+     "id": "Dataran Tiongkok Utara",
+     "it": "pianura della Cina del Nord",
+     "ja": "華北平原",
+     "ko": "화베이 평원",
+     "pl": "Nizina Chińska",
+     "nl": "Chinees Laagland"
     },
-    "id": "valdes-peninsula"
+    "id": "north-china-plain"
    }
   ]
  },
@@ -5125,25 +5125,25 @@
    },
    {
     "name": {
-     "en": "Appalachian Mountains",
-     "zh": "阿巴拉契亚山脉",
-     "hi": "एपलाशियन पर्वतमाला",
-     "es": "Apalaches",
-     "ar": "جبال الأبالاش",
-     "fr": "Appalaches",
-     "bn": "অ্যাপালেচিয়ান পর্বতমালা",
-     "pt": "Apalaches",
-     "ru": "Аппалачи",
-     "ur": "اپالاچئین پہاڑ",
-     "de": "Appalachen",
-     "id": "Pegunungan Appalachia",
-     "it": "Appalachi",
-     "ja": "アパラチア山脈",
-     "ko": "애팔래치아산맥",
-     "pl": "Appalachy",
-     "nl": "Appalachen"
+     "en": "Tianshan Mountains",
+     "zh": "天山山脉",
+     "hi": "तियाँ शान",
+     "es": "Tian Shan",
+     "ar": "جبال تيان شان",
+     "fr": "Tian Shan",
+     "bn": "থিয়েন শান পর্বতমালা",
+     "pt": "Tian Shan",
+     "ru": "Тянь-Шань",
+     "ur": "تیان شان",
+     "de": "Tienshan",
+     "id": "Tian Shan",
+     "it": "Tien Shan",
+     "ja": "天山山脈",
+     "ko": "톈산산맥",
+     "pl": "Tienszan",
+     "nl": "Tiensjan"
     },
-    "id": "appalachian-mountains"
+    "id": "tianshan-mountains"
    },
    {
     "name": {
@@ -5169,25 +5169,25 @@
    },
    {
     "name": {
-     "en": "Tianshan Mountains",
-     "zh": "天山山脉",
-     "hi": "तियाँ शान",
-     "es": "Tian Shan",
-     "ar": "جبال تيان شان",
-     "fr": "Tian Shan",
-     "bn": "থিয়েন শান পর্বতমালা",
-     "pt": "Tian Shan",
-     "ru": "Тянь-Шань",
-     "ur": "تیان شان",
-     "de": "Tienshan",
-     "id": "Tian Shan",
-     "it": "Tien Shan",
-     "ja": "天山山脈",
-     "ko": "톈산산맥",
-     "pl": "Tienszan",
-     "nl": "Tiensjan"
+     "en": "Appalachian Mountains",
+     "zh": "阿巴拉契亚山脉",
+     "hi": "एपलाशियन पर्वतमाला",
+     "es": "Apalaches",
+     "ar": "جبال الأبالاش",
+     "fr": "Appalaches",
+     "bn": "অ্যাপালেচিয়ান পর্বতমালা",
+     "pt": "Apalaches",
+     "ru": "Аппалачи",
+     "ur": "اپالاچئین پہاڑ",
+     "de": "Appalachen",
+     "id": "Pegunungan Appalachia",
+     "it": "Appalachi",
+     "ja": "アパラチア山脈",
+     "ko": "애팔래치아산맥",
+     "pl": "Appalachy",
+     "nl": "Appalachen"
     },
-    "id": "tianshan-mountains"
+    "id": "appalachian-mountains"
    },
    {
     "name": {
@@ -5499,28 +5499,6 @@
    },
    {
     "name": {
-     "en": "Dinaric Alps",
-     "zh": "迪纳拉山脉",
-     "hi": "डाईनैरिक एल्प्स",
-     "es": "Alpes Dináricos",
-     "ar": "جبال الألب الدينارية",
-     "fr": "Alpes dinariques",
-     "bn": "দিনারিক আল্পস",
-     "pt": "Alpes Dináricos",
-     "ru": "Динарское нагорье",
-     "ur": "ڈائےنارک ایلپس",
-     "de": "Dinarisches Gebirge",
-     "id": "Alpen Dinari",
-     "it": "Alpi Dinariche",
-     "ja": "ディナル・アルプス山脈",
-     "ko": "디나르알프스산맥",
-     "pl": "Góry Dynarskie",
-     "nl": "Dinarische Alpen"
-    },
-    "id": "dinaric-alps"
-   },
-   {
-    "name": {
      "en": "Lesser Caucasus",
      "zh": "小高加索山脉",
      "hi": "लैसर कौकासु",
@@ -5540,6 +5518,28 @@
      "nl": "Kleine Kaukasus"
     },
     "id": "lesser-caucasus"
+   },
+   {
+    "name": {
+     "en": "Dinaric Alps",
+     "zh": "迪纳拉山脉",
+     "hi": "डाईनैरिक एल्प्स",
+     "es": "Alpes Dináricos",
+     "ar": "جبال الألب الدينارية",
+     "fr": "Alpes dinariques",
+     "bn": "দিনারিক আল্পস",
+     "pt": "Alpes Dináricos",
+     "ru": "Динарское нагорье",
+     "ur": "ڈائےنارک ایلپس",
+     "de": "Dinarisches Gebirge",
+     "id": "Alpen Dinari",
+     "it": "Alpi Dinariche",
+     "ja": "ディナル・アルプス山脈",
+     "ko": "디나르알프스산맥",
+     "pl": "Góry Dynarskie",
+     "nl": "Dinarische Alpen"
+    },
+    "id": "dinaric-alps"
    },
    {
     "name": {
@@ -5631,6 +5631,28 @@
    },
    {
     "name": {
+     "en": "Wuyi Mountains",
+     "zh": "武夷山",
+     "hi": "वूई पर्वत",
+     "es": "Monte Wuyi",
+     "ar": "جبال وويي",
+     "fr": "Monts Wuyi",
+     "bn": "উয়ি পর্বতমালা",
+     "pt": "Monte Wuyi",
+     "ru": "Уишань",
+     "ur": "ووئی پہاڑ",
+     "de": "Wuyi-Gebirge",
+     "id": "Pegunungan Wuyi",
+     "it": "Monti Wuyi",
+     "ja": "武夷山",
+     "ko": "우이산",
+     "pl": "Wuyi Shan",
+     "nl": "Wuyigebergte"
+    },
+    "id": "wuyi-mountains"
+   },
+   {
+    "name": {
      "en": "Verkhoyansk Range",
      "zh": "上扬斯克山脉",
      "hi": "वेरखोयांस्क रेंज",
@@ -5650,28 +5672,6 @@
      "nl": "Verchojanskgebergte"
     },
     "id": "verkhoyansk-range"
-   },
-   {
-    "name": {
-     "en": "Wuyi Mountains",
-     "zh": "武夷山",
-     "hi": "वूई पर्वत",
-     "es": "Monte Wuyi",
-     "ar": "جبال وويي",
-     "fr": "Monts Wuyi",
-     "bn": "উয়ি পর্বতমালা",
-     "pt": "Monte Wuyi",
-     "ru": "Уишань",
-     "ur": "ووئی پہاڑ",
-     "de": "Wuyi-Gebirge",
-     "id": "Pegunungan Wuyi",
-     "it": "Monte Wuyi",
-     "ja": "武夷山",
-     "ko": "우이산",
-     "pl": "Wuyi Shan",
-     "nl": "Wuyigebergte"
-    },
-    "id": "wuyi-mountains"
    },
    {
     "name": {
@@ -6032,28 +6032,6 @@
    },
    {
     "name": {
-     "en": "Rub' al Khali",
-     "zh": "鲁卜哈利沙漠",
-     "hi": "रुब अल-ख़ाली",
-     "es": "Desierto de Rub al-Jali",
-     "ar": "الربع الخالي",
-     "fr": "Rub al-Khali",
-     "bn": "আর-রুব' আল-খালি",
-     "pt": "Rub' al-Khali",
-     "ru": "Руб-эль-Хали",
-     "ur": "الربع الخالی",
-     "de": "Rub al-Chali",
-     "id": "Rub' Al-Khali",
-     "it": "Rub' al-Khali",
-     "ja": "ルブアルハリ砂漠",
-     "ko": "룹알할리 사막",
-     "pl": "Ar-Rab al-Chali",
-     "nl": "Rub al Khali"
-    },
-    "id": "rub-al-khali"
-   },
-   {
-    "name": {
      "en": "Tassili n'Ajjer",
      "zh": "阿杰尔的塔西利",
      "hi": "तस्सिली न'अज्जेर",
@@ -6073,6 +6051,28 @@
      "nl": "Tassili n'Ajjer"
     },
     "id": "tassili-n-ajjer"
+   },
+   {
+    "name": {
+     "en": "Rub' al Khali",
+     "zh": "鲁卜哈利沙漠",
+     "hi": "रुब अल-ख़ाली",
+     "es": "Desierto de Rub al-Jali",
+     "ar": "الربع الخالي",
+     "fr": "Rub al-Khali",
+     "bn": "আর-রুব' আল-খালি",
+     "pt": "Rub' al-Khali",
+     "ru": "Руб-эль-Хали",
+     "ur": "الربع الخالی",
+     "de": "Rub al-Chali",
+     "id": "Rub' Al-Khali",
+     "it": "Rub' al-Khali",
+     "ja": "ルブアルハリ砂漠",
+     "ko": "룹알할리 사막",
+     "pl": "Ar-Rab al-Chali",
+     "nl": "Rub al Khali"
+    },
+    "id": "rub-al-khali"
    },
    {
     "name": {
@@ -7511,7 +7511,7 @@
      "hi": "बेंगलुरु",
      "es": "Bangalore",
      "ar": "بنغالور",
-     "fr": "Bangalore",
+     "fr": "Bengaluru",
      "bn": "বেঙ্গালুরু",
      "pt": "Bengalúru",
      "ru": "Бангалор",
@@ -7822,7 +7822,7 @@
      "zh": "多伦多",
      "hi": "टोरण्टो",
      "es": "Toronto",
-     "ar": "تورونتو",
+     "ar": "تورنتو",
      "fr": "Toronto",
      "bn": "টরন্টো",
      "pt": "Toronto",
@@ -8681,32 +8681,6 @@
    },
    {
     "name": {
-     "en": "Ras Dashen",
-     "zh": "达尚峰",
-     "hi": "रास देजेन",
-     "es": "Monte Ras Dejen",
-     "ar": "رأس داشن",
-     "fr": "Ras Dashan",
-     "bn": "রাস দেজেন",
-     "pt": "Ras Dashan",
-     "ru": "Рас-Дашэн",
-     "ur": "راس ڈیجین",
-     "de": "Ras Daschän",
-     "id": "Ras Dashen",
-     "it": "Ras Dascian",
-     "ja": "ラス・ダシャン山",
-     "ko": "라스다샨산",
-     "pl": "Ras Daszan",
-     "nl": "Ras Dashan"
-    },
-    "at": [
-     38.372331,
-     13.236747
-    ],
-    "id": "ras-dashen"
-   },
-   {
-    "name": {
      "en": "Pico Bolívar",
      "zh": "玻利瓦尔峰",
      "hi": "पिको बोलिवार",
@@ -8730,6 +8704,32 @@
      8.552859
     ],
     "id": "pico-bolivar"
+   },
+   {
+    "name": {
+     "en": "Ras Dashen",
+     "zh": "达尚峰",
+     "hi": "रास देजेन",
+     "es": "Monte Ras Dejen",
+     "ar": "رأس داشن",
+     "fr": "Ras Dashan",
+     "bn": "রাস দেজেন",
+     "pt": "Ras Dashan",
+     "ru": "Рас-Дашэн",
+     "ur": "راس ڈیجین",
+     "de": "Ras Daschän",
+     "id": "Ras Dashen",
+     "it": "Ras Dascian",
+     "ja": "ラス・ダシャン山",
+     "ko": "라스다샨산",
+     "pl": "Ras Daszan",
+     "nl": "Ras Dashan"
+    },
+    "at": [
+     38.372331,
+     13.236747
+    ],
+    "id": "ras-dashen"
    },
    {
     "name": {
@@ -8870,7 +8870,7 @@
     "name": {
      "en": "Mount Etna",
      "zh": "埃特纳火山",
-     "hi": "माउण्ट एटना",
+     "hi": "एतना पर्वत",
      "es": "Monte Etna",
      "ar": "جبل إتنا",
      "fr": "Etna",
@@ -9174,6 +9174,31 @@
    },
    {
     "name": {
+     "en": "Mayon Volcano",
+     "zh": "馬榮火山",
+     "hi": "मायोन ज्वालामुखी",
+     "es": "monte Mayón",
+     "ar": "بركان مايون",
+     "fr": "Mayon",
+     "bn": null,
+     "ru": "Майон",
+     "pt": "Vulcão Mayon",
+     "de": "Mayon",
+     "id": "Gunung Mayon",
+     "it": "Mayon",
+     "ja": "マヨン山",
+     "ko": "마욘산",
+     "pl": "Mayon",
+     "nl": "Mayon"
+    },
+    "at": [
+     123.685,
+     13.256666666
+    ],
+    "id": "mayon-volcano"
+   },
+   {
+    "name": {
      "en": "Mount Erebus",
      "zh": "埃里伯斯火山",
      "hi": "माउण्ट एरेबुस",
@@ -9225,31 +9250,6 @@
    },
    {
     "name": {
-     "en": "Mayon Volcano",
-     "zh": "馬榮火山",
-     "hi": "मायोन ज्वालामुखी",
-     "es": "monte Mayón",
-     "ar": "بركان مايون",
-     "fr": "Mayon",
-     "bn": null,
-     "ru": "Майон",
-     "pt": "Vulcão Mayon",
-     "de": "Mayon",
-     "id": "Gunung Mayon",
-     "it": "Mayon",
-     "ja": "マヨン山",
-     "ko": "마욘산",
-     "pl": "Mayon",
-     "nl": "Mayon"
-    },
-    "at": [
-     123.685,
-     13.256666666
-    ],
-    "id": "mayon-volcano"
-   },
-   {
-    "name": {
      "en": "Cotopaxi volcano",
      "zh": "科托帕希峰",
      "hi": "कोटोपैक्सी",
@@ -9268,8 +9268,8 @@
      "nl": "Cotopaxi"
     },
     "at": [
-     -78.437777777,
-     -0.680555555
+     -78.42889,
+     -0.68917
     ],
     "id": "cotopaxi-volcano"
    },
@@ -9577,7 +9577,7 @@
      "en": "Paraná River",
      "zh": "巴拉那河",
      "hi": "पराना नदी",
-     "es": "Paraná",
+     "es": "río Paraná",
      "ar": "نهر بارانا",
      "fr": "Paraná",
      "bn": null,
@@ -9662,7 +9662,7 @@
    },
    {
     "name": {
-     "en": "River Congo",
+     "en": "Congo River",
      "zh": "刚果河",
      "hi": "कांगो नदी",
      "es": "Congo",
@@ -9680,7 +9680,7 @@
      "pl": "Kongo",
      "nl": "Kongo"
     },
-    "id": "river-congo"
+    "id": "congo-river"
    },
    {
     "name": {
