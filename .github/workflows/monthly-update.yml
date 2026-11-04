@@ -143,5 +143,6 @@ jobs:
           # Code may have been pushed while this ran: put the data commit on top of it. This commit
           # holds only data files, so where both sides changed one (data/lastmod.json after a code
           # push), keep this run's version: it matches the site that was just published.
-          git pull --rebase -X theirs -q
-          git push || { git pull --rebase -X theirs -q && git push; }
+          # --autostash: a full refresh leaves other tracked files changed, and plain --rebase refuses to run then.
+          git pull --rebase --autostash -X theirs -q
+          git push || { git pull --rebase --autostash -X theirs -q && git push; }
