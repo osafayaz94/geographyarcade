@@ -431,7 +431,9 @@ function continentQuiz(lang, q, scope) {
   const list = quizList(q, scope);
   // The world map and world flags quizzes carry the site's biggest searches; some languages title them for those.
   const title = (scope === 'world' && seo(lang, { maps: 'mapsWorld', flags: 'flagsWorld' }[q.type])) || quizTitle(lang, q.type, scope);
-  const desc = t(lang, q.desc, { n: list.length, of: L[lang].of[scope] });
+  // A second sentence names the three most populous countries (their capitals in the capitals quiz): real, and different on every page.
+  const desc = t(lang, q.desc, { n: list.length, of: L[lang].of[scope] }) +
+    (q.type === 'capitals' ? topThree(lang, list, 'descCaps', (c) => capOf(c, lang)) : topThree(lang, list, 'descIncl', (c) => cName(c, lang)));
   const items = list.map((c) => ({ id: c.iso2, n: cName(c, lang), ...(q.type === 'capitals' ? { a: capOf(c, lang), ...(SHAPES[c.iso2] ? { s: 1 } : {}) } : {}) }));
   const data = { type: q.type === 'maps' ? 'map' : q.type === 'shapes' ? 'flags' : q.type, key: `${q.type}-${scope}-${lang}`, title, items, s: quizStrings(lang) };
   // Outlines use the picture quiz engine, with the outline in place of the flag.
@@ -563,7 +565,8 @@ function worldGame(lang, g) {
   const isMap = g.type === 'phys' || g.type === 'latlong';
   const title = tt(lang, 'physTitle', { g: label });
   // The wonders have their own descriptions (the ancient ones are on a regional map, not the world map).
-  const desc = g.key === 'wonders' ? t(lang, 'descWonders') : g.key === 'ancient-wonders' ? t(lang, 'descAncient') : tt(lang, isMap ? 'physDescMap' : 'physDescDiagram', { g: label, n: items.length });
+  const desc = g.key === 'wonders' ? t(lang, 'descWonders') : g.key === 'ancient-wonders' ? t(lang, 'descAncient') : tt(lang, isMap ? 'physDescMap' : 'physDescDiagram', { g: label, n: items.length }) +
+    (g.type === 'phys' ? inclList(lang, items.slice(0, 3).map((x) => x.n)) : '');
   const data = { type: 'map', key: `w-${g.key}-${lang}`, title, map: `/maps/w/${g.key}.svg`, ar: MAP_AR['w-' + g.key], items, s: quizStrings(lang) };
   const crumbs = [{ name: L[lang].cont.world, p: 'world/' }, { name: label, p }];
   let table;
@@ -910,7 +913,7 @@ function orgPage(lang, o) {
   const rows = sortBy(lang, orgMembers(o), (c) => cName(c, lang));
   const reg = !!o.region;
   const title = fillP(reg ? P.regTitle : P.orgTitle, { org: name });
-  const desc = fillP(reg ? P.regDesc : P.orgDesc, { org: name, n: num(lang, rows.length) });
+  const desc = fillP(reg ? P.regDesc : P.orgDesc, { org: name, n: num(lang, rows.length) }) + topThree(lang, rows, 'descIncl', (c) => cName(c, lang));
   const answer = fillP(reg ? P.regAnswer : P.orgAnswer, { org: name, n: num(lang, rows.length), list: listJoin(lang, rows.map((c) => cName(c, lang))) });
   // Former states (the Soviet Union, Yugoslavia): what they were called, when they existed, and until when the countries were united.
   const former = (ORGD.orgs[o.key] || {}).former || [];
@@ -1222,7 +1225,10 @@ ${listLinks(lang, listsFor(c))}`;
 // ' Includes X, Y, Z and more.': the three most populous divisions (or their capitals), for the page description.
 function topThree(lang, divs, key, nameOf) {
   const pop = (d) => (d.population && (d.population.value || d.population)) || 0;
-  const names = [...divs].filter(pop).sort((a, b) => pop(b) - pop(a)).map(nameOf).filter(Boolean).slice(0, 3);
+  return inclList(lang, [...divs].filter(pop).sort((a, b) => pop(b) - pop(a)).map(nameOf).filter(Boolean).slice(0, 3), key);
+}
+// The same sentence for three names already chosen (a world game's first three items).
+function inclList(lang, names, key = 'descIncl') {
   if (names.length < 3) return '';
   const sep = ['zh', 'ja'].includes(lang) ? '、' : ['ar', 'ur'].includes(lang) ? '، ' : ', ';
   const list = key === 'descCaps' ? listJoin(lang, names) : names.join(sep);
@@ -1445,7 +1451,7 @@ function provincesHub(lang) {
   const p = 'provinces/';
   const title = t(lang, 'provTitle');
   const last = provLargest[provLargest.length - 1];
-  const desc = t(lang, 'provHubDesc', { n: provCountries.length, last: last ? cName(last, lang) : '' });
+  const desc = t(lang, 'provHubDesc', { n: provCountries.length, last: last ? cName(last, lang) : '' }) + topThree(lang, provCountries, 'descIncl', (c) => cName(c, lang));
   const rows = provCountries.map((c) => `<tr><td><img src="${flagSrc(c.iso2)}" alt="" width="32" height="24" loading="lazy"></td><td><a href="${url(lang, `countries/${c.slug}/#divisions`)}">${esc(cName(c, lang))}</a></td><td class="num">${subdivisions[c.iso2].divisions.length}</td><td><a href="${url(lang, `countries/${c.slug}/map-quiz/`)}">${esc(t(lang, 'typeMaps'))}</a></td><td>${hasCapQuiz(c) ? `<a href="${url(lang, `countries/${c.slug}/capitals-quiz/`)}">${esc(t(lang, 'typeCapitals'))}</a>` : ''}</td></tr>`).join('');
   const body = `<h1>${esc(title)}</h1><p class="lede">${esc(desc)}</p><div class="tbl"><table><thead><tr><th>${esc(t(lang, 'thFlag'))}</th><th>${esc(t(lang, 'thCountry'))}</th><th class="num">#</th><th>${esc(t(lang, 'typeMaps'))}</th><th>${esc(t(lang, 'typeCapitals'))}</th></tr></thead><tbody>${rows}</tbody></table></div>`;
   page(lang, p, { title, desc, body, nav: p, crumbs: [{ name: title, p }] });
