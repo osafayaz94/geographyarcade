@@ -1,0 +1,20 @@
+name: Keep the saved map shapes
+
+# GitHub deletes a saved cache that nobody has used for 7 days. Without the saved map shapes, a
+# push (a small code change) has to download all the data again (about an hour), and one country's
+# source being down for a day then blocks the publish (Singapore, 14 November 2026).
+# Opening the cache twice a week keeps it alive between the monthly full runs.
+on:
+  schedule:
+    - cron: '0 5 * * 1,4' # 05:00 UTC on Mondays and Thursdays
+  workflow_dispatch:
+
+jobs:
+  touch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/cache/restore@v4
+        with:
+          path: data/geo
+          key: geo-keepalive
+          restore-keys: geo-

@@ -74,6 +74,10 @@ async function osmPolygon(rel) {
   const res = await fetch(`https://nominatim.openstreetmap.org/lookup?format=json&polygon_geojson=1&osm_ids=R${rel}`, { headers: { 'User-Agent': UA } });
   const hit = res.ok && (await res.json())[0];
   if (hit && hit.geojson && /Polygon/.test(hit.geojson.type)) { fs.writeFileSync(file, JSON.stringify(hit.geojson)); return hit.geojson; }
+  // Last resort: a saved copy in the repository (data/osm-fallback/), for a relation whose outline
+  // is broken in OpenStreetMap so neither service can build it (Singapore's 3831715, November 2026).
+  const saved = path.join(DATA, 'osm-fallback', rel + '.json');
+  if (fs.existsSync(saved)) { console.log(`  relation ${rel}: using the saved copy in data/osm-fallback/`); return JSON.parse(fs.readFileSync(saved, 'utf8')); }
   throw new Error(`no OpenStreetMap polygon for relation ${rel}`);
 }
 
