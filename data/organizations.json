@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-04",
+ "fetched": "2026-11-16",
  "orgs": {
   "g20": {
    "name": {
@@ -53,6 +53,7 @@
   },
   "brics": {
    "name": {
+    "ur": "برکس",
     "zh": "金砖国家",
     "ar": "بريكس",
     "bn": "ব্রিক্স",
@@ -68,8 +69,7 @@
     "nl": "BRICS",
     "pl": "BRICS",
     "pt": "BRICS",
-    "ru": "БРИКС",
-    "ur": "برکس"
+    "ru": "БРИКС"
    },
    "founded": 2009,
    "website": null,
@@ -101,6 +101,8 @@
     "ja": "ジャカルタ",
     "pl": "Dżakarta",
     "pt": "Jacarta",
+    "ur": "جکارتا",
+    "zh": "雅加达",
     "es": "Yakarta",
     "en": "Jakarta",
     "fr": "Jakarta",
@@ -111,9 +113,7 @@
     "ru": "Джакарта",
     "ar": "جاكرتا",
     "bn": "জাকার্তা",
-    "hi": "जकार्ता",
-    "ur": "جکارتا",
-    "zh": "雅加达"
+    "hi": "जकार्ता"
    },
    "head": null
   },
@@ -148,15 +148,15 @@
     "ru": "Катманду",
     "ja": "カトマンズ",
     "ar": "كتمندو",
+    "pl": "Katmandu",
+    "ur": "کھٹمنڈو",
+    "zh": "加德满都",
     "bn": "কাঠমান্ডু",
     "fr": "Katmandou",
     "hi": "काठमांडू",
     "id": "Kathmandu",
     "it": "Katmandu",
-    "ko": "카트만두",
-    "pl": "Katmandu",
-    "ur": "کھٹمنڈو",
-    "zh": "加德满都"
+    "ko": "카트만두"
    },
    "head": null
   },
@@ -190,12 +190,12 @@
     "ru": "Пекин",
     "ar": "بكين",
     "bn": "বেইজিং",
-    "pt": "Pequim",
-    "ur": "بیجنگ",
-    "zh": "北京市",
     "it": "Pechino",
     "en": "Beijing",
     "de": "Peking",
+    "pt": "Pequim",
+    "ur": "بیجنگ",
+    "zh": "北京市",
     "hi": "बीजिंग",
     "id": "Beijing",
     "ja": "北京市",
@@ -205,6 +205,7 @@
   },
   "gcc": {
    "name": {
+    "ar": "مجلس التعاون لدول الخليج العربي",
     "de": "Golf-Kooperationsrat",
     "en": "Gulf Cooperation Council (GCC)",
     "es": "Consejo de Cooperación para los Estados Árabes del Golfo",
@@ -219,18 +220,11 @@
     "pt": "Conselho de Cooperação do Golfo",
     "ru": "Совет сотрудничества арабских государств Персидского залива",
     "ur": "مجلس تعاون برائے خلیجی ممالک",
-    "zh": "海湾阿拉伯国家合作委员会",
-    "ar": "مجلس التعاون لدول الخليج العربي"
+    "zh": "海湾阿拉伯国家合作委员会"
    },
    "founded": 1981,
    "website": "https://gcc-sg.ae",
    "hq": {
-    "ur": "ریاض",
-    "zh": "利雅得",
-    "hi": "रियाद",
-    "ja": "リヤド",
-    "ko": "리야드",
-    "pt": "Riade",
     "en": "Riyadh",
     "bn": "রিয়াদ",
     "de": "Riad",
@@ -241,7 +235,13 @@
     "es": "Riad",
     "it": "Riad",
     "pl": "Rijad",
-    "id": "Riyadh"
+    "id": "Riyadh",
+    "ur": "ریاض",
+    "zh": "利雅得",
+    "hi": "रियाद",
+    "ja": "リヤド",
+    "ko": "리야드",
+    "pt": "Riade"
    },
    "head": null
   },
@@ -290,9 +290,6 @@
   },
   "oic": {
    "name": {
-    "ur": "تنظیم تعاون اسلامی",
-    "zh": "伊斯兰合作组织",
-    "id": "Organisasi Kerja Sama Islam",
     "ar": "منظمة التعاون الإسلامي",
     "bn": "ইসলামি সহযোগিতা সংস্থা",
     "de": "Organisation für Islamische Zusammenarbeit",
@@ -306,13 +303,17 @@
     "nl": "Organisatie van de Islamitische Samenwerking",
     "pl": "Organizacja Współpracy Islamskiej",
     "pt": "Organização da Conferência Islâmica",
-    "ru": "Организация Исламского сотрудничества"
+    "ru": "Организация Исламского сотрудничества",
+    "ur": "تنظیم تعاون اسلامی",
+    "zh": "伊斯兰合作组织",
+    "id": "Organisasi Kerja Sama Islam"
    },
    "founded": 1969,
    "website": "https://new.oic-oci.org/",
    "hq": {
     "ur": "جدہ",
     "zh": "吉达",
+    "id": "Jeddah",
     "nl": "Jeddah",
     "bn": "জেদ্দা",
     "hi": "जेद्दाह",
@@ -326,8 +327,7 @@
     "ar": "جدة",
     "fr": "Djeddah",
     "ru": "Джидда",
-    "de": "Dschidda",
-    "id": "Jeddah"
+    "de": "Dschidda"
    },
    "head": {
     "name": {
@@ -356,7 +356,6 @@
   },
   "opec": {
    "name": {
-    "zh": "石油输出国组织",
     "ur": "اوپیک",
     "ar": "أوبك",
     "bn": "ওপেক",
@@ -371,11 +370,13 @@
     "ko": "석유 수출국 기구",
     "nl": "organisatie van olie-exporterende landen",
     "pt": "Organização dos Países Exportadores de Petróleo",
-    "ru": "Организация стран-экспортёров нефти"
+    "ru": "Организация стран-экспортёров нефти",
+    "zh": "石油输出国组织"
    },
    "founded": 1960,
    "website": "https://www.opec.org",
    "hq": {
+    "zh": "维也纳",
     "de": "Wien",
     "fr": "Vienne",
     "en": "Vienna",
@@ -383,7 +384,6 @@
     "es": "Viena",
     "ar": "فيينا",
     "ur": "ویانا",
-    "zh": "维也纳",
     "ko": "빈",
     "nl": "Wenen",
     "ru": "Вена",
@@ -398,8 +398,11 @@
   },
   "eu": {
    "name": {
-    "ur": "یورپی اتحاد",
-    "zh": "欧洲联盟",
+    "id": "Uni Eropa",
+    "ja": "欧州連合",
+    "ko": "유럽 연합",
+    "pl": "Unia Europejska",
+    "pt": "União Europeia",
     "nl": "Europese Unie",
     "en": "European Union",
     "ru": "Европейский союз",
@@ -408,20 +411,17 @@
     "bn": "ইউরোপীয় ইউনিয়ন",
     "es": "Unión Europea",
     "hi": "यूरोपीय संघ",
-    "id": "Uni Eropa",
-    "ja": "欧州連合",
-    "ko": "유럽 연합",
-    "pl": "Unia Europejska",
-    "pt": "União Europeia",
     "fr": "Union européenne",
-    "de": "Europäische Union"
+    "de": "Europäische Union",
+    "ur": "یورپی اتحاد",
+    "zh": "欧洲联盟"
    },
    "founded": 1993,
    "website": "https://european-union.europa.eu/",
    "hq": {
-    "id": "Kota Brussel",
-    "ja": "ブリュッセル市",
-    "ko": "브뤼셀",
+    "ur": "برسلز شہر",
+    "zh": "布鲁塞尔",
+    "bn": "ব্রাসেলস",
     "nl": "Brussel",
     "en": "Brussels",
     "it": "Bruxelles",
@@ -430,12 +430,12 @@
     "es": "Bruselas",
     "pl": "Bruksela",
     "ru": "Брюссель",
-    "zh": "布鲁塞尔",
     "pt": "Bruxelas",
     "ar": "مدينة بروكسل",
     "hi": "ब्रसेल्स",
-    "ur": "برسلز شہر",
-    "bn": "ব্রাসেলস"
+    "id": "Kota Brussel",
+    "ja": "ブリュッセル市",
+    "ko": "브뤼셀"
    },
    "head": null
   },
@@ -445,26 +445,26 @@
     "it": "NATO",
     "pl": "NATO",
     "ar": "حلف شمال الأطلسي",
-    "bn": "ন্যাটো",
-    "es": "OTAN",
-    "hi": "नाटो",
-    "id": "Pakta Pertahanan Atlantik Utara",
-    "ja": "北大西洋条約機構",
-    "ko": "북대서양 조약 기구",
     "nl": "Noord-Atlantische Verdragsorganisatie",
     "pt": "Organização do Tratado do Atlântico Norte",
     "ru": "Организация Североатлантического договора",
     "ur": "نیٹو",
     "zh": "北大西洋公约组织",
     "fr": "Organisation du Traité de l'Atlantique Nord",
-    "de": "Nordatlantikvertragsorganisation"
+    "de": "Nordatlantikvertragsorganisation",
+    "bn": "ন্যাটো",
+    "es": "OTAN",
+    "hi": "नाटो",
+    "id": "Pakta Pertahanan Atlantik Utara",
+    "ja": "北大西洋条約機構",
+    "ko": "북대서양 조약 기구"
    },
    "founded": 1949,
    "website": "https://nato.int",
    "hq": {
-    "id": "Kota Brussel",
-    "ja": "ブリュッセル市",
-    "ko": "브뤼셀",
+    "ur": "برسلز شہر",
+    "zh": "布鲁塞尔",
+    "bn": "ব্রাসেলস",
     "nl": "Brussel",
     "en": "Brussels",
     "it": "Bruxelles",
@@ -473,15 +473,20 @@
     "es": "Bruselas",
     "pl": "Bruksela",
     "ru": "Брюссель",
-    "zh": "布鲁塞尔",
     "pt": "Bruxelas",
     "ar": "مدينة بروكسل",
     "hi": "ब्रसेल्स",
-    "ur": "برسلز شہر",
-    "bn": "ব্রাসেলস"
+    "id": "Kota Brussel",
+    "ja": "ブリュッセル市",
+    "ko": "브뤼셀"
    },
    "head": {
     "name": {
+     "pl": "Mark Rutte",
+     "pt": "Mark Rutte",
+     "ru": "Марк Рютте",
+     "zh": "馬克·呂特",
+     "hi": "मार्क रुटे",
      "nl": "Mark Rutte",
      "ar": "مارك روته",
      "bn": "মার্ক রুটে",
@@ -492,11 +497,7 @@
      "id": "Mark Rutte",
      "it": "Mark Rutte",
      "ja": "マルク・ルッテ",
-     "ko": "마르크 뤼터",
-     "pl": "Mark Rutte",
-     "pt": "Mark Rutte",
-     "ru": "Марк Рютте",
-     "zh": "馬克·呂特"
+     "ko": "마르크 뤼터"
     },
     "office": {
      "de": "NATO-Generalsekretär",
@@ -512,13 +513,20 @@
      "nl": "secretaris-generaal van de NAVO",
      "pl": "sekretarz generalny NATO",
      "ru": "генеральный секретарь НАТО",
-     "zh": "北大西洋公約組織秘書長"
+     "zh": "北大西洋公約組織秘書長",
+     "hi": "नाटो के महासचिव"
     },
     "since": "2024"
    }
   },
   "african-union": {
    "name": {
+    "ko": "아프리카 연합",
+    "nl": "Afrikaanse Unie",
+    "pl": "Unia Afrykańska",
+    "pt": "União Africana",
+    "ru": "Африканский союз",
+    "zh": "非洲联盟",
     "fr": "Union africaine",
     "ur": "افریقی اتحاد",
     "ar": "الاتحاد الإفريقي",
@@ -529,13 +537,7 @@
     "id": "Uni Afrika",
     "it": "Unione africana",
     "ja": "アフリカ連合",
-    "ko": "아프리카 연합",
-    "hi": "अफ़्रीकी संघ",
-    "nl": "Afrikaanse Unie",
-    "pl": "Unia Afrykańska",
-    "pt": "União Africana",
-    "ru": "Африканский союз",
-    "zh": "非洲联盟"
+    "hi": "अफ़्रीकी संघ"
    },
    "founded": 2002,
    "website": "https://au.int",
@@ -586,9 +588,6 @@
     "ko": "런던",
     "pt": "Londres",
     "zh": "伦敦",
-    "hi": "लंदन",
-    "it": "Londra",
-    "fr": "Londres",
     "en": "London",
     "de": "London",
     "ja": "ロンドン",
@@ -599,18 +598,13 @@
     "ru": "Лондон",
     "ur": "لندن",
     "nl": "Londen",
-    "id": "London"
+    "id": "London",
+    "it": "Londra",
+    "fr": "Londres",
+    "hi": "लंदन"
    },
    "head": {
     "name": {
-     "en": "Charles III",
-     "de": "Charles III.",
-     "fr": "Charles III",
-     "pl": "Karol III",
-     "ru": "Карл III",
-     "zh": "查尔斯三世",
-     "ar": "تشارلز الثالث",
-     "bn": "তৃতীয় চার্লস",
      "es": "Carlos III del Reino Unido",
      "hi": "चार्ल्स तृतीय",
      "id": "Charles III dari Inggris Raya",
@@ -619,7 +613,15 @@
      "ko": "찰스 3세",
      "nl": "Charles III van het Verenigd Koninkrijk",
      "pt": "Carlos III do Reino Unido",
-     "ur": "چارلس سوم"
+     "ur": "چارلس سوم",
+     "en": "Charles III",
+     "de": "Charles III.",
+     "fr": "Charles III",
+     "pl": "Karol III",
+     "ru": "Карл III",
+     "zh": "查尔斯三世",
+     "ar": "تشارلز الثالث",
+     "bn": "তৃতীয় চার্লস"
     },
     "office": {
      "ar": "رئيس الكومنولث",
@@ -658,28 +660,30 @@
    "founded": 1991,
    "website": "http://www.mercosur.int/",
    "hq": {
-    "bn": "মোন্তেভিদেও",
-    "hi": "मोण्टेवीडियो",
-    "id": "Montevideo",
-    "ja": "モンテビデオ",
-    "ko": "몬테비데오",
-    "nl": "Montevideo",
-    "pl": "Montevideo",
-    "pt": "Montevidéu",
-    "ur": "مونٹیویڈیو",
-    "zh": "蒙得维的亚",
     "it": "Montevideo",
     "en": "Montevideo",
     "es": "Montevideo",
     "fr": "Montevideo",
     "ru": "Монтевидео",
     "de": "Montevideo",
-    "ar": "مونتفيدو"
+    "ar": "مونتفيدو",
+    "pl": "Montevideo",
+    "pt": "Montevidéu",
+    "ur": "مونٹیویڈیو",
+    "zh": "蒙得维的亚",
+    "bn": "মোন্তেভিদেও",
+    "hi": "मोण्टेवीडियो",
+    "id": "Montevideo",
+    "ja": "モンテビデオ",
+    "ko": "몬테비데오",
+    "nl": "Montevideo"
    },
    "head": null
   },
   "un-security-council": {
    "name": {
+    "it": "Consiglio di sicurezza delle Nazioni Unite",
+    "ja": "国際連合安全保障理事会",
     "ko": "유엔 안전 보장 이사회",
     "nl": "Veiligheidsraad van de Verenigde Naties",
     "pl": "Rada Bezpieczeństwa ONZ",
@@ -694,19 +698,11 @@
     "es": "Consejo de Seguridad de las Naciones Unidas",
     "fr": "Conseil de sécurité des Nations unies",
     "hi": "संयुक्त राष्ट्र सुरक्षा परिषद",
-    "id": "Dewan Keamanan Perserikatan Bangsa-Bangsa",
-    "it": "Consiglio di sicurezza delle Nazioni Unite",
-    "ja": "国際連合安全保障理事会"
+    "id": "Dewan Keamanan Perserikatan Bangsa-Bangsa"
    },
    "founded": 1945,
    "website": "https://www.un.org/securitycouncil",
    "hq": {
-    "ko": "뉴욕",
-    "zh": "纽约",
-    "bn": "নিউ ইয়র্ক সিটি",
-    "hi": "न्यूयॉर्क नगर",
-    "id": "Kota New York",
-    "ur": "نیویارک شہر",
     "it": "New York",
     "fr": "New York",
     "en": "New York City",
@@ -717,16 +713,18 @@
     "ar": "نيويورك",
     "ru": "Нью-Йорк",
     "de": "New York City",
-    "pt": "Nova Iorque"
+    "pt": "Nova Iorque",
+    "ko": "뉴욕",
+    "zh": "纽约",
+    "bn": "নিউ ইয়র্ক সিটি",
+    "hi": "न्यूयॉर्क नगर",
+    "id": "Kota New York",
+    "ur": "نیویارک شہر"
    },
    "head": null
   },
   "oecd": {
    "name": {
-    "pt": "Organização para a Cooperação e Desenvolvimento Económico",
-    "ru": "Организация экономического сотрудничества и развития",
-    "ur": "انجمن اقتصادی تعاون و ترقی",
-    "zh": "经济合作与发展组织",
     "nl": "Organisatie voor Economische Samenwerking en Ontwikkeling",
     "ar": "منظمة التعاون الاقتصادي والتنمية",
     "bn": "অর্থনৈতিক সহযোগিতা ও উন্নয়ন সংস্থা",
@@ -739,7 +737,11 @@
     "it": "Organizzazione per la cooperazione e lo sviluppo economico",
     "ja": "経済協力開発機構",
     "ko": "경제협력개발기구",
-    "pl": "Organizacja Współpracy Gospodarczej i Rozwoju"
+    "pl": "Organizacja Współpracy Gospodarczej i Rozwoju",
+    "pt": "Organização para a Cooperação e Desenvolvimento Económico",
+    "ru": "Организация экономического сотрудничества и развития",
+    "ur": "انجمن اقتصادی تعاون و ترقی",
+    "zh": "经济合作与发展组织"
    },
    "founded": 1961,
    "website": "https://www.oecd.org/",
@@ -754,19 +756,18 @@
     "pl": "Paryż",
     "ar": "باريس",
     "pt": "Paris",
+    "hi": "पेरिस",
     "ur": "پیرس",
     "bn": "প্যারিস",
     "id": "Paris",
     "zh": "巴黎",
     "ja": "パリ",
-    "ko": "파리",
-    "hi": "पेरिस"
+    "ko": "파리"
    },
    "head": null
   },
   "schengen": {
    "name": {
-    "ar": "منطقة شنغن",
     "bn": "শেংগেন অঞ্চল",
     "de": "Schengen-Raum",
     "en": "Schengen Area",
@@ -782,7 +783,8 @@
     "ru": "Шенгенская зона",
     "ur": "شینگن علاقہ",
     "zh": "申根区",
-    "it": "spazio Schengen"
+    "it": "spazio Schengen",
+    "ar": "منطقة شنغن"
    },
    "founded": 1995,
    "website": null,
@@ -815,11 +817,6 @@
   },
   "council-of-europe": {
    "name": {
-    "nl": "Raad van Europa",
-    "pl": "Rada Europy",
-    "pt": "Conselho da Europa",
-    "ru": "Совет Европы",
-    "zh": "欧洲委员会",
     "en": "Council of Europe",
     "de": "Europarat",
     "fr": "Conseil de l'Europe",
@@ -831,14 +828,16 @@
     "id": "Majelis Eropa",
     "it": "Consiglio d'Europa",
     "ja": "欧州評議会",
-    "ko": "유럽 평의회"
+    "ko": "유럽 평의회",
+    "nl": "Raad van Europa",
+    "pl": "Rada Europy",
+    "pt": "Conselho da Europa",
+    "ru": "Совет Европы",
+    "zh": "欧洲委员会"
    },
    "founded": 1949,
    "website": "https://www.coe.int",
    "hq": {
-    "ur": "ستراسبورگ",
-    "zh": "斯特拉斯堡",
-    "hi": "स्त्रासबुर",
     "it": "Strasburgo",
     "de": "Straßburg",
     "en": "Strasbourg",
@@ -850,18 +849,15 @@
     "ru": "Страсбург",
     "ar": "ستراسبورغ",
     "pl": "Strasburg",
+    "zh": "斯特拉斯堡",
     "ja": "ストラスブール",
     "pt": "Estrasburgo",
-    "bn": "স্ত্রাসবুর"
+    "bn": "স্ত্রাসবুর",
+    "ur": "ستراسبورگ",
+    "hi": "स्त्रासबुर"
    },
    "head": {
     "name": {
-     "ar": "آلان بيرسيت",
-     "de": "Alain Berset",
-     "en": "Alain Berset",
-     "es": "Alain Berset",
-     "fr": "Alain Berset",
-     "id": "Alain Berset",
      "it": "Alain Berset",
      "ja": "アラン・ベルセ",
      "ko": "알랭 베르세",
@@ -870,7 +866,14 @@
      "pt": "Alain Berset",
      "ru": "Ален Берсе",
      "zh": "阿蘭·貝爾賽",
-     "ur": "ایلین برسیٹ"
+     "ur": "ایلین برسیٹ",
+     "hi": "आलें बेर्सेत",
+     "ar": "آلان بيرسيت",
+     "de": "Alain Berset",
+     "en": "Alain Berset",
+     "es": "Alain Berset",
+     "fr": "Alain Berset",
+     "id": "Alain Berset"
     },
     "office": {
      "ar": "الأمين العام لمجلس أوروبا",
@@ -884,7 +887,8 @@
      "pl": "Sekretarz Generalny Rady Europy",
      "pt": "Secretário-geral do Conselho da Europa",
      "ru": "генеральный секретарь Совета Европы",
-     "zh": "欧洲委员会秘书长"
+     "zh": "欧洲委员会秘书长",
+     "hi": "यूरोप परिषद के महासचिव"
     },
     "since": "2024"
    }
@@ -987,6 +991,8 @@
    "founded": 2000,
    "website": "https://www.eac.int/",
    "hq": {
+    "ur": "اروشا",
+    "zh": "阿鲁沙",
     "en": "Arusha",
     "ja": "アルーシャ",
     "de": "Arusha",
@@ -1001,9 +1007,7 @@
     "bn": "আরুশা",
     "hi": "अरुषा",
     "id": "Arusha",
-    "ko": "아루샤",
-    "ur": "اروشا",
-    "zh": "阿鲁沙"
+    "ko": "아루샤"
    },
    "head": {
     "name": {
@@ -1024,6 +1028,9 @@
   },
   "eccas": {
    "name": {
+    "pl": "Wspólnota Gospodarcza Państw Afryki Środkowej",
+    "pt": "Comunidade Econômica dos Estados da África Central",
+    "ru": "Экономическое сообщество стран Центральной Африки",
     "zh": "中部非洲国家经济共同体",
     "ar": "المجموعة الاقتصادية لدول وسط إفريقيا",
     "de": "Zentralafrikanische Wirtschaftsgemeinschaft",
@@ -1034,14 +1041,19 @@
     "it": "Comunità Economica degli Stati dell'Africa Centrale",
     "ja": "中部アフリカ諸国経済共同体",
     "ko": "중앙아프리카 경제 공동체",
-    "nl": "Centraal-Afrikaanse Douane- en Economische Unie",
-    "pl": "Wspólnota Gospodarcza Państw Afryki Środkowej",
-    "pt": "Comunidade Econômica dos Estados da África Central",
-    "ru": "Экономическое сообщество стран Центральной Африки"
+    "nl": "Centraal-Afrikaanse Douane- en Economische Unie"
    },
    "founded": 1983,
    "website": "http://www.ceeac-eccas.org",
    "hq": {
+    "en": "Libreville",
+    "ru": "Либревиль",
+    "fr": "Libreville",
+    "ar": "ليبرفيل",
+    "bn": "লিব্রেভিল",
+    "de": "Libreville",
+    "es": "Libreville",
+    "zh": "利伯维尔",
     "hi": "लिब्रेविले",
     "id": "Libreville",
     "it": "Libreville",
@@ -1050,15 +1062,7 @@
     "nl": "Libreville",
     "pl": "Libreville",
     "pt": "Libreville",
-    "ur": "لبریویل",
-    "zh": "利伯维尔",
-    "en": "Libreville",
-    "ru": "Либревиль",
-    "fr": "Libreville",
-    "ar": "ليبرفيل",
-    "bn": "লিব্রেভিল",
-    "de": "Libreville",
-    "es": "Libreville"
+    "ur": "لبریویل"
    },
    "head": null
   },
@@ -1105,7 +1109,13 @@
    "founded": 1989,
    "website": "https://maghrebarabe.org/",
    "hq": {
-    "ur": "رباط",
+    "id": "Rabat",
+    "it": "Rabat",
+    "pt": "Rabat",
+    "bn": "রাবাত",
+    "hi": "रबात",
+    "ja": "ラバト",
+    "ko": "라바트",
     "es": "Rabat",
     "en": "Rabat",
     "zh": "拉巴特",
@@ -1115,13 +1125,7 @@
     "fr": "Rabat",
     "de": "Rabat",
     "nl": "Rabat",
-    "id": "Rabat",
-    "it": "Rabat",
-    "pt": "Rabat",
-    "bn": "রাবাত",
-    "hi": "रबात",
-    "ja": "ラバト",
-    "ko": "라바트"
+    "ur": "رباط"
    },
    "head": null
   },
@@ -1147,14 +1151,6 @@
    "founded": 1985,
    "website": "http://www.eco.int/",
    "hq": {
-    "en": "Tehran",
-    "fr": "Téhéran",
-    "de": "Teheran",
-    "es": "Teherán",
-    "ar": "طهران",
-    "ja": "テヘラン",
-    "ru": "Тегеран",
-    "it": "Teheran",
     "bn": "তেহরান",
     "hi": "तेहरान",
     "id": "Teheran",
@@ -1163,7 +1159,15 @@
     "pl": "Teheran",
     "pt": "Teerão",
     "zh": "德黑兰",
-    "ur": "تہران، ایران"
+    "ur": "تہران، ایران",
+    "en": "Tehran",
+    "fr": "Téhéran",
+    "de": "Teheran",
+    "es": "Teherán",
+    "ar": "طهران",
+    "ja": "テヘラン",
+    "ru": "Тегеран",
+    "it": "Teheran"
    },
    "head": null
   },
@@ -1206,6 +1210,10 @@
   },
   "turkic-states": {
    "name": {
+    "id": "Organisasi Negara-Negara Turkik",
+    "it": "Organizzazione degli Stati turcofoni",
+    "ja": "テュルク諸国機構",
+    "ko": "튀르크 국가 기구",
     "nl": "Organisatie van Turkse Staten",
     "pl": "Organizacja Państw Turkijskich",
     "pt": "Organização dos Estados Túrquicos",
@@ -1217,11 +1225,7 @@
     "de": "Organisation der Turkstaaten",
     "en": "Organization of Turkic States",
     "es": "Organización de Estados Túrquicos",
-    "fr": "Organisation des États turciques",
-    "id": "Organisasi Negara-Negara Turkik",
-    "it": "Organizzazione degli Stati turcofoni",
-    "ja": "テュルク諸国機構",
-    "ko": "튀르크 국가 기구"
+    "fr": "Organisation des États turciques"
    },
    "founded": 2009,
    "website": "https://turkicstates.org",
@@ -1268,6 +1272,7 @@
    "founded": 2015,
    "website": "http://eaeunion.org/",
    "hq": {
+    "hi": "मास्को",
     "pt": "Moscovo",
     "zh": "莫斯科",
     "ko": "모스크바",
@@ -1283,13 +1288,16 @@
     "nl": "Moskou",
     "ar": "موسكو",
     "ur": "ماسکو",
-    "it": "Mosca",
-    "hi": "मास्को"
+    "it": "Mosca"
    },
    "head": null
   },
   "csto": {
    "name": {
+    "hi": "सामूहिक सुरक्षा संधि संगठन",
+    "id": "Organisasi Traktat Keamanan Kolektif",
+    "it": "Organizzazione del Trattato di Sicurezza Collettiva",
+    "ja": "集団安全保障条約機構",
     "ko": "집단안보조약기구",
     "nl": "Collectieve Veiligheidsverdragorganisatie",
     "pl": "Organizacja Układu o Bezpieczeństwie Zbiorowym",
@@ -1300,15 +1308,12 @@
     "de": "Organisation des Vertrags über kollektive Sicherheit",
     "en": "Collective Security Treaty Organization",
     "es": "Organización del Tratado de la Seguridad Colectiva",
-    "fr": "Organisation du traité de sécurité collective",
-    "hi": "सामूहिक सुरक्षा संधि संगठन",
-    "id": "Organisasi Traktat Keamanan Kolektif",
-    "it": "Organizzazione del Trattato di Sicurezza Collettiva",
-    "ja": "集団安全保障条約機構"
+    "fr": "Organisation du traité de sécurité collective"
    },
    "founded": 1992,
    "website": "https://odkb-csto.org/",
    "hq": {
+    "hi": "मास्को",
     "pt": "Moscovo",
     "zh": "莫斯科",
     "ko": "모스크바",
@@ -1324,8 +1329,7 @@
     "nl": "Moskou",
     "ar": "موسكو",
     "ur": "ماسکو",
-    "it": "Mosca",
-    "hi": "मास्को"
+    "it": "Mosca"
    },
    "head": null
   },
@@ -1348,6 +1352,11 @@
    "founded": 1997,
    "website": "https://bimstec.org/",
    "hq": {
+    "ko": "다카",
+    "nl": "Dhaka",
+    "ar": "دكا",
+    "es": "Daca",
+    "id": "Dhaka",
     "it": "Dacca",
     "bn": "ঢাকা",
     "fr": "Dacca",
@@ -1356,11 +1365,6 @@
     "ja": "ダッカ",
     "de": "Dhaka",
     "hi": "ढाका",
-    "ko": "다카",
-    "nl": "Dhaka",
-    "ar": "دكا",
-    "es": "Daca",
-    "id": "Dhaka",
     "zh": "达卡市",
     "pt": "Daca",
     "ru": "Дакка",
@@ -1370,6 +1374,12 @@
   },
   "andean": {
    "name": {
+    "ar": "مجموعة دول الأنديز",
+    "bn": "আন্দীয় দেশসমূহের সংগঠন",
+    "de": "Andengemeinschaft",
+    "en": "Andean Community",
+    "es": "Comunidad Andina",
+    "fr": "Communauté andine des Nations",
     "id": "Komunitas Andes",
     "it": "Comunità Andina",
     "ja": "アンデス共同体",
@@ -1378,20 +1388,11 @@
     "pl": "Andyjski Wspólny Rynek",
     "pt": "Comunidade Andina",
     "ru": "Андское сообщество",
-    "zh": "安第斯共同体",
-    "ar": "مجموعة دول الأنديز",
-    "bn": "আন্দীয় দেশসমূহের সংগঠন",
-    "de": "Andengemeinschaft",
-    "en": "Andean Community",
-    "es": "Comunidad Andina",
-    "fr": "Communauté andine des Nations"
+    "zh": "安第斯共同体"
    },
    "founded": 1969,
    "website": "https://www.comunidadandina.org/",
    "hq": {
-    "zh": "利马",
-    "hi": "लीमा",
-    "ur": "لیما",
     "en": "Lima",
     "fr": "Lima",
     "es": "Lima",
@@ -1402,6 +1403,9 @@
     "pt": "Lima",
     "ru": "Лима",
     "bn": "লিমা",
+    "zh": "利马",
+    "hi": "लीमा",
+    "ur": "لیما",
     "id": "Lima",
     "it": "Lima",
     "nl": "Lima",
@@ -1453,15 +1457,6 @@
    "founded": 1952,
    "website": "https://www.norden.org/en",
    "hq": {
-    "ru": "Копенгаген",
-    "zh": "哥本哈根",
-    "bn": "কোপেনহেগেন",
-    "hi": "कोपनहेगन",
-    "id": "Kopenhagen",
-    "it": "Copenaghen",
-    "ko": "코펜하겐",
-    "pt": "Copenhaga",
-    "ur": "کوپن ہیگن",
     "en": "Copenhagen",
     "es": "Copenhague",
     "fr": "Copenhague",
@@ -1469,7 +1464,16 @@
     "pl": "Kopenhaga",
     "ja": "コペンハーゲン",
     "nl": "Kopenhagen",
-    "ar": "كوبنهاغن"
+    "ar": "كوبنهاغن",
+    "zh": "哥本哈根",
+    "ru": "Копенгаген",
+    "bn": "কোপেনহেগেন",
+    "hi": "कोपनहेगन",
+    "id": "Kopenhagen",
+    "it": "Copenaghen",
+    "ko": "코펜하겐",
+    "pt": "Copenhaga",
+    "ur": "کوپن ہیگن"
    },
    "head": null
   },
@@ -1545,10 +1549,6 @@
   },
   "scandinavia": {
    "name": {
-    "bn": "স্ক্যান্ডিনেভিয়া",
-    "id": "Skandinavia",
-    "ko": "스칸디나비아",
-    "pt": "Escandinávia",
     "en": "Scandinavia",
     "it": "Scandinavia",
     "fr": "Scandinavie",
@@ -1561,7 +1561,11 @@
     "ar": "إسكندنافيا",
     "ur": "اسکینڈینیویا",
     "zh": "斯堪的纳维亚",
-    "hi": "स्कैण्डिनेविया"
+    "hi": "स्कैण्डिनेविया",
+    "bn": "স্ক্যান্ডিনেভিয়া",
+    "id": "Skandinavia",
+    "ko": "스칸디나비아",
+    "pt": "Escandinávia"
    },
    "founded": null,
    "website": null,
@@ -1595,8 +1599,6 @@
   },
   "baltic": {
    "name": {
-    "ur": "بالٹک ریاستیں",
-    "zh": "波罗的海国家",
     "ar": "دول البلطيق",
     "bn": "বাল্টিক রাষ্ট্রসমূহ",
     "de": "Baltische Staaten",
@@ -1611,7 +1613,9 @@
     "nl": "Baltische staten",
     "pl": "kraje bałtyckie",
     "pt": "Países Bálticos",
-    "ru": "Прибалтика"
+    "ru": "Прибалтика",
+    "ur": "بالٹک ریاستیں",
+    "zh": "波罗的海国家"
    },
    "founded": null,
    "website": null,
@@ -1645,6 +1649,7 @@
   },
   "balkans": {
    "name": {
+    "hi": "बाल्कन",
     "id": "Balkan",
     "it": "penisola balcanica",
     "ja": "バルカン半島",
@@ -1660,8 +1665,7 @@
     "ar": "البلقان",
     "bn": "বলকান অঞ্চল",
     "en": "Balkans",
-    "es": "península balcánica",
-    "hi": "बाल्कन"
+    "es": "península balcánica"
    },
    "founded": null,
    "website": null,
@@ -1695,6 +1699,8 @@
   },
   "iberia": {
    "name": {
+    "id": "Iberia",
+    "it": "penisola iberica",
     "ja": "イベリア半島",
     "ko": "이베리아반도",
     "nl": "Iberisch Schiereiland",
@@ -1709,9 +1715,7 @@
     "en": "Iberian Peninsula",
     "es": "península ibérica",
     "fr": "péninsule Ibérique",
-    "hi": "इबेरिया प्रायद्वीप",
-    "id": "Iberia",
-    "it": "penisola iberica"
+    "hi": "इबेरिया प्रायद्वीप"
    },
    "founded": null,
    "website": null,
@@ -1720,6 +1724,11 @@
   },
   "british-isles": {
    "name": {
+    "en": "British Isles",
+    "ru": "Британские острова",
+    "es": "Islas británicas",
+    "ja": "ブリテン諸島",
+    "ar": "الجزر البريطانية",
     "bn": "ব্রিটিশ দ্বীপপুঞ্জ",
     "de": "Britische Inseln",
     "fr": "îles Britanniques",
@@ -1731,12 +1740,7 @@
     "pl": "Wyspy Brytyjskie",
     "pt": "Ilhas Britânicas",
     "ur": "جزائر برطانیہ",
-    "zh": "不列顛群島",
-    "en": "British Isles",
-    "ru": "Британские острова",
-    "es": "Islas británicas",
-    "ja": "ブリテン諸島",
-    "ar": "الجزر البريطانية"
+    "zh": "不列顛群島"
    },
    "founded": null,
    "website": null,
@@ -1745,13 +1749,9 @@
   },
   "central-asia": {
    "name": {
-    "nl": "Centraal-Azië",
-    "pl": "Azja Środkowa",
-    "pt": "Ásia Central",
-    "ur": "وسط ایشیا",
-    "zh": "中亚",
     "en": "Central Asia",
     "de": "Zentralasien",
+    "zh": "中亚",
     "ru": "Центральная Азия",
     "es": "Asia Central",
     "ar": "آسيا الوسطى",
@@ -1761,7 +1761,11 @@
     "id": "Asia Tengah",
     "it": "Asia centrale",
     "ja": "中央アジア",
-    "ko": "중앙아시아"
+    "ko": "중앙아시아",
+    "nl": "Centraal-Azië",
+    "pl": "Azja Środkowa",
+    "pt": "Ásia Central",
+    "ur": "وسط ایشیا"
    },
    "founded": null,
    "website": null,
@@ -1770,6 +1774,10 @@
   },
   "southeast-asia": {
    "name": {
+    "en": "Southeast Asia",
+    "de": "Südostasien",
+    "ar": "جنوب شرق آسيا",
+    "bn": "দক্ষিণ-পূর্ব এশিয়া",
     "es": "Sudeste Asiático",
     "fr": "Asie du Sud-Est",
     "hi": "दक्षिण पूर्व एशिया",
@@ -1781,10 +1789,6 @@
     "pl": "Azja Południowo-Wschodnia",
     "pt": "Sudeste Asiático",
     "ru": "Юго-Восточная Азия",
-    "en": "Southeast Asia",
-    "de": "Südostasien",
-    "ar": "جنوب شرق آسيا",
-    "bn": "দক্ষিণ-পূর্ব এশিয়া",
     "ur": "جنوب مشرقی ایشیاء",
     "zh": "东南亚"
    },
@@ -1844,6 +1848,10 @@
   },
   "horn-of-africa": {
    "name": {
+    "pl": "Półwysep Somalijski",
+    "pt": "Corno de África",
+    "ur": "قرن افریقہ",
+    "zh": "非洲之角",
     "ru": "Сомали",
     "en": "Horn of Africa",
     "ar": "القرن الإفريقي",
@@ -1856,11 +1864,7 @@
     "it": "Corno d'Africa",
     "ja": "アフリカの角",
     "ko": "아프리카의 뿔",
-    "nl": "Hoorn van Afrika",
-    "pl": "Półwysep Somalijski",
-    "pt": "Corno de África",
-    "ur": "قرن افریقہ",
-    "zh": "非洲之角"
+    "nl": "Hoorn van Afrika"
    },
    "founded": null,
    "website": null,
@@ -1869,10 +1873,6 @@
   },
   "central-america": {
    "name": {
-    "es": "América Central",
-    "en": "Central America",
-    "de": "Zentralamerika",
-    "ru": "Центральная Америка",
     "ar": "أمريكا الوسطى",
     "bn": "মধ্য আমেরিকা",
     "fr": "Amérique centrale",
@@ -1881,6 +1881,10 @@
     "it": "America centrale",
     "ja": "中央アメリカ",
     "ko": "중앙아메리카",
+    "es": "América Central",
+    "en": "Central America",
+    "de": "Zentralamerika",
+    "ru": "Центральная Америка",
     "nl": "Centraal-Amerika",
     "pl": "Ameryka Centralna",
     "pt": "América Central",
@@ -1894,6 +1898,11 @@
   },
   "caribbean": {
    "name": {
+    "es": "Caribe",
+    "it": "Caraibi",
+    "de": "Karibik",
+    "fr": "Caraïbes",
+    "en": "Caribbean",
     "ar": "الكاريبي",
     "ru": "Карибы",
     "pt": "Caraíbas",
@@ -1905,12 +1914,7 @@
     "ko": "카리브",
     "pl": "Karaiby",
     "ur": "کیریبین",
-    "zh": "加勒比地区",
-    "es": "Caribe",
-    "it": "Caraibi",
-    "de": "Karibik",
-    "fr": "Caraïbes",
-    "en": "Caribbean"
+    "zh": "加勒比地区"
    },
    "founded": null,
    "website": null,
@@ -1986,6 +1990,7 @@
   },
   "polynesia": {
    "name": {
+    "zh": "玻里尼西亞",
     "hi": "पोलीनेशिया",
     "id": "Polinesia",
     "it": "Polinesia",
@@ -2001,8 +2006,7 @@
     "de": "Polynesien",
     "ru": "Полинезия",
     "ar": "بولنيزيا",
-    "bn": "পলিনেশিয়া",
-    "zh": "玻里尼西亞"
+    "bn": "পলিনেশিয়া"
    },
    "founded": null,
    "website": null,
@@ -2011,6 +2015,11 @@
   },
   "melanesia": {
    "name": {
+    "nl": "Melanesië",
+    "pl": "Melanezja",
+    "pt": "Melanésia",
+    "ur": "میلانیشیا",
+    "zh": "美拉尼西亞",
     "es": "Melanesia",
     "fr": "Mélanésie",
     "de": "Melanesien",
@@ -2022,12 +2031,7 @@
     "hi": "मॅलानिशिया",
     "id": "Melanesia",
     "ja": "メラネシア",
-    "ko": "멜라네시아",
-    "nl": "Melanesië",
-    "pl": "Melanezja",
-    "pt": "Melanésia",
-    "ur": "میلانیشیا",
-    "zh": "美拉尼西亞"
+    "ko": "멜라네시아"
    },
    "founded": null,
    "website": null,
@@ -2036,6 +2040,12 @@
   },
   "micronesia-region": {
    "name": {
+    "es": "Micronesia",
+    "fr": "Micronésie",
+    "en": "Micronesia (region)",
+    "de": "Mikronesien",
+    "ru": "Микронезия",
+    "ar": "ميكرونيسيا",
     "bn": "মাইক্রোনেশিয়া",
     "hi": "माइक्रोनीशिया",
     "id": "Mikronesia",
@@ -2046,13 +2056,7 @@
     "pl": "Mikronezja",
     "pt": "Micronésia",
     "ur": "مائیکرونیشیا",
-    "zh": "密克羅尼西亞群島",
-    "es": "Micronesia",
-    "fr": "Micronésie",
-    "en": "Micronesia (region)",
-    "de": "Mikronesien",
-    "ru": "Микронезия",
-    "ar": "ميكرونيسيا"
+    "zh": "密克羅尼西亞群島"
    },
    "founded": null,
    "website": null,
@@ -2082,8 +2086,12 @@
    "former": [
     {
      "name": {
-      "pl": "Związek Socjalistycznych Republik Radzieckich",
-      "pt": "União Soviética",
+      "ar": "الاتحاد السوفيتي",
+      "bn": "সোভিয়েত ইউনিয়ন",
+      "hi": "सोवियत संघ",
+      "id": "Uni Soviet",
+      "it": "Unione Sovietica",
+      "ja": "ソビエト連邦",
       "en": "Soviet Union",
       "fr": "Union soviétique",
       "ru": "СССР",
@@ -2092,13 +2100,9 @@
       "es": "Unión Soviética",
       "ur": "سوویت اتحاد",
       "zh": "苏联",
-      "ar": "الاتحاد السوفيتي",
-      "bn": "সোভিয়েত ইউনিয়ন",
-      "hi": "सोवियत संघ",
-      "id": "Uni Soviet",
-      "it": "Unione Sovietica",
-      "ja": "ソビエト連邦",
-      "ko": "소련"
+      "ko": "소련",
+      "pl": "Związek Socjalistycznych Republik Radzieckich",
+      "pt": "União Soviética"
      },
      "from": 1922,
      "until": 1991
@@ -2132,10 +2136,6 @@
    "former": [
     {
      "name": {
-      "pl": "Jugosławia",
-      "pt": "Jugoslávia",
-      "ur": "یوگوسلاویہ",
-      "zh": "南斯拉夫",
       "es": "Yugoslavia",
       "it": "Jugoslavia",
       "fr": "Yougoslavie",
@@ -2143,18 +2143,24 @@
       "de": "Jugoslawien",
       "ja": "ユーゴスラビア",
       "ru": "Югославия",
+      "zh": "南斯拉夫",
       "nl": "Joegoslavië",
       "ar": "يوغوسلافيا",
       "ko": "유고슬라비아",
       "hi": "यूगोस्लाविया",
       "bn": "যুগোস্লাভিয়া",
-      "id": "Yugoslavia"
+      "id": "Yugoslavia",
+      "pl": "Jugosławia",
+      "pt": "Jugoslávia",
+      "ur": "یوگوسلاویہ"
      },
      "from": 1918,
      "until": 1992
     },
     {
      "name": {
+      "ko": "유고슬라비아 연방 공화국",
+      "nl": "Federale Republiek Joegoslavië",
       "pl": "Federalna Republika Jugosławii",
       "pt": "República Federal da Jugoslávia",
       "ru": "Союзная Республика Югославия",
@@ -2167,15 +2173,14 @@
       "fr": "république fédérale de Yougoslavie",
       "id": "Republik Federal Yugoslavia",
       "it": "Repubblica Federale di Jugoslavia",
-      "ja": "ユーゴスラビア連邦共和国",
-      "ko": "유고슬라비아 연방 공화국",
-      "nl": "Federale Republiek Joegoslavië"
+      "ja": "ユーゴスラビア連邦共和国"
      },
      "from": 1992,
      "until": 2003
     },
     {
      "name": {
+      "en": "Serbia and Montenegro",
       "ja": "セルビア・モンテネグロ",
       "ar": "صربيا والجبل الأسود",
       "bn": "সার্বিয়া ও মন্টিনিগ্রো",
@@ -2190,7 +2195,6 @@
       "pl": "Serbia i Czarnogóra",
       "pt": "União Estatal da Sérvia e Montenegro",
       "ru": "Сербия и Черногория",
-      "en": "Serbia and Montenegro",
       "ur": "سربیا و مونٹینیگرو",
       "zh": "塞尔维亚和黑山"
      },

@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-04",
+ "fetched": "2026-11-16",
  "civs": {
   "indus": {
    "name": {
@@ -22,19 +22,19 @@
     "bn": "সিন্ধু সভ্যতা"
    },
    "wiki": {
+    "hi": "https://hi.wikipedia.org/wiki/%E0%A4%B8%E0%A4%BF%E0%A4%82%E0%A4%A7%E0%A5%81_%E0%A4%98%E0%A4%BE%E0%A4%9F%E0%A5%80_%E0%A4%B8%E0%A4%AD%E0%A5%8D%E0%A4%AF%E0%A4%A4%E0%A4%BE",
     "id": "https://id.wikipedia.org/wiki/Peradaban_Lembah_Indus",
     "it": "https://it.wikipedia.org/wiki/Civilt%C3%A0_della_valle_dell%27Indo",
     "ja": "https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%B3%E3%83%80%E3%82%B9%E6%96%87%E6%98%8E",
     "ko": "https://ko.wikipedia.org/wiki/%EC%9D%B8%EB%8D%94%EC%8A%A4_%EB%AC%B8%EB%AA%85",
+    "nl": "https://nl.wikipedia.org/wiki/Indusbeschaving",
+    "pl": "https://pl.wikipedia.org/wiki/Cywilizacja_doliny_Indusu",
+    "ar": "https://ar.wikipedia.org/wiki/%D8%AD%D8%B6%D8%A7%D8%B1%D8%A9_%D9%88%D8%A7%D8%AF%D9%8A_%D8%A7%D9%84%D8%B3%D9%86%D8%AF",
+    "bn": "https://bn.wikipedia.org/wiki/%E0%A6%B8%E0%A6%BF%E0%A6%A8%E0%A7%8D%E0%A6%A7%E0%A7%81_%E0%A6%B8%E0%A6%AD%E0%A7%8D%E0%A6%AF%E0%A6%A4%E0%A6%BE",
     "de": "https://de.wikipedia.org/wiki/Indus-Kultur",
     "en": "https://en.wikipedia.org/wiki/Indus_Valley_Civilisation",
     "es": "https://es.wikipedia.org/wiki/Civilizaci%C3%B3n_del_valle_del_Indo",
     "fr": "https://fr.wikipedia.org/wiki/Civilisation_de_la_vall%C3%A9e_de_l%27Indus",
-    "hi": "https://hi.wikipedia.org/wiki/%E0%A4%B8%E0%A4%BF%E0%A4%82%E0%A4%A7%E0%A5%81_%E0%A4%98%E0%A4%BE%E0%A4%9F%E0%A5%80_%E0%A4%B8%E0%A4%AD%E0%A5%8D%E0%A4%AF%E0%A4%A4%E0%A4%BE",
-    "ar": "https://ar.wikipedia.org/wiki/%D8%AD%D8%B6%D8%A7%D8%B1%D8%A9_%D9%88%D8%A7%D8%AF%D9%8A_%D8%A7%D9%84%D8%B3%D9%86%D8%AF",
-    "bn": "https://bn.wikipedia.org/wiki/%E0%A6%B8%E0%A6%BF%E0%A6%A8%E0%A7%8D%E0%A6%A7%E0%A7%81_%E0%A6%B8%E0%A6%AD%E0%A7%8D%E0%A6%AF%E0%A6%A4%E0%A6%BE",
-    "nl": "https://nl.wikipedia.org/wiki/Indusbeschaving",
-    "pl": "https://pl.wikipedia.org/wiki/Cywilizacja_doliny_Indusu",
     "pt": "https://pt.wikipedia.org/wiki/Civiliza%C3%A7%C3%A3o_do_Vale_do_Indo",
     "ru": "https://ru.wikipedia.org/wiki/%D0%98%D0%BD%D0%B4%D1%81%D0%BA%D0%B0%D1%8F_%D1%86%D0%B8%D0%B2%D0%B8%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F",
     "ur": "https://ur.wikipedia.org/wiki/%D9%88%D8%A7%D8%AF%DB%8C%D9%94_%D8%B3%D9%86%D8%AF%DA%BE_%DA%A9%DB%8C_%D8%AA%DB%81%D8%B0%DB%8C%D8%A8",
@@ -62,6 +62,9 @@
     "zh": "苏美尔"
    },
    "wiki": {
+    "ur": "https://ur.wikipedia.org/wiki/%D8%B3%D9%85%DB%8C%D8%B1%DB%8C",
+    "ar": "https://ar.wikipedia.org/wiki/%D8%B3%D9%88%D9%85%D8%B1",
+    "bn": "https://bn.wikipedia.org/wiki/%E0%A6%B8%E0%A7%81%E0%A6%AE%E0%A7%87%E0%A6%B0%E0%A7%80%E0%A6%AF%E0%A6%BC_%E0%A6%B8%E0%A6%AD%E0%A7%8D%E0%A6%AF%E0%A6%A4%E0%A6%BE",
     "de": "https://de.wikipedia.org/wiki/Sumer",
     "en": "https://en.wikipedia.org/wiki/Sumer",
     "es": "https://es.wikipedia.org/wiki/Sumeria",
@@ -75,14 +78,15 @@
     "pl": "https://pl.wikipedia.org/wiki/Sumer",
     "pt": "https://pt.wikipedia.org/wiki/Sum%C3%A9ria",
     "ru": "https://ru.wikipedia.org/wiki/%D0%A8%D1%83%D0%BC%D0%B5%D1%80",
-    "ur": "https://ur.wikipedia.org/wiki/%D8%B3%D9%85%DB%8C%D8%B1%DB%8C",
-    "zh": "https://zh.wikipedia.org/wiki/%E8%8B%8F%E7%BE%8E%E5%B0%94",
-    "ar": "https://ar.wikipedia.org/wiki/%D8%B3%D9%88%D9%85%D8%B1",
-    "bn": "https://bn.wikipedia.org/wiki/%E0%A6%B8%E0%A7%81%E0%A6%AE%E0%A7%87%E0%A6%B0%E0%A7%80%E0%A6%AF%E0%A6%BC_%E0%A6%B8%E0%A6%AD%E0%A7%8D%E0%A6%AF%E0%A6%A4%E0%A6%BE"
+    "zh": "https://zh.wikipedia.org/wiki/%E8%8B%8F%E7%BE%8E%E5%B0%94"
    }
   },
   "egypt": {
    "name": {
+    "en": "Ancient Egypt",
+    "de": "Altes Ägypten",
+    "ar": "مصر القديمة",
+    "bn": "মিশরীয় সভ্যতা",
     "es": "Antiguo Egipto",
     "fr": "Égypte antique",
     "hi": "प्राचीन मिस्र",
@@ -93,17 +97,11 @@
     "nl": "oude Egypte",
     "pl": "Starożytny Egipt",
     "pt": "Antigo Egito",
-    "en": "Ancient Egypt",
-    "de": "Altes Ägypten",
-    "ar": "مصر القديمة",
-    "bn": "মিশরীয় সভ্যতা",
     "ru": "Древний Египет",
     "ur": "قدیم مصر",
     "zh": "古埃及"
    },
    "wiki": {
-    "ar": "https://ar.wikipedia.org/wiki/%D9%85%D8%B5%D8%B1_%D8%A7%D9%84%D9%82%D8%AF%D9%8A%D9%85%D8%A9",
-    "bn": "https://bn.wikipedia.org/wiki/%E0%A6%AE%E0%A6%BF%E0%A6%B6%E0%A6%B0%E0%A7%80%E0%A6%AF%E0%A6%BC_%E0%A6%B8%E0%A6%AD%E0%A7%8D%E0%A6%AF%E0%A6%A4%E0%A6%BE",
     "de": "https://de.wikipedia.org/wiki/Altes_%C3%84gypten",
     "en": "https://en.wikipedia.org/wiki/Ancient_Egypt",
     "es": "https://es.wikipedia.org/wiki/Antiguo_Egipto",
@@ -118,11 +116,18 @@
     "pt": "https://pt.wikipedia.org/wiki/Antigo_Egito",
     "ru": "https://ru.wikipedia.org/wiki/%D0%94%D1%80%D0%B5%D0%B2%D0%BD%D0%B8%D0%B9_%D0%95%D0%B3%D0%B8%D0%BF%D0%B5%D1%82",
     "ur": "https://ur.wikipedia.org/wiki/%D9%82%D8%AF%DB%8C%D9%85_%D9%85%D8%B5%D8%B1",
-    "zh": "https://zh.wikipedia.org/wiki/%E5%8F%A4%E5%9F%83%E5%8F%8A"
+    "zh": "https://zh.wikipedia.org/wiki/%E5%8F%A4%E5%9F%83%E5%8F%8A",
+    "ar": "https://ar.wikipedia.org/wiki/%D9%85%D8%B5%D8%B1_%D8%A7%D9%84%D9%82%D8%AF%D9%8A%D9%85%D8%A9",
+    "bn": "https://bn.wikipedia.org/wiki/%E0%A6%AE%E0%A6%BF%E0%A6%B6%E0%A6%B0%E0%A7%80%E0%A6%AF%E0%A6%BC_%E0%A6%B8%E0%A6%AD%E0%A7%8D%E0%A6%AF%E0%A6%A4%E0%A6%BE"
    }
   },
   "norte-chico": {
    "name": {
+    "ar": "نورتي شيكو",
+    "bn": "কারাল সভ্যতা",
+    "de": "Norte-Chico-Kultur",
+    "en": "Caral-Supe civilization",
+    "es": "Civilización caral",
     "fr": "Civilisation de Caral",
     "hi": "उत्तरी चिको सभ्यता",
     "id": "Peradaban Norte Chico",
@@ -133,14 +138,10 @@
     "pt": "Civilização de Caral",
     "ru": "Культура Норте-Чико",
     "ur": "نورتے چیکو تہذیب",
-    "zh": "小北文明",
-    "ar": "نورتي شيكو",
-    "bn": "কারাল সভ্যতা",
-    "de": "Norte-Chico-Kultur",
-    "en": "Caral-Supe civilization",
-    "es": "Civilización caral"
+    "zh": "小北文明"
    },
    "wiki": {
+    "zh": "https://zh.wikipedia.org/wiki/%E5%B0%8F%E5%8C%97%E6%96%87%E6%98%8E",
     "ar": "https://ar.wikipedia.org/wiki/%D8%AD%D8%B6%D8%A7%D8%B1%D8%A9_%D9%86%D9%88%D8%B1%D8%AA%D9%8A_%D8%B4%D9%8A%D9%83%D9%88",
     "bn": "https://bn.wikipedia.org/wiki/%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A6%BE%E0%A6%B2_%E0%A6%B8%E0%A6%AD%E0%A7%8D%E0%A6%AF%E0%A6%A4%E0%A6%BE",
     "de": "https://de.wikipedia.org/wiki/Norte-Chico-Kultur",
@@ -154,12 +155,13 @@
     "pl": "https://pl.wikipedia.org/wiki/Kultura_Norte_Chico",
     "pt": "https://pt.wikipedia.org/wiki/Civiliza%C3%A7%C3%A3o_de_Caral",
     "ru": "https://ru.wikipedia.org/wiki/%D0%9D%D0%BE%D1%80%D1%82%D0%B5-%D0%A7%D0%B8%D0%BA%D0%BE_(%D0%BA%D1%83%D0%BB%D1%8C%D1%82%D1%83%D1%80%D0%B0)",
-    "ur": "https://ur.wikipedia.org/wiki/%DA%A9%D8%A7%D8%B1%D8%A7%D9%84_%D8%AA%DB%81%D8%B0%DB%8C%D8%A8",
-    "zh": "https://zh.wikipedia.org/wiki/%E5%B0%8F%E5%8C%97%E6%96%87%E6%98%8E"
+    "ur": "https://ur.wikipedia.org/wiki/%DA%A9%D8%A7%D8%B1%D8%A7%D9%84_%D8%AA%DB%81%D8%B0%DB%8C%D8%A8"
    }
   },
   "minoan": {
    "name": {
+    "ur": "مینوسی تہذیب",
+    "zh": "米诺斯文明",
     "ar": "حضارة مينوسية",
     "bn": "মিনোয়ান সভ্যতা",
     "de": "Minoische Kultur",
@@ -174,11 +176,14 @@
     "nl": "Minoïsche beschaving",
     "pl": "kultura minojska",
     "pt": "Civilização minoica",
-    "ru": "Минойская цивилизация",
-    "ur": "مینوسی تہذیب",
-    "zh": "米诺斯文明"
+    "ru": "Минойская цивилизация"
    },
    "wiki": {
+    "en": "https://en.wikipedia.org/wiki/Minoan_civilization",
+    "ar": "https://ar.wikipedia.org/wiki/%D8%AD%D8%B6%D8%A7%D8%B1%D8%A9_%D9%85%D9%8A%D9%86%D9%88%D8%B3%D9%8A%D8%A9",
+    "bn": "https://bn.wikipedia.org/wiki/%E0%A6%AE%E0%A6%BF%E0%A6%A8%E0%A7%8B%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%A8_%E0%A6%B8%E0%A6%AD%E0%A7%8D%E0%A6%AF%E0%A6%A4%E0%A6%BE",
+    "de": "https://de.wikipedia.org/wiki/Minoische_Kultur",
+    "es": "https://es.wikipedia.org/wiki/Civilizaci%C3%B3n_minoica",
     "fr": "https://fr.wikipedia.org/wiki/Civilisation_minoenne",
     "hi": "https://hi.wikipedia.org/wiki/%E0%A4%AE%E0%A4%BF%E0%A4%A8%E0%A5%8B%E0%A4%86%E0%A4%88_%E0%A4%B8%E0%A4%AD%E0%A5%8D%E0%A4%AF%E0%A4%A4%E0%A4%BE",
     "id": "https://id.wikipedia.org/wiki/Peradaban_Minoa",
@@ -190,12 +195,7 @@
     "pt": "https://pt.wikipedia.org/wiki/Civiliza%C3%A7%C3%A3o_Minoica",
     "ru": "https://ru.wikipedia.org/wiki/%D0%9C%D0%B8%D0%BD%D0%BE%D0%B9%D1%81%D0%BA%D0%B0%D1%8F_%D1%86%D0%B8%D0%B2%D0%B8%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F",
     "ur": "https://ur.wikipedia.org/wiki/%D9%85%DB%8C%D9%86%D9%88%D8%B3%DB%8C_%D8%AA%DB%81%D8%B0%DB%8C%D8%A8",
-    "zh": "https://zh.wikipedia.org/wiki/%E7%B1%B3%E8%AF%BA%E6%96%AF%E6%96%87%E6%98%8E",
-    "en": "https://en.wikipedia.org/wiki/Minoan_civilization",
-    "ar": "https://ar.wikipedia.org/wiki/%D8%AD%D8%B6%D8%A7%D8%B1%D8%A9_%D9%85%D9%8A%D9%86%D9%88%D8%B3%D9%8A%D8%A9",
-    "bn": "https://bn.wikipedia.org/wiki/%E0%A6%AE%E0%A6%BF%E0%A6%A8%E0%A7%8B%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%A8_%E0%A6%B8%E0%A6%AD%E0%A7%8D%E0%A6%AF%E0%A6%A4%E0%A6%BE",
-    "de": "https://de.wikipedia.org/wiki/Minoische_Kultur",
-    "es": "https://es.wikipedia.org/wiki/Civilizaci%C3%B3n_minoica"
+    "zh": "https://zh.wikipedia.org/wiki/%E7%B1%B3%E8%AF%BA%E6%96%AF%E6%96%87%E6%98%8E"
    }
   },
   "elam": {
@@ -239,6 +239,7 @@
   },
   "xia": {
    "name": {
+    "zh": "夏朝",
     "ja": "夏",
     "en": "Xia dynasty",
     "ru": "Ся",
@@ -254,17 +255,10 @@
     "nl": "Xia-dynastie",
     "pl": "Dynastia Xia",
     "pt": "Dinastia Xia",
-    "ur": "شیا خاندان",
-    "zh": "夏朝"
+    "ur": "شیا خاندان"
    },
    "wiki": {
     "ar": "https://ar.wikipedia.org/wiki/%D8%B3%D9%84%D8%A7%D9%84%D8%A9_%D8%B4%D9%8A%D8%A7_%D8%A7%D9%84%D8%AD%D8%A7%D9%83%D9%85%D8%A9",
-    "nl": "https://nl.wikipedia.org/wiki/Xia-dynastie",
-    "pl": "https://pl.wikipedia.org/wiki/Dynastia_Xia",
-    "pt": "https://pt.wikipedia.org/wiki/Dinastia_Xia",
-    "ru": "https://ru.wikipedia.org/wiki/%D0%A1%D1%8F_(%D0%B4%D0%B8%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%8F)",
-    "zh": "https://zh.wikipedia.org/wiki/%E5%A4%8F%E6%9C%9D",
-    "ur": "https://ur.wikipedia.org/wiki/%D8%B4%DB%8C%D8%A7_%D8%AE%D8%A7%D9%86%D8%AF%D8%A7%D9%86",
     "bn": "https://bn.wikipedia.org/wiki/%E0%A6%B6%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE_%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A6%AC%E0%A6%82%E0%A6%B6_(%E0%A6%9A%E0%A7%80%E0%A6%A8)",
     "de": "https://de.wikipedia.org/wiki/Xia-Dynastie",
     "en": "https://en.wikipedia.org/wiki/Xia_dynasty",
@@ -274,7 +268,13 @@
     "id": "https://id.wikipedia.org/wiki/Dinasti_Xia",
     "it": "https://it.wikipedia.org/wiki/Dinastia_Xia",
     "ja": "https://ja.wikipedia.org/wiki/%E5%A4%8F_(%E4%B8%89%E4%BB%A3)",
-    "ko": "https://ko.wikipedia.org/wiki/%ED%95%98%EB%82%98%EB%9D%BC"
+    "ko": "https://ko.wikipedia.org/wiki/%ED%95%98%EB%82%98%EB%9D%BC",
+    "nl": "https://nl.wikipedia.org/wiki/Xia-dynastie",
+    "pl": "https://pl.wikipedia.org/wiki/Dynastia_Xia",
+    "pt": "https://pt.wikipedia.org/wiki/Dinastia_Xia",
+    "ru": "https://ru.wikipedia.org/wiki/%D0%A1%D1%8F_(%D0%B4%D0%B8%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%8F)",
+    "zh": "https://zh.wikipedia.org/wiki/%E5%A4%8F%E6%9C%9D",
+    "ur": "https://ur.wikipedia.org/wiki/%D8%B4%DB%8C%D8%A7_%D8%AE%D8%A7%D9%86%D8%AF%D8%A7%D9%86"
    }
   },
   "hittites": {
@@ -299,21 +299,21 @@
    },
    "wiki": {
     "ar": "https://ar.wikipedia.org/wiki/%D8%AD%D9%8A%D8%AB%D9%8A%D9%88%D9%86",
+    "de": "https://de.wikipedia.org/wiki/Hethiter",
     "it": "https://it.wikipedia.org/wiki/Ittiti",
     "ja": "https://ja.wikipedia.org/wiki/%E3%83%92%E3%83%83%E3%82%BF%E3%82%A4%E3%83%88",
-    "hi": "https://hi.wikipedia.org/wiki/%E0%A4%B9%E0%A4%A4%E0%A5%8D%E0%A4%A4%E0%A5%80_%E0%A4%B2%E0%A5%8B%E0%A4%97",
-    "id": "https://id.wikipedia.org/wiki/Orang_Het",
-    "nl": "https://nl.wikipedia.org/wiki/Hettieten",
-    "ur": "https://ur.wikipedia.org/wiki/%D8%AD%D8%AA%DB%8C_%D8%B3%D9%84%D8%B7%D9%86%D8%AA",
     "ko": "https://ko.wikipedia.org/wiki/%ED%9E%88%ED%83%80%EC%9D%B4%ED%8A%B8",
-    "de": "https://de.wikipedia.org/wiki/Hethiter",
-    "en": "https://en.wikipedia.org/wiki/Hittites",
-    "es": "https://es.wikipedia.org/wiki/Hititas",
-    "fr": "https://fr.wikipedia.org/wiki/Hittites",
+    "ur": "https://ur.wikipedia.org/wiki/%D8%AD%D8%AA%DB%8C_%D8%B3%D9%84%D8%B7%D9%86%D8%AA",
+    "zh": "https://zh.wikipedia.org/wiki/%E8%B5%AB%E6%A2%AF",
+    "nl": "https://nl.wikipedia.org/wiki/Hettieten",
     "pl": "https://pl.wikipedia.org/wiki/Hetyci",
     "pt": "https://pt.wikipedia.org/wiki/Hititas",
     "ru": "https://ru.wikipedia.org/wiki/%D0%A5%D0%B5%D1%82%D1%82%D1%8B",
-    "zh": "https://zh.wikipedia.org/wiki/%E8%B5%AB%E6%A2%AF",
+    "en": "https://en.wikipedia.org/wiki/Hittites",
+    "es": "https://es.wikipedia.org/wiki/Hititas",
+    "fr": "https://fr.wikipedia.org/wiki/Hittites",
+    "hi": "https://hi.wikipedia.org/wiki/%E0%A4%B9%E0%A4%A4%E0%A5%8D%E0%A4%A4%E0%A5%80_%E0%A4%B2%E0%A5%8B%E0%A4%97",
+    "id": "https://id.wikipedia.org/wiki/Orang_Het",
     "bn": "https://bn.wikipedia.org/wiki/%E0%A6%B9%E0%A6%BF%E0%A6%A4%E0%A7%8D%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC_%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A6%BF"
    }
   },
@@ -338,11 +338,6 @@
     "zh": "巴比倫尼亞"
    },
    "wiki": {
-    "pl": "https://pl.wikipedia.org/wiki/Babilonia",
-    "pt": "https://pt.wikipedia.org/wiki/Civiliza%C3%A7%C3%A3o_babil%C3%B4nica",
-    "ru": "https://ru.wikipedia.org/wiki/%D0%92%D0%B0%D0%B2%D0%B8%D0%BB%D0%BE%D0%BD%D0%B8%D1%8F",
-    "ur": "https://ur.wikipedia.org/wiki/%D8%B3%D9%84%D8%B7%D9%86%D8%AA_%D8%A8%D8%A7%D8%A8%D9%84",
-    "zh": "https://zh.wikipedia.org/wiki/%E5%B7%B4%E6%AF%94%E5%80%AB%E5%B0%BC%E4%BA%9E",
     "ar": "https://ar.wikipedia.org/wiki/%D8%A8%D9%84%D8%A7%D8%AF_%D8%A8%D8%A7%D8%A8%D9%84",
     "bn": "https://bn.wikipedia.org/wiki/%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%AC%E0%A6%BF%E0%A6%B2%E0%A6%A8%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE",
     "de": "https://de.wikipedia.org/wiki/Babylonien",
@@ -354,7 +349,12 @@
     "it": "https://it.wikipedia.org/wiki/Babilonia_(regione_storica)",
     "ja": "https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%93%E3%83%AD%E3%83%8B%E3%82%A2",
     "ko": "https://ko.wikipedia.org/wiki/%EB%B0%94%EB%B9%8C%EB%A1%9C%EB%8B%88%EC%95%84",
-    "nl": "https://nl.wikipedia.org/wiki/Babyloni%C3%AB"
+    "nl": "https://nl.wikipedia.org/wiki/Babyloni%C3%AB",
+    "pl": "https://pl.wikipedia.org/wiki/Babilonia",
+    "pt": "https://pt.wikipedia.org/wiki/Civiliza%C3%A7%C3%A3o_babil%C3%B4nica",
+    "ru": "https://ru.wikipedia.org/wiki/%D0%92%D0%B0%D0%B2%D0%B8%D0%BB%D0%BE%D0%BD%D0%B8%D1%8F",
+    "ur": "https://ur.wikipedia.org/wiki/%D8%B3%D9%84%D8%B7%D9%86%D8%AA_%D8%A8%D8%A7%D8%A8%D9%84",
+    "zh": "https://zh.wikipedia.org/wiki/%E5%B7%B4%E6%AF%94%E5%80%AB%E5%B0%BC%E4%BA%9E"
    }
   },
   "mycenae": {
@@ -378,10 +378,6 @@
     "zh": "迈锡尼文明"
    },
    "wiki": {
-    "ko": "https://ko.wikipedia.org/wiki/%EB%AF%B8%EC%BC%80%EB%84%A4_%EB%AC%B8%EB%AA%85",
-    "nl": "https://nl.wikipedia.org/wiki/Myceense_beschaving",
-    "pl": "https://pl.wikipedia.org/wiki/Kultura_myke%C5%84ska",
-    "pt": "https://pt.wikipedia.org/wiki/Civiliza%C3%A7%C3%A3o_mic%C3%AAnica",
     "ar": "https://ar.wikipedia.org/wiki/%D9%8A%D9%88%D9%86%D8%A7%D9%86_%D8%A7%D9%84%D9%85%D9%88%D9%83%D9%8A%D8%A7%D9%86%D9%8A%D8%A9",
     "bn": "https://bn.wikipedia.org/wiki/%E0%A6%AE%E0%A6%BE%E0%A6%87%E0%A6%B8%E0%A6%BF%E0%A6%A8%E0%A7%80%E0%A6%AF%E0%A6%BC_%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%BF%E0%A6%B8",
     "de": "https://de.wikipedia.org/wiki/Mykenische_Kultur",
@@ -392,6 +388,10 @@
     "id": "https://id.wikipedia.org/wiki/Peradaban_Mikenai",
     "it": "https://it.wikipedia.org/wiki/Civilt%C3%A0_micenea",
     "ja": "https://ja.wikipedia.org/wiki/%E3%83%9F%E3%82%B1%E3%83%BC%E3%83%8D%E6%96%87%E6%98%8E",
+    "ko": "https://ko.wikipedia.org/wiki/%EB%AF%B8%EC%BC%80%EB%84%A4_%EB%AC%B8%EB%AA%85",
+    "nl": "https://nl.wikipedia.org/wiki/Myceense_beschaving",
+    "pl": "https://pl.wikipedia.org/wiki/Kultura_myke%C5%84ska",
+    "pt": "https://pt.wikipedia.org/wiki/Civiliza%C3%A7%C3%A3o_mic%C3%AAnica",
     "ru": "https://ru.wikipedia.org/wiki/%D0%9C%D0%B8%D0%BA%D0%B5%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_%D1%86%D0%B8%D0%B2%D0%B8%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F",
     "ur": "https://ur.wikipedia.org/wiki/%D9%85%D8%A7%D8%A6%DB%8C_%D8%B3%DB%8C%D9%86%DB%8C%D8%A7%D8%A6%DB%8C_%DB%8C%D9%88%D9%86%D8%A7%D9%86",
     "zh": "https://zh.wikipedia.org/wiki/%E8%BF%88%E9%94%A1%E5%B0%BC%E6%96%87%E6%98%8E"
@@ -437,6 +437,11 @@
   },
   "saba": {
    "name": {
+    "pt": "Sabá",
+    "de": "Saba",
+    "en": "Sheba",
+    "nl": "Sheba",
+    "ar": "مملكة سبأ",
     "bn": "শেবা",
     "es": "Reino de Saba",
     "fr": "royaume de Saba",
@@ -447,14 +452,14 @@
     "pl": "Królestwo Saba",
     "ru": "Сабейское царство",
     "ur": "مملکت سبا",
-    "zh": "示巴王国",
-    "pt": "Sabá",
-    "de": "Saba",
-    "en": "Sheba",
-    "nl": "Sheba",
-    "ar": "مملكة سبأ"
+    "zh": "示巴王国"
    },
    "wiki": {
+    "pt": "https://pt.wikipedia.org/wiki/Reino_de_Sab%C3%A1",
+    "ru": "https://ru.wikipedia.org/wiki/%D0%A1%D0%B0%D0%B1%D0%B5%D0%B9%D1%81%D0%BA%D0%BE%D0%B5_%D1%86%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%BE",
+    "ur": "https://ur.wikipedia.org/wiki/%D9%85%D9%85%D9%84%DA%A9%D8%AA_%D8%B3%D8%A8%D8%A7",
+    "zh": "https://zh.wikipedia.org/wiki/%E7%A4%BA%E5%B7%B4%E7%8E%8B%E5%9C%8B",
+    "nl": "https://nl.wikipedia.org/wiki/Koninkrijk_Saba",
     "ar": "https://ar.wikipedia.org/wiki/%D9%85%D9%85%D9%84%D9%83%D8%A9_%D8%B3%D8%A8%D8%A3",
     "bn": "https://bn.wikipedia.org/wiki/%E0%A6%B6%E0%A7%87%E0%A6%AC%E0%A6%BE",
     "de": "https://de.wikipedia.org/wiki/Saba_(Antike)",
@@ -465,11 +470,7 @@
     "it": "https://it.wikipedia.org/wiki/Regno_di_Saba",
     "ja": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%90%E7%8E%8B%E5%9B%BD",
     "ko": "https://ko.wikipedia.org/wiki/%EC%8B%9C%EB%B0%94_%EC%99%95%EA%B5%AD",
-    "pl": "https://pl.wikipedia.org/wiki/Kr%C3%B3lestwo_Saba",
-    "pt": "https://pt.wikipedia.org/wiki/Reino_de_Sab%C3%A1",
-    "ru": "https://ru.wikipedia.org/wiki/%D0%A1%D0%B0%D0%B1%D0%B5%D0%B9%D1%81%D0%BA%D0%BE%D0%B5_%D1%86%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%BE",
-    "ur": "https://ur.wikipedia.org/wiki/%D9%85%D9%85%D9%84%DA%A9%D8%AA_%D8%B3%D8%A8%D8%A7",
-    "zh": "https://zh.wikipedia.org/wiki/%E7%A4%BA%E5%B7%B4%E7%8E%8B%E5%9C%8B"
+    "pl": "https://pl.wikipedia.org/wiki/Kr%C3%B3lestwo_Saba"
    }
   },
   "olmec": {
@@ -531,34 +532,31 @@
     "nl": "Assyrische Rijk"
    },
    "wiki": {
+    "id": "https://id.wikipedia.org/wiki/Asyur",
+    "it": "https://it.wikipedia.org/wiki/Assiria",
     "ja": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%83%E3%82%B7%E3%83%AA%E3%82%A2",
     "ko": "https://ko.wikipedia.org/wiki/%EC%95%84%EC%8B%9C%EB%A6%AC%EC%95%84",
+    "nl": "https://nl.wikipedia.org/wiki/Assyrische_Rijk",
+    "pl": "https://pl.wikipedia.org/wiki/Asyria",
+    "pt": "https://pt.wikipedia.org/wiki/Ass%C3%ADria",
+    "ru": "https://ru.wikipedia.org/wiki/%D0%90%D1%81%D1%81%D0%B8%D1%80%D0%B8%D1%8F",
+    "ur": "https://ur.wikipedia.org/wiki/%D8%A7%D8%B4%D9%88%D8%B1%DB%8C%DB%81",
+    "zh": "https://zh.wikipedia.org/wiki/%E4%BA%9A%E8%BF%B0",
     "ar": "https://ar.wikipedia.org/wiki/%D8%A2%D8%B4%D9%88%D8%B1",
     "bn": "https://bn.wikipedia.org/wiki/%E0%A6%85%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B8%E0%A6%BF%E0%A6%B0%E0%A7%80%E0%A6%AF%E0%A6%BC%E0%A6%BE",
     "de": "https://de.wikipedia.org/wiki/Assyrisches_Reich",
     "en": "https://en.wikipedia.org/wiki/Assyria",
     "es": "https://es.wikipedia.org/wiki/Asiria",
     "fr": "https://fr.wikipedia.org/wiki/Assyrie",
-    "hi": "https://hi.wikipedia.org/wiki/%E0%A4%85%E0%A4%B8%E0%A5%80%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
-    "id": "https://id.wikipedia.org/wiki/Asyur",
-    "it": "https://it.wikipedia.org/wiki/Assiria",
-    "nl": "https://nl.wikipedia.org/wiki/Assyrische_Rijk",
-    "pl": "https://pl.wikipedia.org/wiki/Asyria",
-    "pt": "https://pt.wikipedia.org/wiki/Ass%C3%ADria",
-    "ru": "https://ru.wikipedia.org/wiki/%D0%90%D1%81%D1%81%D0%B8%D1%80%D0%B8%D1%8F",
-    "ur": "https://ur.wikipedia.org/wiki/%D8%A7%D8%B4%D9%88%D8%B1%DB%8C%DB%81",
-    "zh": "https://zh.wikipedia.org/wiki/%E4%BA%9A%E8%BF%B0"
+    "hi": "https://hi.wikipedia.org/wiki/%E0%A4%85%E0%A4%B8%E0%A5%80%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE"
    }
   },
   "zhou": {
    "name": {
-    "pt": "Dinastia Zhou",
-    "ur": "ژؤ سلطنت",
-    "zh": "周朝",
-    "ar": "سلالة تشو",
     "ja": "周",
     "en": "Zhou dynasty",
     "ru": "Чжоу",
+    "zh": "周朝",
     "bn": "চৌ রাজবংশ",
     "de": "Zhou-Dynastie",
     "es": "Dinastía Zhou",
@@ -568,7 +566,10 @@
     "it": "dinastia Zhou",
     "ko": "주나라",
     "nl": "Zhou-dynastie",
-    "pl": "Dynastia Zhou"
+    "pl": "Dynastia Zhou",
+    "pt": "Dinastia Zhou",
+    "ur": "ژؤ سلطنت",
+    "ar": "سلالة تشو"
    },
    "wiki": {
     "bn": "https://bn.wikipedia.org/wiki/%E0%A6%9A%E0%A7%8C_%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A6%AC%E0%A6%82%E0%A6%B6",
@@ -592,6 +593,9 @@
   },
   "urartu": {
    "name": {
+    "en": "Urartu",
+    "it": "Urartu",
+    "ar": "أورارتو",
     "bn": "উরারতু",
     "de": "Urartäisches Reich",
     "es": "Urartu",
@@ -605,16 +609,18 @@
     "pt": "Urartu",
     "ru": "Урарту",
     "ur": "اورارتو",
-    "zh": "乌拉尔图",
-    "en": "Urartu",
-    "it": "Urartu",
-    "ar": "أورارتو"
+    "zh": "乌拉尔图"
    },
    "wiki": {
-    "ar": "https://ar.wikipedia.org/wiki/%D8%A3%D9%88%D8%B1%D8%A7%D8%B1%D8%AA%D9%88",
-    "bn": "https://bn.wikipedia.org/wiki/%E0%A6%89%E0%A6%B0%E0%A6%BE%E0%A6%B0%E0%A6%A4%E0%A7%81",
+    "ko": "https://ko.wikipedia.org/wiki/%EC%9A%B0%EB%9D%BC%EB%A5%B4%ED%88%AC",
+    "nl": "https://nl.wikipedia.org/wiki/Urartu",
+    "pl": "https://pl.wikipedia.org/wiki/Urartu",
+    "pt": "https://pt.wikipedia.org/wiki/Reino_de_Urartu",
+    "ru": "https://ru.wikipedia.org/wiki/%D0%A3%D1%80%D0%B0%D1%80%D1%82%D1%83",
     "ur": "https://ur.wikipedia.org/wiki/%D8%A7%D9%88%D8%B1%D8%A7%D8%B1%D8%AA%D9%88",
     "zh": "https://zh.wikipedia.org/wiki/%E7%83%8F%E6%8B%89%E7%88%BE%E5%9C%96",
+    "ar": "https://ar.wikipedia.org/wiki/%D8%A3%D9%88%D8%B1%D8%A7%D8%B1%D8%AA%D9%88",
+    "bn": "https://bn.wikipedia.org/wiki/%E0%A6%89%E0%A6%B0%E0%A6%BE%E0%A6%B0%E0%A6%A4%E0%A7%81",
     "de": "https://de.wikipedia.org/wiki/Urart%C3%A4isches_Reich",
     "en": "https://en.wikipedia.org/wiki/Urartu",
     "es": "https://es.wikipedia.org/wiki/Urartu",
@@ -622,12 +628,7 @@
     "hi": "https://hi.wikipedia.org/wiki/%E0%A4%89%E0%A4%B0%E0%A4%B0%E0%A5%8D%E0%A4%A4%E0%A5%81",
     "id": "https://id.wikipedia.org/wiki/Urartu",
     "it": "https://it.wikipedia.org/wiki/Urartu",
-    "ja": "https://ja.wikipedia.org/wiki/%E3%82%A6%E3%83%A9%E3%83%AB%E3%83%88%E3%82%A5",
-    "ko": "https://ko.wikipedia.org/wiki/%EC%9A%B0%EB%9D%BC%EB%A5%B4%ED%88%AC",
-    "nl": "https://nl.wikipedia.org/wiki/Urartu",
-    "pl": "https://pl.wikipedia.org/wiki/Urartu",
-    "pt": "https://pt.wikipedia.org/wiki/Reino_de_Urartu",
-    "ru": "https://ru.wikipedia.org/wiki/%D0%A3%D1%80%D0%B0%D1%80%D1%82%D1%83"
+    "ja": "https://ja.wikipedia.org/wiki/%E3%82%A6%E3%83%A9%E3%83%AB%E3%83%88%E3%82%A5"
    }
   },
   "chavin": {
@@ -676,19 +677,19 @@
     "pl": "starożytna Grecja",
     "pt": "Grécia Antiga",
     "ru": "Древняя Греция",
+    "ur": "قدیم یونان",
+    "zh": "古希腊",
     "en": "Ancient Greece",
     "fr": "Grèce antique",
     "ar": "اليونان القديمة",
     "bn": "প্রাচীন গ্রিস",
-    "de": "Antikes Griechenland",
-    "ur": "قدیم یونان",
-    "zh": "古希腊"
+    "de": "Antikes Griechenland"
    },
    "wiki": {
-    "nl": "https://nl.wikipedia.org/wiki/Oude_Griekenland",
-    "pl": "https://pl.wikipedia.org/wiki/Staro%C5%BCytna_Grecja",
-    "pt": "https://pt.wikipedia.org/wiki/Gr%C3%A9cia_Antiga",
-    "ru": "https://ru.wikipedia.org/wiki/%D0%94%D1%80%D0%B5%D0%B2%D0%BD%D1%8F%D1%8F_%D0%93%D1%80%D0%B5%D1%86%D0%B8%D1%8F",
+    "id": "https://id.wikipedia.org/wiki/Yunani_Kuno",
+    "it": "https://it.wikipedia.org/wiki/Antica_Grecia",
+    "ja": "https://ja.wikipedia.org/wiki/%E5%8F%A4%E4%BB%A3%E3%82%AE%E3%83%AA%E3%82%B7%E3%82%A2",
+    "ko": "https://ko.wikipedia.org/wiki/%EA%B3%A0%EB%8C%80_%EA%B7%B8%EB%A6%AC%EC%8A%A4",
     "ar": "https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%8A%D9%88%D9%86%D8%A7%D9%86_%D8%A7%D9%84%D9%82%D8%AF%D9%8A%D9%85%D8%A9",
     "bn": "https://bn.wikipedia.org/wiki/%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%9A%E0%A7%80%E0%A6%A8_%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%BF%E0%A6%B8",
     "de": "https://de.wikipedia.org/wiki/Antikes_Griechenland",
@@ -696,17 +697,16 @@
     "es": "https://es.wikipedia.org/wiki/Antigua_Grecia",
     "fr": "https://fr.wikipedia.org/wiki/Gr%C3%A8ce_antique",
     "hi": "https://hi.wikipedia.org/wiki/%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%9A%E0%A5%80%E0%A4%A8_%E0%A4%AF%E0%A5%82%E0%A4%A8%E0%A4%BE%E0%A4%A8",
-    "id": "https://id.wikipedia.org/wiki/Yunani_Kuno",
-    "it": "https://it.wikipedia.org/wiki/Antica_Grecia",
-    "ja": "https://ja.wikipedia.org/wiki/%E5%8F%A4%E4%BB%A3%E3%82%AE%E3%83%AA%E3%82%B7%E3%82%A2",
-    "ko": "https://ko.wikipedia.org/wiki/%EA%B3%A0%EB%8C%80_%EA%B7%B8%EB%A6%AC%EC%8A%A4",
+    "nl": "https://nl.wikipedia.org/wiki/Oude_Griekenland",
+    "pl": "https://pl.wikipedia.org/wiki/Staro%C5%BCytna_Grecja",
+    "pt": "https://pt.wikipedia.org/wiki/Gr%C3%A9cia_Antiga",
+    "ru": "https://ru.wikipedia.org/wiki/%D0%94%D1%80%D0%B5%D0%B2%D0%BD%D1%8F%D1%8F_%D0%93%D1%80%D0%B5%D1%86%D0%B8%D1%8F",
     "ur": "https://ur.wikipedia.org/wiki/%D9%82%D8%AF%DB%8C%D9%85_%DB%8C%D9%88%D9%86%D8%A7%D9%86",
     "zh": "https://zh.wikipedia.org/wiki/%E5%8F%A4%E5%B8%8C%E8%85%8A"
    }
   },
   "carthage": {
    "name": {
-    "ur": "قرطاجنہ",
     "it": "Cartagine",
     "en": "Carthage",
     "es": "Cartago",
@@ -722,25 +722,26 @@
     "pl": "Kartagina",
     "bn": "কার্থেজ",
     "hi": "कार्थेज",
-    "id": "Carthage"
+    "id": "Carthage",
+    "ur": "قرطاجنہ"
    },
    "wiki": {
+    "fr": "https://fr.wikipedia.org/wiki/Carthage",
+    "en": "https://en.wikipedia.org/wiki/Carthage",
+    "es": "https://es.wikipedia.org/wiki/Cartago",
+    "hi": "https://hi.wikipedia.org/wiki/%E0%A4%95%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A5%87%E0%A4%9C",
+    "ur": "https://ur.wikipedia.org/wiki/%D9%82%D8%B1%D8%B7%D8%A7%D8%AC%D9%86%DB%81",
     "id": "https://id.wikipedia.org/wiki/Kartago",
     "it": "https://it.wikipedia.org/wiki/Cartagine",
     "ko": "https://ko.wikipedia.org/wiki/%EC%B9%B4%EB%A5%B4%ED%83%80%EA%B3%A0",
-    "en": "https://en.wikipedia.org/wiki/Carthage",
-    "es": "https://es.wikipedia.org/wiki/Cartago",
-    "fr": "https://fr.wikipedia.org/wiki/Carthage",
-    "hi": "https://hi.wikipedia.org/wiki/%E0%A4%95%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A5%87%E0%A4%9C",
-    "ar": "https://ar.wikipedia.org/wiki/%D9%82%D8%B1%D8%B7%D8%A7%D8%AC",
-    "bn": "https://bn.wikipedia.org/wiki/%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A5%E0%A7%87%E0%A6%9C",
-    "de": "https://de.wikipedia.org/wiki/Karthago",
+    "zh": "https://zh.wikipedia.org/wiki/%E8%BF%A6%E5%A4%AA%E5%9F%BA",
     "nl": "https://nl.wikipedia.org/wiki/Carthago",
     "pl": "https://pl.wikipedia.org/wiki/Kartagina",
     "pt": "https://pt.wikipedia.org/wiki/Cartago",
     "ru": "https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D1%80%D1%84%D0%B0%D0%B3%D0%B5%D0%BD_(%D0%B3%D0%BE%D1%80%D0%BE%D0%B4)",
-    "ur": "https://ur.wikipedia.org/wiki/%D9%82%D8%B1%D8%B7%D8%A7%D8%AC%D9%86%DB%81",
-    "zh": "https://zh.wikipedia.org/wiki/%E8%BF%A6%E5%A4%AA%E5%9F%BA"
+    "ar": "https://ar.wikipedia.org/wiki/%D9%82%D8%B1%D8%B7%D8%A7%D8%AC",
+    "bn": "https://bn.wikipedia.org/wiki/%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A5%E0%A7%87%E0%A6%9C",
+    "de": "https://de.wikipedia.org/wiki/Karthago"
    }
   },
   "achaemenid": {
@@ -764,12 +765,12 @@
     "ru": "Держава Ахеменидов"
    },
    "wiki": {
-    "ar": "https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%A5%D9%85%D8%A8%D8%B1%D8%A7%D8%B7%D9%88%D8%B1%D9%8A%D8%A9_%D8%A7%D9%84%D8%A3%D8%AE%D9%85%D9%8A%D9%86%D9%8A%D8%A9",
     "bn": "https://bn.wikipedia.org/wiki/%E0%A6%86%E0%A6%95%E0%A7%87%E0%A6%AE%E0%A7%87%E0%A6%A8%E0%A7%80%E0%A6%AF%E0%A6%BC_%E0%A6%B8%E0%A6%BE%E0%A6%AE%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A7%8D%E0%A6%AF",
     "de": "https://de.wikipedia.org/wiki/Ach%C3%A4menidenreich",
     "en": "https://en.wikipedia.org/wiki/Achaemenid_Empire",
     "es": "https://es.wikipedia.org/wiki/Imperio_aquem%C3%A9nida",
     "fr": "https://fr.wikipedia.org/wiki/Ach%C3%A9m%C3%A9nides",
+    "ar": "https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%A5%D9%85%D8%A8%D8%B1%D8%A7%D8%B7%D9%88%D8%B1%D9%8A%D8%A9_%D8%A7%D9%84%D8%A3%D8%AE%D9%85%D9%8A%D9%86%D9%8A%D8%A9",
     "hi": "https://hi.wikipedia.org/wiki/%E0%A4%B9%E0%A4%96%E0%A4%BC%E0%A4%BE%E0%A4%AE%E0%A4%A8%E0%A5%80_%E0%A4%B8%E0%A4%BE%E0%A4%AE%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%9C%E0%A5%8D%E0%A4%AF",
     "id": "https://id.wikipedia.org/wiki/Kekaisaran_Akhemeniyah",
     "it": "https://it.wikipedia.org/wiki/Impero_achemenide",
@@ -804,27 +805,28 @@
     "ur": "رومی جمہوریہ"
    },
    "wiki": {
+    "bn": "https://bn.wikipedia.org/wiki/%E0%A6%B0%E0%A7%8B%E0%A6%AE%E0%A6%BE%E0%A6%A8_%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A7%8D%E0%A6%B0",
+    "ar": "https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%AC%D9%85%D9%87%D9%88%D8%B1%D9%8A%D8%A9_%D8%A7%D9%84%D8%B1%D9%88%D9%85%D8%A7%D9%86%D9%8A%D8%A9",
+    "id": "https://id.wikipedia.org/wiki/Republik_Romawi",
+    "it": "https://it.wikipedia.org/wiki/Repubblica_romana",
+    "ja": "https://ja.wikipedia.org/wiki/%E5%85%B1%E5%92%8C%E6%94%BF%E3%83%AD%E3%83%BC%E3%83%9E",
+    "ko": "https://ko.wikipedia.org/wiki/%EB%A1%9C%EB%A7%88_%EA%B3%B5%ED%99%94%EA%B5%AD",
     "de": "https://de.wikipedia.org/wiki/R%C3%B6mische_Republik",
     "en": "https://en.wikipedia.org/wiki/Roman_Republic",
     "es": "https://es.wikipedia.org/wiki/Rep%C3%BAblica_romana",
     "fr": "https://fr.wikipedia.org/wiki/R%C3%A9publique_romaine",
     "hi": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%8B%E0%A4%AE_%E0%A4%97%E0%A4%A3%E0%A4%A4%E0%A4%82%E0%A4%A4%E0%A5%8D%E0%A4%B0",
-    "id": "https://id.wikipedia.org/wiki/Republik_Romawi",
-    "it": "https://it.wikipedia.org/wiki/Repubblica_romana",
-    "ja": "https://ja.wikipedia.org/wiki/%E5%85%B1%E5%92%8C%E6%94%BF%E3%83%AD%E3%83%BC%E3%83%9E",
-    "ko": "https://ko.wikipedia.org/wiki/%EB%A1%9C%EB%A7%88_%EA%B3%B5%ED%99%94%EA%B5%AD",
+    "ur": "https://ur.wikipedia.org/wiki/%D8%B1%D9%88%D9%85%DB%8C_%D8%AC%D9%85%DB%81%D9%88%D8%B1%DB%8C%DB%81",
+    "zh": "https://zh.wikipedia.org/wiki/%E7%BD%97%E9%A9%AC%E5%85%B1%E5%92%8C%E5%9B%BD",
     "nl": "https://nl.wikipedia.org/wiki/Romeinse_Republiek",
     "pl": "https://pl.wikipedia.org/wiki/Republika_rzymska",
     "pt": "https://pt.wikipedia.org/wiki/Rep%C3%BAblica_Romana",
-    "ru": "https://ru.wikipedia.org/wiki/%D0%A0%D0%B8%D0%BC%D1%81%D0%BA%D0%B0%D1%8F_%D1%80%D0%B5%D1%81%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D0%B0",
-    "ar": "https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%AC%D9%85%D9%87%D9%88%D8%B1%D9%8A%D8%A9_%D8%A7%D9%84%D8%B1%D9%88%D9%85%D8%A7%D9%86%D9%8A%D8%A9",
-    "bn": "https://bn.wikipedia.org/wiki/%E0%A6%B0%E0%A7%8B%E0%A6%AE%E0%A6%BE%E0%A6%A8_%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A7%8D%E0%A6%B0",
-    "ur": "https://ur.wikipedia.org/wiki/%D8%B1%D9%88%D9%85%DB%8C_%D8%AC%D9%85%DB%81%D9%88%D8%B1%DB%8C%DB%81",
-    "zh": "https://zh.wikipedia.org/wiki/%E7%BD%97%E9%A9%AC%E5%85%B1%E5%92%8C%E5%9B%BD"
+    "ru": "https://ru.wikipedia.org/wiki/%D0%A0%D0%B8%D0%BC%D1%81%D0%BA%D0%B0%D1%8F_%D1%80%D0%B5%D1%81%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D0%B0"
    }
   },
   "alexander": {
    "name": {
+    "ar": "إمبراطورية الإسكندر الأكبر",
     "en": "Empire of Alexander the Great",
     "ru": "Империя Александра Македонского",
     "de": "Alexanderreich",
@@ -834,7 +836,6 @@
     "ko": "알렉산드로스 제국",
     "nl": "Rijk van Alexander de Grote",
     "ur": "سکندر اعظم کی سلطنت",
-    "ar": "إمبراطورية الإسكندر الأكبر",
     "zh": "亚历山大帝国",
     "hi": "सिकंदर का साम्राज्य",
     "bn": "আলেকজান্ডারের সাম্রাজ্য",
@@ -855,6 +856,8 @@
   },
   "maurya": {
    "name": {
+    "de": "Maurya-Reich",
+    "en": "Maurya empire",
     "es": "Imperio Maurya",
     "fr": "Empire Maurya",
     "id": "Kekaisaran Maurya",
@@ -869,9 +872,7 @@
     "zh": "孔雀王朝",
     "hi": "मौर्य राजवंश",
     "ar": "الإمبراطورية الماورية",
-    "bn": "মৌর্য সাম্রাজ্য",
-    "de": "Maurya-Reich",
-    "en": "Maurya empire"
+    "bn": "মৌর্য সাম্রাজ্য"
    },
    "wiki": {
     "ar": "https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%A5%D9%85%D8%A8%D8%B1%D8%A7%D8%B7%D9%88%D8%B1%D9%8A%D8%A9_%D8%A7%D9%84%D9%85%D8%A7%D9%88%D8%B1%D9%8A%D8%A9",
@@ -935,6 +936,14 @@
   },
   "ptolemaic": {
    "name": {
+    "pt": "Egito ptolemaico",
+    "ru": "Эллинистический Египет",
+    "ko": "프톨레마이오스 왕국",
+    "ar": "المملكة البطلمية",
+    "bn": "টলেমীয় রাজ্য",
+    "de": "Ptolemäisches Königreich",
+    "en": "Ptolemaic Kingdom",
+    "es": "período tolemaico de Egipto",
     "fr": "royaume ptolémaïque",
     "hi": "टॉलेमिक साम्राज्य",
     "id": "Kerajaan Ptolemaik",
@@ -943,15 +952,7 @@
     "nl": "Ptolemeïsche rijk",
     "pl": "Egipt ptolemejski",
     "ur": "سلطنت بطلیموس",
-    "zh": "托勒密王国",
-    "pt": "Egito ptolemaico",
-    "ru": "Эллинистический Египет",
-    "ko": "프톨레마이오스 왕국",
-    "ar": "المملكة البطلمية",
-    "bn": "টলেমীয় রাজ্য",
-    "de": "Ptolemäisches Königreich",
-    "en": "Ptolemaic Kingdom",
-    "es": "período tolemaico de Egipto"
+    "zh": "托勒密王国"
    },
    "wiki": {
     "ar": "https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9_%D8%A7%D9%84%D8%A8%D8%B7%D9%84%D9%85%D9%8A%D8%A9",
@@ -990,7 +991,6 @@
     "zh": "匈奴"
    },
    "wiki": {
-    "zh": "https://zh.wikipedia.org/wiki/%E5%8C%88%E5%A5%B4",
     "ar": "https://ar.wikipedia.org/wiki/%D8%B4%D9%8A%D9%88%D9%86%D8%BA%D9%86%D9%88",
     "de": "https://de.wikipedia.org/wiki/Xiongnu",
     "en": "https://en.wikipedia.org/wiki/Xiongnu",
@@ -1004,7 +1004,8 @@
     "nl": "https://nl.wikipedia.org/wiki/Xiongnu",
     "pl": "https://pl.wikipedia.org/wiki/Xiongnu",
     "pt": "https://pt.wikipedia.org/wiki/Xiongnu",
-    "ru": "https://ru.wikipedia.org/wiki/%D0%A5%D1%83%D0%BD%D0%BD%D1%83"
+    "ru": "https://ru.wikipedia.org/wiki/%D0%A5%D1%83%D0%BD%D0%BD%D1%83",
+    "zh": "https://zh.wikipedia.org/wiki/%E5%8C%88%E5%A5%B4"
    }
   },
   "han": {
@@ -1028,30 +1029,27 @@
     "id": "dinasti Han"
    },
    "wiki": {
+    "ar": "https://ar.wikipedia.org/wiki/%D8%B3%D9%84%D8%A7%D9%84%D8%A9_%D9%87%D8%A7%D9%86_%D8%A7%D9%84%D8%AD%D8%A7%D9%83%D9%85%D8%A9",
     "bn": "https://bn.wikipedia.org/wiki/%E0%A6%B9%E0%A6%BE%E0%A6%A8_%E0%A6%B8%E0%A6%BE%E0%A6%AE%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A7%8D%E0%A6%AF",
     "de": "https://de.wikipedia.org/wiki/Han-Dynastie",
+    "pt": "https://pt.wikipedia.org/wiki/Dinastia_Han",
+    "ru": "https://ru.wikipedia.org/wiki/%D0%98%D0%BC%D0%BF%D0%B5%D1%80%D0%B8%D1%8F_%D0%A5%D0%B0%D0%BD%D1%8C",
+    "zh": "https://zh.wikipedia.org/wiki/%E6%B1%89%E6%9C%9D",
+    "ur": "https://ur.wikipedia.org/wiki/%DB%81%D8%A7%D9%86_%D8%AE%D8%A7%D9%86%D8%AF%D8%A7%D9%86",
     "en": "https://en.wikipedia.org/wiki/Han_dynasty",
     "es": "https://es.wikipedia.org/wiki/Dinast%C3%ADa_Han",
     "fr": "https://fr.wikipedia.org/wiki/Dynastie_Han",
     "hi": "https://hi.wikipedia.org/wiki/%E0%A4%B9%E0%A4%BE%E0%A4%A8_%E0%A4%B0%E0%A4%BE%E0%A4%9C%E0%A4%B5%E0%A4%82%E0%A4%B6",
     "id": "https://id.wikipedia.org/wiki/Dinasti_Han",
-    "ar": "https://ar.wikipedia.org/wiki/%D8%B3%D9%84%D8%A7%D9%84%D8%A9_%D9%87%D8%A7%D9%86_%D8%A7%D9%84%D8%AD%D8%A7%D9%83%D9%85%D8%A9",
-    "zh": "https://zh.wikipedia.org/wiki/%E6%B1%89%E6%9C%9D",
-    "ur": "https://ur.wikipedia.org/wiki/%DB%81%D8%A7%D9%86_%D8%AE%D8%A7%D9%86%D8%AF%D8%A7%D9%86",
     "it": "https://it.wikipedia.org/wiki/Dinastia_Han",
     "ja": "https://ja.wikipedia.org/wiki/%E6%BC%A2",
     "ko": "https://ko.wikipedia.org/wiki/%ED%95%9C%EB%82%98%EB%9D%BC",
     "nl": "https://nl.wikipedia.org/wiki/Han-dynastie",
-    "pl": "https://pl.wikipedia.org/wiki/Dynastia_Han",
-    "pt": "https://pt.wikipedia.org/wiki/Dinastia_Han",
-    "ru": "https://ru.wikipedia.org/wiki/%D0%98%D0%BC%D0%BF%D0%B5%D1%80%D0%B8%D1%8F_%D0%A5%D0%B0%D0%BD%D1%8C"
+    "pl": "https://pl.wikipedia.org/wiki/Dynastia_Han"
    }
   },
   "parthia": {
    "name": {
-    "ur": "پارتھیا",
-    "ar": "الإمبراطورية الفرثية",
-    "bn": "পার্থিয়ান সাম্রাজ্য",
     "de": "Partherreich",
     "en": "Parthian Empire",
     "es": "Imperio parto",
@@ -1065,10 +1063,12 @@
     "pt": "Império Parta",
     "ru": "Парфянское царство",
     "zh": "安息帝國",
-    "id": "Imperium Partia"
+    "id": "Imperium Partia",
+    "ur": "پارتھیا",
+    "ar": "الإمبراطورية الفرثية",
+    "bn": "পার্থিয়ান সাম্রাজ্য"
    },
    "wiki": {
-    "ko": "https://ko.wikipedia.org/wiki/%ED%8C%8C%EB%A5%B4%ED%8B%B0%EC%95%84_%EC%A0%9C%EA%B5%AD",
     "ar": "https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%A5%D9%85%D8%A8%D8%B1%D8%A7%D8%B7%D9%88%D8%B1%D9%8A%D8%A9_%D8%A7%D9%84%D9%81%D8%B1%D8%AB%D9%8A%D8%A9",
     "bn": "https://bn.wikipedia.org/wiki/%E0%A6%AA%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A5%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%A8_%E0%A6%B8%E0%A6%BE%E0%A6%AE%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A7%8D%E0%A6%AF",
     "de": "https://de.wikipedia.org/wiki/Partherreich",
@@ -1078,6 +1078,7 @@
     "hi": "https://hi.wikipedia.org/wiki/%E0%A4%AA%E0%A4%B9%E0%A4%B2%E0%A4%B5%E0%A5%80_%E0%A4%B8%E0%A4%BE%E0%A4%AE%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%9C%E0%A5%8D%E0%A4%AF",
     "it": "https://it.wikipedia.org/wiki/Impero_partico",
     "ja": "https://ja.wikipedia.org/wiki/%E3%83%91%E3%83%AB%E3%83%86%E3%82%A3%E3%82%A2",
+    "ko": "https://ko.wikipedia.org/wiki/%ED%8C%8C%EB%A5%B4%ED%8B%B0%EC%95%84_%EC%A0%9C%EA%B5%AD",
     "nl": "https://nl.wikipedia.org/wiki/Parthische_Rijk",
     "pl": "https://pl.wikipedia.org/wiki/Kr%C3%B3lestwo_Part%C3%B3w",
     "pt": "https://pt.wikipedia.org/wiki/Imp%C3%A9rio_Parta",
@@ -1089,10 +1090,7 @@
   },
   "roman-empire": {
    "name": {
-    "nl": "Romeinse Keizerrijk",
-    "pl": "Cesarstwo Rzymskie",
-    "pt": "Império Romano",
-    "ur": "رومی سلطنت",
+    "zh": "罗马帝国",
     "ru": "Римская империя",
     "en": "Roman Empire",
     "ko": "로마 제국",
@@ -1105,7 +1103,10 @@
     "id": "Kekaisaran Romawi",
     "it": "Impero romano",
     "ja": "ローマ帝国",
-    "zh": "罗马帝国"
+    "nl": "Romeinse Keizerrijk",
+    "pl": "Cesarstwo Rzymskie",
+    "pt": "Império Romano",
+    "ur": "رومی سلطنت"
    },
    "wiki": {
     "en": "https://en.wikipedia.org/wiki/Roman_Empire",
@@ -1146,8 +1147,6 @@
     "hi": "तेओतिवाकान"
    },
    "wiki": {
-    "ru": "https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BE%D1%82%D0%B8%D1%83%D0%B0%D0%BA%D0%B0%D0%BD",
-    "zh": "https://zh.wikipedia.org/wiki/%E7%89%B9%E5%A5%A7%E8%92%82%E7%93%A6%E5%9D%8E",
     "ar": "https://ar.wikipedia.org/wiki/%D8%AA%D9%8A%D9%88%D8%AA%D9%8A%D9%87%D9%88%D8%A7%D9%83%D8%A7%D9%86",
     "de": "https://de.wikipedia.org/wiki/Teotihuac%C3%A1n",
     "en": "https://en.wikipedia.org/wiki/Teotihuacan",
@@ -1160,17 +1159,13 @@
     "ko": "https://ko.wikipedia.org/wiki/%ED%85%8C%EC%98%A4%ED%8B%B0%EC%9A%B0%EC%95%84%EC%B9%B8",
     "nl": "https://nl.wikipedia.org/wiki/Teotihuac%C3%A1n_(historische_stad)",
     "pl": "https://pl.wikipedia.org/wiki/Teotihuac%C3%A1n",
-    "pt": "https://pt.wikipedia.org/wiki/Teotihuacan"
+    "pt": "https://pt.wikipedia.org/wiki/Teotihuacan",
+    "ru": "https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BE%D1%82%D0%B8%D1%83%D0%B0%D0%BA%D0%B0%D0%BD",
+    "zh": "https://zh.wikipedia.org/wiki/%E7%89%B9%E5%A5%A7%E8%92%82%E7%93%A6%E5%9D%8E"
    }
   },
   "kushan": {
    "name": {
-    "nl": "Kushana",
-    "pl": "Królestwo Kuszanów",
-    "pt": "Império dos Kushana",
-    "ru": "Кушанское царство",
-    "ur": "کشان سلطنت",
-    "zh": "贵霜帝国",
     "ar": "الإمبراطورية الكوشانية",
     "bn": "কুষাণ সাম্রাজ্য",
     "de": "Kuschana",
@@ -1181,9 +1176,20 @@
     "id": "Kekaisaran Kushan",
     "it": "impero Kusana",
     "ja": "クシャーナ朝",
-    "ko": "쿠샨 왕조"
+    "ko": "쿠샨 왕조",
+    "nl": "Kushana",
+    "pl": "Królestwo Kuszanów",
+    "pt": "Império dos Kushana",
+    "ru": "Кушанское царство",
+    "ur": "کشان سلطنت",
+    "zh": "贵霜帝国"
    },
    "wiki": {
+    "de": "https://de.wikipedia.org/wiki/Kuschana",
+    "en": "https://en.wikipedia.org/wiki/Kushan_Empire",
+    "ar": "https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%A5%D9%85%D8%A8%D8%B1%D8%A7%D8%B7%D9%88%D8%B1%D9%8A%D8%A9_%D8%A7%D9%84%D9%83%D9%88%D8%B4%D8%A7%D9%86%D9%8A%D8%A9",
+    "bn": "https://bn.wikipedia.org/wiki/%E0%A6%95%E0%A7%81%E0%A6%B7%E0%A6%BE%E0%A6%A3_%E0%A6%B8%E0%A6%BE%E0%A6%AE%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A7%8D%E0%A6%AF",
+    "es": "https://es.wikipedia.org/wiki/Imperio_kush%C3%A1n",
     "fr": "https://fr.wikipedia.org/wiki/Empire_kouchan",
     "hi": "https://hi.wikipedia.org/wiki/%E0%A4%95%E0%A5%81%E0%A4%B7%E0%A4%BE%E0%A4%A3_%E0%A4%B0%E0%A4%BE%E0%A4%9C%E0%A4%B5%E0%A4%82%E0%A4%B6",
     "id": "https://id.wikipedia.org/wiki/Kekaisaran_Kushan",
@@ -1195,11 +1201,6 @@
     "pt": "https://pt.wikipedia.org/wiki/Imp%C3%A9rio_Cuchana",
     "ru": "https://ru.wikipedia.org/wiki/%D0%9A%D1%83%D1%88%D0%B0%D0%BD%D1%81%D0%BA%D0%BE%D0%B5_%D1%86%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%BE",
     "ur": "https://ur.wikipedia.org/wiki/%DA%A9%D9%88%D8%B4%D8%A7%D9%86_%D8%B3%D9%84%D8%B7%D9%86%D8%AA",
-    "ar": "https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%A5%D9%85%D8%A8%D8%B1%D8%A7%D8%B7%D9%88%D8%B1%D9%8A%D8%A9_%D8%A7%D9%84%D9%83%D9%88%D8%B4%D8%A7%D9%86%D9%8A%D8%A9",
-    "bn": "https://bn.wikipedia.org/wiki/%E0%A6%95%E0%A7%81%E0%A6%B7%E0%A6%BE%E0%A6%A3_%E0%A6%B8%E0%A6%BE%E0%A6%AE%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A7%8D%E0%A6%AF",
-    "de": "https://de.wikipedia.org/wiki/Kuschana",
-    "en": "https://en.wikipedia.org/wiki/Kushan_Empire",
-    "es": "https://es.wikipedia.org/wiki/Imperio_kush%C3%A1n",
     "zh": "https://zh.wikipedia.org/wiki/%E8%B2%B4%E9%9C%9C%E5%B8%9D%E5%9C%8B"
    }
   },
@@ -1222,6 +1223,10 @@
     "en": "Kingdom of Funan"
    },
    "wiki": {
+    "ar": "https://ar.wikipedia.org/wiki/%D9%81%D9%88%D9%86%D8%A7%D9%86",
+    "bn": "https://bn.wikipedia.org/wiki/%E0%A6%B9%E0%A7%8D%E0%A6%AC%E0%A7%82%E0%A6%A3%E0%A6%A8",
+    "de": "https://de.wikipedia.org/wiki/Funan",
+    "en": "https://en.wikipedia.org/wiki/Funan",
     "es": "https://es.wikipedia.org/wiki/Reino_de_Funan",
     "fr": "https://fr.wikipedia.org/wiki/Fou-nan",
     "id": "https://id.wikipedia.org/wiki/Kerajaan_Funan",
@@ -1232,11 +1237,7 @@
     "pl": "https://pl.wikipedia.org/wiki/Funan",
     "pt": "https://pt.wikipedia.org/wiki/Reino_de_Funan",
     "ru": "https://ru.wikipedia.org/wiki/%D0%91%D0%B0%D0%BF%D0%BD%D0%BE%D0%BC",
-    "zh": "https://zh.wikipedia.org/wiki/%E6%89%B6%E5%8D%97",
-    "ar": "https://ar.wikipedia.org/wiki/%D9%81%D9%88%D9%86%D8%A7%D9%86",
-    "bn": "https://bn.wikipedia.org/wiki/%E0%A6%B9%E0%A7%8D%E0%A6%AC%E0%A7%82%E0%A6%A3%E0%A6%A8",
-    "de": "https://de.wikipedia.org/wiki/Funan",
-    "en": "https://en.wikipedia.org/wiki/Funan"
+    "zh": "https://zh.wikipedia.org/wiki/%E6%89%B6%E5%8D%97"
    }
   },
   "axum": {
@@ -1260,14 +1261,7 @@
     "zh": "阿克苏姆帝国"
    },
    "wiki": {
-    "ko": "https://ko.wikipedia.org/wiki/%EC%95%85%EC%88%A8_%EC%99%95%EA%B5%AD",
     "nl": "https://nl.wikipedia.org/wiki/Koninkrijk_Aksum",
-    "pl": "https://pl.wikipedia.org/wiki/Aksum",
-    "pt": "https://pt.wikipedia.org/wiki/Imp%C3%A9rio_de_Axum",
-    "ru": "https://ru.wikipedia.org/wiki/%D0%90%D0%BA%D1%81%D1%83%D0%BC%D1%81%D0%BA%D0%BE%D0%B5_%D1%86%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%BE",
-    "ur": "https://ur.wikipedia.org/wiki/%D9%85%D9%85%D9%84%DA%A9%D8%AA_%D8%A7%DA%A9%D8%B3%D9%88%D9%85",
-    "zh": "https://zh.wikipedia.org/wiki/%E9%98%BF%E5%85%8B%E8%8B%8F%E5%A7%86%E7%8E%8B%E5%9B%BD",
-    "ar": "https://ar.wikipedia.org/wiki/%D9%85%D9%85%D9%84%D9%83%D8%A9_%D8%A3%D9%83%D8%B3%D9%88%D9%85",
     "bn": "https://bn.wikipedia.org/wiki/%E0%A6%86%E0%A6%95%E0%A6%B8%E0%A7%81%E0%A6%AE_%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A7%8D%E0%A6%AF",
     "de": "https://de.wikipedia.org/wiki/Aksumitisches_Reich",
     "en": "https://en.wikipedia.org/wiki/Kingdom_of_Aksum",
@@ -1276,7 +1270,14 @@
     "hi": "https://hi.wikipedia.org/wiki/%E0%A4%85%E0%A4%95%E0%A4%B8%E0%A5%82%E0%A4%AE_%E0%A4%B0%E0%A4%BE%E0%A4%9C%E0%A5%8D%E0%A4%AF",
     "id": "https://id.wikipedia.org/wiki/Kekaisaran_Aksum",
     "it": "https://it.wikipedia.org/wiki/Regno_di_Axum",
-    "ja": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%AF%E3%82%B9%E3%83%A0%E7%8E%8B%E5%9B%BD"
+    "ja": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%AF%E3%82%B9%E3%83%A0%E7%8E%8B%E5%9B%BD",
+    "ko": "https://ko.wikipedia.org/wiki/%EC%95%85%EC%88%A8_%EC%99%95%EA%B5%AD",
+    "ar": "https://ar.wikipedia.org/wiki/%D9%85%D9%85%D9%84%D9%83%D8%A9_%D8%A3%D9%83%D8%B3%D9%88%D9%85",
+    "pl": "https://pl.wikipedia.org/wiki/Aksum",
+    "pt": "https://pt.wikipedia.org/wiki/Imp%C3%A9rio_de_Axum",
+    "ru": "https://ru.wikipedia.org/wiki/%D0%90%D0%BA%D1%81%D1%83%D0%BC%D1%81%D0%BA%D0%BE%D0%B5_%D1%86%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%BE",
+    "ur": "https://ur.wikipedia.org/wiki/%D9%85%D9%85%D9%84%DA%A9%D8%AA_%D8%A7%DA%A9%D8%B3%D9%88%D9%85",
+    "zh": "https://zh.wikipedia.org/wiki/%E9%98%BF%E5%85%8B%E8%8B%8F%E5%A7%86%E7%8E%8B%E5%9B%BD"
    }
   },
   "moche": {
@@ -1338,6 +1339,8 @@
     "zh": "萨珊王朝"
    },
    "wiki": {
+    "ar": "https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%A5%D9%85%D8%A8%D8%B1%D8%A7%D8%B7%D9%88%D8%B1%D9%8A%D8%A9_%D8%A7%D9%84%D8%B3%D8%A7%D8%B3%D8%A7%D9%86%D9%8A%D8%A9",
+    "bn": "https://bn.wikipedia.org/wiki/%E0%A6%B8%E0%A6%BE%E0%A6%B8%E0%A6%BE%E0%A6%A8%E0%A7%80%E0%A6%AF%E0%A6%BC_%E0%A6%B8%E0%A6%BE%E0%A6%AE%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A7%8D%E0%A6%AF",
     "de": "https://de.wikipedia.org/wiki/Sassanidenreich",
     "en": "https://en.wikipedia.org/wiki/Sasanian_Empire",
     "es": "https://es.wikipedia.org/wiki/Imperio_sas%C3%A1nida",
@@ -1348,8 +1351,6 @@
     "ja": "https://ja.wikipedia.org/wiki/%E3%82%B5%E3%83%BC%E3%82%B5%E3%83%BC%E3%83%B3%E6%9C%9D",
     "ko": "https://ko.wikipedia.org/wiki/%EC%82%AC%EC%82%B0_%EC%A0%9C%EA%B5%AD",
     "pl": "https://pl.wikipedia.org/wiki/Imperium_Sasanid%C3%B3w",
-    "ar": "https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%A5%D9%85%D8%A8%D8%B1%D8%A7%D8%B7%D9%88%D8%B1%D9%8A%D8%A9_%D8%A7%D9%84%D8%B3%D8%A7%D8%B3%D8%A7%D9%86%D9%8A%D8%A9",
-    "bn": "https://bn.wikipedia.org/wiki/%E0%A6%B8%E0%A6%BE%E0%A6%B8%E0%A6%BE%E0%A6%A8%E0%A7%80%E0%A6%AF%E0%A6%BC_%E0%A6%B8%E0%A6%BE%E0%A6%AE%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A7%8D%E0%A6%AF",
     "pt": "https://pt.wikipedia.org/wiki/Imp%C3%A9rio_Sass%C3%A2nida",
     "ru": "https://ru.wikipedia.org/wiki/%D0%93%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%BE_%D0%A1%D0%B0%D1%81%D0%B0%D0%BD%D0%B8%D0%B4%D0%BE%D0%B2",
     "ur": "https://ur.wikipedia.org/wiki/%D8%B3%D8%A7%D8%B3%D8%A7%D9%86%DB%8C_%D8%B3%D9%84%D8%B7%D9%86%D8%AA",
@@ -1378,22 +1379,22 @@
     "ko": "굽타 왕조"
    },
    "wiki": {
-    "id": "https://id.wikipedia.org/wiki/Kemaharajaan_Gupta",
-    "it": "https://it.wikipedia.org/wiki/Impero_Gupta",
-    "ja": "https://ja.wikipedia.org/wiki/%E3%82%B0%E3%83%97%E3%82%BF%E6%9C%9D",
     "ar": "https://ar.wikipedia.org/wiki/%D8%A5%D9%85%D8%A8%D8%B1%D8%A7%D8%B7%D9%88%D8%B1%D9%8A%D8%A9_%D8%AC%D9%88%D8%A8%D8%AA%D8%A7",
+    "fr": "https://fr.wikipedia.org/wiki/Empire_Gupta",
+    "hi": "https://hi.wikipedia.org/wiki/%E0%A4%97%E0%A5%81%E0%A4%AA%E0%A5%8D%E0%A4%A4_%E0%A4%B0%E0%A4%BE%E0%A4%9C%E0%A4%B5%E0%A4%82%E0%A4%B6",
+    "id": "https://id.wikipedia.org/wiki/Kemaharajaan_Gupta",
     "bn": "https://bn.wikipedia.org/wiki/%E0%A6%97%E0%A7%81%E0%A6%AA%E0%A7%8D%E0%A6%A4_%E0%A6%B8%E0%A6%BE%E0%A6%AE%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A7%8D%E0%A6%AF",
     "de": "https://de.wikipedia.org/wiki/Gupta-Reich",
     "en": "https://en.wikipedia.org/wiki/Gupta_Empire",
     "es": "https://es.wikipedia.org/wiki/Imperio_gupta",
-    "fr": "https://fr.wikipedia.org/wiki/Empire_Gupta",
-    "hi": "https://hi.wikipedia.org/wiki/%E0%A4%97%E0%A5%81%E0%A4%AA%E0%A5%8D%E0%A4%A4_%E0%A4%B0%E0%A4%BE%E0%A4%9C%E0%A4%B5%E0%A4%82%E0%A4%B6",
+    "it": "https://it.wikipedia.org/wiki/Impero_Gupta",
+    "ja": "https://ja.wikipedia.org/wiki/%E3%82%B0%E3%83%97%E3%82%BF%E6%9C%9D",
     "ko": "https://ko.wikipedia.org/wiki/%EA%B5%BD%ED%83%80_%EC%A0%9C%EA%B5%AD",
+    "ru": "https://ru.wikipedia.org/wiki/%D0%93%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%BE_%D0%93%D1%83%D0%BF%D1%82%D0%BE%D0%B2",
+    "ur": "https://ur.wikipedia.org/wiki/%DA%AF%D9%BE%D8%AA%D8%A7_%D8%B3%D9%84%D8%B7%D9%86%D8%AA",
     "nl": "https://nl.wikipedia.org/wiki/Gupta%27s",
     "pl": "https://pl.wikipedia.org/wiki/Dynastia_Gupt%C3%B3w",
     "pt": "https://pt.wikipedia.org/wiki/Imp%C3%A9rio_Gupta",
-    "ru": "https://ru.wikipedia.org/wiki/%D0%93%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%BE_%D0%93%D1%83%D0%BF%D1%82%D0%BE%D0%B2",
-    "ur": "https://ur.wikipedia.org/wiki/%DA%AF%D9%BE%D8%AA%D8%A7_%D8%B3%D9%84%D8%B7%D9%86%D8%AA",
     "zh": "https://zh.wikipedia.org/wiki/%E7%AC%88%E5%A4%9A%E7%8E%8B%E6%9C%9D"
    }
   },
@@ -1418,21 +1419,21 @@
     "zh": "拜占庭帝国"
    },
    "wiki": {
-    "en": "https://en.wikipedia.org/wiki/Byzantine_Empire",
-    "es": "https://es.wikipedia.org/wiki/Imperio_bizantino",
-    "fr": "https://fr.wikipedia.org/wiki/Empire_byzantin",
-    "hi": "https://hi.wikipedia.org/wiki/%E0%A4%AC%E0%A4%BE%E0%A4%87%E0%A4%9C%E0%A4%BC%E0%A5%87%E0%A4%82%E0%A4%9F%E0%A4%BE%E0%A4%87%E0%A4%A8_%E0%A4%B8%E0%A4%BE%E0%A4%AE%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%9C%E0%A5%8D%E0%A4%AF",
-    "id": "https://id.wikipedia.org/wiki/Kekaisaran_Romawi_Timur",
-    "it": "https://it.wikipedia.org/wiki/Impero_bizantino",
-    "ja": "https://ja.wikipedia.org/wiki/%E6%9D%B1%E3%83%AD%E3%83%BC%E3%83%9E%E5%B8%9D%E5%9B%BD",
-    "ko": "https://ko.wikipedia.org/wiki/%EB%8F%99%EB%A1%9C%EB%A7%88_%EC%A0%9C%EA%B5%AD",
     "ar": "https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%A5%D9%85%D8%A8%D8%B1%D8%A7%D8%B7%D9%88%D8%B1%D9%8A%D8%A9_%D8%A7%D9%84%D8%A8%D9%8A%D8%B2%D9%86%D8%B7%D9%8A%D8%A9",
     "bn": "https://bn.wikipedia.org/wiki/%E0%A6%AC%E0%A6%BE%E0%A6%87%E0%A6%9C%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A6%BE%E0%A6%87%E0%A6%A8_%E0%A6%B8%E0%A6%BE%E0%A6%AE%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A7%8D%E0%A6%AF",
+    "es": "https://es.wikipedia.org/wiki/Imperio_bizantino",
+    "fr": "https://fr.wikipedia.org/wiki/Empire_byzantin",
+    "id": "https://id.wikipedia.org/wiki/Kekaisaran_Romawi_Timur",
+    "it": "https://it.wikipedia.org/wiki/Impero_bizantino",
+    "hi": "https://hi.wikipedia.org/wiki/%E0%A4%AC%E0%A4%BE%E0%A4%87%E0%A4%9C%E0%A4%BC%E0%A5%87%E0%A4%82%E0%A4%9F%E0%A4%BE%E0%A4%87%E0%A4%A8_%E0%A4%B8%E0%A4%BE%E0%A4%AE%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%9C%E0%A5%8D%E0%A4%AF",
     "de": "https://de.wikipedia.org/wiki/Byzantinisches_Reich",
+    "en": "https://en.wikipedia.org/wiki/Byzantine_Empire",
     "nl": "https://nl.wikipedia.org/wiki/Byzantijnse_Rijk",
+    "ru": "https://ru.wikipedia.org/wiki/%D0%92%D0%B8%D0%B7%D0%B0%D0%BD%D1%82%D0%B8%D1%8F",
+    "ja": "https://ja.wikipedia.org/wiki/%E6%9D%B1%E3%83%AD%E3%83%BC%E3%83%9E%E5%B8%9D%E5%9B%BD",
+    "ko": "https://ko.wikipedia.org/wiki/%EB%8F%99%EB%A1%9C%EB%A7%88_%EC%A0%9C%EA%B5%AD",
     "pl": "https://pl.wikipedia.org/wiki/Cesarstwo_Bizanty%C5%84skie",
     "pt": "https://pt.wikipedia.org/wiki/Imp%C3%A9rio_Bizantino",
-    "ru": "https://ru.wikipedia.org/wiki/%D0%92%D0%B8%D0%B7%D0%B0%D0%BD%D1%82%D0%B8%D1%8F",
     "ur": "https://ur.wikipedia.org/wiki/%D8%A8%D8%A7%D8%B2%D9%86%D8%B7%DB%8C%D9%86%DB%8C_%D8%B3%D9%84%D8%B7%D9%86%D8%AA",
     "zh": "https://zh.wikipedia.org/wiki/%E6%9D%B1%E7%BE%85%E9%A6%AC%E5%B8%9D%E5%9C%8B"
    }
@@ -1458,23 +1459,23 @@
     "bn": "মায়া সভ্যতা"
    },
    "wiki": {
+    "fr": "https://fr.wikipedia.org/wiki/Civilisation_maya",
+    "hi": "https://hi.wikipedia.org/wiki/%E0%A4%AE%E0%A4%BE%E0%A4%AF%E0%A4%BE_%E0%A4%B8%E0%A4%AD%E0%A5%8D%E0%A4%AF%E0%A4%A4%E0%A4%BE",
+    "id": "https://id.wikipedia.org/wiki/Peradaban_Maya",
+    "it": "https://it.wikipedia.org/wiki/Maya",
+    "ja": "https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%A4%E6%96%87%E6%98%8E",
+    "ko": "https://ko.wikipedia.org/wiki/%EB%A7%88%EC%95%BC_%EB%AC%B8%EB%AA%85",
     "ar": "https://ar.wikipedia.org/wiki/%D8%AD%D8%B6%D8%A7%D8%B1%D8%A9_%D8%A7%D9%84%D9%85%D8%A7%D9%8A%D8%A7",
     "bn": "https://bn.wikipedia.org/wiki/%E0%A6%AE%E0%A6%BE%E0%A6%AF%E0%A6%BC%E0%A6%BE_%E0%A6%B8%E0%A6%AD%E0%A7%8D%E0%A6%AF%E0%A6%A4%E0%A6%BE",
     "de": "https://de.wikipedia.org/wiki/Maya-Zivilisation",
     "en": "https://en.wikipedia.org/wiki/Maya_civilization",
     "es": "https://es.wikipedia.org/wiki/Cultura_maya",
-    "fr": "https://fr.wikipedia.org/wiki/Civilisation_maya",
-    "hi": "https://hi.wikipedia.org/wiki/%E0%A4%AE%E0%A4%BE%E0%A4%AF%E0%A4%BE_%E0%A4%B8%E0%A4%AD%E0%A5%8D%E0%A4%AF%E0%A4%A4%E0%A4%BE",
-    "ur": "https://ur.wikipedia.org/wiki/%D9%85%D8%A7%DB%8C%D8%A7_%D8%AA%DB%81%D8%B0%DB%8C%D8%A8",
-    "zh": "https://zh.wikipedia.org/wiki/%E7%91%AA%E9%9B%85%E6%96%87%E6%98%8E",
-    "id": "https://id.wikipedia.org/wiki/Peradaban_Maya",
-    "it": "https://it.wikipedia.org/wiki/Maya",
-    "ja": "https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%A4%E6%96%87%E6%98%8E",
-    "ko": "https://ko.wikipedia.org/wiki/%EB%A7%88%EC%95%BC_%EB%AC%B8%EB%AA%85",
     "nl": "https://nl.wikipedia.org/wiki/Mayacultuur",
     "pl": "https://pl.wikipedia.org/wiki/Cywilizacja_Maj%C3%B3w",
     "pt": "https://pt.wikipedia.org/wiki/Civiliza%C3%A7%C3%A3o_maia",
-    "ru": "https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D0%B9%D1%8F_(%D1%86%D0%B8%D0%B2%D0%B8%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F)"
+    "ru": "https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D0%B9%D1%8F_(%D1%86%D0%B8%D0%B2%D0%B8%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F)",
+    "ur": "https://ur.wikipedia.org/wiki/%D9%85%D8%A7%DB%8C%D8%A7_%D8%AA%DB%81%D8%B0%DB%8C%D8%A8",
+    "zh": "https://zh.wikipedia.org/wiki/%E7%91%AA%E9%9B%85%E6%96%87%E6%98%8E"
    }
   },
   "ghana": {
@@ -1497,7 +1498,6 @@
     "zh": "迦纳帝国"
    },
    "wiki": {
-    "zh": "https://zh.wikipedia.org/wiki/%E8%BF%A6%E7%B4%8D%E5%B8%9D%E5%9C%8B",
     "ar": "https://ar.wikipedia.org/wiki/%D9%85%D9%85%D9%84%D9%83%D8%A9_%D8%BA%D8%A7%D9%86%D8%A7",
     "de": "https://de.wikipedia.org/wiki/Reich_von_Ghana",
     "en": "https://en.wikipedia.org/wiki/Ghana_Empire",
@@ -1512,7 +1512,8 @@
     "pl": "https://pl.wikipedia.org/wiki/Imperium_Ghany",
     "pt": "https://pt.wikipedia.org/wiki/Imp%C3%A9rio_do_Gana",
     "ru": "https://ru.wikipedia.org/wiki/%D0%98%D0%BC%D0%BF%D0%B5%D1%80%D0%B8%D1%8F_%D0%93%D0%B0%D0%BD%D0%B0",
-    "ur": "https://ur.wikipedia.org/wiki/%D8%B3%D9%84%D8%B7%D9%86%D8%AA_%DA%AF%DA%BE%D8%A7%D9%86%D8%A7"
+    "ur": "https://ur.wikipedia.org/wiki/%D8%B3%D9%84%D8%B7%D9%86%D8%AA_%DA%AF%DA%BE%D8%A7%D9%86%D8%A7",
+    "zh": "https://zh.wikipedia.org/wiki/%E8%BF%A6%E7%B4%8D%E5%B8%9D%E5%9C%8B"
    }
   },
   "tang": {
@@ -1536,10 +1537,9 @@
     "ur": "تانگ خاندان"
    },
    "wiki": {
-    "nl": "https://nl.wikipedia.org/wiki/Tang-dynastie",
+    "bn": "https://bn.wikipedia.org/wiki/%E0%A6%A4%E0%A6%BE%E0%A6%82_%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A6%AC%E0%A6%82%E0%A6%B6",
     "en": "https://en.wikipedia.org/wiki/Tang_dynasty",
     "ar": "https://ar.wikipedia.org/wiki/%D8%B3%D9%84%D8%A7%D9%84%D8%A9_%D8%AA%D8%A7%D9%86%D8%BA_%D8%A7%D9%84%D8%AD%D8%A7%D9%83%D9%85%D8%A9",
-    "bn": "https://bn.wikipedia.org/wiki/%E0%A6%A4%E0%A6%BE%E0%A6%82_%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A6%AC%E0%A6%82%E0%A6%B6",
     "de": "https://de.wikipedia.org/wiki/Tang-Dynastie",
     "es": "https://es.wikipedia.org/wiki/Dinast%C3%ADa_Tang",
     "fr": "https://fr.wikipedia.org/wiki/Dynastie_Tang",
@@ -1548,6 +1548,7 @@
     "it": "https://it.wikipedia.org/wiki/Dinastia_Tang",
     "ja": "https://ja.wikipedia.org/wiki/%E5%94%90",
     "ko": "https://ko.wikipedia.org/wiki/%EB%8B%B9%EB%82%98%EB%9D%BC",
+    "nl": "https://nl.wikipedia.org/wiki/Tang-dynastie",
     "pl": "https://pl.wikipedia.org/wiki/Dynastia_Tang",
     "pt": "https://pt.wikipedia.org/wiki/Dinastia_Tang",
     "ru": "https://ru.wikipedia.org/wiki/%D0%98%D0%BC%D0%BF%D0%B5%D1%80%D0%B8%D1%8F_%D0%A2%D0%B0%D0%BD",
@@ -1576,6 +1577,12 @@
     "pl": "kalifat Umajjadów"
    },
    "wiki": {
+    "nl": "https://nl.wikipedia.org/wiki/Kalifaat_van_de_Omajjaden",
+    "pl": "https://pl.wikipedia.org/wiki/Kalifat_Umajjad%C3%B3w",
+    "pt": "https://pt.wikipedia.org/wiki/Califado_Om%C3%ADada",
+    "ru": "https://ru.wikipedia.org/wiki/%D0%9E%D0%BC%D0%B5%D0%B9%D1%8F%D0%B4%D1%81%D0%BA%D0%B8%D0%B9_%D1%85%D0%B0%D0%BB%D0%B8%D1%84%D0%B0%D1%82",
+    "ur": "https://ur.wikipedia.org/wiki/%D8%AE%D9%84%D8%A7%D9%81%D8%AA_%D8%A7%D9%85%D9%88%DB%8C%DB%81",
+    "zh": "https://zh.wikipedia.org/wiki/%E5%A5%A7%E7%91%AA%E4%BA%9E%E5%93%88%E9%87%8C%E7%99%BC%E5%9C%8B",
     "ar": "https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A9_%D8%A7%D9%84%D8%A3%D9%85%D9%88%D9%8A%D8%A9",
     "bn": "https://bn.wikipedia.org/wiki/%E0%A6%89%E0%A6%AE%E0%A6%BE%E0%A6%87%E0%A6%AF%E0%A6%BC%E0%A6%BE_%E0%A6%96%E0%A6%BF%E0%A6%B2%E0%A6%BE%E0%A6%AB%E0%A6%A4",
     "de": "https://de.wikipedia.org/wiki/Umayyaden-Kalifat",
@@ -1585,13 +1592,7 @@
     "hi": "https://hi.wikipedia.org/wiki/%E0%A4%89%E0%A4%AE%E0%A4%AF%E0%A5%8D%E0%A4%AF%E0%A4%A6_%E0%A4%96%E0%A4%BC%E0%A4%BF%E0%A4%B2%E0%A4%BE%E0%A4%AB%E0%A4%BC%E0%A4%A4",
     "id": "https://id.wikipedia.org/wiki/Kekhalifahan_Umayyah",
     "it": "https://it.wikipedia.org/wiki/Califfato_omayyade",
-    "ko": "https://ko.wikipedia.org/wiki/%EC%9A%B0%EB%A7%88%EC%9D%B4%EC%95%BC_%EC%B9%BC%EB%A6%AC%ED%8C%8C%EA%B5%AD",
-    "nl": "https://nl.wikipedia.org/wiki/Kalifaat_van_de_Omajjaden",
-    "pl": "https://pl.wikipedia.org/wiki/Kalifat_Umajjad%C3%B3w",
-    "pt": "https://pt.wikipedia.org/wiki/Califado_Om%C3%ADada",
-    "ru": "https://ru.wikipedia.org/wiki/%D0%9E%D0%BC%D0%B5%D0%B9%D1%8F%D0%B4%D1%81%D0%BA%D0%B8%D0%B9_%D1%85%D0%B0%D0%BB%D0%B8%D1%84%D0%B0%D1%82",
-    "ur": "https://ur.wikipedia.org/wiki/%D8%AE%D9%84%D8%A7%D9%81%D8%AA_%D8%A7%D9%85%D9%88%DB%8C%DB%81",
-    "zh": "https://zh.wikipedia.org/wiki/%E5%A5%A7%E7%91%AA%E4%BA%9E%E5%93%88%E9%87%8C%E7%99%BC%E5%9C%8B"
+    "ko": "https://ko.wikipedia.org/wiki/%EC%9A%B0%EB%A7%88%EC%9D%B4%EC%95%BC_%EC%B9%BC%EB%A6%AC%ED%8C%8C%EA%B5%AD"
    }
   },
   "tiwanaku": {
@@ -1634,6 +1635,8 @@
   },
   "srivijaya": {
    "name": {
+    "ur": "سریویجیا",
+    "zh": "三佛齐",
     "fr": "Sriwijaya",
     "id": "Sriwijaya",
     "ar": "سريفيجايا",
@@ -1648,9 +1651,7 @@
     "nl": "Koninkrijk Srivijaya",
     "pl": "Śriwidżaja",
     "pt": "Srivijaya",
-    "ru": "Шривиджая",
-    "ur": "سریویجیا",
-    "zh": "三佛齐"
+    "ru": "Шривиджая"
    },
    "wiki": {
     "ar": "https://ar.wikipedia.org/wiki/%D8%B3%D8%B1%D9%8A%D9%81%D9%8A%D8%AC%D8%A7%D9%8A%D8%A7",
@@ -1674,6 +1675,12 @@
   },
   "khmer": {
    "name": {
+    "pl": "Angkor",
+    "ar": "إمبراطورية الخمير",
+    "bn": "খেমার সাম্রাজ্য",
+    "de": "Khmer-Reich",
+    "en": "Khmer Empire",
+    "es": "Imperio jemer",
     "fr": "Empire khmer",
     "hi": "ख्मेर साम्राज्य",
     "id": "Kerajaan Khmer",
@@ -1684,16 +1691,9 @@
     "pt": "Império Khmer",
     "ru": "Камбуджадеша",
     "ur": "سلطنت خمیر",
-    "zh": "高棉帝国",
-    "pl": "Angkor",
-    "ar": "إمبراطورية الخمير",
-    "bn": "খেমার সাম্রাজ্য",
-    "de": "Khmer-Reich",
-    "en": "Khmer Empire",
-    "es": "Imperio jemer"
+    "zh": "高棉帝国"
    },
    "wiki": {
-    "ar": "https://ar.wikipedia.org/wiki/%D8%A5%D9%85%D8%A8%D8%B1%D8%A7%D8%B7%D9%88%D8%B1%D9%8A%D8%A9_%D8%A7%D9%84%D8%AE%D9%85%D9%8A%D8%B1",
     "bn": "https://bn.wikipedia.org/wiki/%E0%A6%96%E0%A7%87%E0%A6%AE%E0%A6%BE%E0%A6%B0_%E0%A6%B8%E0%A6%BE%E0%A6%AE%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A7%8D%E0%A6%AF",
     "de": "https://de.wikipedia.org/wiki/Khmer-Reich",
     "en": "https://en.wikipedia.org/wiki/Khmer_Empire",
@@ -1708,6 +1708,7 @@
     "pl": "https://pl.wikipedia.org/wiki/Angkor",
     "pt": "https://pt.wikipedia.org/wiki/Imp%C3%A9rio_Quemer",
     "ru": "https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BC%D0%B1%D1%83%D0%B4%D0%B6%D0%B0%D0%B4%D0%B5%D1%88%D0%B0",
+    "ar": "https://ar.wikipedia.org/wiki/%D8%A5%D9%85%D8%A8%D8%B1%D8%A7%D8%B7%D9%88%D8%B1%D9%8A%D8%A9_%D8%A7%D9%84%D8%AE%D9%85%D9%8A%D8%B1",
     "ur": "https://ur.wikipedia.org/wiki/%D8%B3%D9%84%D8%B7%D9%86%D8%AA_%D8%AE%D9%85%DB%8C%D8%B1",
     "zh": "https://zh.wikipedia.org/wiki/%E9%AB%98%E6%A3%89%E5%B8%9D%E5%9B%BD"
    }
@@ -1733,6 +1734,12 @@
     "zh": "朱罗王朝"
    },
    "wiki": {
+    "ko": "https://ko.wikipedia.org/wiki/%EC%B4%90%EB%9D%BC_%EC%99%95%EC%A1%B0",
+    "nl": "https://nl.wikipedia.org/wiki/Chola%27s",
+    "pl": "https://pl.wikipedia.org/wiki/%C4%86olowie",
+    "ru": "https://ru.wikipedia.org/wiki/%D0%A7%D0%BE%D0%BB%D0%B0",
+    "ur": "https://ur.wikipedia.org/wiki/%DA%86%D9%88%D9%84_%D8%AE%D8%A7%D9%86%D8%AF%D8%A7%D9%86",
+    "zh": "https://zh.wikipedia.org/wiki/%E6%9C%B1%E7%BD%97%E7%8E%8B%E6%9C%9D",
     "ar": "https://ar.wikipedia.org/wiki/%D8%B3%D9%84%D8%A7%D9%84%D8%A9_%D8%AA%D8%B4%D9%88%D9%84%D8%A7_%D8%A7%D9%84%D8%AD%D8%A7%D9%83%D9%85%D8%A9",
     "bn": "https://bn.wikipedia.org/wiki/%E0%A6%9A%E0%A7%8B%E0%A6%B2_%E0%A6%B8%E0%A6%BE%E0%A6%AE%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A7%8D%E0%A6%AF",
     "de": "https://de.wikipedia.org/wiki/Chola",
@@ -1742,13 +1749,7 @@
     "hi": "https://hi.wikipedia.org/wiki/%E0%A4%9A%E0%A5%8B%E0%A4%B2_%E0%A4%B0%E0%A4%BE%E0%A4%9C%E0%A4%B5%E0%A4%82%E0%A4%B6",
     "id": "https://id.wikipedia.org/wiki/Kerajaan_Chola",
     "it": "https://it.wikipedia.org/wiki/Chola",
-    "ja": "https://ja.wikipedia.org/wiki/%E3%83%81%E3%83%A7%E3%83%BC%E3%83%A9%E6%9C%9D",
-    "ko": "https://ko.wikipedia.org/wiki/%EC%B4%90%EB%9D%BC_%EC%99%95%EC%A1%B0",
-    "nl": "https://nl.wikipedia.org/wiki/Chola%27s",
-    "pl": "https://pl.wikipedia.org/wiki/%C4%86olowie",
-    "ru": "https://ru.wikipedia.org/wiki/%D0%A7%D0%BE%D0%BB%D0%B0",
-    "ur": "https://ur.wikipedia.org/wiki/%DA%86%D9%88%D9%84_%D8%AE%D8%A7%D9%86%D8%AF%D8%A7%D9%86",
-    "zh": "https://zh.wikipedia.org/wiki/%E6%9C%B1%E7%BD%97%E7%8E%8B%E6%9C%9D"
+    "ja": "https://ja.wikipedia.org/wiki/%E3%83%81%E3%83%A7%E3%83%BC%E3%83%A9%E6%9C%9D"
    }
   },
   "zimbabwe": {
@@ -1781,13 +1782,6 @@
   },
   "mongol": {
    "name": {
-    "ar": "إمبراطورية المغول",
-    "bn": "মঙ্গোল সাম্রাজ্য",
-    "de": "Mongolisches Reich",
-    "en": "Mongol Empire",
-    "es": "Imperio mongol",
-    "fr": "Empire mongol",
-    "hi": "मंगोल साम्राज्य",
     "id": "Kekaisaran Mongol",
     "it": "Impero mongolo",
     "ja": "モンゴル帝国",
@@ -1797,30 +1791,42 @@
     "pt": "Império Mongol",
     "ru": "Монгольская империя",
     "ur": "منگول سلطنت",
-    "zh": "蒙古帝国"
+    "zh": "蒙古帝国",
+    "ar": "إمبراطورية المغول",
+    "bn": "মঙ্গোল সাম্রাজ্য",
+    "de": "Mongolisches Reich",
+    "en": "Mongol Empire",
+    "es": "Imperio mongol",
+    "fr": "Empire mongol",
+    "hi": "मंगोल साम्राज्य"
    },
    "wiki": {
-    "ur": "https://ur.wikipedia.org/wiki/%D9%85%D9%86%DA%AF%D9%88%D9%84_%D8%B3%D9%84%D8%B7%D9%86%D8%AA",
-    "zh": "https://zh.wikipedia.org/wiki/%E8%92%99%E5%8F%A4%E5%B8%9D%E5%9B%BD",
-    "ar": "https://ar.wikipedia.org/wiki/%D8%A5%D9%85%D8%A8%D8%B1%D8%A7%D8%B7%D9%88%D8%B1%D9%8A%D8%A9_%D8%A7%D9%84%D9%85%D8%BA%D9%88%D9%84",
     "bn": "https://bn.wikipedia.org/wiki/%E0%A6%AE%E0%A6%99%E0%A7%8D%E0%A6%97%E0%A7%8B%E0%A6%B2_%E0%A6%B8%E0%A6%BE%E0%A6%AE%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A7%8D%E0%A6%AF",
+    "ar": "https://ar.wikipedia.org/wiki/%D8%A5%D9%85%D8%A8%D8%B1%D8%A7%D8%B7%D9%88%D8%B1%D9%8A%D8%A9_%D8%A7%D9%84%D9%85%D8%BA%D9%88%D9%84",
+    "hi": "https://hi.wikipedia.org/wiki/%E0%A4%AE%E0%A4%82%E0%A4%97%E0%A5%8B%E0%A4%B2_%E0%A4%B8%E0%A4%BE%E0%A4%AE%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%9C%E0%A5%8D%E0%A4%AF",
+    "id": "https://id.wikipedia.org/wiki/Kekaisaran_Mongol",
+    "fr": "https://fr.wikipedia.org/wiki/Empire_mongol",
+    "nl": "https://nl.wikipedia.org/wiki/Mongoolse_Rijk",
     "de": "https://de.wikipedia.org/wiki/Mongolisches_Reich",
     "en": "https://en.wikipedia.org/wiki/Mongol_Empire",
     "es": "https://es.wikipedia.org/wiki/Imperio_mongol",
-    "fr": "https://fr.wikipedia.org/wiki/Empire_mongol",
-    "hi": "https://hi.wikipedia.org/wiki/%E0%A4%AE%E0%A4%82%E0%A4%97%E0%A5%8B%E0%A4%B2_%E0%A4%B8%E0%A4%BE%E0%A4%AE%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%9C%E0%A5%8D%E0%A4%AF",
-    "id": "https://id.wikipedia.org/wiki/Kekaisaran_Mongol",
+    "pt": "https://pt.wikipedia.org/wiki/Imp%C3%A9rio_Mongol",
+    "ru": "https://ru.wikipedia.org/wiki/%D0%9C%D0%BE%D0%BD%D0%B3%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F_%D0%B8%D0%BC%D0%BF%D0%B5%D1%80%D0%B8%D1%8F",
+    "pl": "https://pl.wikipedia.org/wiki/Imperium_mongolskie",
+    "ur": "https://ur.wikipedia.org/wiki/%D9%85%D9%86%DA%AF%D9%88%D9%84_%D8%B3%D9%84%D8%B7%D9%86%D8%AA",
     "it": "https://it.wikipedia.org/wiki/Impero_mongolo",
     "ja": "https://ja.wikipedia.org/wiki/%E3%83%A2%E3%83%B3%E3%82%B4%E3%83%AB%E5%B8%9D%E5%9B%BD",
     "ko": "https://ko.wikipedia.org/wiki/%EB%AA%BD%EA%B3%A8_%EC%A0%9C%EA%B5%AD",
-    "nl": "https://nl.wikipedia.org/wiki/Mongoolse_Rijk",
-    "pl": "https://pl.wikipedia.org/wiki/Imperium_mongolskie",
-    "pt": "https://pt.wikipedia.org/wiki/Imp%C3%A9rio_Mongol",
-    "ru": "https://ru.wikipedia.org/wiki/%D0%9C%D0%BE%D0%BD%D0%B3%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F_%D0%B8%D0%BC%D0%BF%D0%B5%D1%80%D0%B8%D1%8F"
+    "zh": "https://zh.wikipedia.org/wiki/%E8%92%99%E5%8F%A4%E5%B8%9D%E5%9B%BD"
    }
   },
   "delhi": {
    "name": {
+    "pl": "Sułtanat Delhijski",
+    "pt": "Sultanato de Déli",
+    "ru": "Делийский султанат",
+    "ur": "سلطنت دہلی",
+    "zh": "德里苏丹国",
     "en": "Delhi Sultanate",
     "ar": "سلطنة دلهي",
     "bn": "দিল্লী সালতানাত",
@@ -1832,14 +1838,14 @@
     "it": "Sultanato di Delhi",
     "ja": "デリー・スルタン朝",
     "ko": "델리 술탄 왕조",
-    "nl": "Sultanaat van Delhi",
-    "pl": "Sułtanat Delhijski",
-    "pt": "Sultanato de Déli",
-    "ru": "Делийский султанат",
-    "ur": "سلطنت دہلی",
-    "zh": "德里苏丹国"
+    "nl": "Sultanaat van Delhi"
    },
    "wiki": {
+    "bn": "https://bn.wikipedia.org/wiki/%E0%A6%A6%E0%A6%BF%E0%A6%B2%E0%A7%8D%E0%A6%B2%E0%A6%BF_%E0%A6%B8%E0%A6%BE%E0%A6%B2%E0%A6%A4%E0%A6%BE%E0%A6%A8%E0%A6%BE%E0%A6%A4",
+    "de": "https://de.wikipedia.org/wiki/Sultanat_von_Delhi",
+    "en": "https://en.wikipedia.org/wiki/Delhi_Sultanate",
+    "es": "https://es.wikipedia.org/wiki/Sultanato_de_Delhi",
+    "fr": "https://fr.wikipedia.org/wiki/Sultanat_de_Delhi",
     "hi": "https://hi.wikipedia.org/wiki/%E0%A4%A6%E0%A4%BF%E0%A4%B2%E0%A5%8D%E0%A4%B2%E0%A5%80_%E0%A4%B8%E0%A4%B2%E0%A5%8D%E0%A4%A4%E0%A4%A8%E0%A4%A4",
     "id": "https://id.wikipedia.org/wiki/Kesultanan_Delhi",
     "it": "https://it.wikipedia.org/wiki/Sultanato_di_Delhi",
@@ -1851,12 +1857,7 @@
     "ru": "https://ru.wikipedia.org/wiki/%D0%94%D0%B5%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9_%D1%81%D1%83%D0%BB%D1%82%D0%B0%D0%BD%D0%B0%D1%82",
     "ur": "https://ur.wikipedia.org/wiki/%D8%B3%D9%84%D8%B7%D9%86%D8%AA_%D8%AF%DB%81%D9%84%DB%8C",
     "zh": "https://zh.wikipedia.org/wiki/%E5%BE%B7%E9%87%8C%E8%98%87%E4%B8%B9%E5%9C%8B",
-    "ar": "https://ar.wikipedia.org/wiki/%D8%B3%D9%84%D8%B7%D9%86%D8%A9_%D8%AF%D9%87%D9%84%D9%8A",
-    "bn": "https://bn.wikipedia.org/wiki/%E0%A6%A6%E0%A6%BF%E0%A6%B2%E0%A7%8D%E0%A6%B2%E0%A6%BF_%E0%A6%B8%E0%A6%BE%E0%A6%B2%E0%A6%A4%E0%A6%BE%E0%A6%A8%E0%A6%BE%E0%A6%A4",
-    "de": "https://de.wikipedia.org/wiki/Sultanat_von_Delhi",
-    "en": "https://en.wikipedia.org/wiki/Delhi_Sultanate",
-    "es": "https://es.wikipedia.org/wiki/Sultanato_de_Delhi",
-    "fr": "https://fr.wikipedia.org/wiki/Sultanat_de_Delhi"
+    "ar": "https://ar.wikipedia.org/wiki/%D8%B3%D9%84%D8%B7%D9%86%D8%A9_%D8%AF%D9%87%D9%84%D9%8A"
    }
   },
   "mali": {
@@ -1880,27 +1881,28 @@
     "bn": "মালি সাম্রাজ্য"
    },
    "wiki": {
-    "hi": "https://hi.wikipedia.org/wiki/%E0%A4%AE%E0%A4%BE%E0%A4%B2%E0%A5%80_%E0%A4%B8%E0%A4%BE%E0%A4%AE%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%9C%E0%A5%8D%E0%A4%AF",
     "id": "https://id.wikipedia.org/wiki/Kekaisaran_Mali",
     "it": "https://it.wikipedia.org/wiki/Impero_del_Mali",
     "ja": "https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%AA%E5%B8%9D%E5%9B%BD",
     "ko": "https://ko.wikipedia.org/wiki/%EB%A7%90%EB%A6%AC_%EC%A0%9C%EA%B5%AD",
+    "nl": "https://nl.wikipedia.org/wiki/Koninkrijk_Mali",
+    "pl": "https://pl.wikipedia.org/wiki/Imperium_Mali",
+    "pt": "https://pt.wikipedia.org/wiki/Imp%C3%A9rio_do_Mali",
+    "ru": "https://ru.wikipedia.org/wiki/%D0%98%D0%BC%D0%BF%D0%B5%D1%80%D0%B8%D1%8F_%D0%9C%D0%B0%D0%BB%D0%B8",
     "ar": "https://ar.wikipedia.org/wiki/%D9%85%D9%85%D9%84%D9%83%D8%A9_%D9%85%D8%A7%D9%84%D9%8A",
     "bn": "https://bn.wikipedia.org/wiki/%E0%A6%AE%E0%A6%BE%E0%A6%B2%E0%A6%BF_%E0%A6%B8%E0%A6%BE%E0%A6%AE%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A7%8D%E0%A6%AF",
     "de": "https://de.wikipedia.org/wiki/Malireich",
     "en": "https://en.wikipedia.org/wiki/Mali_Empire",
     "es": "https://es.wikipedia.org/wiki/Imperio_de_Mali",
     "fr": "https://fr.wikipedia.org/wiki/Empire_du_Mali",
-    "nl": "https://nl.wikipedia.org/wiki/Koninkrijk_Mali",
-    "pl": "https://pl.wikipedia.org/wiki/Imperium_Mali",
-    "pt": "https://pt.wikipedia.org/wiki/Imp%C3%A9rio_do_Mali",
-    "ru": "https://ru.wikipedia.org/wiki/%D0%98%D0%BC%D0%BF%D0%B5%D1%80%D0%B8%D1%8F_%D0%9C%D0%B0%D0%BB%D0%B8",
+    "hi": "https://hi.wikipedia.org/wiki/%E0%A4%AE%E0%A4%BE%E0%A4%B2%E0%A5%80_%E0%A4%B8%E0%A4%BE%E0%A4%AE%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%9C%E0%A5%8D%E0%A4%AF",
     "ur": "https://ur.wikipedia.org/wiki/%D8%B3%D9%84%D8%B7%D9%86%D8%AA_%D9%85%D8%A7%D9%84%DB%8C",
     "zh": "https://zh.wikipedia.org/wiki/%E9%A9%AC%E9%87%8C%E5%B8%9D%E5%9B%BD"
    }
   },
   "ottoman": {
    "name": {
+    "zh": "奥斯曼帝国",
     "ar": "الدولة العثمانية",
     "bn": "উসমানীয় সাম্রাজ্য",
     "de": "Osmanisches Reich",
@@ -1916,31 +1918,31 @@
     "pl": "Imperium osmańskie",
     "pt": "Império Otomano",
     "ru": "Османская империя",
-    "ur": "سلطنت عثمانیہ",
-    "zh": "奥斯曼帝国"
+    "ur": "سلطنت عثمانیہ"
    },
    "wiki": {
+    "ar": "https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A9_%D8%A7%D9%84%D8%B9%D8%AB%D9%85%D8%A7%D9%86%D9%8A%D8%A9",
+    "de": "https://de.wikipedia.org/wiki/Osmanisches_Reich",
+    "en": "https://en.wikipedia.org/wiki/Ottoman_Empire",
     "fr": "https://fr.wikipedia.org/wiki/Empire_ottoman",
+    "es": "https://es.wikipedia.org/wiki/Imperio_otomano",
     "hi": "https://hi.wikipedia.org/wiki/%E0%A4%89%E0%A4%B8%E0%A5%8D%E0%A4%AE%E0%A4%BE%E0%A4%A8%E0%A5%80_%E0%A4%B8%E0%A4%BE%E0%A4%AE%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%9C%E0%A5%8D%E0%A4%AF",
+    "ko": "https://ko.wikipedia.org/wiki/%EC%98%A4%EC%8A%A4%EB%A7%8C_%EC%A0%9C%EA%B5%AD",
+    "nl": "https://nl.wikipedia.org/wiki/Ottomaanse_Rijk",
     "id": "https://id.wikipedia.org/wiki/Kesultanan_Utsmaniyah",
     "it": "https://it.wikipedia.org/wiki/Impero_ottomano",
     "ja": "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%82%B9%E3%83%9E%E3%83%B3%E5%B8%9D%E5%9B%BD",
-    "ko": "https://ko.wikipedia.org/wiki/%EC%98%A4%EC%8A%A4%EB%A7%8C_%EC%A0%9C%EA%B5%AD",
-    "ar": "https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A9_%D8%A7%D9%84%D8%B9%D8%AB%D9%85%D8%A7%D9%86%D9%8A%D8%A9",
-    "bn": "https://bn.wikipedia.org/wiki/%E0%A6%89%E0%A6%B8%E0%A6%AE%E0%A6%BE%E0%A6%A8%E0%A7%80%E0%A6%AF%E0%A6%BC_%E0%A6%B8%E0%A6%BE%E0%A6%AE%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A7%8D%E0%A6%AF",
-    "de": "https://de.wikipedia.org/wiki/Osmanisches_Reich",
-    "en": "https://en.wikipedia.org/wiki/Ottoman_Empire",
-    "es": "https://es.wikipedia.org/wiki/Imperio_otomano",
-    "nl": "https://nl.wikipedia.org/wiki/Ottomaanse_Rijk",
     "pl": "https://pl.wikipedia.org/wiki/Imperium_Osma%C5%84skie",
+    "bn": "https://bn.wikipedia.org/wiki/%E0%A6%89%E0%A6%B8%E0%A6%AE%E0%A6%BE%E0%A6%A8%E0%A7%80%E0%A6%AF%E0%A6%BC_%E0%A6%B8%E0%A6%BE%E0%A6%AE%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A7%8D%E0%A6%AF",
     "pt": "https://pt.wikipedia.org/wiki/Imp%C3%A9rio_Otomano",
     "ru": "https://ru.wikipedia.org/wiki/%D0%9E%D1%81%D0%BC%D0%B0%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_%D0%B8%D0%BC%D0%BF%D0%B5%D1%80%D0%B8%D1%8F",
-    "ur": "https://ur.wikipedia.org/wiki/%D8%B3%D9%84%D8%B7%D9%86%D8%AA_%D8%B9%D8%AB%D9%85%D8%A7%D9%86%DB%8C%DB%81",
-    "zh": "https://zh.wikipedia.org/wiki/%E5%A5%A5%E6%96%AF%E6%9B%BC%E5%B8%9D%E5%9B%BD"
+    "zh": "https://zh.wikipedia.org/wiki/%E5%A5%A5%E6%96%AF%E6%9B%BC%E5%B8%9D%E5%9B%BD",
+    "ur": "https://ur.wikipedia.org/wiki/%D8%B3%D9%84%D8%B7%D9%86%D8%AA_%D8%B9%D8%AB%D9%85%D8%A7%D9%86%DB%8C%DB%81"
    }
   },
   "vijayanagara": {
    "name": {
+    "zh": "毗奢耶那伽罗王朝",
     "ar": "إمبراطورية فيجاياناغارا",
     "bn": "বিজয়নগর সাম্রাজ্য",
     "de": "Vijayanagar",
@@ -1956,8 +1958,7 @@
     "pl": "Królestwo Widźajanagaru",
     "pt": "Reino de Bisnaga",
     "ru": "Виджаянагарская империя",
-    "ur": "وجے نگر سلطنت",
-    "zh": "毗奢耶那伽罗王朝"
+    "ur": "وجے نگر سلطنت"
    },
    "wiki": {
     "ar": "https://ar.wikipedia.org/wiki/%D8%A5%D9%85%D8%A8%D8%B1%D8%A7%D8%B7%D9%88%D8%B1%D9%8A%D8%A9_%D9%81%D9%8A%D8%AC%D8%A7%D9%8A%D8%A7%D9%86%D8%A7%D8%BA%D8%A7%D8%B1%D8%A7",
@@ -2000,6 +2001,11 @@
     "nl": "Koninkrijk Ajoethia"
    },
    "wiki": {
+    "ru": "https://ru.wikipedia.org/wiki/%D0%90%D1%8E%D1%82%D0%B8%D1%8F_(%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%BE)",
+    "ur": "https://ur.wikipedia.org/wiki/%D9%85%D9%85%D9%84%DA%A9%D8%AA_%D8%A7%DB%8C%D9%88%D8%AA%DA%BE%D8%A7%DB%8C%D8%A7",
+    "zh": "https://zh.wikipedia.org/wiki/%E9%98%BF%E7%91%9C%E9%99%80%E8%80%B6%E7%8E%8B%E5%9B%BD",
+    "ar": "https://ar.wikipedia.org/wiki/%D9%85%D9%85%D9%84%D9%83%D8%A9_%D8%A3%D9%8A%D9%88%D8%AB%D8%A7%D9%8A%D8%A7",
+    "bn": "https://bn.wikipedia.org/wiki/%E0%A6%85%E0%A6%AF%E0%A6%BC%E0%A7%81%E0%A6%A7%E0%A7%8D%E0%A6%AF%E0%A6%BE_%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A7%8D%E0%A6%AF",
     "de": "https://de.wikipedia.org/wiki/K%C3%B6nigreich_Ayutthaya",
     "en": "https://en.wikipedia.org/wiki/Ayutthaya_Kingdom",
     "es": "https://es.wikipedia.org/wiki/Reino_de_Ayutthaya",
@@ -2010,12 +2016,7 @@
     "ja": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%A6%E3%82%BF%E3%83%A4%E7%8E%8B%E6%9C%9D",
     "ko": "https://ko.wikipedia.org/wiki/%EC%95%84%EC%9C%A0%ED%83%80%EC%95%BC_%EC%99%95%EA%B5%AD",
     "nl": "https://nl.wikipedia.org/wiki/Koninkrijk_Ayutthaya",
-    "pt": "https://pt.wikipedia.org/wiki/Reino_de_Aiutaia",
-    "ru": "https://ru.wikipedia.org/wiki/%D0%90%D1%8E%D1%82%D0%B8%D1%8F_(%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%BE)",
-    "ur": "https://ur.wikipedia.org/wiki/%D9%85%D9%85%D9%84%DA%A9%D8%AA_%D8%A7%DB%8C%D9%88%D8%AA%DA%BE%D8%A7%DB%8C%D8%A7",
-    "zh": "https://zh.wikipedia.org/wiki/%E9%98%BF%E7%91%9C%E9%99%80%E8%80%B6%E7%8E%8B%E5%9B%BD",
-    "ar": "https://ar.wikipedia.org/wiki/%D9%85%D9%85%D9%84%D9%83%D8%A9_%D8%A3%D9%8A%D9%88%D8%AB%D8%A7%D9%8A%D8%A7",
-    "bn": "https://bn.wikipedia.org/wiki/%E0%A6%85%E0%A6%AF%E0%A6%BC%E0%A7%81%E0%A6%A7%E0%A7%8D%E0%A6%AF%E0%A6%BE_%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A7%8D%E0%A6%AF"
+    "pt": "https://pt.wikipedia.org/wiki/Reino_de_Aiutaia"
    }
   },
   "ming": {
@@ -2039,16 +2040,16 @@
     "ur": "منگ خاندان"
    },
    "wiki": {
-    "ar": "https://ar.wikipedia.org/wiki/%D8%B3%D9%84%D8%A7%D9%84%D8%A9_%D9%85%D9%8A%D9%86%D8%BA_%D8%A7%D9%84%D8%AD%D8%A7%D9%83%D9%85%D8%A9",
-    "bn": "https://bn.wikipedia.org/wiki/%E0%A6%AE%E0%A6%BF%E0%A6%82_%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A6%AC%E0%A6%82%E0%A6%B6",
-    "de": "https://de.wikipedia.org/wiki/Ming-Dynastie",
-    "en": "https://en.wikipedia.org/wiki/Ming_dynasty",
-    "es": "https://es.wikipedia.org/wiki/Dinast%C3%ADa_Ming",
     "fr": "https://fr.wikipedia.org/wiki/Dynastie_Ming",
     "hi": "https://hi.wikipedia.org/wiki/%E0%A4%AE%E0%A4%BF%E0%A4%82%E0%A4%97_%E0%A4%B0%E0%A4%BE%E0%A4%9C%E0%A4%B5%E0%A4%82%E0%A4%B6",
     "id": "https://id.wikipedia.org/wiki/Dinasti_Ming",
     "it": "https://it.wikipedia.org/wiki/Dinastia_Ming",
     "ja": "https://ja.wikipedia.org/wiki/%E6%98%8E",
+    "ar": "https://ar.wikipedia.org/wiki/%D8%B3%D9%84%D8%A7%D9%84%D8%A9_%D9%85%D9%8A%D9%86%D8%BA_%D8%A7%D9%84%D8%AD%D8%A7%D9%83%D9%85%D8%A9",
+    "bn": "https://bn.wikipedia.org/wiki/%E0%A6%AE%E0%A6%BF%E0%A6%82_%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A6%AC%E0%A6%82%E0%A6%B6",
+    "de": "https://de.wikipedia.org/wiki/Ming-Dynastie",
+    "en": "https://en.wikipedia.org/wiki/Ming_dynasty",
+    "es": "https://es.wikipedia.org/wiki/Dinast%C3%ADa_Ming",
     "ko": "https://ko.wikipedia.org/wiki/%EB%AA%85%EB%82%98%EB%9D%BC",
     "nl": "https://nl.wikipedia.org/wiki/Ming-dynastie",
     "pl": "https://pl.wikipedia.org/wiki/Dynastia_Ming",
@@ -2060,8 +2061,6 @@
   },
   "timurid": {
    "name": {
-    "ur": "تیموری سلطنت",
-    "zh": "帖木儿帝国",
     "hi": "तैमूरी राजवंश",
     "id": "Dinasti Timuriyah",
     "ko": "티무르 왕조",
@@ -2076,12 +2075,16 @@
     "it": "Impero timuride",
     "ja": "ティムール朝",
     "nl": "Timoeriden",
-    "ru": "Государство Тимуридов"
+    "ru": "Государство Тимуридов",
+    "ur": "تیموری سلطنت",
+    "zh": "帖木儿帝国"
    },
    "wiki": {
-    "ja": "https://ja.wikipedia.org/wiki/%E3%83%86%E3%82%A3%E3%83%A0%E3%83%BC%E3%83%AB%E6%9C%9D",
-    "ko": "https://ko.wikipedia.org/wiki/%ED%8B%B0%EB%AC%B4%EB%A5%B4_%EC%A0%9C%EA%B5%AD",
+    "zh": "https://zh.wikipedia.org/wiki/%E5%B8%96%E6%9C%A8%E5%84%BF%E5%B8%9D%E5%9B%BD",
     "nl": "https://nl.wikipedia.org/wiki/Timoeriden",
+    "pl": "https://pl.wikipedia.org/wiki/Imperium_Timura",
+    "ru": "https://ru.wikipedia.org/wiki/%D0%98%D0%BC%D0%BF%D0%B5%D1%80%D0%B8%D1%8F_%D0%A2%D0%B8%D0%BC%D1%83%D1%80%D0%B8%D0%B4%D0%BE%D0%B2",
+    "ur": "https://ur.wikipedia.org/wiki/%D8%AA%DB%8C%D9%85%D9%88%D8%B1%DB%8C_%D8%B3%D9%84%D8%B7%D9%86%D8%AA",
     "ar": "https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A9_%D8%A7%D9%84%D8%AA%D9%8A%D9%85%D9%88%D8%B1%D9%8A%D8%A9",
     "bn": "https://bn.wikipedia.org/wiki/%E0%A6%A4%E0%A7%88%E0%A6%AE%E0%A7%81%E0%A6%B0%E0%A6%BF_%E0%A6%B8%E0%A6%BE%E0%A6%AE%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A7%8D%E0%A6%AF",
     "de": "https://de.wikipedia.org/wiki/Timuridenreich",
@@ -2091,10 +2094,8 @@
     "hi": "https://hi.wikipedia.org/wiki/%E0%A4%A4%E0%A5%88%E0%A4%AE%E0%A5%82%E0%A4%B0%E0%A5%80_%E0%A4%B0%E0%A4%BE%E0%A4%9C%E0%A4%B5%E0%A4%82%E0%A4%B6",
     "id": "https://id.wikipedia.org/wiki/Kekaisaran_Timuriyah",
     "it": "https://it.wikipedia.org/wiki/Impero_timuride",
-    "pl": "https://pl.wikipedia.org/wiki/Imperium_Timura",
-    "ru": "https://ru.wikipedia.org/wiki/%D0%98%D0%BC%D0%BF%D0%B5%D1%80%D0%B8%D1%8F_%D0%A2%D0%B8%D0%BC%D1%83%D1%80%D0%B8%D0%B4%D0%BE%D0%B2",
-    "ur": "https://ur.wikipedia.org/wiki/%D8%AA%DB%8C%D9%85%D9%88%D8%B1%DB%8C_%D8%B3%D9%84%D8%B7%D9%86%D8%AA",
-    "zh": "https://zh.wikipedia.org/wiki/%E5%B8%96%E6%9C%A8%E5%84%BF%E5%B8%9D%E5%9B%BD"
+    "ja": "https://ja.wikipedia.org/wiki/%E3%83%86%E3%82%A3%E3%83%A0%E3%83%BC%E3%83%AB%E6%9C%9D",
+    "ko": "https://ko.wikipedia.org/wiki/%ED%8B%B0%EB%AC%B4%EB%A5%B4_%EC%A0%9C%EA%B5%AD"
    }
   },
   "aztec": {
@@ -2116,7 +2117,6 @@
     "hi": "आस्तेक साम्राज्य"
    },
    "wiki": {
-    "ja": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%B9%E3%83%86%E3%82%AB",
     "ar": "https://ar.wikipedia.org/wiki/%D8%A5%D9%85%D8%A8%D8%B1%D8%A7%D8%B7%D9%88%D8%B1%D9%8A%D8%A9_%D8%A7%D9%84%D8%A2%D8%B2%D8%AA%D9%8A%D9%83",
     "bn": "https://bn.wikipedia.org/wiki/%E0%A6%8F%E0%A6%9C%E0%A6%9F%E0%A7%87%E0%A6%95_%E0%A6%B8%E0%A6%BE%E0%A6%AE%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A7%8D%E0%A6%AF",
     "de": "https://de.wikipedia.org/wiki/Aztekenreich",
@@ -2126,12 +2126,15 @@
     "id": "https://id.wikipedia.org/wiki/Persekutuan_Tiga_Kaum_Aztek",
     "it": "https://it.wikipedia.org/wiki/Impero_azteco",
     "ko": "https://ko.wikipedia.org/wiki/%EC%95%84%EC%A6%88%ED%85%8D_%EC%A0%9C%EA%B5%AD",
+    "ja": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%B9%E3%83%86%E3%82%AB",
     "ru": "https://ru.wikipedia.org/wiki/%D0%90%D1%86%D1%82%D0%B5%D0%BA%D1%81%D0%BA%D0%B0%D1%8F_%D0%B8%D0%BC%D0%BF%D0%B5%D1%80%D0%B8%D1%8F",
     "zh": "https://zh.wikipedia.org/wiki/%E9%98%BF%E5%85%B9%E7%89%B9%E5%85%8B%E5%B8%9D%E5%9B%BD"
    }
   },
   "inca": {
    "name": {
+    "ur": "انکا",
+    "zh": "印加帝國",
     "ar": "إنكا",
     "bn": "ইনকা সাম্রাজ্য",
     "de": "Inkareich",
@@ -2146,9 +2149,7 @@
     "nl": "Inca's",
     "pl": "państwo Inków",
     "pt": "Império Inca",
-    "ru": "Империя инков",
-    "ur": "انکا",
-    "zh": "印加帝國"
+    "ru": "Империя инков"
    },
    "wiki": {
     "bn": "https://bn.wikipedia.org/wiki/%E0%A6%87%E0%A6%A8%E0%A6%95%E0%A6%BE_%E0%A6%B8%E0%A6%BE%E0%A6%AE%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A7%8D%E0%A6%AF",

@@ -11,6 +11,10 @@
   "value": "Naoero",
   "since": "2026-11-04"
  },
+ "country PS name|nl": {
+  "value": "Palestina",
+  "since": "2026-11-16"
+ },
  "country SM capital Q1848|it": {
   "value": "San Marino",
   "since": "2026-11-04"
@@ -23,13 +27,33 @@
   "value": "Khanty-Mansi Autonomous Okrug",
   "since": "2026-11-04"
  },
+ "RU 28173009B96976580001980 name|en": {
+  "value": "Republic of Karelia",
+  "since": "2026-11-16"
+ },
+ "RU 28173009B3082792446388 name|en": {
+  "value": "Nenets Autonomous Okrug",
+  "since": "2026-11-16"
+ },
  "RU 28173009B3082792446388 capital|es": {
   "value": "Narián-Mar",
   "since": "2026-11-04"
  },
- "RU RUS-ZAP capital|pt": {
-  "value": "Zaporizhzhya",
-  "since": "2026-11-04"
+ "RU 28173009B48058606062294 name|en": {
+  "value": "Sakha Republic",
+  "since": "2026-11-16"
+ },
+ "RU 28173009B47279883421777 name|en": {
+  "value": "Yamalo-Nenets Autonomous Okrug",
+  "since": "2026-11-16"
+ },
+ "RU 28173009B70023447378008 name|it": {
+  "value": "Territorio della Kamčatka",
+  "since": "2026-11-16"
+ },
+ "RU 28173009B11091203162490 name|en": {
+  "value": "Chukotka Autonomous Okrug",
+  "since": "2026-11-16"
  },
  "CA 82249235B66370767641120 capital|ar": {
   "value": "تورنتو",
@@ -39,17 +63,53 @@
   "value": "Província de Taiwan",
   "since": "2026-11-04"
  },
+ "CN 43563684B64666899633249 name|it": {
+  "value": "Ningxia",
+  "since": "2026-11-16"
+ },
+ "CN 43563684B50492231896073 name|it": {
+  "value": "Xinjiang",
+  "since": "2026-11-16"
+ },
  "US 66186276B98555229882405 name|ru": {
   "value": "штат Вашингтон",
   "since": "2026-11-04"
+ },
+ "US 66186276B2592965416524 name|de": {
+  "value": "Neumexiko",
+  "since": "2026-11-16"
+ },
+ "US 66186276B79689460185872 name|id": {
+  "value": "Carolina Selatan",
+  "since": "2026-11-16"
  },
  "US 66186276B94082813086253 capital|it": {
   "value": "Washington D.C.",
   "since": "2026-11-04"
  },
+ "IN 1811400B81659894240990 name|it": {
+  "value": "Puducherry",
+  "since": "2026-11-16"
+ },
  "IN 1811400B56841107211215 capital|fr": {
   "value": "Bengaluru",
   "since": "2026-11-04"
+ },
+ "AR 19242171B67325407992592 name|ru": {
+  "value": "провинция Буэнос-Айрес",
+  "since": "2026-11-16"
+ },
+ "AR 19242171B67325407992592 name|it": {
+  "value": "provincia di Buenos Aires",
+  "since": "2026-11-16"
+ },
+ "AR 19242171B27114544829768 name|en": {
+  "value": "Tierra del Fuego Province",
+  "since": "2026-11-16"
+ },
+ "AR 19242171B27114544829768 name|ru": {
+  "value": "Огненная Земля",
+  "since": "2026-11-16"
  },
  "DZ DZA-Q266411 capital|en": {
   "value": "Bordj Bou Arréridj",
@@ -75,16 +135,20 @@
   "value": "카사이상트랄 주",
   "since": "2026-11-04"
  },
+ "MX 31927357B35339934753022 name|ar": {
+  "value": "باخا كاليفورنيا",
+  "since": "2026-11-16"
+ },
  "MX 31927357B35339934753022 capital|ja": {
   "value": "メヒカリ",
   "since": "2026-11-04"
  },
+ "MX 31927357B33389180120223 name|ar": {
+  "value": "باخا كاليفورنيا سور",
+  "since": "2026-11-16"
+ },
  "MX 31927357B41082348713023 name|ru": {
   "value": "штат Мехико",
-  "since": "2026-11-04"
- },
- "SD 86620642B86272532082738 name|ar": {
-  "value": "اقليم النيل الأزرق",
   "since": "2026-11-04"
  },
  "SD 86620642B89646054714247 name|ru": {
@@ -102,6 +166,14 @@
  "LY 10800210B58781405840719 capital|en": {
   "value": "Misrata",
   "since": "2026-11-04"
+ },
+ "IR 35533022B26513785982315 name|ar": {
+  "value": "محافظة عيلام",
+  "since": "2026-11-16"
+ },
+ "IR 35533022B45499916569926 capital|fr": {
+  "value": "Zâhedân",
+  "since": "2026-11-16"
  },
  "MN 14279143B7284431230829 capital|hi": {
   "value": "ओलगी",
@@ -138,6 +210,14 @@
  "TD 23847190B50657270888212 name|hi": {
   "value": "वद्दाय प्रांत",
   "since": "2026-11-04"
+ },
+ "ZA 76434192B57942368908249 name|it": {
+  "value": "Stato libero",
+  "since": "2026-11-16"
+ },
+ "EG 46179711B93993738941206 name|id": {
+  "value": "Kegubernuran Asyut",
+  "since": "2026-11-16"
  },
  "EG 46179711B98212466425872 name|ja": {
   "value": "ダカフリーヤ県",
@@ -335,6 +415,10 @@
   "value": "Cherníhiv",
   "since": "2026-11-04"
  },
+ "UA 14850775B82824220650579 name|it": {
+  "value": "oblast' della Transcarpazia",
+  "since": "2026-11-16"
+ },
  "UA 14850775B53240635394722 capital|fr": {
   "value": "Odesa",
   "since": "2026-11-04"
@@ -343,21 +427,65 @@
   "value": "Kropyvnytsky",
   "since": "2026-11-04"
  },
+ "KE 32016919B99956097556155 name|ko": {
+  "value": "냔다루아현",
+  "since": "2026-11-16"
+ },
+ "KE 32016919B45734544235065 name|ko": {
+  "value": "냐미라현",
+  "since": "2026-11-16"
+ },
+ "FR 19338628B57683459369229 name|nl": {
+  "value": "Occitanië",
+  "since": "2026-11-16"
+ },
+ "SE 68755315B42087740049136 name|it": {
+  "value": "contea di Västernorrland",
+  "since": "2026-11-16"
+ },
  "SE 68755315B22015401421101 name|it": {
   "value": "contea di Västerbotten",
   "since": "2026-11-04"
  },
- "JP 47310658B55038426470858 name|ru": {
-  "value": "префектура Осака",
-  "since": "2026-11-04"
+ "SE 68755315B20841454082156 name|it": {
+  "value": "contea di Dalarna",
+  "since": "2026-11-16"
  },
- "JP 47310658B55038426470858 name|it": {
-  "value": "Prefettura di Osaka",
-  "since": "2026-11-04"
+ "SE 68755315B7109819079053 name|it": {
+  "value": "contea di Västmanland",
+  "since": "2026-11-16"
+ },
+ "SE 68755315B32575645025153 name|it": {
+  "value": "contea di Örebro",
+  "since": "2026-11-16"
+ },
+ "SE 68755315B33676065986160 name|it": {
+  "value": "contea di Kronoberg",
+  "since": "2026-11-16"
+ },
+ "SE 68755315B90281797632670 name|it": {
+  "value": "contea di Norrbotten",
+  "since": "2026-11-16"
+ },
+ "SE 68755315B38650871956455 name|it": {
+  "value": "contea di Gotland",
+  "since": "2026-11-16"
+ },
+ "MA 70788906B83815134303720 capital|bn": {
+  "value": "ফেস, মরক্কো",
+  "since": "2026-11-16"
  },
  "JP 47310658B55038426470858 name|nl": {
   "value": "Prefectuur Osaka",
   "since": "2026-11-04"
+ },
+ "JP 47310658B25007192225139 name|ru": {
+  "value": "Ивате",
+  "since": "2026-11-16"
+ },
+ "JP 47310658B99930143900280 name|en": {
+  "value": "Hokkaido Prefecture",
+  "since": "2026-11-16"
  },
  "DE 10402087B40185768535592 name|es": {
   "value": "Brandemburgo",
@@ -371,9 +499,53 @@
   "value": "वीसबाडन",
   "since": "2026-11-04"
  },
+ "PH PHL-Q17081785 name|fr": {
+  "value": "région insulaire de Negros",
+  "since": "2026-11-16"
+ },
+ "FI 49019192B95561484044627 name|it": {
+  "value": "Savo Meridionale",
+  "since": "2026-11-16"
+ },
+ "FI 49019192B62635796201807 name|it": {
+  "value": "Savo Settentrionale",
+  "since": "2026-11-16"
+ },
+ "FI 49019192B78555514573464 name|it": {
+  "value": "Finlandia Centrale",
+  "since": "2026-11-16"
+ },
+ "FI 49019192B43233145825563 name|it": {
+  "value": "Ostrobotnia Meridionale",
+  "since": "2026-11-16"
+ },
+ "FI 49019192B58135301868459 name|it": {
+  "value": "Ostrobotnia Centrale",
+  "since": "2026-11-16"
+ },
+ "FI 49019192B87432053307570 name|it": {
+  "value": "Ostrobotnia Settentrionale",
+  "since": "2026-11-16"
+ },
+ "FI 49019192B73736336897537 name|it": {
+  "value": "Carelia Settentrionale",
+  "since": "2026-11-16"
+ },
  "FI 49019192B22299411224621 name|de": {
   "value": "Ostbottnien",
   "since": "2026-11-04"
+ },
+ "FI 49019192B76795664887161 name|it": {
+  "value": "Carelia Meridionale",
+  "since": "2026-11-16"
+ },
+ "VN VNM-Q25282 name|ru": {
+  "value": "Дананг",
+  "since": "2026-11-16"
+ },
+ "PL 17162690B18723007704312 name|ru": {
+  "value": "Варминьско-Мазурское воеводство",
+  "since": "2026-11-16"
  },
  "IT 23120603B10307341449000 name|es": {
   "value": "Trentino-Alto Adigio/Südtirol",
@@ -391,17 +563,65 @@
   "value": "Kaysone Phomvihane",
   "since": "2026-11-04"
  },
+ "BY 45462678B41589714648574 name|en": {
+  "value": "Grodno Region",
+  "since": "2026-11-16"
+ },
  "BY 45462678B29468378769629 name|en": {
   "value": "Brest region",
   "since": "2026-11-04"
+ },
+ "BY 45462678B58682879627750 name|en": {
+  "value": "Mogilev Region",
+  "since": "2026-11-16"
  },
  "SY 8384693B93490606690779 capital|pt": {
   "value": "Hómece",
   "since": "2026-11-04"
  },
- "GR 26713481B23289270995723 name|en": {
-  "value": "Thessaly Region",
-  "since": "2026-11-04"
+ "SY 8384693B23566608622518 capital|ar": {
+  "value": "درعا",
+  "since": "2026-11-16"
+ },
+ "TJ 86453995B76936784723703 name|it": {
+  "value": "Suġd",
+  "since": "2026-11-16"
+ },
+ "TJ 86453995B76936784723703 capital|it": {
+  "value": "Huçand",
+  "since": "2026-11-16"
+ },
+ "TJ 86453995B82116761581179 name|it": {
+  "value": "Gorno-Badahšon",
+  "since": "2026-11-16"
+ },
+ "TJ 86453995B82116761581179 capital|it": {
+  "value": "Horuġ",
+  "since": "2026-11-16"
+ },
+ "TJ 86453995B79808671966952 name|it": {
+  "value": "Hatlon",
+  "since": "2026-11-16"
+ },
+ "TJ 86453995B79808671966952 capital|it": {
+  "value": "Bohtar",
+  "since": "2026-11-16"
+ },
+ "GR 26713481B84884565940454 name|en": {
+  "value": "Eastern Macedonia and Thrace",
+  "since": "2026-11-16"
+ },
+ "GR 26713481B13719921321351 name|en": {
+  "value": "Central Macedonia",
+  "since": "2026-11-16"
+ },
+ "GR 26713481B79624114853188 name|en": {
+  "value": "Western Macedonia",
+  "since": "2026-11-16"
+ },
+ "GR 26713481B784345685192 name|en": {
+  "value": "Epirus",
+  "since": "2026-11-16"
  },
  "GR 26713481B23289270995723 name|zh": {
   "value": "色萨利大区",
@@ -431,13 +651,161 @@
   "value": "Region Tesalia",
   "since": "2026-11-04"
  },
+ "GR 26713481B15414951167649 name|en": {
+  "value": "Central Greece",
+  "since": "2026-11-16"
+ },
+ "GR 26713481B82557054028644 name|en": {
+  "value": "Ionian Islands",
+  "since": "2026-11-16"
+ },
+ "GR 26713481B45081925310995 name|en": {
+  "value": "Western Greece",
+  "since": "2026-11-16"
+ },
+ "GR 26713481B43531359458460 name|en": {
+  "value": "Peloponnese",
+  "since": "2026-11-16"
+ },
+ "GR 26713481B5850386890635 name|en": {
+  "value": "Attica",
+  "since": "2026-11-16"
+ },
+ "GR 26713481B43979888680650 name|en": {
+  "value": "North Aegean",
+  "since": "2026-11-16"
+ },
  "GR 26713481B43979888680650 capital|hi": {
   "value": "मितिलिनी",
   "since": "2026-11-04"
  },
+ "GR 26713481B52894455575268 name|en": {
+  "value": "South Aegean",
+  "since": "2026-11-16"
+ },
+ "GR 26713481B79456911033966 name|en": {
+  "value": "Crete",
+  "since": "2026-11-16"
+ },
+ "BG 22928101B16069235588997 name|en": {
+  "value": "Blagoevgrad Province",
+  "since": "2026-11-16"
+ },
+ "BG 22928101B44315306220510 name|en": {
+  "value": "Burgas Province",
+  "since": "2026-11-16"
+ },
+ "BG 22928101B87459279051229 name|en": {
+  "value": "Dobrich Province",
+  "since": "2026-11-16"
+ },
+ "BG 22928101B98033392474290 name|en": {
+  "value": "Gabrovo Province",
+  "since": "2026-11-16"
+ },
+ "BG 22928101B79406413645892 name|en": {
+  "value": "Haskovo Province",
+  "since": "2026-11-16"
+ },
+ "BG 22928101B68200013052436 name|en": {
+  "value": "Kardzhali Province",
+  "since": "2026-11-16"
+ },
  "BG 22928101B68200013052436 capital|hi": {
   "value": "कर्जाली",
   "since": "2026-11-04"
+ },
+ "BG 22928101B44341321223640 name|en": {
+  "value": "Kyustendil Province",
+  "since": "2026-11-16"
+ },
+ "BG 22928101B46852240648203 name|en": {
+  "value": "Lovech Province",
+  "since": "2026-11-16"
+ },
+ "BG 22928101B62968334423713 name|en": {
+  "value": "Montana Province",
+  "since": "2026-11-16"
+ },
+ "BG 22928101B54448324978016 name|en": {
+  "value": "Pazardzhik Province",
+  "since": "2026-11-16"
+ },
+ "BG 22928101B96010659565513 name|en": {
+  "value": "Pernik Province",
+  "since": "2026-11-16"
+ },
+ "BG 22928101B31715207622661 name|en": {
+  "value": "Pleven Province",
+  "since": "2026-11-16"
+ },
+ "BG 22928101B63653503228719 name|en": {
+  "value": "Plovdiv Province",
+  "since": "2026-11-16"
+ },
+ "BG 22928101B37005697936135 name|en": {
+  "value": "Razgrad Province",
+  "since": "2026-11-16"
+ },
+ "BG 22928101B77314555344177 name|en": {
+  "value": "Ruse Province",
+  "since": "2026-11-16"
+ },
+ "BG 22928101B51752222739071 name|en": {
+  "value": "Shumen Province",
+  "since": "2026-11-16"
+ },
+ "BG 22928101B76058973774161 name|en": {
+  "value": "Silistra Province",
+  "since": "2026-11-16"
+ },
+ "BG 22928101B44229797432023 name|en": {
+  "value": "Sliven Province",
+  "since": "2026-11-16"
+ },
+ "BG 22928101B66285988905372 name|en": {
+  "value": "Smolyan Province",
+  "since": "2026-11-16"
+ },
+ "BG 22928101B17014479854950 name|en": {
+  "value": "Sofia Province",
+  "since": "2026-11-16"
+ },
+ "BG 22928101B40975042441370 name|en": {
+  "value": "Sofia City Province",
+  "since": "2026-11-16"
+ },
+ "BG 22928101B69206981842261 name|en": {
+  "value": "Stara Zagora Province",
+  "since": "2026-11-16"
+ },
+ "BG 22928101B13229128735183 name|en": {
+  "value": "Targovishte Province",
+  "since": "2026-11-16"
+ },
+ "BG 22928101B59958785683132 name|en": {
+  "value": "Varna Province",
+  "since": "2026-11-16"
+ },
+ "BG 22928101B33485564928872 name|en": {
+  "value": "Veliko Tarnovo Province",
+  "since": "2026-11-16"
+ },
+ "BG 22928101B21472932183906 name|en": {
+  "value": "Vidin Province",
+  "since": "2026-11-16"
+ },
+ "BG 22928101B85643102977503 name|en": {
+  "value": "Vratsa Province",
+  "since": "2026-11-16"
+ },
+ "BG 22928101B85643102977503 name|ru": {
+  "value": "Врацкая область",
+  "since": "2026-11-16"
+ },
+ "BG 22928101B84935851538926 name|en": {
+  "value": "Yambol Province",
+  "since": "2026-11-16"
  },
  "GT 53557124B24572600119042 name|hi": {
   "value": "आल्ता बेरापास विभाग",
@@ -454,6 +822,10 @@
  "GT 53557124B7234641414324 name|hi": {
   "value": "पेतेन विभाग",
   "since": "2026-11-04"
+ },
+ "GT 53557124B7234641414324 name|ru": {
+  "value": "Эль-Петен",
+  "since": "2026-11-16"
  },
  "GT 53557124B57493731306464 name|hi": {
   "value": "किचे विभाग",
@@ -507,6 +879,10 @@
   "value": "एस्क्विंत्ला विभाग",
   "since": "2026-11-04"
  },
+ "GT 53557124B88187939081538 name|it": {
+  "value": "dipartimento di Escuintla",
+  "since": "2026-11-16"
+ },
  "GT 53557124B88187939081538 capital|hi": {
   "value": "एस्क्विंत्ला",
   "since": "2026-11-04"
@@ -527,9 +903,81 @@
   "value": "सांता रोसा विभाग",
   "since": "2026-11-04"
  },
+ "PT 24955722B60132865756536 name|en": {
+  "value": "Aveiro District",
+  "since": "2026-11-16"
+ },
+ "PT 24955722B69535494870966 name|en": {
+  "value": "Beja District",
+  "since": "2026-11-16"
+ },
+ "PT 24955722B56624562889325 name|en": {
+  "value": "Braga District",
+  "since": "2026-11-16"
+ },
+ "PT 24955722B95387288640341 name|en": {
+  "value": "Bragança District",
+  "since": "2026-11-16"
+ },
+ "PT 24955722B65070061461907 name|en": {
+  "value": "Castelo Branco District",
+  "since": "2026-11-16"
+ },
+ "PT 24955722B78831183552196 name|en": {
+  "value": "Coimbra District",
+  "since": "2026-11-16"
+ },
+ "PT 24955722B78831183552196 name|it": {
+  "value": "distretto di Coimbra",
+  "since": "2026-11-16"
+ },
+ "PT 24955722B96057717933498 name|en": {
+  "value": "Évora District",
+  "since": "2026-11-16"
+ },
+ "PT 24955722B93513210668499 name|en": {
+  "value": "Faro District",
+  "since": "2026-11-16"
+ },
+ "PT 24955722B16214435525429 name|en": {
+  "value": "Guarda District",
+  "since": "2026-11-16"
+ },
+ "PT 24955722B48064919479677 name|en": {
+  "value": "Leiria District",
+  "since": "2026-11-16"
+ },
+ "PT 24955722B70468072404853 name|en": {
+  "value": "Lisbon District",
+  "since": "2026-11-16"
+ },
+ "PT 24955722B4222884881176 name|en": {
+  "value": "Portalegre District",
+  "since": "2026-11-16"
+ },
  "PT 24955722B24387739047039 name|en": {
-  "value": "Oporto",
-  "since": "2026-11-04"
+  "value": "Porto District",
+  "since": "2026-11-16"
+ },
+ "PT 24955722B7740823350033 name|en": {
+  "value": "Santarém District",
+  "since": "2026-11-16"
+ },
+ "PT 24955722B80201627987226 name|en": {
+  "value": "Setúbal District",
+  "since": "2026-11-16"
+ },
+ "PT 24955722B13525102878781 name|en": {
+  "value": "Viana do Castelo District",
+  "since": "2026-11-16"
+ },
+ "PT 24955722B72875804367268 name|en": {
+  "value": "Vila Real District",
+  "since": "2026-11-16"
+ },
+ "PT 24955722B86486174875848 name|en": {
+  "value": "Viseu District",
+  "since": "2026-11-16"
  },
  "RS SRB-PRZ capital|hi": {
   "value": "प्रिज़्रेन",
@@ -538,6 +986,14 @@
  "CZ 73172107B56271871797203 capital|de": {
   "value": "Hradec Králové / Königgrätz",
   "since": "2026-11-04"
+ },
+ "GE 13066534B27622454556820 name|en": {
+  "value": "Autonomous Republic of Adjara",
+  "since": "2026-11-16"
+ },
+ "NL 6811986B50931527975892 name|de": {
+  "value": "Zeeland",
+  "since": "2026-11-16"
  },
  "GW 76643164B18917431809987 name|pt": {
   "value": "Bolama",
@@ -586,6 +1042,10 @@
  "BE 21686613B2396966306431 name|nl": {
   "value": "Antwerpen",
   "since": "2026-11-04"
+ },
+ "BE 21686613B67770072661487 name|hi": {
+  "value": "लिम्बर्ग",
+  "since": "2026-11-16"
  },
  "BE 21686613B30775418393346 name|en": {
   "value": "Liege",
@@ -766,6 +1226,14 @@
  "AD 23515209B24107209170284 name|nl": {
   "value": "Parochie Andorra la Vella",
   "since": "2026-11-04"
+ },
+ "MV 51498476B98791116592748 name|ur": {
+  "value": "ہا الف اٹول",
+  "since": "2026-11-16"
+ },
+ "MV 51498476B3846456088277 name|ur": {
+  "value": "لامو اٹول",
+  "since": "2026-11-16"
  },
  "SM 276375B17354965621201 name|it": {
   "value": "San Marino",

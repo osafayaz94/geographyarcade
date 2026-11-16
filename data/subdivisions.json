@@ -2042,7 +2042,7 @@
     "capital": {
      "en": "Gatchina",
      "zh": "加特契纳",
-     "hi": null,
+     "hi": "गाचिना",
      "es": "Gátchina",
      "ar": "غاتتشينا",
      "fr": "Gattchina",
@@ -4037,276 +4037,6 @@
      "year": 2025
     },
     "area": 143600
-   },
-   {
-    "id": "RUS-CR",
-    "iso": null,
-    "qid": "Q15966495",
-    "name": {
-     "en": "Republic of Crimea",
-     "zh": "克里米亚共和国",
-     "hi": null,
-     "es": "Crimea",
-     "ar": "جمهورية القرم",
-     "fr": "république de Crimée",
-     "bn": "ক্রিমিয়া প্রজাতন্ত্র",
-     "ur": "جمہوریہ کریمیا",
-     "ru": "Республика Крым",
-     "pt": "República da Crimeia",
-     "de": "Republik Krim",
-     "id": "Republik Krimea",
-     "it": "Repubblica di Crimea",
-     "ja": "クリミア共和国",
-     "ko": "크림 공화국",
-     "pl": "Republika Krymu",
-     "nl": "Republiek van de Krim"
-    },
-    "capital": {
-     "en": "Simferopol",
-     "zh": "辛菲罗波尔",
-     "hi": "सिमफेरोपोल",
-     "es": "Simferópol",
-     "ar": "سيمفروبول",
-     "fr": "Simferopol",
-     "bn": "সিম্ফেরোপুল",
-     "ur": "سمفروپول",
-     "ru": "Симферополь",
-     "pt": "Simferopol",
-     "de": "Simferopol",
-     "id": "Simferopol",
-     "it": "Sinferopoli",
-     "ja": "シンフェロポリ",
-     "ko": "심페로폴",
-     "pl": "Symferopol",
-     "nl": "Simferopol"
-    },
-    "capitalQid": "Q19566",
-    "population": {
-     "value": 1896393,
-     "year": 2022
-    },
-    "area": null
-   },
-   {
-    "id": "RUS-SEV",
-    "iso": null,
-    "qid": "Q7525",
-    "name": {
-     "en": "Sevastopol",
-     "zh": "塞瓦斯托波尔",
-     "hi": "सेवस्तोपोल",
-     "es": "Sebastopol",
-     "ar": "سيفاستوبول",
-     "fr": "Sébastopol",
-     "bn": "সেভাস্তোপোল",
-     "ur": "سواستوپول",
-     "ru": "Севастополь",
-     "pt": "Sebastopol",
-     "de": "Sewastopol",
-     "id": "Sevastopol",
-     "it": "Sebastopoli",
-     "ja": "セヴァストポリ",
-     "ko": "세바스토폴",
-     "pl": "Sewastopol",
-     "nl": "Sebastopol"
-    },
-    "capital": null,
-    "capitalQid": null,
-    "population": {
-     "value": 485386,
-     "year": 2022
-    },
-    "area": null
-   },
-   {
-    "id": "RUS-DPR",
-    "iso": null,
-    "qid": "Q16150196",
-    "name": {
-     "en": "Donetsk People's Republic",
-     "zh": "顿涅茨克人民共和国",
-     "hi": "डोनेट्स्क पीपुल्स रिपब्लिक",
-     "es": "República Popular de Donetsk",
-     "ar": "جمهورية دونيتسك الشعبية",
-     "fr": "république populaire de Donetsk",
-     "bn": "গণপ্রজাতন্ত্রী দোনেৎস্ক",
-     "ur": "دونیتسک عوامی جمہوریہ",
-     "ru": "Донецкая Народная Республика",
-     "pt": "República Popular de Donetsk",
-     "de": "Volksrepublik Donezk",
-     "id": "Republik Rakyat Donetsk",
-     "it": "Repubblica Popolare di Doneck",
-     "ja": "ドネツク人民共和国",
-     "ko": "도네츠크 인민공화국",
-     "pl": "Doniecka Republika Ludowa",
-     "nl": "Volksrepubliek Donetsk"
-    },
-    "capital": {
-     "en": "Donetsk",
-     "zh": "顿涅茨克",
-     "hi": "डोनेट्स्क",
-     "es": "Donetsk",
-     "ar": "دونيتسك",
-     "fr": "Donetsk",
-     "bn": "দোনেৎস্ক",
-     "ur": "دونیتسک",
-     "ru": "Донецк",
-     "pt": "Donetsk",
-     "de": "Donezk",
-     "id": "Donetsk",
-     "it": "Donec’k",
-     "ja": "ドネツィク",
-     "ko": "도네츠크",
-     "pl": "Donieck",
-     "nl": "Donetsk"
-    },
-    "capitalQid": "Q43070",
-    "population": {
-     "value": 2302444,
-     "year": 2022
-    },
-    "area": null
-   },
-   {
-    "id": "RUS-LPR",
-    "iso": null,
-    "qid": "Q16746854",
-    "name": {
-     "en": "Luhansk People's Republic",
-     "zh": "卢甘斯克人民共和国",
-     "hi": "लुहान्स्क पीपुल्स रिपब्लिक",
-     "es": "República Popular de Lugansk",
-     "ar": "جمهورية لوغانسك الشعبية",
-     "fr": "république populaire de Lougansk",
-     "bn": "গণপ্রজাতন্ত্রী লুহানস্ক",
-     "ur": "لوگانسک عوامی جمہوریہ",
-     "ru": "Луганская Народная Республика",
-     "pt": "República Popular de Lugansk",
-     "de": "Volksrepublik Lugansk",
-     "id": "Republik Rakyat Luhansk",
-     "it": "Repubblica Popolare di Lugansk",
-     "ja": "ルガンスク人民共和国",
-     "ko": "루간스크 인민공화국",
-     "pl": "Ługańska Republika Ludowa",
-     "nl": "Volksrepubliek Loegansk"
-    },
-    "capital": {
-     "en": "Luhansk",
-     "zh": "卢甘斯克",
-     "hi": "लुहांस्क",
-     "es": "Lugansk",
-     "ar": "لوهانسك",
-     "fr": "Louhansk",
-     "bn": "লুহানস্ক",
-     "ur": "لوہانسک",
-     "ru": "Луганск",
-     "pt": "Lugansk",
-     "de": "Luhansk",
-     "id": "Luhansk",
-     "it": "Luhans'k",
-     "ja": "ルハーンシク",
-     "ko": "루한스크",
-     "pl": "Ługańsk",
-     "nl": "Loehansk"
-    },
-    "capitalQid": "Q134279",
-    "population": {
-     "value": 1400000,
-     "year": 2023
-    },
-    "area": null
-   },
-   {
-    "id": "RUS-ZAP",
-    "iso": null,
-    "qid": "Q114333615",
-    "name": {
-     "en": "Zaporozhye Oblast",
-     "zh": null,
-     "hi": null,
-     "es": "Óblast de Zaporoye",
-     "ar": "زبرجية أُبلَست",
-     "fr": "oblast de Zaporojie",
-     "bn": null,
-     "ru": "Запорожская область",
-     "pt": "Oblast de Zaporíjia",
-     "de": "Oblast Saporoshje",
-     "id": "Oblast Zaporozhye",
-     "it": "oblast' di Zaporož'e",
-     "ja": "ザポロージェ州",
-     "ko": "자포로지예주",
-     "pl": "obwód zaporoski",
-     "nl": "Oblast Zaporizja"
-    },
-    "capital": {
-     "en": "Zaporozhye",
-     "zh": "扎波罗热",
-     "hi": "जापोरिज़्हया",
-     "es": "Zaporiyia",
-     "ar": "زاباروجيا",
-     "fr": "Zaporijjia",
-     "bn": "জাপরিজজিয়া",
-     "ur": "زاپوریزحزحیا",
-     "ru": "Запорожье",
-     "pt": "Zaporíjia",
-     "de": "Saporischschja",
-     "id": "Zaporizhzhia",
-     "it": "Zaporižžja",
-     "ja": "ザポリージャ",
-     "ko": "자포리자",
-     "pl": "Zaporoże",
-     "nl": "Zaporizja"
-    },
-    "capitalQid": "Q157835",
-    "population": {
-     "value": 1638462,
-     "year": 2022
-    },
-    "area": null
-   },
-   {
-    "id": "RUS-KHE",
-    "iso": null,
-    "qid": "Q114331288",
-    "name": {
-     "en": "Kherson Oblast",
-     "zh": null,
-     "hi": "खेर्सोन ओब्लास्ट",
-     "es": "Óblast de Jersón",
-     "ar": null,
-     "fr": "oblast de Kherson",
-     "bn": null,
-     "ru": "Херсонская область",
-     "pt": "Oblast de Quérson (Rússia)",
-     "de": "Oblast Cherson",
-     "id": "Oblast Kherson",
-     "ja": "ヘルソン州",
-     "ko": "헤르손주",
-     "pl": "obwód chersoński",
-     "nl": "Oblast Cherson"
-    },
-    "capital": {
-     "en": "Kherson",
-     "zh": "赫尔松",
-     "hi": "खेर्सन",
-     "es": "Jersón",
-     "ar": "خيرسون",
-     "fr": "Kherson",
-     "bn": "খেরসন",
-     "ur": "خیرسون",
-     "ru": "Херсон",
-     "pt": "Kherson",
-     "de": "Cherson",
-     "id": "Kherson",
-     "it": "Cherson",
-     "ja": "ヘルソン",
-     "ko": "헤르손",
-     "pl": "Chersoń",
-     "nl": "Cherson"
-    },
-    "capitalQid": "Q156732",
-    "population": null,
-    "area": null
    }
   ]
  },
@@ -6504,7 +6234,7 @@
      "value": 682100,
      "year": 2021
     },
-    "area": 115.3
+    "area": 118.4
    },
    {
     "id": "43563684B69230098435171",
@@ -8270,12 +8000,12 @@
      "bn": "অ্যারিজোনা",
      "ur": "ایریزونا",
      "ru": "Аризона",
+     "ja": "アリゾナ州",
+     "ko": "애리조나주",
      "pt": "Arizona",
      "de": "Arizona",
      "id": "Arizona",
      "it": "Arizona",
-     "ja": "アリゾナ州",
-     "ko": "애리조나주",
      "pl": "Arizona",
      "nl": "Arizona"
     },
@@ -13924,7 +13654,7 @@
     "capital": {
      "en": "Adrar",
      "zh": "阿德拉尔",
-     "hi": null,
+     "hi": "अदरार",
      "es": "Adrar",
      "ar": "أدرار",
      "fr": "Adrar",
@@ -14217,7 +13947,7 @@
     "capital": {
      "en": "Tamanrasset",
      "zh": "塔曼拉塞特",
-     "hi": null,
+     "hi": "तमनरासेट",
      "es": "Tamanrasset",
      "ar": "تمنراست",
      "fr": "Tamanrasset",
@@ -14902,7 +14632,7 @@
     "capital": {
      "en": "Illizi",
      "zh": "伊利济",
-     "hi": null,
+     "hi": "इलिज़ी",
      "es": "Illizi",
      "ar": "إليزي",
      "fr": "Illizi",
@@ -15143,7 +14873,7 @@
     "capital": {
      "en": "El Bayadh",
      "zh": "巴亚兹",
-     "hi": null,
+     "hi": "अल बयाध",
      "es": "El Bayadh",
      "ar": "البيّض",
      "fr": "El Bayadh",
@@ -15386,7 +15116,7 @@
     "capital": {
      "en": "Mila",
      "zh": "米拉",
-     "hi": null,
+     "hi": "मीला",
      "es": "Mila",
      "ar": "ميلة",
      "fr": "Mila",
@@ -15484,7 +15214,7 @@
     "capital": {
      "en": "Tissemsilt",
      "zh": "提塞姆西勒特",
-     "hi": null,
+     "hi": "तिस्सेम्सिल्त",
      "es": "Tissemsilt",
      "ar": "تيسمسيلت",
      "fr": "Tissemsilt",
@@ -15581,7 +15311,7 @@
     "capital": {
      "en": "Tipaza",
      "zh": "提帕萨",
-     "hi": null,
+     "hi": "तिपाजा",
      "es": "Tipasa",
      "ar": "تيبازة",
      "fr": "Tipaza",
@@ -15825,7 +15555,7 @@
     "capital": {
      "en": "El Taref",
      "zh": "塔里夫",
-     "hi": null,
+     "hi": "अल ताराफ़",
      "es": null,
      "ar": "الطارف",
      "fr": "El Tarf",
@@ -16116,6 +15846,7 @@
      "ar": "بني عباس",
      "fr": "Béni Abbès",
      "bn": null,
+     "ur": "بنی عباس، الجزائر",
      "ru": "Бени-Аббес",
      "pt": "Béni Abbès",
      "de": "Beni Abbes",
@@ -16296,7 +16027,7 @@
     "capital": {
      "en": "Djanet",
      "zh": "贾奈特",
-     "hi": null,
+     "hi": "जानेत",
      "es": "Djanet",
      "ar": "جانت",
      "fr": "Djanet",
@@ -17216,7 +16947,7 @@
     "capital": {
      "en": "Luebo",
      "zh": "魯耶波",
-     "hi": null,
+     "hi": "लुएबो",
      "es": "Luebo",
      "ar": null,
      "fr": "Luebo",
@@ -17499,7 +17230,7 @@
     "capital": {
      "en": "Kabinda",
      "zh": "卡宾达",
-     "hi": null,
+     "hi": "कबिंदा",
      "es": "Kabinda",
      "ar": "كابيندا",
      "fr": "Kabinda",
@@ -18219,7 +17950,7 @@
     "capital": {
      "en": "Al Bahah",
      "zh": "巴哈",
-     "hi": null,
+     "hi": "अल बाहा",
      "es": "Al Bahah",
      "ar": "الباحة",
      "fr": "Al Bahah",
@@ -22285,7 +22016,7 @@
     "capital": {
      "en": "Ad-Damir",
      "zh": "达迈尔",
-     "hi": null,
+     "hi": "अद-दमीर",
      "es": "Ad-Damir",
      "ar": "الدامر",
      "fr": "Ad-Damir",
@@ -22524,7 +22255,7 @@
     "capital": {
      "en": "Al-Fulah",
      "zh": "富拉",
-     "hi": null,
+     "hi": "अल-फ़ूलाह",
      "es": "Al-Fulah",
      "ar": "الفولة",
      "fr": "Al-Fulah",
@@ -22627,7 +22358,7 @@
     "capital": {
      "en": "Nalut",
      "zh": "纳鲁特",
-     "hi": null,
+     "hi": "नालुत",
      "es": "Nalut",
      "ar": "نالوت",
      "fr": "Nalout",
@@ -22767,7 +22498,7 @@
     "capital": {
      "en": "Murzuk",
      "zh": "穆尔祖格",
-     "hi": null,
+     "hi": "मुर्ज़ुक",
      "es": "Murzuk",
      "ar": "مرزق",
      "fr": "Mourzouq",
@@ -25314,7 +25045,7 @@
     "capital": {
      "en": "Selenge",
      "zh": "色楞格县",
-     "hi": null,
+     "hi": "सेलेंगे",
      "es": null,
      "ar": null,
      "fr": "Selenge",
@@ -25826,7 +25557,7 @@
     "capital": {
      "en": "Arvaikheer",
      "zh": "阿尔拜赫雷",
-     "hi": null,
+     "hi": "अरवाईखीर",
      "es": "Arvaikheer",
      "ar": null,
      "fr": "Arvayheer",
@@ -31077,7 +30808,7 @@
     "capital": {
      "en": "Semera",
      "zh": "塞梅拉",
-     "hi": null,
+     "hi": "सेमेरा",
      "es": null,
      "ar": "سمرا",
      "fr": "Semera",
@@ -31505,7 +31236,7 @@
     "capital": {
      "en": "Bonga",
      "zh": "邦加",
-     "hi": null,
+     "hi": "बोंगा",
      "es": null,
      "ar": null,
      "fr": "Bonga",
@@ -31586,7 +31317,7 @@
     "capital": {
      "en": "Hosaena",
      "zh": "霍萨埃纳",
-     "hi": null,
+     "hi": "होसाएना",
      "es": null,
      "ar": null,
      "fr": "Hosaena",
@@ -33583,7 +33314,7 @@
     "capital": {
      "en": "Shibin Al Kawm",
      "zh": "希宾库姆",
-     "hi": null,
+     "hi": "शिबिन अल कौम",
      "es": "Shibin el-Kom",
      "ar": "شبين الكوم",
      "fr": "Shibin El Kom",
@@ -33876,7 +33607,7 @@
     "capital": {
      "en": "Kafr el-Sheikh",
      "zh": "谢赫村",
-     "hi": null,
+     "hi": "काफ़्र अल-शेख़",
      "es": "Kafr el Sheij",
      "ar": "كفر الشيخ",
      "fr": "Kafr el-Cheik",
@@ -34277,7 +34008,7 @@
     "capital": {
      "en": "Kibaha",
      "zh": "基巴哈",
-     "hi": null,
+     "hi": "किबाहा",
      "es": "Kibaha",
      "ar": "كيباها",
      "fr": "Kibaha",
@@ -34374,7 +34105,7 @@
     "capital": {
      "en": "Lindi",
      "zh": "林迪",
-     "hi": null,
+     "hi": "लिंदी",
      "es": "Lindi",
      "ar": "ليندي",
      "fr": "Lindi",
@@ -34618,7 +34349,7 @@
     "capital": {
      "en": "Singida",
      "zh": "辛吉達",
-     "hi": null,
+     "hi": "सिंगिडा",
      "es": null,
      "ar": "سينغيدا",
      "fr": "Singida",
@@ -35006,7 +34737,7 @@
     "capital": {
      "en": "Babati",
      "zh": "巴巴蒂",
-     "hi": null,
+     "hi": "बबाती",
      "es": "Babati",
      "ar": "باباتي",
      "fr": "Babati",
@@ -35100,7 +34831,7 @@
     "capital": {
      "en": "Mpanda",
      "zh": "姆潘达",
-     "hi": null,
+     "hi": "म्पांडा",
      "es": "Mpanda",
      "ar": "مباندا",
      "fr": "Mpanda",
@@ -35234,7 +34965,7 @@
     "capital": {
      "en": "Vwawa",
      "zh": "武瓦瓦",
-     "hi": null,
+     "hi": "व्वावा",
      "es": null,
      "ar": "فواوا",
      "fr": "Vwawa",
@@ -35279,7 +35010,7 @@
     "capital": {
      "en": "Mkokotoni",
      "zh": "姆科科托尼",
-     "hi": null,
+     "hi": "म्कोकोटोनी",
      "es": null,
      "ar": "مكوكوتوني",
      "fr": "Mkokotoni",
@@ -35324,7 +35055,7 @@
     "capital": {
      "en": "Koani",
      "zh": "科阿尼",
-     "hi": null,
+     "hi": "कोआनी",
      "es": null,
      "ar": null,
      "fr": "Koani",
@@ -35418,7 +35149,7 @@
     "capital": {
      "en": "Wete",
      "zh": "韋提",
-     "hi": null,
+     "hi": "वेते",
      "es": null,
      "ar": "ويتي",
      "fr": "Wete",
@@ -35462,7 +35193,7 @@
     "capital": {
      "en": "Mkoani",
      "zh": null,
-     "hi": null,
+     "hi": "म्कोआनी",
      "es": "Mkoani",
      "ar": null,
      "fr": "Mkoani",
@@ -35756,7 +35487,7 @@
     "capital": {
      "en": "Gusau",
      "zh": "古紹",
-     "hi": null,
+     "hi": "गुसाउ",
      "es": "Gusau",
      "ar": null,
      "fr": "Gusau",
@@ -35804,7 +35535,7 @@
     "capital": {
      "en": "Ikeja",
      "zh": "伊凯贾",
-     "hi": null,
+     "hi": "इकेजा",
      "es": "Ikeja",
      "ar": null,
      "fr": "Ikeja",
@@ -35999,7 +35730,7 @@
     "capital": {
      "en": "Asaba",
      "zh": "阿萨巴",
-     "hi": null,
+     "hi": "असाबा",
      "es": "Asaba",
      "ar": "أسابا",
      "fr": "Asaba",
@@ -36162,8 +35893,8 @@
     },
     "capitalQid": "Q994085",
     "population": {
-     "value": 4473490,
-     "year": 2016
+     "value": 3314043,
+     "year": 2006
     },
     "area": 29833
    },
@@ -36291,7 +36022,7 @@
     "capital": {
      "en": "Katsina",
      "zh": "卡齐纳",
-     "hi": null,
+     "hi": "काट्सिना",
      "es": "Katsina",
      "ar": "كاتسينا (مدينة)",
      "fr": "Katsina",
@@ -36437,7 +36168,7 @@
     "capital": {
      "en": "Dutse",
      "zh": "杜采",
-     "hi": null,
+     "hi": "दुत्से",
      "es": "Dutse",
      "ar": null,
      "fr": "Dutse",
@@ -36632,7 +36363,7 @@
     "capital": {
      "en": "Birnin Kebbi",
      "zh": "比爾寧凱比",
-     "hi": null,
+     "hi": "बिर्निन केबी",
      "es": "Birnin Kebbi",
      "ar": "برنين كيبي",
      "fr": "Birnin Kebbi",
@@ -36828,7 +36559,7 @@
     "capital": {
      "en": "Damaturu",
      "zh": "达马图鲁",
-     "hi": null,
+     "hi": "दामाटुरू",
      "es": "Damaturu",
      "ar": null,
      "fr": "Damaturu",
@@ -36894,8 +36625,8 @@
     },
     "capitalQid": "Q203301",
     "population": {
-     "value": 3727347,
-     "year": 2016
+     "value": 4586262,
+     "year": 2026
     },
     "area": 6320
    },
@@ -37219,7 +36950,7 @@
     "capital": {
      "en": "Jalingo",
      "zh": "贾林戈",
-     "hi": null,
+     "hi": "जालिंगो",
      "es": "Jalingo",
      "ar": null,
      "fr": "Jalingo",
@@ -37852,7 +37583,7 @@
     "capital": {
      "en": "San Juan de Los Morros",
      "zh": "圣胡安德洛斯莫罗斯",
-     "hi": null,
+     "hi": "सैन हुआन दे लॉस मोरोस",
      "es": "San Juan de Los Morros",
      "ar": null,
      "fr": "San Juan de Los Morros",
@@ -38041,7 +37772,7 @@
     "capital": {
      "en": "Los Teques",
      "zh": "洛斯特克斯",
-     "hi": null,
+     "hi": "लॉस टेकेस",
      "es": "Los Teques",
      "ar": "لوس تيكيس",
      "fr": "Los Teques",
@@ -38135,7 +37866,7 @@
     "capital": {
      "en": "La Asunción",
      "zh": "拉亚松森",
-     "hi": null,
+     "hi": "ला असुन्सियोन",
      "es": "La Asunción",
      "ar": "لا أسونسيون",
      "fr": "La Asunción",
@@ -38470,36 +38201,6 @@
     "population": {
      "value": 2155,
      "year": 2011
-    },
-    "area": null
-   },
-   {
-    "id": "VEN-GE",
-    "iso": null,
-    "qid": "Q816253",
-    "name": {
-     "en": "Guayana Esequiba",
-     "zh": "埃塞奎博圭亚那",
-     "hi": null,
-     "es": "Guayana Esequiba",
-     "ar": "غويانا اسيكيبا",
-     "fr": "Guayana Esequiba",
-     "bn": null,
-     "ru": "Гуаяна-Эсекиба",
-     "pt": "Guaiana Essequiba",
-     "de": "Guayana Esequiba",
-     "id": "Guayana Esequiba",
-     "it": "Guayana Esequiba",
-     "ja": "グアヤナエセキバ",
-     "ko": "과야나에세키바",
-     "pl": "Guayana Esequiba",
-     "nl": "Guayana Esequiba"
-    },
-    "capital": null,
-    "capitalQid": null,
-    "population": {
-     "value": 128000,
-     "year": 2012
     },
     "area": null
    }
@@ -39133,7 +38834,7 @@
     "capital": {
      "en": "Eenhana",
      "zh": "埃納納",
-     "hi": null,
+     "hi": "ईनहाना",
      "es": "Eenhana",
      "ar": null,
      "fr": "Eenhana",
@@ -39278,7 +38979,7 @@
     "capital": {
      "en": "Mariental",
      "zh": "马林塔尔",
-     "hi": null,
+     "hi": "मारियेंटाल",
      "es": "Mariental",
      "ar": null,
      "fr": "Mariental",
@@ -41515,7 +41216,7 @@
     "capital": {
      "en": "Elazığ",
      "zh": "埃拉泽",
-     "hi": null,
+     "hi": "एलाज़िग",
      "es": "Elazığ",
      "ar": "معمورة العزيز",
      "fr": "Elazığ",
@@ -41858,7 +41559,7 @@
     "capital": {
      "en": "Hakkâri",
      "zh": "哈卡里",
-     "hi": null,
+     "hi": "हक्कारी",
      "es": "Hakkâri",
      "ar": "حكاري",
      "fr": "Hakkari",
@@ -44951,7 +44652,7 @@
     "capital": {
      "en": "Chinsali",
      "zh": "欽薩利",
-     "hi": null,
+     "hi": "चिनसाली",
      "es": "Chinsali",
      "ar": "تشينسالي",
      "fr": "Chinsali",
@@ -44995,7 +44696,7 @@
     "capital": {
      "en": "Solwezi",
      "zh": "索卢韦齐",
-     "hi": null,
+     "hi": "सोल्वेज़ी",
      "es": "Solwezi",
      "ar": "سولويزي",
      "fr": "Solwezi",
@@ -45040,7 +44741,7 @@
     "capital": {
      "en": "Mansa",
      "zh": "曼萨",
-     "hi": null,
+     "hi": "मानसा",
      "es": "Mansa",
      "ar": "مانسا",
      "fr": "Mansa",
@@ -45085,7 +44786,7 @@
     "capital": {
      "en": "Kabwe",
      "zh": "卡布韦",
-     "hi": null,
+     "hi": "काब्वे",
      "es": "Kabwe",
      "ar": "كابوي",
      "fr": "Kabwe",
@@ -45314,7 +45015,7 @@
     "capital": {
      "en": "Mongu",
      "zh": "芒古",
-     "hi": null,
+     "hi": "मोंगू",
      "es": "Mongu",
      "ar": "مونغو",
      "fr": "Mongu",
@@ -47973,7 +47674,7 @@
     "capital": {
      "en": "Garbahaareey",
      "zh": "加尔巴哈雷",
-     "hi": null,
+     "hi": "गरबहारे",
      "es": "Garbahaareey",
      "ar": "جربهاري",
      "fr": "Garbahaareey",
@@ -48691,7 +48392,7 @@
     "capital": {
      "en": "Torit",
      "zh": "托里特",
-     "hi": null,
+     "hi": "टोरिट",
      "es": "Torit",
      "ar": "توريت",
      "fr": "Torit",
@@ -49033,7 +48734,7 @@
     "capital": {
      "en": "Kuajok",
      "zh": "夸乔克",
-     "hi": null,
+     "hi": "क्वाजोक",
      "es": "Kuajok",
      "ar": "كواجوك",
      "fr": "Kuajok",
@@ -50406,8 +50107,8 @@
     },
     "capitalQid": "Q170714",
     "population": {
-     "value": 345613,
-     "year": 2011
+     "value": 276319,
+     "year": 2026
     },
     "area": 1780
    },
@@ -50826,7 +50527,7 @@
     "capital": {
      "en": "Kasane",
      "zh": "卡萨内",
-     "hi": null,
+     "hi": "कसाने",
      "es": "Kasane",
      "ar": "كاساني",
      "fr": "Kasane",
@@ -50881,7 +50582,7 @@
     "capital": {
      "en": "Lodwar",
      "zh": "洛德瓦尔",
-     "hi": null,
+     "hi": "लोडवार",
      "es": "Lodwar",
      "ar": "لودوار",
      "fr": "Lodwar",
@@ -50976,7 +50677,7 @@
     "capital": {
      "en": "Mandera",
      "zh": "曼德拉",
-     "hi": null,
+     "hi": "मंदेरा",
      "es": "Mandera",
      "ar": "مانطيرا (مدينة )",
      "fr": "Mandera",
@@ -51021,7 +50722,7 @@
     "capital": {
      "en": "Wajir",
      "zh": "瓦吉尔",
-     "hi": null,
+     "hi": "वाजिर",
      "es": "Wajir",
      "ar": "وجير (مدينة )",
      "fr": "Wajir",
@@ -51066,7 +50767,7 @@
     "capital": {
      "en": "Kapenguria",
      "zh": "卡彭古里亚",
-     "hi": null,
+     "hi": "कापेंगुरिया",
      "es": "Kapenguria",
      "ar": null,
      "fr": null,
@@ -51155,7 +50856,7 @@
     "capital": {
      "en": "Isiolo",
      "zh": "伊西奥洛",
-     "hi": null,
+     "hi": "इसियोलो",
      "es": "Isiolo",
      "ar": "إزيولو",
      "fr": "Isiolo",
@@ -51200,7 +50901,7 @@
     "capital": {
      "en": "Kabarnet",
      "zh": "卡巴內特",
-     "hi": null,
+     "hi": "काबरनेट",
      "es": "Kabarnet",
      "ar": null,
      "fr": "Kabarnet",
@@ -51244,7 +50945,7 @@
     "capital": {
      "en": "Iten",
      "zh": "伊滕",
-     "hi": null,
+     "hi": "इटेन",
      "es": "Iten",
      "ar": null,
      "fr": "Iten",
@@ -51337,7 +51038,7 @@
     "capital": {
      "en": "Bungoma",
      "zh": "奔戈马",
-     "hi": null,
+     "hi": "बुंगोमा",
      "es": "Bungoma",
      "ar": null,
      "fr": "Bungoma",
@@ -51665,7 +51366,7 @@
     "capital": {
      "en": "Kapsabet",
      "zh": "卡普薩貝特",
-     "hi": null,
+     "hi": "कैप्साबेट",
      "es": "Kapsabet",
      "ar": null,
      "fr": "Kapsabet",
@@ -52039,7 +51740,7 @@
     "capital": {
      "en": "Hola",
      "zh": "加洛莱",
-     "hi": null,
+     "hi": "होला",
      "es": "Hola",
      "ar": "هولا",
      "fr": "Hola",
@@ -52128,7 +51829,7 @@
     "capital": {
      "en": "Kerugoya",
      "zh": "凯鲁戈亚",
-     "hi": null,
+     "hi": "केरुगोया",
      "es": "Kerugoya",
      "ar": null,
      "fr": "Kerugoya",
@@ -52203,7 +51904,7 @@
     "capital": {
      "en": "Homa Bay",
      "zh": "霍马湾",
-     "hi": null,
+     "hi": "होमा बे",
      "es": "Homa Bay",
      "ar": "خليج حوما",
      "fr": "Homa Bay",
@@ -52249,7 +51950,7 @@
     "capital": {
      "en": "Bomet",
      "zh": "博美特",
-     "hi": null,
+     "hi": "बोमेट",
      "es": "Bomet",
      "ar": null,
      "fr": "Bomet",
@@ -52294,13 +51995,14 @@
     "capital": {
      "en": "Nyamira",
      "zh": "尼亚米拉",
-     "hi": null,
+     "hi": "न्यामिरा",
      "es": "Nyamira",
      "ar": null,
      "fr": "Nyamira",
      "bn": null,
      "it": "Nyamira",
      "ja": "ニャミラ",
+     "ko": "냐미라",
      "pl": "Nyamira",
      "nl": "Nyamira"
     },
@@ -52336,7 +52038,7 @@
     "capital": {
      "en": "Narok",
      "zh": "纳罗克",
-     "hi": null,
+     "hi": "नारोक",
      "es": "Narok",
      "ar": null,
      "fr": "Narok",
@@ -52432,7 +52134,7 @@
     "capital": {
      "en": "Murang'a",
      "zh": "穆拉雅",
-     "hi": null,
+     "hi": "मुरांगा",
      "es": "Muranga",
      "ar": "مورانغة",
      "fr": "Murang'a",
@@ -52479,7 +52181,7 @@
     "capital": {
      "en": "Migori",
      "zh": "米戈利",
-     "hi": null,
+     "hi": "मिगोरी",
      "es": null,
      "ar": null,
      "fr": "Migori",
@@ -52619,7 +52321,7 @@
     "capital": {
      "en": "Kajiado",
      "zh": "卡贾多",
-     "hi": null,
+     "hi": "कजियाडो",
      "es": "Kajiado",
      "ar": null,
      "fr": "Kajiado",
@@ -52804,7 +52506,7 @@
     "capital": {
      "en": "Kilifi",
      "zh": "基利菲",
-     "hi": null,
+     "hi": "किलिफ़ी",
      "es": "Kilifi",
      "ar": "كيليفي",
      "fr": "Kilifi",
@@ -52892,7 +52594,7 @@
     "capital": {
      "en": "Kwale",
      "zh": "夸莱",
-     "hi": null,
+     "hi": "क्वाले",
      "es": "Kwale",
      "ar": "كوالي",
      "fr": "Kwale",
@@ -53926,7 +53628,7 @@
     "capital": {
      "en": "Ataq",
      "zh": "阿塔格",
-     "hi": null,
+     "hi": "अताक",
      "es": "Ataq",
      "ar": "عتق",
      "fr": "Ataq",
@@ -53971,7 +53673,7 @@
     "capital": {
      "en": "Mukalla",
      "zh": "穆卡拉",
-     "hi": null,
+     "hi": "मुकल्ला",
      "es": "Al Mukalla",
      "ar": "المكلا",
      "fr": "Al Mukalla",
@@ -54020,7 +53722,7 @@
     "capital": {
      "en": "Zinjibar",
      "zh": "津吉巴尔",
-     "hi": null,
+     "hi": "ज़िनजिबार",
      "es": "Zinjibar",
      "ar": "زنجبار",
      "fr": "Zinjibar",
@@ -54069,7 +53771,7 @@
     "capital": {
      "en": "Al Hazm",
      "zh": null,
-     "hi": null,
+     "hi": "अल हज़्म",
      "es": "Al Hazm",
      "ar": "الحزم",
      "fr": "Al Hazm",
@@ -54163,7 +53865,7 @@
     "capital": {
      "en": "Al Bayda'",
      "zh": "贝达",
-     "hi": null,
+     "hi": "अल-बैदा",
      "es": null,
      "ar": "البيضاء",
      "fr": "Al Bayda'",
@@ -54209,7 +53911,7 @@
     "capital": {
      "en": "Ad Dali'",
      "zh": "達利 (也門)",
-     "hi": null,
+     "hi": "अद दली",
      "es": "Dhala",
      "ar": "الضالع",
      "fr": "Ad Dali'",
@@ -54255,7 +53957,7 @@
     "capital": {
      "en": "Al Mahwit",
      "zh": "迈赫维特",
-     "hi": null,
+     "hi": "अल महवित",
      "es": null,
      "ar": "المحويت",
      "fr": "Al Mahwit",
@@ -54351,7 +54053,7 @@
     "capital": {
      "en": "Hajjah",
      "zh": "哈杰",
-     "hi": null,
+     "hi": "हज्जा",
      "es": "Hajjah",
      "ar": "حجة",
      "fr": "Hajjah",
@@ -54494,7 +54196,7 @@
     "capital": {
      "en": "Al Ghaydah",
      "zh": "蓋達 (也門城市)",
-     "hi": null,
+     "hi": "अल ग़ैदा",
      "es": "Al Ghaydah",
      "ar": "الغيضة",
      "fr": "Al Ghaydah",
@@ -54541,7 +54243,7 @@
     "capital": {
      "en": "Marib",
      "zh": "马里卜",
-     "hi": null,
+     "hi": "मारिब",
      "es": "Ma'rib",
      "ar": "مأرب",
      "fr": "Marib",
@@ -55561,7 +55263,7 @@
     "capital": {
      "en": "Chumphon",
      "zh": "春蓬市",
-     "hi": null,
+     "hi": "चुमफ़ोन",
      "es": "Chumphon",
      "ar": null,
      "fr": "Chumpon",
@@ -55653,7 +55355,7 @@
     "capital": {
      "en": "Phitsanulok",
      "zh": "彭世洛",
-     "hi": null,
+     "hi": "फ़िटसानुलोक",
      "es": "Phitsanulok",
      "ar": "فيتسانولوك",
      "fr": "Phitsanulok",
@@ -57038,7 +56740,7 @@
     "capital": {
      "en": "Samut Songkhram",
      "zh": "夜功府",
-     "hi": null,
+     "hi": "समुत सोंगख्राम",
      "es": "Samut Songkhram",
      "ar": "محافظة ساموت سونغرام",
      "fr": "Samut Songkhram",
@@ -58134,7 +57836,7 @@
     "capital": {
      "en": "Kanchanaburi",
      "zh": "北碧",
-     "hi": null,
+     "hi": "कांचनाबुरी",
      "es": "Kanchanaburi",
      "ar": null,
      "fr": "Kanchanaburi",
@@ -58708,14 +58410,14 @@
      "bn": "সান্তিয়াগো দে কম্পোস্তেলা",
      "ur": "سانتیاگو دے کومپوستیلا",
      "ru": "Сантьяго-де-Компостела",
-     "pt": "Santiago de Compostela",
-     "de": "Santiago de Compostela",
-     "id": "Santiago de Compostela",
      "it": "Santiago di Compostela",
      "ja": "サンティアゴ・デ・コンポステーラ",
      "ko": "산티아고데콤포스텔라",
-     "pl": "Santiago de Compostela",
-     "nl": "Santiago de Compostella"
+     "nl": "Santiago de Compostella",
+     "pt": "Santiago de Compostela",
+     "de": "Santiago de Compostela",
+     "id": "Santiago de Compostela",
+     "pl": "Santiago de Compostela"
     },
     "capitalQid": "Q14314",
     "population": {
@@ -59973,7 +59675,7 @@
     "capital": {
      "en": "Buka",
      "zh": "布卡",
-     "hi": null,
+     "hi": "बुका",
      "es": "Buka",
      "ar": "بوكا",
      "fr": "Buka",
@@ -60068,7 +59770,7 @@
     "capital": {
      "en": "Kundiawa",
      "zh": "孔迪亞瓦",
-     "hi": null,
+     "hi": "कुंदियावा",
      "es": null,
      "ar": "كوندياوا",
      "fr": "Kundiawa",
@@ -60116,7 +59818,7 @@
     "capital": {
      "en": "Kokopo",
      "zh": "科可波",
-     "hi": null,
+     "hi": "कोकोपो",
      "es": "Kokopo",
      "ar": null,
      "fr": "Kokopo",
@@ -60161,7 +59863,7 @@
     "capital": {
      "en": "Wewak",
      "zh": "韦瓦克",
-     "hi": null,
+     "hi": "वेवाक",
      "es": "Wewak",
      "ar": "ويواك",
      "fr": "Wewak",
@@ -60210,7 +59912,7 @@
     "capital": {
      "en": "Goroka",
      "zh": "戈罗卡",
-     "hi": null,
+     "hi": "गोरोका",
      "es": "Goroka",
      "ar": "جوروكا",
      "fr": "Goroka",
@@ -60258,7 +59960,7 @@
     "capital": {
      "en": "Wabag",
      "zh": "瓦巴格",
-     "hi": null,
+     "hi": "वाबाग",
      "es": null,
      "ar": null,
      "fr": "Wabag",
@@ -60306,7 +60008,7 @@
     "capital": {
      "en": "Kerema",
      "zh": "凯里马",
-     "hi": null,
+     "hi": "केरेमा",
      "es": null,
      "ar": "محافظة كيرمينا",
      "fr": "Kerema",
@@ -60420,7 +60122,7 @@
     "capital": {
      "en": "Madang",
      "zh": "马当",
-     "hi": null,
+     "hi": "मदांग",
      "es": "Madang",
      "ar": "مادانغ",
      "fr": "Madang",
@@ -60466,7 +60168,7 @@
     "capital": {
      "en": "Lorengau",
      "zh": "洛伦高",
-     "hi": null,
+     "hi": "लोरेंगाउ",
      "es": null,
      "ar": "لورينغاو",
      "fr": "Lorengau",
@@ -60512,7 +60214,7 @@
     "capital": {
      "en": "Alotau",
      "zh": "阿洛陶",
-     "hi": null,
+     "hi": "अलोताउ",
      "es": "Alotau",
      "ar": "أولتاو",
      "fr": "Alotau",
@@ -60634,7 +60336,7 @@
     "capital": {
      "en": "Kavieng",
      "zh": "卡维恩",
-     "hi": null,
+     "hi": "कावियेंग",
      "es": "Kavieng",
      "ar": "كافينغ",
      "fr": "Kavieng",
@@ -60680,7 +60382,7 @@
     "capital": {
      "en": "Popondetta",
      "zh": "波蓬德塔",
-     "hi": null,
+     "hi": "पोपोंडेटा",
      "es": "Popondetta",
      "ar": "بوبونديتا",
      "fr": "Popondetta",
@@ -60726,7 +60428,7 @@
     "capital": {
      "en": "Mendi",
      "zh": "门迪",
-     "hi": null,
+     "hi": "मेंडी",
      "es": "Mendi",
      "ar": "ميندي",
      "fr": "Mendi",
@@ -60774,7 +60476,7 @@
     "capital": {
      "en": "Kimbe",
      "zh": "金贝",
-     "hi": null,
+     "hi": "किम्बे",
      "es": "Kimbe",
      "ar": "كيمبي",
      "fr": "Kimbe",
@@ -60819,7 +60521,7 @@
     "capital": {
      "en": "Vanimo",
      "zh": "瓦尼莫",
-     "hi": null,
+     "hi": "वानीमो",
      "es": "Vanimo",
      "ar": "فانيمو",
      "fr": "Vanimo",
@@ -60865,7 +60567,7 @@
     "capital": {
      "en": "Daru",
      "zh": "達魯",
-     "hi": null,
+     "hi": "डारू",
      "es": null,
      "ar": "ريف دارو",
      "fr": "Daru",
@@ -60910,7 +60612,7 @@
     "capital": {
      "en": "Mount Hagen",
      "zh": "芒特哈根",
-     "hi": null,
+     "hi": "माउंट हेगन",
      "es": "Mount Hagen",
      "ar": null,
      "fr": "Mount Hagen",
@@ -60966,7 +60668,7 @@
     "capital": {
      "en": "Härnösand",
      "zh": "海讷桑德",
-     "hi": null,
+     "hi": "हेर्नोसांड",
      "es": "Härnösand",
      "ar": "هارنوساند",
      "fr": "Härnösand",
@@ -60984,7 +60686,7 @@
     },
     "capitalQid": "Q3240427",
     "population": {
-     "value": 240338,
+     "value": 239865,
      "year": 2026
     },
     "area": 27994.31
@@ -61033,7 +60735,7 @@
     },
     "capitalQid": "Q25579",
     "population": {
-     "value": 277714,
+     "value": 278543,
      "year": 2026
     },
     "area": 66823
@@ -61082,7 +60784,7 @@
     },
     "capitalQid": "Q26515",
     "population": {
-     "value": 132700,
+     "value": 132593,
      "year": 2026
     },
     "area": 53752.63
@@ -61131,7 +60833,7 @@
     },
     "capitalQid": "Q25748",
     "population": {
-     "value": 283113,
+     "value": 282396,
      "year": 2026
     },
     "area": 25009.12
@@ -61180,7 +60882,7 @@
     },
     "capitalQid": "Q26509",
     "population": {
-     "value": 286249,
+     "value": 285681,
      "year": 2026
     },
     "area": 30222.43
@@ -61229,7 +60931,7 @@
     },
     "capitalQid": "Q25286",
     "population": {
-     "value": 410075,
+     "value": 411860,
      "year": 2026
     },
     "area": 12173.57
@@ -61278,7 +60980,7 @@
     },
     "capitalQid": "Q25412",
     "population": {
-     "value": 280983,
+     "value": 281055,
      "year": 2026
     },
     "area": 5658.82
@@ -61327,7 +61029,7 @@
     },
     "capitalQid": "Q25732",
     "population": {
-     "value": 308102,
+     "value": 308324,
      "year": 2026
     },
     "area": 9632.85
@@ -61376,7 +61078,7 @@
     },
     "capitalQid": "Q25457",
     "population": {
-     "value": 282467,
+     "value": 283047,
      "year": 2026
     },
     "area": 21789.05
@@ -61425,7 +61127,7 @@
     },
     "capitalQid": "Q25287",
     "population": {
-     "value": 1778822,
+     "value": 1781454,
      "year": 2026
     },
     "area": 34330.63
@@ -61474,7 +61176,7 @@
     },
     "capitalQid": "Q26521",
     "population": {
-     "value": 346505,
+     "value": 346631,
      "year": 2026
     },
     "area": 8711.66
@@ -61523,7 +61225,7 @@
     },
     "capitalQid": "Q2211",
     "population": {
-     "value": 1433725,
+     "value": 1435906,
      "year": 2026
     },
     "area": 17031.54
@@ -61572,7 +61274,7 @@
     },
     "capitalQid": "Q26152",
     "population": {
-     "value": 202557,
+     "value": 202580,
      "year": 2026
     },
     "area": 9385.11
@@ -61621,7 +61323,7 @@
     },
     "capitalQid": "Q25789",
     "population": {
-     "value": 156257,
+     "value": 156138,
      "year": 2026
     },
     "area": 6940.59
@@ -61670,7 +61372,7 @@
     },
     "capitalQid": "Q26345",
     "population": {
-     "value": 245044,
+     "value": 244595,
      "year": 2026
     },
     "area": 20495.45
@@ -61719,7 +61421,7 @@
     },
     "capitalQid": "Q25415",
     "population": {
-     "value": 369563,
+     "value": 369609,
      "year": 2026
     },
     "area": 11692.67
@@ -61768,7 +61470,7 @@
     },
     "capitalQid": "Q1754",
     "population": {
-     "value": 2493767,
+     "value": 2498302,
      "year": 2026
     },
     "area": 16719.89
@@ -61817,7 +61519,7 @@
     },
     "capitalQid": "Q25413",
     "population": {
-     "value": 472211,
+     "value": 473203,
      "year": 2026
     },
     "area": 14578.54
@@ -61866,7 +61568,7 @@
     },
     "capitalQid": "Q54356",
     "population": {
-     "value": 300291,
+     "value": 299536,
      "year": 2026
     },
     "area": 8695.83
@@ -61915,7 +61617,7 @@
     },
     "capitalQid": "Q26268",
     "population": {
-     "value": 249265,
+     "value": 249536,
      "year": 2026
     },
     "area": 112027.27
@@ -61964,7 +61666,7 @@
     },
     "capitalQid": "Q54757",
     "population": {
-     "value": 60724,
+     "value": 60867,
      "year": 2026
     },
     "area": 15196.05
@@ -62394,7 +62096,7 @@
     "capital": {
      "en": "Nurafshon",
      "zh": "努拉夫尚",
-     "hi": null,
+     "hi": "नूराफ़्शोन",
      "es": "Nurafshon",
      "ar": null,
      "fr": "Nurafshon",
@@ -64236,7 +63938,7 @@
     "capital": {
      "en": "San Pedro de Ycuamandiyú",
      "zh": "圣佩德罗",
-     "hi": null,
+     "hi": "सैन पेड्रो दे यकुआमांदियू",
      "es": "San Pedro de Ycuamandiyú",
      "ar": null,
      "fr": "San Pedro de Ycuamandyyú",
@@ -64284,7 +63986,7 @@
     "capital": {
      "en": "Caacupé",
      "zh": "卡库佩",
-     "hi": null,
+     "hi": "काआकुपे",
      "es": "Caacupé",
      "ar": null,
      "fr": "Caacupé",
@@ -64723,7 +64425,7 @@
     "capital": {
      "en": "Pilar",
      "zh": "皮拉尔",
-     "hi": null,
+     "hi": "पिलार",
      "es": "Pilar",
      "ar": "بيلار",
      "fr": "Pilar",
@@ -64820,7 +64522,7 @@
     "capital": {
      "en": "Saltos del Guairá",
      "zh": "萨尔托德尔瓜伊拉",
-     "hi": null,
+     "hi": "सॉल्तोस डेल गुआइरा",
      "es": "Saltos del Guairá",
      "ar": "سالتو ديل غوايرا",
      "fr": "Salt del Guairá",
@@ -65133,7 +64835,7 @@
     "capital": {
      "en": "Bindura",
      "zh": "賓杜拉",
-     "hi": null,
+     "hi": "बिंदुरा",
      "es": null,
      "ar": null,
      "fr": "Bindura",
@@ -65226,7 +64928,7 @@
     "capital": {
      "en": "Chinhoyi",
      "zh": "奇諾伊",
-     "hi": null,
+     "hi": "चिन्होई",
      "es": null,
      "ar": "تشينهوي",
      "fr": "Chinhoyi",
@@ -65358,7 +65060,7 @@
     "capital": {
      "en": "Gwanda",
      "zh": "关达",
-     "hi": null,
+     "hi": "ग्वांडा",
      "es": null,
      "ar": "جواندا",
      "fr": "Gwanda",
@@ -69394,7 +69096,7 @@
     "capital": {
      "en": "Madingou",
      "zh": "馬丁古",
-     "hi": null,
+     "hi": "मादिंगू",
      "es": "Madingou",
      "ar": null,
      "fr": "Madingou",
@@ -69490,7 +69192,7 @@
     "capital": {
      "en": "Ewo",
      "zh": "埃沃",
-     "hi": null,
+     "hi": "एवो",
      "es": "Ewo",
      "ar": "إيو",
      "fr": "Ewo",
@@ -69727,7 +69429,7 @@
     "capital": {
      "en": "Djambala",
      "zh": "兼巴拉",
-     "hi": null,
+     "hi": "जाम्बाला",
      "es": "Djambala",
      "ar": null,
      "fr": "Djambala",
@@ -70029,7 +69731,7 @@
     "capital": {
      "en": "Mikkeli",
      "zh": "米凯利",
-     "hi": null,
+     "hi": "मिक्केली",
      "es": "Mikkeli",
      "ar": "ميكيلي",
      "fr": "Mikkeli",
@@ -70323,7 +70025,7 @@
     "capital": {
      "en": "Kokkola",
      "zh": "科科拉",
-     "hi": null,
+     "hi": "कोक्कोला",
      "es": "Kokkola",
      "ar": "كوكولا",
      "fr": "Kokkola",
@@ -70421,7 +70123,7 @@
     "capital": {
      "en": "Rovaniemi",
      "zh": "罗瓦涅米",
-     "hi": null,
+     "hi": "रोवानिएमी",
      "es": "Rovaniemi",
      "ar": "روفانييمي",
      "fr": "Rovaniemi",
@@ -70519,7 +70221,7 @@
     "capital": {
      "en": "Kajaani",
      "zh": "卡亚尼",
-     "hi": null,
+     "hi": "काजानी",
      "es": "Kajaani",
      "ar": "كايآني",
      "fr": "Kajaani",
@@ -70764,7 +70466,7 @@
     "capital": {
      "en": "Kotka",
      "zh": "科特卡",
-     "hi": null,
+     "hi": "कोटका",
      "es": "Kotka",
      "ar": "كوتكا",
      "fr": "Kotka",
@@ -70922,6 +70624,7 @@
      "bn": "ডানাং",
      "ur": "دا نانگ",
      "ru": "Да-Нанг",
+     "pt": "Đà Nẵng",
      "de": "Đà Nẵng",
      "id": "Đà Nẵng",
      "ja": "ダナン",
@@ -72749,7 +72452,7 @@
     "capital": {
      "en": "Sarpsborg",
      "zh": "萨尔普斯堡",
-     "hi": null,
+     "hi": "सार्प्सबोर्ग",
      "es": "Sarpsborg",
      "ar": "ساربسبورغ",
      "fr": "Sarpsborg",
@@ -73227,7 +72930,7 @@
     "capital": {
      "en": "Hamar",
      "zh": "哈马尔",
-     "hi": null,
+     "hi": "हामार",
      "es": "Hamar",
      "ar": "هامر",
      "fr": "Hamar",
@@ -73619,7 +73322,7 @@
     "capital": {
      "en": "Bouaflé",
      "zh": "布瓦夫莱",
-     "hi": null,
+     "hi": "बुआफ़्ले",
      "es": "Bouaflé",
      "ar": "باوافل",
      "fr": "Bouaflé",
@@ -75197,7 +74900,7 @@
     "capital": {
      "en": "Rustaq",
      "zh": "鲁斯塔格",
-     "hi": null,
+     "hi": "रुस्ताक़",
      "es": null,
      "ar": "ولاية الرستاق",
      "fr": "Rustaq",
@@ -78380,7 +78083,7 @@
     "capital": {
      "en": "Koulamoutou",
      "zh": "库拉穆图",
-     "hi": null,
+     "hi": "कूलामूतू",
      "es": "Koulamoutou",
      "ar": "كولاموتو",
      "fr": "Koulamoutou",
@@ -80313,7 +80016,7 @@
     "capital": {
      "en": "Kamuli",
      "zh": null,
-     "hi": null,
+     "hi": "कामुली",
      "es": null,
      "ar": "كامولي",
      "fr": "Kamuli",
@@ -80359,7 +80062,7 @@
     "capital": {
      "en": "Ntungamo",
      "zh": "恩通加莫",
-     "hi": null,
+     "hi": "एनतुंगामो",
      "es": null,
      "ar": "نتونجامو",
      "fr": "Ntungamo",
@@ -80500,7 +80203,7 @@
     "capital": {
      "en": "Nakaseke",
      "zh": null,
-     "hi": null,
+     "hi": "नाकासेके",
      "es": null,
      "ar": null,
      "fr": null,
@@ -80544,7 +80247,7 @@
     "capital": {
      "en": "Kitgum",
      "zh": null,
-     "hi": null,
+     "hi": "किटगुम",
      "es": null,
      "ar": "كيتغوم",
      "fr": "Kitgum",
@@ -80767,7 +80470,7 @@
     "capital": {
      "en": "Kibaale",
      "zh": null,
-     "hi": null,
+     "hi": "किबाले",
      "es": null,
      "ar": null,
      "fr": "Kibaale",
@@ -80812,7 +80515,7 @@
     "capital": {
      "en": "Kalangala",
      "zh": null,
-     "hi": null,
+     "hi": "कलंगला",
      "es": null,
      "ar": null,
      "fr": "Kalangala",
@@ -80857,7 +80560,7 @@
     "capital": {
      "en": "Mubende",
      "zh": "穆本德",
-     "hi": null,
+     "hi": "मुबेंडे",
      "es": null,
      "ar": "موبيندي",
      "fr": "Mubende",
@@ -80904,7 +80607,7 @@
     "capital": {
      "en": "Kiboga",
      "zh": null,
-     "hi": null,
+     "hi": "किबोगा",
      "es": null,
      "ar": null,
      "fr": null,
@@ -81048,7 +80751,7 @@
     "capital": {
      "en": "Nakasongola",
      "zh": null,
-     "hi": null,
+     "hi": "नाकासोंगोला",
      "es": "Nakasongola",
      "ar": "ناكاسونغولا",
      "fr": "Nakasongola",
@@ -81141,7 +80844,7 @@
     "capital": {
      "en": "Sembabule",
      "zh": null,
-     "hi": null,
+     "hi": "सेमबाबुले",
      "es": null,
      "ar": null,
      "fr": "Sembabule",
@@ -81380,7 +81083,7 @@
     "capital": {
      "en": "Kanungu",
      "zh": "卡农古",
-     "hi": null,
+     "hi": "कानुंगु",
      "es": null,
      "ar": null,
      "fr": null,
@@ -81425,7 +81128,7 @@
     "capital": {
      "en": "Soroti",
      "zh": "索羅提",
-     "hi": null,
+     "hi": "सोरोती",
      "es": null,
      "ar": "سوروتي",
      "fr": "Soroti",
@@ -81993,7 +81696,7 @@
     "capital": {
      "en": "Tororo",
      "zh": "托罗罗",
-     "hi": null,
+     "hi": "तोरोरो",
      "es": null,
      "ar": "تورورو",
      "fr": "Tororo",
@@ -82041,7 +81744,7 @@
     "capital": {
      "en": "Kayunga",
      "zh": null,
-     "hi": null,
+     "hi": "कायुंगा",
      "es": null,
      "ar": "محافظة كايونجا",
      "fr": "Kayunga",
@@ -82088,7 +81791,7 @@
     "capital": {
      "en": "Adjumani",
      "zh": null,
-     "hi": null,
+     "hi": "अजुमानी",
      "es": "Adjumani",
      "ar": "أدجومانى",
      "fr": "Adjumani",
@@ -82257,7 +81960,7 @@
     "capital": {
      "en": "Bushenyi",
      "zh": null,
-     "hi": null,
+     "hi": "बुशेनयी",
      "es": null,
      "ar": null,
      "fr": "Bushenyi",
@@ -82491,7 +82194,7 @@
     "capital": {
      "en": "Kaberamaido",
      "zh": null,
-     "hi": null,
+     "hi": "कबेरामाइडो",
      "es": null,
      "ar": null,
      "fr": "Kaberamaido",
@@ -82633,7 +82336,7 @@
     "capital": {
      "en": "Kapchorwa",
      "zh": null,
-     "hi": null,
+     "hi": "कैपचोर्वा",
      "es": null,
      "ar": null,
      "fr": null,
@@ -82678,7 +82381,7 @@
     "capital": {
      "en": "Katakwi",
      "zh": null,
-     "hi": null,
+     "hi": "कटाक्वी",
      "es": null,
      "ar": null,
      "fr": null,
@@ -82816,7 +82519,7 @@
     "capital": {
      "en": "Kamwenge",
      "zh": null,
-     "hi": null,
+     "hi": "कामवेंगे",
      "es": null,
      "ar": null,
      "fr": "Kamwenge",
@@ -82990,7 +82693,7 @@
     "capital": {
      "en": "Kotido",
      "zh": null,
-     "hi": null,
+     "hi": "कोटिडो",
      "es": null,
      "ar": null,
      "fr": "Kotido",
@@ -83036,7 +82739,7 @@
     "capital": {
      "en": "Koboko",
      "zh": "科博科",
-     "hi": null,
+     "hi": "कोबोको",
      "es": "Koboko",
      "ar": null,
      "fr": "Koboko",
@@ -83169,7 +82872,7 @@
     "capital": {
      "en": "Ibanda",
      "zh": null,
-     "hi": null,
+     "hi": "इबांडा",
      "es": null,
      "ar": null,
      "fr": "Ibanda",
@@ -83350,7 +83053,7 @@
     "capital": {
      "en": "Bundibugyo",
      "zh": null,
-     "hi": null,
+     "hi": "बुंदिबुग्यो",
      "es": null,
      "ar": null,
      "fr": "Bundibugyo",
@@ -83442,7 +83145,7 @@
     "capital": {
      "en": "Luweero",
      "zh": null,
-     "hi": null,
+     "hi": "लुवेरो",
      "es": null,
      "ar": null,
      "fr": "Luweero",
@@ -83878,7 +83581,7 @@
     "capital": {
      "en": "Nebbi",
      "zh": null,
-     "hi": null,
+     "hi": "नेब्बी",
      "es": null,
      "ar": "حي نيبى",
      "fr": "Nebbi",
@@ -83924,7 +83627,7 @@
     "capital": {
      "en": "Sironko",
      "zh": "錫龍科",
-     "hi": null,
+     "hi": "सिरोंको",
      "es": null,
      "ar": "محافظة سيرونكو",
      "fr": "Sironko",
@@ -83969,7 +83672,7 @@
     "capital": {
      "en": "Pallisa",
      "zh": null,
-     "hi": null,
+     "hi": "पालीसा",
      "es": null,
      "ar": "باليسا",
      "fr": "Pallisa",
@@ -84015,7 +83718,7 @@
     "capital": {
      "en": "Moroto Town",
      "zh": null,
-     "hi": null,
+     "hi": "मोरोटो टाउन",
      "es": "Moroto",
      "ar": null,
      "fr": "Moroto",
@@ -84059,7 +83762,7 @@
     "capital": {
      "en": "Nakapiripirit",
      "zh": null,
-     "hi": null,
+     "hi": "नाकापिरिपिरिट",
      "es": null,
      "ar": null,
      "fr": null,
@@ -84102,7 +83805,7 @@
     "capital": {
      "en": "Kaliro",
      "zh": null,
-     "hi": null,
+     "hi": "कालिरो",
      "es": null,
      "ar": null,
      "fr": null,
@@ -84238,7 +83941,7 @@
     "capital": {
      "en": "Moyo Town",
      "zh": null,
-     "hi": null,
+     "hi": "मोयो टाउन",
      "es": null,
      "ar": null,
      "fr": "Moyo",
@@ -84576,7 +84279,7 @@
     "capital": {
      "en": "Kabale",
      "zh": null,
-     "hi": null,
+     "hi": "केबाले",
      "es": "Kabale",
      "ar": "كابالي",
      "fr": "Kabale",
@@ -84915,7 +84618,7 @@
     "capital": {
      "en": "Damongo",
      "zh": "达蒙戈",
-     "hi": null,
+     "hi": "दामोंगो",
      "es": null,
      "ar": null,
      "fr": null,
@@ -85260,7 +84963,7 @@
     "capital": {
      "en": "Sunyani",
      "zh": "苏尼亚尼",
-     "hi": null,
+     "hi": "सुन्यानी",
      "es": "Sunyani",
      "ar": "سونياتي",
      "fr": "Sunyani",
@@ -85306,7 +85009,7 @@
     "capital": {
      "en": "Ho",
      "zh": "霍城",
-     "hi": null,
+     "hi": "हो",
      "es": "Ho",
      "ar": "هو",
      "fr": "Ho",
@@ -85400,7 +85103,7 @@
     "capital": {
      "en": "Bolgatanga",
      "zh": "博尔加坦加",
-     "hi": null,
+     "hi": "बोलगातांगा",
      "es": "Bolgatanga",
      "ar": null,
      "fr": "Bolgatanga",
@@ -87653,7 +87356,7 @@
     "capital": {
      "en": "Ban Houayxay",
      "zh": "会晒",
-     "hi": null,
+     "hi": "बान हुआयशाय",
      "es": "Hūaisāi",
      "ar": null,
      "fr": "Houayxay",
@@ -88412,7 +88115,7 @@
     "capital": {
      "en": "Mabaruma",
      "zh": "马巴鲁马",
-     "hi": null,
+     "hi": "माबारुमा",
      "es": "Mabaruma",
      "ar": "ماباروما",
      "fr": "Mabaruma",
@@ -88459,7 +88162,7 @@
     "capital": {
      "en": "Anna Regina",
      "zh": "安娜女王村",
-     "hi": null,
+     "hi": "अन्ना रेजिना",
      "es": "Anna Regina",
      "ar": "آنا ريجينا",
      "fr": "Anna Regina",
@@ -88505,7 +88208,7 @@
     "capital": {
      "en": "Vreed en Hoop",
      "zh": "弗里登胡普",
-     "hi": null,
+     "hi": "व्रीड एन हूप",
      "es": "Vreed en Hoop",
      "ar": null,
      "fr": "Vreed en Hoop",
@@ -88550,7 +88253,7 @@
     "capital": {
      "en": "Paradise",
      "zh": "帕拉代斯",
-     "hi": null,
+     "hi": "पैराडाइज़",
      "es": "Paradise",
      "ar": null,
      "fr": "Paradise",
@@ -88596,7 +88299,7 @@
     "capital": {
      "en": "Bartica",
      "zh": "巴蒂卡",
-     "hi": null,
+     "hi": "बार्टिका",
      "es": "Bartica",
      "ar": "بارتيسا",
      "fr": "Bartica",
@@ -88644,7 +88347,7 @@
     "capital": {
      "en": "Mahdia",
      "zh": "马迪亚",
-     "hi": null,
+     "hi": "महदिया",
      "es": "Mahdia",
      "ar": "المهدية",
      "fr": "Mahdia",
@@ -88690,7 +88393,7 @@
     "capital": {
      "en": "Lethem",
      "zh": "莱瑟姆",
-     "hi": null,
+     "hi": "लेथम",
      "es": "Lethem",
      "ar": null,
      "fr": "Lethem",
@@ -89772,7 +89475,7 @@
     "capital": {
      "en": "Kaffrine",
      "zh": "卡夫林",
-     "hi": null,
+     "hi": "काफ़रिन",
      "es": null,
      "ar": null,
      "fr": "Kaffrine",
@@ -90945,7 +90648,7 @@
     "capital": {
      "en": "Quneitra",
      "zh": "库奈特拉",
-     "hi": null,
+     "hi": "क़ुनेइत्रा",
      "es": "Quneitra",
      "ar": "القنيطرة",
      "fr": "Qouneitra",
@@ -91053,7 +90756,7 @@
     "capital": {
      "en": "Phnom Tbeng Meanchey",
      "zh": null,
-     "hi": null,
+     "hi": "फ़नोम तबेंग मेंचे",
      "es": "Preah Wijía",
      "ar": null,
      "fr": "Tbeng Meancheay",
@@ -91101,7 +90804,7 @@
     "capital": {
      "en": "Kampong Thom",
      "zh": "磅同",
-     "hi": null,
+     "hi": "कंपोंग थोम",
      "es": "Kompung Thom",
      "ar": null,
      "fr": "Kampong Thum",
@@ -91179,7 +90882,7 @@
     "capital": {
      "en": "Koh Kong",
      "zh": "戈公市",
-     "hi": null,
+     "hi": "कोह कोंग",
      "es": "Koh Kong",
      "ar": null,
      "fr": "Koh Kong",
@@ -91852,7 +91555,7 @@
     "capital": {
      "en": "Kratié",
      "zh": "桔井市",
-     "hi": null,
+     "hi": "क्राती",
      "es": "Kratié",
      "ar": null,
      "fr": "Kratie",
@@ -91948,7 +91651,7 @@
     "capital": {
      "en": "Chbar Mon",
      "zh": "磅士卑",
-     "hi": null,
+     "hi": "छबार मोन",
      "es": "Chbar Mon",
      "ar": null,
      "fr": "Kampong Spoe",
@@ -93137,7 +92840,7 @@
     "capital": {
      "en": "Brokopondo",
      "zh": "布罗科蓬多",
-     "hi": null,
+     "hi": "ब्रोकोपोंडो",
      "es": "Brokopondo",
      "ar": "حوض بروكوبوندو",
      "fr": "Brokopondo",
@@ -96243,7 +95946,7 @@
     "capital": {
      "en": "Ermoupolis",
      "zh": "埃尔穆波利",
-     "hi": null,
+     "hi": "एर्मूपोलिस",
      "es": "Ermúpoli",
      "ar": "هرموبوليس",
      "fr": "Ermoúpoli",
@@ -96281,6 +95984,7 @@
      "ru": "Крит",
      "pt": "Creta",
      "de": "Kreta",
+     "it": "periferia di Creta",
      "ko": "크레타주",
      "pl": "Region Kreta",
      "nl": "Kreta"
@@ -96489,7 +96193,7 @@
     "capital": {
      "en": "Juigalpa",
      "zh": null,
-     "hi": null,
+     "hi": "हुइगाल्पा",
      "es": "Juigalpa",
      "ar": null,
      "fr": "Juigalpa",
@@ -96627,7 +96331,7 @@
     "capital": {
      "en": "Chinandega (city)",
      "zh": null,
-     "hi": null,
+     "hi": "चिनांडेगा (नगर)",
      "es": "Chinandega (city)",
      "ar": "تشينانديغا (مدينة)",
      "fr": "Chinandega (city)",
@@ -96946,7 +96650,7 @@
     "capital": {
      "en": "Jinotega",
      "zh": null,
-     "hi": null,
+     "hi": "हिनोतेगा",
      "es": "Jinotega",
      "ar": null,
      "fr": "Jinotega",
@@ -97265,7 +96969,7 @@
     "name": {
      "en": "Nampo",
      "zh": "南浦特别市",
-     "hi": null,
+     "hi": "नाम्पो",
      "es": "Namp'o",
      "ar": "نامبو",
      "fr": "Nampo",
@@ -97699,7 +97403,7 @@
     "capital": {
      "en": "Salima",
      "zh": "萨利马",
-     "hi": null,
+     "hi": "सालिमा",
      "es": null,
      "ar": null,
      "fr": "Salima",
@@ -97743,7 +97447,7 @@
     "capital": {
      "en": "Dowa",
      "zh": "多瓦",
-     "hi": null,
+     "hi": "डोवा",
      "es": null,
      "ar": null,
      "fr": "Dowa",
@@ -97785,7 +97489,7 @@
     "capital": {
      "en": "Dedza",
      "zh": "代扎",
-     "hi": null,
+     "hi": "डेड्ज़ा",
      "es": null,
      "ar": "حي ديدزا",
      "fr": "Dedza",
@@ -97830,7 +97534,7 @@
     "capital": {
      "en": "Nkhotakota",
      "zh": "恩科塔科塔",
-     "hi": null,
+     "hi": "एनखोटाकोटा",
      "es": null,
      "ar": null,
      "fr": "Nkhotakota",
@@ -97874,7 +97578,7 @@
     "capital": {
      "en": "Ntcheu",
      "zh": "恩切乌",
-     "hi": null,
+     "hi": "एन्त्चेउ",
      "es": null,
      "ar": "حي نتشيو",
      "fr": "Ntcheu",
@@ -97917,7 +97621,7 @@
     "capital": {
      "en": "Ntchisi",
      "zh": "恩奇西",
-     "hi": null,
+     "hi": "एनचिसी",
      "es": null,
      "ar": null,
      "fr": "Ntchisi",
@@ -97959,7 +97663,7 @@
     "capital": {
      "en": "Kasungu",
      "zh": "卡松古",
-     "hi": null,
+     "hi": "कासुंगु",
      "es": "Kasungu",
      "ar": null,
      "fr": "Kasungu",
@@ -98004,7 +97708,7 @@
     "capital": {
      "en": "Mchinji",
      "zh": "姆钦吉",
-     "hi": null,
+     "hi": "मचिंजी",
      "es": null,
      "ar": "مشينجي",
      "fr": "Mchinji",
@@ -98134,7 +97838,7 @@
     "capital": {
      "en": "Nsanje",
      "zh": "恩桑杰",
-     "hi": null,
+     "hi": "एन्सांजे",
      "es": null,
      "ar": "حي نسانجي",
      "fr": "Nsanje",
@@ -98178,7 +97882,7 @@
     "capital": {
      "en": "Mulanje",
      "zh": "姆兰杰",
-     "hi": null,
+     "hi": "मुलांजे",
      "es": null,
      "ar": null,
      "fr": "Mulanje",
@@ -98220,7 +97924,7 @@
     "capital": {
      "en": "Phalombe",
      "zh": null,
-     "hi": null,
+     "hi": "फ़ालोम्बे",
      "es": "Phalombe",
      "ar": null,
      "fr": "Phalombe",
@@ -98263,7 +97967,7 @@
     "capital": {
      "en": "Chiradzulu",
      "zh": "奇拉祖卢",
-     "hi": null,
+     "hi": "चिराद्ज़ुलु",
      "es": "Chiradzulu",
      "ar": null,
      "fr": "Chiradzulu",
@@ -98304,7 +98008,7 @@
     "capital": {
      "en": "Mangochi",
      "zh": "曼戈奇",
-     "hi": null,
+     "hi": "मंगोची",
      "es": "Mangochi",
      "ar": "مانغوتشي",
      "fr": "Mangochi",
@@ -98348,7 +98052,7 @@
     "capital": {
      "en": "Chikwawa",
      "zh": "奇夸瓦",
-     "hi": null,
+     "hi": "चिक्वावा",
      "es": null,
      "ar": null,
      "fr": "Chikwawa",
@@ -98433,7 +98137,7 @@
     "capital": {
      "en": "Mwanza",
      "zh": null,
-     "hi": null,
+     "hi": "मवांज़ा",
      "es": null,
      "ar": null,
      "fr": null,
@@ -98473,7 +98177,7 @@
     "capital": {
      "en": "Balaka Township",
      "zh": "巴拉卡",
-     "hi": null,
+     "hi": "बालाका टाउनशिप",
      "es": null,
      "ar": null,
      "fr": "Balaka",
@@ -98642,7 +98346,7 @@
     "capital": {
      "en": "Likoma",
      "zh": null,
-     "hi": null,
+     "hi": "लिकोमा",
      "es": null,
      "ar": null,
      "fr": "Likoma",
@@ -98682,7 +98386,7 @@
     "capital": {
      "en": "Karonga",
      "zh": "卡龙加",
-     "hi": null,
+     "hi": "करोंगा",
      "es": null,
      "ar": "ريف كارونجا",
      "fr": "Karonga",
@@ -98730,7 +98434,7 @@
     "capital": {
      "en": "Rumphi",
      "zh": "龙皮",
-     "hi": null,
+     "hi": "रुम्फी",
      "es": null,
      "ar": null,
      "fr": "Rumphi",
@@ -98773,7 +98477,7 @@
     "capital": {
      "en": "Chitipa",
      "zh": "奇蒂帕",
-     "hi": null,
+     "hi": "चितिपा",
      "es": null,
      "ar": "شيتيبا",
      "fr": "Chitipa",
@@ -98816,7 +98520,7 @@
     "capital": {
      "en": "Mzimba",
      "zh": "姆津巴",
-     "hi": null,
+     "hi": "म्ज़िम्बा",
      "es": "Mzimba",
      "ar": "حي مزيمبا",
      "fr": "Mzimba",
@@ -98861,7 +98565,7 @@
     "capital": {
      "en": "Nkhata Bay",
      "zh": "恩卡塔贝",
-     "hi": null,
+     "hi": "न्खाटा बे",
      "es": null,
      "ar": "خليج نخاتا",
      "fr": "Nkhata Bay",
@@ -98961,7 +98665,7 @@
     "capital": {
      "en": "Barentu",
      "zh": "巴倫圖",
-     "hi": null,
+     "hi": "बारेंतू",
      "es": null,
      "ar": "بارنتو",
      "fr": "Barentu",
@@ -99006,7 +98710,7 @@
     "capital": {
      "en": "Mendefera",
      "zh": "门德费拉",
-     "hi": null,
+     "hi": "मेंडेफेरा",
      "es": "Mendefera",
      "ar": "مندفرا",
      "fr": "Mendefera",
@@ -99097,7 +98801,7 @@
     "capital": {
      "en": "Massawa",
      "zh": "马萨瓦",
-     "hi": null,
+     "hi": "मसावा",
      "es": "Massawa",
      "ar": "مصوع",
      "fr": "Massaoua",
@@ -99665,7 +99369,7 @@
     "capital": {
      "en": "Ouidah",
      "zh": "威达",
-     "hi": null,
+     "hi": "ऊइदाह",
      "es": "Ouidah",
      "ar": "أويدا",
      "fr": "Ouidah",
@@ -100652,7 +100356,7 @@
     "capital": {
      "en": "Tubmanburg",
      "zh": "杜伯曼堡",
-     "hi": null,
+     "hi": "टबमनबर्ग",
      "es": null,
      "ar": "توبمانبورغ",
      "fr": "Tubmanburg",
@@ -100700,7 +100404,7 @@
     "capital": {
      "en": "Gbarnga",
      "zh": "邦加",
-     "hi": null,
+     "hi": "ग्बार्गा",
      "es": "Gbarnga",
      "ar": "غبارنغا",
      "fr": "Gbarnga",
@@ -100749,7 +100453,7 @@
     "capital": {
      "en": "Bopolu",
      "zh": "博波卢",
-     "hi": null,
+     "hi": "बोपोलू",
      "es": null,
      "ar": "بابولو",
      "fr": "Bopolu",
@@ -100796,7 +100500,7 @@
     "capital": {
      "en": "Buchanan",
      "zh": "布坎南",
-     "hi": null,
+     "hi": "बुकानन",
      "es": "Buchanan",
      "ar": "بوكانان",
      "fr": "Buchanan",
@@ -100844,7 +100548,7 @@
     "capital": {
      "en": "Robertsport",
      "zh": "罗伯茨港",
-     "hi": null,
+     "hi": "रॉबर्ट्सपोर्ट",
      "es": "Robertsport",
      "ar": "روبرتسبورت",
      "fr": "Robertsport",
@@ -100891,7 +100595,7 @@
     "capital": {
      "en": "Zwedru",
      "zh": "绥德鲁",
-     "hi": null,
+     "hi": "ज़्वेड्रू",
      "es": "Zwedru",
      "ar": "زويدرو",
      "fr": "Zwedru",
@@ -100938,7 +100642,7 @@
     "capital": {
      "en": "Barclayville",
      "zh": "巴克利維爾",
-     "hi": null,
+     "hi": "बार्कलेविल",
      "es": null,
      "ar": "باركلايفيلي",
      "fr": "Barclayville",
@@ -100985,7 +100689,7 @@
     "capital": {
      "en": "Voinjama",
      "zh": "沃因贾马",
-     "hi": null,
+     "hi": "वोइंजामा",
      "es": null,
      "ar": "فوينجاما",
      "fr": "Voinjama",
@@ -101032,7 +100736,7 @@
     "capital": {
      "en": "Kakata",
      "zh": "卡卡塔",
-     "hi": null,
+     "hi": "काकाटा",
      "es": null,
      "ar": "كاكاتا",
      "fr": "Kakata",
@@ -101079,7 +100783,7 @@
     "capital": {
      "en": "Harper",
      "zh": "哈珀",
-     "hi": null,
+     "hi": "हार्पर",
      "es": "Harper",
      "ar": "هاربر",
      "fr": "Harper",
@@ -101128,7 +100832,7 @@
     "capital": {
      "en": "Bensonville",
      "zh": "本森維爾",
-     "hi": null,
+     "hi": "बेन्सनविल",
      "es": "Bensonville",
      "ar": "بينسونفيلي",
      "fr": "Bensonville",
@@ -101176,7 +100880,7 @@
     "capital": {
      "en": "Sanniquellie",
      "zh": "桑尼奎利",
-     "hi": null,
+     "hi": "सैनिक्वेली",
      "es": null,
      "ar": "سانيكيلي",
      "fr": "Sanniquellie",
@@ -101223,7 +100927,7 @@
     "capital": {
      "en": "River Cess",
      "zh": "里弗塞斯",
-     "hi": null,
+     "hi": "सेस नदी",
      "es": "River Cess",
      "ar": "نهر سيس",
      "fr": "Cesstos City",
@@ -101270,7 +100974,7 @@
     "capital": {
      "en": "Fish Town",
      "zh": "菲什敦",
-     "hi": null,
+     "hi": "फ़िश टाउन",
      "es": null,
      "ar": null,
      "fr": "Fish Town",
@@ -101316,7 +101020,7 @@
     "capital": {
      "en": "Greenville",
      "zh": "格林维尔",
-     "hi": null,
+     "hi": "ग्रीनविल",
      "es": "Greenville",
      "ar": null,
      "fr": "Greenville",
@@ -103788,7 +103492,7 @@
     "capital": {
      "en": "Santa Cruz del Quiché",
      "zh": "基切省聖克魯斯",
-     "hi": null,
+     "hi": "सांता क्रूज़ डेल क्विशे",
      "es": "Santa Cruz del Quiché",
      "ar": "سانتا كروز ديل كويتشي",
      "fr": "Santa Cruz del Quiché",
@@ -104273,7 +103977,7 @@
     "capital": {
      "en": "Retalhuleu",
      "zh": "雷塔卢莱乌",
-     "hi": null,
+     "hi": "रेतालहुलेउ",
      "es": "Retalhuleu",
      "ar": "قسم ريتالهوليو",
      "fr": "Retalhuleu",
@@ -104321,7 +104025,7 @@
     "capital": {
      "en": "Salamá",
      "zh": "萨拉马",
-     "hi": null,
+     "hi": "सालामा",
      "es": "Salamá",
      "ar": "سالاما",
      "fr": "Salamá",
@@ -104669,7 +104373,7 @@
     "capital": {
      "en": "Egilsstaðir",
      "zh": "埃伊尔斯塔济",
-     "hi": null,
+     "hi": "एगिल्सस्टाधिर",
      "es": "Egilsstaðir",
      "ar": null,
      "fr": "Egilsstaðir",
@@ -104718,7 +104422,7 @@
     "capital": {
      "en": "Akureyri",
      "zh": "阿克雷里",
-     "hi": null,
+     "hi": "अकुरेयरी",
      "es": "Akureyri",
      "ar": "أكوريري",
      "fr": "Akureyri",
@@ -104767,7 +104471,7 @@
     "capital": {
      "en": "Sauðárkrókur",
      "zh": "瑟伊藻克罗屈尔",
-     "hi": null,
+     "hi": "सौदारक्रोकुर",
      "es": "Sauðárkrókur",
      "ar": null,
      "fr": "Sauðárkrókur",
@@ -104814,7 +104518,7 @@
     "capital": {
      "en": "Ísafjörður",
      "zh": "伊萨菲厄泽",
-     "hi": null,
+     "hi": "इसाफ़्योर्दुर",
      "es": "Ísafjörður",
      "ar": "اسافيوردور",
      "fr": "Ísafjörður",
@@ -104863,7 +104567,7 @@
     "capital": {
      "en": "Borgarnes",
      "zh": "博尔加内斯",
-     "hi": null,
+     "hi": "बोर्गार्नेस",
      "es": "Borgarnes",
      "ar": "بورغارنيس",
      "fr": "Borgarnes",
@@ -104960,7 +104664,7 @@
     "capital": {
      "en": "Selfoss",
      "zh": "塞尔福斯",
-     "hi": null,
+     "hi": "सेल्फ़ॉस",
      "es": "Selfoss",
      "ar": "سيلفوس",
      "fr": "Selfoss",
@@ -106796,7 +106500,7 @@
      "value": 77916,
      "year": 2018
     },
-    "area": null
+    "area": 2798
    },
    {
     "id": "24955722B69535494870966",
@@ -106833,8 +106537,11 @@
      "pt": "Beja"
     },
     "capitalQid": "Q3344424",
-    "population": null,
-    "area": null
+    "population": {
+     "value": 152758,
+     "year": 2011
+    },
+    "area": 10229.05
    },
    {
     "id": "24955722B56624562889325",
@@ -106956,7 +106663,7 @@
      "value": 52192,
      "year": 2018
     },
-    "area": null
+    "area": 6615
    },
    {
     "id": "24955722B78831183552196",
@@ -107038,7 +106745,7 @@
      "value": 52454,
      "year": 2018
     },
-    "area": null
+    "area": 7393
    },
    {
     "id": "24955722B93513210668499",
@@ -107079,7 +106786,7 @@
      "value": 60974,
      "year": 2018
     },
-    "area": null
+    "area": 4960
    },
    {
     "id": "24955722B16214435525429",
@@ -107119,7 +106826,7 @@
      "value": 39103,
      "year": 2018
     },
-    "area": null
+    "area": 5535
    },
    {
     "id": "24955722B48064919479677",
@@ -107159,7 +106866,7 @@
      "value": 124857,
      "year": 2018
     },
-    "area": null
+    "area": 3508
    },
    {
     "id": "24955722B70468072404853",
@@ -107377,8 +107084,8 @@
     },
     "capitalQid": "Q3344648",
     "population": {
-     "value": 115758,
-     "year": 2018
+     "value": 902863,
+     "year": 2023
     },
     "area": 5064
    },
@@ -107539,7 +107246,7 @@
     "capital": {
      "en": "Ma'an",
      "zh": "马安",
-     "hi": null,
+     "hi": "मआन",
      "es": "Ma'an",
      "ar": "معان",
      "fr": "Maʿan",
@@ -107686,7 +107393,7 @@
     "capital": {
      "en": "Salt",
      "zh": "薩爾特",
-     "hi": null,
+     "hi": "सॉल्ट",
      "es": "As Salt",
      "ar": "السلط",
      "fr": "Salt",
@@ -107784,7 +107491,7 @@
     "capital": {
      "en": "Ajloun",
      "zh": "阿杰隆",
-     "hi": null,
+     "hi": "अजलून",
      "es": "Ajlun",
      "ar": "عجلون",
      "fr": "Ajlun",
@@ -107879,7 +107586,7 @@
     "capital": {
      "en": "Mafraq",
      "zh": "马弗拉克",
-     "hi": null,
+     "hi": "मफ़रक",
      "es": "Mafraq",
      "ar": "المفرق",
      "fr": "Mafraq",
@@ -107927,7 +107634,7 @@
     "capital": {
      "en": "Tafilah",
      "zh": null,
-     "hi": null,
+     "hi": "तफ़ीला",
      "es": "Tafilah",
      "ar": "الطفيلة",
      "fr": "Tafilah",
@@ -108222,7 +107929,7 @@
     "capital": {
      "en": "Kikinda",
      "zh": "基金达",
-     "hi": null,
+     "hi": "किकिंडा",
      "es": "Kikinda",
      "ar": null,
      "fr": "Kikinda",
@@ -109474,7 +109181,7 @@
     "capital": {
      "en": "Kosovska Mitrovica",
      "zh": "米特罗维察",
-     "hi": null,
+     "hi": "मित्रोविका",
      "es": "Mitrovica",
      "ar": "ميتروفيتسا",
      "fr": "Mitrovica",
@@ -110197,7 +109904,7 @@
     "capital": {
      "en": "Ras al-Khaimah",
      "zh": "哈伊马角",
-     "hi": null,
+     "hi": "रास अल-खैमाह",
      "es": "Ras al-Khaimah",
      "ar": "رأس الخيمة",
      "fr": "Ras el Khaïmah",
@@ -111024,7 +110731,7 @@
     "capital": {
      "en": "Bocas del Toro",
      "zh": "博卡斯德尔托罗",
-     "hi": null,
+     "hi": "बोकास डेल टोरो",
      "es": "Bocas del Toro",
      "ar": "بلدة بوكاس، بوكاس ديل تورو",
      "fr": "Bocas del Toro",
@@ -111485,7 +111192,7 @@
     "capital": {
      "en": "Santiago de Veraguas",
      "zh": "圣地亚哥-的贝拉瓜斯",
-     "hi": null,
+     "hi": "सैंटियागो दे वेरागुआस",
      "es": "Santiago de Veraguas",
      "ar": "سانتياغو دي فيراغواس",
      "fr": "Santiago de Veraguas",
@@ -111582,7 +111289,7 @@
     "capital": {
      "en": "Penonomé",
      "zh": "佩诺诺梅",
-     "hi": null,
+     "hi": "पेनोनोमे",
      "es": "Penonomé",
      "ar": null,
      "fr": "Penonomé",
@@ -111873,7 +111580,7 @@
     "capital": {
      "en": "Port Laoise",
      "zh": "莱伊什港",
-     "hi": null,
+     "hi": "पोर्ट लाओईस",
      "es": "Portlaoise",
      "ar": "بورتلاويس",
      "fr": "Portlaoise",
@@ -111922,7 +111629,7 @@
     "capital": {
      "en": "Carrick-on-Shannon",
      "zh": "香农河畔卡里克",
-     "hi": null,
+     "hi": "कैरिक-ऑन-शैनन",
      "es": "Carrick-on-Shannon",
      "ar": null,
      "fr": "Carrick-on-Shannon",
@@ -112214,7 +111921,7 @@
     "capital": {
      "en": "Castlebar",
      "zh": "卡斯尔巴",
-     "hi": null,
+     "hi": "कैसलबार",
      "es": "Castlebar",
      "ar": null,
      "fr": "Castlebar",
@@ -112263,7 +111970,7 @@
     "capital": {
      "en": "Sligo",
      "zh": "斯莱戈",
-     "hi": null,
+     "hi": "स्लाइगो",
      "es": "Sligo",
      "ar": "سلايغو",
      "fr": "Sligo",
@@ -112312,7 +112019,7 @@
     "capital": {
      "en": "Lifford",
      "zh": "利福德",
-     "hi": null,
+     "hi": "लिफ़र्ड",
      "es": "Lifford",
      "ar": null,
      "fr": "Lifford",
@@ -112360,7 +112067,7 @@
     "capital": {
      "en": "Roscommon",
      "zh": "马达加斯加之战",
-     "hi": null,
+     "hi": "रॉसकॉमन",
      "es": "Roscommon",
      "ar": null,
      "fr": "Roscommon",
@@ -112408,7 +112115,7 @@
     "capital": {
      "en": "Kilkenny",
      "zh": "基尔肯尼",
-     "hi": null,
+     "hi": "किल्केनी",
      "es": "Kilkenny",
      "ar": "كيلكيني",
      "fr": "Kilkenny",
@@ -112506,7 +112213,7 @@
     "capital": {
      "en": "Carlow",
      "zh": "卡洛",
-     "hi": null,
+     "hi": "कार्लो",
      "es": "Carlow",
      "ar": null,
      "fr": "Carlow",
@@ -112555,7 +112262,7 @@
     "capital": {
      "en": "Wicklow",
      "zh": "威克洛",
-     "hi": null,
+     "hi": "विकलो",
      "es": "Wicklow Town",
      "ar": "ويكلو",
      "fr": "Wicklow",
@@ -112653,7 +112360,7 @@
     "capital": {
      "en": "Dundalk",
      "zh": "邓多克",
-     "hi": null,
+     "hi": "डंडॉक",
      "es": "Dundalk",
      "ar": "دوندالك",
      "fr": "Dundalk",
@@ -112702,7 +112409,7 @@
     "capital": {
      "en": "Navan",
      "zh": "纳文",
-     "hi": null,
+     "hi": "नवान",
      "es": "Navan",
      "ar": "نافان",
      "fr": "Navan",
@@ -112751,7 +112458,7 @@
     "capital": {
      "en": "Tullamore",
      "zh": "塔拉莫尔",
-     "hi": null,
+     "hi": "तुल्लामोर",
      "es": "Tullamore",
      "ar": null,
      "fr": "Tullamore",
@@ -112898,7 +112605,7 @@
     "capital": {
      "en": "Wexford",
      "zh": "韦克斯福德",
-     "hi": null,
+     "hi": "वेक्सफ़ोर्ड",
      "es": "Wexford",
      "ar": "ويكسفورد",
      "fr": "Wexford",
@@ -113093,7 +112800,7 @@
     "capital": {
      "en": "Cavan",
      "zh": "卡旺",
-     "hi": null,
+     "hi": "कैवन",
      "es": "Cavan",
      "ar": null,
      "fr": "Cavan",
@@ -113327,7 +113034,7 @@
     "capital": {
      "en": "Mtskheta",
      "zh": "姆茨赫塔",
-     "hi": null,
+     "hi": "म्त्सखेता",
      "es": "Mtsjeta",
      "ar": "محمية المدينة ومتحف متسخيتا",
      "fr": "Mtskheta",
@@ -113376,7 +113083,7 @@
     "capital": {
      "en": "Akhaltsikhe",
      "zh": "阿哈尔齐赫",
-     "hi": null,
+     "hi": "अख़ाल्त्सिखे",
      "es": "Ajaltsije",
      "ar": "آخالتسيخه",
      "fr": "Akhaltsikhe",
@@ -113473,7 +113180,7 @@
     "capital": {
      "en": "Ozurgeti",
      "zh": "奥祖尔盖蒂",
-     "hi": null,
+     "hi": "ओज़ुर्गेती",
      "es": "Ozurgueti",
      "ar": "أوزورجيتي",
      "fr": "Ozourguéti",
@@ -113618,7 +113325,7 @@
     "capital": {
      "en": "Ambrolauri",
      "zh": "安布罗劳里",
-     "hi": null,
+     "hi": "अम्ब्रोलौरी",
      "es": "Ambrolauri",
      "ar": null,
      "fr": "Ambrolaouri",
@@ -114175,7 +113882,7 @@
     "capital": {
      "en": "Utena",
      "zh": "乌泰纳",
-     "hi": null,
+     "hi": "उटेना",
      "es": "Utena (Lituania)",
      "ar": "أوتينا",
      "fr": "Utena",
@@ -114420,7 +114127,7 @@
     "capital": {
      "en": "Alytus",
      "zh": "阿利图斯",
-     "hi": null,
+     "hi": "अलीतस",
      "es": "Alytus",
      "ar": "أليتس",
      "fr": "Alytus",
@@ -114518,7 +114225,7 @@
     "capital": {
      "en": "Telšiai",
      "zh": "泰尔希艾",
-     "hi": null,
+     "hi": "तेल्शियाई",
      "es": "Telšiai",
      "ar": "تلسياي",
      "fr": "Telšiai",
@@ -114616,7 +114323,7 @@
     "capital": {
      "en": "Tauragė",
      "zh": "陶拉盖",
-     "hi": null,
+     "hi": "तौरागे",
      "es": "Tauragė",
      "ar": "تاوراغه",
      "fr": "Tauragė",
@@ -114675,7 +114382,7 @@
     "capital": {
      "en": "Durum Town",
      "zh": "达庞",
-     "hi": null,
+     "hi": "ड्यूरम टाउन",
      "es": "Dapaong",
      "ar": "داباونق",
      "fr": "Dapaong",
@@ -115988,7 +115695,7 @@
     "capital": {
      "en": "Brčko",
      "zh": "布尔奇科",
-     "hi": null,
+     "hi": "ब्रचको",
      "es": "Brčko",
      "ar": "برتشكو",
      "fr": "Brčko",
@@ -116037,7 +115744,7 @@
     "capital": {
      "en": "Orašje",
      "zh": "奥拉谢",
-     "hi": null,
+     "hi": "ओराशे",
      "es": "Orašje",
      "ar": "أوراسيي",
      "fr": "Orašje",
@@ -116134,7 +115841,7 @@
     "capital": {
      "en": "Goražde",
      "zh": "戈拉日代",
-     "hi": null,
+     "hi": "गोराज़्दे",
      "es": "Goražde",
      "ar": "غورازده",
      "fr": "Goražde",
@@ -119645,7 +119352,7 @@
     "capital": {
      "en": "Viborg",
      "zh": "维堡",
-     "hi": null,
+     "hi": "विबोर्ग",
      "es": "Viborg",
      "ar": "فيبورغ (دنمارك)",
      "fr": "Viborg",
@@ -119693,7 +119400,7 @@
     "capital": {
      "en": "Sorø",
      "zh": "索勒",
-     "hi": null,
+     "hi": "सोरो",
      "es": "Sorø",
      "ar": null,
      "fr": "Sorø",
@@ -119742,7 +119449,7 @@
     "capital": {
      "en": "Hillerød",
      "zh": "希勒勒",
-     "hi": null,
+     "hi": "हिलरोड",
      "es": "Hillerød",
      "ar": "هيليرود",
      "fr": "Hillerød",
@@ -120546,7 +120253,7 @@
     "capital": {
      "en": "Appenzell",
      "zh": "阿彭策尔",
-     "hi": null,
+     "hi": "अप्पेन्ज़ेल",
      "es": "Appenzell",
      "ar": "أبنزل",
      "fr": "Appenzell",
@@ -121732,7 +121439,7 @@
     "capital": {
      "en": "Trashigang",
      "zh": "塔希冈",
-     "hi": null,
+     "hi": "ट्रैशिगैंग",
      "es": "Trashigang",
      "ar": null,
      "fr": "Trashigang",
@@ -121780,7 +121487,7 @@
     "capital": {
      "en": "Trashiyangtse",
      "zh": "塔希央奇",
-     "hi": null,
+     "hi": "ट्रैशियांगत्से",
      "es": "Trashiyangtse",
      "ar": null,
      "fr": null,
@@ -121823,13 +121530,14 @@
     "capital": {
      "en": "Mongar",
      "zh": "蒙加尔",
-     "hi": null,
+     "hi": "मोंगर",
      "es": "Mongar",
      "ar": null,
      "fr": "Mongar",
      "bn": "মঙ্গার",
      "ru": "Монгар",
      "pt": "Mongar",
+     "de": "Mongar",
      "it": "Mongar",
      "pl": "Mongar",
      "nl": "Mongar"
@@ -121867,7 +121575,7 @@
     "capital": {
      "en": "Lhuntse",
      "zh": "倫奇",
-     "hi": null,
+     "hi": "ल्हुंत्से",
      "es": "Lhuntse",
      "ar": null,
      "fr": null,
@@ -121913,7 +121621,7 @@
     "capital": {
      "en": "Jakar",
      "zh": "贾卡尔",
-     "hi": null,
+     "hi": "जाकर",
      "es": "Jakar",
      "ar": null,
      "fr": "Jakar",
@@ -121960,7 +121668,7 @@
     "capital": {
      "en": "Sarpang",
      "zh": null,
-     "hi": null,
+     "hi": "सरपांग",
      "es": "Sarpang",
      "ar": null,
      "fr": "Sarpang",
@@ -122004,7 +121712,7 @@
     "capital": {
      "en": "Trongsa",
      "zh": "通萨",
-     "hi": null,
+     "hi": "ट्रोंगसा",
      "es": "Trongsa",
      "ar": null,
      "fr": "Tongsa",
@@ -122051,7 +121759,7 @@
     "capital": {
      "en": "Damphu",
      "zh": null,
-     "hi": null,
+     "hi": "डैमफू",
      "es": "Damphu",
      "ar": null,
      "fr": "Damphu",
@@ -122097,7 +121805,7 @@
     "capital": {
      "en": "Daga",
      "zh": "達加",
-     "hi": null,
+     "hi": "दागा",
      "es": "Dagana",
      "ar": null,
      "fr": "Taga Dzong",
@@ -122371,7 +122079,7 @@
     "capital": {
      "en": "Samtse",
      "zh": "薩姆奇",
-     "hi": null,
+     "hi": "सैमत्से",
      "es": "Samtse",
      "ar": null,
      "fr": null,
@@ -122416,7 +122124,7 @@
     "capital": {
      "en": "Ha",
      "zh": "哈阿",
-     "hi": null,
+     "hi": "हा",
      "es": "Haa",
      "ar": null,
      "fr": null,
@@ -122510,7 +122218,7 @@
     "capital": {
      "en": "Pemagatsel",
      "zh": "佩馬加策爾",
-     "hi": null,
+     "hi": "पेमागात्सेल",
      "es": "Pemagatshel",
      "ar": null,
      "fr": null,
@@ -122601,7 +122309,7 @@
     "capital": {
      "en": "Zhemgang",
      "zh": "謝姆岡",
-     "hi": null,
+     "hi": "झेमगांग",
      "es": "Zhemgang",
      "ar": null,
      "fr": "Zhemgang",
@@ -122687,7 +122395,7 @@
     "capital": {
      "en": "Bafatá",
      "zh": "巴法塔",
-     "hi": null,
+     "hi": "बाफाता",
      "es": "Bafatá",
      "ar": "بافاتا",
      "fr": "Bafatá",
@@ -122736,7 +122444,7 @@
     "capital": {
      "en": "Quinhamel",
      "zh": "基尼亚梅尔",
-     "hi": null,
+     "hi": "क्विन्हामेल",
      "es": "Quinhamel",
      "ar": "كوينيهامل",
      "fr": "Quinhamel",
@@ -122784,7 +122492,7 @@
     "capital": {
      "en": "Bolama",
      "zh": "博拉马",
-     "hi": null,
+     "hi": "बोलामा",
      "es": "Bolama",
      "ar": "بولاما",
      "fr": "Bolama",
@@ -122832,7 +122540,7 @@
     "capital": {
      "en": "Cacheu",
      "zh": "卡谢乌",
-     "hi": null,
+     "hi": "काशेउ",
      "es": "Cacheu",
      "ar": "كاشيو",
      "fr": "Cacheu",
@@ -122880,7 +122588,7 @@
     "capital": {
      "en": "Gabu",
      "zh": "加布",
-     "hi": null,
+     "hi": "गाबू",
      "es": null,
      "ar": "غابو_(مدينة)",
      "fr": "Gabu",
@@ -122928,7 +122636,7 @@
     "capital": {
      "en": "Farim",
      "zh": "法林",
-     "hi": null,
+     "hi": "फ़ारिम",
      "es": "Farim",
      "ar": "فاريم",
      "fr": "Farim",
@@ -122976,7 +122684,7 @@
     "capital": {
      "en": "Buba",
      "zh": "布巴",
-     "hi": null,
+     "hi": "बुबा",
      "es": "Buba",
      "ar": "بوبا (غينيا بيساو)",
      "fr": "Buba",
@@ -123024,7 +122732,7 @@
     "capital": {
      "en": "Catió",
      "zh": "卡提奥",
-     "hi": null,
+     "hi": "कातियो",
      "es": "Catió",
      "ar": "كاتيو",
      "fr": "Catió",
@@ -123082,7 +122790,7 @@
     "capital": {
      "en": "Cahul",
      "zh": "卡胡尔",
-     "hi": null,
+     "hi": "कहुल",
      "es": "Cahul",
      "ar": "ريف كاهول",
      "fr": "Cahul",
@@ -123179,7 +122887,7 @@
     "capital": {
      "en": "Taraclia",
      "zh": "塔拉克利亚",
-     "hi": null,
+     "hi": "तारक्लिया",
      "es": "Taraclia",
      "ar": null,
      "fr": "Taraclia",
@@ -123226,7 +122934,7 @@
     "capital": {
      "en": "Cantemir",
      "zh": "岡代米爾",
-     "hi": null,
+     "hi": "कांतेमिर",
      "es": "Cantemir",
      "ar": null,
      "fr": "Cantemir",
@@ -123274,7 +122982,7 @@
     "capital": {
      "en": "Basarabeasca",
      "zh": "巴薩拉貝亞斯卡",
-     "hi": null,
+     "hi": "बसाराबेआस्का",
      "es": "Basarabeasca",
      "ar": "باسارابياسكا",
      "fr": "Basarabeasca",
@@ -123321,7 +123029,7 @@
     "capital": {
      "en": "Leova",
      "zh": "莱奥瓦",
-     "hi": null,
+     "hi": "लेओवा",
      "es": "Leova",
      "ar": null,
      "fr": "Leova",
@@ -123368,7 +123076,7 @@
     "capital": {
      "en": "Cimișlia",
      "zh": "奇米什利亚",
-     "hi": null,
+     "hi": "चिमिश्लिया",
      "es": "Cimişlia",
      "ar": "سيميشليا",
      "fr": "Cimișlia",
@@ -123417,7 +123125,7 @@
     "capital": {
      "en": "Ștefan Vodă",
      "zh": "斯特凡大公城",
-     "hi": null,
+     "hi": "श्टेफ़ान वोदा",
      "es": "Ștefan Vodă",
      "ar": null,
      "fr": "Ștefan Vodă",
@@ -123509,7 +123217,7 @@
     "capital": {
      "en": "Căușeni",
      "zh": "克烏謝尼",
-     "hi": null,
+     "hi": "कॉउशेनी",
      "es": "Căușeni",
      "ar": null,
      "fr": "Căușeni",
@@ -123557,7 +123265,7 @@
     "capital": {
      "en": "Hîncești",
      "zh": "亨切什蒂",
-     "hi": null,
+     "hi": "हिंचेश्ती",
      "es": "Hîncești",
      "ar": "هينسشتي",
      "fr": "Hîncești",
@@ -123605,7 +123313,7 @@
     "capital": {
      "en": "Ialoveni",
      "zh": "亚洛韦尼",
-     "hi": null,
+     "hi": "इयालोवेनी",
      "es": "Ialoveni",
      "ar": null,
      "fr": "Ialoveni",
@@ -123652,7 +123360,7 @@
     "capital": {
      "en": "Nisporeni",
      "zh": "尼斯波雷尼",
-     "hi": null,
+     "hi": "निस्पोरेनी",
      "es": "Nisporeni",
      "ar": "نيسبوريني",
      "fr": "Nisporeni",
@@ -123742,7 +123450,7 @@
     "capital": {
      "en": "Anenii Noi",
      "zh": "新阿内尼",
-     "hi": null,
+     "hi": "अनेनी नोई",
      "es": "Anenii Noi",
      "ar": "أنيني نوي",
      "fr": "Anenii Noi",
@@ -123790,7 +123498,7 @@
     "capital": {
      "en": "Criuleni",
      "zh": "克留莱尼",
-     "hi": null,
+     "hi": "क्रीउलेनी",
      "es": "Criuleni",
      "ar": null,
      "fr": "Criuleni",
@@ -123838,7 +123546,7 @@
     "capital": {
      "en": "Strășeni",
      "zh": "斯特勒谢尼",
-     "hi": null,
+     "hi": "स्ट्रासेनी",
      "es": "Strășeni",
      "ar": null,
      "fr": "Strășeni",
@@ -123887,7 +123595,7 @@
     "capital": {
      "en": "Ungheni",
      "zh": "温格内",
-     "hi": null,
+     "hi": "उंगेनी",
      "es": "Ungheni",
      "ar": null,
      "fr": "Ungheni",
@@ -123935,7 +123643,7 @@
     "capital": {
      "en": "Cocieri",
      "zh": "科切里",
-     "hi": null,
+     "hi": "कोचिएरी",
      "es": "Cocieri",
      "ar": null,
      "fr": "Cocieri",
@@ -123981,7 +123689,7 @@
     "capital": {
      "en": "Călărași",
      "zh": "卡拉拉什",
-     "hi": null,
+     "hi": "कैलारासी",
      "es": "Călărași",
      "ar": null,
      "fr": "Călărași",
@@ -124053,7 +123761,7 @@
     "capital": {
      "en": "Fălești",
      "zh": "弗莱什蒂",
-     "hi": null,
+     "hi": "फ़ालेश्ती",
      "es": "Fălești",
      "ar": "فاليستي",
      "fr": "Falești",
@@ -124100,7 +123808,7 @@
     "capital": {
      "en": "Orhei",
      "zh": "奥尔海伊",
-     "hi": null,
+     "hi": "ओरहेई",
      "es": "Orhei",
      "ar": null,
      "fr": "Orhei",
@@ -124148,7 +123856,7 @@
     "capital": {
      "en": "Glodeni",
      "zh": "格洛代尼",
-     "hi": null,
+     "hi": "ग्लोडेनी",
      "es": "Glodeni",
      "ar": null,
      "fr": "Glodeni",
@@ -124237,7 +123945,7 @@
     "capital": {
      "en": "Telenești",
      "zh": "泰莱内什蒂",
-     "hi": null,
+     "hi": "तेलेनेश्ती",
      "es": "Telenești",
      "ar": null,
      "fr": "Telenești",
@@ -124284,7 +123992,7 @@
     "capital": {
      "en": "Sîngerei",
      "zh": "森傑雷",
-     "hi": null,
+     "hi": "सिंगेरेई",
      "es": "Sîngerei",
      "ar": null,
      "fr": "Sîngerei",
@@ -124332,7 +124040,7 @@
     "capital": {
      "en": "Rîșcani",
      "zh": "雷什卡内",
-     "hi": null,
+     "hi": "रिश्कानी",
      "es": "Rîşcani",
      "ar": null,
      "fr": "Rîșcani",
@@ -124378,7 +124086,7 @@
     "capital": {
      "en": "Rezina",
      "zh": "雷济纳",
-     "hi": null,
+     "hi": "रेज़िना",
      "es": "Rezina",
      "ar": null,
      "fr": "Rezina",
@@ -124424,7 +124132,7 @@
     "capital": {
      "en": "Șoldănești",
      "zh": "紹爾德內什蒂",
-     "hi": null,
+     "hi": "शोल्डनेश्ती",
      "es": "Şoldăneşti",
      "ar": null,
      "fr": "Șoldănești",
@@ -124470,7 +124178,7 @@
     "capital": {
      "en": "Florești",
      "zh": "弗洛雷什蒂",
-     "hi": null,
+     "hi": "फ़्लोरेश्ती",
      "es": "Florești",
      "ar": null,
      "fr": "Florești",
@@ -124518,7 +124226,7 @@
     "capital": {
      "en": "Drochia",
      "zh": "德罗基亚",
-     "hi": null,
+     "hi": "द्रोचिया",
      "es": "Drochia",
      "ar": null,
      "fr": "Drochia",
@@ -124566,7 +124274,7 @@
     "capital": {
      "en": "Edineț",
      "zh": "埃迪内茨",
-     "hi": null,
+     "hi": "एदिनेत्स",
      "es": "Edineț",
      "ar": null,
      "fr": "Edineț",
@@ -124614,7 +124322,7 @@
     "capital": {
      "en": "Briceni",
      "zh": "布里切尼",
-     "hi": null,
+     "hi": "ब्रिचेनी",
      "es": "Briceni",
      "ar": null,
      "fr": "Briceni",
@@ -124661,7 +124369,7 @@
     "capital": {
      "en": "Soroca",
      "zh": "索罗卡",
-     "hi": null,
+     "hi": "सोरोका",
      "es": "Soroca",
      "ar": null,
      "fr": "Soroca",
@@ -124709,7 +124417,7 @@
     "capital": {
      "en": "Dondușeni",
      "zh": "棟杜謝尼",
-     "hi": null,
+     "hi": "दोंदुशेनी",
      "es": "Dondușeni",
      "ar": null,
      "fr": "Dondușeni",
@@ -124757,7 +124465,7 @@
     "capital": {
      "en": "Ocnița",
      "zh": "奥克尼察",
-     "hi": null,
+     "hi": "ओक्निका",
      "es": "Ocniţa",
      "ar": "أوکنیتسا",
      "fr": "Ocnița",
@@ -125362,7 +125070,7 @@
     "capital": {
      "en": "Mokhotlong",
      "zh": "莫霍特隆",
-     "hi": null,
+     "hi": "मोखोतलोंग",
      "es": "Mokhotlong",
      "ar": "موكوتلونج",
      "fr": "Mokhotlong",
@@ -125458,7 +125166,7 @@
     "capital": {
      "en": "Butha-Buthe",
      "zh": "布塔-布泰",
-     "hi": null,
+     "hi": "बूथा-बूथे",
      "es": "Butha-Buthe",
      "ar": "بوثا بوثي",
      "fr": "Butha-Buthe",
@@ -125505,7 +125213,7 @@
     "capital": {
      "en": "Mohale's Hoek",
      "zh": "莫哈萊斯胡克",
-     "hi": null,
+     "hi": "मोहाले होएक",
      "es": "Mohale's Hoek",
      "ar": "موهالي هوك",
      "fr": "Mohale's Hoek",
@@ -125551,7 +125259,7 @@
     "capital": {
      "en": "Mafeteng",
      "zh": "马费滕",
-     "hi": null,
+     "hi": "माफ़ेटेंग",
      "es": "Mafeteng",
      "ar": "مافتينج",
      "fr": "Mafeteng",
@@ -125598,7 +125306,7 @@
     "capital": {
      "en": "Quthing",
      "zh": "古廷",
-     "hi": null,
+     "hi": "क्वथिंग",
      "es": "Quthing",
      "ar": null,
      "fr": "Quthing",
@@ -125645,7 +125353,7 @@
     "capital": {
      "en": "Teyateyaneng",
      "zh": "泰亚泰亚嫩",
-     "hi": null,
+     "hi": "तेयातेयानेंग",
      "es": "Teyateyaneng",
      "ar": "تياتيانينغ",
      "fr": "Teyateyaneng",
@@ -125693,7 +125401,7 @@
     "capital": {
      "en": "Thaba-Tseka",
      "zh": "塔巴采卡",
-     "hi": null,
+     "hi": "थाबा-त्सेका",
      "es": "Thaba-Tseka",
      "ar": null,
      "fr": "Thaba-Tseka",
@@ -125740,7 +125448,7 @@
     "capital": {
      "en": "Qacha's Nek",
      "zh": "加查斯内克",
-     "hi": null,
+     "hi": "कचाज़ नेक",
      "es": "Qacha's Nek",
      "ar": null,
      "fr": "Qacha's Nek",
@@ -125786,7 +125494,7 @@
     "capital": {
      "en": "Hlotse",
      "zh": "莱里贝",
-     "hi": null,
+     "hi": "हलोत्से",
      "es": "Hlotse",
      "ar": null,
      "fr": "Leribe",
@@ -126375,7 +126083,7 @@
     "capital": {
      "en": "Tigoa",
      "zh": "提加阿",
-     "hi": null,
+     "hi": "टिगोआ",
      "es": "Tigoa",
      "ar": null,
      "fr": "Tigoa",
@@ -126418,7 +126126,7 @@
     "capital": {
      "en": "Kirakira",
      "zh": "基拉基拉",
-     "hi": null,
+     "hi": "किराकिरा",
      "es": "Kirakira",
      "ar": null,
      "fr": "Kirakira",
@@ -126511,7 +126219,7 @@
     "capital": {
      "en": "Auki",
      "zh": "奥基",
-     "hi": null,
+     "hi": "औकी",
      "es": "Auki",
      "ar": "أوكي",
      "fr": "Auki",
@@ -126672,7 +126380,7 @@
     "capital": {
      "en": "Gizo",
      "zh": "吉佐",
-     "hi": null,
+     "hi": "गिज़ो",
      "es": "Gizo",
      "ar": "جيزو",
      "fr": "Gizo",
@@ -126763,7 +126471,7 @@
     "capital": {
      "en": "Taro Island",
      "zh": "塔罗",
-     "hi": null,
+     "hi": "टारो द्वीप",
      "es": "Taro",
      "ar": null,
      "fr": "Taro",
@@ -127913,7 +127621,7 @@
     "capital": {
      "en": "Nyanza",
      "zh": "恩延扎",
-     "hi": null,
+     "hi": "न्यान्ज़ा",
      "es": "Nyanza",
      "ar": "محافظة نيانزا",
      "fr": "Nyanza",
@@ -127960,7 +127668,7 @@
     "capital": {
      "en": "Byumba hospital",
      "zh": "比温巴",
-     "hi": null,
+     "hi": "ब्युम्बा अस्पताल",
      "es": "Byumba",
      "ar": "بيومبا",
      "fr": "Byumba",
@@ -128008,7 +127716,7 @@
     "capital": {
      "en": "Rwamagana",
      "zh": "鲁瓦马加纳",
-     "hi": null,
+     "hi": "रवामागाना",
      "es": "Rwamagana",
      "ar": null,
      "fr": "Rwamagana",
@@ -128056,7 +127764,7 @@
     "capital": {
      "en": "Kibuye",
      "zh": "基布耶",
-     "hi": null,
+     "hi": "किबुये",
      "es": "Kibuye",
      "ar": "كيبوي",
      "fr": "Kibuye",
@@ -128159,8 +127867,20 @@
      "pl": "Gmina Czeszinowo-Obleszewo",
      "nl": "Češinovo-Obleševo"
     },
-    "capital": null,
-    "capitalQid": null,
+    "capital": {
+     "en": "Obleševo",
+     "zh": null,
+     "hi": null,
+     "es": null,
+     "ar": null,
+     "fr": "Obléchévo",
+     "bn": null,
+     "ru": "Облешево",
+     "de": "Obleševo",
+     "pl": "Obleszewo",
+     "nl": "Obleševo"
+    },
+    "capitalQid": "Q15410065",
     "population": {
      "value": 5471,
      "year": 2021
@@ -128193,7 +127913,7 @@
     "capital": {
      "en": "Pehčevo",
      "zh": "佩赫切沃",
-     "hi": null,
+     "hi": "पेहचेवो",
      "es": null,
      "ar": "بهتشيفو",
      "fr": null,
@@ -128453,7 +128173,7 @@
     "capital": {
      "en": "Resen",
      "zh": "雷士那",
-     "hi": null,
+     "hi": "रेसेन",
      "es": "Resen",
      "ar": "رسنه",
      "fr": "Resen",
@@ -128501,7 +128221,7 @@
     "capital": {
      "en": "Struga",
      "zh": "斯特鲁加",
-     "hi": null,
+     "hi": "स्ट्रुगा",
      "es": "Struga",
      "ar": "ستروغا",
      "fr": "Struga",
@@ -128549,7 +128269,7 @@
     "capital": {
      "en": "Berovo",
      "zh": "貝羅沃",
-     "hi": null,
+     "hi": "बेरोवो",
      "es": null,
      "ar": "بيروفو",
      "fr": "Berovo",
@@ -128596,7 +128316,7 @@
     "capital": {
      "en": "Demir Hisar",
      "zh": "代米尔希萨尔",
-     "hi": null,
+     "hi": "देमिर हिसार",
      "es": null,
      "ar": "دمير حصار",
      "fr": "Demir Hisar",
@@ -128862,7 +128582,7 @@
     "capital": {
      "en": "Delčevo",
      "zh": "代尔切沃",
-     "hi": null,
+     "hi": "देल्चेवो",
      "es": "Delčevo",
      "ar": "ديلتشيفو",
      "fr": "Delčevo",
@@ -128992,7 +128712,7 @@
     "capital": {
      "en": "Debar",
      "zh": "德巴爾",
-     "hi": null,
+     "hi": "देबार",
      "es": "Debar",
      "ar": "ديبار",
      "fr": "Debar",
@@ -129079,8 +128799,24 @@
      "pl": "Gmina Kriwa Pałanka",
      "nl": "Kriva Palanka"
     },
-    "capital": null,
-    "capitalQid": null,
+    "capital": {
+     "en": "Kriva Palanka",
+     "zh": "克里瓦帕蘭卡",
+     "hi": "क्रिवा पालांका",
+     "es": "Kriva Palanka",
+     "ar": "كريفا بالانكا",
+     "fr": "Kriva Palanka",
+     "bn": null,
+     "ur": "کریوا پالانکا",
+     "ru": "Крива-Паланка",
+     "de": "Kriva Palanka",
+     "it": "Kriva Palanka",
+     "ja": "クリヴァ・パランカ",
+     "ko": "크리바팔란카",
+     "pl": "Kriwa Pałanka",
+     "nl": "Kriva Palanka"
+    },
+    "capitalQid": "Q578396",
     "population": {
      "value": 18059,
      "year": 2021
@@ -129440,7 +129176,7 @@
     "capital": {
      "en": "Kratovo",
      "zh": "克拉托沃",
-     "hi": null,
+     "hi": "क्रातोवो",
      "es": "Kratovo",
      "ar": "كراتوفو (مقدونيا)",
      "fr": "Kratovo",
@@ -129528,7 +129264,7 @@
     "capital": {
      "en": "Bogdanci",
      "zh": "波格丹齊",
-     "hi": null,
+     "hi": "बोग्दांची",
      "es": null,
      "ar": "بوغدانتسي",
      "fr": "Bogdanci",
@@ -129854,7 +129590,7 @@
     "capital": {
      "en": "Kičevo",
      "zh": "基切沃",
-     "hi": null,
+     "hi": "किचेवो",
      "es": "Kičevo",
      "ar": "كيتشيفو",
      "fr": "Kičevo",
@@ -130067,7 +129803,7 @@
     "capital": {
      "en": "Makedonska Kamenica",
      "zh": "马其顿卡梅尼察",
-     "hi": null,
+     "hi": "माकेदोंस्का कामेनिका",
      "es": "Makedonska Kamenica",
      "ar": "ماكيدونسكا كامينيتسا",
      "fr": null,
@@ -130351,7 +130087,7 @@
     "capital": {
      "en": "Probištip",
      "zh": "普羅比什蒂普",
-     "hi": null,
+     "hi": "प्रोबिश्टिप",
      "es": null,
      "ar": "بروتشتيب",
      "fr": "Probištip",
@@ -130481,7 +130217,7 @@
     "capital": {
      "en": "Sveti Nikole",
      "zh": "聖尼古萊",
-     "hi": null,
+     "hi": "स्वेती निकोले",
      "es": "Sveti Nikole",
      "ar": "سفيتي نيكولا",
      "fr": "Sveti Nikolé",
@@ -130626,7 +130362,7 @@
     "capital": {
      "en": "Makedonski Brod",
      "zh": "馬其頓布羅德",
-     "hi": null,
+     "hi": "माकेडोंस्की ब्रॉद",
      "es": "Makedonski Brod",
      "ar": "ماكيدونسكي برود",
      "fr": "Makedonski Brod",
@@ -130718,7 +130454,7 @@
     "capital": {
      "en": "Štip",
      "zh": "什蒂普",
-     "hi": null,
+     "hi": "श्टिप",
      "es": "Štip",
      "ar": "شتيب",
      "fr": "Štip",
@@ -130766,7 +130502,7 @@
     "capital": {
      "en": "Kruševo",
      "zh": "克魯舍沃",
-     "hi": null,
+     "hi": "क्रुशेवो",
      "es": null,
      "ar": null,
      "fr": "Kruševo",
@@ -130872,7 +130608,7 @@
     "capital": {
      "en": "Radoviš",
      "zh": "拉多維什",
-     "hi": null,
+     "hi": "रादोविश",
      "es": "Radoviš",
      "ar": "رادوفيتش",
      "fr": "Radoviš",
@@ -130967,7 +130703,7 @@
     "capital": {
      "en": "Negotino",
      "zh": "內戈蒂諾",
-     "hi": null,
+     "hi": "नेगोतिनो",
      "es": "Negotino",
      "ar": "نيغوتينو",
      "fr": "Negotino",
@@ -131160,7 +130896,7 @@
     "capital": {
      "en": "Ali Sabieh",
      "zh": "阿里萨比耶",
-     "hi": null,
+     "hi": "अली सबिह",
      "es": "Ali Sabieh",
      "ar": "علي صبيح",
      "fr": "Ali Sabieh",
@@ -131206,7 +130942,7 @@
     "capital": {
      "en": "Arta",
      "zh": "阿爾塔 (吉布提)",
-     "hi": null,
+     "hi": "आर्ता",
      "es": null,
      "ar": "أرتا",
      "fr": "Arta",
@@ -131250,7 +130986,7 @@
     "capital": {
      "en": "Dikhil",
      "zh": "迪基勒",
-     "hi": null,
+     "hi": "दिखिल",
      "es": null,
      "ar": "دخيل",
      "fr": "Dikhil",
@@ -131431,7 +131167,7 @@
     "capital": {
      "en": "Orange Walk Town",
      "zh": "橘园镇",
-     "hi": null,
+     "hi": "ऑरेंज वॉक टाउन",
      "es": "Orange Walk Town",
      "ar": null,
      "fr": "Orange Walk Town",
@@ -131479,7 +131215,7 @@
     "capital": {
      "en": "Corozal",
      "zh": "科罗萨尔镇",
-     "hi": null,
+     "hi": "कोरोज़ल",
      "es": "Corozal",
      "ar": "كوروزال تاون",
      "fr": "Corozal Town",
@@ -131575,7 +131311,7 @@
     "capital": {
      "en": "San Ignacio",
      "zh": "圣伊格纳西奥",
-     "hi": null,
+     "hi": "सैन इग्नासियो",
      "es": "San Ignacio",
      "ar": null,
      "fr": "San Ignacio",
@@ -131623,7 +131359,7 @@
     "capital": {
      "en": "Dangriga",
      "zh": "丹格里加",
-     "hi": null,
+     "hi": "डेंग्रीगा",
      "es": "Dangriga",
      "ar": "دانغريغا",
      "fr": "Dangriga",
@@ -131671,7 +131407,7 @@
     "capital": {
      "en": "Punta Gorda",
      "zh": "蓬塔戈尔达",
-     "hi": null,
+     "hi": "पुंटा गोर्डा",
      "es": "Punta Gorda",
      "ar": "بونتا جوردا",
      "fr": "Punta Gorda",
@@ -132169,7 +131905,7 @@
     "capital": {
      "en": "Zacatecoluca",
      "zh": "薩卡特科盧卡",
-     "hi": null,
+     "hi": "ज़ाकाटेकोलुका",
      "es": "Zacatecoluca",
      "ar": "بلدية ساكاتيكولوكا",
      "fr": "Zacatecoluca",
@@ -132472,7 +132208,7 @@
     "capital": {
      "en": "Ramla",
      "zh": "拉姆拉",
-     "hi": null,
+     "hi": "रमला",
      "es": "Ramla",
      "ar": "الرملة",
      "fr": "Ramla",
@@ -132668,7 +132404,7 @@
     "capital": {
      "en": "Nof HaGalil",
      "zh": "上拿撒勒",
-     "hi": null,
+     "hi": "नोफ़ हागालील",
      "es": "Nof HaGalil",
      "ar": "نوف هجليل",
      "fr": "Nazareth Illit",
@@ -133229,7 +132965,7 @@
     "capital": {
      "en": "Siteki",
      "zh": "锡泰基",
-     "hi": null,
+     "hi": "सिटेकी",
      "es": "Siteki",
      "ar": "سيتيكي",
      "fr": "Siteki",
@@ -133276,7 +133012,7 @@
     "capital": {
      "en": "Nhlangano",
      "zh": "恩赫蘭加諾",
-     "hi": null,
+     "hi": "एन्हलांगानो",
      "es": "Nhlangano",
      "ar": null,
      "fr": "Nhlangano",
@@ -134089,7 +133825,7 @@
     "capital": {
      "en": "Alice Town",
      "zh": "爱丽丝镇",
-     "hi": null,
+     "hi": "ऐलिस टाउन",
      "es": "Alice Town",
      "ar": null,
      "fr": "Alice Town",
@@ -134476,7 +134212,7 @@
     "capital": {
      "en": "George Town",
      "zh": "喬治市",
-     "hi": null,
+     "hi": "जॉर्ज टाउन",
      "es": "George Town",
      "ar": null,
      "fr": "George Town",
@@ -134548,7 +134284,7 @@
     "capital": null,
     "capitalQid": null,
     "population": null,
-    "area": null
+    "area": 2.6
    },
    {
     "id": "57655419B91019969534321",
@@ -134604,7 +134340,7 @@
     "capital": {
      "en": "Matthew Town",
      "zh": "马修镇",
-     "hi": null,
+     "hi": "मैथ्यू टाउन",
      "es": null,
      "ar": null,
      "fr": "Matthew Town",
@@ -134646,7 +134382,7 @@
     "capital": {
      "en": "Clarence Town",
      "zh": "克拉伦斯镇",
-     "hi": null,
+     "hi": "क्लेरेंस टाउन",
      "es": "Clarence Town",
      "ar": null,
      "fr": "Clarence Town",
@@ -134807,7 +134543,7 @@
     "capital": {
      "en": "Coopers Town",
      "zh": "库珀镇",
-     "hi": null,
+     "hi": "कूपर्स टाउन",
      "es": "Coopers Town",
      "ar": "كوبرتاون",
      "fr": "Coopers Town",
@@ -134850,7 +134586,7 @@
     "capital": {
      "en": "Nicholls Town",
      "zh": "尼科尔斯镇",
-     "hi": null,
+     "hi": "निकोल्स टाउन",
      "es": "Nicholls Town",
      "ar": null,
      "fr": "Nicholls Town",
@@ -135228,7 +134964,7 @@
     "capital": {
      "en": "Andrijevica",
      "zh": "安德里耶维察",
-     "hi": null,
+     "hi": "आंद्रिएविका",
      "es": "Andrijevica",
      "ar": null,
      "fr": "Andrijevica",
@@ -135276,7 +135012,7 @@
     "capital": {
      "en": "Bar",
      "zh": "巴尔",
-     "hi": null,
+     "hi": "बार",
      "es": "Bar",
      "ar": "بار",
      "fr": "Bar",
@@ -135371,7 +135107,7 @@
     "capital": {
      "en": "Mojkovac",
      "zh": "莫伊科瓦茨",
-     "hi": null,
+     "hi": "मोयकोवाक",
      "es": "Mojkovac",
      "ar": "مويكوفاتش",
      "fr": "Mojkovac",
@@ -135419,7 +135155,7 @@
     "capital": {
      "en": "Pljevlja",
      "zh": "普列夫利亚",
-     "hi": null,
+     "hi": "प्लेव्ल्या",
      "es": "Pljevlja",
      "ar": "بلييفليا",
      "fr": "Pljevlja",
@@ -135467,7 +135203,7 @@
     "capital": {
      "en": "Kolašin",
      "zh": "科拉欣",
-     "hi": null,
+     "hi": "कोलाशिन",
      "es": "Kolašin",
      "ar": null,
      "fr": "Kolašin",
@@ -135515,7 +135251,7 @@
     "capital": {
      "en": "Žabljak",
      "zh": "扎布利亚克",
-     "hi": null,
+     "hi": "ज़ाब्लजाक",
      "es": "Žabljak",
      "ar": null,
      "fr": "Žabljak",
@@ -135562,7 +135298,7 @@
     "capital": {
      "en": "Cetinje",
      "zh": "采蒂涅",
-     "hi": null,
+     "hi": "त्सेतिन्ये",
      "es": "Cetiña",
      "ar": "ستنيي",
      "fr": "Cetinje",
@@ -135704,7 +135440,7 @@
     "capital": {
      "en": "Herceg Novi",
      "zh": "新海尔采格",
-     "hi": null,
+     "hi": "हेरशेग नोवी",
      "es": "Herceg Novi",
      "ar": "هرسك نوفي",
      "fr": "Herceg Novi",
@@ -135799,7 +135535,7 @@
     "capital": {
      "en": "Budva",
      "zh": "布德瓦",
-     "hi": null,
+     "hi": "बुडवा",
      "es": "Budva",
      "ar": "بودفا",
      "fr": "Budva",
@@ -135847,7 +135583,7 @@
     "capital": {
      "en": "Danilovgrad",
      "zh": "达尼洛夫格勒",
-     "hi": null,
+     "hi": "दानिलोवग्राद",
      "es": "Danilovgrad",
      "ar": "دانيلوفغراد",
      "fr": "Danilovgrad",
@@ -135894,7 +135630,7 @@
     "capital": {
      "en": "Bijelo Polje",
      "zh": "比耶洛波列",
-     "hi": null,
+     "hi": "बिजेलो पोल्जे",
      "es": "Bijelo Polje",
      "ar": "بييلو بوليي",
      "fr": "Bijelo Polje",
@@ -135943,7 +135679,7 @@
     "capital": {
      "en": "Berane",
      "zh": "贝拉内",
-     "hi": null,
+     "hi": "बेराने",
      "es": "Berane",
      "ar": "براني",
      "fr": "Berane",
@@ -136038,7 +135774,7 @@
     "capital": {
      "en": "Plav",
      "zh": "普拉夫",
-     "hi": null,
+     "hi": "प्लाव",
      "es": "Plav",
      "ar": null,
      "fr": "Plav",
@@ -136086,7 +135822,7 @@
     "capital": {
      "en": "Plužine",
      "zh": "普卢日内",
-     "hi": null,
+     "hi": "प्लूज़ीने",
      "es": "Plužine",
      "ar": null,
      "fr": "Plužine",
@@ -136134,7 +135870,7 @@
     "capital": {
      "en": "Nikšić",
      "zh": "尼克希奇",
-     "hi": null,
+     "hi": "निकशिच",
      "es": "Nikšić",
      "ar": "نيكشيتش",
      "fr": "Nikšić",
@@ -136175,7 +135911,7 @@
     "capital": {
      "en": "Golubovci",
      "zh": "戈卢博夫齐",
-     "hi": null,
+     "hi": "गोलूबोवची",
      "es": "Golubovci",
      "ar": null,
      "fr": "Golubovci",
@@ -136215,7 +135951,7 @@
     "capital": {
      "en": "Tuzi",
      "zh": "图齐",
-     "hi": null,
+     "hi": "तुज़ी",
      "es": "Tuzi",
      "ar": null,
      "fr": "Tuzi",
@@ -136264,7 +136000,7 @@
     "capital": {
      "en": "Šavnik",
      "zh": "沙夫尼克",
-     "hi": null,
+     "hi": "शावनिक",
      "es": "Šavnik",
      "ar": null,
      "fr": "Šavnik",
@@ -136308,7 +136044,7 @@
     "capital": {
      "en": "Petnjica",
      "zh": "佩特尼察",
-     "hi": null,
+     "hi": "पेत्न्जित्सा",
      "es": "Petnjica",
      "ar": null,
      "fr": "Petnjica",
@@ -136349,7 +136085,7 @@
     "capital": {
      "en": "Gusinje",
      "zh": "古西涅",
-     "hi": null,
+     "hi": "गुसिन्से",
      "es": "Gusinje",
      "ar": null,
      "fr": "Gusinje",
@@ -136406,7 +136142,7 @@
     "capital": {
      "en": "Luganville",
      "zh": "卢甘维尔",
-     "hi": null,
+     "hi": "लुगानविले",
      "es": "Luganville",
      "ar": "لوغانفيل",
      "fr": "Luganville",
@@ -136451,7 +136187,7 @@
     "capital": {
      "en": "Sola",
      "zh": "索拉",
-     "hi": null,
+     "hi": "सोला",
      "es": "Sola",
      "ar": null,
      "fr": "Sola",
@@ -136495,7 +136231,7 @@
     "capital": {
      "en": "Saratamata",
      "zh": null,
-     "hi": null,
+     "hi": "सारातामाता",
      "es": "Saratamata",
      "ar": null,
      "fr": "Saratamata",
@@ -136534,7 +136270,7 @@
     "capital": {
      "en": "Lakatoro",
      "zh": "拉卡托羅",
-     "hi": null,
+     "hi": "लाकाटोरो",
      "es": null,
      "ar": null,
      "fr": "Lakatoro",
@@ -136627,7 +136363,7 @@
     "capital": {
      "en": "Isangel",
      "zh": "伊桑埃尔",
-     "hi": null,
+     "hi": "इसांगेल",
      "es": "Isangel",
      "ar": null,
      "fr": "Isangel",
@@ -136684,7 +136420,7 @@
     "capital": {
      "en": "Al Khor",
      "zh": "艾豪尔",
-     "hi": null,
+     "hi": "अल खोर",
      "es": "Yor",
      "ar": "الخور",
      "fr": "Al-Khor",
@@ -136834,7 +136570,7 @@
     "capital": {
      "en": "Al-Shahaniya",
      "zh": "沙哈尼亚",
-     "hi": null,
+     "hi": "अल-शहानिया",
      "es": null,
      "ar": "الشحانية",
      "fr": null,
@@ -136991,7 +136727,7 @@
     "capital": {
      "en": "Saint Ann's Bay",
      "zh": "聖安斯貝",
-     "hi": null,
+     "hi": "सेंट ऐन्स बे",
      "es": "Saint Ann's Bay",
      "ar": null,
      "fr": "Saint Ann's Bay",
@@ -137084,7 +136820,7 @@
     "capital": {
      "en": "Port Maria La luz",
      "zh": "瑪麗亞港",
-     "hi": null,
+     "hi": "पोर्ट मारिया ला लुज़",
      "es": "Port Maria",
      "ar": "بورت ماريا",
      "fr": "Port Maria",
@@ -137131,7 +136867,7 @@
     "capital": {
      "en": "Port Antonio",
      "zh": "安東尼奧港",
-     "hi": null,
+     "hi": "पोर्ट एंटोनियो",
      "es": "Port Antonio",
      "ar": "بورت أنطونيو",
      "fr": "Port Antonio",
@@ -137227,7 +136963,7 @@
     "capital": {
      "en": "Lucea",
      "zh": "盧西",
-     "hi": null,
+     "hi": "लूसिया",
      "es": "Lucea",
      "ar": "لوسيا",
      "fr": "Lucea",
@@ -137273,7 +137009,7 @@
     "capital": {
      "en": "Savanna-la-Mar",
      "zh": "濱海薩凡納",
-     "hi": null,
+     "hi": "सवाना-ला-मार",
      "es": "Savanna-la-Mar",
      "ar": "سفانا لامار",
      "fr": "Savanna-la-Mar",
@@ -137319,7 +137055,7 @@
     "capital": {
      "en": "Black River",
      "zh": "布莱克里弗",
-     "hi": null,
+     "hi": "ब्लैक रिवर",
      "es": "Black River",
      "ar": "النهر الأسود",
      "fr": "Black River",
@@ -137366,7 +137102,7 @@
     "capital": {
      "en": "Morant Bay",
      "zh": "莫蘭特貝",
-     "hi": null,
+     "hi": "मोरैंट बे",
      "es": "Morant Bay",
      "ar": null,
      "fr": "Morant Bay",
@@ -137412,7 +137148,7 @@
     "capital": {
      "en": "May Pen",
      "zh": "梅彭",
-     "hi": null,
+     "hi": "मे पेन",
      "es": "May Pen",
      "ar": "ماي بن",
      "fr": "May Pen",
@@ -137509,7 +137245,7 @@
     "capital": {
      "en": "Mandeville",
      "zh": "曼德维尔",
-     "hi": null,
+     "hi": "मैंडेविल",
      "es": "Mandeville",
      "ar": "ماندفيل",
      "fr": "Mandeville",
@@ -137661,7 +137397,7 @@
     "capital": {
      "en": "Basse Santa Su",
      "zh": "巴塞圣苏",
-     "hi": null,
+     "hi": "बासे सांटा सू",
      "es": "Basse Santa Su",
      "ar": "باس سانتا سو",
      "fr": "Basse Santa Su",
@@ -137709,7 +137445,7 @@
     "capital": {
      "en": "Mansa Konko",
      "zh": "曼薩孔科",
-     "hi": null,
+     "hi": "मंसा कोंको",
      "es": "Mansa Konko",
      "ar": "مانسا كونكو",
      "fr": "Mansa Konko",
@@ -137753,7 +137489,7 @@
     "capital": {
      "en": "Janjanbureh",
      "zh": "詹詹布雷",
-     "hi": null,
+     "hi": "जानजानबुरे",
      "es": null,
      "ar": null,
      "fr": "Janjanbureh",
@@ -137798,7 +137534,7 @@
     "capital": {
      "en": "Brikama",
      "zh": "布里卡马",
-     "hi": null,
+     "hi": "ब्रिकामा",
      "es": "Brikama",
      "ar": "بريكاما",
      "fr": "Brikama",
@@ -137843,7 +137579,7 @@
     "capital": {
      "en": "Kerewan",
      "zh": "凯雷万",
-     "hi": null,
+     "hi": "केरेवान",
      "es": null,
      "ar": null,
      "fr": "Kerewan",
@@ -138227,7 +137963,7 @@
     "capital": {
      "en": "Halba",
      "zh": "哈勒巴",
-     "hi": null,
+     "hi": "हाल्बा",
      "es": "Halba",
      "ar": "حلبا",
      "fr": "Halba",
@@ -138579,7 +138315,7 @@
     "capital": {
      "en": "Kuala Belait",
      "zh": "马来奕",
-     "hi": null,
+     "hi": "कुआला बेलेत",
      "es": "Kuala Belait",
      "ar": null,
      "fr": "Kuala Belait",
@@ -138628,7 +138364,7 @@
     "capital": {
      "en": "Tutong",
      "zh": "北干都东",
-     "hi": null,
+     "hi": "तुतोंग",
      "es": null,
      "ar": "توتونغ",
      "fr": "Pekan Tutong",
@@ -138782,7 +138518,7 @@
     "capital": {
      "en": "Scarborough",
      "zh": "斯卡伯勒",
-     "hi": null,
+     "hi": "स्कारबोरो",
      "es": "Scarborough",
      "ar": "سكاربوروغ",
      "fr": "Scarborough",
@@ -138991,7 +138727,7 @@
     "capital": {
      "en": "Siparia",
      "zh": "锡帕里亚",
-     "hi": null,
+     "hi": "सिपारिया",
      "es": "Siparia",
      "ar": null,
      "fr": "Siparia",
@@ -139064,7 +138800,7 @@
     "capital": {
      "en": "Penal",
      "zh": "皮纳尔",
-     "hi": null,
+     "hi": "पेनल",
      "es": "Penal",
      "ar": null,
      "fr": null,
@@ -139349,7 +139085,7 @@
     "capital": {
      "en": "Sal Rei",
      "zh": "萨尔雷",
-     "hi": null,
+     "hi": "साल रेई",
      "es": "Sal Rei",
      "ar": null,
      "fr": "Sal Rei",
@@ -139395,7 +139131,7 @@
     "capital": {
      "en": "Nova Sintra",
      "zh": "新辛特拉",
-     "hi": null,
+     "hi": "नोवा सिंत्रा",
      "es": "Nova Sintra",
      "ar": null,
      "fr": "Nova Sintra",
@@ -139436,7 +139172,7 @@
     "capital": {
      "en": "Porto Inglês",
      "zh": "马尤城",
-     "hi": null,
+     "hi": "पोर्तो इंगलेस",
      "es": "Porto Inglês",
      "ar": "مدينة مايو",
      "fr": "Vila do Maio",
@@ -139573,7 +139309,7 @@
     "capital": {
      "en": "Ribeira Brava",
      "zh": "里贝拉布拉瓦",
-     "hi": null,
+     "hi": "रिबेरा ब्रावा",
      "es": "Ribeira Brava",
      "ar": null,
      "fr": "Ribeira Brava",
@@ -139618,7 +139354,7 @@
     "capital": {
      "en": "Tarrafal de São Nicolau",
      "zh": "圣尼古劳岛塔拉法尔",
-     "hi": null,
+     "hi": "तारराफाल दे साओ निकोलाउ",
      "es": "Tarrafal de São Nicolau",
      "ar": null,
      "fr": "Tarrafal de São Nicolau",
@@ -139714,7 +139450,7 @@
     "capital": {
      "en": "Ponta do Sol",
      "zh": "蓬塔-杜索尔",
-     "hi": null,
+     "hi": "पोंटा डो सोल",
      "es": "Ponta do Sol",
      "ar": null,
      "fr": "Ponta do Sol",
@@ -139760,7 +139496,7 @@
     "capital": {
      "en": "Pombas",
      "zh": "蓬巴什",
-     "hi": null,
+     "hi": "पोंबास",
      "es": "Pombas",
      "ar": null,
      "fr": "Vila das Pombas",
@@ -139806,7 +139542,7 @@
     "capital": {
      "en": "Mosteiros",
      "zh": "莫什泰鲁什",
-     "hi": null,
+     "hi": "मोस्तेइरोस",
      "es": "Igreja",
      "ar": null,
      "fr": "Mosteiros",
@@ -139853,7 +139589,7 @@
     "capital": {
      "en": "Cova Figueira",
      "zh": "科瓦菲盖拉",
-     "hi": null,
+     "hi": "कोवा फ़िगुएरा",
      "es": "Cova Figueira",
      "ar": null,
      "fr": "Cova Figueira",
@@ -139941,7 +139677,7 @@
     "capital": {
      "en": "Calheta de São Miguel",
      "zh": "卡列塔-迪圣米格尔",
-     "hi": null,
+     "hi": "कालेटा दे साओ मिगेल",
      "es": "Calheta de São Miguel",
      "ar": null,
      "fr": "Calheta de São Miguel",
@@ -139983,7 +139719,7 @@
     "capital": {
      "en": "Tarrafal",
      "zh": "塔拉法爾",
-     "hi": null,
+     "hi": "तर्राफ़ल",
      "es": "Mangui",
      "ar": null,
      "fr": "Tarrafal",
@@ -140030,7 +139766,7 @@
     "capital": {
      "en": "Assomada",
      "zh": "阿苏马达",
-     "hi": null,
+     "hi": "अस्सोमादा",
      "es": "Assomada",
      "ar": null,
      "fr": "Assomada",
@@ -140103,7 +139839,7 @@
     "capital": {
      "en": "Picos",
      "zh": "皮库什",
-     "hi": null,
+     "hi": "पिकोस",
      "es": "Achada Igreja",
      "ar": null,
      "fr": "Picos",
@@ -140146,7 +139882,7 @@
     "capital": {
      "en": "João Teves",
      "zh": "若昂泰维什",
-     "hi": null,
+     "hi": "जोआओ तेवेस",
      "es": "João Teves",
      "ar": null,
      "fr": "João Teves",
@@ -140188,7 +139924,7 @@
     "capital": {
      "en": "São Domingos",
      "zh": "圣多明戈斯",
-     "hi": null,
+     "hi": "साओ डोमिंगोस",
      "es": "Várzea da Igreja",
      "ar": "ساو دومينغوس",
      "fr": "São Domingos",
@@ -140280,7 +140016,7 @@
     "capital": {
      "en": "Cidade Velha",
      "zh": "韦利亚城",
-     "hi": null,
+     "hi": "सिदादे वेल्हा",
      "es": "Cidade Velha",
      "ar": "سيدادي فيلها",
      "fr": "Cidade Velha",
@@ -140335,7 +140071,7 @@
     "capital": {
      "en": "Leulumoega",
      "zh": null,
-     "hi": null,
+     "hi": "लेउलुमोएगा",
      "es": null,
      "ar": null,
      "fr": null,
@@ -140381,7 +140117,7 @@
     "capital": {
      "en": "Mulifanua",
      "zh": null,
-     "hi": null,
+     "hi": "मुलिफानुआ",
      "es": null,
      "ar": null,
      "fr": null,
@@ -140422,7 +140158,7 @@
     "capital": {
      "en": "Lufilufi",
      "zh": null,
-     "hi": null,
+     "hi": "लुफ़िलुफ़ी",
      "es": null,
      "ar": null,
      "fr": "Lufilufi",
@@ -140713,7 +140449,7 @@
     "capital": {
      "en": "Grevenmacher",
      "zh": null,
-     "hi": null,
+     "hi": "ग्रेवेनमाखर",
      "es": null,
      "ar": null,
      "fr": "Grevenmacher",
@@ -141032,7 +140768,7 @@
     "capital": {
      "en": "Esch-sur-Alzette",
      "zh": "阿尔泽特河畔埃施",
-     "hi": null,
+     "hi": "एश-सुर-आल्ज़ेट",
      "es": "Esch-sur-Alzette",
      "ar": "إيش سوغ ألزيت",
      "fr": "Esch-sur-Alzette",
@@ -141229,7 +140965,7 @@
     "capital": {
      "en": "Tamarin",
      "zh": "塔马兰",
-     "hi": null,
+     "hi": "तामारिन",
      "es": null,
      "ar": null,
      "fr": "Tamarin",
@@ -141273,7 +141009,7 @@
     "capital": {
      "en": "Centre de Flacq",
      "zh": "弗拉克中心村",
-     "hi": null,
+     "hi": "सेंटर दे फ़्लाक",
      "es": "Centro de Flacq",
      "ar": null,
      "fr": "centre de Flacq",
@@ -141318,7 +141054,7 @@
     "capital": {
      "en": "Mahébourg",
      "zh": "马埃堡",
-     "hi": null,
+     "hi": "माहेबूर्ग",
      "es": "Mahébourg",
      "ar": null,
      "fr": "Mahébourg",
@@ -141410,7 +141146,7 @@
     "capital": {
      "en": "Triolet",
      "zh": "特里奧萊",
-     "hi": null,
+     "hi": "ट्रिओलेट",
      "es": null,
      "ar": null,
      "fr": "Triolet",
@@ -141453,7 +141189,7 @@
     "capital": {
      "en": "Beau Bassin-Rose Hill",
      "zh": "博巴森-罗斯希尔",
-     "hi": null,
+     "hi": "बो बासां-रोज़ हिल",
      "es": "Beau Bassin-Rose Hill",
      "ar": null,
      "fr": "Beau-Bassin Rose-Hill",
@@ -141517,7 +141253,10 @@
      "nl": "Port Louis"
     },
     "capitalQid": "Q3929",
-    "population": null,
+    "population": {
+     "value": 106332,
+     "year": 2022
+    },
     "area": 44
    },
    {
@@ -141586,7 +141325,7 @@
     "capital": {
      "en": "Souillac",
      "zh": "蘇亞克",
-     "hi": null,
+     "hi": "सुइयाक",
      "es": "Souillac",
      "ar": null,
      "fr": "Souillac",
@@ -141631,7 +141370,7 @@
     "capital": {
      "en": "Port Mathurin",
      "zh": "马蒂兰港",
-     "hi": null,
+     "hi": "पोर्ट मैथुरिन",
      "es": "Port Mathurin",
      "ar": "بورت ماثورين",
      "fr": "Port Mathurin",
@@ -141744,7 +141483,7 @@
     "capital": {
      "en": "Fomboni",
      "zh": "丰博尼",
-     "hi": null,
+     "hi": "फ़ोमबोनी",
      "es": "Fomboni",
      "ar": "فومبوني",
      "fr": "Fomboni",
@@ -141934,6 +141673,7 @@
      "ar": "جزر فينيكس",
      "fr": "îles Phœnix",
      "bn": null,
+     "ur": "جزائر فینکس",
      "ru": "Острова Феникс",
      "pt": "Ilhas Fénix",
      "de": "Phoenixinseln",
@@ -141952,6 +141692,7 @@
      "ar": null,
      "fr": "Canton",
      "bn": null,
+     "ur": "جزیرہ کینٹن",
      "ru": "Кантон",
      "pt": "Ilha Kanton",
      "de": "Kanton",
@@ -142212,7 +141953,7 @@
     "capital": {
      "en": "Wesley",
      "zh": "韦斯利",
-     "hi": null,
+     "hi": "वेस्ली",
      "es": "Wesley",
      "ar": null,
      "fr": "Wesley",
@@ -142257,7 +141998,7 @@
     "capital": {
      "en": "Saint Joseph",
      "zh": "聖約瑟夫",
-     "hi": null,
+     "hi": "सेंट जोसेफ़",
      "es": "Saint Joseph",
      "ar": null,
      "fr": "Saint Joseph",
@@ -142552,8 +142293,23 @@
      "de": "Haʻapai",
      "ja": "ハアパイ（地区）"
     },
-    "capital": null,
-    "capitalQid": null,
+    "capital": {
+     "en": "Pangai",
+     "zh": "庞艾",
+     "hi": "पंगाई",
+     "es": "Pangai",
+     "ar": null,
+     "fr": "Pangai",
+     "bn": null,
+     "ru": "Пангаи",
+     "pt": "Pangai",
+     "de": "Pangai",
+     "it": "Pangai",
+     "ja": "パンガイ",
+     "pl": "Pangai",
+     "nl": "Pangai"
+    },
+    "capitalQid": "Q1027037",
     "population": null,
     "area": null
    },
@@ -142580,8 +142336,23 @@
      "pl": "Niuas",
      "nl": "Niuas"
     },
-    "capital": null,
-    "capitalQid": null,
+    "capital": {
+     "en": "Hihifo",
+     "zh": "希希福",
+     "hi": "हिहिफो",
+     "es": "Hihifo",
+     "ar": null,
+     "fr": "Hihifo",
+     "bn": null,
+     "ru": "Хихифо",
+     "pt": "Hihifo",
+     "de": "Hihifo",
+     "it": "Hihifo (città)",
+     "ja": "ヒヒフォ",
+     "pl": "Hihifo",
+     "nl": "Hihifo"
+    },
+    "capitalQid": "Q2563164",
     "population": null,
     "area": 71.69
    },
@@ -142605,8 +142376,26 @@
      "pl": "Tongatapu",
      "nl": "Tongatapu"
     },
-    "capital": null,
-    "capitalQid": null,
+    "capital": {
+     "en": "Nukuʻalofa",
+     "zh": "努库阿洛法",
+     "hi": "नुकुअलोफ़ा",
+     "es": "Nukualofa",
+     "ar": "نوكو ألوفا",
+     "fr": "Nukuʻalofa",
+     "bn": "নুকু'আলোফা",
+     "ur": "نوکوالوفا",
+     "ru": "Нукуалофа",
+     "pt": "Nuku'alofa",
+     "de": "Nukuʻalofa",
+     "id": "Nukuʻalofa",
+     "it": "Nukuʻalofa",
+     "ja": "ヌクアロファ",
+     "ko": "누쿠알로파",
+     "pl": "Nukuʻalofa",
+     "nl": "Nuku'alofa"
+    },
+    "capitalQid": "Q38834",
     "population": null,
     "area": null
    },
@@ -142634,7 +142423,7 @@
     "capital": {
      "en": "Neiafu",
      "zh": "内亚富",
-     "hi": null,
+     "hi": "नेइआफ़ू",
      "es": "Neiafu",
      "ar": "نيافو",
      "fr": "Neiafu",
@@ -142670,6 +142459,146 @@
      "ru": "Эуа",
      "pt": "ʻEua (distrito)",
      "ja": "エウア（地区）"
+    },
+    "capital": {
+     "en": "ʻOhonua",
+     "zh": "奥霍努阿",
+     "hi": "ओहोनुआ",
+     "es": "'Ohonua",
+     "ar": null,
+     "fr": "'Ohonua",
+     "bn": null,
+     "ru": "Охонуа",
+     "pt": "'Ohonua",
+     "de": "ʻOhonua",
+     "it": "'Ohonua",
+     "pl": "ʻOhonua"
+    },
+    "capitalQid": "Q3711222",
+    "population": null,
+    "area": null
+   }
+  ]
+ },
+ "SG": {
+  "iso3": "SGP",
+  "source": {
+   "year": 2026,
+   "license": "Open Database License (ODbL) 1.0",
+   "sourceName": "© OpenStreetMap contributors"
+  },
+  "divisions": [
+   {
+    "id": "SGP-Q1687545",
+    "iso": "SG-04",
+    "qid": "Q1687545",
+    "name": {
+     "en": "South East Community Development Council",
+     "zh": "东南社区发展理事会",
+     "hi": null,
+     "es": "Consejo del Sudeste (Singapur)",
+     "ar": null,
+     "fr": "District du Sud-Est",
+     "bn": null,
+     "ur": "جنوب مشرقی کمیونٹی ڈیولپمنٹ کونسل",
+     "de": "Südost",
+     "id": "Dewan Pengembangan Masyarakat Tenggara",
+     "ja": "南東地区",
+     "ko": "남동부 지구 사회 발전 이사회"
+    },
+    "capital": null,
+    "capitalQid": null,
+    "population": null,
+    "area": null
+   },
+   {
+    "id": "SGP-Q2544592",
+    "iso": "SG-01",
+    "qid": "Q2544592",
+    "name": {
+     "en": "Central Singapore Community Development Council",
+     "zh": "中区社区发展理事会",
+     "hi": null,
+     "es": "Consejo Central (Singapur)",
+     "ar": null,
+     "fr": "Singapour central",
+     "bn": null,
+     "ur": "مرکزی سنگاپور کمیونٹی ڈیولپمنٹ کونسل",
+     "de": "Central Singapore District",
+     "id": "Dewan Pengembangan Masyarakat Singapura Tengah",
+     "ja": "シンガポール中央地区",
+     "ko": "중앙싱가포르 지구 사회 발전 이사회"
+    },
+    "capital": null,
+    "capitalQid": null,
+    "population": null,
+    "area": null
+   },
+   {
+    "id": "SGP-Q3710534",
+    "iso": "SG-02",
+    "qid": "Q3710534",
+    "name": {
+     "en": "North East Community Development Council",
+     "zh": "东北社区发展理事会",
+     "hi": null,
+     "es": "Consejo del Noreste (Singapur)",
+     "ar": null,
+     "fr": "District du Nord-Est",
+     "bn": null,
+     "ur": "شمال مشرقی کمیونٹی ڈیولپمنٹ کونسل",
+     "de": "North East (Singapur)",
+     "id": "Dewan Pengembangan Masyarakat Timur Laut",
+     "it": "Distretto Nordorientale",
+     "ja": "北東地区",
+     "ko": "북동부 지구 사회 발전 이사회",
+     "nl": "North East Community Development Council"
+    },
+    "capital": null,
+    "capitalQid": null,
+    "population": null,
+    "area": null
+   },
+   {
+    "id": "SGP-Q5784118",
+    "iso": "SG-03",
+    "qid": "Q5784118",
+    "name": {
+     "en": "North West Community Development Council",
+     "zh": "西北社区发展理事会",
+     "hi": null,
+     "es": "Consejo del Noroeste (Singapur)",
+     "ar": null,
+     "fr": "District du Nord-Ouest",
+     "bn": null,
+     "ur": "شمال مغربی کمیونٹی ڈیولپمنٹ کونسل",
+     "de": "North West (Singapur)",
+     "id": "Dewan Pengembangan Masyarakat Barat Laut",
+     "ja": "北西地区",
+     "ko": "북서부 지구 사회 발전 이사회"
+    },
+    "capital": null,
+    "capitalQid": null,
+    "population": null,
+    "area": null
+   },
+   {
+    "id": "SGP-Q5784126",
+    "iso": "SG-05",
+    "qid": "Q5784126",
+    "name": {
+     "en": "South West Community Development Council",
+     "zh": "西南社区发展理事会",
+     "hi": null,
+     "es": "Consejo del Sudoeste (Singapur)",
+     "ar": null,
+     "fr": "District du Sud-Ouest",
+     "bn": null,
+     "ur": "جنوب مغربی کمیونٹی ڈیولپمنٹ کونسل",
+     "de": "South West Singapore District",
+     "id": "Dewan Pengembangan Masyarakat Barat Daya",
+     "ja": "南西地区",
+     "ko": "남서부 지구 사회 발전 이사회"
     },
     "capital": null,
     "capitalQid": null,
@@ -142847,7 +142776,7 @@
     "capital": {
      "en": "Tofol",
      "zh": "托福尔",
-     "hi": null,
+     "hi": "टोफ़ोल",
      "es": "Tofol",
      "ar": "توفول",
      "fr": "Tofol",
@@ -142904,7 +142833,7 @@
     "capital": {
      "en": "Vieux Fort",
      "zh": "維約堡",
-     "hi": null,
+     "hi": "वियो फ़ोर्ट",
      "es": "Vieux Fort",
      "ar": null,
      "fr": "Vieux Fort",
@@ -142949,7 +142878,7 @@
     "capital": {
      "en": "Anse La Raye",
      "zh": "昂斯拉雷",
-     "hi": null,
+     "hi": "अंस ला रे",
      "es": "Anse La Raye",
      "ar": null,
      "fr": "Anse-la-Raye",
@@ -143326,7 +143255,7 @@
     "capital": {
      "en": "Canillo",
      "zh": null,
-     "hi": null,
+     "hi": "कानिलियो",
      "es": "Canillo",
      "ar": null,
      "fr": "Canillo",
@@ -143451,7 +143380,7 @@
     "capital": {
      "en": "Encamp",
      "zh": null,
-     "hi": null,
+     "hi": "एन्कैम्प",
      "es": "Encamp",
      "ar": null,
      "fr": "Encamp",
@@ -143668,7 +143597,7 @@
     "capital": {
      "en": "Ngeremasch",
      "zh": "涅雷馬胥",
-     "hi": null,
+     "hi": "नगेरेमाश",
      "es": "Ngeremasch",
      "ar": "نجيريماستش",
      "fr": "Ngaramasch",
@@ -143708,8 +143637,18 @@
      "pl": "Hatohobei",
      "nl": "Hatohobei"
     },
-    "capital": null,
-    "capitalQid": null,
+    "capital": {
+     "en": "Hatohobei",
+     "zh": null,
+     "hi": "हातोहोबेई",
+     "es": null,
+     "ar": null,
+     "fr": "Hatohobei",
+     "bn": null,
+     "pl": "Hatohobei",
+     "nl": "Hatohobei"
+    },
+    "capitalQid": "Q2456642",
     "population": {
      "value": 40,
      "year": 2016
@@ -143742,7 +143681,7 @@
     "capital": {
      "en": "Koror",
      "zh": "科罗尔",
-     "hi": null,
+     "hi": "कोरोर",
      "es": "Koror",
      "ar": "كورور",
      "fr": "Koror",
@@ -143788,7 +143727,7 @@
     "capital": {
      "en": "Melekeok",
      "zh": "梅莱凯奥克",
-     "hi": null,
+     "hi": "मेलेकियोक",
      "es": "Melekeok",
      "ar": "ميلكيوك",
      "fr": "Melekeok",
@@ -143833,8 +143772,19 @@
      "pl": "Ngaraard",
      "nl": "Ngaraard"
     },
-    "capital": null,
-    "capitalQid": null,
+    "capital": {
+     "en": "Ulimang",
+     "zh": null,
+     "hi": null,
+     "es": "Ulimang",
+     "ar": null,
+     "fr": null,
+     "bn": null,
+     "de": "Ulimang",
+     "pl": "Ulimang",
+     "nl": "Ulimang"
+    },
+    "capitalQid": "Q3481073",
     "population": null,
     "area": 36
    },
@@ -143861,8 +143811,18 @@
      "pl": "Ngarchelong",
      "nl": "Ngarchelong"
     },
-    "capital": null,
-    "capitalQid": null,
+    "capital": {
+     "en": "Mengellang",
+     "zh": null,
+     "hi": "मेंगेलांग",
+     "es": "Mengellang",
+     "ar": null,
+     "fr": null,
+     "bn": null,
+     "de": "Mengellang",
+     "nl": "Mengellang"
+    },
+    "capitalQid": "Q3001462",
     "population": null,
     "area": 10
    },
@@ -143889,8 +143849,18 @@
      "pl": "Ngardmau",
      "nl": "Ngardmau"
     },
-    "capital": null,
-    "capitalQid": null,
+    "capital": {
+     "en": "Urdmang",
+     "zh": null,
+     "hi": "उर्डमांग",
+     "es": null,
+     "ar": null,
+     "fr": null,
+     "bn": null,
+     "de": "Urdmang",
+     "nl": "Urdmang"
+    },
+    "capitalQid": "Q2384776",
     "population": null,
     "area": 53
    },
@@ -143917,8 +143887,18 @@
      "pl": "Ngeremlengui",
      "nl": "Ngeremlengui"
     },
-    "capital": null,
-    "capitalQid": null,
+    "capital": {
+     "en": "Imeong",
+     "zh": null,
+     "hi": "इमेओंग",
+     "es": "Imeong",
+     "ar": null,
+     "fr": "Imeong",
+     "bn": null,
+     "de": "Imeong",
+     "nl": "Imeong"
+    },
+    "capitalQid": "Q2640394",
     "population": {
      "value": 349,
      "year": 2020
@@ -144004,8 +143984,17 @@
      "pl": "Ngiwal",
      "nl": "Ngiwal"
     },
-    "capital": null,
-    "capitalQid": null,
+    "capital": {
+     "en": "Ngerkeai",
+     "zh": null,
+     "hi": null,
+     "es": null,
+     "ar": null,
+     "fr": null,
+     "bn": null,
+     "de": "Ngerkeai"
+    },
+    "capitalQid": "Q49278647",
     "population": null,
     "area": 26
    },
@@ -144035,7 +144024,7 @@
     "capital": {
      "en": "Kloulklubed",
      "zh": null,
-     "hi": null,
+     "hi": "क्लौलक्लुबेद",
      "es": "Kloulklubed",
      "ar": null,
      "fr": "Kloulklubed",
@@ -144076,7 +144065,7 @@
     "capital": {
      "en": "Dongosaru",
      "zh": null,
-     "hi": null,
+     "hi": "डोंगोसारु",
      "es": "Dongosaru",
      "ar": "دونجوسارو",
      "fr": "Dongosaro",
@@ -144188,7 +144177,7 @@
     "capital": {
      "en": "Freetown",
      "zh": "弗里敦",
-     "hi": null,
+     "hi": "फ़्रीटाउन",
      "es": null,
      "ar": null,
      "fr": null,
@@ -144281,7 +144270,7 @@
     "capital": {
      "en": "Codrington",
      "zh": "科德灵顿",
-     "hi": null,
+     "hi": "कोड्रिंगटन",
      "es": "Codrington",
      "ar": "كودرينغتون",
      "fr": "Codrington",
@@ -144330,7 +144319,7 @@
     "capital": {
      "en": "Bolans",
      "zh": "博蘭斯",
-     "hi": null,
+     "hi": "बोलांस",
      "es": "Bolands",
      "ar": null,
      "fr": "Bolans",
@@ -144375,7 +144364,7 @@
     "capital": {
      "en": "Falmouth",
      "zh": "法爾茅斯 (安提瓜和巴布達)",
-     "hi": null,
+     "hi": "फ़ॉलमाउथ",
      "es": null,
      "ar": null,
      "fr": "Falmouth, Antigua",
@@ -144421,7 +144410,7 @@
     "capital": {
      "en": "Parham",
      "zh": "帕勒姆",
-     "hi": null,
+     "hi": "पारहम",
      "es": null,
      "ar": null,
      "fr": "Parham, Antigua",
@@ -144467,7 +144456,7 @@
     "capital": {
      "en": "Piggotts",
      "zh": "皮戈茨",
-     "hi": null,
+     "hi": "पिगॉट्स",
      "es": null,
      "ar": null,
      "fr": null,
@@ -144872,7 +144861,7 @@
     "capital": {
      "en": "Georgetown",
      "zh": "乔治敦",
-     "hi": null,
+     "hi": "जॉर्जटाउन",
      "es": null,
      "ar": "جورجتاون",
      "fr": "Georgetown",
@@ -144916,7 +144905,7 @@
     "capital": {
      "en": "Layou",
      "zh": "拉尤",
-     "hi": null,
+     "hi": "लायू",
      "es": null,
      "ar": "لايو",
      "fr": "Layou",
@@ -144960,7 +144949,7 @@
     "capital": {
      "en": "Chateaubelair",
      "zh": "沙托布莱尔",
-     "hi": null,
+     "hi": "शातोबेलेयर",
      "es": "Chateaubelair",
      "ar": null,
      "fr": "Chateaubelair",
@@ -145049,7 +145038,7 @@
     "capital": {
      "en": "Barrouallie",
      "zh": "巴罗列",
-     "hi": null,
+     "hi": "बारुआली",
      "es": null,
      "ar": null,
      "fr": "Barrouallie",
@@ -145092,7 +145081,7 @@
     "capital": {
      "en": "Port Elizabeth",
      "zh": "伊莉莎白港 (聖文森及格瑞那丁)",
-     "hi": null,
+     "hi": "पोर्ट एलिज़ाबेथ",
      "es": "Port Elizabeth",
      "ar": "بورت إليزابيث",
      "fr": "Port Elizabeth",
@@ -145148,7 +145137,7 @@
     "capital": {
      "en": "Grenville",
      "zh": "格伦维尔",
-     "hi": null,
+     "hi": "ग्रेनविल",
      "es": null,
      "ar": "غرنفيل",
      "fr": "Grenville",
@@ -145274,7 +145263,7 @@
     "capital": {
      "en": "Gouyave",
      "zh": "古亞夫",
-     "hi": null,
+     "hi": "गूयेव",
      "es": null,
      "ar": "غوياف",
      "fr": "Gouyave",
@@ -145370,7 +145359,7 @@
     "capital": {
      "en": "Sauteurs",
      "zh": "索特爾",
-     "hi": null,
+     "hi": "सोतर्स",
      "es": "Sauteurs",
      "ar": "ساوترز",
      "fr": "Sauteurs",
@@ -145417,7 +145406,7 @@
     "capital": {
      "en": "Hillsborough",
      "zh": "希爾斯堡",
-     "hi": null,
+     "hi": "हिल्सबोरो",
      "es": "Hillsborough",
      "ar": null,
      "fr": "Hillsborough",
@@ -145515,7 +145504,7 @@
     "capital": {
      "en": "Kulhudhuffushi",
      "zh": "库卢杜富希岛",
-     "hi": null,
+     "hi": "कुलहुधुफ़ुशी",
      "es": null,
      "ar": "كولهوذهفوشي",
      "fr": "Kulhudhuffushi",
@@ -145556,7 +145545,7 @@
     "capital": {
      "en": "Manadhoo",
      "zh": "馬達杜",
-     "hi": null,
+     "hi": "मनाधू",
      "es": null,
      "ar": null,
      "fr": "Manadhoo",
@@ -145638,7 +145627,7 @@
     "capital": {
      "en": "Naifaru",
      "zh": null,
-     "hi": null,
+     "hi": "नाइफ़ारू",
      "es": null,
      "ar": "نايفارو",
      "fr": "Naifaru",
@@ -145675,8 +145664,21 @@
      "pl": "Raa",
      "nl": "Raa-atol"
     },
-    "capital": null,
-    "capitalQid": null,
+    "capital": {
+     "en": "Ungoofaaru",
+     "zh": null,
+     "hi": "उंगूफारू",
+     "es": "Ungoofaaru",
+     "ar": null,
+     "fr": "Ungoofaaru",
+     "bn": null,
+     "ur": "اونگوفارو",
+     "ru": "Унгуфару",
+     "de": "Ungoofaaru",
+     "pl": "Ungoofaaru",
+     "nl": "Ungoofaaru"
+    },
+    "capitalQid": "Q2613356",
     "population": {
      "value": 19003,
      "year": null
@@ -145709,7 +145711,7 @@
     "capital": {
      "en": "Eydhafushi",
      "zh": null,
-     "hi": null,
+     "hi": "एधाफुशी",
      "es": "Eydhafushi",
      "ar": null,
      "fr": "Eydhafushi",
@@ -145821,8 +145823,22 @@
      "pl": "Alif Dhaal",
      "nl": "Alif Dhaal-atol"
     },
-    "capital": null,
-    "capitalQid": null,
+    "capital": {
+     "en": "Mahibadhoo",
+     "zh": null,
+     "hi": "माहिबाधू",
+     "es": null,
+     "ar": null,
+     "fr": null,
+     "bn": null,
+     "ur": "ماہیبادھو",
+     "de": "Mahibadhoo",
+     "it": "Mahibadhoo",
+     "ja": "マヒバドホー",
+     "pl": "Mahibadhoo",
+     "nl": "Mahibadhoo"
+    },
+    "capitalQid": "Q3284371",
     "population": null,
     "area": null
    },
@@ -145893,7 +145909,7 @@
     "capital": {
      "en": "Kudahuvadhoo",
      "zh": null,
-     "hi": null,
+     "hi": "कुदाहुवाधू",
      "es": null,
      "ar": null,
      "fr": "Kudahuvadhoo",
@@ -145930,8 +145946,18 @@
      "pl": "Faafu",
      "nl": "Faafu-atol"
     },
-    "capital": null,
-    "capitalQid": null,
+    "capital": {
+     "en": "Magoodhoo",
+     "zh": null,
+     "hi": "मगूधू",
+     "es": null,
+     "ar": null,
+     "fr": null,
+     "bn": null,
+     "ur": "ماگودھو (فافو اٹول)",
+     "nl": "Magoodhoo"
+    },
+    "capitalQid": "Q1854744",
     "population": null,
     "area": null
    },
@@ -145957,7 +145983,7 @@
     "capital": {
      "en": "Veymandoo",
      "zh": null,
-     "hi": null,
+     "hi": "वेमंदू",
      "es": null,
      "ar": null,
      "fr": "Veymandoo",
@@ -146038,7 +146064,7 @@
     "capital": {
      "en": "Villingili",
      "zh": null,
-     "hi": null,
+     "hi": "विलिंगिली",
      "es": null,
      "ar": null,
      "fr": null,
@@ -146078,7 +146104,7 @@
     "capital": {
      "en": "Thinadhoo",
      "zh": null,
-     "hi": null,
+     "hi": "थिनाधू",
      "es": null,
      "ar": "ثينادهو",
      "fr": "Thinadhoo",
@@ -146115,8 +146141,21 @@
      "pl": "Gnaviyani",
      "nl": "Gnaviyani-atol"
     },
-    "capital": null,
-    "capitalQid": null,
+    "capital": {
+     "en": "Fuvahmulah",
+     "zh": "福阿穆拉环礁",
+     "hi": null,
+     "es": "Fuvammulah",
+     "ar": "فوملك",
+     "fr": "Fuvammulah",
+     "bn": null,
+     "ur": "فووامولاح",
+     "de": "Fuvahmulah",
+     "ja": "フヴァンムラ環礁",
+     "pl": "Fuvammulah",
+     "nl": "Fuvammulah"
+    },
+    "capitalQid": "Q2060910",
     "population": null,
     "area": null
    },
@@ -146132,6 +146171,7 @@
      "ar": "آتول أدو",
      "fr": "Addu",
      "bn": null,
+     "ur": "سینو اٹول",
      "ru": "Сиину",
      "de": "Addu-Atoll",
      "id": "Atol Addu",
@@ -146144,7 +146184,7 @@
     "capital": {
      "en": "Hithadhoo",
      "zh": null,
-     "hi": null,
+     "hi": "हिथाधू",
      "es": null,
      "ar": "هيثادهو",
      "fr": null,
@@ -146282,7 +146322,7 @@
     "capital": {
      "en": "Nichola Town",
      "zh": "尼古拉镇",
-     "hi": null,
+     "hi": "निकोला टाउन",
      "es": null,
      "ar": null,
      "fr": null,
@@ -146329,7 +146369,7 @@
     "capital": {
      "en": "Sandy Point Town",
      "zh": "沙角鎮",
-     "hi": null,
+     "hi": "सैंडी पॉइंट टाउन",
      "es": null,
      "ar": "ساندي بوينت تاون",
      "fr": "Sandy Point Town",
@@ -146424,7 +146464,7 @@
     "capital": {
      "en": "Market Shop",
      "zh": "马凯特肖普",
-     "hi": null,
+     "hi": "मार्केट शॉप",
      "es": null,
      "ar": null,
      "fr": null,
@@ -146470,7 +146510,7 @@
     "capital": {
      "en": "Newcastle",
      "zh": "纽卡斯尔",
-     "hi": null,
+     "hi": "न्यूकैसल",
      "es": "Newcastle",
      "ar": "نيوكاسل",
      "fr": null,
@@ -146517,7 +146557,7 @@
     "capital": {
      "en": "Dieppe Bay Town",
      "zh": "迪耶普灣鎮",
-     "hi": null,
+     "hi": "डिएप बे टाउन",
      "es": "Dieppe Bay",
      "ar": "دييب باي تاون",
      "fr": "Dieppe Bay Town",
@@ -146563,7 +146603,7 @@
     "capital": {
      "en": "Figtree",
      "zh": "費格特里",
-     "hi": null,
+     "hi": "फ़िगट्री",
      "es": "Figtree",
      "ar": null,
      "fr": null,
@@ -146609,7 +146649,7 @@
     "capital": {
      "en": "Cayon",
      "zh": "卡永",
-     "hi": null,
+     "hi": "कायॉन",
      "es": "Cayon",
      "ar": "كايون",
      "fr": "Cayon",
@@ -146702,7 +146742,7 @@
     "capital": {
      "en": "Charlestown",
      "zh": "查尔斯敦",
-     "hi": null,
+     "hi": "चार्ल्सटाउन",
      "es": "Charlestown",
      "ar": "شارلستون",
      "fr": "Charlestown",
@@ -146798,7 +146838,7 @@
     "capital": {
      "en": "Cotton Ground",
      "zh": "科登格勞德",
-     "hi": null,
+     "hi": "कॉटन ग्राउंड",
      "es": "Cotton Ground",
      "ar": null,
      "fr": "Cotton Ground",
@@ -146845,7 +146885,7 @@
     "capital": {
      "en": "Middle Island",
      "zh": "米德艾兰",
-     "hi": null,
+     "hi": "मिडल आइलैंड",
      "es": "Middle Island",
      "ar": null,
      "fr": "Middle Island",
@@ -146925,7 +146965,7 @@
     "name": {
      "en": "Kwajalein Atoll",
      "zh": "夸贾林环礁",
-     "hi": null,
+     "hi": "क्वाजालिन एटोल",
      "es": "Kwajalein",
      "ar": "جزيرة كواجالين",
      "fr": "Kwajalein",
@@ -146956,7 +146996,7 @@
     "name": {
      "en": "Kili Island",
      "zh": "基利島",
-     "hi": null,
+     "hi": "किली द्वीप",
      "es": "Kili",
      "ar": null,
      "fr": "Kili",
@@ -146986,7 +147026,7 @@
     "name": {
      "en": "Rongelap Atoll",
      "zh": "朗格拉普环礁",
-     "hi": null,
+     "hi": "रोंगेलैप एटोल",
      "es": "Rongelap",
      "ar": null,
      "fr": "Rongelap",
@@ -147045,7 +147085,7 @@
     "name": {
      "en": "Lib Island",
      "zh": "利布島",
-     "hi": null,
+     "hi": "लिब द्वीप",
      "es": "Lib",
      "ar": null,
      "fr": "Lib",
@@ -147075,7 +147115,7 @@
     "name": {
      "en": "Namu Atoll",
      "zh": "納穆環礁",
-     "hi": null,
+     "hi": "नामू एटोल",
      "es": "Namu",
      "ar": null,
      "fr": "Namu",
@@ -147103,7 +147143,7 @@
     "name": {
      "en": "Ailinglaplap Atoll",
      "zh": "艾林拉帕拉普环礁",
-     "hi": null,
+     "hi": "एलिंगलैप्लैप एटॉल",
      "es": "Ailinglaplap",
      "ar": null,
      "fr": "Ailinglaplap",
@@ -147134,7 +147174,7 @@
     "name": {
      "en": "Ailuk Atoll",
      "zh": "艾盧克環礁",
-     "hi": null,
+     "hi": "एलुक एटॉल",
      "es": "Ailuk",
      "ar": null,
      "fr": "Ailuk",
@@ -147165,7 +147205,7 @@
     "name": {
      "en": "Arno Atoll",
      "zh": "阿爾諾環礁",
-     "hi": null,
+     "hi": "आर्नो एटोल",
      "es": "Arno (isla)",
      "ar": null,
      "fr": "Arno",
@@ -147195,7 +147235,7 @@
     "name": {
      "en": "Aur Atoll",
      "zh": "奧爾環礁",
-     "hi": null,
+     "hi": "और एटोल",
      "es": "Aur",
      "ar": null,
      "fr": "Aur",
@@ -147226,7 +147266,7 @@
     "name": {
      "en": "Ebon Atoll",
      "zh": "埃邦环礁",
-     "hi": null,
+     "hi": "एबन एटॉल",
      "es": "Ebon",
      "ar": null,
      "fr": "Ebon",
@@ -147256,7 +147296,7 @@
     "name": {
      "en": "Enewetak Atoll",
      "zh": "埃内韦塔克环礁",
-     "hi": null,
+     "hi": "एनेवेटाक एटोल",
      "es": "Enewetak",
      "ar": "آتول إنيويتوك",
      "fr": "Eniwetok",
@@ -147287,7 +147327,7 @@
     "name": {
      "en": "Jabat Island",
      "zh": "贾布沃特岛",
-     "hi": null,
+     "hi": "जाबात द्वीप",
      "es": "Jabat",
      "ar": null,
      "fr": "Jabat",
@@ -147317,7 +147357,7 @@
     "name": {
      "en": "Lae Atoll",
      "zh": "萊環礁",
-     "hi": null,
+     "hi": "लाए एटॉल",
      "es": "Lae",
      "ar": null,
      "fr": "Lae",
@@ -147379,7 +147419,7 @@
     "name": {
      "en": "Mejit Island",
      "zh": "梅吉特岛",
-     "hi": null,
+     "hi": "मेजित द्वीप",
      "es": "Mejit",
      "ar": null,
      "fr": "Mejit",
@@ -147409,7 +147449,7 @@
     "name": {
      "en": "Namdrik Atoll",
      "zh": "纳莫里克环礁",
-     "hi": null,
+     "hi": "नामड्रिक एटॉल",
      "es": "Namorik",
      "ar": "حلقة نامدريك",
      "fr": "Namdrik",
@@ -147437,7 +147477,7 @@
     "name": {
      "en": "Ujae Atoll",
      "zh": "乌贾环礁",
-     "hi": null,
+     "hi": "उजे एटॉल",
      "es": "Ujae",
      "ar": null,
      "fr": "Ujae",
@@ -147492,7 +147532,7 @@
     "name": {
      "en": "Wotho Atoll",
      "zh": "沃托環礁",
-     "hi": null,
+     "hi": "वोथो एटॉल",
      "es": "Wotho",
      "ar": null,
      "fr": "Wotho",
@@ -147519,7 +147559,7 @@
     "name": {
      "en": "Jaluit Atoll",
      "zh": "贾卢伊特环礁",
-     "hi": null,
+     "hi": "जालुइट एटॉल",
      "es": "Jaluit",
      "ar": "جالويت",
      "fr": "Jaluit",
@@ -147549,7 +147589,7 @@
     "name": {
      "en": "Mili Atoll",
      "zh": "米利环礁",
-     "hi": null,
+     "hi": "मिली एटॉल",
      "es": "Mili",
      "ar": null,
      "fr": "Mili",
@@ -147576,7 +147616,7 @@
     "name": {
      "en": "Maloelap Atoll",
      "zh": "馬洛埃拉普環礁",
-     "hi": null,
+     "hi": "मालोएलैप एटॉल",
      "es": "Maloelap",
      "ar": null,
      "fr": "Maloelap",
@@ -147604,7 +147644,7 @@
     "name": {
      "en": "Wotje Atoll",
      "zh": "沃傑環礁",
-     "hi": null,
+     "hi": "वोत्जे एटोल",
      "es": "Wotje",
      "ar": null,
      "fr": "Wotje",
@@ -149001,133 +149041,6 @@
      "year": 2004
     },
     "area": 0.5
-   }
-  ]
- },
- "SG": {
-  "iso3": "SGP",
-  "source": {
-   "year": 2026,
-   "license": "Open Database License (ODbL) 1.0",
-   "sourceName": "© OpenStreetMap contributors"
-  },
-  "divisions": [
-   {
-    "id": "SGP-Q1687545",
-    "iso": "SG-04",
-    "qid": "Q1687545",
-    "name": {
-     "en": "South East Community Development Council",
-     "zh": "东南社区发展理事会",
-     "hi": null,
-     "es": "Consejo del Sudeste (Singapur)",
-     "ar": null,
-     "fr": "District du Sud-Est",
-     "bn": null,
-     "de": "Südost",
-     "ur": "جنوب مشرقی کمیونٹی ڈیولپمنٹ کونسل",
-     "id": "Dewan Pengembangan Masyarakat Tenggara",
-     "ja": "南東地区",
-     "ko": "남동부 지구 사회 발전 이사회"
-    },
-    "capital": null,
-    "capitalQid": null,
-    "population": null,
-    "area": null
-   },
-   {
-    "id": "SGP-Q2544592",
-    "iso": "SG-01",
-    "qid": "Q2544592",
-    "name": {
-     "en": "Central Singapore Community Development Council",
-     "zh": "中区社区发展理事会",
-     "hi": null,
-     "es": "Consejo Central (Singapur)",
-     "ar": null,
-     "fr": "Singapour central",
-     "bn": null,
-     "de": "Central Singapore District",
-     "ur": "مرکزی سنگاپور کمیونٹی ڈیولپمنٹ کونسل",
-     "id": "Dewan Pengembangan Masyarakat Singapura Tengah",
-     "ja": "シンガポール中央地区",
-     "ko": "중앙싱가포르 지구 사회 발전 이사회"
-    },
-    "capital": null,
-    "capitalQid": null,
-    "population": null,
-    "area": null
-   },
-   {
-    "id": "SGP-Q3710534",
-    "iso": "SG-02",
-    "qid": "Q3710534",
-    "name": {
-     "en": "North East Community Development Council",
-     "zh": "东北社区发展理事会",
-     "hi": null,
-     "es": "Consejo del Noreste (Singapur)",
-     "ar": null,
-     "fr": "District du Nord-Est",
-     "bn": null,
-     "de": "North East (Singapur)",
-     "ur": "شمال مشرقی کمیونٹی ڈیولپمنٹ کونسل",
-     "id": "Dewan Pengembangan Masyarakat Timur Laut",
-     "it": "Distretto Nordorientale",
-     "ja": "北東地区",
-     "ko": "북동부 지구 사회 발전 이사회",
-     "nl": "North East Community Development Council"
-    },
-    "capital": null,
-    "capitalQid": null,
-    "population": null,
-    "area": null
-   },
-   {
-    "id": "SGP-Q5784118",
-    "iso": "SG-03",
-    "qid": "Q5784118",
-    "name": {
-     "en": "North West Community Development Council",
-     "zh": "西北社区发展理事会",
-     "hi": null,
-     "es": "Consejo del Noroeste (Singapur)",
-     "ar": null,
-     "fr": "District du Nord-Ouest",
-     "bn": null,
-     "de": "North West (Singapur)",
-     "ur": "شمال مغربی کمیونٹی ڈیولپمنٹ کونسل",
-     "id": "Dewan Pengembangan Masyarakat Barat Laut",
-     "ja": "北西地区",
-     "ko": "북서부 지구 사회 발전 이사회"
-    },
-    "capital": null,
-    "capitalQid": null,
-    "population": null,
-    "area": null
-   },
-   {
-    "id": "SGP-Q5784126",
-    "iso": "SG-05",
-    "qid": "Q5784126",
-    "name": {
-     "en": "South West Community Development Council",
-     "zh": "西南社区发展理事会",
-     "hi": null,
-     "es": "Consejo del Sudoeste (Singapur)",
-     "ar": null,
-     "fr": "District du Sud-Ouest",
-     "bn": null,
-     "de": "South West Singapore District",
-     "ur": "جنوب مغربی کمیونٹی ڈیولپمنٹ کونسل",
-     "id": "Dewan Pengembangan Masyarakat Barat Daya",
-     "ja": "南西地区",
-     "ko": "남서부 지구 사회 발전 이사회"
-    },
-    "capital": null,
-    "capitalQid": null,
-    "population": null,
-    "area": null
    }
   ]
  }
