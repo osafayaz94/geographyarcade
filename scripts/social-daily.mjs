@@ -42,7 +42,11 @@ const name = (c) => c.name.en || c.name;
 const capital = (c) => c.capitals && c.capitals[0] && c.capitals[0].name.en;
 const hasFlag = (c) => existsSync(join(DIST, 'flags', c.iso2.toLowerCase() + '.svg'));
 const hasShape = (c) => existsSync(join(DIST, 'img', 'shapes', c.iso2.toLowerCase() + '.svg'));
-const TYPES = ['flag', 'shape', 'capital'];
+// By weekday (0 = Sunday): two printable-map days, the rest quizzes.
+const CYCLE = ['capital', 'flag', 'shape', 'printable', 'capital', 'flag', 'printable'];
+// The printable maps that already have Pinterest images (scripts/pin-images.js): [page, title lines].
+const PRINTABLES = [...readFileSync(join(ROOT, 'scripts', 'pin-images.js'), 'utf8').matchAll(/\['[a-z-]+', '([a-z/-]+)', \[([^\]]+)\]/g)]
+  .map((m) => ({ page: m[1], lines: [...m[2].matchAll(/'([^']+)'/g)].map((x) => x[1]) }));
 const usedFile = join(OUT, 'used.json');
 const loadUsed = () => (existsSync(usedFile) ? JSON.parse(readFileSync(usedFile, 'utf8')) : {});
 
@@ -54,9 +58,13 @@ function rng(seed) {
 const shuffle = (arr, r) => { const a = [...arr]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(r() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
 
 function pickQuestion(date, used) {
-  const dayNo = Math.floor(Date.parse(date) / 864e5);
-  const type = TYPES[dayNo % 3];
+  const type = CYCLE[new Date(date + 'T12:00:00Z').getUTCDay()];
   const r = rng(date);
+  if (type === 'printable') {
+    const fresh = PRINTABLES.filter((p) => !(used.printable || []).includes(p.page));
+    const p = shuffle(fresh.length ? fresh : PRINTABLES, r)[0];
+    return { date, type, page: p.page, lines: p.lines, title: p.lines.join(' '), iso2: p.page, country: p.lines.join(' ') };
+  }
   const ok = (c) => c.unMember !== false && (type === 'flag' ? hasFlag(c) : type === 'shape' ? hasShape(c) : !!capital(c));
   const pool = countries.filter(ok);
   const fresh = pool.filter((c) => !(used[type] || []).includes(c.iso2));
@@ -79,6 +87,29 @@ const TAGS = { flag: '#flags #geography #quiz', shape: '#geography #maps #quiz',
 const optionLines = (q) => q.options.map((o, i) => `${'ABCD'[i]}) ${o}`).join('\n');
 
 function captions(q) {
+  if (q.type === 'printable') {
+    const url = `https://${SITE}/printables/${q.page}/`;
+    const what = 'Blank outline map, numbered worksheet, labelled map and answer key. Print it or save it as a PDF. No sign-up.';
+    return {
+      instagram: `Free printable ${q.title} 🗺️
+
+${what}
+
+Great for class, homework and test revision. Save this post so you can find it later!
+
+Download it free on ${SITE} (link in bio).
+
+#printables #geography #homeschool`,
+      comment: null,
+      facebook: `Free printable ${q.title} 🗺️
+
+${what}
+
+Great for class, homework and test revision.
+
+Download it free: ${url}`,
+    };
+  }
   const instagram = `${question(q)} 🌍\n\n${optionLines(q)}\n\nComment your letter, then check the first comment for the answer.\n\n${play(q)} on ${SITE} (link in bio).\n\n${TAGS[q.type]}`;
   const comment = `Answer: ${q.letter}) ${q.answer}`;
   const facebook = `${question(q)} 🌍\n\n${optionLines(q)}\n\nComment your letter before you scroll down!\n\n${play(q)}: ${link(q)}\n\n.\n.\n.\n.\n.\nAnswer: ${q.letter}) ${q.answer}`;
@@ -109,7 +140,33 @@ function picture(q) {
   return svg;
 }
 
+function renderPrintable(q, W, H) {
+  const story = H > 1400;
+  const html = readFileSync(join(DIST, 'printables', q.page, 'index.html'), 'utf8');
+  const map = readFileSync(join(DIST, html.match(/data-src="\/([^"]+)"/)[1]), 'utf8');
+  const vb = map.match(/viewBox="([^"]+)"/)[1].split(/\s+/).map(Number);
+  const big = q.lines.length > 1 ? 84 : 96;
+  const titleY = story ? 330 : 190;
+  const card = { x: 70, y: titleY + q.lines.length * big + (story ? 60 : 20), w: W - 140, h: story ? 900 : 700 };
+  let mw = card.w - 60, mh = mw * vb[3] / vb[2];
+  if (mh > card.h - 60) { mh = card.h - 60; mw = mh * vb[2] / vb[3]; }
+  const below = card.y + card.h + (story ? 90 : 62);
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">`
+    + `<rect width="${W}" height="${H}" fill="${PAPER}"/>`
+    + text(W / 2, titleY - big + (story ? 0 : 10), story ? 44 : 38, 700, MAG, 'FREE PRINTABLE')
+    + q.lines.map((l, i) => text(W / 2, titleY + i * big * 1.02, big, 800, INK, l)).join('')
+    + `<rect x="${card.x}" y="${card.y}" width="${card.w}" height="${card.h}" rx="18" fill="#fff" stroke="${LINE}" stroke-width="3"/>`
+    + `<image href="${uri(map)}" x="${card.x + (card.w - mw) / 2}" y="${card.y + (card.h - mh) / 2}" width="${mw}" height="${mh}" preserveAspectRatio="xMidYMid meet"/>`
+    + text(W / 2, below, story ? 42 : 36, 600, SEA, 'Blank map · Worksheet · Answer key')
+    + (story ? text(W / 2, below + 80, 40, 600, INK, 'Free download: link in bio') : '')
+    + `<g transform="translate(${W / 2 - 250} ${H - (story ? 160 : 105)}) scale(1.9)">${LOGO}</g>`
+    + text(W / 2 - 180, H - (story ? 160 : 105) + 44, 44, 700, INK, SITE, 'start')
+    + '</svg>';
+  return new Resvg(svg, { fitTo: { mode: 'width', value: W }, font: { loadSystemFonts: true, defaultFontFamily: 'Segoe UI' } }).render().asPng();
+}
+
 function render(q, W, H) {
+  if (q.type === 'printable') return renderPrintable(q, W, H);
   const story = H > 1400;
   const lines = wrap(question(q), story ? 22 : 26);
   const qSize = story ? 70 : 62;
@@ -151,12 +208,12 @@ function plan(start, days) {
     const itemFile = join(dir, 'item.json');
     if (existsSync(itemFile) && JSON.parse(readFileSync(itemFile, 'utf8')).posted) continue; // never redo a posted day
     const q = pickQuestion(date, used);
-    (used[q.type] = used[q.type] || []).push(q.iso2);
+    (used[q.type] = used[q.type] || []).push(q.type === 'printable' ? q.page : q.iso2);
     mkdirSync(dir, { recursive: true });
     writeFileSync(join(dir, 'post.png'), render(q, 1080, 1350));
     writeFileSync(join(dir, 'story.png'), render(q, 1080, 1920));
     writeFileSync(itemFile, JSON.stringify({ ...q, ...captions(q), approved: false, posted: null }, null, 2));
-    made.push(`${date}  ${q.type.padEnd(7)} ${q.country}  (answer ${q.letter}: ${q.answer})`);
+    made.push(`${date}  ${q.type.padEnd(9)} ${q.country}` + (q.answer ? `  (answer ${q.letter}: ${q.answer})` : ''));
   }
   writeFileSync(usedFile, JSON.stringify(used));
   console.log(made.join('\n') || 'Nothing to plan.');
@@ -237,7 +294,7 @@ async function post(date, dry) {
     item.posted.instagram = await igPublish({ image_url: hidden.url, caption: item.instagram }); save();
     console.log('Instagram post', item.posted.instagram);
   }
-  if (!item.posted.comment) {
+  if (item.comment && !item.posted.comment) {
     item.posted.comment = (await ig(`${item.posted.instagram}/comments`, { message: item.comment }, 'POST')).id; save();
     console.log('Instagram answer comment', item.posted.comment);
   }
