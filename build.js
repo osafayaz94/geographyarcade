@@ -1518,6 +1518,8 @@ function statics() {
   if (fs.existsSync(pinDir)) {
     fs.mkdirSync(path.join(DIST, 'img', 'pins'), { recursive: true });
     for (const f of fs.readdirSync(pinDir).filter((x) => x.endsWith('.png'))) fs.copyFileSync(path.join(pinDir, f), path.join(DIST, 'img', 'pins', f));
+    // Pinterest RSS feed (/pins/printables.xml): one new printable pin a day, see scripts/pin-feed.js.
+    if (fs.existsSync(path.join(pinDir, 'feed.json'))) require('child_process').execFileSync(process.execPath, [path.join(__dirname, 'scripts', 'pin-feed.js'), 'feed'], { stdio: 'inherit' });
   }
   write('favicon.svg',LOGO.replace('<svg', '<svg xmlns="http://www.w3.org/2000/svg"').replace(' aria-hidden="true"', ''));
 

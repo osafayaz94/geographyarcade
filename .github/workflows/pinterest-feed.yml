@@ -1,0 +1,38 @@
+name: Pinterest feed
+
+# Pinterest reads https://geographyarcade.com/pins/printables.xml and pins each new item by itself
+# (connected under pinterest.com > Settings > Bulk create Pins > Auto-publish). The feed adds one
+# printable map a day (scripts/pin-feed.js), so this job rewrites that one file every morning and
+# uploads it, without rebuilding the site. The pin images are published with the site (brand/pins/).
+on:
+  schedule:
+    - cron: '30 4 * * *' # 04:30 UTC (09:30 in Pakistan), after the day's pin is due (00:00 UTC)
+  workflow_dispatch:
+
+jobs:
+  feed:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+      - name: Write today's feed
+        run: node scripts/pin-feed.js feed --out feed/printables.xml
+      - name: Upload it to Hostinger
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY_GEOGRAPHY }}
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$SSH_PRIVATE_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          # Same pinned host keys as monthly-update.yml: refuse to connect to anything else.
+          cat > ~/.ssh/known_hosts <<'EOF'
+          [145.79.31.12]:65002 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCgBMpI74eOXUNAfA+6rrrSXXyJ6IvgPZVCwyMm5GRXYY2VCa/8QIbObKN+/CdLLpN2TEf9URJRgDxsgvlRb9aGfDwAud9k2gM/TGPywCsblDDlybaywMvp/kZcN5WL+OQBRwCbX0/R9x3FkBjp8NqAfVZa7iBDZ1sxgEsUT+xN7TkvUQw39jGzmDyPw+8zM8ehOIUODnBLER4Ew8jbFawZDzY4XbnxD5RTtykj/uAGbqB7ZcFgo7hBbX8OPtW9zagFmKvIQ3dYRk43Twk5KZ4hyFjgQfUhA/EWui+M0nsmtRAo2DIlOIGYnw6Hqc2S3EhuZl3FF3xGYIRR+h9NXZrscUfSkaBhT049wLsxOykvbMd0cgGvwJdT025Mna25k4nINF/lRbZ0CXAjKGAiRVC6b/WQwajAWEHHXlXE3CD61lPMXFqUQULkdK7Ii+KATvO62bmR+fSKSOAhoC45Udq05fliissqOkOgJcADqygnodmWYFxi5vMX8Snf6a3fNgM=
+          [145.79.31.12]:65002 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBANlp6jvxckanGKdGruPFf15aZkstbuGRLp35mN5Pne51l6MK5wayO76VvuVfMeZsHEV3Du1F5zh4wXdVfTSyXU=
+          [145.79.31.12]:65002 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBV4VmAbo49lntkQd9tInPKGZhsVu4jVdfxxL07gWN/2
+          EOF
+          sed -i 's/^ *//' ~/.ssh/known_hosts
+          rsync -z -e "ssh -p 65002 -i ~/.ssh/deploy_key -o StrictHostKeyChecking=yes" \
+            feed/printables.xml u320645487@145.79.31.12:domains/geographyarcade.com/public_html/pins/printables.xml
+          rm -f ~/.ssh/deploy_key
