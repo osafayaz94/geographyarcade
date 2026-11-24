@@ -224,13 +224,23 @@ const RELEASES = [
   ['2027-02-01', (p) => p.startsWith('history/')],
   ['2027-03-01', (p) => p.startsWith('printables/organizations/') || /^printables\/maps\/(countries-on-the-equator|northern-hemisphere-countries|southern-hemisphere-countries|countries-where-[a-z]+-is-official)\/$/.test(p)],
 ];
+// Recovery step (owner's decision, 2026-11-24): three weeks after the staged release Google still showed
+// almost nothing (about 3 impressions a day, against 4,000 to 5,500 before 13 October), so Google is now
+// shown a small site first: only the languages in GOOGLE_LANGS. Every other language is held back the same
+// way (live for visitors, Bing and AI assistants; googlebot noindex; listed in sitemap-held.xml only).
+// Add one language at a time, about one a month, and only once the pages already shown are indexed and
+// getting impressions again. Suggested order: es, fr, de, pt, then the rest.
+const GOOGLE_LANGS = ['en'];
+// The dated batches above wait too while RELEASES_PAUSED is true: no new pages go to Google until it has
+// taken the site back. Set it to false (and move the dates forward) to start the monthly batches again.
+const RELEASES_PAUSED = true;
 const releaseDate = (p) => { for (const [d, f] of RELEASES) if (f(p)) return d; return null; };
-const heldBack = (p) => { const d = releaseDate(p); return !!d && TODAY < d; };
+const heldBack = (p, lang) => { if (!GOOGLE_LANGS.includes(lang)) return true; const d = releaseDate(p); return !!d && (RELEASES_PAUSED || TODAY < d); };
 const heldMap = Object.fromEntries(LANGS.map((l) => [l, []]));
 
 function page(lang, p, { title, desc, body, crumbs = [], jsonld = [], preload, script = false, printJs = false, nav, noindex = false }) {
   desc = fitDescription(desc);
-  const held = !noindex && heldBack(p);
+  const held = !noindex && heldBack(p, lang);
   // Site owner's decision (2026-10-12): quiz answers are not shown on the pages. Every answer block
   // is an "answers" heading followed by one table or one list.
   body = body.replace(/<h2 id="answers">[^<]*<\/h2>\s*(?:<div class="tbl"><table>[\s\S]*?<\/table><\/div>|<ul class="links">[\s\S]*?<\/ul>)/g, '');
@@ -1531,11 +1541,12 @@ function statics() {
   write('robots.txt', `${bots.map((b) => `User-agent: ${b}\nAllow: /\n${BLOCK_PDF}`).join('\n')}\nUser-agent: *\nAllow: /\n${BLOCK_PDF}\nSitemap: ${DOMAIN}/sitemap.xml\n`);
 
   // Sitemaps: one per language, each URL with its alternates.
-  const alt = (p) => LANGS.map((l) => `<xhtml:link rel="alternate" hreflang="${L[l].hreflang}" href="${abs(l, p)}"/>`).join('') + `<xhtml:link rel="alternate" hreflang="x-default" href="${abs('en', p)}"/>`;
+  const alt = (p) => LANGS.filter((l) => !heldBack(p, l)).map((l) => `<xhtml:link rel="alternate" hreflang="${L[l].hreflang}" href="${abs(l, p)}"/>`).join('') + `<xhtml:link rel="alternate" hreflang="x-default" href="${abs('en', p)}"/>`;
   // Held-back pages (see RELEASES): a sitemap only IndexNow/Bing reads; it is not in sitemap.xml.
   write('sitemap-held.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${LANGS.flatMap((l) => heldMap[l].map((p) => `<url><loc>${abs(l, p)}</loc><lastmod>${pageDate[l][p]}</lastmod></url>`)).join('\n')}\n</urlset>\n`);
-  for (const l of LANGS) write(`sitemap-${l}.xml`, `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${sitemap[l].map((p) => `<url><loc>${abs(l, p)}</loc><lastmod>${pageDate[l][p]}</lastmod>${alt(p)}</url>`).join('\n')}\n</urlset>\n`);
-  write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${LANGS.map((l) => `<sitemap><loc>${DOMAIN}/sitemap-${l}.xml</loc><lastmod>${Object.values(pageDate[l]).sort().pop()}</lastmod></sitemap>`).join('\n')}\n</sitemapindex>\n`);
+  const mapLangs = LANGS.filter((l) => sitemap[l].length); // a language held back from Google has no sitemap
+  for (const l of mapLangs) write(`sitemap-${l}.xml`, `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${sitemap[l].map((p) => `<url><loc>${abs(l, p)}</loc><lastmod>${pageDate[l][p]}</lastmod>${alt(p)}</url>`).join('\n')}\n</urlset>\n`);
+  write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${mapLangs.map((l) => `<sitemap><loc>${DOMAIN}/sitemap-${l}.xml</loc><lastmod>${Object.values(pageDate[l]).sort().pop()}</lastmod></sitemap>`).join('\n')}\n</sitemapindex>\n`);
 
   // Dates for the next build (only pages that still exist).
   fs.writeFileSync(lastmodFile, JSON.stringify(Object.fromEntries(Object.keys(lastmodNext).sort().map((k) => [k, lastmodNext[k]]))) + '\n');
