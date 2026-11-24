@@ -1,12 +1,13 @@
 name: Pinterest feed
 
 # Pinterest reads https://geographyarcade.com/pins/printables.xml and pins each new item by itself
-# (connected under pinterest.com > Settings > Bulk create Pins > Auto-publish). The feed adds one
-# printable map a day (scripts/pin-feed.js), so this job rewrites that one file every morning and
+# (connected under pinterest.com > Settings > Bulk create Pins > Auto-publish). The feed adds two
+# printable maps a day (scripts/pin-feed.js), so this job rewrites that one file twice a day and
 # uploads it, without rebuilding the site. The pin images are published with the site (brand/pins/).
 on:
   schedule:
-    - cron: '30 4 * * *' # 04:30 UTC (09:30 in Pakistan), after the day's pin is due (00:00 UTC)
+    - cron: '30 4 * * *' # 04:30 UTC (09:30 in Pakistan), after the morning pin is due (00:00 UTC)
+    - cron: '30 16 * * *' # 16:30 UTC (21:30 in Pakistan), after the evening pin is due (12:00 UTC)
   workflow_dispatch:
 
 jobs:

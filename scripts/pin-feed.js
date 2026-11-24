@@ -1,13 +1,14 @@
-// Pinterest RSS feed: one new printable-map pin a day, published by Pinterest itself
+// Pinterest RSS feed: two new printable-map pins a day, published by Pinterest itself
 // (pinterest.com > Settings > Bulk create Pins > Auto-publish > Connect RSS feed).
 //
 //   node scripts/pin-feed.js images   make a 1000x1500 pin image for every country printable that has
 //                                     none yet (brand/pins/c-<slug>.png) and the list brand/pins/feed.json
 //   node scripts/pin-feed.js feed [--out file]   write the feed (default dist/pins/printables.xml)
 //
-// The feed shows the pins whose day has come (one a day from START, largest countries first), newest
-// first, at most 30. The build writes it with the site, and .github/workflows/pinterest-feed.yml
-// rewrites and uploads it every day, so a new pin appears daily without a site rebuild.
+// The feed shows the pins whose time has come (two a day from the day after START, largest countries
+// first), newest first, at most 30. The build writes it with the site, and
+// .github/workflows/pinterest-feed.yml rewrites and uploads it twice a day, so new pins appear
+// without a site rebuild.
 // The 20 printables in scripts/pin-images.js are left out: they are pinned by CSV already.
 const fs = require('fs');
 const path = require('path');
@@ -74,10 +75,13 @@ function images() {
 
 function feed(out) {
   const list = JSON.parse(fs.readFileSync(path.join(pinsDir, 'feed.json'), 'utf8'));
-  const day = (i) => new Date(Date.parse(START + 'T00:00:00Z') + i * 864e5);
+  // Two pins a day: item i is due at 00:00 or 12:00 UTC (the owner asked for 2 a day on 2026-11-24).
+  // The first pin (Indonesia) went out alone on START, so the pairs start the next day.
+  const day = (i) => new Date(Date.parse(START + 'T00:00:00Z') + (i === 0 ? 0 : 864e5 + (i - 1) * 432e5));
   const now = Date.now();
   const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-  const due = list.map((p, i) => ({ ...p, date: day(i) })).filter((p) => p.date.getTime() <= now).reverse().slice(0, 30);
+  const allDue = list.map((p, i) => ({ ...p, date: day(i) })).filter((p) => p.date.getTime() <= now);
+  const due = allDue.slice().reverse().slice(0, 30);
   const items = due.map((p) => {
     const img = `${DOMAIN}/img/pins/${p.slug}.png`;
     const size = fs.existsSync(path.join(pinsDir, `${p.slug}.png`)) ? fs.statSync(path.join(pinsDir, `${p.slug}.png`)).size : 0;
@@ -91,7 +95,7 @@ function feed(out) {
     + `<description>Free printable country maps: blank, worksheet and answer key.</description><language>en</language>\n${items}\n</channel></rss>\n`;
   fs.mkdirSync(path.dirname(out), { recursive: true });
   fs.writeFileSync(out, xml);
-  console.log(`${out}: ${due.length} pins (of ${list.length}), next one ${due.length < list.length ? day(list.length - (list.length - due.length)).toISOString().slice(0, 10) : 'none'}`);
+  console.log(`${out}: ${due.length} pins (of ${list.length}), next one ${allDue.length < list.length ? day(allDue.length).toISOString().slice(0, 16).replace('T', ' ') + ' UTC' : 'none, the list is used up'}`);
 }
 
 const [cmd] = process.argv.slice(2);
